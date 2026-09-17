@@ -1,0 +1,19 @@
+# 生成产物
+site/
+
+# 助手的工作记忆（工具状态，不属于知识库内容）
+.workbuddy-ai/
+
+# 系统
+.DS_Store
+__pycache__/
+*.pyc
+
+# 编辑器
+.vscode/
+.idea/
+
+# Obsidian 工作区状态（保留 app.json 等配置）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
