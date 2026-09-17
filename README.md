@@ -144,13 +144,37 @@ status: active           # active | draft | stale | deprecated
 
 ## 当前内容
 
-本知识库已收录 1 份素材（Karpathy 的 LLM Wiki Gist），编译为 14 个页面：
+已收录 **2 份素材**，编译为 **21 个页面**（142 条交叉链接）：
 
-- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检
+- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill 的仓库 README
+- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git
 - **实体**：Andrej Karpathy、Vannevar Bush / Memex、Obsidian、qmd、NotebookLM
 - **分析**：RAG 与 LLM Wiki 对比、second-brain-skill 评估
 
 入口：`wiki/overview.md`
+
+## 版本控制
+
+本仓库就是一个 git 仓库 —— 正如 Gist 所说，wiki 只是一堆 Markdown 文件，版本历史、分支、协作都是白送的。
+
+```bash
+git log --oneline                    # 看知识库的演化
+git diff HEAD~1 -- wiki/             # 看上次 ingest 改了什么
+git checkout HEAD~1 -- wiki/foo.md   # 回退 LLM 改错的页面
+```
+
+`site/`（生成产物）与 `.workbuddy-ai/`（助手工作记忆）已通过 `.gitignore` 排除。
+
+## 素材重抓
+
+网页抓取会丢行内链接、把 `→` 转成 `->`。因此同一素材重新抓取时**不覆盖旧文件**，而是加 `-r2` 后缀并存：
+
+```
+raw/2026-09-18-karpathy-llm-wiki.md      # r1（丢失了行内链接）
+raw/2026-09-18-karpathy-llm-wiki-r2.md   # r2（完整，引用时用这份）
+```
+
+两版差异记录在对应的 `wiki/sources/` 摘要页里。只要目标提供结构化端点（GitHub API、`gist.githubusercontent.com/.../raw`），就优先用它而不是抓渲染后的 HTML。
 
 ---
 

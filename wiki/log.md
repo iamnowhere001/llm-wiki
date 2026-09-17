@@ -26,3 +26,11 @@ status: active
 新增零依赖 CLI 工具链 `tools/wiki.py`（init / lint / stats / search / index / build / log / new / graph），以及单文件浏览站点 `site/index.html`。
 ## [2026-09-18] lint | 构建完成后的首次体检：0 项机器可查问题
 
+## [2026-09-18] ingest | 重抓 Karpathy Gist（r2）—— 发现 r1 丢失行内链接，新增 raw/2026-09-18-karpathy-llm-wiki-r2.md
+
+## [2026-09-18] ingest | Second Brain Skill 仓库 README —— 解决 second-brain-skill 页的悬空引用
+
+## [2026-09-18] edit | 补建 use-cases、plain-text-and-git 两页；重写 second-brain-skill 评估；AGENTS.md 增加抓取质量与重抓命名规则
+
+## [2026-09-18] edit | git init：知识库纳入版本控制，首次提交 a980e7b
+
