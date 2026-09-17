@@ -128,9 +128,14 @@ status: active           # active | draft | stale | deprecated
 0. **抓取质量优先于抓取速度。** 网页正文抓取会丢行内链接、把 `→` 转成 `->`、丢表格分隔符。只要目标提供结构化端点，就用它：
    - GitHub 仓库 → `api.github.com/repos/<owner>/<repo>`（元数据）+ `/readme`（base64 正文）
    - Gist → `gist.githubusercontent.com/<user>/<id>/raw`（正文原文）
+   - X / Twitter → `cdn.syndication.twimg.com/tweet-result?id=<id>&token=a`（元数据 + 正文预览）
    - 静态文档站 → 直接取 `.md` 源文件而非渲染后的 HTML
 
    落盘后**校验一次**：正文里应该有链接的地方是否还有链接。捕获缺陷在收录时发现成本最低。
+
+   **若只能用 AI 中介的抓取工具（如渲染页提取），必须交叉验证。** 用独立元数据源比对（例如 syndication 端点返回的 `preview_text` 与正文开头是否逐字一致），并在素材 frontmatter 的 `capture_quality` / `capture_note` 中如实记录可信度与已知缺失（如图片未能下载）。
+
+   **素材含推广内容时必须在 frontmatter 与摘要页标注利益披露**（作者是产品运营者、带 UTM 链接等），并把相关页面的 `confidence` 降级。
 
 1. **读**：完整读一遍素材，含 frontmatter。如果素材引用图片，先读文本，再单独查看关键图片。
 2. **对齐**：向人类汇报 3-5 条关键要点，以及它与现有 wiki 的关系（新增？印证？**矛盾**？）。若素材与已有页面冲突，明确指出，不要悄悄覆盖。
