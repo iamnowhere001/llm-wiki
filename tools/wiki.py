@@ -986,6 +986,9 @@ article a{color:var(--accent);text-decoration:none;border-bottom:1px solid #b9d8
 article a:hover{border-bottom-color:var(--accent)}
 a.wl{border-bottom:1px dotted #9cc7c1;cursor:pointer}
 a.wl.broken{color:#b91c1c;border-bottom:1px dashed #e0a0a0}
+/* 引文块内文字本身是深青色，链接需要更强的区分度 */
+article blockquote a{color:#0b5f57;font-weight:600;border-bottom:1px solid #7fbcb4}
+article blockquote a:hover{border-bottom-color:#0b5f57}
 .pagemeta{
   display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:0 0 22px;
   padding-bottom:16px;border-bottom:1px solid var(--line-soft);

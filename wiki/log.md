@@ -34,3 +34,7 @@ status: active
 
 ## [2026-09-18] edit | git init：知识库纳入版本控制，首次提交 a980e7b
 
+## [2026-09-18] ingest | Dan Koe《How to remember everything you read》X 长文 —— 创作者视角，独立收敛到同一架构
+
+## [2026-09-18] edit | 补建 cybernetic-learning、commonplace-book、dan-koe、eden、commonplace-book-vs-llm-wiki；回填 index-and-log、second-brain-skill、use-cases、overview
+

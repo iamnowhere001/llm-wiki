@@ -22,11 +22,12 @@ status: active
 - 「收录时编译」与「查询时检索」（RAG）两条路线的对比
 - 维护知识库的工具链与约定
 - 该模式的思想源头与相关实现
+- **知识如何转化为产出** —— 学习机制、笔记传统、创作回路
 
 **不在范围内（目前）：**
 - 通用 RAG 工程实践（向量库选型、嵌入模型评测）
 - LLM 训练与微调
-- 具体产品的功能评测
+- 具体产品的功能评测（[[eden]] 页仅记录其宣称能力，不做评测）
 
 ## 核心线索
 
@@ -42,9 +43,17 @@ status: active
 8. **路线对比**：什么时候该用哪条路。→ [[rag-vs-wiki]]
 9. **落地场景**：五类积累型知识领域，以及不该用的三类。→ [[use-cases]]
 10. **基础设施**：纯 Markdown + git 是「共同演进」可审计的前提。→ [[plain-text-and-git]]
+11. **为什么要有目标**：没有目标就没有误差信号，也就没有留存。→ [[cybernetic-learning]]
+12. **输出回路**：只收藏不产出，笔记就是死物。→ [[commonplace-book-vs-llm-wiki]]
 
-历史纵深：→ [[vannevar-bush]]
-参照实现：→ [[second-brain-skill]]
+历史纵深：→ [[vannevar-bush]]、[[commonplace-book]]
+参照实现：→ [[second-brain-skill]]、[[eden]]
+
+### 一条贯穿的主线
+
+第 1-10 条来自 [[andrej-karpathy]] 的工程视角，第 11-12 条来自 [[dan-koe]] 的创作者视角。**两者独立收敛到同一架构**，但目的相反 —— 一个为了理解与检索，一个为了创作与输出。
+
+这个交汇点本身是本库目前最有价值的内容：见 [[commonplace-book-vs-llm-wiki]]。
 
 ## 页面地图
 
@@ -60,17 +69,30 @@ status: active
 
 ## 当前状态
 
-- 素材：2 份 —— [[2026-09-18-karpathy-llm-wiki]]（含 r1/r2 两版抓取）、[[2026-09-18-second-brain-skill-readme]]
-- 页面：20 个（内容页 16 + 系统页 4）
-- 结构：Karpathy Gist 是主干，second-brain-skill 是第一个参照实现
+- 素材：3 份 —— [[2026-09-18-karpathy-llm-wiki]]（含 r1/r2 两版抓取）、[[2026-09-18-second-brain-skill-readme]]、[[2026-09-18-dankoe-remember-what-you-read]]
+- 页面：27 个（内容页 23 + 系统页 4）
+- 结构：**两条独立线索的交汇** —— Karpathy 的工程视角（主干）+ Dan Koe 的创作者视角（补上目标机制与输出回路），中间是 second-brain-skill 作为参照实现
+
+## 本库自己的缺口（按 [[cybernetic-learning]] 的判据）
+
+[[dan-koe]] 的论证给本库提出一个自查问题：**这个知识库服务于什么目标？**
+
+目前 `wiki/conventions.md` 记录了「怎么用」，但没有记录「为什么建」。按 [[cybernetic-learning]] 的推论，**没有持续目标的知识库会因「不知道收了干什么」而停滞**。
+
+同时，本库只有「查询→归档」这条**内向回路**，缺少指向库外产出的**外向回路**（见 [[commonplace-book-vs-llm-wiki]]）。
+
+这两条是当前最需要补的结构性缺口，已列入下方建议。
 
 ## 下一步建议
 
+- [ ] **给本库定一个明确的目标**，写进 `wiki/conventions.md` 或本页 —— 否则按 [[cybernetic-learning]] 的推论难以持续
+- [ ] **设计一条输出回路**：知识库的产出应该流向哪里？（文章 / 报告 / 决策？）
 - [ ] 收录 Vannevar Bush《As We May Think》原文，核验 [[vannevar-bush]] 中待验证的描述
 - [ ] 收录 qmd 的仓库文档，把 [[qmd]] 从 `medium` 置信度提升到 `high`
 - [ ] 找一份独立的 RAG 评测资料，为 [[rag-vs-wiki]] 补充非作者来源的证据
+- [ ] 独立验证 [[eden]] 的能力描述（目前全为厂商自述，`confidence: low`）
+- [ ] 核校 [[2026-09-18-dankoe-remember-what-you-read]] 的正文（经 AI 抓取工具提取，有转写偏差风险）
 - [ ] 比对 second-brain-skill 的 `skills/wiki/README.md` 与本仓库 `AGENTS.md` 的规范差异
-- [ ] 核实 second-brain-skill 的 LICENSE 是否真的缺失（README 声明 MIT，API 字段为空）
 
 ## 使用约定
 

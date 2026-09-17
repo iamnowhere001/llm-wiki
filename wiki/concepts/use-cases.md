@@ -5,8 +5,8 @@ slug: use-cases
 tags: [场景, 选型]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-karpathy-llm-wiki]
-related: [llm-wiki-pattern, rag-vs-wiki, compounding-knowledge]
+sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]
+related: [llm-wiki-pattern, rag-vs-wiki, compounding-knowledge, commonplace-book-vs-llm-wiki]
 confidence: high
 status: active
 ---
@@ -31,6 +31,18 @@ status: active
 | **读一本书** | 逐章笔记 | 实体（角色、地点）+ 概念（主题、情节线） | 读完得到一本配套 wiki，类比 Tolkien Gateway 这类社区共建的粉丝 wiki |
 | **商业 / 团队** | Slack 讨论、会议记录、项目文档、客户通话 | 实体 + 分析 | LLM 维护的内部 wiki，可保留人类审核环节 |
 | **其他深度爱好** | 视领域而定 | 视领域而定 | 竞品分析、尽职调查、旅行规划、课程笔记 |
+
+### 补充场景：创作者 / 写作者（来自另一份素材）
+
+[[dan-koe]] 从写作角度独立提出了同一套结构，并给出了这个场景的**第一手材料**（见 [[2026-09-18-dankoe-remember-what-you-read]]）：
+
+| 场景 | 素材来源 | 主要产出页面 | 关键特征 |
+|---|---|---|---|
+| **创作者 / 写作者** | 文章、视频转录、社交帖子、书籍高亮 | 概念 + 分析 | 知识库是**创作燃料库**，成功标准是「写出更好的作品」而非「回答得更好」 |
+
+这个场景值得单列，因为它和上面五类有一个本质差别：**其余场景的终点是「理解」，这个场景的终点是「产出」。** 详见 [[commonplace-book-vs-llm-wiki]]。
+
+它也补上了本文开头「五类场景」的一个盲点：Karpathy 列的场景都是**知识消费型**（读论文、读书、看会议记录），没有一个是**知识生产型**。创作者场景的加入，让这张表覆盖了完整的输入—输出闭环。
 
 ## 机制 / 原理
 
@@ -69,3 +81,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-karpathy-llm-wiki]]
+- [[2026-09-18-dankoe-remember-what-you-read]]（创作者场景）
