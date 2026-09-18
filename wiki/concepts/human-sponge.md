@@ -5,8 +5,8 @@ slug: human-sponge
 tags: [学习, 吸收, 反馈, 建议, 品格, 信息筛选]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-hidden-potential-notes]
-related: [character-skills, imperfectionism, deliberate-play, cybernetic-learning, rumination, 2026-09-18-hidden-potential-notes]
+sources: [2026-09-18-hidden-potential-notes, 2026-09-18-how-we-learn-notes]
+related: [character-skills, imperfectionism, deliberate-play, cybernetic-learning, prediction-error, four-pillars-of-learning, rumination, 2026-09-18-hidden-potential-notes, 2026-09-18-how-we-learn-notes]
 confidence: medium
 status: active
 ---
@@ -86,3 +86,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-hidden-potential-notes]]（中文笔记；**已对照英文原书 PDF p63–64、p59 核实**）
+- [[2026-09-18-how-we-learn-notes]]（2026-09-18 新增；仅用于「与迪昂错误反馈的表面冲突」一节，该素材 `confidence: low`）
