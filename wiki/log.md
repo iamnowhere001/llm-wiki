@@ -100,3 +100,5 @@ status: active
 
 ## [2026-09-18] ingest | 收录《超高效》(Storoni) 读书笔记 —— peak-performance 第二份素材，含弱引注；四类证据问题成型
 
+## [2026-09-18] edit | 建 concepts/flow-terminology（心流的术语边界）；「弱引注」写入 AGENTS.md 4.1；更正本库三处自身错误（心流无定义说 / 伪引注位置与数量 / C 段未点名契克森米哈赖）；修复 lint 与 build 链接计数口径不一致
+

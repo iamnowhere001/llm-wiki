@@ -6,7 +6,7 @@ tags: [情绪调节, 认知, 方法, 心理学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes]
-related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance]
+related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology]
 confidence: high
 status: active
 ---
