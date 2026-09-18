@@ -90,3 +90,7 @@ status: active
 
 ## [2026-09-18] lint | 新增项目生命周期检查：shipped 但缺口表未清空报错 / 缺口表已清空但项目未收尾给提示。0 项机器可查问题
 
+## [2026-09-18] query | 认知路径与身体路径如何串联 → 归档 analyses/cognitive-vs-somatic-paths（本库立论，confidence: low）
+
+## [2026-09-18] edit | 回填 6 页：internal-friction / narrative-self-vs-bodily-self / cognitive-decoupling / emotion-regulation-toolkit / emotion-as-coupling / 项目页
+
