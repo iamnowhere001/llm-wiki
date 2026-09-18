@@ -6,7 +6,7 @@ tags: [情绪, 方法, 清单, 工具箱]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
-related: [cognitive-reappraisal, james-gross, emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness]
+related: [cognitive-reappraisal, james-gross, emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness, flow-terminology]
 confidence: low
 status: active
 ---

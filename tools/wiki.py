@@ -300,7 +300,13 @@ def cmd_lint(root):
     print("=" * 62)
     print("LLM Wiki 体检报告  |  根目录: %s" % root)
     print("=" * 62)
-    print("页面总数: %d   链接总数: %d" % (len(pages), sum(len(set(p.links)) for p in pages)))
+    # 与 build / stats 用同一口径：只计「目标存在且非自指」的链接。
+    # 旧口径 sum(len(set(p.links))) 会把自指链接与断链也算进去，
+    # 于是 lint 与 build 报出的「链接总数」长期不一致（差 17，即 16 个 source 页的自指 + 1）。
+    valid_links = sum(len({t for t in p.links if t in by_slug and t != p.slug}) for p in pages)
+    self_links = sum(1 for p in pages if p.slug in set(p.links))
+    print("页面总数: %d   链接总数: %d（自指链接 %d 条已剔除）"
+          % (len(pages), valid_links, self_links))
 
     section("重复 slug", ["%s  →  %s 与 %s" % (s, a, b) for s, a, b in dupes])
     section("断链（指向不存在的页面）",
