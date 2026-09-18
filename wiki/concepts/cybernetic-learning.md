@@ -5,8 +5,8 @@ slug: cybernetic-learning
 tags: [学习方法, 控制论, 机制]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
-related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
+sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes]
+related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes]
 confidence: medium
 status: active
 ---
@@ -122,6 +122,38 @@ status: active
 > 强化学习或许更贴合「不依赖强目标、靠小奖励持续推进」这一类现象（例如把任务拆成小挑战）。
 > **这是本库判断，无外部证据支撑。**
 
+## 第四例：迪昂的「预测误差」—— 第一次落到神经层（2026-09-18 新增）
+
+[[2026-09-18-how-we-learn-notes]]（迪昂《我们如何学习》）给出的不是第四个同构叙事，而是**同一个位置的另一种层级的表述**：
+
+> **学习是由预测误差（Prediction Error, PE）驱动的。** PE 是指大脑的内部预测与外部现实之间的差异。（素材行 603）
+> 这个误差信号通过**多巴胺能神经元**传递，告诉大脑：「如果你想在未来预测正确，你必须改变现在的突触连接！」（行 483）
+
+**它与本页前三条的根本区别有两点：**
+
+1. **层级不同。** Dan Koe 讲的是**行为层**（目标 → 误差信号 → 过滤器），迪昂讲的是**神经层**（预测 → 误差 → 突触权重）。
+2. **作者身份不同。** 前三例（Dan Koe / Kotler / Storoni）**全部是通俗转述者**；
+   迪昂是**认知神经科学的一手研究者**。这是本页第一次触及学术侧的表述。
+
+| | Dan Koe | Kotler | Storoni | **迪昂** |
+|---|---|---|---|---|
+| 层级 | 行为 | 动机 | 算法（强化学习） | **神经** |
+| 作者性质 | 创作者 | 方法论作者 | 医学博士 / 通俗作者 | **一手研究者** |
+| 「误差」指什么 | 目标与现状之差 | （未使用该词） | 奖励与行动的关系 | **预测与现实之差** |
+| 落点 | 过滤器与相关性 | 驱动力序列 | 内在回报 | **突触可塑性与巩固** |
+
+> [!warning] 这一例**没有**解决问题，它**扩大了**问题
+> 本页此前的开放问题是「控制论与强化学习，哪一个才是这条链条的正确容器」。
+> 迪昂的加入使候选变成**三个**：控制论（目标差）／强化学习（价值更新）／预测编码（预测误差）。
+> **三者都涉及反馈、都通向同一个日常结论，但回答的是不同的问题。**
+> **本库目前没有任何材料证明它们是同一条链** —— 而且现在比之前更不像了：
+> 控制论需要一个**显式的目标**，预测编码不需要（大脑无时无刻不在预测）。
+> 详见 [[prediction-error]] 的「三层链条问题」。
+
+**这条对本页的直接影响**：本页的 `confidence` **不上调**。
+多了一个层级的表述，不等于多了证据 —— 因为**它同样没有给出实验出处**（见该素材的核查表）。
+但它让本页知道：**「误差信号」这个词在学术侧是有人认真用的**，只是用的不是同一个意思。
+
 ## 边界与反例
 
 - **强目标场景成立，弱目标场景不成立。** 作者自己的推论是：没有持续目标就不该硬上。这与他另一段论述（知识库需要产出回路）互为支撑。
@@ -159,3 +191,5 @@ status: active
 
 - [[2026-09-18-dankoe-remember-what-you-read]]
 - [[2026-09-18-art-of-impossible-notes]]（独立同构的第二例；`confidence: low`，含 AI 生成段与伪引注）
+- [[2026-09-18-hyperefficient-notes]]（第三例，学理谱系不同：强化学习）
+- [[2026-09-18-how-we-learn-notes]]（第四例，**第一次落到神经层**；`confidence: low`，含 AI 对话加工段）

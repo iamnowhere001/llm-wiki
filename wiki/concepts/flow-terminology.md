@@ -5,17 +5,18 @@ slug: flow-terminology
 tags: [心流, 术语边界, 巅峰表现, 概念辨析, 低置信度]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
-related: [peak-performance, ordinary-people-peak-performance, emotion-regulation-toolkit, cognitive-reappraisal, stoic-control-dichotomy, cybernetic-learning, mental-strength]
+sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes]
+related: [peak-performance, ordinary-people-peak-performance, emotion-regulation-toolkit, cognitive-reappraisal, stoic-control-dichotomy, cybernetic-learning, mental-strength, four-pillars-of-learning, 2026-09-18-how-we-learn-notes]
 confidence: low
 status: active
 ---
 
 # 心流的术语边界
 
-> 「心流」在本库有三份素材，但**它们对这个词的态度完全不同**：
+> 「心流」在本库有**四份**素材，但**它们对这个词的态度完全不同**：
 > 一份**有定义、且声称普适**（Kotler：六个核心心理特征）；一份**没有定义、只有一句定位**（Storoni：≈「二档核心区」），
-> **而且给它划了边界**（创造性工作不在那里）；**第三份（Grant《隐藏的潜能》）整本书零次使用这个词**（2026-09-18 全文检索）。
+> **而且给它划了边界**（创造性工作不在那里）；**第三份（Grant《隐藏的潜能》）整本书零次使用这个词**（2026-09-18 全文检索）；
+> **第四份（迪昂《我们如何学习》）只在一处举例中提到它，且是在「奖励函数」的语境下**（2026-09-18 新增）。
 > **本页不判断谁对**，只记录这个边界目前确定到哪里、不确定在哪里。
 >
 > 第三份的存在把问题抬高了一层：**不只是「心流是什么」，还有「这个领域是否非用这个词不可」。**
@@ -224,6 +225,9 @@ Storoni 那份素材里「心流」出现的次数远少于 Kotler 那份，且*
 - [ ] **Storoni 侧的内部张力，是口语夸张还是框架未对齐？** —— 本库无从判断，需要原书
 - [ ] **「控制的矛盾」与斯多葛控制二分法的关系需重新检查** —— 见「边界与反例」
 - [ ] **（2026-09-18 新增，第二层问题）「这个领域是否需要『心流』这个词」** —— Grant 侧整本不用它却讲完了同一件事。**库内无材料回答这一层**，它需要的不是契克森米哈赖原著，而是**领域层面的元分析或概念批判**
+- [ ] **（2026-09-18 新增）迪昂侧的那一处举例要不要跟进？** —— 它把心流挂在「奖励函数」下，
+  与 [[cybernetic-learning]] 的第三个候选容器同名。**若该链条问题解决，这一处可能变成关键线索；若解决不了，它就只是一次无关的举例。**
+  **本库暂时不做任何推断。**
 
 ## 相关页面
 
@@ -243,3 +247,5 @@ Storoni 那份素材里「心流」出现的次数远少于 Kotler 那份，且*
 
 - [[2026-09-18-art-of-impossible-notes]]（Kotler 侧；`confidence: low` —— 六段混层，含 AI 生成段与伪引注）
 - [[2026-09-18-hyperefficient-notes]]（Storoni 侧；`confidence: low` —— 四段混层，含弱引注）
+- [[2026-09-18-hidden-potential-notes]]（Grant 侧：零次使用；`confidence: low` —— 已对照英文原书全文检索）
+- [[2026-09-18-how-we-learn-notes]]（迪昂侧：一次举例；`confidence: low` —— 含 AI 对话加工段，且该处位于 AI 生成段内）
