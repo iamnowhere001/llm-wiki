@@ -114,3 +114,5 @@ status: active
 
 ## [2026-09-18] edit | 拆出 8 个概念页：imperfectionism / human-sponge / deliberate-play / scaffolding / opportunity-systems / looping / brainwriting / trajectory-evaluation（7 页已核实到原书页码，confidence 由 low 升 medium）
 
+## [2026-09-18] ingest | 收录《思考如何超越思考》读书笔记（安妮·墨菲·保罗，The Extended Mind）—— raw/2026-09-18-extended-mind-notes.md（495 行 / 11,709 字符，本库首份零内嵌资源的混层素材）。四段混层（AI 书籍解读 / AI 文献综述 / AI 读书笔记 / 书籍目录），可确认为原书正文的不足 10%。外部核查发现本库首例「过期引注」：权力姿势激素效应（N=42 原始研究，2015 年 N=200 复现失败，2016 年第一作者公开撤回）与面部反馈重复性争议（Wagenmakers 2016 十七实验室重复失败 / Coles 2022 n=3,878 效应极小）被当作既定事实陈述，且与行 284 的争议说明互不引用。另核实武汉大学人民医院 2025 研究（痴呆-36%/抑郁-34%/帕金森-61%）与 Nature 2023 SCAN 网络为真，属弱引注。派生 6 概念页 + 1 实体页；回填 why-pkm-in-ai-era（新增理由 6：外部表征是思考本身的一部分）、cognitive-vs-somatic-paths、peak-performance 与 emotion-awareness 缺口表
+
