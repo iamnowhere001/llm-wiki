@@ -5,9 +5,9 @@ slug: spaced-repetition
 tags: [学习, 记忆, 方法, 神经科学]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-how-we-learn-notes]
-related: [four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, prediction-error, peak-performance, 2026-09-18-how-we-learn-notes]
-confidence: low
+sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]
+related: [four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, prediction-error, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes]
+confidence: medium
 status: active
 ---
 
@@ -37,12 +37,23 @@ status: active
 > 这与素材行 103 把一句类似表述归给罗迪格（Henry Roediger）是**同一类问题**：
 > 术语与理论都有明确作者，但素材的转述把它们变成了无主的话。
 > 详见 [[2026-09-18-how-we-learn-notes]] 的核查表第 1、7 条。
+>
+> **2026-09-18 补充**：本库第一份一手文献 [[2026-09-18-dunlosky-learning-techniques]] 全文**未使用**
+> 「desirable difficulty」一词（全文件检索零命中）。这说明该术语**不来自这条文献脉络** ——
+> 它既没有推翻也没有佐证「出自 Bjork」这个判断（那个判断本就是本库的既有知识，标「未验证」）。
 
 ## 边界与反例
 
-**① 「间隔」的有效区间未给出。**
-素材只给了「24 小时有明显改善」和「递增间隔」两个点，**没有回答**：
-间隔多长算太长？在什么材料上（事实 vs 概念 vs 技能）间隔效应最强？
+**① 「间隔」的有效区间未给出 —— 2026-09-18 已由一手文献给出原则性回答。**
+原素材只给了「24 小时有明显改善」和「递增间隔」两个点。
+[[2026-09-18-dunlosky-learning-techniques]] 行 2948–2951 给出的答案是**原则性的，不是数值性的**：
+
+> *"although the optimal lag between sessions may depend on retention interval"*
+> —— **最优间隔取决于你希望保持多久**，不是某个固定阈值。
+
+这直接回答了「间隔多长算太长」这个方向的提问方式本身有问题：**正确的问题不是「多长最好」，而是「我要求记多久」。**
+**仍未回答**：在什么材料上（事实 vs 概念 vs 技能）间隔效应最强。
+另外，原素材那个具体的「24 小时」阈值，**一手文献中没有对应表述** —— 仍标「（未验证）」。
 
 **② 数字全部无出处。**
 「24 小时」「20 倍速」等精确数字，素材**一个都没给出处**（见核查表）。
@@ -62,9 +73,11 @@ status: active
 ## 开放问题
 
 - [ ] 间隔效应的一手文献（如 Cepeda et al. 的元分析）**本库未收录**。
-- [ ] 「24 小时」这个具体阈值是否有研究支撑？**未验证。**
+  - **2026-09-18 进展**：已由 [[2026-09-18-dunlosky-learning-techniques]] 定位到转引 —— **Cepeda et al., 2009** 与 **Cepeda, Vul, Rohrer, Wixted, & Pashler, 2008**（行 2949–2951）。**但本库仍只有转引，原文未收录。**
+- [ ] 「24 小时」这个具体阈值是否有研究支撑？**未验证。** —— 2026-09-18 补充：一手文献给的是「间隔取决于期望保持时长」这一**原则**，未给任何固定阈值。
 - [ ] 与 Anki / 闪卡类工具的实践文献**本库无**（本项目不评产品，但工具背后的算法原理属知识范围）。
 
 ## 来源
 
 - [[2026-09-18-how-we-learn-notes]]（行 125–144）
+- [[2026-09-18-dunlosky-learning-techniques]]（2026-09-18 收录；行 3798 间隔练习评为**高效用**；行 2948–2951 最优间隔取决于保持时长；行 2949–2951 Cepeda 元分析转引）
