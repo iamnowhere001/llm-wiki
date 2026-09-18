@@ -609,10 +609,11 @@ def cmd_index(root):
     total = sum(len(v) for v in groups.values())
     n_proj = len(groups.get("project", []))
     n_active = len([p for p in groups.get("project", []) if p.stage in ("planning", "active")])
-    out.append("页面总数 **%d** ｜ 项目 **%d**（进行中 %d） ｜ 素材 **%d** 份 ｜ 最后更新 %s"
+    out.append("页面总数 **%d** ｜ 项目 **%d**（进行中 %d） ｜ raw 素材 **%d** 份 / 摘要页 **%d** 份 ｜ 最后更新 %s"
                % (total, n_proj, n_active,
                   len([f for f in os.listdir(os.path.join(root, "raw"))
                        if f.endswith(".md")]) if os.path.isdir(os.path.join(root, "raw")) else 0,
+                  len(groups.get("source", [])),
                   date.today().isoformat()))
     out.append("")
 
