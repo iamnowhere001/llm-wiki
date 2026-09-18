@@ -120,3 +120,5 @@ status: active
 
 ## [2026-09-18] query | 我们如何学习、如何提高学习效果 → 归档 analyses/how-we-learn-and-how-to-improve（第一次综合「学习力」；外部核查 Dunlosky et al. 2013 PSPI 14(1):4-58 十种学习技术效用分级，但该文献本库未收录，故不入 sources —— 本库第一例『外部证据强于库内证据』的页面）。识别出新缺口：迁移（transfer）在库内为空白；交错练习无对应页。peak-performance 缺口表新增一条
 
+## [2026-09-18] ingest | 收录 Dunlosky et al. 2013《Improving Students' Learning With Effective Learning Techniques》—— raw/2026-09-18-dunlosky-learning-techniques.md（5,910 行 / 324,348 字符，PDF 原件 55 页入 assets）。本库第一份一手学术文献，材料类型的第一次更换。校准结果：提取练习与间隔练习『高效用』获一手背书；『概念图不如重读』仍未获支撑（该综述也未收录此比较）；Cepeda 元分析已定位（转引）。建 sources 页 + 实体页 john-dunlosky；回填 retrieval-practice（low→medium）与 spaced-repetition（low→medium）；how-we-learn-and-how-to-improve 撤销『未收录』标注；peak-performance 缺口表该条标记已解
+

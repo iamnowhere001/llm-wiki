@@ -5,9 +5,9 @@ slug: retrieval-practice
 tags: [学习, 记忆, 方法, 机制]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-how-we-learn-notes]
-related: [four-pillars-of-learning, spaced-repetition, prediction-error, cybernetic-learning, dan-koe, deliberate-play, peak-performance, 2026-09-18-how-we-learn-notes]
-confidence: low
+sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]
+related: [four-pillars-of-learning, spaced-repetition, prediction-error, cybernetic-learning, dan-koe, deliberate-play, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes]
+confidence: medium
 status: active
 ---
 
@@ -46,6 +46,27 @@ status: active
 > 把「提取练习 > 概念图」外推成了「概念图 < 重复阅读」，而后者是原研究**没有做的比较**。
 > **本库尚未决定是否把它立为第五类证据问题**，详见 [[2026-09-18-how-we-learn-notes]] 的核查表。
 
+### 2026-09-18 第二轮核查：本库第一份一手文献
+
+收录 [[2026-09-18-dunlosky-learning-techniques]]（Dunlosky et al. 2013, *PSPI* 14(1):4–58）之后，
+本页的核心主张**第一次拿到一手文献的校准**，结果是**一半证实、一半仍未获支撑**：
+
+| 主张 | 本轮结果 |
+|---|---|
+| 提取练习 > 概念图 | **证实** —— 该综述行 3311–3313 把 Karpicke & Blunt 2011 明列为「练习测试优于概念图」的证据之一；参考文献条目完整（行 5242–5244） |
+| 概念图 < 重复阅读 | **仍未获支撑** —— 该综述对「重复学习（restudy）」的比较对象是**练习测试**（行 3315–3317），**没有任何「概念图 vs 重复阅读」的比较** |
+
+> [!important] 这一轮把判断往前推了一格，但没有推到终点
+> 此前本库只能说「原论文**摘要**里查不到」。现在可以说：**一手综述也未收录这一比较**。
+> 这**不等于证明它错** —— 仍然是「未获支撑」，但支撑它的可能性明显变小了。
+> 本页 `confidence` 因此由 `low` 升至 `medium`（升的是**提取练习有效**这一半，不是概念图那一半）。
+
+**该综述同时给出了练习测试生效的三个条件**（行 3306–3309）—— 这是本页此前完全没有的操作细节：
+
+1. 必须真正涉及**提取**（而非只是再认）；
+2. 持续到**答对不止一次**，且跨练习会话重复；
+3. 练习之间的**间隔更长而非更短**。
+
 ## 边界与反例
 
 **① 提取练习 ≠ 做习题。**
@@ -70,6 +91,7 @@ status: active
 ## 开放问题
 
 - [ ] 概念图那条主张的**原文正文**未核 —— 摘要不含组间对比数据，需读论文正文或补充材料。
+  - **2026-09-18 进展**：一手综述 [[2026-09-18-dunlosky-learning-techniques]] 也未收录「概念图 vs 重复阅读」这一比较（行 3315–3317 只比较了练习测试与 restudy）。**仍未获支撑，但已排除一个可能的佐证来源。**
 - [ ] 「提取练习」在中译本里的准确措辞未核（本库无原书）。
 - [ ] 与「主动回忆」（active recall）是否为同一概念？**素材未做区分。**
 

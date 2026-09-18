@@ -5,8 +5,8 @@ slug: how-we-learn-and-how-to-improve
 tags: [学习, 记忆, 神经科学, 机制, 方法, 查询归档]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-how-we-learn-notes, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-extended-mind-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
-related: [four-pillars-of-learning, prediction-error, retrieval-practice, spaced-repetition, consolidation-and-sleep, innate-knowledge, cybernetic-learning, human-sponge, scaffolding, deliberate-play, enactment-effect, character-skills, stanislas-dehaene, peak-performance, llm-wiki-research, ordinary-people-peak-performance, 2026-09-18-how-we-learn-notes]
+sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-extended-mind-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
+related: [four-pillars-of-learning, prediction-error, retrieval-practice, spaced-repetition, consolidation-and-sleep, innate-knowledge, cybernetic-learning, human-sponge, scaffolding, deliberate-play, enactment-effect, character-skills, stanislas-dehaene, john-dunlosky, peak-performance, llm-wiki-research, ordinary-people-peak-performance, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes]
 confidence: medium
 status: active
 ---
@@ -18,7 +18,7 @@ status: active
 > 操作上只有两件事拿满一手证据：**提取练习**与**间隔练习**；而学生最常用的重读与划线，恰恰是评级最低的两项。
 
 - **触发问题**：北洛 2026-09-18 提问「我们是如何学习的，以及如何提高学习效果」
-- **结论**：见下。机制解释来自库内素材（`confidence: low` 居多），**操作分级来自一份外部一手元分析（Dunlosky et al. 2013），该文献本库未收录** —— 见「外部核查」一节
+- **结论**：见下。机制解释来自库内素材（`confidence: low` 居多）；**操作分级来自一手综述 Dunlosky et al. 2013（已于 2026-09-18 收录，见 [[2026-09-18-dunlosky-learning-techniques]]）** —— 效用分级表见「外部核查」一节
 - **性质**：查询归档 + 跨页综合。**本页不提出新机制，只做三件事**：把库内分散的学习页拼成一条链、用外部一手文献校准它们的分量、把拼不上的地方显式列出
 
 ---
@@ -134,15 +134,16 @@ status: active
 
 ## 外部核查：Dunlosky 等人的十种学习技术分级（**本库未收录**）
 
-> [!warning] 这是本页证据最强的一部分，也正是它没有进 `sources` 的那一部分
-> 以下内容来自本库**外部**的一手文献，2026-09-18 下载全文并逐条核对：
+> [!note] 收录状态（2026-09-18 更新）
+> 本页初稿完成时，这份文献**尚未收录** —— 本库因此第一次出现「答案的外部证据强于库内证据」，
+> 当时把它单列一节并显式标注「未收录」，而不是悄悄用掉。**北洛当日裁定收录。**
+> 现已走完 ingest：全文 + PDF 原件入 `raw/`（见 [[2026-09-18-dunlosky-learning-techniques]]），
+> 本页 `sources` 已包含它。**下面保留这段历史，是因为它记录了一个真实的中间状态** ——
+> 一个知识库在「知道答案」和「把证据收进来」之间，是可以存在一段时间的空洞的。
+>
 > **Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013).**
 > *Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology.*
 > **Psychological Science in the Public Interest, 14(1), 4–58.** DOI 10.1177/1529100612453266
->
-> **它没有走 ingest 流程，因此不在 `raw/`、不在 `sources`、不参与 lint。**
-> 本页是**本库第一例「答案的外部证据强于库内证据」的页面** —— 这个状态本身应当被看见，而不是被藏起来。
-> **是否收录，待北洛裁定。**
 
 | 技术 | 评级 | 原文给出的关键限定 |
 |---|---|---|
@@ -212,8 +213,9 @@ status: active
 
 | 结论 | 置信度 | 依据 |
 |---|---|---|
-| 提取练习与间隔练习效用最高 | **中高** | 一手元分析评级「高」，且库内 [[retrieval-practice]] 独立给出同一结论（其中概念图实验半可核：Karpicke & Blunt 2011, *Science* 331:772） |
-| 重读、划线效用低 | **中高** | 一手元分析 + 库内素材的「伪学习清单」独立一致 |
+| 提取练习与间隔练习效用最高 | **高** | 一手综述评级「高」（**已收录**，见 [[2026-09-18-dunlosky-learning-techniques]] 行 3364、3798），且库内 [[retrieval-practice]] 独立给出同一结论。该综述还给出生效三条件（行 3306–3309） |
+| 重读、划线效用低 | **高** | 一手综述评级「低」（行 2697、1831）+ 库内素材的「伪学习清单」独立一致；且该综述明说**选它们正是因为最常用**（行 2426：65% 大学生报告用重读） |
+| 「概念图甚至不如多读几遍」 | **未获支撑** | 原论文摘要查不到；**一手综述也未收录这一比较**（行 3315–3317 只比较了练习测试与 restudy）。本库仍不断言它错 |
 | 四道闸门是学习的必要条件 | **低** | 单一素材、AI 加工、无原书；且有隐性学习这个未处理的反例 |
 | 学习由预测误差驱动 | **低** | 一手研究者持有此说，但机制链条在素材内无出处 |
 | 目标决定什么被编码 | **中** | 四例同构（Dan Koe / Kotler / Storoni / 迪昂），**但四例都不是实验证据** |
@@ -226,7 +228,12 @@ status: active
 
 ## 遗留问题 / 缺口
 
-- [ ] **【待裁定】是否把 Dunlosky 2013 收进 `raw/`？** 它是本库目前唯一一份学习科学的一手综述，且正是 [[peak-performance]] 缺口表里「类型不同的材料」要找的东西。**不收，则本页最强的证据永远停在 `sources` 之外。**
+- [x] ~~**是否把 Dunlosky 2013 收进 `raw/`？**~~ —— **2026-09-18 北洛裁定收录，已完成**（`raw/2026-09-18-dunlosky-learning-techniques.md`，5,910 行 + PDF 原件 55 页）。
+  **它是本库第一份一手学术文献**，也是 [[peak-performance]] 缺口表里「类型不同的材料」的第一个实物 ——
+  那句「换了五个作者、材料类型一次都没换」的判断**到此被打破**。
+  收录后本页的 `confidence` 维持 `medium`，但性质变了：**最强的证据现在在 `sources` 之内。**
+- [ ] **Cepeda et al. 2009 / 2008 原文未收录** —— 目前只有转引（Dunlosky 素材行 2949–2951），间隔效应的一手元分析仍缺
+- [ ] **本页整页依赖的迪昂簇仍是 `low`（无原书 PDF）** —— 收原书或一份独立书评，可整套上调
 - [ ] **迁移（transfer）在库内是空白。** 需要一份专门处理迁移的材料（如 *transfer of learning* 的综述或批评）。
 - [ ] **交错练习（interleaving）无对应页。** 元分析给了「中」评级且明确说研究刚起步 —— 值得单独立页还是并入 [[retrieval-practice]]，待定。
 - [ ] 四道闸门的**权重与优先级**：库内无材料。资源有限时先保哪个？
@@ -248,12 +255,13 @@ status: active
 ## 来源
 
 **库内**（构成 `sources`）：
+- [[2026-09-18-dunlosky-learning-techniques]]（**本页证据最强的一份；一手综述**。十种技术的效用分级、生效条件、最优间隔原则。行号见该素材页）
 - [[2026-09-18-how-we-learn-notes]]（迪昂《我们如何学习》笔记，含 AI 加工；四大支柱、预测误差、间隔、巩固、自检清单）
 - [[2026-09-18-hidden-potential-notes]]（Grant《隐藏的潜能》；鹰架、刻意游戏、海绵、品格技能；**已对照英文原书核实**）
 - [[2026-09-18-dankoe-remember-what-you-read]]（Dan Koe；目标 → 误差信号 → 过滤器）
 - [[2026-09-18-extended-mind-notes]]（Paul《思考如何超越思考》；操作效应、情境认知）
 - [[2026-09-18-art-of-impossible-notes]]、[[2026-09-18-hyperefficient-notes]]（动机侧的同构链条；**均含无出处数字**）
 
-**库外**（未收录，核查用）：
-- Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). *Improving Students' Learning With Effective Learning Techniques.* **Psychological Science in the Public Interest, 14(1), 4–58.** DOI 10.1177/1529100612453266 —— 2026-09-18 下载全文逐条核对
-- Karpicke, J. D., & Blunt, J. R. (2011). *Science, 331*(6018), 772–775 —— 经 [[retrieval-practice]] 转引，本页未另行核查
+**库外**（未收录，仅作线索）：
+- Karpicke, J. D., & Blunt, J. R. (2011). *Science, 331*(6018), 772–775 —— 经 [[retrieval-practice]] 与 [[2026-09-18-dunlosky-learning-techniques]] 行 5242–5244 双重转引，**本页未直接核查原文**
+- Cepeda et al., 2009；Cepeda, Vul, Rohrer, Wixted, & Pashler, 2008 —— 间隔效应元分析，**仅转引**（Dunlosky 素材行 2949–2951）
