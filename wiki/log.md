@@ -124,3 +124,5 @@ status: active
 
 ## [2026-09-18] ingest | 收录万维钢《现代思维工具》「学习与教育」板块九讲（2026-05）—— raw/2026-09-18-{cognitive-load-theory,icap-framework,deliberate-practice-talent,mental-representations,synthesis-research,tacit-knowledge,desirable-difficulty,autonomy-support,transfer-bridging}.md。本库第一次整系列收录；首次以 bot 身份抓取
 
+## [2026-09-18] edit | 万维钢九讲派生：10 概念页 + 7 实体页 + 9 sources 页（含孤儿素材 cognitive-load-diagrams 补建 sources 页）；回填 peak-performance（缺口表 +4 条、知识层新增学习力簇）与 llm-wiki-research（边界层/方法层 + 缺口表 +2 条）；lint 0 项问题
+
