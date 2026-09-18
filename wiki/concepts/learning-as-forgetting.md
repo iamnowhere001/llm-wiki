@@ -5,15 +5,19 @@ slug: learning-as-forgetting
 tags: [学习, 遗忘, 压缩, 认知, 迁移]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-learning-is-forgetting]
-related: [information-bottleneck, compression-as-intelligence, schema-psychology, spaced-repetition, retrieval-practice, transfer-of-learning, consolidation-and-sleep, mental-models]
-confidence: low
+sources: [2026-09-18-learning-is-forgetting, 2026-09-18-bjork-forgetting-friend-of-learning]
+related: [information-bottleneck, compression-as-intelligence, schema-psychology, spaced-repetition, retrieval-practice, transfer-of-learning, consolidation-and-sleep, mental-models, robert-bjork, desirable-difficulty, 2026-09-18-bjork-forgetting-friend-of-learning]
+confidence: medium
 status: active
 ---
 
 # 学习即遗忘
 
 > **真正的学习不是把信息存下来，而是有选择地遗忘细节、提取出可迁移的深层结构。** 带走的信息变少了，但剩下的能应对无穷的新情况。
+>
+> **2026-09-18 更新：本命题在人类侧已拿到一手文献。** [[2026-09-18-bjork-forgetting-friend-of-learning]]
+> 的标题就是它 ——《Forgetting as a Friend of Learning》，且给出了「遗忘促进抽象」的实验与机制。
+> 本页 `confidence` 由 `low` 上调为 `medium`。**但 AI 侧与人类侧的机制不同，见下文「两条出处，两种机制」。**
 
 ## 要点
 
@@ -31,8 +35,30 @@ status: active
 - 也存在归给怀特海、斯金纳等多个版本；
 - 素材**未给著作名与年份**。
 
-**本库不裁定归属**，只在引用时标（未验证）。**这一点很重要**：这句话是本素材「学习即遗忘」命题在人类侧的**唯一出处**，
-而它的归属本身就不确定 —— 也就是说，**本命题在人类侧的证据强度，比它在 AI 侧弱一个量级**。
+**本库不裁定归属**，只在引用时标（未验证）。
+
+### 两条出处，两种机制（2026-09-18 补）
+
+上面那句格言曾经是本命题在人类侧的**唯一**出处 —— 归属存疑，因此本页原先判定
+「本命题在人类侧的证据强度，比它在 AI 侧弱一个量级」。**2026-09-18 这个判断被推翻了：**
+本库取回了 [[2026-09-18-bjork-forgetting-friend-of-learning]]（Robert A. Bjork, 2014），
+标题即本命题，且给出了实验依据。**现在人类侧有了一手文献，两条出处的强度对等。**
+
+**但两边说的不是同一个机制，本库明确区分：**
+
+| | Bjork 2014（人类侧） | 信息瓶颈 / Conklin et al. 2026（AI 侧） |
+|---|---|---|
+| 发生层 | **编码层** —— 遗忘使后续编码偏向要旨 | **表征层** —— 训练中丢弃与预测目标无关的互信息 |
+| 遗忘的对象 | 具体样例的**非诊断性细节** | 对预测下一个词**无用**的输入信息 |
+| 机制 | **抽象化**（abstraction） | **压缩**（compression） |
+| 验收 | 对**新样例的分类**表现 | 对**下游 benchmark** 的表现 |
+
+**方向一致，机制不同。** 把它们说成同一件事是过度类比 —— 本库据此**没有**把本页上调到 `high`。
+
+**人类侧的关键实验（转引，原文未取回）**：Vlach et al. (2008) 提出
+「间隔诱发遗忘，而**遗忘促进抽象**」。机制是：集中呈现会让学习者编码同类连续样例共享的**细节**，
+而这些细节后来被证明**不是该类别的诊断特征**；有间隔时被重新激活的是**类别的要旨（gist）**，
+而更抽象的编码更持久、更能支持对新样例的分类。**「遗忘细节、留下可迁移结构」——这就是它的实验依据。**
 
 ## 机制 / 原理
 
@@ -62,9 +88,15 @@ status: active
 | 时机 | 在压缩**之前** —— 保住材料，让它有机会被压缩 | 在压缩**之后** —— 扔掉已被抽象取代的部分 |
 | 判据 | 这条信息以后还要不要用得上 | 这条信息是不是已经被一个更紧凑的模型取代了 |
 
-**失败条件（本库自陈）**：如果「哪些信息属于前者、哪些属于后者」无法事先判断，
-这个区分就只是事后合理化 —— 你永远可以说「忘掉的那些本来就该忘」。
-**本库承认这一点，并因此不给本页 `medium`。**
+**2026-09-18 更新：这条区分被一手文献接住了。**
+[[2026-09-18-bjork-forgetting-friend-of-learning]] 给出的公式是
+「**存储强度的增益，是当前提取强度的递减函数**」—— 遗忘得越多，下一次学习带来的持久增益越大。
+**也就是说：间隔重复与之对抗的那个「遗忘」，恰恰是它自己产生效果的条件，不是它要消灭的敌人。**
+本库此前这条自造区分**方向是对的，但缺机制；现在有了**。这也是本页上调到 `medium` 的直接理由。
+
+**残余的失败条件（仍然成立，故本页不升到 `high`）**：该公式解释了「为什么低提取强度是好事」，
+但**没有**给出「哪些信息属于该巩固的、哪些属于该放弃的」的**事先**判据。
+你仍然可以在事后说「忘掉的那些本来就该忘」。
 
 ## 边界与反例
 
@@ -89,10 +121,16 @@ status: active
 
 ## 开放问题
 
-- [ ] 那句格言的真实出处（怀特海《教育的目的》1929 原文，或爱因斯坦 1931《论教育》）
-- [ ] 「遗忘作为学习机制」在认知科学里有没有一手文献？本库目前**只有通俗转述**，且转述段全是 AI 生成的 `low` 段
+- [x] ~~「遗忘作为学习机制」在认知科学里有没有一手文献？~~ → **2026-09-18 已解**：
+  [[2026-09-18-bjork-forgetting-friend-of-learning]]（Bjork 2014）标题即本命题，含实验与机制。
+  **下一步不再是「有没有」，而是「把它引的实验取回来」** —— Kornell & Bjork 2008、Vlach et al. 2008 目前只是转引
+- [ ] 那句格言的真实出处（怀特海《教育的目的》1929 原文，或爱因斯坦 1931《论教育》）——
+  **优先级下降**：它已不再是本命题在人类侧的唯一出处
 - [ ] 与 [[spaced-repetition]] 的冲突需要一个能事先判断「该忘 / 不该忘」的判据，否则本页的区分不可证伪
+- [ ] **Bjork & Bjork (1992)《A New Theory of Disuse》原文取不回文本** —— 官网 PDF 是扫描件、无文本层（17 页）。
+  本页的「storage / retrieval strength」目前是**转引自 Bjork 2014 的复述**
 
 ## 来源
 
-- [[2026-09-18-learning-is-forgetting]]（通俗转述 + AI 延伸；**人类侧的唯一出处归属存疑，AI 侧有真实论文但细节未核实**）
+- [[2026-09-18-bjork-forgetting-friend-of-learning]]（**一手学术文献**，`confidence: high` —— 本命题在人类侧的支撑）
+- [[2026-09-18-learning-is-forgetting]]（通俗转述 + AI 延伸；**AI 侧有真实论文但实验细节未核实**，人类侧那段归属存疑）

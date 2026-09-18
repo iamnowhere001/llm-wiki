@@ -140,3 +140,5 @@ status: active
 
 ## [2026-09-18] ingest | 收录李继刚《学习即遗忘，理解即压缩，压缩即智能》（raw/2026-09-18-learning-is-forgetting.md，543行/13,964字符，三张PNG全部下载）；建 source 页 + 3 概念页（information-bottleneck / compression-as-intelligence / learning-as-forgetting）+ 5 实体页（naftali-tishby / marcus-hutter / thomas-griffiths / andrew-saxe / li-jigang）；外部核查 6 项：arXiv:2604.07569 真实存在（ICLR 2026，八位作者，李继刚不在其中）、Hutter Prize 1GB 属实（本库原怀疑其错，核查后是素材对）、怀特海引语归属存疑、两阶段叙事有反方（Saxe et al. 2018）、素材未提 Tishby 2015/2017 与 2018 争议三个环节
 
+## [2026-09-18] query | 问：『遗忘作为学习机制』在认知科学里有没有一手文献？答：有，且标题就是该命题 —— Robert A. Bjork《Forgetting as a Friend of Learning》(2014, Psychology Press, Jacoby Festschrift)。已从 UCLA Bjork Lab 官网取回 PDF 原件（23页/39,272字符，文本层完好）+ 建 source 页。核心：storage strength 与 retrieval strength 非对称（存储增益是提取强度的递减函数）；Vlach et al. 2008「间隔诱发遗忘，遗忘促进抽象」。learning-as-forgetting 由 low 上调 medium。卡点：Bjork & Bjork 1992 原文 PDF 是扫描件无文本层 —— 本库第一条因技术形态被卡的文献
+
