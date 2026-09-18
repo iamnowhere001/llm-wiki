@@ -138,3 +138,5 @@ status: active
 
 ## [2026-09-18] query | 「写不出来」有几种病因？→ 立论归档 analyses/why-writing-fails。「写作即思考」说写不出来＝没想清楚，但库内已有两个反例（德波顿：害羞；波兰尼：不在文本里）。本页把四种病因摆在一起，关键结论：波兰尼那条不是第四条并列项，而是**否定前三条的前提** —— 前三条说写是治疗，第四条说写是损害。故与 writing-as-thinking 的关系从「界线未划」升级为「有限范围内的真实冲突」（仅默会知识那一类）。已回填三处：writing-as-thinking（限定断言适用范围 + 冲突升级）、tacit-knowledge（关系节）、traecode-pkm-article（知识节，作为文章论点的边界护栏）。四条待验证假设已写成可证伪形式
 
+## [2026-09-18] ingest | 收录李继刚《学习即遗忘，理解即压缩，压缩即智能》（raw/2026-09-18-learning-is-forgetting.md，543行/13,964字符，三张PNG全部下载）；建 source 页 + 3 概念页（information-bottleneck / compression-as-intelligence / learning-as-forgetting）+ 5 实体页（naftali-tishby / marcus-hutter / thomas-griffiths / andrew-saxe / li-jigang）；外部核查 6 项：arXiv:2604.07569 真实存在（ICLR 2026，八位作者，李继刚不在其中）、Hutter Prize 1GB 属实（本库原怀疑其错，核查后是素材对）、怀特海引语归属存疑、两阶段叙事有反方（Saxe et al. 2018）、素材未提 Tishby 2015/2017 与 2018 争议三个环节
+
