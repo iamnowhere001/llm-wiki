@@ -126,3 +126,5 @@ status: active
 
 ## [2026-09-18] edit | 万维钢九讲派生：10 概念页 + 7 实体页 + 9 sources 页（含孤儿素材 cognitive-load-diagrams 补建 sources 页）；回填 peak-performance（缺口表 +4 条、知识层新增学习力簇）与 llm-wiki-research（边界层/方法层 + 缺口表 +2 条）；lint 0 项问题
 
+## [2026-09-18] edit | 完善 concepts/icap-framework：新增「如何实操」（三思维转换 / 三档换挡 / 三场景动作升级 / 三个陷阱）与「AI 时代：助力与陷阱」（四步 SOP + 4 条 Prompt 模板 + 认知负荷守恒定律 + 三明治路线图）。两节内容全部出自 AI 生成段（raw 行 506–1010），已在页面顶部与节首显式标注。另补两条素材没有的陷阱（AI 无立场 / AI 总结制造更深的流利度幻觉），标为本库立论 low 无来源；新增本库流程与 ICAP 的对照表
+
