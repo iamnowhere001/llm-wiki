@@ -118,3 +118,5 @@ status: active
 
 ## [2026-09-18] ingest | 收录《我们如何学习：大脑为何比机器学得快》（迪昂《精准学习》）读书笔记 —— raw/2026-09-18-how-we-learn-notes.md（844 行，无内嵌资源）。**本库第一份「分层边界不可判」的素材**：它不是书籍笔记，而是一份多轮 AI 对话的产物（含 Claude 对话链接；E 段自陈『作为认知神经科学领域的审稿人，我对你的稿件进行了深度重构』），A–D 段的『原稿』是否由 AI 生成文内无证据可判。含 5 条自陈式 AI 加工硬证据、三套『七』清单（与 flow-terminology 的九/六/五同构）、『四大支柱』重复 13 次。**核查**：概念图实验定位到 Karpicke & Blunt 2011 Science 331:772，摘要证实『提取练习 > 概念图』，但素材『概念图甚至不如多读几遍』在摘要中无支持 —— 命名为「外推式失真」（与同日 extended-mind 提出的「过期引注」并列为两个『第五类』候选，待裁定）。建 7 页：实体 stanislas-dehaene + 概念 four-pillars-of-learning / retrieval-practice / spaced-repetition / consolidation-and-sleep / prediction-error / innate-knowledge（全部 low，因原书未收录、核查停在摘要层）；回填 flow-terminology（第四侧）、cybernetic-learning（第四例，第一次落到神经层）、human-sponge（首例『看似矛盾实则同一主张』）；peak-performance 缺口表新增『五套框架互不引用』并更新单来源缺口为五次收录
 
+## [2026-09-18] query | 我们如何学习、如何提高学习效果 → 归档 analyses/how-we-learn-and-how-to-improve（第一次综合「学习力」；外部核查 Dunlosky et al. 2013 PSPI 14(1):4-58 十种学习技术效用分级，但该文献本库未收录，故不入 sources —— 本库第一例『外部证据强于库内证据』的页面）。识别出新缺口：迁移（transfer）在库内为空白；交错练习无对应页。peak-performance 缺口表新增一条
+
