@@ -5,8 +5,8 @@ slug: stoic-control-dichotomy
 tags: [斯多葛, 情绪, 哲学, 方法]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
-related: [marcus-aurelius, stephen-covey, stimulus-response-gap, cognitive-reappraisal, complaining, victim-mentality]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes]
+related: [marcus-aurelius, stephen-covey, stimulus-response-gap, cognitive-reappraisal, complaining, victim-mentality, 2026-09-18-hyperefficient-notes]
 confidence: medium
 status: active
 ---
@@ -92,12 +92,28 @@ status: active
 - **是 [[complaining]] 的判据来源**：「抱怨卡在中间」这个诊断完全建立在二分法之上。
 - **与 [[victim-mentality]] 构成一对风险**：二分法用得好是解放，用过头就是自责。见上「边界与反例」第一条。
 - **与 [[emotion-as-coupling]] 存在张力**：二分法把落点放在个人判断上，耦合论把落点放在关系与处境上。**两者对「改变从哪里开始」给出不同答案。**
+- **与 [[2026-09-18-hyperefficient-notes]] 的「控制感」形似而实不同（2026-09-18 新增）** —— 那份素材说「控制感强就是挑战，没有控制感就是威胁」，听起来像二分法的另一版。**但它说的不是同一件事**：
+
+  | | 斯多葛的控制二分法 | Storoni 的控制感 |
+  |---|---|---|
+  | 对象 | **客观分类** —— 这件事能否被我控制 | **主观感受** —— 我感觉自己能控制多少 |
+  | 操作 | 分类之后分别行动或接受 | 不分类，只调节感受的强弱 |
+  | 失败模式 | **分错** —— 把不能控制的划进能控制 | **感受不足** —— 明明能控制却觉得不能 |
+
+  **本库判断：两者可能指向不同机制，不应互相引用为佐证。**
+  二分法的风险在本页「边界与反例」第一条已写过（划错会变成过度自责）；
+  而「控制感」框架的风险方向相反 —— 它**不要求你判断对错，只要求你感觉良好**。
+  **（本库推论：这可能被用来安慰一个客观上确实失控的处境。素材未处理这个风险。）**
 - **是 [[forgiveness]] 的理论基础之一**：宽恕的实质是承认「对方的行为」属于不可控领域。
 
 ## 开放问题
 
 - [ ] **素材中的奥勒留引文需要核对** —— *"If it's endurable..."* 与 *"The impediment to action advances action..."* 在《沉思录》中的具体卷次；以及所用译本（素材未说明）
 - [ ] **控制二分法的现代心理学对应物是什么？** 与 locus of control（Rotter）、自我决定理论中的自主性是什么关系？
+  - **2026-09-18 补**：[[2026-09-18-hyperefficient-notes]] 提供了第三个候选 —— **情境性的「控制感」**。
+    本库判断它**更接近 locus of control（主观信念）而非二分法（客观分类）**，
+    但两者仍不等同：locus of control 是相对稳定的**特质性信念**，而 Storoni 说的是**对当前局面的感受**。
+    是否需要引入 Bandura 的 self-efficacy（任务特异性）来区分，**待核实**。
 - [ ] **「部分可控」的中间地带如何操作？** 这是二分法最大的实践缺口
 - [ ] 斯多葛主义「让人接受现状」的批评需要一份反方材料
 - [ ] 「判断论」与生理限制（疼痛、睡眠剥夺直接影响情绪）如何调和？
