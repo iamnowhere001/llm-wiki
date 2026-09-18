@@ -68,3 +68,9 @@ status: active
 
 ## [2026-09-18] lint | 引入项目层后的体检：41 页 / 398 链接 / 0 项机器可查问题；语义提示 15 个知识页未被任何项目引用
 
+## [2026-09-18] ingest | 收录 TraeCode 官方规则文档（docs.trae.cn/ide_rules）—— 一手规格，确认 AGENTS.md 支持跨 IDE 复用、规则四档生效方式、.trae/rules 三层嵌套上限
+
+## [2026-09-18] ingest | 收录 TRAE 官方社区帖（forum.trae.cn/t/topic/171687）—— 社区对 AGENTS.md vs rules 的分工解释，以及官方文档未回答的加载时机问题（无官方回复，置信度 low）
+
+## [2026-09-18] edit | 新建项目 traecode-pkm-article（stage: planning）—— 写一篇「如何用 TraeCode 构建 PKMS」的文章；新增实体页 traecode、概念页 agents-md；回填 three-layer-architecture 与 overview；项目层首次有 2 个项目
+

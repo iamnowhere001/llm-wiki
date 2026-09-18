@@ -46,10 +46,12 @@ status: active
 
 > 项目与知识库之间的正向连接。这里链到的页面，就是「服务于本项目」的页面。
 
-- **机制层**：[[llm-wiki-pattern]]、[[compounding-knowledge]]、[[cybernetic-learning]]、[[rag-vs-wiki]]
-- **历史层**：[[pkm-history]]、[[bidirectional-links]]、[[zettelkasten]]、[[commonplace-book-vs-llm-wiki]]
-- **动机层**：[[why-pkm-in-ai-era]]
+- **机制层**：[[llm-wiki-pattern]]、[[compounding-knowledge]]、[[cybernetic-learning]]、[[rag-vs-wiki]]、[[wiki-lint]]
+- **历史层**：[[pkm-history]]、[[bidirectional-links]]、[[zettelkasten]]、[[commonplace-book-vs-llm-wiki]]、[[commonplace-book]]
+- **人物线**（历史层的骨架）：[[vannevar-bush]]、[[ted-nelson]]、[[tim-berners-lee]]、[[andrej-karpathy]]
+- **动机层**：[[why-pkm-in-ai-era]]、[[dan-koe]]
 - **边界层**：[[use-cases]]
+- **参照实现层**：[[second-brain-skill]]、[[qmd]]、[[notebooklm]]、[[eden]]
 
 ## 产出（外向回路）
 
