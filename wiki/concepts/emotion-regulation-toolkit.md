@@ -5,8 +5,8 @@ slug: emotion-regulation-toolkit
 tags: [情绪, 方法, 清单, 工具箱]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
+related: [cognitive-reappraisal, james-gross, emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness]
 confidence: low
 status: active
 ---
@@ -14,6 +14,9 @@ status: active
 # 情绪调节工具箱：素材给出的全部技术
 
 > 素材一里最有实用价值的部分，也是**证据最薄弱的部分** —— 一整套技术、句式和清单，几乎全部无引用来源。本页把它们集中归档，**并逐条标注来源层与待核状态**。
+>
+> **2026-09-18 更新**：收录 [[2026-09-18-cognitive-decoupling]] 后，这套技术第一次有了**分类坐标**（见下「这些技术在学术框架里的位置」）。
+> 但请注意 —— **坐标是给出来了，证据仍然缺**。本页的 `confidence: low` 不变。
 
 ## 要点
 
@@ -21,7 +24,26 @@ status: active
 - **最核心的一条原则**：情绪要被看见，但不需要被当场发射。
 - **最核心的一条机制**：杏仁核不听道理，只听「安全信号」。
 - 全部技术的共同前提是 [[stimulus-response-gap]] —— 如果没有间隙，所有技术都无处施展。
-- ⚠️ **本页 `confidence: low`**：这些技术本身可能有效，但**素材未给出任何一项的一级来源或效果证据**。
+- **新补上的坐标**：这些技术并非杂乱并列，而是分布在 [[james-gross]] 情绪调节过程模型的不同时间点上 —— 见下。
+- ⚠️ **本页 `confidence: low`**：这些技术本身可能有效，但**素材未给出任何一项的一级来源或效果证据**。其中只有「认知重评」一项在收录新素材后获得了学术来源（见 [[cognitive-reappraisal]]）。
+
+## 这些技术在学术框架里的位置（2026-09-18 补）
+
+素材一把这套技术呈现为**并列的清单**。收录 [[2026-09-18-cognitive-decoupling]] 后可以看出，它们其实分布在**情绪生成过程的不同时间点**上：
+
+| Gross 模型的时间点 | 策略族 | 本页对应的技术 |
+|---|---|---|
+| 情境选择 / 情境修正 | 选择或改变处境 | （素材一放在别处）「上游思维」的物理扫雷 |
+| **注意分配** | 转移注意力 | 「物理转移注意力，强行切断反刍回路」 |
+| **认知改变** | **认知重评** | 情绪消化三部曲第 3 步；[[cognitive-reappraisal]] |
+| 反应调整 | **表达抑制** | 素材一警告的「压抑」——**这是本页没有的技术，也是本页主张避免的** |
+
+> [!note] 这张表属于本库的推断，不是素材的直接内容
+> [[james-gross]] 的完整过程模型**并未出现在任何一份已收录素材中** ——
+> [[2026-09-18-cognitive-decoupling]] 只给出了「认知重评」与「表达抑制」两个点。
+> 本库据此做的对应是**综合推断**，需要一份 Gross 的原始文献核对。见 [[james-gross]] 的同名提示。
+
+**这张表的意义**：它解释了为什么素材一的技术清单看起来零散 —— **缺的不是技术，是坐标**。有了坐标才能问出关键问题：为什么这套工具箱里「注意分配」只有一条、「认知改变」却很重？是素材的偏好，还是某个时间点确实更有效？
 
 ## 一、情绪中：降速与止血
 
@@ -141,3 +163,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-18-cognitive-decoupling]]（补上分类坐标与「认知重评」的学术来源）

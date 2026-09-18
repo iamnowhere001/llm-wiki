@@ -5,8 +5,8 @@ slug: stoic-control-dichotomy
 tags: [斯多葛, 情绪, 哲学, 方法]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [marcus-aurelius, stimulus-response-gap, complaining, victim-mentality]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
+related: [marcus-aurelius, stephen-covey, stimulus-response-gap, cognitive-reappraisal, complaining, victim-mentality]
 confidence: medium
 status: active
 ---
@@ -79,6 +79,16 @@ status: active
 ## 与其他页面的关系
 
 - **是 [[stimulus-response-gap]] 的古典版本**：同一段间隙，两种命名方式。
+- **得到 [[stephen-covey]] 的独立印证** —— 他提出的「**掌控圈与关注圈**」是这条原则的现代商业版：我们关心的事情构成「关注圈」，其中能施加影响的那部分构成「掌控圈」，高效能的人专注于扩大掌控圈而非在关注圈里空耗精力。**柯维本人把「在刺激和回应之间有一个空间」也归给了弗兰克尔** —— 于是形成一条清晰的谱系：
+
+  ```
+  斯多葛（古典，判断论 + 控制二分法）
+    → 弗兰克尔（意义疗法，那段间隙）
+      → 柯维（管理学，掌控圈/关注圈）
+        → 得到《精英日课》（认知重评、聚焦可控圈）
+  ```
+
+  **四个传统、两个领域、跨越两千年，收敛到同一条操作原则** —— 这是本库目前最强的一处「多来源独立印证」。
 - **是 [[complaining]] 的判据来源**：「抱怨卡在中间」这个诊断完全建立在二分法之上。
 - **与 [[victim-mentality]] 构成一对风险**：二分法用得好是解放，用过头就是自责。见上「边界与反例」第一条。
 - **与 [[emotion-as-coupling]] 存在张力**：二分法把落点放在个人判断上，耦合论把落点放在关系与处境上。**两者对「改变从哪里开始」给出不同答案。**
@@ -95,3 +105,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-18-cognitive-decoupling]]（补上柯维的「掌控圈/关注圈」这一现代印证）

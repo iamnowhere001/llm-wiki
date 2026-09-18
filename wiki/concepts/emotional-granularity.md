@@ -5,8 +5,8 @@ slug: emotional-granularity
 tags: [情绪, 语言, 认知, 机制]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [stimulus-response-gap, emotion-as-coupling, internal-friction, wang-lu]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
+related: [lisa-feldman-barrett, stimulus-response-gap, emotion-as-coupling, cognitive-decoupling, internal-friction, wang-lu]
 confidence: medium
 status: active
 ---
@@ -57,15 +57,19 @@ status: active
 - **是 [[emotion-as-coupling]] 的互补视角**：耦合论说情绪存在于人与处境的交互中，本页说命名是在那个交互中**划出边界、把「我」和「它」分开**的动作。
 - **与 [[internal-friction]] 构成一对张力**：命名是内耗的解药，但失败的命名（只描述不归档）本身就是内耗的形态。
 - **与 [[llm-wiki-pattern]] 结构同源**：本库的核心动作是「给散落素材命名并建立链接」，本页的核心动作是「给散落情绪命名并归档」—— **两者都是把无边界的东西变成可操作的东西**。这是本项目与本库主线唯一的接口，值得单独写一页。
+- **与 [[cognitive-decoupling]] 是两种不同的「距离」操作**（2026-09-18 新增）：命名是**标记**（「这是委屈，不是愤怒」），解离是**拉开**（「这是一个念头，不是事实」）。前者提高分辨率，后者降低卷入度。**两者可叠加，但机制不同 —— 素材未说明它们是否互相干扰。**
+- **很可能与 [[lisa-feldman-barrett]] 有直接关系**：她是情绪颗粒度研究的主要贡献者之一，而本项目已收录她的一处规范引注（见 [[lisa-feldman-barrett]]）。**这是本页最值得追的一条线。**
 
 ## 开放问题
 
 - [ ] **affect labeling 的原始研究是什么？效果量多大？** 需要 Lieberman 等的论文原文（本库目前只有转述）
-- [ ] 「情绪颗粒度」概念的原始出处（Barrett 等）与测量方法（如 DES 量表）
+- [ ] **「情绪颗粒度」的原始文献与测量方法（如 DES 量表）** —— 2026-09-18 收录 [[lisa-feldman-barrett]] 后，这条线索有了具体入口：她是该概念的主要贡献者，但本库手头只有她关于**情绪建构论**的引注，缺她关于**颗粒度**的直接文献。**这是本页优先级最高的一条。**
 - [ ] 命名是否对所有情绪都有效？高唤醒情绪（如强烈愤怒）的命名效果是否不同？
 - [ ] 中文情绪词汇的颗粒度与英文是否可比？「委屈」「憋屈」这类词在英文中缺乏对应，是否意味着不同的情绪体验结构？
 - [ ] 「重命名能力」与认知重评（cognitive reappraisal）是什么关系？是同一个机制的两种说法，还是不同的东西？
+- [ ] 命名与认知解离是否互相干扰？（见上「与其他页面的关系」最后一条）
 
 ## 来源
 
 - [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-18-cognitive-decoupling]]（补上 Barrett 的规范引注入口）

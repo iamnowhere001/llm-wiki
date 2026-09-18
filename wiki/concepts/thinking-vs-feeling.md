@@ -5,8 +5,8 @@ slug: thinking-vs-feeling
 tags: [认知, 批判性思维, 情绪, 方法]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [thomas-sowell, emotion-regulation-toolkit, stimulus-response-gap, emotional-granularity]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
+related: [thomas-sowell, keith-stanovich, cognitive-decoupling, albert-ellis, emotion-regulation-toolkit, stimulus-response-gap, emotional-granularity]
 confidence: medium
 status: active
 ---
@@ -91,18 +91,29 @@ status: active
 ## 与其他页面的关系
 
 - **是 [[emotion-regulation-toolkit]] 的「上游」部分**：工具箱里的技术多在情绪上来之后使用，本页处理的是**情绪正在冒充判断**这个更早的情形。
+- **与 [[keith-stanovich]] 的「认知解耦」是同一族主张**（2026-09-18 新增）：两者都主张「感觉」与「事实」必须分开，且都认为**混同二者是可训练的缺陷，而非性格问题**。区别在落点 —— 索维尔批判公共话语，Stanovich 研究个体认知，[[cognitive-decoupling]] 给出操作步骤。
+- **与 [[albert-ellis]] 的 ABC 模型同构**：埃利斯的「B（信念）」就是本页要审查的那个环节。**临床路径（改变非理性信念）与批判性思维路径（语言隔离、失败条件测试）在这里汇合。**
 - **与 [[emotional-granularity]] 构成一对张力**：命名情绪是让感受变得可辨识，本页是让感受不要越界。**一个放大感受，一个约束感受。**
 - **与 [[stimulus-response-gap]] 共享同一个操作**：把「感受」与「结论」分开，正如把「刺激」与「回应」分开。
 - **与 [[narrative-self-vs-bodily-self]] 存在直接冲突**（见上「边界与反例」第二条），这是本页最需要后续处理的张力。
+
+> [!note] 收录新素材后，本页的处境变了
+> 本页原先的立场是「感觉不能当结论生成器」—— 这是**约束感受**的一侧。
+> 而本项目随后收录的 [[narrative-self-vs-bodily-self]]（王路/梅洛-庞蒂线）主张「内耗不是想得太多，而是感受得太少」—— 这是**放大感受**的一侧。
+>
+> **2026-09-18 收录的 [[2026-09-18-cognitive-decoupling]] 让这个冲突更清楚了，但没有解决它**：
+> 它一方面要求「退出想法」（[[rumination]] 的处方，偏约束侧），另一方面要求「感知不等于真相」（[[cognitive-decoupling]]，同样偏约束侧）。
+> **目前库内四份素材中，只有王路那条线站在「回到感受」一侧。** 这个不对称本身就是信息 —— 见 [[emotion-awareness]] 缺口表。
 
 ## 开放问题
 
 - [ ] **索维尔这句话的原始出处？** （哪本书、哪篇文章）目前是转引
 - [ ] **「感受」与「结论」的区分标准** —— 什么时候感觉携带了思考无法获得的信息？（这是本页最大的缺口）
+- [ ] **与 [[narrative-self-vs-bodily-self]] 的冲突需要一个裁决** —— 是区分「感受的两种用法」，还是承认素材内部矛盾？**这是本项目的首要未解问题之一**
 - [ ] 躯体标记假说（Damasio）与索维尔的二分法如何调和？需要一份认知科学文献
-- [ ] 本页与 [[narrative-self-vs-bodily-self]] 的冲突需要一个裁决 —— 是区分「感受的两种用法」，还是承认素材内部矛盾？
 - [ ] 素材中的「反情绪化思考清单」是原创还是改编自某个现成的批判性思维工具？需要溯源
 
 ## 来源
 
 - [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-18-cognitive-decoupling]]（补上 Stanovich 与埃利斯两条同族来源）
