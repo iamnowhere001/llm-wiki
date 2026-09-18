@@ -6,7 +6,7 @@ tags: [学习, 记忆, 方法, 机制]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]
-related: [four-pillars-of-learning, spaced-repetition, prediction-error, cybernetic-learning, dan-koe, deliberate-play, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes]
+related: [four-pillars-of-learning, spaced-repetition, prediction-error, cybernetic-learning, dan-koe, deliberate-play, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes, cognitive-debt, writing-as-thinking, 2026-09-18-writing-is-thinking]
 confidence: medium
 status: active
 ---
@@ -87,6 +87,11 @@ status: active
 - **与 [[cybernetic-learning]] 收敛到同一结论** —— 但那条链条的起点是「目标」，本页的起点是「生成」。**两者是不是同一条链，见 [[prediction-error]]。**
 - **与 [[dan-koe]] 的「创作燃料」主张相接** —— 他把「第二大脑」定义为创作燃料库，理由也是「输出才是学习」。
 - **与 [[deliberate-play]] 的关系未划** —— Grant 的「刻意游戏」是「让高强度练习能持续」，本页的提取练习是「让练习真正生效」。**一个解决可持续性，一个解决有效性，本库尚未对照。**
+- **与 [[cognitive-debt]] 是同一条链的两端（2026-09-18 新增）**：本页讲「**漏掉提取会怎样**」——
+  学习由取出决定，让 AI 直接给答案就等于跳过了取出这一步；[[cognitive-debt]] 讲「**真的漏掉了的结果**」——
+  批判性思维退化、创造力枯竭、对所写内容毫无记忆。
+  **注意：这条接口是本库接上的，不是素材的论证** —— 「认知债务」一侧在本库**没有任何一手材料**，
+  因此它**不构成对本页的交叉验证**，只提供一个新的应用场景。该页已就此加了「本库的推断」警示块。
 
 ## 开放问题
 

@@ -6,7 +6,7 @@ tags: [学习, 神经科学, 机制, 贝叶斯]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes]
-related: [cybernetic-learning, four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, stanislas-dehaene, peak-performance, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes]
+related: [cybernetic-learning, four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, stanislas-dehaene, peak-performance, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, cognitive-debt, 2026-09-18-writing-is-thinking]
 confidence: low
 status: active
 ---
