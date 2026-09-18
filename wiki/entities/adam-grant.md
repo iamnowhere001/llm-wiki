@@ -6,7 +6,7 @@ tags: [人物, 组织心理学, 巅峰表现, 学习, 单来源]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
-related: [peak-performance, 2026-09-18-hidden-potential-notes, character-skills, cybernetic-learning, flow-terminology]
+related: [peak-performance, 2026-09-18-hidden-potential-notes, character-skills, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, looping, brainwriting, trajectory-evaluation, cybernetic-learning, flow-terminology]
 confidence: low
 status: active
 ---
@@ -61,6 +61,7 @@ status: active
 
 - 区别于 [[flow-terminology]] 里的 Kotler 与 Storoni：**格兰特不参与那场争论** —— 他的书里没有心流的位置
 - 是 [[character-skills]] 的提出者：把「品格」重新定义为**可习得的技能**而非先天特质
+- 本素材从他这本书拆出的概念页：[[imperfectionism]]、[[human-sponge]]、[[deliberate-play]]、[[scaffolding]]、[[opportunity-systems]]、[[looping]]、[[brainwriting]]、[[trajectory-evaluation]]
 - 与 [[cybernetic-learning]] 的接口：他的「不要反馈，要建议」是**误差信号**概念在人际反馈上的具体形态；但**素材未点名控制论**，这是本库的连接，不是他的
 
 ## 待办 / 开放问题

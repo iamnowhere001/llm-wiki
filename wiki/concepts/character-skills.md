@@ -6,7 +6,7 @@ tags: [品格, 学习, 巅峰表现, 可塑性, 单来源]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
-related: [adam-grant, peak-performance, 2026-09-18-hidden-potential-notes, cybernetic-learning, cognitive-reappraisal, rumination]
+related: [adam-grant, peak-performance, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination]
 confidence: low
 status: active
 ---
@@ -68,7 +68,8 @@ status: active
 
 - 提出者是 [[adam-grant]]；载体素材是 [[2026-09-18-hidden-potential-notes]]
 - 与 [[flow-terminology]] **没有关系** —— 格兰特的框架里没有心流的位置，这不是疏漏而是立场
-- 是 [[peak-performance]] 目前**唯一的「制度层」概念入口**：品格技能是个体层，往上接「鹰架」（他人搭建的临时支持），再往上接「机会体系」（学校、招聘、团队结构）
+- 是 [[peak-performance]] 目前**唯一的「制度层」概念入口**：品格技能是个体层，往上接 [[scaffolding]]（他人搭建的临时支持），再往上接 [[opportunity-systems]]（学校、招聘、团队结构）
+- 本素材拆出的三个子概念：[[imperfectionism]]（第 3 章）、[[human-sponge]]（第 2 章）、[[deliberate-play]]（第 4 章，属鹰架）
 - 与 [[mental-strength]]（心力）构成对照：后者是本库第一份 AI 生成内容，结构工整而零证据；前者**有可观察的行为指标** —— 这个差别正是「可证伪性」的差别
 
 ## 待办 / 开放问题
