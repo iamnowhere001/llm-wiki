@@ -21,7 +21,7 @@ status: active
 - **作者**：Shane Parrish（沙恩·帕里什，原书作者）。**整理者与讲者均未署名。**
 - **链接**：https://my.feishu.cn/wiki/KPQCwX5Cai44KXkiPmrcjnV8nsg
 - **原书出版**：2023 年 10 月（*Clear Thinking: Turning Ordinary Moments into Extraordinary Results*，Portfolio / Penguin）
-- **素材路径**：`raw/2026-09-18-clear-thinking-notes.md`（1,404 行）
+- **素材路径**：`raw/2026-09-18-clear-thinking-notes.md`（1,404 行；`wc -l` 报 1,403，因末行无换行符 —— **本页全部行号均指文件绝对行号，可直接 `sed -n 'Np'` 核对**）
 - **内嵌资源**：5 份，已下载至 `raw/assets/` ——
   **英文原版 PDF**（322 页）、决策过程四阶段图、可逆性-后果坐标图、决策时间图、巴菲特旅鼠名言图
 
