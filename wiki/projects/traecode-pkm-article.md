@@ -54,13 +54,16 @@ status: active
 - **机制层**：[[llm-wiki-pattern]]、[[three-layer-architecture]]、[[ingest-query-lint]]、[[compounding-knowledge]]、[[cybernetic-learning]]
 - **工具层**：[[agents-md]]、[[traecode]]、[[obsidian]]、[[plain-text-and-git]]
 - **动机层**：[[why-pkm-in-ai-era]]、[[pkm-history]]、[[use-cases]]
-- **动机层的反面补丁（2026-09-18 新增）**：[[cognitive-outsourcing]]、[[cognitive-debt]]、[[writing-as-thinking]]、[[alain-de-botton]]、[[2026-09-18-writing-is-thinking]]
+- **动机层的反面补丁（2026-09-18 新增）**：[[cognitive-outsourcing]]、[[cognitive-debt]]、[[writing-as-thinking]]、[[alain-de-botton]]、[[why-writing-fails]]、[[2026-09-18-writing-is-thinking]]
   > **为什么这几页对本项目有用**：文章要回答「我为什么要换一套工具」，
   > 而 [[why-pkm-in-ai-era]] 给的是「因为生成免费了，判断成了瓶颈」——
   > **这是「为什么要判断」，不是「为什么需要一套系统」。**
   > 本簇给的是另一半：**判断力会因为外包而退化，所以需要一套有摩擦力的流程**。
   > [[writing-as-thinking]] 还提供了一句可直接用作文章论点的判断：**写作不是思考的记录，是思考本身** ——
   > 对本项目的读者（知识工作者）而言，这比「第二大脑」的说法更接近他们的真实痛点。
+  > **但这句话不能说过头**：[[why-writing-fails]] 把「写不出来」拆成四种病因，
+  > 「写＝思考」只在**结构不清**那一类成立 —— 另三种（语言能力 / 自我审查 / 默会知识）下它不成立，
+  > 其中默会知识那一类**写反而是损害**。文章若要发表，这条边界就是防被打脸的护栏。
 - **对照层**：[[rag-vs-wiki]]、[[second-brain-skill]]、[[index-and-log]]
 
 > [!note] 知识层的缺口
