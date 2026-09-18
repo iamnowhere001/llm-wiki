@@ -13,6 +13,7 @@ wiki.py -- LLM Wiki 零依赖工具链
   python3 tools/wiki.py build              生成单文件浏览站点 site/index.html
   python3 tools/wiki.py log <type> "msg"   追加一条日志
   python3 tools/wiki.py new <type> <slug>  按模板新建页面
+                                           type: project | source | entity | concept | analysis
   python3 tools/wiki.py graph              打印链接关系
 """
 
@@ -31,6 +32,7 @@ PAGE_DIRS = {
     "entity": "entities",
     "concept": "concepts",
     "analysis": "analyses",
+    "project": "projects",
 }
 
 TYPE_LABEL = {
@@ -38,7 +40,20 @@ TYPE_LABEL = {
     "entity": "实体",
     "concept": "概念",
     "analysis": "分析",
+    "project": "项目",
     "meta": "系统",
+}
+
+# 项目的进展状态。注意与 frontmatter 的 status（页面健康度）是**两个维度**：
+#   status 回答「这页还新鲜吗」（active / draft / stale / deprecated）
+#   stage  回答「这件事做到哪了」（planning / active / paused / shipped / abandoned）
+PROJECT_STAGES = ("planning", "active", "paused", "shipped", "abandoned")
+STAGE_LABEL = {
+    "planning": "筹划",
+    "active": "进行中",
+    "paused": "暂停",
+    "shipped": "已交付",
+    "abandoned": "已放弃",
 }
 
 META_FILES = {"index", "log", "overview", "conventions"}
@@ -156,6 +171,19 @@ class Page(object):
     @property
     def status(self):
         return self.fm.get("status") or "active"
+
+    @property
+    def stage(self):
+        """项目进展状态。非项目页返回空串。"""
+        if self.type != "project":
+            return ""
+        s = self.fm.get("stage") or "planning"
+        return s if s in PROJECT_STAGES else "planning"
+
+    @property
+    def goal(self):
+        """项目的一句话目标（可验收）。"""
+        return (self.fm.get("goal") or "").strip()
 
     @property
     def summary(self):
@@ -287,11 +315,64 @@ def cmd_lint(root):
 
     no_src = []
     for p in pages:
-        if p.type in ("meta",):
+        # 项目页豁免：项目由「目标」派生，不是由素材派生。
+        # 它的来源是人的意图，没有 raw/ 素材可指。
+        if p.type in ("meta", "project"):
             continue
         if not p.sources:
             no_src.append("%s" % p.relpath)
     section("未标注来源的页面", no_src)
+
+    # ---- 项目层检查 ----
+    projects = [p for p in pages if p.type == "project"]
+    knowledge = [p for p in pages
+                 if p.type in ("source", "entity", "concept", "analysis")]
+
+    empty_goals = []
+    bad_stage = []
+    for p in projects:
+        if not p.goal:
+            empty_goals.append("%s  缺少可验收的 goal" % p.relpath)
+        if p.fm.get("stage") and p.fm["stage"] not in PROJECT_STAGES:
+            bad_stage.append("%s  stage=%s（可选 %s）"
+                             % (p.relpath, p.fm["stage"], " / ".join(PROJECT_STAGES)))
+    section("项目页缺少 goal", empty_goals)
+    section("项目页 stage 取值非法", bad_stage)
+
+    # 项目页必须出链到知识页 —— 否则是一个没有知识支撑的空壳
+    hollow = []
+    for p in projects:
+        if not [t for t in p.links if t in by_slug
+                and by_slug[t].type in ("entity", "concept", "analysis")]:
+            hollow.append("%s  未链接任何知识页（实体/概念/分析）" % p.relpath)
+    section("空壳项目（未链接任何知识页）", hollow)
+
+    # ---- 语义提示（不计入问题数）----
+    advisories = []
+    if projects:
+        covered = set()
+        for p in projects:
+            for t in p.links:
+                if t in by_slug and by_slug[t].type in ("entity", "concept", "analysis"):
+                    covered.add(t)
+        uncovered = sorted(p.slug for p in knowledge
+                           if p.type != "source" and p.slug not in covered)
+        if uncovered:
+            advisories.append(
+                "以下 %d 个知识页未被任何项目引用 —— 按「项目是过滤器」的约定，"
+                "它们要么该挂到某个项目下，要么该考虑是否值得继续维护：" % len(uncovered))
+            for s in uncovered[:12]:
+                advisories.append("    %s" % s)
+            if len(uncovered) > 12:
+                advisories.append("    …… 另有 %d 个" % (len(uncovered) - 12))
+    elif len(knowledge) >= 10:
+        advisories.append(
+            "本库有 %d 个知识页但**没有任何项目页**。按 [[cybernetic-learning]] 的推论，"
+            "没有目标就没有过滤器 —— 建议用 `new project <slug>` 建一个。" % len(knowledge))
+    if advisories:
+        print("\n语义提示（不计入问题数）")
+        for a in advisories:
+            print("  " + a if a.startswith("    ") else "  - " + a)
 
     # raw 素材是否已收录
     raw_dir = os.path.join(root, "raw")
@@ -355,7 +436,7 @@ def cmd_stats(root):
     print("LLM Wiki 统计  |  %s" % root)
     print("=" * 62)
     counts = Counter(p.type for p in pages)
-    for t in ["source", "entity", "concept", "analysis", "meta"]:
+    for t in ["project", "source", "entity", "concept", "analysis", "meta"]:
         if counts.get(t):
             print("  %-10s %-6s %d" % (t, TYPE_LABEL.get(t, ""), counts[t]))
     print("  %-10s %-6s %d" % ("合计", "", len(pages)))
@@ -370,6 +451,15 @@ def cmd_stats(root):
     tags = Counter(t for p in pages for t in p.tags)
     if tags:
         print("\n高频标签: " + ", ".join("%s(%d)" % (t, c) for t, c in tags.most_common(8)))
+
+    projects = [p for p in pages if p.type == "project"]
+    if projects:
+        print("\n项目（按阶段）")
+        order = {s: i for i, s in enumerate(PROJECT_STAGES)}
+        for p in sorted(projects, key=lambda x: (order.get(x.stage, 9), x.slug)):
+            print("  - [%-4s] %-28s %s"
+                  % (STAGE_LABEL.get(p.stage, p.stage), p.slug, _clip(p.goal, 46) or "（未写目标）"))
+
     print("\n枢纽页 Top 5:")
     for slug, n in inbound.most_common(5):
         print("  - %-34s %d" % (slug, n))
@@ -477,12 +567,29 @@ def cmd_index(root):
     out.append("> 每次 ingest 后重新生成。查询时先读本页定位候选页面，再深入阅读。")
     out.append("")
     total = sum(len(v) for v in groups.values())
-    out.append("页面总数 **%d** ｜ 素材 **%d** 份 ｜ 最后更新 %s"
-               % (total,
+    n_proj = len(groups.get("project", []))
+    n_active = len([p for p in groups.get("project", []) if p.stage in ("planning", "active")])
+    out.append("页面总数 **%d** ｜ 项目 **%d**（进行中 %d） ｜ 素材 **%d** 份 ｜ 最后更新 %s"
+               % (total, n_proj, n_active,
                   len([f for f in os.listdir(os.path.join(root, "raw"))
                        if f.endswith(".md")]) if os.path.isdir(os.path.join(root, "raw")) else 0,
                   date.today().isoformat()))
     out.append("")
+
+    # 项目排在最先 —— 它是本库的入口，决定什么素材值得收
+    projs = sorted(groups.get("project", []),
+                   key=lambda p: (PROJECT_STAGES.index(p.stage) if p.stage in PROJECT_STAGES else 9,
+                                  p.slug))
+    if projs:
+        out.append("## 项目 (%d)" % len(projs))
+        out.append("")
+        out.append("> 入口层。**收录素材前先读这里** —— 判断这份素材服务于哪个项目、填哪个缺口。")
+        out.append("")
+        for p in projs:
+            stage = STAGE_LABEL.get(p.stage, p.stage)
+            goal = p.goal or "（未写目标）"
+            out.append("- [[%s|%s]] `%s` — %s" % (p.slug, p.title, stage, goal))
+        out.append("")
 
     for t in ["source", "entity", "concept", "analysis"]:
         items = sorted(groups.get(t, []), key=lambda p: p.slug)
@@ -604,6 +711,7 @@ INIT_AGENTS = """# AGENTS.md -- LLM Wiki 维护手册（Schema 层）
 
 ## 页面类型
 
+- `projects/` 项目页：**入口层** —— 我在做什么、因此什么重要
 - `sources/` 素材摘要页，一份素材一页
 - `entities/` 实体页：人物、组织、工具、产品
 - `concepts/` 概念页：理论、方法、模式、术语
@@ -626,11 +734,14 @@ status: active
 ---
 ```
 
+项目页额外有 `goal` 与 `stage`。注意 `stage`（项目做到哪了）与 `status`（页面还新鲜吗）是两个维度。
+
 ## 工作流
 
-**Ingest**：读素材 → 与人类对齐要点 → 写 sources 页 → 拆 entities/concepts 页
+**Ingest**：**先读 projects/ 判断这份素材服务于哪个项目、填哪个缺口** → 读素材
+→ 与人类对齐要点 → 写 sources 页 → 拆 entities/concepts 页
 → 回填所有被影响的页面 → 更新 index.md → 写 log → 跑 lint。
-一份素材通常触及 10-15 个页面。
+一份素材通常触及 10-15 个页面。**服务不了任何项目的素材，先问该不该收。**
 
 **Query**：先读 index.md 定位 → 必要时 `wiki.py search` → 带引用作答
 → 好答案归档进 analyses/。
@@ -836,11 +947,82 @@ status: active
 - [[ ]]
 """
 
+TEMPLATES["project"] = """---
+title: {{TITLE}}
+type: project
+slug: {{SLUG}}
+tags: []
+created: {{DATE}}
+updated: {{DATE}}
+goal: 一句话目标，要能被判断「完成没有」
+stage: planning
+started: {{DATE}}
+sources: []
+related: []
+confidence: high
+status: active
+---
+
+# {{TITLE}}
+
+> 一句话：这个项目要产出什么。
+
+- **目标（可验收）**：写得具体到能判断完成与否。反例「学习 Rust」；正例「用 Rust 写一个能跑的命令行工具并发布到 GitHub」
+- **阶段**：planning
+- **起始**：{{DATE}}
+- **目标完成**：
+
+## 当前缺口
+
+> 这一节是控制论里的**误差信号**，也是全页最重要的部分 —— **它决定下一步该找什么素材**。
+> 每次 ingest 之前先读这里：这份素材填的是哪个缺口？填不上就不收。
+
+| 缺口 | 卡在哪 | 需要什么素材 / 信息 |
+|---|---|---|
+|  |  |  |
+
+## 知识（本项目消耗的页面）
+
+> 项目与知识库之间的正向连接。这里链到的页面，就是「服务于本项目」的页面。
+
+- [[ ]]
+
+## 产出（外向回路）
+
+> 知识库的价值在这里流出。**没有产出的项目是死项目**（见「共同笔记簿」页的「燃料而非收藏」）。
+
+| 产出 | 形态 | 位置 |
+|---|---|---|
+|  |  |  |
+
+## 决策记录
+
+> 项目里做过的判断 —— 这是 AI 拿不到的部分，也是本库存在的核心理由（见「为什么在 AI 时代仍然需要 PKMS」页）。
+
+| 日期 | 决定 | 理由 |
+|---|---|---|
+|  |  |  |
+
+## 不做什么（反范围）
+
+> 明确排除什么，避免范围蔓延。
+
+- 
+
+## 开放问题
+
+- [ ]
+
+## 相关页面
+
+- [[ ]]
+"""
+
 
 def cmd_init(target=None):
     root = os.path.abspath(target or os.getcwd())
-    for sub in ["raw/assets", "wiki/sources", "wiki/entities", "wiki/concepts",
-                "wiki/analyses", "tools", "templates", ".obsidian"]:
+    for sub in ["raw/assets", "wiki/projects", "wiki/sources", "wiki/entities",
+                "wiki/concepts", "wiki/analyses", "tools", "templates", ".obsidian"]:
         os.makedirs(os.path.join(root, sub), exist_ok=True)
 
     ag = os.path.join(root, "AGENTS.md")
@@ -872,8 +1054,8 @@ def cmd_init(target=None):
         elif name == "overview":
             write_text(path, meta_fm("总览", "overview")
                              + "# 总览\n\n> 这个知识库在讲什么。\n\n## 范围\n\n## 核心线索\n\n"
-                             + "## 页面地图\n\n- 素材：`sources/`\n- 实体：`entities/`\n"
-                             + "- 概念：`concepts/`\n- 分析：`analyses/`\n")
+                             + "## 页面地图\n\n- 项目：`projects/`（入口层）\n- 素材：`sources/`\n"
+                             + "- 实体：`entities/`\n- 概念：`concepts/`\n- 分析：`analyses/`\n")
         else:
             write_text(path, meta_fm("使用约定", "conventions")
                              + "# 使用约定\n\n> 记录人类的使用偏好。\n\n"
@@ -903,7 +1085,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   --bg:#faf9f7; --panel:#ffffff; --ink:#1b1c1e; --muted:#75736d;
   --line:#e8e6e1; --line-soft:#f1efeb; --accent:#0f766e; --accent-soft:#e6f2f0;
   --code-bg:#f5f4f1;
-  --c-source:#0f766e; --c-entity:#b45309; --c-concept:#4338ca; --c-analysis:#be123c; --c-meta:#6b7280;
+  --c-project:#7c3aed; --c-source:#0f766e; --c-entity:#b45309; --c-concept:#4338ca; --c-analysis:#be123c; --c-meta:#6b7280;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;height:100%}
@@ -1055,8 +1237,8 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
 </div>
 <script>
 var DATA = __WIKI_DATA__;
-var TYPECOLOR = {source:"#0f766e",entity:"#b45309",concept:"#4338ca",analysis:"#be123c",meta:"#6b7280"};
-var TYPELABEL = {source:"素材摘要",entity:"实体",concept:"概念",analysis:"分析",meta:"系统"};
+var TYPECOLOR = {project:"#7c3aed",source:"#0f766e",entity:"#b45309",concept:"#4338ca",analysis:"#be123c",meta:"#6b7280"};
+var TYPELABEL = {project:"项目",source:"素材摘要",entity:"实体",concept:"概念",analysis:"分析",meta:"系统"};
 var PAGES = DATA.pages, BYSLUG = {};
 PAGES.forEach(function(p){ BYSLUG[p.slug] = p; });
 
@@ -1172,7 +1354,7 @@ function render(src){
 }
 
 /* ---------------- nav ---------------- */
-var ORDER = ["meta","source","entity","concept","analysis"];
+var ORDER = ["project","meta","source","entity","concept","analysis"];
 var nav = document.getElementById("nav");
 
 function buildNav(){
@@ -1320,7 +1502,7 @@ function buildGraph(){
   });
   G.nodes = nodes; G.edges = edges; G.built = true;
   var legend = document.getElementById("legend");
-  legend.innerHTML = ["source","entity","concept","analysis"].map(function(t){
+  legend.innerHTML = ["project","source","entity","concept","analysis"].map(function(t){
     return '<div><i style="background:'+TYPECOLOR[t]+'"></i>'+TYPELABEL[t]+'</div>';
   }).join("");
   relax(700);

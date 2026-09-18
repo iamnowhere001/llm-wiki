@@ -37,6 +37,18 @@ python3 tools/wiki.py lint
 
 `raw/` **不可变** —— 它是事实来源。需要修正时，在 `wiki/` 里写清楚「素材原文如此，但应理解为 X」。
 
+### 三层之外的第 0 问：为什么
+
+三层回答「东西放在哪」，没回答「为什么要放」。没有这个问题，三层会退化成一台自动摘要机 —— 收得越多，熵越大，而没人知道为了什么。
+
+所以 `wiki/projects/` 不是第四层，它是**三层共同的入口**：它给出目标，目标产生误差信号，误差信号决定什么素材值得收、什么页面值得建。
+
+```bash
+python3 tools/wiki.py new project my-project "我的项目"
+```
+
+项目页写四件事：**可验收的目标**、**当前缺口**（决定下一步找什么素材）、消耗的知识、产出。收录素材前先读缺口表 —— **填不上任何缺口的素材，现在还不该收。**
+
 ---
 
 ## 目录结构
@@ -52,6 +64,7 @@ llm-wiki/
 │   ├── log.md             #   操作日志（append-only）
 │   ├── overview.md        #   总览
 │   ├── conventions.md     #   人类的使用偏好
+│   ├── projects/          #   项目页（入口层）
 │   ├── sources/           #   素材摘要页
 │   ├── entities/          #   实体页
 │   ├── concepts/          #   概念页
@@ -71,13 +84,13 @@ llm-wiki/
 python3 tools/wiki.py <command>
 
   init [path]              初始化一个新的知识库
-  lint                     健康检查：断链、孤岛、缺 frontmatter、未收录素材
-  stats                    统计：页面数、链接数、枢纽页
+  lint                     健康检查：断链、孤岛、缺 frontmatter、未收录素材、项目层
+  stats                    统计：页面数、链接数、枢纽页、项目阶段分布
   search "<query>"         BM25 全文检索（中文按二字组切分）
   index                    从各页 frontmatter 重建 wiki/index.md
   build                    生成单文件浏览站点 site/index.html
   log <type> "<message>"   追加一条日志
-  new <type> <slug>        按模板新建页面
+  new <type> <slug>        按模板新建页面（project / source / entity / concept / analysis）
   graph                    打印链接关系
 ```
 
@@ -92,7 +105,9 @@ cp my-article.md raw/2026-09-18-my-article.md
 # 然后对 LLM 说：「收录这篇」
 ```
 
-LLM 会：读素材 → 与你对齐要点（**特别指出与已有页面的矛盾**）→ 写摘要页 → 拆实体/概念页 → **回填所有被影响的旧页面** → 更新索引 → 写日志 → 跑 lint。
+**先读 `wiki/projects/` 的缺口表** —— 这份素材填的是哪个缺口？填不上就不收。
+
+然后 LLM 会：读素材 → 与你对齐要点（**特别指出与已有页面的矛盾**）→ 写摘要页 → 拆实体/概念页 → **回填所有被影响的旧页面** → 更新索引 → 写日志 → 跑 lint。
 
 一份素材通常触及 **10-15 个页面**。只写摘要页是失败的做法。
 
@@ -124,7 +139,7 @@ python3 tools/wiki.py lint
 ```yaml
 ---
 title: 页面标题
-type: concept            # source | entity | concept | analysis | meta
+type: concept            # project | source | entity | concept | analysis | meta
 slug: page-slug          # 全库唯一，与文件名一致
 tags: [知识库, 模式]
 created: 2026-09-18
@@ -136,6 +151,15 @@ status: active           # active | draft | stale | deprecated
 ---
 ```
 
+项目页额外有两个字段：
+
+```yaml
+goal: 一句话目标，要能被判断「完成没有」   # 必填
+stage: active                            # planning | active | paused | shipped | abandoned
+```
+
+**`stage` 与 `status` 是两个维度**：`status` 说这**页**还新鲜吗，`stage` 说这**事**做到哪了。
+
 链接语法：`[[slug]]` 或 `[[slug|显示文本]]`。**只能链接已存在的页面**，`lint` 会报断链。
 
 完整规范见 `AGENTS.md`。
@@ -144,14 +168,15 @@ status: active           # active | draft | stale | deprecated
 
 ## 当前内容
 
-已收录 **2 份素材**，编译为 **21 个页面**（142 条交叉链接）：
+已收录 **9 份素材**，编译为 **41 个页面**（约 400 条交叉链接）：
 
-- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill 的仓库 README
-- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git
-- **实体**：Andrej Karpathy、Vannevar Bush / Memex、Obsidian、qmd、NotebookLM
-- **分析**：RAG 与 LLM Wiki 对比、second-brain-skill 评估
+- **项目**：LLM Wiki 模式研究（入口层，含缺口表）
+- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill README、Dan Koe 的学习方法论长文、Vannevar Bush《As We May Think》(1945)、Appleton 的双向链接史、Berners-Lee 的链接拓扑设计笔记 (c.1999)、Frand & Hixon 的 PKM 首发文献 (1998)、卢曼卡片盒二手整理
+- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git、控制论式学习、共同笔记簿、双向链接、卡片盒
+- **实体**：Andrej Karpathy、Dan Koe、Vannevar Bush、Ted Nelson、Niklas Luhmann、Tim Berners-Lee、Obsidian、Roam Research、qmd、NotebookLM、Eden
+- **分析**：RAG vs Wiki、second-brain-skill 评估、共同笔记簿 vs LLM Wiki、PKM 的历史与演进 (1945–2026)、为什么在 AI 时代仍然需要 PKMS
 
-入口：`wiki/overview.md`
+入口：`wiki/index.md`（或直接读项目页 `wiki/projects/llm-wiki-research.md` 的缺口表）
 
 ## 版本控制
 
@@ -184,7 +209,9 @@ raw/2026-09-18-karpathy-llm-wiki-r2.md   # r2（完整，引用时用这份）
 
 LLM 不会厌烦，不会忘记更新某个引用，能一次改动 15 个文件。**当维护成本接近零，wiki 才第一次变得可持续。**
 
-人类负责挑素材、提问题、判断什么重要。其余全部交给 LLM。
+人类负责**提出项目**、挑素材、提问题、判断什么重要。其余全部交给 LLM。
+
+**项目是唯一不能交给 LLM 的东西。** LLM 可以指出「本库没有项目」，但不能替你决定做什么 —— 目标一旦外包，误差信号就消失了，过滤器也就不存在了。
 
 ---
 

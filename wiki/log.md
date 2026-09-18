@@ -58,3 +58,13 @@ status: active
 
 ## [2026-09-18] lint | 第 6 次体检：40 页 / 382 链接 / 0 项机器可查问题。本页新增一项开放问题：本库缺少「AI 时代个人知识库过时」的反方素材
 
+## [2026-09-18] edit | 引入项目层（project 页类型）：新增 wiki/projects/ 目录与模板；工具链支持 project 类型（PAGE_DIRS/TYPE_LABEL/stats/index/graph/站点配色与导航）
+
+## [2026-09-18] edit | 新增项目层检查：项目页缺 goal、stage 取值非法、空壳项目（未链接任何知识页）；新增语义提示「未被任何项目引用的知识页」与「本库无项目页」
+
+## [2026-09-18] edit | AGENTS.md 新增第 3.5 节「项目页（入口层）」：stage 与 status 的维度区分、goal 必须可验收、项目是 ingest 的入口；第 1 节补「三层之外的第 0 问：为什么」；分工表补「LLM 不发明项目」
+
+## [2026-09-18] edit | 新建 wiki/projects/llm-wiki-research —— 项目层第一个实例，goal 由 LLM 从本库既有缺口起草待确认；回填 overview / pkm-history / why-pkm-in-ai-era
+
+## [2026-09-18] lint | 引入项目层后的体检：41 页 / 398 链接 / 0 项机器可查问题；语义提示 15 个知识页未被任何项目引用
+

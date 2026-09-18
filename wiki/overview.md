@@ -32,6 +32,9 @@ status: active
 
 ## 核心线索
 
+> **入口是项目，不是素材。** 先读 [[llm-wiki-research]] 的「当前缺口」表 —— 它决定下一份素材该是什么。
+> 下面这条线索是「理解本库在讲什么」的路径，不是收录顺序。
+
 这个知识库围绕一条主线展开，可以按顺序读：
 
 1. **问题**：主流 RAG 用法在每次提问时从零重新发现知识，什么都不会累积。
@@ -73,33 +76,36 @@ status: active
 
 ## 当前状态
 
-- 素材：**9 份** —— 除原有的 [[2026-09-18-karpathy-llm-wiki]]（含 r1/r2 两版抓取）、[[2026-09-18-second-brain-skill-readme]]、[[2026-09-18-dankoe-remember-what-you-read]] 外，本次为梳理历史收录了 5 份：[[2026-09-18-bush-as-we-may-think]]、[[2026-09-18-appleton-bidirectional-links]]、[[2026-09-18-berners-lee-link-topology]]、[[2026-09-18-frand-hixon-pkm]]、[[2026-09-18-luhmann-zettelkasten]]
-- 页面：**39 个**（内容页 35 + 系统页 4）
-- 结构：**两条线索的交汇 + 一条历史纵深** —— Karpathy 的工程视角（主干）+ Dan Koe 的创作者视角（补上目标机制与输出回路），中间是 second-brain-skill 作为参照实现；纵向上由 [[pkm-history]] 把 1945 年至今串成一条线
+- 素材：**9 份** —— 除原有的 [[2026-09-18-karpathy-llm-wiki]]（含 r1/r2 两版抓取）、[[2026-09-18-second-brain-skill-readme]]、[[2026-09-18-dankoe-remember-what-you-read]] 外，为梳理历史收录了 5 份：[[2026-09-18-bush-as-we-may-think]]、[[2026-09-18-appleton-bidirectional-links]]、[[2026-09-18-berners-lee-link-topology]]、[[2026-09-18-frand-hixon-pkm]]、[[2026-09-18-luhmann-zettelkasten]]
+- 页面：**41 个**（内容页 37 + 系统页 4）
+- **项目：1 个** —— [[llm-wiki-research]]（进行中）。这是本库引入项目层后的第一个实例。
+- 结构：**两条线索的交汇 + 一条历史纵深 + 一个入口层** —— Karpathy 的工程视角（主干）+ Dan Koe 的创作者视角（补上目标机制与输出回路），中间是 second-brain-skill 作为参照实现；纵向上由 [[pkm-history]] 把 1945 年至今串成一条线；入口层由 [[llm-wiki-research]] 的缺口表决定下一步收什么
 
 ## 本库自己的缺口（按 [[cybernetic-learning]] 的判据）
 
 [[dan-koe]] 的论证给本库提出一个自查问题：**这个知识库服务于什么目标？**
 
-目前 `wiki/conventions.md` 记录了「怎么用」，但没有记录「为什么建」。按 [[cybernetic-learning]] 的推论，**没有持续目标的知识库会因「不知道收了干什么」而停滞**。
+> [!success] 已部分解决 —— 引入项目层
+> 本库原先有两个结构性缺口，**第一个已有解**：
+>
+> 1. ~~没有明确目标~~ → 新增 `wiki/projects/` 作为**入口层**。项目页把「目标」与「误差信号（当前缺口）」显式写下来，并规定 **ingest 前先读缺口表**。见 [[llm-wiki-research]] 与 `AGENTS.md` 第 3.5 节。
+> 2. **外向回路仍然缺失。** 「查询→归档」让探索复利，但产出**只存回库里**。[[llm-wiki-research]] 的「产出」一节里，三个产出有两个是库内页面 —— **这正踩在它自己批评的那条线上**（见 [[commonplace-book-vs-llm-wiki]]）。
 
-同时，本库只有「查询→归档」这条**内向回路**，缺少指向库外产出的**外向回路**（见 [[commonplace-book-vs-llm-wiki]]）。
+**仍未解决的那个更值得警惕**：项目层提供的是**机制**，不是**目标本身**。[[llm-wiki-research]] 的 goal 由 LLM 从本库既有缺口起草，待人类确认或改写。**机制可以代劳，目标不能。**
 
-这两条是当前最需要补的结构性缺口，已列入下方建议。
-
-**本次收录后新增的一个缺口**：[[pkm-history]] 把 1945–2026 串了起来，但中间有两大段空白 —— 1960–1980 年代的个人计算实验（Engelbart、Xerox PARC），以及 1998 年命名到 2017 年 Roam 之间近 20 年的演化。见 [[pkm-history]] 的开放问题。
+**历史线上的空白**：[[pkm-history]] 把 1945–2026 串了起来，但中间有两大段空白 —— 1960–1980 年代的个人计算实验（Engelbart、Xerox PARC），以及 1998 年命名到 2017 年 Roam 之间近 20 年的演化。**这些缺口已逐条记入 [[llm-wiki-research]] 的缺口表**，不再散落在本页。
 
 ## 下一步建议
 
-- [ ] **给本库定一个明确的目标**，写进 `wiki/conventions.md` 或本页 —— 否则按 [[cybernetic-learning]] 的推论难以持续
-- [ ] **设计一条输出回路**：知识库的产出应该流向哪里？（文章 / 报告 / 决策？）
+> 收录素材的判据现在由 [[llm-wiki-research]] 的「当前缺口」表给出。
+> 下面只保留**不属于任何项目**的维护性事项。
+
+- [ ] **确认或改写 [[llm-wiki-research]] 的 `goal`** —— 机制已就位，目标本身仍需人类定义
+- [ ] **建第二个项目** —— 一个项目不是项目层，是特例。至少两个才能验证这套机制
+- [ ] **补上真正的对外产出** —— 这是「外向回路」缺口唯一可能的解法
 - [x] ~~收录 Vannevar Bush《As We May Think》原文，核验 [[vannevar-bush]] 中待验证的描述~~ —— **已完成**，[[vannevar-bush]] 已提升为 `confidence: high`
-- [ ] **收录卢曼 1981 年《Kommunikation mit Zettelkästen》** —— 这是 [[pkm-history]] 上最大的证据缺口（[[niklas-luhmann]] 与 [[zettelkasten]] 目前全靠二手文献）
-- [ ] 收录 1960–1980 年代个人计算实验的资料（Engelbart 的 Augment、Xerox PARC）—— 补 [[pkm-history]] 的空白段
-- [ ] 收录一份关于 [[roam-research]] 历史的独立报道，把它从 `low` 提升到 `high`
 - [ ] 收录 qmd 的仓库文档，把 [[qmd]] 从 `medium` 置信度提升到 `high`
 - [ ] 找一份独立的 RAG 评测资料，为 [[rag-vs-wiki]] 补充非作者来源的证据
-- [ ] 独立验证 [[eden]] 的能力描述（目前全为厂商自述，`confidence: low`）
 - [ ] 核校 [[2026-09-18-dankoe-remember-what-you-read]] 的正文（经 AI 抓取工具提取，有转写偏差风险）
 - [ ] 比对 second-brain-skill 的 `skills/wiki/README.md` 与本仓库 `AGENTS.md` 的规范差异
 
