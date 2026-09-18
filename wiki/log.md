@@ -96,3 +96,5 @@ status: active
 
 ## [2026-09-18] ingest | 《不可能的技艺》读书笔记（含《盗火》与心流综述）—— 混层素材（AI摘要/成书正文/课程讲稿），含本库首例伪引注；另开项目 peak-performance，并从 emotion-awareness 继承两条缺口
 
+## [2026-09-18] query | 普通人如何掌握巅峰表现这项不可能的技艺 —— 归档 analyses/ordinary-people-peak-performance（本库第一次归档「答不好」的答案）。顺带逐行核对发现「4% 原则」只在 AI 生成段、成书正文没有；并更正了 raw/ 分层区间的判断
+
