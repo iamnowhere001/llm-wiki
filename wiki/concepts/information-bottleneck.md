@@ -5,8 +5,8 @@ slug: information-bottleneck
 tags: [信息论, 压缩, 表征, 大模型, 学习]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-learning-is-forgetting]
-related: [compression-as-intelligence, learning-as-forgetting, naftali-tishby, thomas-griffiths, schema-psychology, llm-wiki-pattern, retrieval-practice]
+sources: [2026-09-18-learning-is-forgetting, 2026-09-18-capability-seeking-theorem-notes]
+related: [compression-as-intelligence, learning-as-forgetting, naftali-tishby, thomas-griffiths, schema-psychology, llm-wiki-pattern, retrieval-practice, cybernetic-learning, narrative-as-objective-function, 2026-09-18-capability-seeking-theorem-notes]
 confidence: medium
 status: active
 ---
@@ -78,6 +78,36 @@ I(Z;Y) − β · I(X;Z)
 - **容易与 [[schema-psychology]] 混淆**：图式是「把多个元素打包成一个整体」，信息瓶颈是「把与目标无关的信息扔掉」。
   两者方向一致（都在减少占用），但**图式讲的是打包，信息瓶颈讲的是丢弃** —— 打包后东西还在，丢弃后不在了。
 
+## 赋能（empowerment）＝ 信道容量的行动版（2026-09-18 新增接口）
+
+成长战略第 1 讲把「赋能」直接定义成**信息论量**：[[2026-09-18-capability-seeking-theorem-notes]] **讲稿行 126** ——
+
+> 「我们经常说要『赋能』，而信息论早就有个概念就叫『赋能（empowerment）』，
+> 意思是**增加未来状态的信道容量**。就是如果这个动作能让你到达一个地方，
+> 那个地方通向更多不同的未来，这个动作就是赋能。」
+
+**这是本库第一次把「赋能」这个词与信息论接上。** 它的形式化就在信道容量上：
+Klyubin, Polani & Nehaniv (2005) 的 empowerment ＝ **actions → future observations 的信道容量**
+（该份核查表第 8 条已核为真，**但讲稿未点名作者** —— 属「可核术语、零归属」）。
+
+### 它与信息瓶颈的关系要说清（别合并）
+
+| | 信息瓶颈（本页） | 赋能 |
+|---|---|---|
+| 那条信道 | 输入 X → 表征 Z（**学习**） | 动作 → 未来观察（**控制**） |
+| 优化方向 | **压** —— 砍掉与目标无关的信息 | **增** —— 拓宽可达的未来 |
+| 一句版 | 「丢掉没用的」 | 「打开更多出口」 |
+
+**两者是同一族语言（信道容量）的两个方向：一个讲收窄，一个讲扩宽。**
+这给了 [[narrative-as-objective-function]] 一个信息论注脚 —— **目标函数越单一，可达未来越少**：
+「器」＝把 X→Z 压到只剩一个目标，「赋能」＝把动作的可达状态撑开。
+用 [[cybernetic-learning]] 的话说：**可达状态数 ＝ 可接收误差信号的分支数。**
+
+> [!warning] 一处待登记的张力（本库只登记，不判）
+> 讲稿把「能耐（power）」与「赋能（empowerment）」讲成**同一条链**上的两个词；
+> 而 Turner et al. (2021) 那篇论文明确说其 power 形式化「**避开了 Salge et al. 的 empowerment 的某些缺陷**」——
+> **学界认为两者不完全兼容。** 见 [[2026-09-18-capability-seeking-theorem-notes]] 的 note 与开放问题。
+
 ## 与其他页面的关系
 
 - 是 [[compression-as-intelligence]] 的**技术版本**：后者是哲学命题（智能＝压缩），本页给出了可计算的量。
@@ -86,6 +116,8 @@ I(Z;Y) − β · I(X;Z)
   而编译的本质按本页就是**有损压缩**。**本库此前从未给「编译」下过定义**，本页提供了一条候选定义。
 - 与 [[retrieval-practice]] 的关系（本库自己的联想，`confidence: low`）：提取练习之所以有效，
   按本页的框架可以理解为「强制表征对输出保持高预测性」—— 但这只是本库的推断，素材与一手文献均未这么说。
+- **与「赋能」的关系（2026-09-18 新增）**：见上「赋能＝信道容量的行动版」一节 ——
+  **同一族语言的两个方向**（本页讲压、赋能讲增），由 [[2026-09-18-capability-seeking-theorem-notes]] 的讲稿行 126 接上。
 
 ## 开放问题
 
@@ -96,4 +128,6 @@ I(Z;Y) − β · I(X;Z)
 ## 来源
 
 - [[2026-09-18-learning-is-forgetting]]（李继刚的通俗转述；**核心引注 arXiv:2604.07569 已外部核实为真**）
+- [[2026-09-18-capability-seeking-theorem-notes]]（**2026-09-18 新增**）—— 成长战略第 1 讲，**讲稿行 126**（赋能＝增加未来状态的信道容量；
+  该概念的形式化见 Klyubin/Polani/Nehaniv 2005，**讲稿未点名**）。行号为本库对 `raw/` 实核的文件绝对行号
 - 外部核查：arXiv:2604.07569 摘要页（八位作者、ICLR 2026、2026-04-08 提交）

@@ -5,8 +5,8 @@ slug: prediction-error
 tags: [学习, 神经科学, 机制, 贝叶斯]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-how-we-learn-notes]
-related: [cybernetic-learning, four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, stanislas-dehaene, peak-performance, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, cognitive-debt, 2026-09-18-writing-is-thinking]
+sources: [2026-09-18-how-we-learn-notes, 2026-09-18-three-selves-notes]
+related: [cybernetic-learning, four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, stanislas-dehaene, peak-performance, three-selves, free-energy-principle, hard-constraints, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-three-selves-notes, cognitive-debt, 2026-09-18-writing-is-thinking]
 confidence: low
 status: active
 ---
@@ -36,6 +36,14 @@ status: active
 | **行为层** | 目标 → 误差信号 → 过滤器 → 相关性 → 留存 | [[dan-koe]] | 通俗转述 |
 | **算法层** | 「优化奖励函数」（行 382） | 本素材 C 段（AI 生成） | 通俗转述 |
 | **神经层** | 预测误差 → 多巴胺能信号 → 突触权重调整 | [[stanislas-dehaene]] | **一手研究者** |
+| **认知 / 自我层**（2026-09-18 新增） | 打脸时的三条路：改注意力 / 改行为 / **改模型** | [[2026-09-18-three-selves-notes]]（讲稿段行 171–177） | 通俗转述（零引注） |
+
+> [!note] 2026-09-18 补：新增的第四层是本库**第一次拿到「误差之后怎么办」**
+> 第 6 讲（[[2026-09-18-three-selves-notes]]）的三分叉——**改注意力 / 改行为 / 改模型**——
+> 在这里落实成了**一个可执行的分支**（且已在 [[three-selves]] 与 [[free-energy-principle]] 展开）。
+> **它的价值不在层数，在于它是本页第一次出现「动作」**：
+> 前三层都在描述**误差信号是什么**，这一层说的是**拿它做什么**。
+> **对「误差信号之后是空的」这个本库老问题，这是第一次有内容填进去。**
 
 > [!important] 这份素材**加剧**了本项目的既有问题，而不是解决它
 > [[peak-performance]] 的缺口表已记录：「控制论与强化学习可能不是同一条链条」。
@@ -45,6 +53,15 @@ status: active
 >
 > **本库目前的判断是：这三层「看起来像同一条链」，但本库没有任何材料证明它们是。**
 > 需要的是**概念批判或领域元分析**，而不是第四份通俗书籍笔记。
+
+**2026-09-18 更新：出现了第四层。** [[2026-09-18-narrative-first-principle]] 把
+[[free-energy-principle]] 接到了**叙事**上 —— 「每次收到惊讶就会抬高自由能，
+以此提醒自己**修改叙事**」。于是链条变成四层：行为层（目标→误差信号）、
+算法层（优化奖励函数）、神经层（PE→多巴胺→突触权重）、**叙述层（叙事被修正）**。
+
+**注意这加剧了缺口，而不是解决它。** 素材把「内部生成模型」直接等同于「叙事」是一步**未论证的外推**
+（内部模型是隐式的、亚个人的；叙事是显式的、可讲述的），详见 [[free-energy-principle]]。
+`low`。
 
 ## 边界与反例
 
@@ -70,6 +87,21 @@ status: active
 - **与 [[retrieval-practice]] 直接相连** —— 提取练习之所以有效，正因为它制造了「能不能取出来」的预测检验。
 - **是 [[cybernetic-learning]] 的神经层对应物**（但见上方三层链条问题）。
 - **与 [[2026-09-18-hyperefficient-notes]] 的「挑战 vs 威胁」相交** —— 两者都讲「压力会关闭学习」，但一个从多巴胺/杏仁核讲，一个从控制感讲。
+
+## 误差之后的两种对策：与第 6 讲三分叉的对应（2026-09-18 新增）
+
+[[2026-09-18-free-energy-alignment-notes]]（模块一第 011 讲，讲稿段行 100–104）把「误差之后」明确分成**两条路**：
+**知觉推断**（改模型去适应世界）/ **主动推断**（改世界去符合模型）。
+
+这与本页已有的第 6 讲三分叉（改注意力 / 改行为 / 改模型）是**同一件事的两种切法**：
+
+| 本讲（011，行 100–104） | 第 6 讲（三分叉，行 171–177） |
+|---|---|
+| 知觉推断（更新信念 / 改模型） | ③ 改模型 |
+| 主动推断（改环境 / 改行为） | ② 改行为 |
+
+**两套切法的对应关系素材没有做，本库登记为待判** —— 见 [[free-energy-principle]] 的开放问题。
+**注意一处不对称**：011 讲的切法比三分叉**少一路** —— 第 6 讲的「① 改注意力」（不看打脸的证据）在 FEP 的两条对策里没有独立位置。
 
 ## 开放问题
 

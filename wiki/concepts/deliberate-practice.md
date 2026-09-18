@@ -5,8 +5,8 @@ slug: deliberate-practice
 tags: [学习, 专长, 天赋, 训练, 反馈]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-deliberate-practice-talent]
-related: [desirable-difficulty, cognitive-load-theory, mental-models, transfer-of-learning, deliberate-play, anders-ericsson, wanweigang, 2026-09-18-deliberate-practice-talent, peak-performance, trajectory-evaluation]
+sources: [2026-09-18-deliberate-practice-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes]
+related: [desirable-difficulty, cognitive-load-theory, mental-models, transfer-of-learning, deliberate-play, luck-over-talent, hard-constraints, anders-ericsson, wanweigang, 2026-09-18-deliberate-practice-talent, peak-performance, trajectory-evaluation, modern-thinking-tools, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes]
 confidence: medium
 status: active
 ---
@@ -64,6 +64,60 @@ status: active
 它明确反对《哪来的天才》（*Talent is Overrated*）式的「天赋被高估」叙事，
 也拒绝把天赋神秘化。
 
+> [!warning] 2026-09-18 补：第 5 讲给了一条本页无法回避的对手证据
+> [[2026-09-18-uncertainty-fuel-notes]]（第 5 讲）引 **Pluchino, Biondo & Rapisarda (2018)**：
+> 正态分布的天赋会产出重尾分布的财富，登顶者「几乎从不是最有天赋的人」。
+> 素材的结论是「**运气比能力重要得多**」，甚至「**能力本身也是运气**」。见 [[luck-over-talent]]。
+>
+> **本库认为这一对撞可以调和，但两边都没有调**：
+>
+> | | 本页说 | 第 5 讲说 |
+> |---|---|---|
+> | 量的是什么 | **在该任务上的表现**（能靠练习提升） | **最终的社会成就**（乘了无数随机项的积分） |
+> | 时间尺度 | 一次练习周期 | 一生 |
+>
+> **只要把「能力」拆成「任务内表现」与「社会成就」两个词，两者可以同时为真。**
+> **本页没有这个拆法，第 5 讲也没有。**
+> 本库判断（`low`）：**这是 [[modern-thinking-tools]] 张力表里最有可能被解决的一条。**
+> （另一处相关：第 2 讲把「努力」直接定性为线性思维 —— 那是更硬的一击。）
+
+## 成长战略模块的四处对照（2026-09-18 新增）
+
+「模块一 成长战略」（万维钢《现代思维工具》007–021）里有**四讲**直接踩到本页主张。
+**四处性质不同，必须分开登记 —— 三处张力、一处同向印证：**
+
+| # | 素材 | 说的话 | 与本页的关系 |
+|---|---|---|---|
+| 1 | [[2026-09-18-capability-seeking-theorem-notes]]（007，讲稿行 62 / 80 / 147） | 「**不要优化某个单一目标函数，你要增加选项**」（行 147）；「成为『器』的本质就是瞄准一个单独的目标优化」（行 62） | **非硬张力** |
+| 2 | [[2026-09-18-self-determination-theory-notes]]（010，讲稿行 93） | 「**人最强的不是自律，而是自愿**」「一流人物不可能是痛苦的卷王」 | **张力（新类型）** |
+| 3 | [[2026-09-18-game-selection-notes]]（018，讲稿行 35） | 「**高回报不是对辛苦的补偿**，大成就不是对努力的积分」 | **张力 +1** |
+| 4 | [[2026-09-18-active-cognitive-load-notes]]（012，**AI 段行 693**） | 「一定要给自己找一个『**稍微踮起脚尖才能够到**』的目标」 | **同向印证，不是新证据** |
+
+**（1）非硬张力：「不要单一目标」vs「明确具体目标」。**
+本页要求「高分辨率目标」——不是「打篮球」，是「接球后左脚跨步的那个瞬间动作」。
+第 1 讲却主张**别把自己锁在一个目标函数上**（行 147）。**这不是硬矛盾，讲稿自己留了口子**：
+行 143「君子不是不优化也不是不重视目标函数，而是把目标函数当做手段」；
+行 78「君子在每个特定时刻完全可以盯着一个目标，但他是那个目标的主人而不是奴隶，他可以随时跳出那个叙事」。
+**本库的读法（`low`）**：本页说的是**任务内**把目标做精（颗粒度），第 1 讲说的是**人生尺度上**不让一个目标定义你（维度）。
+**本页主张不改** —— 两个「目标」不在同一层级。
+
+**（2）张力（新类型）：「自愿」vs「刻意」。**
+第 4 讲是库内**第一次由同一门课的另一板块直接对着本页说话**：行 93「人最强的不是自律，而是自愿」。
+**「刻意」与「自愿」是同一个问题的两种答法** —— 一个说靠精确校准与外部反馈驱动，一个说靠内在动机驱动。
+**本库不裁决**：两者也可以分层（自愿决定**要不要练**，刻意决定**怎么练**），但两边都没写这个分层。
+
+**（3）张力 +1：第三次把「努力」定性为负资产。**
+行 35 把「努力」定性为「**对辛苦的补偿、对努力的积分**」。这是同一门课里**第三次**同向贬抑
+（第 2 讲「线性思维」、第 12 讲「努力不是硬通货，合规才是」，见 [[2026-09-18-field-and-habitus-notes]]）。
+**密度值得记**：本页的主张在一门课里被四个不同板块从四个方向质疑过。**本页仍不因此下调主张** ——
+质疑的是「努力与回报的对应关系」，不是「精确校准能不能提高任务内表现」。
+
+**（4）同向印证，不是新证据 —— 不要把它算进支持侧。**
+第 6 讲的 AI 段行 693：「一定要给自己找一个『稍微踮起脚尖才能够到』的目标。利用你 85% 已知的技能作为安全垫，
+去探索 15% 未知的领域」——**与本页「待在能力边缘」同向**。**但它同时是三件事**：
+① 未点名艾利克森或任何一手研究；② 出自 **AI 加工段**；③ 讲的是**任务难度设定**，不是训练体系。
+**故只登记为「同向印证」，不计入支持侧证据**（支持侧仍只有 2025 RCT 与综述）。见 [[2026-09-18-active-cognitive-load-notes]] 印证表。
+
 ## 与其他页面的关系
 
 - 与 [[deliberate-play]]（Grant《隐藏的潜能》）：**名字相近，主张不同** ——
@@ -76,6 +130,10 @@ status: active
   这与刻意练习「必须有导师」的条件一致。
 - 与 [[transfer-of-learning]]：2025 医学生 RCT 的额外发现是刻意练习**有利于技能迁移** ——
   这是本库第一次看到两者被放在同一研究里。
+- **成长战略模块四讲（2026-09-18 新增）**：[[2026-09-18-capability-seeking-theorem-notes]]（007）、
+  [[2026-09-18-self-determination-theory-notes]]（010）、[[2026-09-18-game-selection-notes]]（018）、
+  [[2026-09-18-active-cognitive-load-notes]]（012）—— 见上「成长战略模块的四处对照」一节。
+  **四处里三处是张力、一处是同向印证，性质必须分开。**
 
 ## 待办 / 开放问题
 
@@ -89,3 +147,8 @@ status: active
 ## 来源
 
 - [[2026-09-18-deliberate-practice-talent]]
+- [[2026-09-18-capability-seeking-theorem-notes]]（**2026-09-18 新增**）—— 成长战略第 1 讲，讲稿行 62 / 78 / 143 / 147（非硬张力）
+- [[2026-09-18-self-determination-theory-notes]]（**2026-09-18 新增**）—— 成长战略第 4 讲，讲稿行 93（张力：自愿 vs 刻意）
+- [[2026-09-18-game-selection-notes]]（**2026-09-18 新增**）—— 成长战略第 11 讲，讲稿行 35（张力 +1：努力＝对辛苦的补偿）
+- [[2026-09-18-active-cognitive-load-notes]]（**2026-09-18 新增**）—— 成长战略第 6 讲，**AI 段行 693**（同向印证，非新证据）
+- **以上四份的行号均为本库对 `raw/` 实核的文件绝对行号。**

@@ -76,6 +76,11 @@ status: active
 - **实体 / 概念层**（2026-09-18，读英文原书核实后拆出 8 页）：[[adam-grant]]（第三位作者）、[[character-skills]]（把「品格」从道德范畴挪到技能范畴）、[[imperfectionism]]、[[human-sponge]]、[[deliberate-play]]、[[scaffolding]]、[[opportunity-systems]]、[[looping]]、[[brainwriting]]、[[trajectory-evaluation]]
   > 这是本项目**第一次由一份素材派生出完整的概念簇**。八页中有七页已对照英文原书核实到具体页码，`confidence: medium` —— 与本项目前两份素材（全部 `low`）不同
 - **学习力簇（2026-09-18 第七批素材派生 —— 万维钢《现代思维工具》九讲）**：
+  > [!note] **反向指针（2026-09-18 新增）** —— 这九讲是《现代思维工具》**「教育与学习」区块**在库的部分。
+  > 该课已于 2026-09-18 建立**课程级项目** [[modern-thinking-tools]]，
+  > 其「全课地图」一节登记全课各区块的已收 / 未收 / 归口。
+  > **两个项目对同一门课的分法仍然保留**（不合并的理由见该项目的决策记录），
+  > 此处只补一句指针，使「这门课收齐了吗」在两个方向上都能一眼回答。
   - **素材层（9 份，整系列收录）**：[[2026-09-18-cognitive-load-theory]]、[[2026-09-18-icap-framework]]、[[2026-09-18-deliberate-practice-talent]]、[[2026-09-18-mental-representations]]、[[2026-09-18-synthesis-research]]、[[2026-09-18-tacit-knowledge]]、[[2026-09-18-desirable-difficulty]]、[[2026-09-18-autonomy-support]]、[[2026-09-18-transfer-bridging]]
   - **概念层（10 页）**：[[cognitive-load-theory]]、[[schema-psychology]]、[[mental-models]]、[[deliberate-practice]]、[[desirable-difficulty]]、[[tacit-knowledge]]、[[transfer-of-learning]]、[[icap-framework]]、[[autonomy-support]]、[[explanatory-framework]]
   - **研究者层（7 页）**：[[wanweigang]]（系列作者）、[[john-sweller]]、[[michelene-chi]]、[[robert-bjork]]、[[anders-ericsson]]、[[michael-polanyi]]、[[david-perkins]]

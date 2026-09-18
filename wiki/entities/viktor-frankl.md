@@ -5,8 +5,8 @@ slug: viktor-frankl
 tags: [人物, 意义疗法, 情绪, 待核验]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
-related: [stimulus-response-gap, stephen-covey, stoic-control-dichotomy, emotion-awareness]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-narrative-self, 2026-09-18-capability-seeking-theorem-notes]
+related: [stimulus-response-gap, stephen-covey, stoic-control-dichotomy, emotion-awareness, narrative-reframing, 2026-09-18-capability-seeking-theorem-notes]
 confidence: medium
 status: active
 ---
@@ -35,6 +35,8 @@ status: active
 |---|---|---|
 | — | 素材引用上述英文句，署名为 Viktor E. Frankl | [[2026-09-18-emotion-awareness-notes]] |
 | — | 素材在「将感受情绪与采取行动解绑」一节以中文意译再次引用：「在刺激与回应之间存在一段距离，我们在那段距离中拥有选择的自由」 | 同上 |
+| — | **讲稿段**引用他，用来论证「**增加选项**」（行 156） | [[2026-09-18-capability-seeking-theorem-notes]] |
+| — | **同份素材的 AI 段**再次引用他，用来论证「**剥离精神奴役**」（行 332–334） | 同上（**AI 加工段**） |
 
 > [!success] 归属链条已补全（2026-09-18 更新）
 > 本页最初标记为「出处存疑、待核验」。收录 [[2026-09-18-cognitive-decoupling]] 后，链条清楚了：
@@ -90,6 +92,19 @@ status: active
 > **另有一处归属错误值得记**：本素材 A 段行 73 把这句话列为「**本书**」的第 2 条要点 ——
 > 而它在中文译本正文里 0 次出现。这是**把引文当成论点**的典型错误（见 [[2026-09-18-clear-thinking-notes]]）。
 
+> [!warning] 第五次出现（成长战略第 1 讲）：同一个人，两个用途，性质不同（2026-09-18 新增）
+> [[2026-09-18-capability-seeking-theorem-notes]] 在一份素材里引用了他**两次**，用途不同：
+>
+> | 位置 | 用途 | 性质 |
+> |---|---|---|
+> | **讲稿段 行 156** | 「人家《活出生命的意义》的作者维克多·弗兰克（Viktor Frankl）在纳粹集中营里都能找到精神自由，你怎么就不能给自己增加选项呢？」—— 论证「**增加选项**」 | **讲稿主张**（万维钢本人） |
+> | **AI 段 行 332–334** | 「**剥离『精神奴役』（维克多·弗兰克尔的底牌）**」：引「**人类最后的自由，是在任何既定的境遇中，选择自己态度的自由。**」—— 论证「在心里拉起一道防火墙」 | **AI 加工段**（该份 AI 段占 87%） |
+>
+> **两处性质必须分开标注**：按 `AGENTS.md` 4.1，**AI 段不得代表本讲**。
+> 另注意 AI 段引的这一句，与他本库已知的「刺激与回应之间的间隙」**不是同一句** ——
+> 它更接近《活出生命的意义》原书那句（同族引用见 [[2026-09-18-narrative-self]] 行 549，
+> 该句本轮已核为真）。**库内因此可以并列：一句归属存疑、一句可核。**
+
 ## 在本知识库中的角色
 
 **他的功能是提供整套方法论的「承重墙」** —— 那段间隙。
@@ -110,3 +125,7 @@ status: active
 
 - [[2026-09-18-emotion-awareness-notes]]
 - [[2026-09-18-cognitive-decoupling]]（补全归属链条）
+- [[2026-09-18-narrative-self]]（**2026-09-18 新增**）—— **第四次出现**。行 549 引他那段「人所拥有的任何东西，都可以被剥夺，唯独人性最后的自由……不能被剥夺」，**引注本轮已核为真**（《活出生命的意义》）。该段用他支撑「用幸存者视角重述过去」，见 [[narrative-reframing]]
+- [[2026-09-18-capability-seeking-theorem-notes]]（**2026-09-18 新增**）—— **第五次出现**，且是**一份素材内两次引用、性质不同**：
+  讲稿段行 156（增加选项）／AI 段行 332–334（剥离精神奴役）。**该份 AI 段占 87%，两处必须分开引用。**
+  行号为本库对 `raw/` 实核的文件绝对行号

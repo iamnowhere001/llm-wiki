@@ -5,8 +5,8 @@ slug: narrative-self-vs-bodily-self
 tags: [情绪, 身体, 哲学, 机制]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [maurice-merleau-ponty, wang-lu, internal-friction, thinking-vs-feeling]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
+related: [maurice-merleau-ponty, wang-lu, internal-friction, thinking-vs-feeling, narrative-identity, narrative-as-first-principle, narrative-reframing, cognitive-reappraisal, 2026-09-18-narrative-self]
 confidence: medium
 status: active
 ---
@@ -86,11 +86,33 @@ status: active
 - **与 [[thinking-vs-feeling]] 构成本库目前最清晰的一处内部矛盾**（见上）。
 - **是 [[emotion-as-coupling]] 的配套视角**：如果情绪存在于人与处境的耦合中，那么「回到身体」就是回到耦合的现场。
 - **为 [[forgiveness]] 的「允许缓慢与反复」提供了解释**：改变不发生在认知层，而发生在身体里、习惯里。
+- **2026-09-18 新增：与 [[narrative-identity]] 构成反向对照** —— 那一页主张「自我由叙事构成」，
+  本页主张「叙事是覆盖身体感受的异化层」。**两页可能不冲突（用法 vs 构成），但都没做辨析**，
+  是本库第二处明确的内部矛盾。共同未答的问题：本页结尾那句「那么『身体自我』是否也是一个叙事？」
+- **与 [[narrative-as-first-principle]] 的底座相反**：那一页说叙事是世界的底层结构，
+  本页说叙事是一层需要警惕的覆盖物。
+- **2026-09-18 新增：与 [[narrative-reframing]] 的关系比上一条更具体，也更像真冲突。**
+  那一页（来自 [[2026-09-18-narrative-self]] 的 I 段）教人**把「受害者剧本」改写成「英雄剧本」**，
+  并要求「挖掘学到的教训和获得的成长」。
+  **这与本页批判的「用事后解释覆盖身体当下体验」是同一个动作** ——
+  区别只在**时机**：本页批判的是「正在难受时就用解释盖掉」，那一页的方法默认**已经过了一段时间**。
+  **那份材料在那个方法里设了防线**（「承认感受，而非否认事实」「第一步永远是允许自己感受它们」），
+  **但防线在第 1 步，而风险在第 4 步** —— 顺序上，它允许人在「感受到一半」时就去重写。
+  **本页与那一页合起来，问出的问题比上一条更锋利**：
+  不是「叙事是什么」（那是个立场问题），而是「**什么时候可以用它**」（那是个可操作、可检验的问题）。
+  这是本库目前最缺的一条判据。
+- **2026-09-18 新增：「异化」一词在本库的三种用法之一，见辨析页 [[alienation]]。**
+  [[2026-09-18-resonance-notes]] 首次把三种互不相通的用法并置：①**罗萨的关系缺陷**（共鸣缺失）；
+  ②**本页的自我内部挪用**（叙事覆盖身体的真实感受，见上文行 41–43）；③**体制对人的扭曲**
+  （[[2026-09-18-game-selection-notes]] 行 76，古德哈特定律语境）。**三者不可互引为佐证。**
 
 ## 开放问题
 
 - [ ] **梅洛-庞蒂的哪些著作支持这个论证？** 素材未引用具体书目（可能是《知觉现象学》）
-- [ ] **「身体自我」与「叙事自我」的二分是否过强？** 需要叙事身份理论（如 Ricoeur、McAdams）的材料
+- [ ] **「身体自我」与「叙事自我」的二分是否过强？** 需要叙事身份理论（如 Ricoeur、McAdams）的材料。
+      **2026-09-18 部分缓解**：[[2026-09-18-narrative-first-principle]] 的 E 段给出了叙事身份理论的
+      **操作形态**（12 个练习），见 [[narrative-identity]] —— 但它是 AI 生成、零引注，
+      **按「材料类型」判据不构成理论支撑**。Ricoeur / McAdams 一手仍然要找
 - [ ] **如何调和本页与 [[thinking-vs-feeling]]？** 这是本项目缺口表里的一项
 - [ ] 「回到身体」的具体技术在创伤情境下的适用性 —— 需要创伤知情（trauma-informed）的材料。**这条现在被 [[cognitive-vs-somatic-paths]] 列为该页入口判据的失败条件之一**
 - [ ] 素材提到「身体的基本语言是我能」—— 这个说法出自哪里？（可能是梅洛-庞蒂的「我能的身体」概念，但需核对）

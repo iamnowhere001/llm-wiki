@@ -5,8 +5,8 @@ slug: character-skills
 tags: [品格, 学习, 巅峰表现, 可塑性, 单来源]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-hidden-potential-notes]
-related: [adam-grant, peak-performance, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination]
+sources: [2026-09-18-hidden-potential-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
+related: [adam-grant, peak-performance, luck-over-talent, hard-constraints, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination, modern-thinking-tools, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
 confidence: low
 status: active
 ---
@@ -59,10 +59,51 @@ status: active
 
 ## 低置信度的原因
 
-- **单来源**：本库目前只有 [[2026-09-18-hidden-potential-notes]] 一份材料，且是**未署名的中文读书笔记**。
+- **本页主张仍是单来源**：主干（品格定义、四个维度、詹姆斯否证）只来自 [[2026-09-18-hidden-potential-notes]] 一份，
+  且是**未署名的中文读书笔记**。2026-09-18 新增的两份（[[2026-09-18-compounding-advantage-notes]] / [[2026-09-18-self-determination-theory-notes]]）
+  给的是**方向印证与复利解释**，**不覆盖本页的任何具体断言** —— 故 `confidence` 仍为 `low`。
 - **该素材近四成是 AI 生成段**，其中「切蒂的幼儿园教师研究」与「25 岁收入差异」只出现在 AI 段，中文正文中不存在（见该页数字清单）。
 - **「预测力优于早期认知技能」这条断言无一手出处** —— 素材只说「最终结果证明，这些影响比早期的数学和阅读技能更强大」，未给研究名。**标「（未验证）」。**
 - **英文原书 PDF 已下载但未读** —— 读数核对可以升级本页，也可以推翻它。
+
+> [!warning] 2026-09-18 补：第 5 讲把「能力」也归给了运气
+> [[2026-09-18-uncertainty-fuel-notes]]（第 5 讲，行 115）：「**能力本身也是一种运气。**」
+> 而本页的核心主张是**品格是技能而不是天赋，可以习得**。
+>
+> **严格说两者并不直接冲突**：品格讲「你能把自己训练成什么样」，运气讲「那会换来什么结果」。
+> **但素材的措辞把两者拉近了** —— 而本页也没有交代：
+> **如果运气决定结果，那么训练品格的理由是什么？**
+>
+> **本库认为这是「品格论」必须回答的问题，库内目前没有人回答它。** 见 [[luck-over-talent]]。
+> 已记入 [[modern-thinking-tools]] 的张力表（该表原本只对着第 3 讲的「被指定的美德清单」，**现在多了这一条**）。
+
+## 两处正面接口（2026-09-18 新增）
+
+**（1）009 讲：尽责性 ＝ 复利系统的操作系统。**
+[[2026-09-18-compounding-advantage-notes]]（成长战略第 3 讲）把**尽责性**列为心理资本的核心（讲稿行 123）：
+「心理资本，包括自控力、韧性、情绪稳定和意义感，**尤其要有尽责性**。
+**心理资本是整套复利系统的操作系统**，它决定你能不能长期稳定地做正确的事。」
+
+**这给本页补了一条「品格技能为什么值钱」的复利解释**（该页关系第 5 条）：
+尽责性重要的理由不是道德上更好，而是**复利要求「不离场」** —— 中断一次，乘数就归零。
+**可与本页四维度对齐**：「纪律性」（能否长期集中注意）对应「长期稳定地做正确的事」，
+「坚定性」（困难下是否坚持）对应复利的「不下牌桌」。
+
+**（2）010 讲：内化梯度 vs 可训练的性格技能 —— 结构对应，可互相印证。**
+[[2026-09-18-self-determination-theory-notes]]（成长战略第 4 讲，讲稿行 63）给出自我决定理论的**六层动机连续体**：
+`无动机 → 外部调节 → 内摄调节 → 认同调节 → 整合调节 → 内在动机`，并称它是一个「**内化**」过程
+（行 105「尽可能把外部任务内化，把控制点往内移」）。
+
+| | 本页 | [[2026-09-18-self-determination-theory-notes]] |
+|---|---|---|
+| 对象 | **品格**（主动 / 亲社会 / 纪律 / 坚定） | **动机**（六层内化梯度） |
+| 主张 | 品格**是技能**，可练，有可观察的行为指标 | 动机**可内化**，控制点可以往心里移 |
+| 共同点 | **两者都主张「品性 / 动机是可培养的，不是天赋」** | 同 |
+
+**这是本库目前对「可塑性」这一命题最整齐的一组同向材料。**
+**但注意分寸**：010 讲的证据等级明显更高（具名引注 14 条、其中 11 条可核；Deci & Ryan 1985 / 2000），
+**而本页是单来源、未署名的中文读书笔记（`low`）** ——
+**两页可以互证方向，但本页不能借用 010 的引注来升级自己的 `confidence`。**
 
 ## 与其他页面的关系
 
@@ -81,3 +122,6 @@ status: active
 ## 来源
 
 - [[2026-09-18-hidden-potential-notes]]
+- [[2026-09-18-compounding-advantage-notes]]（**2026-09-18 新增**）—— 成长战略第 3 讲，讲稿行 123（尽责性＝复利系统的操作系统）
+- [[2026-09-18-self-determination-theory-notes]]（**2026-09-18 新增**）—— 成长战略第 4 讲，讲稿行 63 / 105（六层内化连续体，与「品格可训练」结构对应）
+- **两份新增素材的行号均为本库对 `raw/` 实核的文件绝对行号。**

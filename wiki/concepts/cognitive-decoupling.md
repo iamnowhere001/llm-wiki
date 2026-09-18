@@ -121,6 +121,24 @@ status: active
 - **与 [[narrative-self-vs-bodily-self]] 存在张力**：那一页说「叙事覆盖身体是一种异化」，本页说「重写叙事是一种能力」。见 [[emotion-awareness]] 缺口表。
 - **与 [[cognitive-vs-somatic-paths]] 直接相关**：那一页处理的正是本页与 [[narrative-self-vs-bodily-self]] 之间的空白 —— 它把本页（认知路径）与「回到身体」（身体路径）串成两个入口，并指出**本页三步里完全没有身体这一环**。
 
+> [!warning] 2026-09-18 补：名称归属 —— 「认知解耦」的术语不是本课原创
+> [[2026-09-18-five-thinking-tools-livestream]]（模块一收官直播，**行 184**）把本页三步法列为
+> 模块一工具之一，并自陈「**这里面有我一点小小的原创……这是我在课里建的一个模型**」。
+>
+> **经外部核查：术语「cognitive decoupling」先于本课存在，属 [[keith-stanovich]]。**
+> Stanovich 在双加工理论中把 cognitive decoupling 列为 **Type 2 加工的核心特征**
+> （Stanovich 2004 / 2009 / 2011；Stanovich, West & Toplak 2014, ch.6：
+> *These cognitive decoupling operations are the central feature of Type 2 processing*）。
+> **本讲称「建了一个模型」时未点名 Stanovich。**
+>
+> **性质判定**：这是一处**归属透明度**问题，**不是伪造引注** ——
+> 该讲措辞已弱化（「三个东西早就存在，论文里没这样系统联系起来」），
+> 与「把别人的术语说成自己造」不同。**登记，不降级。**
+>
+> **第二条待核：出处归属。** 本页 `sources` 记该素材来自《精英日课》、未署名；
+> 本讲把它列为「**模块一**」的工具之一。「**是同一内容的两种出处，还是课程另有专讲？**」——待核。
+> 详见该讲 §回指核查表第 18 条。
+
 ## 开放问题
 
 - [ ] **Stanovich 的认知解耦原意是什么？** 需要其著作（如 *The Robot's Rebellion*、*Rationality and the Reflective Mind*）的一手核对
