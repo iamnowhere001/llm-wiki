@@ -122,3 +122,5 @@ status: active
 
 ## [2026-09-18] ingest | 收录 Dunlosky et al. 2013《Improving Students' Learning With Effective Learning Techniques》—— raw/2026-09-18-dunlosky-learning-techniques.md（5,910 行 / 324,348 字符，PDF 原件 55 页入 assets）。本库第一份一手学术文献，材料类型的第一次更换。校准结果：提取练习与间隔练习『高效用』获一手背书；『概念图不如重读』仍未获支撑（该综述也未收录此比较）；Cepeda 元分析已定位（转引）。建 sources 页 + 实体页 john-dunlosky；回填 retrieval-practice（low→medium）与 spaced-repetition（low→medium）；how-we-learn-and-how-to-improve 撤销『未收录』标注；peak-performance 缺口表该条标记已解
 
+## [2026-09-18] ingest | 收录万维钢《现代思维工具》「学习与教育」板块九讲（2026-05）—— raw/2026-09-18-{cognitive-load-theory,icap-framework,deliberate-practice-talent,mental-representations,synthesis-research,tacit-knowledge,desirable-difficulty,autonomy-support,transfer-bridging}.md。本库第一次整系列收录；首次以 bot 身份抓取
+

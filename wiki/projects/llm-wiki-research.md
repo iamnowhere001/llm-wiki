@@ -50,8 +50,13 @@ status: active
 - **历史层**：[[pkm-history]]、[[bidirectional-links]]、[[zettelkasten]]、[[commonplace-book-vs-llm-wiki]]、[[commonplace-book]]
 - **人物线**（历史层的骨架）：[[vannevar-bush]]、[[ted-nelson]]、[[tim-berners-lee]]、[[andrej-karpathy]]
 - **动机层**：[[why-pkm-in-ai-era]]、[[dan-koe]]
-- **边界层**：[[use-cases]]
+- **边界层**：[[use-cases]]、**[[tacit-knowledge]]**（2026-09-18 新增 —— **本库结构性边界的哲学表述**：波兰尼的命题意味着任何文本化知识系统都有天花板）
 - **参照实现层**：[[second-brain-skill]]、[[qmd]]、[[notebooklm]]、[[eden]]
+- **方法层（2026-09-18 新增）**：[[synthesis-research]]、[[mental-models]]、[[explanatory-framework]]、[[wanweigang]]、[[2026-09-18-synthesis-research]]、[[2026-09-18-mental-representations]]
+  > **为什么这几页属于本项目**：[[2026-09-18-synthesis-research]] 描述的动作（立题 → 找材料 → 判断 → 写成报告）
+  > **正是本库在做的事**。作者自述的方法（66 本书、9 个超大文档、按议题横向链接）
+  > 与 `llm-wiki` 同构，差别只在本库有 `sources` 字段与 `lint`。
+  > **这是本项目第一次拿到一个「别人也在这么做」的外部样本。**
 
 ## 产出（外向回路）
 
