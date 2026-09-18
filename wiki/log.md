@@ -74,3 +74,5 @@ status: active
 
 ## [2026-09-18] edit | 新建项目 traecode-pkm-article（stage: planning）—— 写一篇「如何用 TraeCode 构建 PKMS」的文章；新增实体页 traecode、概念页 agents-md；回填 three-layer-architecture 与 overview；项目层首次有 2 个项目
 
+## [2026-09-18] edit | 锁定 traecode-pkm-article 的 goal（北洛确认：微信公众号 / 知识工作者读者 / 不配示例仓库 / 与 llm-wiki-research 分两篇）；stage planning → active；缺口表重写为 8 条并新增【阻塞】优先级标注（4 条阻塞）；AGENTS.md 3.5 节补【阻塞】标注约定
+

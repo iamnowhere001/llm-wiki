@@ -18,8 +18,8 @@ status: active
 
 > 入口层。**收录素材前先读这里** —— 判断这份素材服务于哪个项目、填哪个缺口。
 
-- [[traecode-pkm-article|用 TraeCode 构建 PKMS 的文章]] `筹划` — 发表一篇讲「如何用 TraeCode 构建个人知识管理系统」的文章，读者能照它复现出一套能跑起来的知识库
 - [[llm-wiki-research|LLM Wiki 模式研究]] `进行中` — 把 LLM Wiki 模式的思想谱系、机制与适用边界研究到能写出一篇对外文章的深度
+- [[traecode-pkm-article|用 TraeCode 构建 PKMS 的文章]] `进行中` — 在微信公众号发表一篇面向知识工作者的文章，讲清如何用 TraeCode 从零搭起一套个人知识管理系统 —— 读者不依赖示例仓库、只看文章就能照做
 
 ## 素材摘要 (10)
 

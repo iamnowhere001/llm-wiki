@@ -79,7 +79,7 @@ status: active
 
 - 素材：**11 份** —— 除原有的 [[2026-09-18-karpathy-llm-wiki]]（含 r1/r2 两版抓取）、[[2026-09-18-second-brain-skill-readme]]、[[2026-09-18-dankoe-remember-what-you-read]] 外，为梳理历史收录了 5 份（[[2026-09-18-bush-as-we-may-think]]、[[2026-09-18-appleton-bidirectional-links]]、[[2026-09-18-berners-lee-link-topology]]、[[2026-09-18-frand-hixon-pkm]]、[[2026-09-18-luhmann-zettelkasten]]），为 TraeCode 文章收录了 2 份（[[2026-09-18-trae-rules-docs]]、[[2026-09-18-trae-agents-md-vs-rules-forum]]）
 - 页面：**46 个**（内容页 42 + 系统页 4）
-- **项目：2 个** —— [[llm-wiki-research]]（进行中，研究模式本身）与 [[traecode-pkm-article]]（筹划中，写一篇能照着做的文章）。两者的分工设想是「为什么」与「怎么做」。
+- **项目：2 个** —— [[llm-wiki-research]]（研究模式本身，讲「为什么」）与 [[traecode-pkm-article]]（面向知识工作者的公众号文章，讲「怎么做」）。分工已确认为**两篇分开、暂不合并**。
 - 结构：**两条线索的交汇 + 一条历史纵深 + 一个入口层** —— Karpathy 的工程视角（主干）+ Dan Koe 的创作者视角（补上目标机制与输出回路），中间是 second-brain-skill 作为参照实现；纵向上由 [[pkm-history]] 把 1945 年至今串成一条线；入口层由两个项目的缺口表共同决定下一步收什么
 
 ## 本库自己的缺口（按 [[cybernetic-learning]] 的判据）
@@ -90,9 +90,9 @@ status: active
 > 本库原先有两个结构性缺口，**第一个已有解**：
 >
 > 1. ~~没有明确目标~~ → 新增 `wiki/projects/` 作为**入口层**。项目页把「目标」与「误差信号（当前缺口）」显式写下来，并规定 **ingest 前先读缺口表**。见 [[llm-wiki-research]] 与 `AGENTS.md` 第 3.5 节。
-> 2. **外向回路仍然缺失。** 「查询→归档」让探索复利，但产出**只存回库里**。[[llm-wiki-research]] 的「产出」一节里，三个产出有两个是库内页面 —— **这正踩在它自己批评的那条线上**（见 [[commonplace-book-vs-llm-wiki]]）。[[traecode-pkm-article]] 把「对外文章」立成了核心产出，方向是对的，但**尚未动笔** —— 所以这一条仍未闭合。
+> 2. **外向回路仍然缺失。** 「查询→归档」让探索复利，但产出**只存回库里**。[[llm-wiki-research]] 的「产出」一节里，三个产出有两个是库内页面 —— **这正踩在它自己批评的那条线上**（见 [[commonplace-book-vs-llm-wiki]]）。[[traecode-pkm-article]] 把「公众号文章」定为核心产出、渠道与读者都已确认，是迄今最接近闭合的一次，但**尚未动笔** —— 所以这一条仍未闭合。
 
-**仍未解决的那个更值得警惕**：项目层提供的是**机制**，不是**目标本身**。两个项目的 `goal` 目前都还是 LLM 起草、**待人类确认或改写**的状态。**机制可以代劳，目标不能。**
+**仍未解决的那个更值得警惕**：项目层提供的是**机制**，不是**目标本身**。不过这里出现了一个正面信号：[[traecode-pkm-article]] 的 `goal` 走完了完整流程 —— **LLM 起草 → 人类回答关键前提 → 锁定**。而 [[llm-wiki-research]] 的 `goal` 仍是 LLM 起草、**待人类确认或改写**的状态。**机制可以代劳，目标不能。**
 
 **历史线上的空白**：[[pkm-history]] 把 1945–2026 串了起来，但中间有两大段空白 —— 1960–1980 年代的个人计算实验（Engelbart、Xerox PARC），以及 1998 年命名到 2017 年 Roam 之间近 20 年的演化。**这些缺口已逐条记入 [[llm-wiki-research]] 的缺口表**，不再散落在本页。
 
@@ -101,9 +101,10 @@ status: active
 > 收录素材的判据现在由 [[llm-wiki-research]] 的「当前缺口」表给出。
 > 下面只保留**不属于任何项目**的维护性事项。
 
-- [ ] **确认或改写两个项目的 `goal`** —— 机制已就位，目标本身仍需人类定义（[[llm-wiki-research]]、[[traecode-pkm-article]]）
-- [x] ~~建第二个项目 —— 一个项目不是项目层，是特例~~ —— **已完成**：[[traecode-pkm-article]]。而两个项目立刻暴露了第一个真问题：**项目会重叠**（共享知识页、都以文章为产出），需要在 `goal` 层面把「为什么」与「怎么做」切开
-- [ ] **补上真正的对外产出** —— 这是「外向回路」缺口唯一可能的解法，目前唯一有希望的是 [[traecode-pkm-article]] 的文章
+- [x] ~~确认或改写两个项目的 `goal`~~ —— **完成一半**：[[traecode-pkm-article]] 的三个前提已由北洛确认、goal 已锁定；[[llm-wiki-research]] 的 goal 仍是 LLM 起草、待确认
+- [x] ~~建第二个项目 —— 一个项目不是项目层，是特例~~ —— **已完成**：[[traecode-pkm-article]]。两个项目立刻暴露了第一个真问题：**项目会重叠**（共享知识页、都以文章为产出）。北洛已裁定分两篇写，界线是「为什么」与「怎么做」
+- [ ] **补上真正的对外产出** —— 唯一有希望的是 [[traecode-pkm-article]] 的公众号文章。它目前卡在四个**【阻塞】**缺口上，第一个是「最小可用 `AGENTS.md`」——见该页缺口表
+- [ ] **本库 `AGENTS.md` 瘦身（18 KB）** —— 它既是文章的必要产出，也是本库自己的改进项：按「常驻成本」的说法，它每次任务都在付费。见 [[agents-md]] 的「常驻成本」一节
 - [x] ~~收录 Vannevar Bush《As We May Think》原文，核验 [[vannevar-bush]] 中待验证的描述~~ —— **已完成**，[[vannevar-bush]] 已提升为 `confidence: high`
 - [ ] 收录 qmd 的仓库文档，把 [[qmd]] 从 `medium` 置信度提升到 `high`
 - [ ] 找一份独立的 RAG 评测资料，为 [[rag-vs-wiki]] 补充非作者来源的证据

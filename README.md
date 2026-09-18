@@ -49,6 +49,8 @@ python3 tools/wiki.py new project my-project "我的项目"
 
 项目页写四件事：**可验收的目标**、**当前缺口**（决定下一步找什么素材）、消耗的知识、产出。收录素材前先读缺口表 —— **填不上任何缺口的素材，现在还不该收。**
 
+缺口表里可用 **【阻塞】** 前缀标出「直接挡住目标验收」的条目，让「哪个先做」一眼可见。
+
 ### 规范层落在跨工具的文件上
 
 三层架构的第三层落在项目根目录的 `AGENTS.md`。它不是某个产品的私有配置 —— TraeCode 官方文档明确写了「在 TraeCode 中创建的 AGENTS.md 文件可以在其他支持 AGENTS.md 的 IDE 中复用，反之亦然」。
@@ -174,15 +176,15 @@ stage: active                            # planning | active | paused | shipped 
 
 ## 当前内容
 
-已收录 **9 份素材**，编译为 **41 个页面**（约 400 条交叉链接）：
+已收录 **11 份素材**，编译为 **46 个页面**（约 470 条交叉链接）：
 
-- **项目**：LLM Wiki 模式研究（入口层，含缺口表）
-- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill README、Dan Koe 的学习方法论长文、Vannevar Bush《As We May Think》(1945)、Appleton 的双向链接史、Berners-Lee 的链接拓扑设计笔记 (c.1999)、Frand & Hixon 的 PKM 首发文献 (1998)、卢曼卡片盒二手整理
-- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git、控制论式学习、共同笔记簿、双向链接、卡片盒
-- **实体**：Andrej Karpathy、Dan Koe、Vannevar Bush、Ted Nelson、Niklas Luhmann、Tim Berners-Lee、Obsidian、Roam Research、qmd、NotebookLM、Eden
+- **项目**：LLM Wiki 模式研究（研究模式本身，讲「为什么」）、用 TraeCode 构建 PKMS 的文章（面向知识工作者的公众号文章，讲「怎么做」）
+- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill README、Dan Koe 的学习方法论长文、Vannevar Bush《As We May Think》(1945)、Appleton 的双向链接史、Berners-Lee 的链接拓扑设计笔记 (c.1999)、Frand & Hixon 的 PKM 首发文献 (1998)、卢曼卡片盒二手整理、TraeCode 官方规则文档、TRAE 社区关于 AGENTS.md 与 rules 的讨论帖
+- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git、控制论式学习、共同笔记簿、双向链接、卡片盒、AGENTS.md
+- **实体**：Andrej Karpathy、Dan Koe、Vannevar Bush、Ted Nelson、Niklas Luhmann、Tim Berners-Lee、Obsidian、Roam Research、qmd、NotebookLM、Eden、TraeCode
 - **分析**：RAG vs Wiki、second-brain-skill 评估、共同笔记簿 vs LLM Wiki、PKM 的历史与演进 (1945–2026)、为什么在 AI 时代仍然需要 PKMS
 
-入口：`wiki/index.md`（或直接读项目页 `wiki/projects/llm-wiki-research.md` 的缺口表）
+入口：`wiki/index.md`（或直接读 `wiki/projects/` 下项目页的缺口表）
 
 ## 版本控制
 
