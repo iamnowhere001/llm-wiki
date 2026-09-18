@@ -104,3 +104,7 @@ status: active
 
 ## [2026-09-18] edit | 按北洛裁定执行 raw/ 抓取元数据例外（AGENTS.md 1.1）：移除两份素材 capture_note 里的错误分层表，改为指向 sources 页的指针。查清真正病因是坐标系不同（内容相对 vs 文件绝对，偏 +39/+46）。更正本身使行数变化（+3/-5），全部下游行号已重新测量同步
 
+## [2026-09-18] ingest | 收录《隐藏的潜能》读书笔记（亚当·格兰特）— raw/2026-09-18-hidden-potential-notes.md（895 行；含英文原书 PDF + 30 张图片已下载）
+
+## [2026-09-18] edit | 建 sources 摘要页（四段混层：两份互相矛盾的 AI 摘要 + 成书正文 + 参考资料）、实体页 adam-grant、概念页 character-skills；更新 flow-terminology（第三侧：Grant 零次使用「心流」）与 peak-performance 缺口表
+
