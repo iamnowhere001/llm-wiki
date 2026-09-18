@@ -6,7 +6,7 @@ tags: [知识管理, 历史, 创作]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dankoe-remember-what-you-read]
-related: [cybernetic-learning, commonplace-book-vs-llm-wiki, compounding-knowledge]
+related: [cybernetic-learning, commonplace-book-vs-llm-wiki, compounding-knowledge, pkm-history, zettelkasten]
 confidence: medium
 status: active
 ---
@@ -79,6 +79,19 @@ status: active
 - 其「燃料而非收藏」的判断，是 [[compounding-knowledge]] 的**需求侧对应物** —— 复利的前提是有人来取用。
 - 与 [[cybernetic-learning]] 互补：本篇说**存什么**，那篇说**为什么存**。
 - 数字形态的工具选择涉及 [[obsidian]] 与 [[eden]]。
+
+## 在历史谱系中的位置
+
+本页代表的是**「摘录传统」**。它有一条更长的谱系，见 [[pkm-history]]：
+
+| 传统 | 代表 | 组织方式 | 取用方式 |
+|---|---|---|---|
+| 摘录传统 | 共同笔记簿（本页） | 按阅读顺序记录 | 靠**记性**与重读 |
+| 结构化连接传统 | [[zettelkasten]] | 原子卡片 + 编号 + 交叉引用 | 靠**连接**与枢纽笔记 |
+
+**差别不只是「有没有编号」，而是取用机制。** 共同笔记簿假设你会重读，因此记录顺序重要；卡片盒假设你不会重读，因此**连接**必须显式写下来。[[niklas-luhmann]] 的「我从不从零开始写作，只是取出已准备好的思考」正是后者才能给出的说法。
+
+**一个应当保留的怀疑**：本页引用的名人清单与「燃料 vs 收藏」的判断都来自 [[dan-koe]] 的通俗转述（见下方置信度说明）。把它放进 [[pkm-history]] 的谱系时，本库只采用了**方向性判断**（笔记需被用于产出），没有采用其证据强度。
 
 ## 开放问题
 

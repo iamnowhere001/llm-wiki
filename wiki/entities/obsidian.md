@@ -6,7 +6,7 @@ tags: [工具, 编辑器]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
-related: [index-and-log, llm-wiki-pattern]
+related: [index-and-log, llm-wiki-pattern, pkm-history, bidirectional-links, roam-research]
 confidence: high
 status: active
 ---
@@ -48,6 +48,23 @@ status: active
 - [[index-and-log]]
 - [[wiki-lint]]
 - [[qmd]]
+
+## 在历史谱系中的位置
+
+Obsidian 是 [[pkm-history]] 上「双向链接在私有域内复兴」这一阶段的产品之一。与它同期的是 [[roam-research]]。
+
+| | [[roam-research]] | Obsidian |
+|---|---|---|
+| 数据 | 托管 | **本地 Markdown 文件** |
+| 价格 | 订阅 | 免费（个人使用） |
+| 链接单位 | 块（block） | 页面 + 块引用 |
+| 对 LLM 的友好度 | 需通过 API | **文件可直接读写** |
+
+**本库选择 Obsidian 而非 Roam，原因与 [[plain-text-and-git]] 一致**：本地纯文本才能被 LLM 与 git 直接操作。这不只是偏好 —— 它是 [[llm-wiki-pattern]] 能成立的前提。托管方案即使提供导出，也无法让 LLM 在「人类正在浏览时」实时改文件（见本页「在本知识库中的角色」）。
+
+> [!note] 未验证的事实
+> 据检索结果，Obsidian 由 Erica Xu 与 Shida Li 创建，首个公开版本发布于 **2020-03-30**。
+> 这些信息**未收录素材**，因此标注为未验证。需收录官方文档或独立报道后方可提升置信度。
 
 ## 来源
 
