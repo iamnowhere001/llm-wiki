@@ -52,3 +52,9 @@ status: active
 
 ## [2026-09-18] lint | 收录历史素材后的体检：39 页 / 360 链接 / 0 项机器可查问题；无孤岛页。语义层面标记 1 处年份矛盾（Nelson 1963 vs 1965）与 4 项待核验
 
+## [2026-09-18] query | 为什么在 AI 时代仍然需要 PKMS → 归档为 analyses/why-pkm-in-ai-era：核心是「AI 吃掉存取、留下策展」，五条理由 + 反面判据 + 本库自身对照
+
+## [2026-09-18] edit | 回填 overview（新增动机层入口）、pkm-history、use-cases、llm-wiki-pattern 指向 why-pkm-in-ai-era
+
+## [2026-09-18] lint | 第 6 次体检：40 页 / 382 链接 / 0 项机器可查问题。本页新增一项开放问题：本库缺少「AI 时代个人知识库过时」的反方素材
+

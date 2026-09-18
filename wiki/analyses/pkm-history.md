@@ -6,7 +6,7 @@ tags: [历史, 知识管理, 综述]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-frand-hixon-pkm, 2026-09-18-luhmann-zettelkasten]
-related: [llm-wiki-pattern, bidirectional-links, zettelkasten, commonplace-book, vannevar-bush, three-layer-architecture]
+related: [llm-wiki-pattern, bidirectional-links, zettelkasten, commonplace-book, vannevar-bush, three-layer-architecture, why-pkm-in-ai-era]
 confidence: medium
 status: active
 ---
@@ -225,6 +225,7 @@ Bush 1945 对称关联 → Nelson 1965 双向 + 溯源 → 万维网 1999 单向
 - 是本库历史纵深的**主干**：[[vannevar-bush]]、[[commonplace-book]]、[[ted-nelson]]、[[niklas-luhmann]]、[[zettelkasten]]、[[tim-berners-lee]]、[[bidirectional-links]]、[[roam-research]]、[[obsidian]] 都挂在这条线上。
 - [[2026-09-18-frand-hixon-pkm]] 提供了「PKM」这个名字本身的出处。
 - 与 [[commonplace-book-vs-llm-wiki]] 互补：那页讲**两条独立线索的交汇**（Karpathy 与 Dan Koe），本页讲**80 年的纵向谱系**。
+- 与 [[why-pkm-in-ai-era]] 互补：本页讲**怎么走到这里**，那页讲**为什么这里值得停**。
 - 与 [[compounding-knowledge]] 呼应：整条线都在试图让知识「不消退」。
 
 ## 开放问题

@@ -48,6 +48,7 @@ status: active
 12. **输出回路**：只收藏不产出，笔记就是死物。→ [[commonplace-book-vs-llm-wiki]]
 
 历史纵深：→ [[pkm-history]]（1945–2026 的完整谱系）、[[vannevar-bush]]、[[commonplace-book]]、[[zettelkasten]]、[[bidirectional-links]]
+动机层：→ [[why-pkm-in-ai-era]]（为什么在 AI 时代仍然值得建）
 参照实现：→ [[second-brain-skill]]、[[eden]]
 
 ### 一条贯穿的主线

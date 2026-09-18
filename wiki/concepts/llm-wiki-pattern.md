@@ -6,7 +6,7 @@ tags: [知识管理, LLM, 模式]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
-related: [three-layer-architecture, compounding-knowledge, rag-vs-wiki]
+related: [three-layer-architecture, compounding-knowledge, rag-vs-wiki, why-pkm-in-ai-era]
 confidence: high
 status: active
 ---
@@ -55,6 +55,7 @@ LLM Wiki 把中间产物显式化：在原始素材之上维护一层结构化�
 - 导航上依赖 [[index-and-log]]。
 - 与 [[rag-vs-wiki]] 是直接对立的两条路线。
 - 本知识库自身就是这个模式的一个实例，见 [[2026-09-18-karpathy-llm-wiki]]。
+- **动机层**（为什么在 AI 时代仍然值得做）见 [[why-pkm-in-ai-era]]；本页讲怎么做，那页讲为什么值得做。
 
 ## 开放问题
 

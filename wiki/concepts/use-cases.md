@@ -6,7 +6,7 @@ tags: [场景, 选型]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]
-related: [llm-wiki-pattern, rag-vs-wiki, compounding-knowledge, commonplace-book-vs-llm-wiki]
+related: [llm-wiki-pattern, rag-vs-wiki, compounding-knowledge, commonplace-book-vs-llm-wiki, why-pkm-in-ai-era]
 confidence: high
 status: active
 ---
@@ -71,6 +71,7 @@ status: active
 - 判断标准来自 [[rag-vs-wiki]] 的成本对比。
 - 五类场景的价值来源都是 [[compounding-knowledge]]。
 - 场景决定 `AGENTS.md` 里的页面阈值，见 [[three-layer-architecture]]。
+- **「为什么值得建」的论证**见 [[why-pkm-in-ai-era]]；本页回答「哪些场景适合」，那页回答「什么时候根本不该上路」。
 
 ## 开放问题
 
