@@ -110,3 +110,7 @@ status: active
 
 ## [2026-09-18] ingest | 收录《清晰思考》(Shane Parrish) 读书笔记 —— 混层素材（未署名整理 + 中译本节选 + 得到讲书稿），自带英文原版 PDF。首次用一手原文反向核对二手整理：A 段有 5 处加法（自造『位置定律 The Law of Position』『反脆弱』『四个神经网络』、把『3+』窄化为『3-5』），并把引文误当论点。发现原书有 37,859 字符完整尾注 —— 节选丢弃了尾注，因此『素材无出处』不等于『作者无出处』。新建 sources 页 + shane-parrish 实体页；回填 stimulus-response-gap（补机制层 + 自由意志张力）与 viktor-frankl（第三个归属节点）。归属未定：填不上任何现有项目缺口，待北洛裁定
 
+## [2026-09-18] edit | 读英文原书 PDF（395 页）核实 6 条可疑数字：4 条原书真有（2 条被改精度/单位）、1 条张冠李戴、1 条未发现；正文弱引注全部在原书尾注补齐；发现 PISA 563/507 原书不存在
+
+## [2026-09-18] edit | 拆出 8 个概念页：imperfectionism / human-sponge / deliberate-play / scaffolding / opportunity-systems / looping / brainwriting / trajectory-evaluation（7 页已核实到原书页码，confidence 由 low 升 medium）
+
