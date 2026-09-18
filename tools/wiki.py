@@ -240,6 +240,29 @@ def write_text(path, text):
 # ---------------------------------------------------------------- lint
 
 
+def gap_table_rows(body):
+    """返回「当前缺口」表里的数据行数。找不到该节、或表已清空时返回 0。
+
+    这是「项目是否做到终点」的机器判据 —— 缺口表清空 = shipped（AGENTS.md 3.5）。
+    注意判的是**表里还有没有数据行**，不是「有没有【阻塞】标记」：
+    一条缺口都没标【阻塞】，只能说明没做优先级排序，不能说明项目做完了。
+    """
+    m = re.search(r"^##\s*当前缺口\s*$(.*?)(?=^##\s|\Z)", body, re.M | re.S)
+    if not m:
+        return 0
+    rows = 0
+    for line in m.group(1).splitlines():
+        s = line.strip()
+        if not s.startswith("|"):
+            continue
+        if re.match(r"^\|[\s:\-|]+\|$", s):   # 分隔行 |---|---|
+            continue
+        if "缺口" in s and "卡在哪" in s:      # 表头行
+            continue
+        rows += 1
+    return rows
+
+
 def cmd_lint(root):
     pages = load_pages(root)
     if not pages:
@@ -347,6 +370,17 @@ def cmd_lint(root):
             hollow.append("%s  未链接任何知识页（实体/概念/分析）" % p.relpath)
     section("空壳项目（未链接任何知识页）", hollow)
 
+    # 项目生命周期：缺口表清空 = shipped（AGENTS.md 3.5）
+    # 已 shipped 却还留着缺口 —— 说明它其实没做完，是假 shipped
+    fake_shipped = []
+    for p in projects:
+        n = gap_table_rows(p.body)
+        if p.stage == "shipped" and n > 0:
+            fake_shipped.append(
+                "%s  已 shipped，但「当前缺口」表仍有 %d 行（缺口清空才是 shipped 的判据；"
+                "决定不做的条目应移入「不做什么」）" % (p.relpath, n))
+    section("已 shipped 但缺口表未清空", fake_shipped)
+
     # ---- 语义提示（不计入问题数）----
     advisories = []
     if projects:
@@ -365,6 +399,12 @@ def cmd_lint(root):
                 advisories.append("    %s" % s)
             if len(uncovered) > 12:
                 advisories.append("    …… 另有 %d 个" % (len(uncovered) - 12))
+        # 缺口表已清空但项目还开着 —— 按 AGENTS.md 3.5，可以收尾了
+        for p in sorted(projects, key=lambda x: x.slug):
+            if p.stage in ("planning", "active") and gap_table_rows(p.body) == 0:
+                advisories.append(
+                    "%s  「当前缺口」表已清空 —— 按 AGENTS.md 3.5，该项目可标 `stage: shipped`"
+                    % p.relpath)
     elif len(knowledge) >= 10:
         advisories.append(
             "本库有 %d 个知识页但**没有任何项目页**。按 [[cybernetic-learning]] 的推论，"
@@ -968,6 +1008,8 @@ status: active
 > 一句话：这个项目要产出什么。
 
 - **目标（可验收）**：写得具体到能判断完成与否。反例「学习 Rust」；正例「用 Rust 写一个能跑的命令行工具并发布到 GitHub」
+- **验收判据**：写清楚满足什么条件就算达成 —— 这是判断 shipped 的依据
+- **终点**：「当前缺口」表清空即 `shipped`。之后若新素材开的是新缺口，**另开一个项目**，本项目不复活
 - **阶段**：planning
 - **起始**：{{DATE}}
 - **目标完成**：
@@ -976,6 +1018,8 @@ status: active
 
 > 这一节是控制论里的**误差信号**，也是全页最重要的部分 —— **它决定下一步该找什么素材**。
 > 每次 ingest 之前先读这里：这份素材填的是哪个缺口？填不上就不收。
+> 标 **【阻塞】** 的条目直接挡住 `goal` 的验收条件，必须先解；未标的是可选或可延后。
+> **决定不做的缺口要移入「不做什么」一节**，不要留在表里 —— 表清不空，项目就永远不能收尾。
 
 | 缺口 | 卡在哪 | 需要什么素材 / 信息 |
 |---|---|---|
