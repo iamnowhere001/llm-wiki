@@ -41,7 +41,7 @@ capture_note: >
   - `claude.ai` 对话不可访问，AI 参与程度无法核实。
 
   **已做的交叉验证（抓取层面）：** 下载的 PDF 经元数据与目录核对，确认为
-  Shane Parrish《Clear Thinking: Turning Ordinary Moments into Extraordinary Results》
+  Shane Parrish《Clear Thinking》（副题 *Turning Ordinary Moments into Extraordinary Results*）
   英文原版（Portfolio/Penguin，Copyright © 2023 by Latticework Publishing, Inc.，
   calibre 6.17.0 转换，322 页），其目录章节与本文档正文的五部分结构一一对应。
   具体核对手法与结论见 sources 页。
