@@ -94,3 +94,5 @@ status: active
 
 ## [2026-09-18] edit | 回填 6 页：internal-friction / narrative-self-vs-bodily-self / cognitive-decoupling / emotion-regulation-toolkit / emotion-as-coupling / 项目页
 
+## [2026-09-18] ingest | 《不可能的技艺》读书笔记（含《盗火》与心流综述）—— 混层素材（AI摘要/成书正文/课程讲稿），含本库首例伪引注；另开项目 peak-performance，并从 emotion-awareness 继承两条缺口
+

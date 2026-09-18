@@ -6,7 +6,7 @@ tags: [情绪, 身体, 认知, 综合, 立论]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
-related: [internal-friction, narrative-self-vs-bodily-self, cognitive-decoupling, emotion-as-coupling, emotion-regulation-toolkit, emotion-awareness]
+related: [internal-friction, narrative-self-vs-bodily-self, cognitive-decoupling, emotion-as-coupling, emotion-regulation-toolkit, emotion-awareness, peak-performance]
 confidence: low
 status: active
 ---
@@ -209,6 +209,7 @@ status: active
 **只列支持方证据是明显的偏斜。** 以下三条反方材料，库里全部没有：
 
 - **正念 / 冥想的不良反应研究。** 如果「回到身体」真的无害，为什么冥想会有 adverse effects 的文献？（[[internal-friction]] 缺口表已列此项）
+  - **2026-09-18 补**：[[2026-09-18-art-of-impossible-notes]] 的《盗火》段确实谈到了出神体验的副作用（成瘾、拒绝努力、康有为案例），**但那是通俗科学讲稿，不是研究文献** —— 它谈的是「出神体验成瘾」，不是「正念的临床不良反应」。**这一条仍然缺。**
 - **创伤知情的材料。** 「回到身体」在创伤后可能触发不适甚至再创伤。库里只有一句标注，没有材料。
 - **对认知解离的批评。** ACT 的解离技术被批评可能**滑向经验性回避（experiential avoidance）** —— 即用「解离」来躲开本该面对的感受。**这与本页说的「解离成逃避」是同一个方向，但库里没有这份材料来支撑它。**
 
@@ -221,8 +222,17 @@ status: active
 
 ## 待验证
 
+> [!note] 2026-09-18：本页的验证工作已移交 [[peak-performance]]
+> 原因：本页要的「具身认知 / 正念不良反应」那类材料，正是新项目 [[peak-performance]] 的收集对象，
+> 两个项目分头找是重复劳动（北洛裁定）。**本页的命题本身不变**，只是记账方换了一个。
+>
+> **另注：新收录的 [[2026-09-18-art-of-impossible-notes]] 里有具身认知内容**
+> （温度实验、高能量姿势、幽灵体验 / 颞顶联合区），**但它不是这一条要的材料** ——
+> 它是通俗科学讲稿，不是临床材料；且其中「高能量姿势」恰是有重复性争议的那一条。
+> **不要拿它来验本页。**
+
 - [ ] **「90 秒情绪峰值」与「前额叶在急性期被抢占」的一级来源** —— 本页第三层依赖它，而它在库里只是转述
-- [ ] **一份同时处理具身与认知两条路径的临床材料** —— 这是验证本页最直接的路径（具身认知、躯体体验疗法、创伤知情正念）
+- [ ] **一份同时处理具身与认知两条路径的临床材料** —— 这是验证本页最直接的路径（具身认知、躯体体验疗法、创伤知情正念）。**已移交 [[peak-performance]]**
 - [ ] **创伤情境下「回到身体」的适用边界** —— 这决定本页的入口判据能不能用
 - [ ] **ACT 对「经验性回避」的处理** —— 解离与回避的界线在哪里？
 - [ ] **Gross 过程模型的原始文献** —— [[emotion-regulation-toolkit]] 那张时间表目前是本库推断

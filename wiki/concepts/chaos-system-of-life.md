@@ -6,7 +6,7 @@ tags: [情绪, 决策, 哲学, 内耗]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-yjengo-escape-inner-friction]
-related: [yjengo, internal-friction, stimulus-response-gap, emotion-awareness]
+related: [yjengo, internal-friction, stimulus-response-gap, emotion-awareness, peak-performance, 2026-09-18-art-of-impossible-notes]
 confidence: medium
 status: active
 ---
@@ -66,6 +66,7 @@ status: active
 - **与素材自身另一处的张力。** 作者在开头主张「提升能力永远是最根本的对抗手段」，随后又说「光靠提升能力是不够的」。这个自我修正是诚实的，但**修正后的立场（从内心入手）与修正前的立场（提升能力）之间的界线未被划清**。
 - **作者身份构成利益披露。** 素材自述制作过一套「高效学习任何知识」的课程，而这篇文稿正是在修正那套课程的盲区。见 [[2026-09-18-yjengo-escape-inner-friction]] 的披露说明。
 - **与 [[cybernetic-learning]] 存在一处值得注意的张力。** Dan Koe 主张「没有目标就没有误差信号，没有留存」；本页主张「执迷于『正确的人生』是妄念」。**目标到底是误差信号的来源，还是焦虑的来源？** 两者并不直接矛盾（一个谈学习机制，一个谈人生选择），但并置阅读会引出真问题。这一点已记入 [[emotion-awareness]] 的缺口表。
+  - **2026-09-18 补：新素材把这条张力推到了极端。** [[2026-09-18-art-of-impossible-notes]] 整本书建立在「设定 MTP（宏大变革目标）并层层分解」之上（MTP / HHG / 清晰目标三层级），**它比 Dan Koe 更彻底地把「有目标」当作前提而非选择**。而本页论证的恰恰是「执迷于一个正确的人生」这件事的处方。**两者是否真的冲突，本库仍无材料裁决** —— 该问题已随缺口移交 [[peak-performance]]。
 
 ## 与其他页面的关系
 
