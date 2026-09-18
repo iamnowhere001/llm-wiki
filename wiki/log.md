@@ -128,3 +128,11 @@ status: active
 
 ## [2026-09-18] edit | 完善 concepts/icap-framework：新增「如何实操」（三思维转换 / 三档换挡 / 三场景动作升级 / 三个陷阱）与「AI 时代：助力与陷阱」（四步 SOP + 4 条 Prompt 模板 + 认知负荷守恒定律 + 三明治路线图）。两节内容全部出自 AI 生成段（raw 行 506–1010），已在页面顶部与节首显式标注。另补两条素材没有的陷阱（AI 无立场 / AI 总结制造更深的流利度幻觉），标为本库立论 low 无来源；新增本库流程与 ICAP 的对照表
 
+## [2026-09-18] ingest | 写作即思考：不要把认知外包（飞书文档，多来源缝合 / 分 18 段 / 三处引注失真）
+
+## [2026-09-18] edit | 北洛裁定本库层面三条约定，全部写入 AGENTS.md 4.1 与第 8 节：(1)「错位引用」与「外推式失真」合并为一类「引注的使用失真」（5 例，处置=逐条公示素材说X↔原文说Y，不整页降级）；(2) ingest 必须含一个 LLM 不可代劳的动作，定为 HFQ 人类先问（第 −1 步，人类须在 LLM 读素材前亲笔写收录理由+1–3 个问题，LLM 不得代写）；(3) AI 生成占比过半不触发整页降级，改按内容质量判（判据=这段话若错了读者能不能自己发现）。同步改动：sources/2026-09-18-writing-is-thinking 由 low 上调 medium（新增『定级变更说明』与『人类先问』占位节）；tools/wiki.py lint 新增 HFQ 检查（语义提示，不计问题数）；overview 六类表重写并记三条裁定；llm-wiki-research 缺口表移出『哪一步只有人能做的』一条并记入决策记录；cognitive-outsourcing 回填已裁定。lint 0 问题
+
+## [2026-09-18] edit | 写作即思考素材派生：5 概念页（writing-as-thinking / cognitive-debt / cognitive-outsourcing / brain-rot / productive-resistance）+ 4 实体页（nataliya-kosmyna / advait-sarkar / alain-de-botton / wang-shuaiguo）。回填 traecode-pkm-article（知识节「动机层的反面补丁」簇 +5 页）与 peak-performance（缺口表 +1 条：注意力侧首次触及）。此前只记了 ingest，派生页无记录 —— 本次补记
+
+## [2026-09-18] lint | 全库巡检 + 收尾：154 页 / 1810 链接 / 机器可查 0 项。重建 index 与 site（此前 site 停在 13:37，10 个文件更新在其后）。**修正一处口径误判**：index 的「页面总数」不含 4 个 meta 页，lint 的数含它们，两者恒差 4 —— 巡检时曾据此误判「index 滞后 10 页」，实际 index 一直是准的。已在 cmd_index 生成的统计行里显式标注口径。另核查：行区间坐标系已修复（抽查 5 处全中）；断链 / 悬空 sources / 出链过少均为 0
+

@@ -6,7 +6,7 @@ tags: [知识, 哲学, AI, 具身认知, 学徒制]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty]
-related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era]
+related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era, cognitive-outsourcing, writing-as-thinking]
 confidence: medium
 status: active
 ---

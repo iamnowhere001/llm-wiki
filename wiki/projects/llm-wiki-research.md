@@ -36,7 +36,7 @@ status: active
 | 缺口 | 卡在哪 | 需要什么素材 / 信息 |
 |---|---|---|
 | 卢曼的一手文献缺失 | [[niklas-luhmann]] 与 [[zettelkasten]] 全靠一份二手整理，数字无法核验 | 1981 年《Kommunikation mit Zettelkästen》英译本 |
-| 只有支持方证据 | [[why-pkm-in-ai-era]] 全是「该建库」的论证，是明显的偏斜 | 一份严谨论证「AI 时代个人知识库已过时」的反方文献 |
+| 只有支持方证据（**2026-09-18 部分缓解，未关闭**） | [[why-pkm-in-ai-era]] 全是「该建库」的论证，是明显的偏斜。**2026-09-18 收到 [[2026-09-18-writing-is-thinking]]，但它不是要的那种文献** —— 它不论证「AI 时代 PKM 过时」，它论证的是「**认知外包本身有代价**」（[[cognitive-outsourcing]]、[[cognitive-debt]]）。**性质上是反方，方向上不是。** 已回填 [[why-pkm-in-ai-era]] 的「四·补」一节 | 仍然缺**一份严谨论证「AI 时代个人知识库已过时」的反方文献** —— 本条缺口**原样保留** |
 | 1960–1980 年代空白 | [[pkm-history]] 在 Nelson 1965 与万维网 1989 之间没有锚点 | Engelbart 的 Augment、Xerox PARC 的一手材料 |
 | 1998–2017 年空白 | 「PKM」命名到 Roam 兴起之间有近 20 年没有覆盖 | 那一时期的笔记工具演化史料 |
 | [[roam-research]] 证据薄弱 | 两份素材都只是顺带提到它，`confidence: low` | 一份关于 Roam 历史的独立报道 |
@@ -53,6 +53,10 @@ status: active
 - **人物线**（历史层的骨架）：[[vannevar-bush]]、[[ted-nelson]]、[[tim-berners-lee]]、[[andrej-karpathy]]
 - **动机层**：[[why-pkm-in-ai-era]]、[[dan-koe]]
 - **边界层**：[[use-cases]]、**[[tacit-knowledge]]**（2026-09-18 新增 —— **本库结构性边界的哲学表述**：波兰尼的命题意味着任何文本化知识系统都有天花板）
+- **反方层（2026-09-18 新增 —— 本项目的第一个反方来源）**：[[cognitive-outsourcing]]、[[cognitive-debt]]、[[productive-resistance]]、[[nataliya-kosmyna]]、[[advait-sarkar]]、[[2026-09-18-writing-is-thinking]]
+  > **为什么这几页属于本项目，尽管它们对本库不利**：它们论证的正是一个 AI 维护的知识库**最可能出问题的地方** ——
+  > 外包综合与记忆会让「判断」用进废退。**这是本项目第一次拿到不是「支持建库」的材料。**
+  > [[why-pkm-in-ai-era]] 已被据此修正（理由 5 加了限定词），见该页「四·补」。
 - **参照实现层**：[[second-brain-skill]]、[[qmd]]、[[notebooklm]]、[[eden]]
 - **方法层（2026-09-18 新增）**：[[synthesis-research]]、[[mental-models]]、[[explanatory-framework]]、[[wanweigang]]、[[2026-09-18-synthesis-research]]、[[2026-09-18-mental-representations]]
   > **为什么这几页属于本项目**：[[2026-09-18-synthesis-research]] 描述的动作（立题 → 找材料 → 判断 → 写成报告）
@@ -84,6 +88,8 @@ status: active
 | 2026-09-18 | 历史线写成 `analyses/` 而非 `concepts/` | 它是本库的综合判断而非素材给出的结论，需逐节点标注证据性质 |
 | 2026-09-18 | 保留 4 处「待核验」而非删掉不确定内容 | 显式标注不确定比装作确定更有价值，也便于后续定点补料 |
 | 2026-09-18 | 引入项目层作为 ingest 的入口 | 原库缺目标与过滤器，收到后来自己也不知道为什么收 |
+| 2026-09-18 | **裁定 ingest 必须含一个 LLM 不可代劳的动作，定为 HFQ（人类先问）** | 由本项目缺口「哪一步只有人能做的」逼出。**答案是「问题由谁提出」** —— 它不能靠外部素材补，只能由人在 LLM 动手前先写下。HFQ 落地后，上一版缺口里那句「本页这次的 ingest 全程由 LLM 完成判定，人只在最后看到结果」**成为一种不再允许的形态** |
+| 2026-09-18 | 不因「AI 生成占比过半」降级，改按内容质量判 | [[2026-09-18-writing-is-thinking]] 约三分之二为 AI 生成，但其中大部分是对原材料的**扩展与补充**（操作化清单、框架化），不是伪造。**降级的是行为（冒充事实断言），不是作者身份** |
 
 ## 不做什么（反范围）
 

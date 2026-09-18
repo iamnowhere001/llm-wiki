@@ -3,6 +3,7 @@ site/
 
 # 助手的工作记忆（工具状态，不属于知识库内容）
 .workbuddy-ai/
+.workbuddy/
 
 # 系统
 .DS_Store

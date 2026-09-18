@@ -6,7 +6,7 @@ tags: [学习, 记忆, 比约克, 提取练习, 间隔, 交错]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-desirable-difficulty, 2026-09-18-dunlosky-learning-techniques]
-related: [retrieval-practice, spaced-repetition, consolidation-and-sleep, embodied-cognition, cognitive-load-theory, deliberate-practice, robert-bjork, wanweigang, 2026-09-18-desirable-difficulty, 2026-09-18-cognitive-load-theory, peak-performance, how-we-learn-and-how-to-improve]
+related: [retrieval-practice, spaced-repetition, consolidation-and-sleep, embodied-cognition, cognitive-load-theory, deliberate-practice, robert-bjork, wanweigang, 2026-09-18-desirable-difficulty, 2026-09-18-cognitive-load-theory, peak-performance, how-we-learn-and-how-to-improve, productive-resistance, cognitive-debt]
 confidence: medium
 status: active
 ---

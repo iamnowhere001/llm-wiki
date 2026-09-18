@@ -6,7 +6,7 @@ tags: [学习, 教育, 分类框架, 认知参与, AI时代, 实操]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-icap-framework]
-related: [cognitive-load-theory, schema-psychology, desirable-difficulty, transfer-of-learning, deliberate-practice, michelene-chi, wanweigang, 2026-09-18-icap-framework, llm-wiki-pattern, extended-mind, notebooklm, ingest-query-lint, peak-performance]
+related: [cognitive-load-theory, schema-psychology, desirable-difficulty, transfer-of-learning, deliberate-practice, michelene-chi, wanweigang, 2026-09-18-icap-framework, llm-wiki-pattern, extended-mind, notebooklm, ingest-query-lint, peak-performance, productive-resistance, cognitive-outsourcing]
 confidence: medium
 status: active
 ---

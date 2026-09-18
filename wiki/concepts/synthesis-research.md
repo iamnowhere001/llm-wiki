@@ -6,7 +6,7 @@ tags: [调研, 知识工作, 写作, 判断力, PKM]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-synthesis-research]
-related: [wanweigang, 2026-09-18-synthesis-research, llm-wiki-pattern, llm-wiki-research, ingest-query-lint, why-pkm-in-ai-era, commonplace-book, mental-models, explanatory-framework]
+related: [wanweigang, 2026-09-18-synthesis-research, llm-wiki-pattern, llm-wiki-research, ingest-query-lint, why-pkm-in-ai-era, commonplace-book, mental-models, explanatory-framework, writing-as-thinking, 2026-09-18-writing-is-thinking]
 confidence: medium
 status: active
 ---
@@ -83,6 +83,13 @@ status: active
 > **万维钢的「微原创」与本库的「立论页」是同一种动作，只是本库把它的可信度标了出来。**
 
 ## 与其他页面的关系
+
+- **与 [[writing-as-thinking]] 是同一动作的产出层与机制层（2026-09-18 新增）**：
+  本页讲的是**做成什么样**（自己立题 → 自己找材料 → 自己判断 → 写成能指导行动的东西）；
+  [[writing-as-thinking]] 讲的是**为什么必须自己写**（写作不是思考完成后的输出，而是思考本身的一部分）。
+  **两页合起来是一条完整论证**：**综合调研之所以不能被 AI 代劳，是因为代劳的不只是「写」这一步，
+  连「想清楚」这一步一并省掉了。**
+  这条对 [[traecode-pkm-article]] 与 [[why-pkm-in-ai-era]] 都直接可用 —— 见那两页的新增回填。
 
 - 与 [[llm-wiki-pattern]]：**本页描述的动作正是本库在做的事**，
   本库是它的工程化版本（有目录结构、有 `sources` 字段、有 `lint`）。

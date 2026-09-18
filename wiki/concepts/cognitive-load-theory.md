@@ -6,7 +6,7 @@ tags: [学习, 教育, 工作记忆, 图式, 教学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, 2026-09-18-cognitive-load-diagrams]
-related: [schema-psychology, mental-models, desirable-difficulty, deliberate-practice, icap-framework, john-sweller, wanweigang, 2026-09-18-cognitive-load-theory, 2026-09-18-cognitive-load-diagrams, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, peak-performance, how-we-learn-and-how-to-improve]
+related: [schema-psychology, mental-models, desirable-difficulty, deliberate-practice, icap-framework, john-sweller, wanweigang, 2026-09-18-cognitive-load-theory, 2026-09-18-cognitive-load-diagrams, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, peak-performance, how-we-learn-and-how-to-improve, writing-as-thinking]
 confidence: medium
 status: active
 ---
