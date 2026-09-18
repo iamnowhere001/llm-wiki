@@ -5,8 +5,8 @@ slug: cognitive-reappraisal
 tags: [情绪调节, 认知, 方法, 心理学]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes]
-related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology]
+sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes, 2026-09-18-narrative-self]
+related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, narrative-reframing]
 confidence: high
 status: active
 ---
@@ -147,10 +147,14 @@ status: active
 - **与 [[stoic-control-dichotomy]] 是同一条原则的两条谱系**：斯多葛的「判断论」（事情本身不让我们心烦，是判断让我们心烦）与本页的「认知链」（Situation → Appraisal → Emotion）结构完全相同。**本文提供的「掌控圈 / 关注圈」模型是斯多葛控制二分法的现代商业版**（见 [[stephen-covey]]）—— 相隔两千年的两个传统收敛到同一条操作原则。
 - **是 [[emotion-regulation-toolkit]] 的理论内核**：那一页收集了素材一里各种技术（90 秒冲浪、语言隔离、止损句），本页说明它们**在心理学上叫什么、为什么可能有效**。
 - **与 [[thinking-vs-feeling]] 互补**：那一页要求把「感觉」与「事实」分开以防情绪冒充结论，本页要求为「事实」重写意义。**一个在输入端把关，一个在解释端加工。**
+- **与 [[rumination-vs-reflection]] 是同层级的另一条路，本页目前对它零覆盖**：本页改**想法的内容**，那一页的具体化策略改**思维的过程**。两者不是替代关系（可以同时用），但库里没有任何材料处理它们的取舍。**本页把 RFCBT 误当成了「认知重评的一种」的倾向需要警惕** —— 它们改的不是同一样东西。
 - **与 [[narrative-self-vs-bodily-self]] 存在张力** —— 见 [[emotion-awareness]] 缺口表。
 
 ## 开放问题
 
+- [ ] **「改内容」之外还有「改过程」，且一手文献的表述比本页的定位更激进。** 本页只覆盖认知重评，即改变想法的**内容**（威胁框架 → 挑战框架）。另有一条路是改变思维的**过程**（把「为什么是我」换成「怎么发生的」）—— 见 [[rumination-vs-reflection]]。
+  **2026-09-18 升级（据一手素材）**：[[2026-09-18-nolen-hoeksema-rethinking-rumination]] 行 1918–1936 转述 Barber & DeRubeis (1989) 与 Teasdale 等 (1995) 的主张 —— **认知疗法「不是通过改变认知内容」起效，而是教人与认知保持距离**（原文：*works not by changing the content of depressed people's cognitions, but by teaching them methods for standing apart from those cognitions*）。
+  **本库不断言本页错** —— 该句是综述的转引，且「认知疗法」与本页的「认知重评」并非同一层级的东西。但若它成立，本页「事实不变、意义重写」可能**不是**主要的起效机制。**这条张力必须显式标注，不能静默。**
 - [ ] **Gross 情绪调节过程模型的原始文献** —— 本页目前只有概念名与提出者，无具体论文（如 Gross 1998、2002 的综述）
 - [ ] **认知重评 vs 表达抑制的效果对比** —— 需要具体的元分析证据，而非「广泛认为」
 - [ ] **「威胁框架 / 挑战框架」的学术来源** —— 这组术语对应的是 challenge vs threat appraisal（Blascovich、Tomaka 等），但本文未给出来源
@@ -164,3 +168,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-cognitive-decoupling]]
+- [[2026-09-18-narrative-self]]（**2026-09-18 新增**）—— **同族不同层的对照材料**。该档 I 段的「叙事重构」改的是**把事件串起来的那条线**，本页改的是**对单个事件的解读**；两者共享同一个动作（划出事实 vs 诠释），但叙事重构的第 4 步超出了本页范围。见 [[narrative-reframing]]

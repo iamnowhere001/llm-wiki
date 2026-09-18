@@ -5,8 +5,8 @@ slug: stephen-covey
 tags: [人物, 管理学, 引文归属, 待核验]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-cognitive-decoupling]
-related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal]
+sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hard-constraints-notes]
+related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal, hard-constraints, 2026-09-18-hard-constraints-notes, modern-thinking-tools]
 confidence: medium
 status: active
 ---
@@ -46,6 +46,31 @@ status: active
 >
 > **这件事的教训**：一个引文在被反复转引后，中间的传播环节会被抹掉，最后只剩下一个看起来很确定的署名。
 > 素材一与本文对同一句话给出了不同的署名 —— **这个差异本身就是信息**。
+
+## ✅ 第一条能核到页码的引注（2026-09-18 新增）
+
+本页此前记的两条事实**都是「书中说过」而没有页码级证据**。
+2026-09-18 收入第 4 讲《约束》时，拿到了**第一条可核到书的引注**：
+
+> 「**While we are free to choose our actions, we are not free to choose the consequences of those actions.
+> Consequences are governed by natural law.**」—— *The 7 Habits of Highly Effective People*（1990 Fireside 版）**第 90 页**
+
+**核查结果**：
+- **引语属实**，且素材**给出了英文原文**（`raw/2026-09-18-hard-constraints-notes.md` 行 195 的注释 [9]）。
+- **素材有两处用词简化**：原文的 **「While」** 被写成「We」，**「those actions」** 被写成「these actions」。
+  **属引文简化，不是伪造。**
+- **素材还交代了诗的生成过程**：「此诗前面是 GPT 所作，最后两句是我改的」——
+  **这是本库第一次见到素材主动披露「哪几句是 AI 写的、哪几句是自己改的」。**
+
+**它对第 4 讲的作用**：那句话成了该讲的收束小诗末两句 ——
+「我们可以自由选择行动，但不能自由选择行动引起的走向」。
+**也就是说：柯维这句话是第 4 讲「硬约束」这一整套主张的收尾**（见 [[hard-constraints]]）。
+
+> [!note] 本页的定位由此变了一点
+> 本页原先的角色是「**引文归属链的中间环节**」（他引弗兰克尔）。
+> 现在多了一个身份：**他是「自由选择行动、不自由选择后果」这条原则的出处，而这条原则是第 4 讲的骨架。**
+> **值得记的是：本库对他的两次引用，一次是「他把话归给了谁」（弗兰克尔），
+> 一次是「他自己说了什么」（后果不由人选）—— 两件事毫不相干，却出自同一本书。**
 
 ## 在本知识库中的角色
 

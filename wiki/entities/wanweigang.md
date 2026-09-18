@@ -5,8 +5,8 @@ slug: wanweigang
 tags: [人物, 作者, 得到, 科普, 思维工具]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging]
-related: [2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, cognitive-load-theory, icap-framework, deliberate-practice, mental-models, explanatory-framework, synthesis-research, tacit-knowledge, desirable-difficulty, autonomy-support, transfer-of-learning, peak-performance, llm-wiki-research]
+sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, 2026-09-18-narrative-first-principle, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self]
+related: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, hard-constraints, wishful-thinking-layers, types-of-uncertainty, uncertainty-as-fuel, luck-over-talent, compensatory-control, three-selves, daniel-dennett, nassim-taleb, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, cognitive-load-theory, icap-framework, deliberate-practice, mental-models, explanatory-framework, synthesis-research, tacit-knowledge, desirable-difficulty, autonomy-support, transfer-of-learning, peak-performance, modern-thinking-tools, heavy-tailed-distribution, multiplicative-world, steady-state-survival-logic, agent-vs-tool, ai-convergence, intelligent-life-system, three-solutions, lesser-and-greater-vehicle, llm-wiki-research]
 confidence: medium
 status: active
 ---
@@ -18,8 +18,20 @@ status: active
 
 - **类型**：人物（科普作者 / 专栏作者）
 - **平台**：得到（dedao.cn）
-- **代表作品**：《精英日课》专栏；《现代思维工具》课程
-- **本库收录**：九讲（2026-05-07 至 2026-05-20，「学习与教育」板块）
+- **代表作品**：《精英日课》专栏（**作者自述已写六季**）；《现代思维工具》课程
+- **本库收录**：**十六份，现已全部到齐**，分三个部分
+  > **一处需要更正的记账**：本行此前写「十六份」，但当时其中三讲（约束 / 可能 / 内核）
+  > **只是 `raw/` 里有文件、`wiki/sources/` 里没有页** —— 那是**提前记账**。
+  > 2026-09-18 18:5x 三讲全部 ingest 完成，**十六这个数字现在才真正成立**。
+  > **教训**：把「已落盘」写成「已收录」，会让 `sources` 字段与断链检查对不上（见 `wiki/log.md` 当日两条相关条目）。
+  - 九讲「学习与教育」板块（2026-05-07 至 2026-05-20）—— 本库第一批
+  - **六讲「基本世界观」板块（2026-03-18 至 2026-03-23）** —— 2026-09-18 收齐，归 [[modern-thinking-tools]]：
+    叙事 / 重尾 / 能动 / **约束 / 可能 / 内核**（后三讲为最后补入）。**六讲内部互指**
+    （能动讲回指「重尾分布」，可能讲回指「我们前面讲了……」，内核讲结尾是板块收束语），
+    是本库第一条**完整收齐**的课程板块线
+  - **发刊词《现代精英的思维武器库》**（2026-03-18 00:25，早于第 1 讲 16 分钟）——
+    见 [[2026-09-18-modern-thinking-tools-prospectus]]。**它是课程级的总纲，不属于「基本世界观」板块**，
+    归属待裁定（该份 sources 页列了三条可选路径）
 
 ## 身份是如何确认的
 
@@ -32,9 +44,13 @@ status: active
 | 2 | 「我们**《精英日课》专栏**多次聊过刻意练习」 | [[2026-09-18-deliberate-practice-talent]] 行 56 |
 | 3 | 配图文字：「调研助手 **By Weigang Wan**」 | [[2026-09-18-synthesis-research]] 行的图片 alt 文本 |
 | 4 | 「我写咱们这个**《现代思维工具》**课」 | [[2026-09-18-synthesis-research]] 行 160 |
+| **5** | **正文第一人称自称：「欢迎来到现代思维工具课，我是万维钢。我以前是个物理学家，现在是科学作家，已经在得到写了六季《精英日课》专栏。」** | [[2026-09-18-modern-thinking-tools-prospectus]] 行 94（**讲稿正文，非图片、非转述**） |
 
 第 3 条是**唯一出现拉丁转写的署名**，且出现在图片（非正文）里。
-**四条互相印证，但都不是正式的署名页** —— 按本库规矩，仍标为「推定」，不标为「已核实」。
+**第 5 条是 2026-09-18 新增的、证据强度最高的一条** —— 它是**正文里的直接自称**，
+不再需要靠旁证推定。
+**但本库仍不把状态改为「已核实」**：它是飞书文档对得到课程正文的搬运，
+**文档本身没有署名页**。四条旧的旁证 + 第 5 条共同支撑「推定」这一档。
 
 > [!note] 与「孤儿素材」的关系
 > [[2026-09-18-cognitive-load-diagrams]] 是入库时无出处的 6 张 AI 生成图，
@@ -54,6 +70,27 @@ status: active
 4. **AI 参与是显式的** —— 小诗标注「Gemini 有诗赞曰」「GPT 又曰」；
    第 3 讲贴出 Claude 对话链接；长讲后面挂 AI 生成的操作手册与 Prompt 库。
    **与那些把 AI 输出混进正文的素材不同，他至少标了。**
+5. **两处「主动交代 AI 参与」的具体样本（2026-09-18 新增，本库第一次拿到）**：
+   - 第 4 讲行 161：「**我让 GPT 算了一下** —— 」（随后给出地底文明的能量账）。**归属透明。**
+   - 第 6 讲行 59：「**我们**（作者 + GPT）把现代学者的理论和古代先贤的看法摊在一起，聊出一个相对简单但特别好用的工作模型」。
+   - 第 4 讲注释 [9] 更进一步：「此诗前面是 GPT 所作，**最后两句是我改的**」—— **连「哪几句是谁写的」都标了**。
+   > **这构成一个对照**：同一门课里，**讲稿段的 AI 参与是署名的，而 AI 段的参与是不署名的**
+   > （第 2–6 讲的所有 AI 加工段都无署名、且常以第一人称冒充作者延伸）。
+   > **本库判断（`low`）：这个反差说明 AI 段不是作者放的，而是文档整理者加的** ——
+   > 但这只是推断，**素材没有任何一处交代整理者是谁**。
+6. **【2026-09-18 新增，且不太好看】AI 段的「中年」模板已出现四次。**
+   第 3、4、5、6 讲的 AI 加工段**都**把内容改写成「普通中年人怎么办」的生存手册
+   （判别词见 [[2026-09-18-three-selves-notes]] 的观察表）。
+   **这不是作者的写作特征，是文档的拼接特征** —— 已作为待裁定项提交（是否写进 `AGENTS.md` 4.1 作分层辅助信号）。
+5. **2026-09-18 新增：作者本人给出了 AI 参与的分工说明。**
+   发刊词行 148（**讲稿正文**）原话：
+   「我做了大量\*人的\*工作，课程的选题、讲法、主观发挥和具体语句都是我的，
+   **但是我必须先致敬 GPT**：这个课程是一个人类作家，借助最强 AI，
+   从超级人工智能（ASI）到来之前的人类最新研究中**蒸馏**出来的智力果实。」
+   → 这比第 4 条（事后标注）强一档：它是**事前/事中的自我界定**，且**主动划了界**
+   （选题、讲法、主观发挥、具体语句归人；蒸馏归 AI）。
+   **本库不在这条界线上做判断** —— 它是一份自述，不是可验证的分工记录。
+   相关讨论见 [[ai-convergence]]。
 
 ## 利益披露
 
@@ -67,6 +104,13 @@ status: active
 **处置**：不整页降级（这与 [[eden]] 的推广内容不同，后者是产品本身即推广对象），
 但在引用其结论时**应说明「来自付费科普课程」这一来源性质**。
 
+> [!warning] 2026-09-18 新增：必须区分「作者推广」与「文档整理者推广」
+> 「基本世界观」六讲的《重尾》一份，末尾含一段**以第一人称索取联系方式的推广文案草稿**
+> （「评论或私信我『乘法』，我发你」飞书模板）。**这段与万维钢无关** ——
+> 它是飞书文档整理者自己写的东西，挂在讲稿后面。
+> 本库已在该份 raw frontmatter 里标注利益披露，但**不计入本页的作者利益披露**：
+> 归因错了会误伤作者的定级。两件事分开记。
+
 ## 与其他页面的关系
 
 - 是本批九份素材的唯一作者 —— **「换了作者」不等于「换了材料类型」**
@@ -74,16 +118,91 @@ status: active
 - 与 [[synthesis-research]]：该页记录了他自述的调研方法（66 本书、9 个超大文档、
   按议题横向链接）—— **与本库做法高度同构**。
 - 与 [[explanatory-framework]]：该概念为他自造，本库已单独立页并标注。
+- **2026-09-18 新增：发刊词派生出的 4 个概念页** ——
+  [[intelligent-life-system]]（元叙事：目标函数 / 世界模型 / 反馈回路 / 预算带宽）、
+  [[three-solutions]]（传统观念 / 市侩哲学 / 精英解法）、
+  [[ai-convergence]]（最强 AI 的收敛性，即本课程的合法性论证）、
+  [[lesser-and-greater-vehicle]]（小乘 / 大乘）。
+  **这四个是本课程的总纲概念，此后每一讲都会回到它们** ——
+  与之前每一讲各自派生独立概念不同，**发刊词派生的是一个共同的坐标系**。
+- **2026-09-18 新增：「模块一 成长战略」20 份素材**（[[modern-thinking-tools]] 的第二条主线，
+  也是**本库 AI 加工占比最高的一条线**：007 约 87%、013 约 78%）。由此可登记三条相关性观察
+  （均 `low`，样本小，不作结论）：
+  - **「讲稿占比高 ⇒ 引注质量好」在第 2 个样本上成立** ——
+    020（讲稿 66.7%，本模块最高，[[2026-09-18-explore-exploit-notes]]）、
+    010（48.3%，[[2026-09-18-self-determination-theory-notes]]）、
+    021（47.7%，[[2026-09-18-resonance-notes]]）的具名引注均可核；
+    而 AI 占比最高的 007（[[2026-09-18-capability-seeking-theorem-notes]]）外部实证很少。
+  - **具名引注可核率高的样本**：016（[[2026-09-18-identity-metacognition-notes]]）、
+    017（[[2026-09-18-sense-of-security-notes]]）。
+  - **两份关联档案均判 `low`，但与「基本世界观」线不同因**：模块目录（AI 91%、一手为零，
+    [[2026-09-18-growth-strategy-module-notes]]）与工程化手册（AI 约 99%，
+    [[2026-09-18-growth-strategy-engineering-manual]]）**不命中「推广载体」与「零引注数字」，
+    而命中「未标记地冒充课程转述」**。
+- **2026-09-18 新增：「问答」体裁在本批首次出现** —— 3 份问答
+  （[[2026-09-18-qa-admitting-mistakes-notes]]、[[2026-09-18-qa-hard-to-start-notes]]、
+  [[2026-09-18-qa-deepen-or-move-notes]]）覆盖连续 15 讲（004–018），每份 5 讲，
+  是**得到课程的原生体裁**（读者提问原文 + 作者回答）。**AI 段 0%、四种缺陷型全不命中** ——
+  「提问原文」是体裁组成，**不构成**「逐字保留对话轮次」。
+
+## 2026-09-18 新增：本讲是该课程唯一一份「模块级汇总 / 直播形态」样本
+
+[[2026-09-18-five-thinking-tools-livestream]]（`kind: livestream-transcript`）是本库收到的
+**唯一一份直播逐字稿**，也是**唯一一份站在模块级俯瞰「模块一讲了什么」**的素材 ——
+它是 4 小时 6 分的收官直播，挑 **5 个工具**串讲
+（自由能原理 → WOOP → 认知解耦 → 能耐寻求定理 → 探索与利用），
+把「模块一」收成**两条线索（主动 + 工程化）**。
+
+**对本页（作者页）的意义有两条，均需与既有条目并读：**
+
+- **形态是新的**：此前收录的是「课程文章 / 问答 / 关联档案」三类，
+  本份新增**直播逐字稿**一类 —— 特征是无 `dedao.cn` 链接、**47 处时间戳**、
+  非空内容行仅约 25%（其中约 12 行是串场与课程促销）。见该页 §证据性质。
+- **说话人不是一个**：本份有**两个说话人** —— **主讲（万维钢）+ 主持（小影，万维钢主编）**。
+  主持人在行 120 贡献了一条实质内容（把「拆小惊讶」外推为组织工作方法）。
+  **引用本份时须区分是谁说的，不能一律当作者主张** —— 这是本页此前所有素材都没有的情况。
+
+> [!note] 与本页「写作特征」第 5 条的关系
+> 本份**未发现 AI 加工段**（判据见该页）。因此不适用本页记的
+> 「讲稿段的 AI 参与是署名的、AI 段的参与是不署名的」这一反差 ——
+> **它全程只有一个说话群，没有「AI 段」这个层。**
 
 ## 待办 / 开放问题
 
 - [ ] **身份仍属推定**，无正式署名页。若有课程介绍页可得，应补。
+  **2026-09-18 进展**：新增第 5 条证据（正文直接自称「我是万维钢」），
+  **推定强度明显提高，但形式上的「署名页」仍缺** —— 保持待办
 - [ ] 《精英日课》与《现代思维工具》的**关系未核实**（专栏 vs 课程，是否同一内容体系）。
-- [ ] 本批九讲是否属于同一课程？第 1 讲与第 8 讲的 dedao 文章 id **前缀相同**，
-      其余七讲各不相同 —— **存疑，未判定**（记录在 raw frontmatter 的 `capture_note`）。
-- [ ] 是否收录该系列**其他板块**的讲次？取决于 [[peak-performance]] 与
-      [[llm-wiki-research]] 的缺口表是否需要。
+  **2026-09-18 新增旁证**：发刊词行 94 自述「《精英日课》**六季**专栏」，
+  且行 133–135 说明课程是「以前的讲法不够系统」之后的系统化 —— **方向对得上，仍未证实**
+- [ ] **本批九讲是否属于同一课程？** 第 1 讲与第 8 讲的 dedao 文章 id **前缀相同**，
+      其余七讲各不相同 —— **存疑，未判定**（记录在 raw frontmatter 的 `capture_note`）
+- [x] ~~是否收录该系列**其他板块**的讲次？~~ —— **2026-09-18 已收「基本世界观」六讲**，
+      另开项目 [[modern-thinking-tools]]。板块归属沿用本页已有的课程认定。
+      **顺带解决的一个疑点**：两个板块的时间顺序与课程内容**自洽** ——
+      「基本世界观」在 3 月（2026-03-18 至 03-23），「学习与教育」在 5 月（2026-05-07 至 05-20），
+      而《内核》讲结尾说「有了这些基本认识，我们就可以学习各种思维工具了」——
+      **世界观在前、工具在后，与发布顺序一致**。
+      这条同时弱化了「板块讲次可能乱序」的顾虑，但**仍未证实发布日期 = 发布顺序**，只记旁证。
+- [ ] 六讲的引注**几乎全部不可追溯**（飞书导出丢了注释段）——
+      这与「学习与教育」九讲的引注质量形成反差，**原因未知**（是导出问题还是课程本身差异？）。
+      **2026-09-18 部分澄清**：发刊词的具名引注（富勒 / 德鲁克 / 威尔逊 / 芒格）**全部可核**，
+      **但都在 AI 生成段**；讲稿段仍然只有概念名、零出处。**反差的原因更可能出在「谁在写」，
+      而不是「飞书导出丢了什么」** —— 本库观察，待裁定
+- [ ] **本批出现的一种新形态：作者在讲稿里公开使用 GPT。**
+      第 3 讲《能动》行 189 是讲稿正文，写着「**GPT 读罢此文后制作的一页版《人生说明书》**」；
+      第 4 讲《约束》的注释 [9] 更自述收束小诗**前两句为 GPT 所作**、末两句由作者改写；
+      **发刊词行 148 则是对「AI 参与到什么程度」的正面说明**。
+      **三条都是作者自述，不是本库推测。** 这意味着本批素材的「AI 生成段」里，
+      **有一部分是被作者邀请的** —— 判定分层时不能一概视为文档整理者的产物，
+      但也不能因此把 AI 段当讲稿主张。**第 3 讲的处置见 [[2026-09-18-steady-state-trap-notes]] 的分层表。**
+- [ ] **【2026-09-18 新增】** 外部核查已取回**课程官方大纲**（得到公开课程页）——
+      确认「基本世界观」是 **7 讲**（本库缺 1 份《问答：叙事和讲故事、造梦的区别是什么？》），
+      发刊词 2 讲、另设八大模块。**这份大纲本身是否值得收录进 `raw/`**，待北洛定。
+      详见 [[2026-09-18-modern-thinking-tools-prospectus]] 的关系一节第 5 条。
 
 ## 来源
 
 - 本批九份素材（见 `sources` 字段）
+- [[2026-09-18-modern-thinking-tools-prospectus]]（**2026-09-18 新增**，课程发刊词）
+- [[2026-09-18-narrative-self]]（**2026-09-18 新增**）—— 第 1 讲的**关联档案**。他是该档 G 段（曾国藩天津教案，自带《科学思考者》电子书链接）的**署名作者**。**注意：本档不是课程文章**（无讲次、无日期、无 `dedao.cn/course/article` 链接），

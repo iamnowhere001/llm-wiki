@@ -5,8 +5,8 @@ slug: thomas-sowell
 tags: [人物, 批判性思维, 认知, 争议]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [thinking-vs-feeling, emotion-regulation-toolkit, emotion-awareness]
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-heavy-tail-notes]
+related: [thinking-vs-feeling, emotion-regulation-toolkit, emotion-awareness, modern-thinking-tools, heavy-tailed-distribution, 2026-09-18-heavy-tail-notes]
 confidence: medium
 status: active
 ---
@@ -52,8 +52,24 @@ status: active
 
 **他的立场背景需要被记住。** 素材自己标注了他作为保守主义思想家的身份，以及他对「情感教育」的批评立场。使用这个框架时需要注意：**「感觉不能当证据」这个原则是普适的，但「谁在滥用感觉」这个判断常常带有立场。**
 
+## 第二处引用：《社会正义谬误》（2023）的乌干达例
+
+> **2026-09-18 新增。** 本页此前只有一处来源（[[2026-09-18-emotion-awareness-notes]]，讲「思考 ≠ 感觉」）。
+> [[2026-09-18-heavy-tail-notes]] 引用了他 2023 年的《社会正义谬误》（*The Social Justice Fallacies*）：
+> 乌干达政府发现国内有钱的多是亚裔企业家，觉得不公平就把他们赶走，**结果乌干达经济崩溃，
+> 本国人的财富变得更少而不是更多了** —— 用来论证「激进『拉平』的尝试几乎都以经济崩溃告终」。
+
+**核查状态（2026-09-18）**：**二手印证** —— CultureWatch（2026-05-24）在讨论该书时列举了
+「the collapse of Uganda's economy after Asians were expelled in the 1970s」。
+**一手书页未取回。**
+
+**注意这条与「思考 ≠ 感觉」那条是同一立场的两面**：前者是**方法论**（别把感觉当证据），
+后者是**实质主张**（再分配有代价）。**引用时应说明引的是哪一面的哪本书** ——
+本页此前所有引用都未标出处，这一条是**本页第一条标了书名与年份的引用**。
+
 ## 相关概念
 
+- [[heavy-tailed-distribution]] —— 本页第二条引用所在的论证：世界服从极端值，乘法对所有人都有好处
 - [[thinking-vs-feeling]] —— 他的核心分野，本项目中唯一的「逆向」概念页
 - [[emotion-regulation-toolkit]] —— 他的工具被收进该页的「上游」部分
 - [[narrative-self-vs-bodily-self]] —— 与他的主张构成直接冲突的一页

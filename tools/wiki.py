@@ -415,26 +415,9 @@ def cmd_lint(root):
         advisories.append(
             "本库有 %d 个知识页但**没有任何项目页**。按 [[cybernetic-learning]] 的推论，"
             "没有目标就没有过滤器 —— 建议用 `new project <slug>` 建一个。" % len(knowledge))
-    # HFQ（人类先问）—— AGENTS.md 4.1 第 −1 步。缺节或仍是占位 → 提示，不计入问题数。
-    # 不计入问题数的原因：本裁定之前收录的素材不追补（亲笔内容无法补写），
-    # 所以存量 source 页缺这一节是预期内的；真正的信号是「已建节但没填」。
-    hfq_missing, hfq_stub = [], []
-    for p in pages:
-        if p.type != "source":
-            continue
-        m = re.search(r"^##\s*人类先问\s*$(.*?)(?=^##\s|\Z)", p.body, re.M | re.S)
-        if not m:
-            hfq_missing.append(p.slug)
-        elif "待人类亲笔" in m.group(1):
-            hfq_stub.append(p.slug)
-    if hfq_missing or hfq_stub:
-        parts = []
-        if hfq_stub:
-            parts.append("%d 份已建节但仍是占位，等人类亲笔（%s）"
-                         % (len(hfq_stub), "、".join(sorted(hfq_stub)[:5])))
-        if hfq_missing:
-            parts.append("%d 份尚无此节（2026-09-18 前收录，过渡期不追补）" % len(hfq_missing))
-        advisories.append("HFQ（人类先问，AGENTS.md 4.1 第 −1 步）—— " + "；".join(parts))
+    # HFQ（人类先问）检查已于 2026-09-18 移除 —— 北洛裁定：全面移除该前置条件，后续不再要求。
+    # 原实现：检查 source 页是否有 `## 人类先问` 节、且节内不含「待人类亲笔」占位。
+    # 保留这段注释作为历史痕迹；不要因为看到注释就恢复检查。
 
     if advisories:
         print("\n语义提示（不计入问题数）")
