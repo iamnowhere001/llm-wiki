@@ -1463,6 +1463,18 @@ body{
 .nav-item.active{background:var(--accent-soft);border-left-color:var(--accent);font-weight:600;color:var(--accent)}
 .nav-item .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:8px;vertical-align:1px}
 .res-count{font-size:11.5px;color:var(--muted);padding:4px 12px 8px}
+.nav-item.res{white-space:normal;line-height:1.45;padding:6px 10px}
+.nav-item.res .r-title{display:block;font-size:13.2px}
+.nav-item.res .r-snip{
+  display:block;font-size:11.8px;color:var(--muted);margin:2px 0 0 18px;line-height:1.5;
+  max-height:3em;overflow:hidden;
+}
+.nav-item.res .r-meta{display:block;font-size:11px;color:var(--muted);margin:3px 0 0 18px;font-variant-numeric:tabular-nums}
+.nav-item.res mark,.nav-item.res.active mark{background:#fde68a;color:inherit;border-radius:2px;padding:0 1px}
+.res-more{
+  display:block;width:100%;text-align:left;border:0;background:transparent;font:inherit;
+  font-size:12px;color:var(--accent);cursor:pointer;padding:6px 12px;
+}
 
 /* ---------- main ---------- */
 #main{flex:1;display:flex;flex-direction:column;overflow:hidden}
@@ -1551,8 +1563,7 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
       <h1>__SITE_TITLE__</h1>
       <div class="sub">__SITE_SUB__</div>
     </div>
-    <div class="searchwrap"><input id="search" placeholder="搜索页面…" autocomplete="off"></div>
-    <nav id="nav"></nav>
+    <div class="searchwrap"><input id="search" placeholder="搜索页面…（多词用空格分隔，按 / 聚焦）" autocomplete="off"></div>    <nav id="nav"></nav>
   </aside>
   <main id="main">
     <div id="tabs">
@@ -1763,29 +1774,188 @@ function go(slug){
   document.title = p.title + " · " + DATA.title;
 }
 
-/* ---------------- search ---------------- */
-var searchEl = document.getElementById("search");
-searchEl.addEventListener("input", function(){
-  var q = searchEl.value.trim().toLowerCase();
-  if (!q){ buildNav(); markActive((location.hash||"#").slice(1)); return; }
-  var hits = PAGES.filter(function(p){
-    return (p.title+" "+p.slug+" "+(p.tags||[]).join(" ")+" "+p.body).toLowerCase().indexOf(q) >= 0;
+/* ---------------- search (BM25) ---------------- */
+/* 打分与 `tools/wiki.py search` 同源：中文二字组 + 英文词，BM25 排序。
+   站点在此基础上加两项：标题/标签命中加权、标题整串命中额外加分。
+   旧版是「整串子串匹配 + 无排序」，命中一次的页与标题即该词的页同列 —— 已废弃。 */
+var CJK_RE = /[\u4e00-\u9fff]+/g, WORD_RE = /[a-z0-9_]+/g;
+
+function tokenize(s){
+  var toks = [], m;
+  WORD_RE.lastIndex = 0;
+  while ((m = WORD_RE.exec(s))) toks.push(m[0]);
+  CJK_RE.lastIndex = 0;
+  while ((m = CJK_RE.exec(s))){
+    var t = m[0];
+    if (t.length === 1) toks.push(t);
+    else for (var i = 0; i < t.length - 1; i++) toks.push(t.substr(i, 2));
+  }
+  return toks;
+}
+
+/* 一次性预处理：小写文本 + 文档长度 */
+var NDOC = PAGES.length, AVGDL = 0;
+PAGES.forEach(function(p){
+  p._h = (p.title + " " + (p.tags||[]).join(" ") + " " + p.slug).toLowerCase();
+  p._b = p.body.toLowerCase();
+  p._dl = p.body.length;
+  AVGDL += p._dl;
+});
+AVGDL = AVGDL / (NDOC || 1);
+
+var DFCACHE = {};
+function dfOf(t){
+  if (DFCACHE[t] !== undefined) return DFCACHE[t];
+  var c = 0;
+  for (var i = 0; i < NDOC; i++){
+    if (PAGES[i]._b.indexOf(t) >= 0 || PAGES[i]._h.indexOf(t) >= 0) c++;
+  }
+  DFCACHE[t] = c; return c;
+}
+function countOf(s, t){
+  var c = 0, i = s.indexOf(t);
+  while (i >= 0){ c++; i = s.indexOf(t, i + t.length); if (c > 400) break; }
+  return c;
+}
+function scorePage(p, terms){
+  var s = 0, dl = p._dl;
+  for (var i = 0; i < terms.length; i++){
+    var t = terms[i];
+    var f = countOf(p._b, t) + countOf(p._h, t) * 5;
+    if (!f) continue;
+    var df = dfOf(t) || 1;
+    var idf = Math.log(1 + (NDOC - df + 0.5) / (df + 0.5));
+    s += idf * (f * 2.5) / (f + 1.5 * (1 - 0.75 + 0.75 * dl / AVGDL));
+  }
+  return s;
+}
+/* 标题整串命中：把「标题就是这个词的页」抬到最前 —— 纯词频做不到这件事 */
+function titleBonus(p, raw){
+  var t = p.title.toLowerCase(), b = 0;
+  raw.split(/[\s,，、;；]+/).forEach(function(w){
+    if (w.length < 2) return;
+    if (t === w) b += 25; else if (t.indexOf(w) >= 0) b += 14;
   });
+  return b;
+}
+function buildTerms(raw){
+  var terms = [], seen = {};
+  tokenize(raw).forEach(function(t){ if (!seen[t]){ seen[t] = 1; terms.push(t); } });
+  raw.split(/[\s,，、;；]+/).forEach(function(w){
+    w = w.trim();
+    if (w.length >= 2 && !seen[w]){ seen[w] = 1; terms.push(w); }
+  });
+  return terms;
+}
+function hl(text, needles){
+  var lc = text.toLowerCase(), ranges = [];
+  needles.forEach(function(n){
+    if (!n) return;
+    var i = lc.indexOf(n), guard = 0;
+    while (i >= 0 && guard++ < 40){ ranges.push([i, i + n.length]); i = lc.indexOf(n, i + n.length); }
+  });
+  if (!ranges.length) return esc(text);
+  ranges.sort(function(a, b){ return a[0] - b[0]; });
+  var merged = [];
+  ranges.forEach(function(r){
+    var last = merged[merged.length - 1];
+    if (last && r[0] <= last[1]) last[1] = Math.max(last[1], r[1]); else merged.push([r[0], r[1]]);
+  });
+  var out = "", pos = 0;
+  merged.forEach(function(r){
+    out += esc(text.slice(pos, r[0])) + "<mark>" + esc(text.slice(r[0], r[1])) + "</mark>";
+    pos = r[1];
+  });
+  return out + esc(text.slice(pos));
+}
+function snippet(p, needles){
+  var b = p._b, cands = [];
+  for (var i = 0; i < needles.length; i++){
+    var n = needles[i], from = 0, k, guard = 0;
+    while ((k = b.indexOf(n, from)) >= 0 && guard++ < 60){ cands.push(k); from = k + n.length; }
+  }
+  if (!cands.length) return "";
+  cands.sort(function(x, y){ return x - y; });
+  var best = cands[0];
+  /* 命中落在开头标题行时意义不大 —— 往正文里挪一处 */
+  for (var j = 0; j < cands.length; j++){ if (cands[j] > 80){ best = cands[j]; break; } }
+  var start = Math.max(0, best - 34), end = Math.min(p.body.length, best + 130);
+  var txt = p.body.slice(start, end)
+    .replace(/\s+/g, " ")
+    .replace(/^#+\s+/, "")
+    .replace(/>\s?/g, "")
+    .replace(/\*\*/g, "")
+    .replace(/\[\[([^\]\|]+)(?:\|[^\]]+)?\]\]/g, "$1")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/\[!\w+\]/g, "")
+    .replace(/\[\[|\]\]/g, "")
+    .replace(/\|/g, " ")
+    .replace(/\s*-{3,}\s*/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .replace(/^\s*[-*+]\s+/, "");
+  return (start > 0 ? "…" : "") + hl(txt, needles) + (end < p.body.length ? "…" : "");
+}
+
+var searchEl = document.getElementById("search");
+var SEARCH_CAP = 30, lastHits = [], lastNeedles = [];
+
+function renderHits(cap){
+  var top = lastHits.length ? lastHits[0].s : 0;
+  /* 阈值：低于最高分 18% 的长尾视为噪声，不默认展示（可展开） */
+  var shown = lastHits.filter(function(x){ return x.s >= Math.max(1.2, top * 0.18); });
   nav.innerHTML = "";
   var g = document.createElement("div"); g.className = "grp";
-  g.innerHTML = "<h3>搜索结果<span>"+hits.length+"</span></h3>";
-  if (!hits.length){
+  g.innerHTML = "<h3>搜索结果<span>" + shown.length + "</span></h3>";
+  if (!shown.length){
     var d = document.createElement("div"); d.className = "res-count"; d.textContent = "无匹配页面";
-    g.appendChild(d);
+    g.appendChild(d); nav.appendChild(g); return;
   }
-  hits.slice(0, 60).forEach(function(p){
+  shown.slice(0, cap).forEach(function(x){
+    var p = x.p, sn = snippet(p, lastNeedles);
     var a = document.createElement("a");
-    a.className = "nav-item"; a.href = "#"+p.slug; a.dataset.slug = p.slug;
-    a.innerHTML = '<i class="dot" style="background:'+(TYPECOLOR[p.type]||"#666")+'"></i>'+esc(p.title);
+    a.className = "nav-item res"; a.href = "#" + p.slug; a.dataset.slug = p.slug;
+    a.innerHTML = '<i class="dot" style="background:' + (TYPECOLOR[p.type]||"#666") + '"></i>' +
+      '<span class="r-title">' + hl(p.title, lastNeedles) + '</span>' +
+      (sn ? '<span class="r-snip">' + sn + '</span>' : '') +
+      '<span class="r-meta">' + (TYPELABEL[p.type]||p.type) + ' · 相关度 ' + x.s.toFixed(1) + '</span>';
     a.addEventListener("click", function(e){ e.preventDefault(); go(p.slug); });
     g.appendChild(a);
   });
+  if (shown.length > cap){
+    var more = document.createElement("button");
+    more.className = "res-more";
+    more.textContent = "显示其余 " + (shown.length - cap) + " 条较弱结果";
+    more.addEventListener("click", function(){ renderHits(shown.length); });
+    g.appendChild(more);
+  }
   nav.appendChild(g);
+  markActive((location.hash||"#").slice(1));
+}
+function runSearch(){
+  var raw = searchEl.value.trim().toLowerCase();
+  if (!raw){ buildNav(); markActive((location.hash||"#").slice(1)); return; }
+  var terms = buildTerms(raw);
+  var scored = [];
+  PAGES.forEach(function(p){
+    var s = scorePage(p, terms) + titleBonus(p, raw);
+    if (s > 0) scored.push({p: p, s: s});
+  });
+  scored.sort(function(a, b){ return b.s - a.s; });
+  lastHits = scored; lastNeedles = terms;
+  renderHits(SEARCH_CAP);
+}
+var sTimer = null;
+searchEl.addEventListener("input", function(){
+  if (sTimer) clearTimeout(sTimer);
+  sTimer = setTimeout(runSearch, 110);
+});
+searchEl.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){ searchEl.value = ""; runSearch(); }
+});
+document.addEventListener("keydown", function(e){
+  if (e.key === "/" && document.activeElement !== searchEl && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault(); searchEl.focus(); searchEl.select();
+  }
 });
 
 /* ---------------- tabs ---------------- */
