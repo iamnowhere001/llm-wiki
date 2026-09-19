@@ -93,7 +93,7 @@ status: active
 - **本库产出**：[[ordinary-people-peak-performance]]（**本项目的第一个 `analyses/` 页** —— 一次查询归档，`confidence: low`）、[[flow-terminology]]（**第一个 `concepts/` 页** —— 心流的术语边界说明，2026-09-18 产出）、[[how-we-learn-and-how-to-improve]]（**第二次查询归档**，「我们如何学习」；**本库第一例「外部证据强于库内证据」的页面**）
 - **张力层**：[[cybernetic-learning]]（目标 = 误差信号的来源）、[[chaos-system-of-life]]（执迷「正确的人生」本身就是妄念）—— 这两页的对立正是本项目要处理的问题
 - **接口层**：[[cognitive-vs-somatic-paths]]（具身认知）、[[emotion-regulation-toolkit]]（正念与心流的机制重叠）、[[emotion-as-coupling]]
-- **反例层**：[[mental-strength]]、[[2026-09-18-mental-strength]]（AI 生成内容的降级先例 —— 本项目起点素材含同类问题）
+- **反例层**：[[mental-strength]]、[[2026-09-18-mental-strength]]（AI 生成内容的降级先例 —— 本项目起点素材含同类问题）、[[mental-strength-terminology]]（**2026-09-19** —— 同一个词的三种用法不可互引；`prospectus` 与 `identity` 两份素材各造了一个「心力」）
 - **参照项目**：[[llm-wiki-research]]（同为研究型项目，其「产出缺口」的自我警示可复用）
 
 > [!note] 知识层开始有了实体

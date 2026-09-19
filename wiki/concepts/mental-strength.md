@@ -6,7 +6,7 @@ tags: [情绪, 概念, 低置信度, AI生成, 证据分类]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-mental-strength]
-related: [emotion-awareness, internal-friction, llm-wiki-pattern, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology]
+related: [emotion-awareness, internal-friction, llm-wiki-pattern, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, mental-strength-terminology]
 evidence_tier: single
 confidence: low
 status: active
@@ -123,6 +123,7 @@ status: active
 - **它是 [[llm-wiki-pattern]] 主张的反向验证**：本库的核心是「让 LLM 增量编译素材，而不是每次从零生成」。这份素材恰好是**没有素材、纯生成**的产物 —— 它显示了模型在无外部输入时会产出什么。
 - **与 [[emotion-awareness]] 项目直接相关**：项目缺口表里「AI 生成内容如何处理」这一条，就是因它而设，并已由北洛在 2026-09-18 裁定。
 - **与 [[internal-friction]] 有内容上的邻接**（都涉及心理能量的消耗），但**本页的低置信度使得引用它时必须标注** —— 两页之间是「概念邻接 + 标注引用」的关系，不是「证据支撑」关系。
+- **与 [[mental-strength-terminology]] 的分工（2026-09-19）**：本页记录「这份 AI 对话给出了什么定义」，那一页记录「『心力』在库内被以三种互不相干的方式使用、各自能引用到哪一步」。**引用本页之前先看那一页的边界** —— 否则会把讲稿里的「花心力」（日常词）误当成对「心力是有限可耗竭资源」这一断言的支撑。
 
 > [!warning] 本页的使用限制
 > **本页可以被引用，但引用时必须同时写明：本页内容来自一份 AI 对话记录，`confidence: low`，无一级来源。**

@@ -81,7 +81,7 @@ status: active
 - **本库立论层**：[[cognitive-vs-somatic-paths]]（**本项目的第一个 `analyses/` 页**，也是那条【阻塞】的假设解 —— `confidence: low`，待验证。**验证工作已随缺口一并移交 [[peak-performance]]**）
 - **病理与对策**：[[internal-friction]]、[[rumination]]、[[victim-mentality]]、[[complaining]]、[[forgiveness]]
 - **判据层**：[[rumination-vs-reflection]]（**2026-09-18 新增**，本项目的第二条 `analyses/` 页 —— 它回答了一个项目自己此前无从回答的问题：反刍与反思的边界。**依据已补录**，见上方「素材层（一手）」；该页的 `sources` 已于同日由空补上）
-- **方法层**：[[emotion-regulation-toolkit]]、[[stoic-control-dichotomy]]、[[mental-strength]]（低置信度）
+- **方法层**：[[emotion-regulation-toolkit]]、[[stoic-control-dichotomy]]、[[mental-strength]]（低置信度）、[[mental-strength-terminology]]（**2026-09-19 新增** —— 本项目多处用到「心力」一词，先划清它的三种用法与引用边界）
 - **哲学层**：[[chaos-system-of-life]]（来自 [[yjengo]]，本项目唯一的「拆信念」型页面）
 - **人物层**：[[wang-lu]]、[[marcus-aurelius]]、[[viktor-frankl]]、[[thomas-sowell]]、[[maurice-merleau-ponty]]、[[yjengo]]、[[keith-stanovich]]、[[lisa-feldman-barrett]]、[[james-gross]]、[[albert-ellis]]、[[stephen-covey]]、[[nolen-hoeksema]]、[[ed-watkins]]（**后两位 2026-09-18 新增**，随一手素材收录而建页）
 - **姊妹项目**：[[peak-performance]]（2026-09-18 立项，接管了本页移交的两条缺口。**两者在正念、具身认知、心流的神经化学上有实质重叠，而通用边界规则尚未定** —— 见 [[peak-performance]] 的「开放问题」）
