@@ -60,6 +60,22 @@ META_FILES = {"index", "log", "overview", "conventions"}
 
 REQUIRED_FM = ["title", "type", "slug"]
 
+# 证据层级（2026-09-19 引入）—— 回答「这页的结论站得多稳」，与 confidence 是两个维度：
+#   confidence  是 LLM 的**主观**判断（high / medium / low），会随阅读而变，无法机器校验
+#   evidence_tier 是**可计算**的事实：由支撑素材的数量与类型推导，lint 能校验它与事实是否一致
+# 三档取值：
+#   single   恰好 1 份素材支撑 —— 孤证。可读，但引用时必须带着「只有一份来源」这个前提
+#   crossed  ≥2 份素材支撑，且不含一手文献 —— 交叉了，但可能只是同源转述（见同源提示）
+#   primary  至少 1 份 kind=paper 的素材支撑 —— 有可独立核验的一手文献
+EVIDENCE_TIERS = ("single", "crossed", "primary")
+
+# 被视为「可独立核验的一手文献」的素材 kind
+PRIMARY_KINDS = ("paper",)
+
+# 需要证据层级的页面类型。source 页本身就是一份素材，不适用；
+# project / meta 不由素材派生，也不适用。
+EVIDENCE_TYPES = ("concept", "entity", "analysis")
+
 LINK_RE = re.compile(r"\[\[([^\[\]|]+)(?:\|([^\[\]]+))?\]\]")
 
 # ---------------------------------------------------------------- 基础工具
@@ -237,13 +253,114 @@ def write_text(path, text):
         fh.write(text)
 
 
+# ---------------------------------------------------------------- 证据层级
+
+
+def load_raw_meta(root):
+    """扫描 raw/*.md，返回 {slug: {"kind":..., "author":...}}。
+
+    只取 frontmatter 的两个字段 —— 判证据层级只需要素材的**类型**与**作者**。
+    重抓版（-r2/-r3）沿用基础 slug 的元数据：它们抓的是同一份素材。
+    """
+    meta = {}
+    raw_dir = os.path.join(root, "raw")
+    if not os.path.isdir(raw_dir):
+        return meta
+    base = {}
+    for fn in sorted(os.listdir(raw_dir)):
+        if not fn.endswith(".md"):
+            continue
+        slug = fn[:-3]
+        with open(os.path.join(raw_dir, fn), "r", encoding="utf-8") as fh:
+            text = fh.read()
+        fm, _ = parse_frontmatter(text)
+        rec = {
+            "kind": (fm.get("kind") or "").strip(),
+            "author": (fm.get("author") or "").strip(),
+        }
+        meta[slug] = rec
+        b = re.sub(r"-r\d+$", "", slug)
+        if b not in base:
+            base[b] = rec
+    for slug, rec in list(meta.items()):
+        b = re.sub(r"-r\d+$", "", slug)
+        if b != slug and b in base:
+            meta[slug] = base[b]
+    return meta
+
+
+# 来源族归并规则：(关键词元组, 族名)。命中任一关键词即归入该族。
+# 本库 2026-09-19 的现实：约 60/97 份素材来自同一套得到课程，但它们的 author 字段
+# 写法五花八门（「万维钢（讲稿）…」「未署名 —— 飞书 wiki…正文为得到课程文章」
+# 「得到《现代思维工具课》问答…」）。若只按 author 字符串比较，会把同源拆成三族，
+# 于是「交叉验证」会被严重高估。这条规则表的存在就是为了不让这件事发生。
+FAMILY_RULES = (
+    (("万维钢", "得到", "dedao", "dedao.cn"), "wanweigang-dedao"),
+)
+
+
+# 未署名素材里，「真正的作者」常常藏在分号之后的说明里：
+#   「未署名 —— 飞书 wiki 文档未标注整理者；书籍内容为斯坦尼斯拉斯·迪昂原著」
+# 这类素材若只按整理者归并，会把迪昂的书和格兰特的书并成一族 —— 那是**假阳性**，
+# 会把真正的交叉验证误判成同源。所以必须把原著作者挖出来。
+ORIGINAL_AUTHOR_RE = re.compile(r"(?:书籍内容|书中正文|正文|内容)?为?([^；;，,]{2,20}?)(?:原著|所著|著)")
+
+
+def source_family(author, kind, slug=""):
+    """把一份素材归到一个「来源族」。同一族内的多份素材不构成独立交叉验证。
+
+    归并失败时的默认策略是「各自独立」而不是「并成一族」—— 判不了就别判。
+    因为把真交叉误判成同源（冤枉一个其实站得住的页面）比漏报同源的代价更大。
+    """
+    blob = (author or "") + " " + (kind or "")
+    for keys, name in FAMILY_RULES:
+        for k in keys:
+            if k in blob:
+                return name
+    a = (author or "").strip()
+    if a.startswith("未署名") or "未标注" in a:
+        m = ORIGINAL_AUTHOR_RE.search(a)
+        if m:
+            return "未署名整理 · 原著：%s" % m.group(1).strip()
+        # 挖不出原著 —— 不并族，各自独立，避免把不同作者的书混为一谈
+        return "未署名整理（原著不明）· %s" % (slug or a[:12])
+    a = re.sub(r"（[^）]*）|\([^)]*\)", "", a).strip()
+    a = re.split(r"[；;。]", a)[0].strip(" —-")
+    return a or "(未署名)"
+
+
+def compute_evidence_tier(page, raw_meta):
+    """计算一个知识页的证据层级，返回 (tier, 支撑素材数, 来源族集合)。
+
+    判据全部来自可计算的事实，不含主观判断 —— 这样 lint 才能校验它。
+    page 的 sources 里可能有重复与非素材项，这里都做了处理。
+    """
+    srcs = []
+    for s in page.sources:
+        if not s or s in srcs:
+            continue
+        srcs.append(s)
+    if not srcs:
+        return ("none", 0, set())
+    families = set()
+    has_primary = False
+    for s in srcs:
+        rec = raw_meta.get(s, {})
+        if rec.get("kind") in PRIMARY_KINDS:
+            has_primary = True
+        families.add(source_family(rec.get("author", ""), rec.get("kind", ""), s))
+    if has_primary:
+        return ("primary", len(srcs), families)
+    return (("single" if len(srcs) == 1 else "crossed"), len(srcs), families)
+
+
 # ---------------------------------------------------------------- lint
 
 
 def gap_table_rows(body):
     """返回「当前缺口」表里的数据行数。找不到该节、或表已清空时返回 0。
 
-    这是「项目是否做到终点」的机器判据 —— 缺口表清空 = shipped（AGENTS.md 3.5）。
+    这是「项目是否做到终点」的机器判据 —— 缺口表清空 = shipped（wiki/schema.md §1.6）。
     注意判的是**表里还有没有数据行**，不是「有没有【阻塞】标记」：
     一条缺口都没标【阻塞】，只能说明没做优先级排序，不能说明项目做完了。
     """
@@ -352,6 +469,28 @@ def cmd_lint(root):
             no_src.append("%s" % p.relpath)
     section("未标注来源的页面", no_src)
 
+    # ---- 证据层级（2026-09-19 引入）----
+    # confidence 是主观的、lint 校验不了；evidence_tier 是从素材推导的事实，能校验。
+    # 所以这里不只查「有没有写」，还查「写的是不是和素材对得上」—— 否则字段会腐烂。
+    raw_meta = load_raw_meta(root)
+    tier_missing = []
+    tier_mismatch = []
+    for p in pages:
+        if p.type not in EVIDENCE_TYPES:
+            continue
+        t, n, _fams = compute_evidence_tier(p, raw_meta)
+        if t == "none":          # 没有支撑素材的页由上一条「未标注来源」管，不重复报
+            continue
+        declared = (p.fm.get("evidence_tier") or "").strip()
+        if not declared:
+            tier_missing.append("%s  缺 evidence_tier（按素材推算应为 %s，%d 份支撑）"
+                                % (p.relpath, t, n))
+        elif declared != t:
+            tier_mismatch.append("%s  声明 %s，但按素材推算是 %s（%d 份支撑）"
+                                 % (p.relpath, declared, t, n))
+    section("知识页缺少 evidence_tier", tier_missing)
+    section("evidence_tier 与支撑素材不符", tier_mismatch)
+
     # ---- 项目层检查 ----
     projects = [p for p in pages if p.type == "project"]
     knowledge = [p for p in pages
@@ -376,7 +515,7 @@ def cmd_lint(root):
             hollow.append("%s  未链接任何知识页（实体/概念/分析）" % p.relpath)
     section("空壳项目（未链接任何知识页）", hollow)
 
-    # 项目生命周期：缺口表清空 = shipped（AGENTS.md 3.5）
+    # 项目生命周期：缺口表清空 = shipped（wiki/schema.md §1.6）
     # 已 shipped 却还留着缺口 —— 说明它其实没做完，是假 shipped
     fake_shipped = []
     for p in projects:
@@ -405,11 +544,28 @@ def cmd_lint(root):
                 advisories.append("    %s" % s)
             if len(uncovered) > 12:
                 advisories.append("    …… 另有 %d 个" % (len(uncovered) - 12))
-        # 缺口表已清空但项目还开着 —— 按 AGENTS.md 3.5，可以收尾了
+        # 「名义交叉，实质同源」—— 有多份支撑素材，但全来自同一来源族。
+        # 这类页面最容易骗人：sources 字段看着有三四份，其实是一个人的转述被拆成了几份。
+        same_family = []
+        for p in pages:
+            if p.type not in EVIDENCE_TYPES:
+                continue
+            t, n, fams = compute_evidence_tier(p, raw_meta)
+            if t == "crossed" and len(fams) == 1:
+                same_family.append((p.slug, n, next(iter(fams))))
+        if same_family:
+            advisories.append(
+                "以下 %d 个页面有 ≥2 份支撑素材，但**全部来自同一来源族** —— 名义上交叉验证，"
+                "实质是同源转述的重复计数，引用时不能当作独立佐证：" % len(same_family))
+            for s, n, f in sorted(same_family)[:10]:
+                advisories.append("    %-36s %d 份，全部来自 %s" % (s, n, f))
+            if len(same_family) > 10:
+                advisories.append("    …… 另有 %d 个" % (len(same_family) - 10))
+        # 缺口表已清空但项目还开着 —— 按 wiki/schema.md §1.6，可以收尾了
         for p in sorted(projects, key=lambda x: x.slug):
             if p.stage in ("planning", "active") and gap_table_rows(p.body) == 0:
                 advisories.append(
-                    "%s  「当前缺口」表已清空 —— 按 AGENTS.md 3.5，该项目可标 `stage: shipped`"
+                    "%s  「当前缺口」表已清空 —— 按 wiki/schema.md §1.6，该项目可标 `stage: shipped`"
                     % p.relpath)
     elif len(knowledge) >= 10:
         advisories.append(
@@ -501,6 +657,29 @@ def cmd_stats(root):
     tags = Counter(t for p in pages for t in p.tags)
     if tags:
         print("\n高频标签: " + ", ".join("%s(%d)" % (t, c) for t, c in tags.most_common(8)))
+
+    # 证据层级分布 —— 这是「库有多完备」的机器口径，比页面总数有意义得多
+    raw_meta = load_raw_meta(root)
+    tiers = Counter()
+    fam_only = 0
+    for p in pages:
+        if p.type not in EVIDENCE_TYPES:
+            continue
+        t, _n, fams = compute_evidence_tier(p, raw_meta)
+        if t == "none":
+            continue
+        tiers[t] += 1
+        if t == "crossed" and len(fams) == 1:
+            fam_only += 1
+    if tiers:
+        total = sum(tiers.values())
+        print("\n证据层级（知识页 %d 个）" % total)
+        for t in ("primary", "crossed", "single"):
+            if tiers.get(t):
+                print("  %-10s %3d  (%.0f%%)" % (t, tiers[t], 100.0 * tiers[t] / total))
+        if fam_only:
+            print("  其中 %d 个 crossed 页的全部支撑素材来自同一来源族 —— 名义交叉，实质同源"
+                  % fam_only)
 
     projects = [p for p in pages if p.type == "project"]
     if projects:
@@ -619,8 +798,10 @@ def cmd_index(root):
     total = sum(len(v) for v in groups.values())
     n_proj = len(groups.get("project", []))
     n_active = len([p for p in groups.get("project", []) if p.stage in ("planning", "active")])
-    # 口径说明：本行的「页面总数」**不含 meta 页**（index / log / overview / conventions），
-    # 而 `lint` 与 `build` 报的页面数**含 meta**。两者恒差 meta 页数（当前 4），不是 index 滞后。
+    # 口径说明：本行的「页面总数」**不含 meta 页**（wiki/ 根下的 index / log / overview /
+    # conventions / schema / decisions 等系统文件），而 `lint` 与 `build` 报的页面数**含 meta**。
+    # 两者恒差 meta 页数 —— 该数由下方 n_meta 动态算出，**不要在这里写死**（曾写死「4」，随
+    # 2026-09-19 新增 schema / decisions 而失效），不是 index 滞后。
     # 2026-09-18 巡检时曾把这两个数当成同一个口径，误判「index 停在 140 页、落后 10 页」，
     # 实际 140 = 144 − 4，index 一直是准的。故在此显式标注，避免重复踩坑。
     n_meta = len([p for p in pages if p.type == "meta"])
@@ -661,11 +842,24 @@ def cmd_index(root):
             out.append("- [[%s|%s]] — %s%s%s" % (p.slug, p.title, p.summary, tags, flag))
         out.append("")
 
+    # 系统页导航。**从 meta 页动态生成**，不再硬编码 —— 曾因硬编码而在新增
+    # schema / decisions 两页后静默漏掉它们（2026-09-19）。
+    # 本表只提供「说明文字」与「排序」；未登记的 meta 页会以自身摘要兜底，排在其后。
+    meta_nav = {
+        "overview": "这个知识库在讲什么",
+        "log": "按时间记录的所有操作",
+        "schema": "页面规范与工作流（按需读）",
+        "decisions": "每条规则为什么这么定（按需读）",
+        "conventions": "人类的偏好设置",
+    }
+    meta_order = {s: i for i, s in enumerate(meta_nav)}
+    metas = [p for p in pages if p.type == "meta" and p.slug != "index"]
+    metas.sort(key=lambda p: (meta_order.get(p.slug, 99), p.slug))
     out.append("## 系统页")
     out.append("")
-    out.append("- [[overview|总览]] — 这个知识库在讲什么")
-    out.append("- [[log|日志]] — 按时间记录的所有操作")
-    out.append("- [[conventions|使用约定]] — 人类的偏好设置")
+    for p in metas:
+        desc = meta_nav.get(p.slug) or p.summary or ""
+        out.append("- [[%s|%s]]%s" % (p.slug, p.title, (" — " + desc) if desc else ""))
     out.append("")
 
     path = os.path.join(root, "wiki", "index.md")
@@ -755,7 +949,11 @@ def cmd_graph(root):
 
 INIT_AGENTS = """# AGENTS.md -- LLM Wiki 维护手册（Schema 层）
 
-> 三层架构中的规范层。任何 LLM Agent 进入本仓库后，先读本文件，再动手。
+> **必读总纲。** 任何 LLM Agent 进入本仓库后，先读本文件，再动手。
+> 细则**按需读**：规则在 `wiki/schema.md`，人类裁定史在 `wiki/decisions.md`，人类偏好在 `wiki/conventions.md`。
+>
+> **本文件必须薄。** 它每次会话都进上下文 —— 写在里面的每一行，都在每一次任务里被付费。
+> 因此这里只放**任何任务都要遵守的东西**；只在特定动作时才需要的细则，一律写进 `wiki/schema.md`。
 
 ## 三层架构
 
@@ -763,9 +961,9 @@ INIT_AGENTS = """# AGENTS.md -- LLM Wiki 维护手册（Schema 层）
 |---|---|---|---|
 | 原始素材 | `raw/` | 人类 | LLM（只读，不可变） |
 | 知识库 | `wiki/` | LLM | 人类 |
-| 规范 | 本文件 + `wiki/conventions.md` | 共同演进 | LLM |
+| 规范 | 本文件 + `wiki/schema.md` + `wiki/decisions.md` + `wiki/conventions.md` | 共同演进 | LLM |
 
-## 页面类型
+## 目录
 
 - `projects/` 项目页：**入口层** —— 我在做什么、因此什么重要
 - `sources/` 素材摘要页，一份素材一页
@@ -773,24 +971,83 @@ INIT_AGENTS = """# AGENTS.md -- LLM Wiki 维护手册（Schema 层）
 - `concepts/` 概念页：理论、方法、模式、术语
 - `analyses/` 分析页：对比、综述、回答归档
 
+## 硬约束
+
+**这一节是「任何任务都要遵守」的部分，不可省略。** 违反其中任何一条，产物即失效。
+
+1. `raw/` **不可变** —— 不修改、不重命名、不删除。需要修正时在 `wiki/` 里写「原文如此，但应理解为 X」。
+2. `[[link]]` 只能指向**已存在**的页面；每页至少 1 条出链、1 条入链。
+3. 没有来源的断言必须显式标注「（未验证）」，并降 `confidence`。
+4. 新素材与旧结论冲突时，必须**显式标注矛盾**，不得静默覆盖。
+5. **收录前先读 `projects/` 的缺口表** —— 填不上任何缺口的素材，**现在还不该收**。
+6. **一份素材通常触及 10-15 个页面。只写摘要页是失败的做法。**
+7. 说「**库里没有 X**」之前，必须先在库内检索，并写明**检索了哪几段**。
+8. `sources` 字段必须指向**真正包含该内容**的素材，不允许悬空引用。
+9. **每次改动后**：`index` → `lint`。
+
+## 指路
+
+| 我要做什么 | 读哪里 |
+|---|---|
+| 建 / 改一个页面 | `wiki/schema.md` |
+| 收录一份素材 | `wiki/schema.md` |
+| 查询并归档答案 | `wiki/schema.md` |
+| 体检 | `wiki/schema.md` |
+| 追问「这条规则为什么这么定」 | `wiki/decisions.md` |
+| 人类希望我怎么回答 | `wiki/conventions.md` |
+
+## 工具链
+
+```bash
+python3 tools/wiki.py lint | stats | search "<q>" | index | build | log | new | graph
+```
+"""
+
+
+INIT_SCHEMA = """# 维护细则
+
+> **规则层**：页面怎么写、素材怎么收、答案怎么归档、体检查什么。
+> 必读总纲是 `AGENTS.md`；本页**按需读**。「为什么这么定」记在 `wiki/decisions.md`。
+
+## 页面类型
+
+| type | 目录 | 一页是什么 |
+|---|---|---|
+| `project` | `projects/` | 我在做的一件事：目标、当前缺口、消耗的知识、产出 |
+| `source` | `sources/` | 一份素材的结构化摘要 |
+| `entity` | `entities/` | 一个具体的人 / 组织 / 工具 / 产品 |
+| `concept` | `concepts/` | 一个抽象的理论 / 方法 / 模式 / 术语 |
+| `analysis` | `analyses/` | 一次对比 / 综述 / 回答归档 |
+| `meta` | `wiki/` 根 | index / log / overview / schema / decisions / conventions |
+
+**判定规则**：能被指着一张照片说「这是它」的 → entity；只能被描述、不能被拍照的 → concept。
+**创建阈值**：一个名字在 ≥2 份素材中出现，或在一份素材里是核心论点 → 独立成页。
+
 ## Frontmatter
 
 ```yaml
 ---
 title: 页面标题
-type: concept
-slug: page-slug
+type: concept            # source | entity | concept | analysis | project | meta
+slug: page-slug          # 全库唯一，与文件名一致（不含 .md）
 tags: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources: []
+sources: []              # 支撑本页的 raw 素材 slug
 related: []
-confidence: high
-status: active
+evidence_tier: single    # single | crossed | primary —— 由 sources 推导，lint 校验
+confidence: high         # high | medium | low —— 主观判断
+status: active           # active | draft | stale | deprecated
 ---
 ```
 
-项目页额外有 `goal` 与 `stage`。注意 `stage`（项目做到哪了）与 `status`（页面还新鲜吗）是两个维度。
+**`evidence_tier` 与 `confidence` 是两个维度**：前者是「有几份来源」（可计算，`lint` 校验），
+后者是「我信多少」（主观）。一页可以有多份来源（`crossed`）但仍然 `confidence: low`（全是转述）。
+多份素材也不等于多个独立佐证 —— **同源转述的重复计数不算交叉验证**。
+
+项目页额外有 `goal`（**必须可验收** —— 看到它能回答「做完了没有」）与
+`stage`（`planning` / `active` / `paused` / `shipped` / `abandoned`）。
+**注意 `stage`（这件事做到哪了）与 `status`（这页还新鲜吗）是两个维度，不要混用。**
 
 ## 工作流
 
@@ -804,18 +1061,31 @@ status: active
 
 **Lint**：`wiki.py lint` 查机器可查问题，再人工核查矛盾、过期、该建未建。
 
-## 工具链
+## 写作约定
 
-```bash
-python3 tools/wiki.py lint | stats | search "<q>" | index | build | log | new | graph
-```
+- 文件名：全小写，单词用 `-` 连接，英文 slug。标题用中文写在 `title` 字段里。
+- 素材文件名：`YYYY-MM-DD-slug.md`，日期用**收录日**。
+- 语气：直接、信息密度高。不要「值得注意的是」「综上所述」这类填充词。
+- 长度：概念页 60-200 行。超过 300 行说明该拆页。
+- 数字与事实必须能追溯到 `sources`。**没有来源的断言要显式标注**：`（未验证）`。
+"""
 
-## 铁律
 
-1. `raw/` 不可变。
-2. `[[link]]` 只能指向已存在的页面。
-3. 没有来源的断言必须显式标注「（未验证）」。
-4. 新素材与旧结论冲突时，必须显式标注矛盾，不得静默覆盖。
+INIT_DECISIONS = """# 裁定档案
+
+> **人类对 schema 做过的裁定，以及被它们推翻的旧做法。** 正序，只追加、不覆盖。
+
+这里放的是「**为什么这么定**」。规则本身在 `wiki/schema.md`，人类偏好在 `wiki/conventions.md`。
+
+**本页按需读。** 追问某条规则的来历、或要推翻它之前，先来这里看有没有前案。
+单独成页的理由：schema 的演进史是**给需要判断的人看的**，不是给每个会话看的。
+
+## 记录
+
+（尚无裁定。）
+
+每条建议写清四件事：**日期 ｜ 裁定了什么 ｜ 推翻了什么 ｜ 为什么**。
+若某条规则有先例（某份素材是它第一次被用上的地方），一并记下 —— 先例是这条规则最好的说明书。
 """
 
 
@@ -882,6 +1152,7 @@ created: {{DATE}}
 updated: {{DATE}}
 sources: []
 related: []
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -924,6 +1195,7 @@ created: {{DATE}}
 updated: {{DATE}}
 sources: []
 related: []
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -969,6 +1241,7 @@ created: {{DATE}}
 updated: {{DATE}}
 sources: []
 related: []
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -1100,7 +1373,7 @@ def cmd_init(target=None):
         return ("---\ntitle: %s\ntype: meta\nslug: %s\ncreated: %s\nupdated: %s\n"
                 "status: active\n---\n\n" % (title, slug, today, today))
 
-    for name in ["index", "log", "overview", "conventions"]:
+    for name in ["index", "log", "overview", "schema", "decisions", "conventions"]:
         path = os.path.join(root, "wiki", "%s.md" % name)
         if os.path.exists(path):
             continue
@@ -1116,6 +1389,10 @@ def cmd_init(target=None):
                              + "# 总览\n\n> 这个知识库在讲什么。\n\n## 范围\n\n## 核心线索\n\n"
                              + "## 页面地图\n\n- 项目：`projects/`（入口层）\n- 素材：`sources/`\n"
                              + "- 实体：`entities/`\n- 概念：`concepts/`\n- 分析：`analyses/`\n")
+        elif name == "schema":
+            write_text(path, meta_fm("维护细则", "schema") + INIT_SCHEMA)
+        elif name == "decisions":
+            write_text(path, meta_fm("裁定档案", "decisions") + INIT_DECISIONS)
         else:
             write_text(path, meta_fm("使用约定", "conventions")
                              + "# 使用约定\n\n> 记录人类的使用偏好。\n\n"

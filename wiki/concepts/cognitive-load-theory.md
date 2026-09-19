@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, 2026-09-18-cognitive-load-diagrams]
 related: [schema-psychology, mental-models, desirable-difficulty, deliberate-practice, icap-framework, john-sweller, wanweigang, 2026-09-18-cognitive-load-theory, 2026-09-18-cognitive-load-diagrams, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, peak-performance, how-we-learn-and-how-to-improve, writing-as-thinking]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 学习失败不是因为大脑的硬盘存不下，而是因为新信息通过**工作记忆这道窄门**时堵车了。
 > 学习不是硬件问题，是**带宽**问题。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 4 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 

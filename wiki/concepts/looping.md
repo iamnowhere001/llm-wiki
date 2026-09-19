@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [opportunity-systems, trajectory-evaluation, character-skills, 2026-09-18-hidden-potential-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **学生的显著进步不是因为换了更好的老师，而是因为连续两年是同一位老师。**
 > 这叫 *looping* —— 老师不留在本年级教新学生，而是**跟着学生一起升年级**。
 > 它的价值不在教学技巧，而在**知识交接没有断**：老师对每个学生的了解不会在下一年交出去时丢失。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

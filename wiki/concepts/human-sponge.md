@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes, 2026-09-18-how-we-learn-notes]
 related: [character-skills, imperfectionism, deliberate-play, cybernetic-learning, prediction-error, four-pillars-of-learning, rumination, 2026-09-18-hidden-potential-notes, 2026-09-18-how-we-learn-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

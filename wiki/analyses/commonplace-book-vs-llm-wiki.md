@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]
 related: [llm-wiki-pattern, compounding-knowledge, commonplace-book, cybernetic-learning, second-brain-skill]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -110,6 +111,11 @@ Koe 顺带批评了 skill 化的做法：
 - [ ] 「目标驱动」与「广泛收录」如何平衡？只收目标相关的是否会导致视野窄化？
 - [ ] 嵌入检索 vs 关键词检索的实际差异有多大？需要一份可复现的对比
 - [ ] 还有其他独立收敛的案例吗？值得专门找一轮素材
+
+> [!note] 与 [[notes-apps-vs-llm-wiki]] 的分工（2026-09-19 补）
+> 本页比较的是**模式之间**（Karpathy 的理解型 vs Koe 的创作型）；
+> 那页比较的是**模式与工具之间**（LLM Wiki vs 飞书 / Notion / Obsidian / Flomo）。
+> 两页共享同一批素材（尤其 [[2026-09-18-dankoe-remember-what-you-read]]），但结论不重叠，**不需要合并**。
 
 ## 来源
 

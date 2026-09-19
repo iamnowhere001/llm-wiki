@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, 2026-09-18-narrative-first-principle, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self]
 related: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, hard-constraints, wishful-thinking-layers, types-of-uncertainty, uncertainty-as-fuel, luck-over-talent, compensatory-control, three-selves, daniel-dennett, nassim-taleb, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, cognitive-load-theory, icap-framework, deliberate-practice, mental-models, explanatory-framework, synthesis-research, tacit-knowledge, desirable-difficulty, autonomy-support, transfer-of-learning, peak-performance, modern-thinking-tools, heavy-tailed-distribution, multiplicative-world, steady-state-survival-logic, agent-vs-tool, ai-convergence, intelligent-life-system, three-solutions, lesser-and-greater-vehicle, llm-wiki-research]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -32,6 +33,10 @@ status: active
   - **发刊词《现代精英的思维武器库》**（2026-03-18 00:25，早于第 1 讲 16 分钟）——
     见 [[2026-09-18-modern-thinking-tools-prospectus]]。**它是课程级的总纲，不属于「基本世界观」板块**，
     归属待裁定（该份 sources 页列了三条可选路径）
+
+> [!warning] 名义交叉，实质同源
+> 本页有 17 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 身份是如何确认的
 
@@ -63,7 +68,7 @@ status: active
    艾利克森（1993）、波兰尼（1958）、珀金斯与所罗门（1988）、巴特莱特（1932）、克雷克（1943）。
    **这比本库此前收录的通俗转述高一个档次** —— 那些素材多是「有研究表明」。
 2. **给出样本量与规模**（「238 项研究、12 万余名儿童」「一千多万对双生子」），
-   但**多数不给文献题名** —— 属本库第五类「弱引注」，不是伪引注。
+   但**多数不给文献题名** —— 属本库**第四类**「弱引注」（**不是第五类** —— 第五类是「引注的使用失真」），不是伪引注。
 3. **自造概念会自陈** —— 「解释框架」一词他明说是自己发明的。
    **这一点值得本库正面记录**：它让本库能把「作者自造」与「学界术语」分开，
    而此前的素材做不到（见 [[explanatory-framework]]）。

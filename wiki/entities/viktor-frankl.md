@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-narrative-self, 2026-09-18-capability-seeking-theorem-notes]
 related: [stimulus-response-gap, stephen-covey, stoic-control-dichotomy, emotion-awareness, narrative-reframing, 2026-09-18-capability-seeking-theorem-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

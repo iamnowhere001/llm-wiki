@@ -4,9 +4,10 @@ type: concept
 slug: narrative-self-vs-bodily-self
 tags: [情绪, 身体, 哲学, 机制]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
-related: [maurice-merleau-ponty, wang-lu, internal-friction, thinking-vs-feeling, narrative-identity, narrative-as-first-principle, narrative-reframing, cognitive-reappraisal, 2026-09-18-narrative-self]
+related: [maurice-merleau-ponty, wang-lu, internal-friction, thinking-vs-feeling, narrative-identity, narrative-as-first-principle, narrative-reframing, cognitive-reappraisal, 2026-09-18-narrative-self, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -101,6 +102,16 @@ status: active
   **本页与那一页合起来，问出的问题比上一条更锋利**：
   不是「叙事是什么」（那是个立场问题），而是「**什么时候可以用它**」（那是个可操作、可检验的问题）。
   这是本库目前最缺的一条判据。
+
+   > [!note] 2026-09-19 追加 —— 这条「真冲突」的性质，因一手校准而改变
+   > 本库第 7 次一手校准（[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]）发现：
+   > **叙事疗法原书（White & Epston 1990）根本不回答「什么时候可以用它」这个问题** ——
+   > 它把问题的来源指向**文化实践**（原书 1126–1147、2988–3008，引 Foucault），
+   > 因此在它的框架里，不存在「该不该在个人层面重写」这个裁决点。
+   > 而 [[narrative-reframing]] 的五步法**把叙事疗法个人技术化了**，于是「时机」才成了问题。
+   > **即：本页与那一页的冲突，有一部分来自那一页对叙事疗法的误置。**
+   > 这条不解决冲突，但**改变了它的性质** —— 从「两种叙事观打架」变成
+   > 「一个社会/文化框架被改写成个人技术后产生的副作用」。详见 [[narrative-reframing]]。
 - **2026-09-18 新增：「异化」一词在本库的三种用法之一，见辨析页 [[alienation]]。**
   [[2026-09-18-resonance-notes]] 首次把三种互不相通的用法并置：①**罗萨的关系缺陷**（共鸣缺失）；
   ②**本页的自我内部挪用**（叙事覆盖身体的真实感受，见上文行 41–43）；③**体制对人的扭曲**
@@ -117,6 +128,10 @@ status: active
 - [ ] 「回到身体」的具体技术在创伤情境下的适用性 —— 需要创伤知情（trauma-informed）的材料。**这条现在被 [[cognitive-vs-somatic-paths]] 列为该页入口判据的失败条件之一**
 - [ ] 素材提到「身体的基本语言是我能」—— 这个说法出自哪里？（可能是梅洛-庞蒂的「我能的身体」概念，但需核对）
 - [ ] 本页的两分法（叙事 / 身体）与 [[cognitive-vs-somatic-paths]] 的两分法（认知 / 身体）是同一个区分吗？还是两回事？需要辨析
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

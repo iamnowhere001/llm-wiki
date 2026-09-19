@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]
 related: [cognitive-debt, cognitive-outsourcing, wang-shuaiguo, mental-strength]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > MIT 媒体实验室的研究科学家。**「认知债务」（cognitive debt）这个说法的提出者。**
 > 她做的是本库目前最想要、却最拿不到的那类研究：**直接测 AI 使用对大脑的影响。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 一句话定位
 

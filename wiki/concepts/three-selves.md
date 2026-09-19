@@ -4,9 +4,10 @@ type: concept
 slug: three-selves
 tags: [自我, 认知, 预测加工, 自由能, 元认知, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-three-selves-notes]
 related: [daniel-dennett, free-energy-principle, prediction-error, cybernetic-learning, agent-vs-tool, narrative-identity, narrative-self-vs-bodily-self, emotion-awareness, 2026-09-18-three-selves-notes, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 >
 > **一句话用法**：**「改 prompt 可以短期变强，但压力一来，一切回归权重。」**
 > 而**真正的成长只有一条路：更新内核的参数。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-three-selves-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -134,7 +139,7 @@ status: active
 **这比本讲的静态定义（内核自我 = 权重）多了一层**：内核自我的精度是「过去为了适应环境」挣来的。
 
 **（二）第 016 讲把「界面 / 内核」用到了身份上（新应用场景）。** [[2026-09-18-identity-metacognition-notes]]
-（讲稿段行 149）明确回指本讲：「咱们前面讲的『**三个自我**』模型」，并说「高水平心智就是要把『**界面自我**』
+（[[2026-09-18-identity-metacognition-notes]] 讲稿段**行 149**）明确回指本讲：「咱们前面讲的『**三个自我**』模型」，并说「高水平心智就是要把『**界面自我**』
 和『**内核自我**』分离」。**本讲给了这个框架一个新的应用场景**：身份 = 可以加载到**界面**上的一层 UI，
 高心智的人能俯视、切换它（讲稿行 193「身份只是界面，而你的内核自我必须稳定」）。见 [[subject-object-shift]]。
 
@@ -150,6 +155,10 @@ status: active
       这会削弱「终极自由」这个说法。**素材没有处理。**
 - [ ] 丹内特「叙事重心」与库内叙事页的关系待深挖（见 [[daniel-dennett]]）
 - [ ] 弗洛伊德 / 希金斯 / IFS 三套框架**若日后被确认属于课程内容**，本页需要扩写；目前判为拼接（见来源页）
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -4,9 +4,9 @@ type: source
 slug: 2026-09-18-narrative-self
 tags: [叙事, 叙事自我, 元叙事, 反脆弱, 混层, AI生成, 来源等级冒认, 引注核查, 素材]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-self]
-related: [2026-09-18-narrative-first-principle, narrative-identity, narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, narrative-as-objective-function, critique-target-distortion, meta-narrative, narrative-reframing, narrative-industrialization, modern-thinking-tools, wanweigang, yuval-harari, nassim-taleb, viktor-frankl, cognitive-reappraisal, cybernetic-learning, emotion-awareness, peak-performance, traecode-pkm-article, ai-convergence]
+related: [2026-09-18-narrative-first-principle, narrative-identity, narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, narrative-as-objective-function, critique-target-distortion, meta-narrative, narrative-reframing, narrative-industrialization, modern-thinking-tools, wanweigang, yuval-harari, nassim-taleb, viktor-frankl, cognitive-reappraisal, cybernetic-learning, emotion-awareness, peak-performance, traecode-pkm-article, ai-convergence, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 confidence: low
 status: active
 ---
@@ -242,6 +242,19 @@ F 段的错误不在「伪造了一个被批判对象」，而在**把它算在�
    本档的「叙事重构」技术（I 段）与 [[cognitive-reappraisal]] **同族不同层**：
    重评改的是**对单个事件的解读**，叙事重构改的是**把事件串起来的那条线**。新建 [[narrative-reframing]] 承载这个区分。
 
+   > [!warning] 2026-09-19 更正 —— 「同族」这个判断只对了一半
+   > 本库第 7 次一手校准（[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]）证明：
+   > I 段的五步法**与叙事疗法（White & Epston 1990）第一步就相反** ——
+   > 原书第一步是 **externalizing（外部化）**（把问题变成独立于人的实体），
+   > I 段第一步是**把问题写进个人历史**。**五步法全文没有外部化这一步。**
+   >
+   > **「同族」的说法因此需要限定**：I 段与 [[cognitive-reappraisal]] 确实同族（都在个人内部改写解读），
+   > 但它**不在叙事疗法这一族里**。本库此前把三者混为一谈（I 段 → 叙事重构 → 叙事疗法），
+   > **本轮把最后一环拆掉了**。
+   >
+   > 另：本档的「sad tale / success story」原型见校准页 §二 B1 ——
+   > 它来自 **Goffman (1961)**，经 Epston 转用，**与本档无关**。
+
 7. **对 [[peak-performance]]：不归属，且不构成新证据。** 该项目缺口表已多次记「类型未换」。
    本档仍是「**通俗材料 + AI 扩展**」这同一品类。
 
@@ -304,7 +317,13 @@ F 段的错误不在「伪造了一个被批判对象」，而在**把它算在�
       （本库倾向：**保留 slug 不删，页内追加修正节** —— 按本库「不覆盖、只追加」的惯例，
       且原判定的失误本身是有价值的记录）
 - [ ] **【等北洛】** 裁定 [[narrative-identity]] 那条「内部矛盾」的措辞 —— 应改「跨素材矛盾」为「**同源内部矛盾**」（见关系第 3 条）
-- [ ] 取回 **McAdams** 的叙事身份理论一手（本轮给了人名，仍是线索）
+- [ ] 取回 **McAdams** 的叙事身份理论一手（本轮给了人名，仍是线索）。
+      **2026-09-19 更新**：White & Epston 1990 原书**不能**替代它（该书 `narrative identity` 0 命中，术语不属二人）。
+      详见 [[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]] §二 A2。
+- [x] ~~I 段的「叙事重构五步法」需要一份可对照的人类方案~~ —— **2026-09-19 已执行**：
+      [[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]（本库第 7 次一手校准）。
+      **结论：五步法与叙事疗法第一步就相反**（内化 vs 外部化）；其真实原型是
+      **Goffman (1961) 的 sad tale / success story**（原书 6688–6707）。见关系第 6 条的更正块。
 - [ ] 取回 **Crum, Salovey & Achor (2013)** *JPSP* 104(4):716-733 一手 —— 本档引注质量最高的一条，值得入库
 - [ ] 核查**曾国藩天津教案**的史实（本档 G 段是万维钢原文，但史实本身未核）
 - [ ] 核查刘旸段的三个精确数字（月薪 150 元 / 207 套题 / 年均 170 本书）—— 现存访谈口径不一

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-heavy-tail-notes]
 related: [thinking-vs-feeling, emotion-regulation-toolkit, emotion-awareness, modern-thinking-tools, heavy-tailed-distribution, 2026-09-18-heavy-tail-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

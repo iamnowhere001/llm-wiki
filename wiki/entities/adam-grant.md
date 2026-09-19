@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [peak-performance, 2026-09-18-hidden-potential-notes, character-skills, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, looping, brainwriting, trajectory-evaluation, cybernetic-learning, flow-terminology]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -24,6 +25,10 @@ status: active
 > 本页的全部内容来自**一份未署名的飞书读书笔记**（[[2026-09-18-hidden-potential-notes]]），
 > 且该素材近四成是 AI 生成段。**本页 `confidence: low`。**
 > 凡本页断言来自「本库既有知识」而非该素材的，一律标「（未验证）」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 素材能确立的事实
 

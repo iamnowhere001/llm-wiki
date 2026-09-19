@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [adam-grant, character-skills, peak-performance, rumination, cognitive-reappraisal, deliberate-play, 2026-09-18-hidden-potential-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **不完美主义不是「降低标准」，是「把标准分级」。** 完美主义的问题不在于要求高，
 > 而在于**所有地方都要求同样的高** —— 于是你只能在已经会的事情上做到完美，而不会的事情永远不开始。
 > 解法是**挑出哪些瑕疵可以接受**，并为每个动作设定**具体的、不同的**分数线。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

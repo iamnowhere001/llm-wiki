@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-tacit-knowledge]
 related: [tacit-knowledge, embodied-cognition, 2026-09-18-tacit-knowledge, wanweigang, llm-wiki-pattern, second-brain-skill]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 - **类型**：人物（哲学家 / 前科学家）
 - **领域**：科学哲学、知识论
 - **生卒**：素材称其 1976 年去世（“波兰尼 1976 年就去世了，他没有看见我们看见的 AI”）
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-tacit-knowledge]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 核心命题
 

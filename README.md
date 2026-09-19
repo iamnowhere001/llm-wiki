@@ -33,7 +33,7 @@ python3 tools/wiki.py lint
 |---|---|---|---|---|
 | 原始素材 | `raw/` | 人类 | LLM（只读） | 文章、论文、笔记、PDF、图片 |
 | 知识库 | `wiki/` | LLM | 人类 | 摘要、实体、概念、分析、交叉引用 |
-| 规范 | `AGENTS.md` | 共同演进 | LLM | 结构、约定、工作流 |
+| 规范 | `AGENTS.md` + `wiki/schema.md` + `wiki/decisions.md` + `wiki/conventions.md` | 共同演进 | LLM | 结构、约定、工作流、裁定史 |
 
 `raw/` **不可变** —— 它是事实来源。需要修正时，在 `wiki/` 里写清楚「素材原文如此，但应理解为 X」。
 
@@ -71,6 +71,8 @@ llm-wiki/
 │   ├── index.md           #   内容索引（自动生成）
 │   ├── log.md             #   操作日志（append-only）
 │   ├── overview.md        #   总览
+│   ├── schema.md          #   维护细则：页面规范 + 工作流（按需读）
+│   ├── decisions.md       #   裁定档案：为什么这么定（按需读）
 │   ├── conventions.md     #   人类的使用偏好
 │   ├── projects/          #   项目页（入口层）
 │   ├── sources/           #   素材摘要页
@@ -92,8 +94,8 @@ llm-wiki/
 python3 tools/wiki.py <command>
 
   init [path]              初始化一个新的知识库
-  lint                     健康检查：断链、孤岛、缺 frontmatter、未收录素材、项目层
-  stats                    统计：页面数、链接数、枢纽页、项目阶段分布
+  lint                     健康检查：断链、孤岛、缺 frontmatter、未收录素材、项目层、证据层级
+  stats                    统计：页面数、链接数、枢纽页、项目阶段分布、证据层级分布
   search "<query>"         BM25 全文检索（中文按二字组切分）
   index                    从各页 frontmatter 重建 wiki/index.md
   build                    生成单文件浏览站点 site/index.html
@@ -154,10 +156,16 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [other-slug]
+evidence_tier: single    # single | crossed | primary —— 由支撑素材推导
 confidence: high         # high | medium | low
 status: active           # active | draft | stale | deprecated
 ---
 ```
+
+`evidence_tier` 回答「这页的结论站得多稳」：`single` = 仅 1 份素材支撑（孤证），
+`crossed` = ≥2 份，`primary` = 有一手论文。它由素材推导，`lint` 会校验。
+注意多份素材不等于多个独立佐证 —— 同一套课程的讲稿被拆成 5 份，仍只是 `crossed`，
+`lint` 会额外标出这类「名义交叉，实质同源」的页面。详见 `wiki/schema.md` §1.2。
 
 项目页额外有两个字段：
 
@@ -170,7 +178,7 @@ stage: active                            # planning | active | paused | shipped 
 
 链接语法：`[[slug]]` 或 `[[slug|显示文本]]`。**只能链接已存在的页面**，`lint` 会报断链。
 
-完整规范见 `AGENTS.md`。
+完整规范见 `AGENTS.md`（必读总纲）与 `wiki/schema.md`（细则）。
 
 ---
 

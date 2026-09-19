@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-emotion-awareness-notes]
 related: [cognitive-reappraisal, emotion-regulation-toolkit, thinking-vs-feeling]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

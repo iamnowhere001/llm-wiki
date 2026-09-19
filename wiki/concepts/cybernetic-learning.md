@@ -4,9 +4,10 @@ type: concept
 slug: cybernetic-learning
 tags: [学习方法, 控制论, 机制]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self]
-related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, intelligent-life-system, hard-constraints, three-selves, free-energy-principle, narrative-as-objective-function, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, meta-narrative]
+updated: 2026-09-19
+sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self, 2026-09-19-value-of-information-notes]
+related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, intelligent-life-system, hard-constraints, three-selves, free-energy-principle, narrative-as-objective-function, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, meta-narrative, why-pkm-in-ai-era]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -219,6 +220,28 @@ status: active
 > **`confidence` 仍不上调** —— 三个分叉同样没有给出实验出处，
 > 而且**它是否出自弗里斯顿，素材没有交代**（见 [[free-energy-principle]] 的开放问题）。
 
+## 第六例：026 讲的「漂流」—— 同一失效状态的决策侧出口（2026-09-19 回填）
+
+[[2026-09-19-value-of-information-notes]]（模块二第 5 讲）行 69 用「**漂流（drifting）**」描述一种状态：
+**整天消费信息，却没有做出任何实质决策**。它给的因果与本页同构，但落点不同：
+
+| | 本页（Dan Koe 一支） | 026 讲 |
+|---|---|---|
+| 断裂处 | 没有**目标** → 没有误差信号 → 不标记重要 | 没有**决策对象** → 信息没有价值 |
+| 后果 | **学不进去**（留存问题） | **信息消费没有产出**（决策问题） |
+| 判据句 | 「记不住不是记忆力问题，是没有误差信号」 | 行 59「**没有决策对象的信息，其价值接近于零**」 |
+
+**同一个失效状态的两个出口** —— 本页解释为什么留不住，026 讲解释为什么没有产出。
+（026 讲不引用控制论，接缝由本库做出。）
+
+它还给本页补了一条**可诊断的症状**。行 61 主动设问「不是说要终身学习吗？……不是说『无用之用方为大用』吗？」，
+行 61 的答案是：**「你也可以把注意力成本花费在跟决策无关的信息上，但那是消费价值，不是决策价值。」**
+
+> [!warning] 这条答案与本库的 PKM 立场有张力，本页只登记、不裁决
+> 它给「无用之用」留了位置，但**没有回答「消费价值本身是不是一种价值」**。
+> 若按「决策价值才进库」执行，本库的 `ingest` 流程里需要多一步判断，而**现行流程没有这一步**。
+> 已记入 [[why-pkm-in-ai-era]]（该页「四·补二」一节）。
+
 ## 边界与反例
 
 - **强目标场景成立，弱目标场景不成立。** 作者自己的推论是：没有持续目标就不该硬上。这与他另一段论述（知识库需要产出回路）互为支撑。
@@ -226,6 +249,11 @@ status: active
 - **可能低估了基础知识的价值。** 作者主张「不直接推进项目的不学」。但在数学、语言、乐器等领域，纯项目驱动可能留下结构性空洞，后期成为瓶颈。原文没有处理这个反例。
 - **「过滤器」的解释力有循环风险。** 「没学会是因为没目标，没目标是没学会的原因」—— 需要区分「没有目标」和「有目标但方法错误」两种失败。
 - **本篇是方法论文章，不是研究综述。** 控制论部分的学理表述是通俗化的，未引用一手文献。
+- **一条新的边界（2026-09-19）：误差信号可能被素材质量消灭，而不是被「没有目标」消灭。**
+  本页的链条假设「误差信号来自目标」。但 [[source-pool-bias]] 指出另一种失败模式：
+  **当输入素材全是 AI 生成、把话说圆的版本时，误差信号会被素材本身抹平** ——
+  一份不留下未决问题的素材，不会产生「我知道下一步该找什么」。
+  **因此本页「没有目标就没有误差信号」要补一个平行命题：有目标，也可能因为素材太完整而没有误差信号。**
 
 ## 与其他页面的关系
 
@@ -257,6 +285,10 @@ status: active
   （Sutton & Barto《Reinforcement Learning》或 Sutton 关于 reward 的论文）。**这是本页第一次拿到
   这条链的具名学理线索。**
 - [ ] **内在驱动力序列的真实出处** —— 自我决定理论（Deci & Ryan）？Kotler 未点名，见上文
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

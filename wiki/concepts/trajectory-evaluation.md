@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [opportunity-systems, character-skills, looping, brainwriting, peak-performance, 2026-09-18-hidden-potential-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **不看峰值，也不看平均值 —— 看斜率。**
 > 同一套判据在三个层面同时成立：评价**人**（招聘 / 招生）、评价**学校**（看每个学生的进步而非尖子生的成绩）、
 > 评价**自己**（心理时间旅行）。这是本素材里**覆盖面最广的一条原则**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

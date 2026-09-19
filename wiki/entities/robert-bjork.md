@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-desirable-difficulty]
 related: [desirable-difficulty, retrieval-practice, spaced-repetition, 2026-09-18-desirable-difficulty, 2026-09-18-how-we-learn-notes, wanweigang, john-dunlosky]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 - **类型**：人物（研究者）
 - **机构**：University of California, Los Angeles（UCLA）
 - **领域**：人类记忆、学习与遗忘
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-desirable-difficulty]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 最重要的洞见：把「表现」与「学习」分开
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]
 related: [marcus-aurelius, victim-mentality, stoic-control-dichotomy, internal-friction]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 抱怨：一种自我妨碍机制
 
 > 素材一的核心主张是：抱怨的害处**不在于浪费时间，也不在于暴露无能，而在于它会让你不由自主地放弃挣扎**。它把抱怨重新定义为一种「精神麻药」—— 一种深植于大脑和心理的自我妨碍机制。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-emotion-awareness-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

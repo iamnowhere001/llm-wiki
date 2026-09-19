@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]
 related: [2026-09-18-learning-is-forgetting, information-bottleneck, compression-as-intelligence]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 中文 AI 领域的独立创作者，以提示词与大模型解读类内容知名。
 > 在本库里，他是 [[2026-09-18-learning-is-forgetting]] 的**署名者** —— 但**只署名了该素材 A 段（行 33–95）**，
 > 其余六段（B/C/D/E/F/G）均无署名，本库判定为 AI 加工层。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-learning-is-forgetting]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

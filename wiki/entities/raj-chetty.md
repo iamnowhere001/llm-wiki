@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-18-five-thinking-tools-livestream]
 related: [social-capital, structural-holes, opportunity-systems, multiplicative-world, luck-over-talent, modern-thinking-tools]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 - **类型**：人物（经济学家）
 - **别名**：Raj Chetty
 - **外部链接**：—
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 

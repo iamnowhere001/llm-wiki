@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-nolen-hoeksema-rethinking-rumination]
 related: [rumination, rumination-vs-reflection, ed-watkins, emotion-awareness, internal-friction]
+evidence_tier: primary
 confidence: high
 status: active
 ---

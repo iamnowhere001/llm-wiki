@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]
 related: [cognitive-outsourcing, cognitive-debt, peak-performance, retrieval-practice]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 >
 > 本页记的不只是这个词，而是素材给出的一个框架：
 > **人类刷短视频与 AI 吃垃圾数据，是同一种退化。/ 而 AI 吃的垃圾，本来就是人造的。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

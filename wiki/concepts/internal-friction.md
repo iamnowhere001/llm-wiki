@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-yjengo-escape-inner-friction, 2026-09-18-cognitive-decoupling]
 related: [rumination, emotional-granularity, narrative-self-vs-bodily-self, cognitive-decoupling, chaos-system-of-life, victim-mentality, emotion-awareness]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

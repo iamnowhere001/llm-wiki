@@ -4,9 +4,10 @@ type: concept
 slug: wishful-thinking-layers
 tags: [叙事, 世界观, 分类框架, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-hard-constraints-notes]
 related: [hard-constraints, narrative-power, narrative-as-first-principle, narrative-as-objective-function, four-pillars-of-learning, modern-thinking-tools, 2026-09-18-hard-constraints-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > **他给这个装置定的用途是「训练一双破除神话的眼睛」** —— 人们日常沉浸在神话之中而不自知。
 >
 > **一句话用法**：看一个人相信哪一层，就知道他把哪种「许愿」当成了现实规律。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hard-constraints-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -105,6 +110,10 @@ status: active
       若能操作化，它会从一个比喻变成一把**可用的尺子** —— 那才是它真正缺的那一步
 - [ ] **它和 [[2026-09-18-narrative-first-principle]] 里那条「叙事三作用」是同一体系吗？**
   同一作者、同一板块、相隔两讲，**素材没有任何交叉引用** —— 这是个明显的接缝
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

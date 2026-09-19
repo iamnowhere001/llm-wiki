@@ -4,9 +4,10 @@ type: concept
 slug: cognitive-outsourcing
 tags: [AI时代, 认知, 元认知, 判断力, 低置信度]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-modern-thinking-tools-prospectus]
 related: [cognitive-debt, productive-resistance, advait-sarkar, nataliya-kosmyna, why-pkm-in-ai-era, llm-wiki-pattern, tacit-knowledge, ai-convergence, 2026-09-18-modern-thinking-tools-prospectus]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -189,6 +190,10 @@ Sarkar 提出的新版本**不同在两点**：
 - **与 [[ai-convergence]] 共用一份素材，却指向相反的读法**：那页把「最强 AI 反复收敛于同一批概念」
   当作这批工具值得学的理由（这是讲稿的主张）；本页的样本一指出，**同一份素材里 AI 被指认在迎合用户**（这是 AI 段自己的记录）。
   **收敛性与迎合性是两种不同的解释，素材只承认前者。** 两页合起来才是这份素材的完整读法。
+- **本页为 [[notes-apps-vs-llm-wiki]] 提供了一条反向推论（2026-09-19）**：那页指出，
+  「手工维护」（建链接、写摘要、整理索引）在 [[llm-wiki-pattern]] 的框架里一直被视为**纯粹的浪费**，
+  但按本页的逻辑，它里面**有一部分是认知训练** —— 而 LLM Wiki 把「记账」与「判断」一起外包了。
+  **该推论属那页的本库判断，尚无实证**，已列为其遗留问题第一条。它不改变本页任何结论。
 
 ## 待办 / 开放问题
 
@@ -205,6 +210,10 @@ Sarkar 提出的新版本**不同在两点**：
 - [ ] 收录 Sarkar 的 TED 演讲或论文原文（本页依据是二手转述）
 - [ ] 收录 MIT 的 Kosmyna 论文，核实四重代价里「记忆力退化」那一行的实证强度
 - [ ] 「蜂巢思维导致想法范围变窄」的原始研究是什么？（素材只写「研究表明」）
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

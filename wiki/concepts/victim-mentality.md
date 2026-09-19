@@ -4,9 +4,10 @@ type: concept
 slug: victim-mentality
 tags: [情绪, 认知, 哲学, 争议]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-steady-state-trap-notes]
 related: [complaining, stoic-control-dichotomy, internal-friction, forgiveness, steady-state-survival-logic, agent-vs-tool, modern-thinking-tools]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -116,6 +117,10 @@ status: active
 - [ ] locus of control 研究与「受害者心态」的关系 —— 需要一份心理学文献
 - [ ] 家庭系统七层下钻中，「系统论」的学理来源是什么？（Bowen 家庭系统理论？Milan 学派？）素材未标注
 - [ ] 六层下钻的终点（「不选择，我们会腐烂」）是一个论证还是一个立场？本库应如何标注它？
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

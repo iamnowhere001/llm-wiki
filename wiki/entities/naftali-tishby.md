@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]
 related: [information-bottleneck, compression-as-intelligence, andrew-saxe, thomas-griffiths]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 信息瓶颈方法的提出者。他把「学习 = 压缩」从一句哲学话变成了一个**可以算的量**，
 > 并且**本人在 2015–2017 年就把它用到了深度学习上** —— 这一点本素材没讲，但它决定了该怎么读那篇 2026 年的论文。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-learning-is-forgetting]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

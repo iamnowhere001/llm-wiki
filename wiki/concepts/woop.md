@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]
 related: [implementation-intentions, wishful-thinking-layers, stimulus-response-gap, internal-friction, scaffolding, self-determination-theory, autonomy-support, gabriele-oettingen, peter-gollwitzer, napoleon-hill, modern-thinking-tools, ai-convergence, 2026-09-18-woop-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **Wish（愿望）— Outcome（结果）— Obstacle（障碍）— Plan（计划）** 四步思考流程。
 > 两件武器：**心理比对**（把最好的 Outcome 与最真实的 Obstacle 撞在一起，制造认知张力）+ **执行意图**（把障碍写成 If-Then 自动触发）。
 > 一句话版：**「我想要 X；我最怕 Y；如果 Y 出现，我就做 Z。」**（013 讲 raw 行 123）
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-woop-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -93,7 +98,7 @@ status: active
 - [ ] 「中年女性身体活动」是否另有研究存在？若有，上述使用失真即不成立
 - [ ] 图注《成功科学》是译名还是误写？
 - [ ] **6 张图的图内数字未核**（如「减重 10 磅」）
-- [ ] 蔡加尼克效应是否登记为「过期引注」第 3 例？（与延展心智、Libet 同型）
+- [x] ~~蔡加尼克效应是否登记为「过期引注」第 3 例？~~ —— **已登记**（[[schema]] §3.6.1 候选表），该类别于 **2026-09-19 单列为第六类证据问题**（与延展心智、Libet 同型）。
 
 ## 来源
 

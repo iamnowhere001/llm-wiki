@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]
 related: [emotion-as-coupling, narrative-self-vs-bodily-self, emotion-awareness]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 - **类型**：人物（课程主理人、写作者）
 - **别名**：—
 - **外部链接**：得到课程《情绪觉知100讲》（素材中给出的链接为 `https://www.dedao.cn/course/detail?id=b0rNAzaYOj7VyPMszOK8P54m6wlk12`）
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-emotion-awareness-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 

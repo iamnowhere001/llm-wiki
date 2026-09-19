@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-resonance-notes]
 related: [alienation, hartmut-rosa, lesser-and-greater-vehicle, autonomy-support, self-determination-theory, cybernetic-learning, stoic-control-dichotomy, flow-terminology, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 共鸣 = **独立主体之间发生共振**：你有动作，别人有回应（行 60）；
 > 用素材的比喻说 —— 「**共鸣，就是你不再只是输出，而是在接通一个回路**」（行 76）。
 > 它的反义词不是沉默，而是**比较（Comparison）**（行 88）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-resonance-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

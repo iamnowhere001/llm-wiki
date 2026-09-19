@@ -4,9 +4,10 @@ type: concept
 slug: narrative-reframing
 tags: [叙事, 情绪, 方法, 认知重评, 自欺, 低置信度]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-self]
-related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life]
+related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -18,6 +19,23 @@ status: active
 >
 > 它的操作形态很具体：把耿耿于怀的往事写成「受害者剧本」，再按五步改写成「英雄剧本」。
 > **本页 `low` —— 但与本库已降级的 AI 生成内容不同：它是「有形态无出处」，不是「冒充事实」。**
+
+> [!note] 2026-09-19 一手校准：五步法与叙事疗法**第一步就相反**
+> 本页待办第一条（「取回叙事疗法一手文献」）已于 2026-09-19 执行，凭据是
+> White & Epston《Narrative Means to Therapeutic Ends》(1990) 英文原书全文
+> —— [[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]。
+>
+> **结论不是「找到了出处」，而是「方向相反」**：原书唯一的方法论章（第 2 章）的第一步是
+> **externalizing（外部化）** —— 把问题变成**独立于人的实体**（原书行 1887–1894）；
+> 而本页第 1 步「写下受害者剧本」把问题**内化**进个人历史。
+> **五步法全文没有外部化这一步，也没有等价操作。**
+>
+> **因此本页的 `low` 升级路径变了**：不是「补一个出处」，而是**本页描述的操作形态
+> 与叙事疗法不是同一个东西**。详见下文「与叙事疗法一手文献的对照」一节。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-narrative-self]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -91,6 +109,64 @@ status: active
 **但 Crum 研究的是「压力心态」，不是「叙事重构」** —— 素材把它挪来用，
 **属于 [[2026-09-18-narrative-self]] 核查表第 5 条之外的一处轻微外推**（本库立论）。
 
+## 与叙事疗法一手文献的对照（2026-09-19 校准）
+
+> 凭据：[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]（White & Epston 1990 原书全文）。
+> **本节是本页自建立以来最重要的一次修订** —— 它改变的不是细节，是**本页的归属**。
+> 行号凡标「原书」者为该 raw 文件的文件绝对行号。
+
+### 对照总表
+
+| 五步法（AI 生成，行 404–510） | White & Epston 原书 | 判定 |
+|---|---|---|
+| **1. 写下受害者剧本**（把问题写进个人历史） | **Externalizing**：把问题变成「separate entity and thus **external to the person**」（原书 1887–1894） | ❌ **相反** |
+| **2. 解构：划出事实 vs 诠释** | 无直接对应。原书有 `de-objectification`（原书 3000–3008），但对象是**文化实践**，不是个人诠释 | ❌ 形似而实不同 |
+| **3. 拓宽视角 / 寻找例外** | **`unique outcomes`** —— 原书行 1015–1025，**术语直接来自 Goffman (1961) *Asylums* p.127** | ✅ **唯一实质对应** |
+| **4. 重写英雄剧本** | **`re-authoring`**（原书 13 次）+ `alternative story` | ⚠️ 方向一致，但原书的替代故事**必须包含 unique outcomes 的情节**，不是任意改写 |
+| **5. 内化新故事**（私人：朗读 / 讲给信任的人） | **`performance of new meaning` + 书面文件 + 观众**（原书 2004–2005、7806–7812） | ❌ **私有化** |
+
+### 三条关键差异
+
+**① 起点相反（最严重）。** 原书的外部化是**为了让问题不再属于这个人**；
+五步法的第一步是**把问题写成这个人的历史**。**这不是程度差异，是操作方向差异。**
+
+**② 缺权力 / 文化维度。** 原书第 1 章的命题是
+**「主导叙事 ＝ 主导知识 ＝ 权力单位」**（原书 1126–1147），并引 Foucault 说明权力不仅有压制性、
+还有**构成性**（原书 1161–1165）；外部化因此被定义为一种 **counter-practice**（原书 3000–3008）。
+**五步法完全个人化** —— 没有社会、文化、权力维度。
+
+**③ 巩固机制的性质不同。** 原书用**书面文件 + 见证人**巩固新叙事（`letter` 171 次 / `certificate` 31 次 /
+`audience` 28 次），第 3–4 章占全书约 2/3；
+五步法第 5 步「内化」是**私人心理过程**。
+**原书要的是「一份能被他人读到、能被反复重读的实体文件」，五步法要的是「你自己相信」。**
+
+### 一处真实的原型：Goffman 的 sad tale / success story
+
+**这是本轮校准对本页最有用的产出。** 本页待办第 3 条问「五步法有没有人类设计的同类原型」—— **有。**
+
+原书 **SELF STORIES** 节（原书 6688–6707，Epston 执笔）：他邀请人**记录自己的故事**，
+且「the narrative structure of these recordings is conventionally that of a **"success" story**
+rather than the **"sad tale"** format」，并引 Goffman (1961, p.139) 原文定义二者。
+
+| | 五步法 | 原书 |
+|---|---|---|
+| 二分 | 受害者剧本 / 英雄剧本 | **sad tale / success story** |
+| 出处 | 无 | **Goffman, E. (1961). *Asylums*, p.139**（References 原书 8691） |
+| **目的** | 「重新夺回对自己人生故事的解释权」 | **「distancing persons from the problem」** |
+
+**差别在目的**：一个求「夺回解释权」（个人内部的权力感），一个求「与问题拉开距离」（外部化的延伸）。
+**Goffman 的原文还指出 sad tale 的成因是「他不能为发生在自己身上的事负责」** ——
+即 sad tale 不是「心态问题」，是**结构性处境**的产物。五步法把它读成了个人选择。
+
+### 本页与「责任」的关系：原书比本页更硬
+
+本页「阿Q之辨」（行 563–591）的判据是**认识论**的 —— 你有没有扭曲事实。
+原书有更直接的一层（**RESPONSIBILITY** 节，原书 2969–2987）：
+外部化**不免除责任**，反而使人**第一次能够承担责任**（"something they could not do beforehand"）——
+**因为问题内在于人时，「责任」等于「你是有缺陷的人」，无法承担。**
+
+**本页的「用行动验证」与本条同向，但缺了机制。**
+
 ## 边界与反例
 
 **① 与 [[narrative-self-vs-bodily-self]] 直接冲突 —— 这是本页在库内最重要的一条关系。**
@@ -138,14 +214,39 @@ status: active
 
 ## 待办 / 开放问题
 
-- [ ] **取回叙事疗法（narrative therapy）的一手文献** —— White & Epston《Narrative Means to Therapeutic Ends》(1990)。
-      本页全部内容是无出处的操作形态，**这是升级 `low` 的唯一路径**
-- [ ] 「什么时候该承认感受、什么时候该重写」—— 本页与 [[narrative-self-vs-bodily-self]]、[[thinking-vs-feeling]] 共同未答
-- [ ] 五步法有没有人类设计的同类原型？**需要一份可对照的方案**（此前 [[narrative-identity]] 也提过同样要求）
+- [x] ~~**取回叙事疗法（narrative therapy）的一手文献** —— White & Epston《Narrative Means to Therapeutic Ends》(1990)。
+      本页全部内容是无出处的操作形态，**这是升级 `low` 的唯一路径**~~
+      —— **2026-09-19 已执行**（本库第 7 次一手校准）：[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]。
+      **但结果与预期相反**：原文不是本页的出处，而是**本页的反面** —— 原书第一步是 externalizing（外部化），
+      本页第 1 步是内化。**「升级 `low`」这条路径因此不成立**，详见「与叙事疗法一手文献的对照」。
+      **本页的 `low` 现在有了新的、更准确的理由：它是一套与叙事疗法方向相反的操作形态，且仍无出处。**
+- [x] ~~五步法有没有人类设计的同类原型？**需要一份可对照的方案**~~
+      —— **2026-09-19 已找到**：**Goffman (1961) *Asylums* 的 `sad tale` / `success story` 二分**
+      （经 Epston 转用，原书 6688–6707）。**差别在目的**：一个求「夺回解释权」，一个求「与问题拉开距离」。
+- [ ] 「什么时候该承认感受、什么时候该重写」—— 本页与 [[narrative-self-vs-bodily-self]]、[[thinking-vs-feeling]] 共同未答。
+      **2026-09-19 追加：原书对这个问题的处理方式是「不做个人层面的裁决」——
+      它把问题的来源指向文化实践（原书 1126–1147、2988–3008），因此不需要回答「我该不该重写」。**
+      本页若要在个人层面回答它，**不能借叙事疗法**。
 - [ ] 「行动是最好的测谎仪」这一条**是否有行为心理学支撑**？
-      素材的第 4 步与 [[cognitive-outsourcing]] 的「认知债务」是同一个方向的两种说法（一个讲行动能建立信念，一个讲外包会欠账）
+      素材的第 4 步与 [[cognitive-outsourcing]] 的「认知债务」是同一个方向的两种说法（一个讲行动能建立信念，一个讲外包会欠账）。
+      **2026-09-19 追加**：原书的对应概念是 `performance of new meaning`（原书 2004–2005），
+      但它要求**观众与书面载体**，本页的「行动」是自我检验 —— **两者不是同一件事**。
 - [ ] 刘旸段的「励志故事开头」是否被商业教练类账号广泛复用？若成模式，值得单独记录一种**叙事的传播形态**
+- [ ] **本页与 [[narrative-identity]] 是否应合并或重新划界？**
+      两页都派生自同一批 AI 生成内容，**2026-09-19 校准又证明两者都不是 White & Epston 的术语**
+      （原书 `narrative identity` **0 命中**）。**本页留待北洛裁定。**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 
 - [[2026-09-18-narrative-self]]（I 段行 404–647 为主要依据，**全部为 AI 生成、零引注**；J 段行 648–1000 为刘旸访谈转述）
+- **校准依据（不在 `sources` 字段内）**：[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]
+
+> [!note] 为什么校准页不写进 `sources` 字段
+> `AGENTS.md` §3 第 9 条要求「`sources` 字段必须指向**真正包含该内容**的素材」。
+> White & Epston 原书**不包含**本页描述的五步法 —— 它证明的是**本页与叙事疗法方向相反**。
+> 因此本页 `sources` 仍只有 [[2026-09-18-narrative-self]]，`evidence_tier` 仍为 `single`。
+> **这不是遗漏，是判据本身的要求。**

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]
 related: [compression-as-intelligence, information-bottleneck, cybernetic-learning]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 把「智能」这个没法直接测量的东西，替换成一个**可以比赛的客观数字**的人 —— 他设立的胡特奖，
 > 规则只有一条：把维基百科的前 1GB 压得越小越好。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-learning-is-forgetting]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

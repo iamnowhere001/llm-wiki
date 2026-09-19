@@ -4,9 +4,10 @@ type: concept
 slug: narrative-economics
 tags: [经济学, 叙事, 传播, 已核实]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle]
 related: [narrative-as-first-principle, narrative-power, narrative-as-objective-function, 2026-09-18-narrative-first-principle, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 >
 > **本页是本素材里引注最硬的一条** —— 年份、期刊、卷期、页码全部核实为真。
 > `confidence: medium` 而非 `high`：一手文献已**定位**但未**取回**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-narrative-first-principle]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -93,6 +98,10 @@ status: active
 - [ ] 2019 年成书版与 2017 演讲版的差异
 - [ ] **叙事经济学有没有反方？** 经济学界对「把叙事作为解释变量」的方法论批评
       （可测量性、因果识别）本库一条都没有 —— 这是本页升级 `high` 之前必须补的
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

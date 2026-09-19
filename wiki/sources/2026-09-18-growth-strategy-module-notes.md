@@ -4,9 +4,9 @@ type: source
 slug: 2026-09-18-growth-strategy-module-notes
 tags: [成长战略, 模块档案, 关联档案, 得到课程, 万维钢, 讲次编号, AI生成, 混层, 素材]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-growth-strategy-module-notes]
-related: [wanweigang, modern-thinking-tools, 2026-09-18-modern-thinking-tools-prospectus, intelligent-life-system, cybernetic-learning, peak-performance]
+related: [wanweigang, modern-thinking-tools, 2026-09-18-modern-thinking-tools-prospectus, intelligent-life-system, cybernetic-learning, peak-performance, 2026-09-19-scarcity-book-en]
 confidence: low
 status: active
 ---
@@ -327,6 +327,10 @@ status: active
 
 ## 待办 / 开放问题
 
+- [ ] **【2026-09-19】B1 段（行 62–84）转述的「隧道效应」已由一手校准核对。**
+      [[2026-09-19-scarcity-book-en]] 证实讲稿的隧道比喻与《稀缺》原书定义（原书行 949–954）**逐句对应**；
+      但同一讲配套的「13 分」是**数字错配**（13 分只属美国商场研究，印度甘蔗农是 8–9 点）。
+      **本页 B1 段的摘要性质不变**（它仍是 AI 摘要），此处只登记核对结果。
 - [ ] **3 问答与 1 收官直播是否另有官方编号（022 起）？** 本份目录止于 021。**待核**（若日后拿到模块完整目录，回来补这一列）
 - [ ] **B 段 15 讲摘要与讲稿原文的逐句对应关系未比对。** 本页只做了**数字层**的交叉核对（第 8、9 条）。
       **待本批各讲 sources 页建成后回核** —— 尤其是各讲「金句」串（B5/B6/B7）是否逐字来自讲稿

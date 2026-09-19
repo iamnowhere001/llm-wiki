@@ -4,9 +4,10 @@ type: analysis
 slug: pkm-history
 tags: [历史, 知识管理, 综述]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-frand-hixon-pkm, 2026-09-18-luhmann-zettelkasten]
-related: [llm-wiki-pattern, bidirectional-links, zettelkasten, commonplace-book, vannevar-bush, three-layer-architecture, why-pkm-in-ai-era]
+updated: 2026-09-19
+sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-frand-hixon-pkm, 2026-09-18-luhmann-zettelkasten, 2026-09-19-luhmann-communicating-with-slip-boxes]
+related: [llm-wiki-pattern, bidirectional-links, zettelkasten, commonplace-book, vannevar-bush, three-layer-architecture, why-pkm-in-ai-era, communication-partner]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -38,6 +39,7 @@ status: active
 | 古典–19C | 共同笔记簿（commonplace book）传统 | 实践 | [[commonplace-book]] |
 | 1945 | [[vannevar-bush]] 提出 Memex 与「关联路径」 | 构想 | [[2026-09-18-bush-as-we-may-think]] |
 | 1950s–1998 | [[niklas-luhmann]] 的卡片盒（90,000+ 张卡片） | 实践 | [[2026-09-18-luhmann-zettelkasten]] |
+| 1981 | Luhmann 发表 »Kommunikation mit Zettelkästen. Ein Erfahrungsbericht« —— **本库一手文献，2026-09-19 收录** | 一手自述 | [[2026-09-19-luhmann-communicating-with-slip-boxes]] |
 | 1965 | [[ted-nelson]] 创造 **hypertext** 一词；发起 Xanadu | 术语 + 构想 | [[2026-09-18-appleton-bidirectional-links]] |
 | 1989 | 万维网提案 | 实现 | — |
 | 1998-10-15 | Frand & Hixon 命名 **Personal Knowledge Management** | 术语 | [[2026-09-18-frand-hixon-pkm]] |
@@ -78,15 +80,22 @@ status: active
 | 维度 | 数据 |
 |---|---|
 | 时间跨度 | 1950 年代 – 1998 年去世 |
-| 卡片总量 | 超过 90,000 张 |
-| 产出 | 70 本书 + 400 余篇论文 |
+| 卡片总量 | 超过 90,000 张（**未验证**，一手文献不含数字） |
+| 产出 | 70 本书 + 400 余篇论文（**未验证**） |
 | 系统结构 | 两套卡片盒（书目盒 + 主盒） |
+| 一手锚点 | 「超过**二十六年**的成功合作」（1981 年原文自述，往前推约至 1955 年） |
 
 **他与 Bush 的关系值得单独记下**：Bush 设想的是**机器**，Luhmann 做的是**手工版**。两人面对的是同一个问题 —— 如何让知识之间的连接不消退。Bush 没回答「谁维护」，**Luhmann 的答案是「自己每天维护，持续四十年」**。
 
-这既是答案，也是这个方案无法被普通人复制的原因。方法论细节见 [[zettelkasten]]。
+这既是答案，也是这个方案无法被普通人复制的原因。方法论细节见 [[zettelkasten]]，「沟通伙伴」这个概念见 [[communication-partner]]。
 
-**一个关键的表述**：Luhmann 说「我从不从零开始写作。我只是取出卡片盒中已经准备好的思考」。这句话与 [[llm-wiki-pattern]] 的「编译一次、持续保鲜」是同一个主张的两种说法 —— 只是他手工编译了四十年。
+> [!warning] 2026-09-19 更正：本段原引的卢曼引文未获一手支撑
+> 本页原写：「Luhmann 说『我从不从零开始写作。我只是取出卡片盒中已经准备好的思考』。这句话与 [[llm-wiki-pattern]] 的『编译一次、持续保鲜』是同一个主张的两种说法。」
+> **核查结果：该引文在一手文献中查不到** —— Kuehn 英译全文（21 个段落）中 `scratch` 与 `prepared` 各 0 次；德文原刊 PDF 中 `fange` / `Null` / `vorbereit` / `entnehm` 亦各 0 次。它出自二手整理（raw 行 376），**带引号但未给出处**。
+> **并且原文说的方向相反**（raw 行 76）：「理论出版物**因此也不是**通过抄写卡片盒里为此已经放好的东西而产生的。与卡片盒的沟通**只在很高的概括层次上**才富有成果……而且它**只在评价的那一刻**才有生产力，因此**绑定在特定的时间上，且高度偶然**。」
+> **本库据此修正一条判断**：原文给的是**组合可能性**，不是成品。所以「编译一次、持续保鲜」与卢曼的主张**不是同一个主张的两种说法** —— 前者说的是「产物可复用」，后者说的是「产物在评价那一刻才产生」。
+> 完整核查记录（含检索范围与断言强度分级）见 [[2026-09-19-luhmann-communicating-with-slip-boxes]]。
+> ⚠️ **不要说「卢曼没说过」** —— 只能说本库的这两份文本里查不到，它可能出自访谈或其他文章。
 
 ## 阶段三｜1965：hypertext 被命名
 
@@ -175,8 +184,9 @@ status: active
 
 三个与前史直接接榫的点：
 
-1. **「编译一次、持续保鲜」= Luhmann 的「取出已准备好的思考」** —— 同一个主张，只是编译者换成了 LLM。
+1. ~~「编译一次、持续保鲜」= Luhmann 的「取出已准备好的思考」~~ —— ⚠️ **2026-09-19 撤回**：该引文未获一手支撑，且原文主旨相反（沟通只在很高概括层次上富有成果、只在评价那一刻才有生产力）。**改判为**：LLM Wiki 与卢曼卡片盒的接榫点是「**维护**」而非「取出」—— 卢曼靠每天手工维护这张链接网四十年，本模式把这一步外包。见 [[communication-partner]]。
 2. **自动维护反向链接 = Berners-Lee 1999 年的折中方案** —— 他提出的「数据模型单向 + 后台进程收集反向链接」，在 LLM 时代变得可行。
+   **补一条**：早在 1981 年，卢曼的卡片盒就要求手工记**回链**（引用 + 回引）—— 这条线上「双向」的历史比本页原先记录的更早，见 [[bidirectional-links]]。
 3. **私有知识库绕开治理问题 = 数字花园的策略** —— [[vannevar-bush]] 判断 Memex「比万维网更接近」本模式的真正原因在此。
 
 **一个诚实的保留**：把 LLM 放进这条谱系，是**本库自己的综合判断**，不是 [[andrej-karpathy]] 的原文主张。原 Gist 只把 Bush 作为历史参照提出。见下方「本页的方法论说明」。
@@ -205,24 +215,33 @@ Bush 1945 对称关联 → Nelson 1965 双向 + 溯源 → 万维网 1999 单向
 > [!warning] 待核验
 > - **[[2026-09-18-berners-lee-link-topology]] 的日期**：页面未标注，1999 年来自二手引用
 > - **[[obsidian]] 的发布日**（2020-03-30）与 **[[roam-research]] 的创立日**（2017-04）：来自检索结果，**未收录素材**
-> - **[[niklas-luhmann]] 的全部数字**：来自二手整理，该整理未标注一级来源
+> - **[[niklas-luhmann]] 的数字**（90,000 张 / 70 本书 / 两套盒子规模）：**2026-09-19 部分缓解，未解除** —— 一手文献已收录，但**它一个数字都没给**，只提供「超过二十六年」一个锚点。数字仍全部来自二手整理
 > - **「治理成本导致放弃双向」的因果链**：[[2026-09-18-berners-lee-link-topology]] 只列权衡，未下结论；因果来自通俗转述
+> - **Luhmann 的「我从不从零开始写作」引文**：**2026-09-19 已判定未获一手支撑**，见上方阶段二的更正块
 
 ## 本页的方法论说明
 
-**这条历史是「拼」出来的，不是任何单一来源给出的。** 五份素材各自只覆盖一段：
+**这条历史是「拼」出来的，不是任何单一来源给出的。** 六份素材各自只覆盖一段：
 
 | 素材 | 覆盖区间 | 性质 |
 |---|---|---|
 | [[2026-09-18-bush-as-we-may-think]] | 1945 | 一手（原文） |
 | [[2026-09-18-luhmann-zettelkasten]] | 1950s–1998 | **二手** |
+| [[2026-09-19-luhmann-communicating-with-slip-boxes]] | **1981（自述）** | **一手（原文）—— 2026-09-19 新增** |
 | [[2026-09-18-appleton-bidirectional-links]] | 1945→2020（链接线） | 通俗文献 |
 | [[2026-09-18-berners-lee-link-topology]] | c.1999 | 一手（设计笔记） |
 | [[2026-09-18-frand-hixon-pkm]] | 1998 | 一手（首发文献） |
 
+> [!note] 一手素材的**覆盖范围**比数量更重要
+> 新增的这份一手文献**只覆盖 1981 年卢曼的自我理解**，不覆盖 1950s–1998 的实践过程，也不含任何数字。
+> 因此它把「卢曼这一段」从「全靠二手」升为「有一手校准」，**但没有解除本页对数字的待核验状态**。
+> 这也说明 [[wiki-lint]] 的 `evidence_tier` 只数「有几份来源」、数不了「来源覆盖了什么」—— 后者仍须人工写。
+
 **因此本页的 `confidence: medium`** —— 每个节点有据可查，但**节点之间的因果连接是本库的综合**，其中「治理成本否决双向链接」与「LLM 补上维护环」这两条最关键的解释，证据强度低于事实本身。这正是 [[wiki-lint]] 要求显式标注的东西。
 
-**一个反身观察**：本页自身就是 [[llm-wiki-pattern]] 的一次演示 —— 五份分散素材被编译成一页连贯叙述，且明确标出了哪里是事实、哪里是推断。如果每次都从零检索，这个综合过程不会累积。
+**2026-09-19 的一处附带收获**：本次收录的一手文献**反过来纠正了本页** —— 本页原先用一句「我从不从零开始写作」把卢曼的立场压扁成「取出已准备好的思考」，而原文说的是相反方向。**一手文献的第一个作用不是补全，是校准。**
+
+**一个反身观察**：本页自身就是 [[llm-wiki-pattern]] 的一次演示 —— 六份分散素材被编译成一页连贯叙述，且明确标出了哪里是事实、哪里是推断。如果每次都从零检索，这个综合过程不会累积。
 
 ## 与其他页面的关系
 
@@ -234,12 +253,14 @@ Bush 1945 对称关联 → Nelson 1965 双向 + 溯源 → 万维网 1999 单向
 
 ## 开放问题
 
-- [ ] **卢曼的一手文献《Kommunikation mit Zettelkästen》（1981）未收录**，是这条线上最大的证据缺口
+- [x] ~~**卢曼的一手文献《Kommunikation mit Zettelkästen》（1981）未收录**，是这条线上最大的证据缺口~~ —— **2026-09-19 已收录**（[[2026-09-19-luhmann-communicating-with-slip-boxes]]）。**但注意：收录后暴露出的问题是本库自己的引用错误，不是卢曼的资料不足**
+- [ ] **德文原刊未收录**（本次核查用了外部 PDF，OCR 质量差）；其脚注含卢曼卡片盒的实例编号 `2113d26g104,1`
 - [ ] 1989 年万维网提案到 1999 年单向链接定案之间的决策过程，本库只有概述
 - [ ] 1960–1980 年代还有哪些个人知识系统实验？（如 Engelbart 的 Augment、Xerox PARC 的工作）本库完全空白
 - [ ] 「PKM」1998 年命名之后到 2017 年 Roam 之间近 20 年的演化，本库同样空白
 - [ ] 需要一份关于 Roam Research 历史的独立报道，把 [[roam-research]] 从 `low` 提升到 `high`
 - [ ] 需要核实 [[obsidian]] 的发布日与创始人信息
+- [ ] **1981 年卢曼的纸面双向为何没有传播开？** 他从未把它当方法推广 —— 与 [[ted-nelson]] 的布道者姿态形成对照
 
 ## 来源
 
@@ -248,3 +269,4 @@ Bush 1945 对称关联 → Nelson 1965 双向 + 溯源 → 万维网 1999 单向
 - [[2026-09-18-berners-lee-link-topology]]
 - [[2026-09-18-frand-hixon-pkm]]
 - [[2026-09-18-luhmann-zettelkasten]]
+- [[2026-09-19-luhmann-communicating-with-slip-boxes]]（2026-09-19 新增，**一手**）

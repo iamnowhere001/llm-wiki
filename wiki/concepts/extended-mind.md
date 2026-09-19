@@ -4,9 +4,10 @@ type: concept
 slug: extended-mind
 tags: [认知科学, 具身认知, 知识管理, 模式]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]
 related: [embodied-cognition, situated-cognition, distributed-cognition, enactment-effect, interoception, why-pkm-in-ai-era, llm-wiki-pattern, commonplace-book, cognitive-vs-somatic-paths]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **认知不发生在颅骨之内，而发生在「大脑 + 身体 + 环境 + 他人」构成的系统中。**
 > 这不是比喻 —— 支持者主张它是**严格意义上的认知主张**：外部的东西不是思考的辅助，
 > 而是思考过程的构成部分。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-extended-mind-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -83,6 +88,10 @@ status: active
 - [ ] 三大支柱之间的**关系**是什么？并列？有先后？还是可以互相替代？素材只做了并列处理
 - [ ] 「认知义肢」这个说法在素材里只出现一次（行 93、行 382），**无任何出处** —— 它是素材自造的比喻，还是出自某处？待查
 - [ ] 该命题若成立，对「独立思考」意味着什么？（见 [[distributed-cognition]]）
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

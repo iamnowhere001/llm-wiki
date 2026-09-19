@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-karpathy-llm-wiki]
 related: [pkm-history, bidirectional-links, llm-wiki-pattern, compounding-knowledge]
+evidence_tier: crossed
 confidence: high
 status: active
 ---

@@ -4,9 +4,10 @@ type: concept
 slug: opportunity-systems
 tags: [制度, 教育, 招聘, 公平, 巅峰表现, 系统设计]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-hidden-potential-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes]
-related: [scaffolding, character-skills, looping, brainwriting, trajectory-evaluation, peak-performance, adam-grant, 2026-09-18-hidden-potential-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-capability-seeking-theorem-notes, cybernetic-learning, luck-over-talent]
+updated: 2026-09-19
+sources: [2026-09-18-hidden-potential-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-19-scarcity-book-en]
+related: [scaffolding, character-skills, looping, brainwriting, trajectory-evaluation, peak-performance, adam-grant, 2026-09-18-hidden-potential-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-19-scarcity-book-en, cybernetic-learning, luck-over-talent]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -82,8 +83,18 @@ status: active
 
 **与本页的关系**：本页说「体系决定谁有机会」，那页说「处境改变认知」——
 **两者都把窄化的成因放到个人之外**，方向一致（该页关系第 3 条）。
-**证据性质**：该讲引 Mullainathan & Shafir (2013) 与 Mani et al. (*Science* 2013)，**13 分数字属实**；
+**证据性质**：该讲引 Mullainathan & Shafir (2013) 与 Mani et al. (*Science* 2013)。
+~~13 分数字属实~~ → **2026-09-19 一手校准后更正：只对一半** ——
+**「13 分」只属美国商场研究**，印度甘蔗农研究是 **8–9 点**（见 [[2026-09-19-scarcity-book-en]] §二 A1）。
 但讲稿把印度甘蔗农的**实地准实验**说成「在实验室里想象」——**该处属讲稿的设计误述，本库逐条公示、不整页降级**。
+
+> [!warning] 2026-09-19 一手校准：本页引用《稀缺》时漏了原书的一半
+> 对照英文原书后确认，原书的命题是**正负两面同源** ——
+> **同一机制（稀缺俘获心智）同时产出「专注红利」（focus dividend，原书行 777–778）与「带宽税」（bandwidth tax，第 2 章）**
+> （原书行 1006–1039：「Inhibition is the reason for both the benefits of scarcity and the costs of scarcity」）。
+> **本页与讲稿都只引了「代价」那一半** —— 只讲稀缺降智，读者会得到「稀缺只有坏处」的结论，而原书明确反对这个简化。
+> 另：原书专门论证「**这不能用压力 / 焦虑解释**」（行 2003–2034），而讲稿行 40–42 的解释路径正是「皮质醇」——
+> **登记为张力，本库不判对错。** 详见 [[2026-09-19-scarcity-book-en]] §二 D1 / D2。
 
 ### 标签层：一个名字就能改变机会分配（成长战略第 2 讲）
 
@@ -172,6 +183,10 @@ status: active
 
 - [[2026-09-18-hidden-potential-notes]]（中文笔记；**已对照英文原书 PDF p156–157、p191、p196 核实**）
 - [[2026-09-18-capability-seeking-theorem-notes]]（**2026-09-18 新增**）—— 成长战略第 1 讲，讲稿行 51–53 / 66（稀缺窄化认知）
+- [[2026-09-19-scarcity-book-en]]（**2026-09-19 新增 —— 一手专著**）—— 《稀缺》英文原书全文（254 页）。
+  它**推翻了本页对「13 分」的判断**（13 分只属美国商场研究，印度是 8–9 点），
+  并**补上了原书论证的另一半**（focus dividend）。
+  **这是本页第一次有一手专著支撑它所引用的那条断言** —— `evidence_tier` 与 `lint` 都不会替本页说这句话。
 - [[2026-09-18-supply-side-mindset-notes]]（**2026-09-18 新增**）—— 成长战略第 2 讲，讲稿行 132–138（挪威 / 美国改名研究；**美国条带主体错配标注**）
 - [[2026-09-18-social-capital-structural-holes-notes]]（**2026-09-18 新增**）—— 成长战略第 8 讲，讲稿行 35 / 45 / 135（同一批 Chetty 研究的个人策略读法）
 - [[2026-09-18-field-and-habitus-notes]]（**2026-09-18 新增**）—— 成长战略第 12 讲，讲稿行 104 / 118（制度层的另一半：场内评价）

@@ -4,9 +4,10 @@ type: concept
 slug: cognitive-reappraisal
 tags: [情绪调节, 认知, 方法, 心理学]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes, 2026-09-18-narrative-self]
 related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, narrative-reframing]
+evidence_tier: crossed
 confidence: high
 status: active
 ---
@@ -164,6 +165,10 @@ status: active
     **没有一版提到这个概念在心理学里已有几十年研究史**。这个缺口现在比原先更显眼。
 - [ ] **在结构性不公的处境中，认知重评的适用边界在哪里？** 这是本页最需要的反方材料
 - [ ] 「ABC 模型」与认知重评的关系（[[albert-ellis]]）—— 两者是同一机制的不同表述，还是不同的东西？
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

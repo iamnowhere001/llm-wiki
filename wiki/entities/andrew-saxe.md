@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]
 related: [information-bottleneck, naftali-tishby, compression-as-intelligence, thomas-griffiths]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 本库**第一次在收录素材的同一天就拿到了反方**。这条记录的存在本身比它的内容更重要 ——
 > 它证明「顺手查一下这个主张有没有人反对」是一条高收益的动作，而本库此前多次没收就先信了。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-learning-is-forgetting]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

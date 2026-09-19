@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-nolen-hoeksema-rethinking-rumination]
 related: [rumination, rumination-vs-reflection, nolen-hoeksema, cognitive-reappraisal, cognitive-vs-somatic-paths]
+evidence_tier: primary
 confidence: medium
 status: active
 ---

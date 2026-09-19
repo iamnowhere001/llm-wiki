@@ -179,3 +179,5 @@ AI 吞噬符号工作者 / 「金丝雀型」组织 / 考公是最大泡沫 / �
   *Success and Luck* (2016)、Knight *Risk, Uncertainty and Profit* (1921)、Soros *The Alchemy of Finance*（1987）、
   Greene *The 48 Laws of Power* (1998)、NZ HRC Explorer Grants 与 Volkswagen Foundation Experiment! 的公开资料、
   *The Black Swan* / *Antifragile*。**以上均未收录进 `raw/`**
+
+> [!note] **raw 元数据更正（2026-09-19，人类裁定）**：本页对应 raw 文件的 `capture_note` 里一处指向 `AGENTS.md` 旧章节号的指针已失效，按抓取元数据例外条款**优先「移除」而非「改正」**（原值：`（AGENTS.md 1.1）`）。**文件行数未变，本页的行区间引用不受影响。**依据见 [[decisions]]。

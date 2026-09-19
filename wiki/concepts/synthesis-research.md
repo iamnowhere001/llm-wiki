@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-synthesis-research]
 related: [wanweigang, 2026-09-18-synthesis-research, llm-wiki-pattern, llm-wiki-research, ingest-query-lint, why-pkm-in-ai-era, commonplace-book, mental-models, explanatory-framework, writing-as-thinking, 2026-09-18-writing-is-thinking]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 自己立题、自己找材料、自己判断什么值得信、最后写成能指导行动的东西。
 > **它解决的是「所以呢」** —— 我知道这些事实，所以我该采取什么立场、下一步如何决策。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-synthesis-research]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

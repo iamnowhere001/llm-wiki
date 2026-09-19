@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [index-and-log, llm-wiki-pattern, pkm-history, bidirectional-links, roam-research]
+evidence_tier: single
 confidence: high
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 - **类型**：工具
 - **别名**：—
 - **外部链接**：https://obsidian.md/
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 
@@ -48,6 +53,7 @@ status: active
 - [[index-and-log]]
 - [[wiki-lint]]
 - [[qmd]]
+- [[notes-apps-vs-llm-wiki]] —— 在「笔记软件 vs LLM Wiki」的选型讨论中，本页的定位是**不是竞争者，是推荐搭档**（阅读层）。该页同时指出本页作为搭档的硬优势：**打开的是本地纯文本目录，AI 可以在人类浏览的同时改文件** —— 托管方案即使提供导出也做不到这一点
 
 ## 在历史谱系中的位置
 

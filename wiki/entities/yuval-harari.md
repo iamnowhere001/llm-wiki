@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [narrative-as-first-principle, narrative-industrialization, narrative-power, narrative-economics, narrative-identity, meta-narrative, critique-target-distortion, modern-thinking-tools, 2026-09-18-narrative-self, 2026-09-18-narrative-first-principle]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -23,6 +24,10 @@ status: active
 - **类型**：人物（历史学家 / 作者）
 - **别名**：Yuval Noah Harari；《人类简史》（*Sapiens*）、《未来简史》（*Homo Deus*）、《21 世纪的 21 堂课》
 - **外部链接**：无（**本库未收录其著作的任何一页原文**）
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 

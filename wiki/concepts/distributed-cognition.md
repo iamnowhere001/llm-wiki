@@ -4,9 +4,10 @@ type: concept
 slug: distributed-cognition
 tags: [认知科学, 协作, 学习, 具身认知]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]
 related: [extended-mind, embodied-cognition, situated-cognition, deliberate-play, brainwriting, scaffolding, why-pkm-in-ai-era, peak-performance, cognitive-decoupling]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > **思考不是个人行为，而是系统行为。** 很多高水平思考本质上是多人协同的结果 ——
 > 不只是「分工」，而是不同个体承担不同的**认知功能**，思考过程在对话中被不断修正、外化、重组。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-extended-mind-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -67,6 +72,10 @@ status: active
 - [ ] 群体思维的已知失败模式为何在素材中完全缺席？是素材的盲点，还是「扩展心智」框架本身的盲点？
 - [ ] 素材提到的「隐性知识」（tacit knowledge）**库内无专页** —— 它是否需要独立成页？（波兰尼的原始文献本库未收）
 - [ ] 「模仿专家」与「抄袭」的边界 —— 素材说「不是抄袭」，但没有给判据
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

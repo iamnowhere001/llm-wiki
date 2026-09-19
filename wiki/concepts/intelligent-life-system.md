@@ -4,9 +4,10 @@ type: concept
 slug: intelligent-life-system
 tags: [世界观, 系统论, 控制论, 目标函数, 世界模型, 反馈回路, 注意力, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-modern-thinking-tools-prospectus]
 related: [cybernetic-learning, three-solutions, ai-convergence, narrative-as-objective-function, prediction-error, free-energy-principle, multiplicative-world, cognitive-load-theory, hard-constraints, three-selves, types-of-uncertainty, uncertainty-as-fuel, modern-thinking-tools, wanweigang, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 「用现代思维工具构建一个**可操作的智能生活系统**，以期更稳健地与复杂世界交手。」
 > 系统由四个元素构成 —— **目标函数 / 世界模型 / 反馈回路 / 预算带宽**，
 > 作者给的隐喻是「**指南针、地图、引擎和油箱**」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-modern-thinking-tools-prospectus]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -114,8 +119,18 @@ status: active
       库内 [[agent-vs-tool]]（能动者 vs 工具）正是从这个位置切进来的，**两者是否互补待判**
 - [ ] **「预算带宽」与 [[cognitive-load-theory]] 是不是同一个东西？**
       前者是资源总量说，后者是通道容量说。**未裁决**
+- [ ] **【2026-09-19 新增】第三个候选：行为经济学的 `bandwidth`。**
+      [[2026-09-19-scarcity-book-en]]（《稀缺》原书）用的正是 **bandwidth**，且给了它一个**可核的机制名**
+      —— **`bandwidth tax`（带宽税，原书第 2 章标题，行 1235）**：稀缺对认知资源的占用。
+      **本库不断言万维钢的「预算带宽」取自《稀缺》**（那是推断，本库无证据）；
+      但**三者的关系值得一并裁**：资源总量说（本页）/ 通道容量说（[[cognitive-load-theory]]）/ **稀缺占用说（《稀缺》）**。
+      注意：本页 `sources` **不因此增加** —— 四元素框架出自万维钢，不是《稀缺》。
 - [ ] 讲稿说「工具本来就不应该告诉你该干什么」—— 但整门课都在推荐工具。
       **这条自我设限的边界在哪，素材没划**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]
 related: [cognitive-outsourcing, nataliya-kosmyna, wang-shuaiguo, retrieval-practice, prediction-error, desirable-difficulty, deliberate-practice]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 偿还的形式不是罚款，而是**批判性思维退化、创造力枯竭，以及对自己所写内容毫无记忆**。
 >
 > 提出者：[[nataliya-kosmyna]]（MIT 媒体实验室）。**本库无一手材料，整页 `confidence: low`。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

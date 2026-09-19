@@ -15,7 +15,7 @@ capture_method: >
   **本次以 bot 身份抓取，不是 user 身份** —— 2026-09-18 抓取时 user token 刷新失败
   （`uat-client: refresh failed (code=20064)`，lark-cli 报 need_user_authorization），退回 bot 成功。
 capture_note: >
-  **本字段只记「抓取事实」，不记「阅读结论」。**（AGENTS.md 1.1）
+  **本字段只记「抓取事实」，不记「阅读结论」。**
   素材的分段、行区间、AI 整理段判定、引注核查清单一律维护在对应的 wiki/sources/ 页 ——
   它们会随阅读深入而变，而本文件不可变，写在这里必然产生死结。
 

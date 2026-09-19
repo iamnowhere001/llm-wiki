@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
 related: [cognitive-reappraisal, james-gross, emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness, flow-terminology]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

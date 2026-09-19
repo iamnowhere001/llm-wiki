@@ -4,10 +4,11 @@ type: concept
 slug: writing-as-thinking
 tags: [写作, 认知, 元认知, 知识管理, 实践]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-writing-is-thinking]
-related: [cognitive-load-theory, cognitive-outsourcing, zettelkasten, commonplace-book, synthesis-research, tacit-knowledge, alain-de-botton, cognitive-debt]
-confidence: low
+updated: 2026-09-19
+sources: [2026-09-18-writing-is-thinking, 2026-09-19-luhmann-communicating-with-slip-boxes]
+related: [cognitive-load-theory, cognitive-outsourcing, zettelkasten, commonplace-book, synthesis-research, tacit-knowledge, alain-de-botton, cognitive-debt, communication-partner]
+evidence_tier: crossed
+confidence: medium
 status: active
 ---
 
@@ -18,6 +19,12 @@ status: active
 > 一写下来就发现「概念不清 / 因果缺失 / 找不到例子 / 前后矛盾」。
 >
 > 对照的说法来自计算机：**写作是认知调试（Debug）** —— 写下来 = 把那段代码跑起来。
+
+> [!note] 2026-09-19：核心命题拿到了一个 1981 年的一手来源，本页据此升 `medium`
+> [[2026-09-19-luhmann-communicating-with-slip-boxes]]（Luhmann 1981 原文）有一句可直接引用的支点：
+> 「**没有写作就无法思考**；至少无法以任何精致的、可连接的（anschlußfähig）方式思考。」
+> 这是本页核心命题目前在本库能找到的**最早一手出处**，比原素材（2024–25）早 43 年。
+> **但它只支撑核心命题，不支撑「四大机制」那一节** —— 那节的神经科学细节仍出自 AI 生成段。`confidence` 由 `low` 升为 `medium`，理由与保留项见页尾。
 
 ## 要点
 
@@ -35,6 +42,19 @@ status: active
    均出自素材的 AI 生成段，**无一手依据**。
 
 ## 正文
+
+### 1981 年的一手先例（2026-09-19 新增）
+
+[[niklas-luhmann]] 在《Kommunikation mit Zettelkästen》里给这个命题一个**带限定语的版本**，值得逐字读：
+
+> It is impossible to think without writing; at least it is impossible in any sophisticated or networked (anschlußfähig) fashion.
+> （没有写作就无法思考；至少，无法以任何精致的、可连接的（anschlußfähig）方式思考。）
+
+**限定语是本页该学的部分。** 它没说「不写作就不能思考」，它说的是**不写作就无法以「可连接的」方式思考** —— 而 `anschlußfähig`（能接得上的）正是卡片盒的核心诉求：一张卡要能被别的卡接上，一个想法要能被别的想法接上。
+
+他还给出了一个本页没有的**机制**（raw 行 42）：「我们必须以某种方式**标记差异**，并捕获概念中**隐含或明示的区别**。只有以这种方式确保了那个**产生信息的图式**的恒常性，后续信息处理过程的一致性才能得到保证。」
+
+把它翻译成本页的语言：**写作不只是「把想法拿出来看」，它是在为思考建立一套稳定的、可复用的区分装置** —— 没有它，每一次思考都得从头重建坐标。这与本页「四大机制」里的「思维结构化」方向一致，但**理由不同**：这里强调的是**区分的可复用性**，不是「线性化」。
 
 ### 为什么只在脑子里想不够
 
@@ -109,7 +129,8 @@ status: active
 
 ## 待办 / 开放问题
 
-- [ ] 四大机制需要一个**一手来源**（认知卸载有 Sweller 侧材料，心理距离 / 结构化没有）
+- [ ] 四大机制需要一个**一手来源**（认知卸载有 Sweller 侧材料，心理距离 / 结构化没有）—— **注意：2026-09-19 收录的 Luhmann 1981 只支撑核心命题，不支撑这一节**
+- [ ] **`anschlußfähig`（可连接的）这个限定语值得深挖**：它把命题从「认知」移到了「网络」—— 思考的质量取决于区分能否被别的区分接上。这与 [[communication-partner]] 是同一套语言
 - [ ] ~~「很多表达能力差的人其实是没想清楚」——这条有没有反例？**语言能力本身是否也可能是独立瓶颈？**~~
       → **2026-09-18 已立论**：见 [[why-writing-fails]]。该页把「写不出来」拆成四种病因
       （结构不清 / 语言能力瓶颈 / 自我审查 / 默会知识），**本页只覆盖第一种**。
@@ -117,12 +138,24 @@ status: active
       语言能力那一栏在本库**零证据**，新页保留它是为了可证伪，不是因为它成立。
 - [ ] 德波顿的 YouTube 粉丝数（素材称近一千万）**未核**
 - [ ] 「写作是复仇」这类散文性论断是否应入库？本库目前的处理是**记录其存在、不作为知识**
+- [ ] **待北洛裁定**：本页 `confidence` 由 `low` 升为 `medium` 是 2026-09-19 的判断 —— 理由是**核心命题拿到了一手来源**，而机制层没有任何改善。若认为「一页的置信度应由最弱的一节决定」，应改回 `low`
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 
 - [[2026-09-18-writing-is-thinking]]（F、G 两段为 AI 生成；H 段为德波顿的二手转述）
+- [[2026-09-19-luhmann-communicating-with-slip-boxes]]（2026-09-19 新增，**一手** —— 只支撑核心命题与「1981 年的一手先例」一节）
+
+> [!note] 置信度说明（2026-09-19 修订）
+> **升为 `medium` 的部分**：核心命题（「写作是思考的场所」）现有 1981 年一手文献支撑，且它给了一个比本页更精确的限定语（`anschlußfähig`）。
+> **没有改善的部分**：四大机制的细述、脑区归属（布洛卡区 / 韦尼克区）**仍全部出自素材的 AI 生成段，无一手依据** —— 这一点与升格前完全相同。
+> `evidence_tier: crossed`：两份素材分属不同来源族（未署名整理 / Luhmann 本人）。**注意这里仍是一次真实的交叉，不是同源。**
 
 ## 相关页面
 
 - [[cognitive-load-theory]]、[[cognitive-outsourcing]]、[[synthesis-research]]
 - [[zettelkasten]]、[[commonplace-book]]、[[tacit-knowledge]]、[[alain-de-botton]]
+- [[communication-partner]]（「可连接的」这一限定语的另一面）

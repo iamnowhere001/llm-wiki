@@ -4,9 +4,10 @@ type: concept
 slug: rumination
 tags: [情绪, 认知, 机制, 病理]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-emotion-awareness-notes, 2026-09-18-hyperefficient-notes]
 related: [internal-friction, cognitive-decoupling, complaining, emotion-awareness, rumination-vs-reflection, 2026-09-18-hyperefficient-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -178,6 +179,10 @@ status: active
 - [ ] 「觉察就能削弱」在重度反刍中是否成立？
 - [ ] **反刍的「回避功能」需要独立验证** —— 一手素材（TABLE 1 第 4 行）给出该主张，但**作者自称是假说**，非已证结论
 - [ ] **补录 Watkins (2008) 加工模式综述原文** —— 本页所依赖的证据最强的一条判据，目前仍只有转引
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

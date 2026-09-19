@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-transfer-bridging]
 related: [schema-psychology, transfer-of-learning, explanatory-framework, cognitive-load-theory, 2026-09-18-mental-representations, 2026-09-18-transfer-bridging, tacit-knowledge, deliberate-practice, wanweigang]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > **会动的图式**。图式回答「这是什么」，心智模型回答「它怎么运转」——
 > 内部有变量、有因果、有反馈、有边界条件，所以允许你做推演：如果做了 A，B 就会发生。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 

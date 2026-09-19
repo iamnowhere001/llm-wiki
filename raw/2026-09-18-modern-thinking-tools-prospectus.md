@@ -21,7 +21,7 @@ capture_method: >
   但 `wiki +node-list` 报 99991672 —— bot 未开通 wiki:wiki / wiki:wiki:readonly / wiki:node:retrieve。
   因此**课程目录（同级 / 子节点列表）未取得**，本份的讲次定位只能靠正文自带日期推定。
 capture_note: >
-  **本字段只记「抓取事实」，不记「阅读结论」。**（AGENTS.md 1.1）
+  **本字段只记「抓取事实」，不记「阅读结论」。**
 
 
   素材的分段、行区间、AI 生成段判定、引注核查清单一律维护在

@@ -4,9 +4,10 @@ type: concept
 slug: embodied-cognition
 tags: [认知科学, 身体, 情绪, 具身认知]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]
 related: [extended-mind, situated-cognition, distributed-cognition, interoception, enactment-effect, cognitive-vs-somatic-paths, narrative-self-vs-bodily-self, emotion-awareness, peak-performance]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > **认知不只是大脑内的抽象符号加工 —— 身体的形态、感官运动、生理状态与环境的动态交互共同塑造它。**
 > 身体不是大脑指令的执行器，而是认知加工、情绪体验、决策判断的**参与者**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-extended-mind-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -82,6 +87,10 @@ status: active
 - [ ] 「隐喻映射」与「具身效应」的边界
 - [ ] 具身认知与 [[interoception]] 是否应合并为一页？素材把它们并列，但学理上后者更基础
 - [ ] 与 [[emotion-awareness]] 的**通用边界规则**仍未定 —— 具身认知这个主题同时属于两个项目
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

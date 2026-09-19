@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-self-determination-theory-notes]
 related: [autonomy-support, flow-terminology, character-skills, deliberate-practice, agent-vs-tool, deci-and-ryan, implementation-intentions, woop, modern-thinking-tools, peak-performance, 2026-09-18-self-determination-theory-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 人的动机不是被点燃的火，而是被喂饱的植物 —— **满足自主感、胜任感、关系感三种基本心理需求，能动性会自动发芽；压制它们，动机就枯萎。**
 > 它是本库关于「动机」的第一份理论正源（010 讲），也是既有页 [[autonomy-support]] 一直在等的那个框架。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-self-determination-theory-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

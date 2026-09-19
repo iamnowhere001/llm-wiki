@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-second-brain-skill-readme]
 related: [llm-wiki-pattern, ingest-query-lint, index-and-log, plain-text-and-git]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 
 - **触发问题**：Karpathy 说「这份文档只传达模式，你的 Agent 会和你一起把它实例化」。有人实例化了吗？做得如何？
 - **结论**：方向正确、完成度高，但**可演进性与可审计性**是主要疑点。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-second-brain-skill-readme]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 事实基础
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, three-layer-architecture, index-and-log]
+evidence_tier: single
 confidence: high
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 纯文本与 Git：知识库的基础设施
 
 > 整个 wiki 就是「一个装 Markdown 文件的 git 仓库」。这不是实现细节，而是 [[llm-wiki-pattern]] 能成立的前提 —— 没有版本历史，「人类与 LLM 共同演进 schema」就是不可审计的。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

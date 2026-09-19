@@ -4,9 +4,10 @@ type: concept
 slug: effectuation
 tags: [效应化, 创业, 萨拉斯瓦蒂, 因果式, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-game-selection-notes]
-related: [game-selection, multiplicative-world, agent-vs-tool, cybernetic-learning, saras-sarasvathy, modern-thinking-tools]
+updated: 2026-09-19
+sources: [2026-09-18-game-selection-notes, 2026-09-19-value-of-information-notes]
+related: [game-selection, multiplicative-world, agent-vs-tool, cybernetic-learning, saras-sarasvathy, modern-thinking-tools, field-theory]
+evidence_tier: crossed
 confidence: high
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > 由弗吉尼亚大学达顿商学院的 Saras D. Sarasvathy 于 **2001 年**提出（行 149）。
 
 **行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系，`raw/2026-09-18-game-selection-notes.md` 共 187 行，讲稿段行 33–177）。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -76,6 +81,14 @@ AI 硬件、医疗可穿戴公司不是「我找到了你们的问题的解」�
 - 与 [[agent-vs-tool]] 的接点：效应化强调**主动调用手头资源**，与「先换身份、成为调用工具的人」同向
   （**本库接点，素材未明说**）。
 - 与 [[saras-sarasvathy]] 实体页强相关：她是本讲唯一具名、可核的一手理论作者。
+- **026 讲给了本页一个「利用侧」的对手方（2026-09-19 回填）**：[[2026-09-19-value-of-information-notes]] 行 123
+  对职场员工的建议是 —— **「你们公司这个特定场域的奖励函数是什么？升职提拔看的核心指标是什么？」**
+  这是在**既有场域内部**找判据；本页（018 讲行 148–161）则是**从手头手段造一个新场域**。
+  **两者不同层**：本页回答「**能做出什么**」，026 讲回答「**在这套规则里什么才算得分**」。
+  本库登记为**互补而非冲突**（026 讲未引用本页，也未提效应化）。
+  ⚠️ **一处形似而实不同，不要等同**：026 讲的「场域」是**日常义**（＝你所在的这家公司 / 这个行业），
+  不是 [[field-theory]] 的布迪厄义（有自身 doxa 与资本结构的相对自主社会空间）。
+  两处共用「场域」二字，**登记接点，不做等同**。
 
 ## 开放问题
 

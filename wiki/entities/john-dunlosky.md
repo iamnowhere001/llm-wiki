@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dunlosky-learning-techniques]
 related: [2026-09-18-dunlosky-learning-techniques, retrieval-practice, spaced-repetition, how-we-learn-and-how-to-improve, stanislas-dehaene, peak-performance]
+evidence_tier: primary
 confidence: high
 status: active
 ---

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-sense-of-security-notes]
 related: [attachment-theory, john-bowlby, psychological-safety]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -21,6 +22,10 @@ status: active
 - **类型**：人物（发展心理学家）
 - **别名**：Mary D. Salter Ainsworth
 - **外部链接**：无（本库未收录其著作）
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-sense-of-security-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 
@@ -40,7 +45,7 @@ status: active
 > [!warning] 依恋比例是过期共识
 > 素材引用的是**最早的小样本**。Van IJzendoorn & Kroonenberg (1988) 约 62–65%；
 > **Madigan et al. (2023，全球 2,000+ 样本)：安全型 51.6%、回避型 14.7%、抵抗型 10.2%、混乱型 23.5%**。
-> → **过期引注候选**，待人类裁定是否单列一类（见 [[attachment-theory]] 边界①）。
+> → **过期引注候选**（[[schema]] §3.6.1）。**2026-09-19 北洛裁定：已单列为第六类证据问题**（见 [[attachment-theory]] 边界①）。
 
 ## 在本知识库中的角色
 

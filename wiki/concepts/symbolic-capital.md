@@ -4,9 +4,10 @@ type: concept
 slug: symbolic-capital
 tags: [社会学, 布迪厄, 权力, 叙事, 场域]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-field-and-habitus-notes]
 related: [field-theory, narrative-power, pierre-bourdieu, compensatory-control, victim-mentality, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 场域里**最值得追求**的资本。它不直接给你资源，它给你**「定义其他资本是否正当」的资格**。
 > 素材的判据句：**拥有象征资本的人拥有这个场域的最高叙事权**（行 142）。
 > 它的另一面是**象征暴力 —— 让人不敢**（行 140）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-field-and-habitus-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -72,7 +77,10 @@ status: active
 ## 与其他页面的关系
 
 - **与 [[narrative-power]]：同一个位置，两个框架。**
-  那一页行 189–191 的「争取叙事权」＝ 本页行 142 的「最高叙事权」，**是同一件事的不同命名**。
+  [[narrative-power]] 引的那份素材（[[2026-09-18-narrative-self]]，D 段**行 312–372**）的「争取叙事权」
+  ＝ 本素材**行 142** 的「最高叙事权」，**是同一件事的不同命名**。
+  （**2026-09-19 核**：此处原写「那一页行 189–191」，既**未标素材名**、行号也**对不上**「争取叙事权」——
+  189–191 讲的是「叙事自我决定你想做什么」。已更正为本库实核的行区间。）
   差别在两处：① **绑定关系** —— narrative-power 的叙事权是**相对人**的（对老板、对家庭、对职场），
   symbolic-capital 的叙事权是**相对场域**的，**换场域即失效**；
   ② **证据强度** —— narrative-power 的第三级只有一句断言、操作层全部出自 AI 段（`confidence: medium` 且自陈缺口），

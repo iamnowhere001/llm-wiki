@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-game-selection-notes]
 related: [game-selection, agent-vs-tool, narrative-as-objective-function, steady-state-survival-logic, modern-thinking-tools]
+evidence_tier: single
 confidence: high
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 > 018 讲的用法：**体制内生存最大的伤害是把「指标（metrics）」当成「目的（purpose）」**（行 125）。
 
 **行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系，`raw/2026-09-18-game-selection-notes.md` 共 187 行，讲稿段行 33–177）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-game-selection-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

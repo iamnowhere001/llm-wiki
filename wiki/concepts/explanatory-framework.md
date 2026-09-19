@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations]
 related: [mental-models, schema-psychology, wanweigang, 2026-09-18-mental-representations, llm-wiki-pattern]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 万维钢**自造**的概念：某一派意见对一个领域的**整个系统性看法**。
 > 他是四层学习结构的第四层（表征→图式→心智模型→解释框架）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-mental-representations]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

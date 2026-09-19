@@ -4,9 +4,10 @@ type: concept
 slug: productive-resistance
 tags: [AI时代, 学习方法, 设计原则, 实践]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-modern-thinking-tools-prospectus]
 related: [cognitive-outsourcing, cognitive-debt, desirable-difficulty, advait-sarkar, retrieval-practice, icap-framework, 2026-09-18-modern-thinking-tools-prospectus]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -122,6 +123,10 @@ status: active
     **两个方向不要合并**：一条是「没给够」，一条是「给过了」。**缺位侧现有 1 例、过载侧 0 例。**
   - **缺位侧也还需要补**：目前唯一那一例**不是**严格样本（用户没有点名要「找漏洞」）。
     真正需要的是**一份严格样本** —— 用户下达三段式指令后，AI 仍然只给安抚的记录。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -4,9 +4,10 @@ type: concept
 slug: structural-holes
 tags: [结构洞, 网络, 经纪人, 伯特, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-social-capital-structural-holes-notes]
-related: [social-capital, raj-chetty, narrative-power, opportunity-systems, compensatory-control, modern-thinking-tools]
+updated: 2026-09-19
+sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-19-value-of-information-notes]
+related: [social-capital, raj-chetty, narrative-power, opportunity-systems, compensatory-control, modern-thinking-tools, explore-exploit-tradeoff]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 
 **行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系，`raw/2026-09-18-social-capital-structural-holes-notes.md` 共 646 行）。
 讲稿段行 35–147；AI 加工段行 155–646 **不作为本页依据**。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -67,6 +72,26 @@ structural hole 与 broker 均为其概念（sources 页核查表第 7 条，已
 - **伦理边界（登记）**：讲稿把它正面化（行 144：能把教育理念/信息差带回社区的高端家政阿姨也是结构洞），
   并用「供给侧心态」界定为**提供翻译服务**（行 142）。但同一位置也可被读成「两头吃信息差」的套利。
   **素材给出的是正面版本，本库只登记这一层，不替它辩护。**
+
+## 第二种用法：结构洞作为「信息套利位置」（2026-09-19 回填）
+
+[[2026-09-19-value-of-information-notes]]（模块二第 5 讲）**没有定义结构洞，但把它当成了一个信息位置**：
+行 139 把「**两个圈子之间的『结构洞』透露的内部消息**」列为高 VOI 信息源之一；
+该份 AI 段（行 210）把它扩成「两个系统、两个圈子、两个市场之间的结构洞」。
+
+**这与本页的用法不同，必须分开：**
+
+| | 本页（014 讲 · 社交资本） | 026 讲 · 信息价值 |
+|---|---|---|
+| 结构洞是什么 | **位置资本** —— 占住它获得经纪人地位 | **信息源** —— 洞边的消息是「细碎、不耀眼、甚至有点无聊」的 |
+| 收益形式 | 升职加薪、绩效评价更正面、更有创造性点子（行 98） | **决策价值** —— 能改变你的行动 |
+| 关键动作 | **翻译**（把一方的语言转成另一方听得懂的，行 112） | **获取**（拿到那个稍纵即逝的差异，行 101） |
+
+**026 讲还顺手说破了本页的一个隐含前提。** 本页说结构洞的价值来自**认知隔阂**（隔阂消失，洞就消失）。
+026 讲行 101 给的是同一机制的另一面：那个套利差异「**稍纵即逝**」，因为
+「**没有人会把那个差异专门写出来告诉你**」。
+→ **隔阂一旦被公开写出来、变成人人可读的信息，它就不再是结构洞。**
+**（这一句是本库的推论，026 讲未如此表述；它把本页「隔阂消失洞就消失」从状态描述变成了过程描述。）**
 
 ## 与其他页面的关系
 

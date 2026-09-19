@@ -4,9 +4,10 @@ type: concept
 slug: enactment-effect
 tags: [记忆, 学习, 具身认知]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]
 related: [embodied-cognition, extended-mind, peak-performance, deliberate-play, human-sponge, 2026-09-18-extended-mind-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > **把动作与要记的内容绑在一起，记得更准。** 因为动作同时激活两套记忆系统 ——
 > 对「是什么」的记忆（陈述性）与对「怎么做」的记忆（程序性）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-extended-mind-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -61,6 +66,10 @@ status: active
 - [ ] *The Extended Mind* 原书对「操作效应」的引注（哪篇研究、哪一年）
 - [ ] 操作效应在**成人**与**儿童**身上是否同样成立？（素材提到的应用研究多在儿童教育）
 - [ ] 与「学习风格」理论的边界需要在页面里更明确地写 —— 这是本概念最容易被误读的地方
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

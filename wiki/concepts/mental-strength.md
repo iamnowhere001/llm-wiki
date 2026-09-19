@@ -4,9 +4,10 @@ type: concept
 slug: mental-strength
 tags: [情绪, 概念, 低置信度, AI生成, 证据分类]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-mental-strength]
 related: [emotion-awareness, internal-friction, llm-wiki-pattern, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 心力（一个尚未被来源支撑的概念）
 
 > 「心力」在本库中目前**只有一个来源，而这个来源是 AI 生成的**。本页存在的理由不是记录这个概念，而是记录**一个概念在缺乏来源时能长成什么样子**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-mental-strength]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -135,6 +140,10 @@ status: active
 - [ ] 「品格技能七维度」是否值得保留？若找不到任何外部依据，应降级为素材页内的记述，不单独成页（**本库倾向降级**）
 - [x] ~~本库是否需要为「AI 生成内容」设一条正式约定？~~ **已解决（2026-09-18）**：收录 + 整页降级 + 可被引用但引用要谨慎，已写入 `AGENTS.md`
 - [ ] 中文语境的「心力」「定力」「意志力」「韧性」四个词的关系需要辨析
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

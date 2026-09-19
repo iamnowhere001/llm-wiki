@@ -4,9 +4,10 @@ type: concept
 slug: deliberate-practice
 tags: [学习, 专长, 天赋, 训练, 反馈]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-deliberate-practice-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes]
+updated: 2026-09-19
+sources: [2026-09-18-deliberate-practice-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-19-optionality-notes]
 related: [desirable-difficulty, cognitive-load-theory, mental-models, transfer-of-learning, deliberate-play, luck-over-talent, hard-constraints, anders-ericsson, wanweigang, 2026-09-18-deliberate-practice-talent, peak-performance, trajectory-evaluation, modern-thinking-tools, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 一套**误差压缩**技术：把技能拆到极小颗粒度、带着精确校准反复改。
 > 它的解释力**在入门到专家这段很高，在专家到明星这段急剧下降** —— 后半句是本页最值钱的部分。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 6 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -117,6 +122,30 @@ status: active
 去探索 15% 未知的领域」——**与本页「待在能力边缘」同向**。**但它同时是三件事**：
 ① 未点名艾利克森或任何一手研究；② 出自 **AI 加工段**；③ 讲的是**任务难度设定**，不是训练体系。
 **故只登记为「同向印证」，不计入支持侧证据**（支持侧仍只有 2025 RCT 与综述）。见 [[2026-09-18-active-cognitive-load-notes]] 印证表。
+
+## 第五处对照：030 讲把「聪明」定性为期权（2026-09-19 回填）
+
+[[2026-09-19-optionality-notes]]（模块二第 9 讲）行 165 问「为什么上学时候班里最聪明的人，后来未必有很好的成就」，
+答案是「**因为聪明只是一种期权**」；行 167 给出兑现条件：**执行力、情绪稳定、协作能力、运气**。
+
+**它与上面四处对照的性质都不同**：前面四处（007 / 010 / 018 / 012）都在**质疑**「努力与回报的对应关系」，
+这一处不质疑，它是**换了一套资产语言来描述同一件事**：
+
+| | 本页说 | 030 讲说 |
+|---|---|---|
+| 能力是什么 | **在该任务上的表现**（可练、可测量） | **期权** —— 一种可能性，不是实际价值 |
+| 关键动作 | 精确校准、待在能力边缘 | **行权** —— 兑现需要另外的条件 |
+| 未兑现时 | 说明练得不够或方法错 | **不算失败，只是没行权** |
+
+**注意它与第 5 讲（[[luck-over-talent]]）的分工，不要合并**：
+那里说「**能力本身也是运气**」（消解能力的独立性）；
+这里说「**聪明只是期权**」（保留能力的地位，只把**兑现**交给别的变量）。
+**两者的落点不同。**（本库判断，`low`。）
+
+> [!note] 这一处对本页的主张**没有影响**
+> 本页的核心是「精确校准能不能提高任务内表现」——030 讲没有触及这个问题，
+> 它谈的是**表现如何转化为成就**，那是本页明确划在解释力之外的一段（见要点 4）。
+> **故只登记，不改本页任何结论。**
 
 ## 与其他页面的关系
 

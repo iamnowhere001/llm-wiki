@@ -4,9 +4,10 @@ type: concept
 slug: attachment-theory
 tags: [心理学, 依恋理论, 发展心理学, 安全感, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-sense-of-security-notes]
 related: [john-bowlby, mary-ainsworth, psychological-safety, compensatory-control, victim-mentality, emotional-granularity, cognitive-decoupling]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 > 本库经 017 讲（`raw/2026-09-18-sense-of-security-notes.md`，讲稿段行 37–175）进入。
 > **引注可核率较高**（Ainsworth 实验、Bowlby 名言、马斯洛、Fredrickson），
 > 但有**三处须登记的缺陷**（一处过期共识、一处弱引注、一处拼写错误）——见「边界与反例」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-sense-of-security-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -76,7 +81,7 @@ status: active
 素材行 49 称安全型「大约 65% 到 70%」。这**出自 Ainsworth 最早的单一中产小样本**，
 **不是当代分布**：Van IJzendoorn & Kroonenberg (1988) 约 62–65%；
 Madigan et al. (2023，全球 2,000+ 样本) 安全型仅 **51.6%**（回避型 14.7% / 抵抗型 10.2% / 混乱型 23.5%）。
-→ **过期引注候选**，与库内「过期引注」先例同型，**待人类裁定是否单列一类**（见 sources 页待办）。
+→ **过期引注候选**，与库内「过期引注」先例同型。**2026-09-19 北洛裁定：已单列为第六类证据问题**（定义与边界见 [[schema]] §3.6.1）。
 
 **② 「依恋决定七岁表现」是弱引注。**
 素材行 50 说「我们**精英日课专栏**曾经列举过一些研究，一岁左右的依恋类型会直接决定七岁受欢迎程度、婚恋对象」——
@@ -121,9 +126,13 @@ Madigan et al. (2023，全球 2,000+ 样本) 安全型仅 **51.6%**（回避型 
 ## 开放问题
 
 - [ ] **收录一手文献**：Bowlby *A Secure Base* (1988)、Ainsworth *Patterns of Attachment* (1978) —— 本库目前只有转述。
-- [ ] **安全型依恋比例是否登记为「过期引注」** —— 见「边界」①，待人类裁定。
+- [x] ~~**安全型依恋比例是否登记为「过期引注」**~~ —— **已完成**：已登记为候选（[[schema]] §3.6.1），该类别于 **2026-09-19 单列为第六类证据问题**。
 - [ ] **「一岁依恋决定七岁表现」是否有可定位的原始研究** —— 目前只挂在「精英日课专栏」，待核。
 - [ ] **依恋类型 → 成年模式的跨文化稳定性** —— Madigan et al. (2023) 的全球分布显示类型比例差异很大，依恋理论的普遍性边界待核。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

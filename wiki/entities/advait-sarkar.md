@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]
 related: [cognitive-outsourcing, productive-resistance, cognitive-debt]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 微软研究院（Microsoft Research）研究者。**「理性外包的时代」（the age of outsourced reason）
 > 与「AI 应是思维工具而非助手」这一主张的提出者。**
 > 依据是一场 TED 演讲 —— **本库未收录，全部内容为二手转述。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 一句话定位
 

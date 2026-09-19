@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-resonance-notes, 2026-09-18-emotion-awareness-notes, 2026-09-18-game-selection-notes]
 related: [resonance, hartmut-rosa, narrative-self-vs-bodily-self, goodharts-law, game-selection, cybernetic-learning, extended-mind]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

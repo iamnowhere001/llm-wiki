@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-appleton-bidirectional-links, 2026-09-18-dankoe-remember-what-you-read]
 related: [bidirectional-links, obsidian, pkm-history, zettelkasten]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

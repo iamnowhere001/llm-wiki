@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-capability-seeking-theorem-notes]
 related: [compression-as-intelligence, learning-as-forgetting, naftali-tishby, thomas-griffiths, schema-psychology, llm-wiki-pattern, retrieval-practice, cybernetic-learning, narrative-as-objective-function, 2026-09-18-capability-seeking-theorem-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [opportunity-systems, trajectory-evaluation, 2026-09-18-hidden-potential-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **脑力写作（brainwriting）= 把「头脑风暴」的顺序倒过来**：
 > 不是先把人聚起来一起想，而是**各自独立产出 → 匿名汇总 → 各自独立评估 → 最后才一起讨论、筛选与完善**。
 > 它要解决的问题不是「想法不够多」，而是**参与度不均衡**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

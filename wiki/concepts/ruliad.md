@@ -4,9 +4,10 @@ type: concept
 slug: ruliad
 tags: [物理学, 计算, 世界观, 未验证]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle]
 related: [narrative-as-first-principle, information-bottleneck, compression-as-intelligence, 2026-09-18-narrative-first-principle, modern-thinking-tools]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > 我们这个宇宙，是它的一个切片。
 >
 > **本页 `low`：全库关于它只有一份通俗转述，一手未取回，内容未验证。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-narrative-first-principle]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -82,6 +87,10 @@ Wolfram 侧脸 + 右侧橙色光点向外辐射，标注 **Branchial space**、*
 - [ ] 那张未下载的图里 **Observer foliation** 是否是该框架原生术语？若是，
       [[narrative-as-first-principle]] 的「观察者一致性」论证可能不是素材原创
 - [ ] WPP 在物理学界的接受度如何？需要一份独立评价，而不是 Wolfram 自己的宣传材料
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

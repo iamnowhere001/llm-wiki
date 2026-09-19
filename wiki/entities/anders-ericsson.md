@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-deliberate-practice-talent]
 related: [deliberate-practice, mental-models, 2026-09-18-deliberate-practice-talent, wanweigang, peak-performance]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 - **类型**：人物（研究者）
 - **机构**：Florida State University
 - **领域**：专长（expertise）研究、记忆
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-deliberate-practice-talent]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 关键事实
 
