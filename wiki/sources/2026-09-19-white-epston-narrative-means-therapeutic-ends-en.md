@@ -44,6 +44,8 @@ status: active
 | [[2026-09-18-narrative-first-principle]] E 段（行 374–615） | 「基于叙事自我理论的 12 个心理练习」 | **AI 生成，零引注**，自陈「基于实证研究」却举不出一项 |
 | [[narrative-identity]] | 叙事身份理论 | 全部转述，无一手 |
 
+**也就是说：库内关于叙事疗法的全部内容，都是 [[source-pool-bias]] 描述的那种「说圆了的文本」** —— 完整、顺畅、读起来像有据，但没有一条能追到疗法本身。本份是第一次拿到可对照的一手。
+
 **本书的结构特征对校准极重要 —— 它和库内的想象完全不同：**
 
 全书 **4 章**，而**只有第 2 章是方法论章**：
@@ -78,10 +80,10 @@ status: active
 |---|---|---|
 | [[narrative-reframing]] 把「叙事重构」定位为叙事疗法的操作形态（行 29–34、124–127），仅批评它「无出处」 | 原书**唯一的方法论章（第 2 章）的第一步是 externalizing（外部化）** —— 行 1887–1894：「"Externalizing" is an approach to therapy that encourages persons to **objectify** and, at times, to **personify** the problems that they experience as oppressive. In this process, the problem becomes a **separate entity and thus external to the person** or relationship that was ascribed as the problem.」 | ❌ **方向相反** |
 
-**这是本轮最重要的一条。** 五步法的第 1 步是「**写下受害者剧本**」——
+**这是本轮最重要的一条。** 五步法的第 1 步是「**写下受害者剧本**」（本库在 [[victim-mentality]] 里对它的定性是「一个被素材自己拆穿的主张」）——
 把问题**内化**进个人的人生历史；White 的第 1 步是把问题**外化成一个独立实体**，与人分离。
 
-**五步法全文没有 externalizing 这一步，也没有任何等价操作。** 它全程在「我」内部改写「我的」故事。
+**五步法全文没有 externalizing 这一步，也没有任何等价操作。** 它全程在「我」内部改写「我的」故事 —— 按本库 [[cognitive-reappraisal]] 的口径，这属于**重评**（事实不变、意义重写）；而 White 做的是**分离**（把问题从人身上拿出去）。两者都改意义，改的不是同一个东西。
 **按原书的判据，这不是「叙事疗法的一个简化版」，而是把 White 要拆掉的东西（问题内在于人）当成了起点。**
 
 原书对这一点的自觉程度很高 —— 行 1943–1953 列出外部化的六条作用，**第一条就是**
@@ -122,7 +124,7 @@ status: active
 
 | | 五步法（AI 生成） | 原书 SELF STORIES |
 |---|---|---|
-| 二分 | 受害者剧本 / 英雄剧本 | **sad tale / success story**（Goffman 1961） |
+| 二分 | 受害者剧本 / 英雄剧本（前者与 [[rumination]] 同族 —— 反复咀嚼痛苦片段） | **sad tale / success story**（Goffman 1961） |
 | 出处 | **无** | Goffman, E. (1961). *Asylums*, p.139（References 行 8691） |
 | 目的 | 「重新夺回对自己人生故事的解释权」 | **「distancing persons from the problem」** |
 | 目的的性质 | **个人内部的权力感** | **外部化的延伸** —— 仍是「人 / 问题」分离 |
@@ -143,7 +145,7 @@ status: active
 
 行 2002–2003 重申并给出 White 自己的出处（White, 1987, 1988）。
 
-**`unique outcomes` 是 Goffman 的原词，White 是沿用者。** 这是**唯一一处**五步法与叙事疗法实质对应的地方：
+**`unique outcomes` 是 Goffman 的原词，White 是沿用者。** 所谓「落在主导故事之外」，就是落在 [[meta-narrative]] 说的那一层之外 —— 元叙事决定哪些经验能被讲出来、哪些被忽略。这是**唯一一处**五步法与叙事疗法实质对应的地方：
 五步法第 3 步「**寻找例外**」≈ unique outcomes（原书 69 次；节标题行 2584）。
 
 **但操作形态不同**：White 的 unique outcomes 是**在「问题对人的影响」逐项铺开之后**才去找的
@@ -185,14 +187,14 @@ status: active
 行 7751–7752 把奖项与档案对比：档案面向「专业专家的窄读者群」且属「rituals of exclusion」（引 Bryan Turner），
 奖项属「**rituals of inclusion**」。
 
-**判定：五步法的「用行动印证」方向对，但**把公开仪式私有化了** ——
+**判定：五步法的「用行动印证」方向对，但**把公开仪式私有化了** —— 按 [[extended-mind]] 的判据，原书的书信 / 证书是**把意义外包到外部载体上**（有见证人、可传递、可再招募观众），五步法把它收回成了私人心理过程；
 原书的「行动」是有见证人的社会行为，五步法的「行动」是自我检验。**
 
 #### B5. 权力 / 文化维度 —— 本库完全没有
 
 | 位置 | 内容 |
 |---|---|
-| 行 1126–1147 | **DOMINANT NARRATIVE AS DOMINANT KNOWLEDGE AND UNIT OF POWER**：主导叙事 ＝ 主导知识 ＝ 权力单位；「the vista of power has been **much overlooked** in the therapy literature」 |
+| 行 1126–1147 | **DOMINANT NARRATIVE AS DOMINANT KNOWLEDGE AND UNIT OF POWER**：主导叙事 ＝ 主导知识 ＝ 权力单位 —— 这正是 [[narrative-power]] 那一页一直缺的一手依据，也与 [[symbolic-capital]] 说的「象征暴力最终由被支配者自己承认」同构；「the vista of power has been **much overlooked** in the therapy literature」 |
 | 行 1161–1165 | 引 **Foucault**：权力不仅有**压制性**（repressive），还有**构成性**（constitutive）——「not only its repressive aspects but also its constitutive aspects」 |
 | 行 2988–3008 | **THE CULTURAL CONTEXT**：西方社会的「objectifying / thingifying」实践把人**建构为对象**；外部化是 **counter-practice**，engage persons in the **「de-objectification」** of themselves |
 | 行 3061–3095 | **THE PANOPTICON**：Bentham 的建筑形式，forge「docile bodies」，一种「very economic form of power」；行 3091 起讲 **The Gaze** |

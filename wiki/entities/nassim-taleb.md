@@ -96,6 +96,15 @@ status: active
 - [[heavy-tailed-distribution]] —— 库内与他最近的一页
 - [[multiplicative-world]] —— 与之相邻的框架（该页来自同一板块的第 2 讲）
 
+## 2026-09-19 回填（第 1、2 批清单）
+
+> 来源：[[2026-09-19-regression-to-the-mean-notes]]、[[2026-09-19-probability-distribution-notes]] 的「回填清单」建议。
+
+- **与 [[regression-to-the-mean]]：接点（素材未点名）。** 该页的「**极端值最吸引解读**」与本页「极端值不可解释」同向 ——
+  ⚠️ **但该页素材未点名塔勒布，本库不强行挂钩**（沿用该 sources 页的判断）。
+- **与 [[probability-distribution]]：库内又一次出现，且这次给了确切出处。** 该页行 135 的「**四英尺深的河**」
+  是本页最常被引用的一句，**该讲给出了确切的出处书（*Skin in the Game*）** —— 见该 sources 页核查表第 5 条。
+
 ## 开放问题
 
 - [ ] **收录一手材料** —— 库内四条引用**全是转述书名**，没有一条具体引文。这与 [[charlie-munger]] 的处境相同

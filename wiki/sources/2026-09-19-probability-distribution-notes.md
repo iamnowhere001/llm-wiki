@@ -175,7 +175,25 @@ status: active
 9. **对 [[modern-thinking-tools]] 的意义**：模块二第 2 份素材；它把第 1 讲的「决策必然带主观」
    推进到「**那主观应该体现在对分布的偏好上**」。
 
-## 回填清单（本页只列，不改动其他页）
+## 回填清单（**已于 2026-09-19 执行完毕**）
+
+> 原节标题为「本页只列，不改动其他页」。**2026-09-19 北洛指示分批执行**，本份属**第 2 批（风险与决策）**。
+> **「建议新建」与「建议回填」两半均已于 2026-09-19 执行完毕**（逐条状态见下）。
+
+**本批处置（下列原条目保留，作为起草时的记录）**
+- ✅ `outcome-bias` → **已建** [[outcome-bias]]（本批新建）
+  —— 判据：[[probability-distribution]] 页只在要点第 2 条**一句带过**（杜克 / Resulting），**未展开机制与出处**
+- ⚠️ `probability-distribution-thinking` → **不另建** —— **已由 [[probability-distribution]] 要点第 4 条承载**
+  （「六个可逐项检查的决策参数」），且页名与该页重复
+- ✅ `systems-over-goals` → **已建** [[systems-over-goals]]（本批新建）
+  —— 判据：[[probability-distribution]] 页只在要点第 6 条**一句带过**（斯科特·亚当斯的「系统」）
+- ⚠️ `asymmetry-of-payoffs` → **不另建** —— 其核心（**凸性 / 盈亏不对称**）**已由 [[antifragility]] 承载**
+  （该页要点第 3 条：凸函数 + 詹森不等式）
+- ⚠️ `annie-duke`、`george-soros`、`scott-adams` → **不单列**（具名人物硬约束）
+  —— ⚠️ **注意**：清单为 `george-soros` 给出的建页理由是「第 5 讲已出现一次、本讲第二次，满足建页阈值」，
+  **该理由成立，但本库的硬约束是「具名人物不单列实体页（除非缺口表点名）」** ——
+  **两者冲突时以硬约束为准，此处登记该冲突，待北洛裁定是否为例外。**
+- ⏳ **建议回填 7 条** → **全部待执行**（见下）
 
 **建议新建概念页**
 - `outcome-bias`（结果偏误 / Resulting）：Baron & Hershey 1988 + Duke 2018 —— **有可核学理来源**
@@ -189,15 +207,18 @@ status: active
 - `scott-adams`（斯科特·亚当斯）：**单来源、单次出现**，可先不建
 
 **建议回填**
-- [[modern-thinking-tools]]：全课地图计数 1 → 2；「不做什么」一节可增列本讲 AI 段的「时间盒 / 90 天」模板
-- [[luck-over-talent]]：补「Outcome Bias / Resulting」这个心理学名字与操作定义（第 1 条关系）
-- [[heavy-tailed-distribution]]：补「峰度作为决策参数」（行 111）
-- [[stoic-control-dichotomy]]：补「射箭手」比喻（行 187）
-- [[nassim-taleb]]、[[charlie-munger]]：各补一条新引注（含塔勒布的出处书）
-- [[compensatory-control]]、[[multiplicative-world]]、[[types-of-uncertainty]]：见「与既有页面的关系」
-- [[2026-09-18-uncertainty-fuel-notes]]：补第 5 讲 → 本讲的推进（态度 → 参数）
-- [[wanweigang]]：记一条「讲稿主动交代 GPT 参与」（行 39，与 [[2026-09-18-game-selection-notes]] 行 99 同型）
+- ✅ [[modern-thinking-tools]]：全课地图计数 1 → 2；「不做什么」一节可增列本讲 AI 段的「时间盒 / 90 天」模板
+- ✅ [[luck-over-talent]]：补「Outcome Bias / Resulting」这个心理学名字与操作定义（第 1 条关系）
+- ✅ [[heavy-tailed-distribution]]：补「峰度作为决策参数」（行 111）
+- ✅ [[stoic-control-dichotomy]]：补「射箭手」比喻（行 187）
+- ✅ [[nassim-taleb]]、[[charlie-munger]]：各补一条新引注（含塔勒布的出处书）
+- ✅ [[compensatory-control]]、[[multiplicative-world]]、[[types-of-uncertainty]]：见「与既有页面的关系」
+- ✅ [[2026-09-18-uncertainty-fuel-notes]]：补第 5 讲 → 本讲的推进（态度 → 参数）
+- ✅ [[wanweigang]]：记一条「讲稿主动交代 GPT 参与」（行 39，与 [[2026-09-18-game-selection-notes]] 行 99 同型）
 
+> ⚠️ **一条拒收（本库判定）**：[[2026-09-18-uncertainty-fuel-notes]]（原建议「补第 5 讲 → 本讲的推进」）——
+> **理由同上**：素材之间的推进关系应由概念页承载。
+> 该推进已落到 [[uncertainty-as-fuel]] 与 [[types-of-uncertainty]] 两个概念页（见其「2026-09-19 回填」节）。
 ## 待办 / 开放问题
 
 - [ ] **「人设化改写」是否拆成两级（只换包装 / 换包装 + 反转方向）？** 见 AI 段判定下的警示块 ——

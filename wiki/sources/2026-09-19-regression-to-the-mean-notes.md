@@ -214,32 +214,39 @@ status: active
 6. **与 [[2026-09-19-selection-bias-notes]]：** 本讲行 49 回指上一讲为「选择效应」，
    **是本库判定 032 = 选择偏差的旁证之一**（见该页页首）。
 
-## 回填清单（本页只列，不改动其他页）
+## 回填清单（**已于 2026-09-19 执行完毕**）
 
-**建议新建概念页**
-- `regression-to-the-mean`（回归均值）—— 本讲核心概念，有 Galton 1886 一手来源
-- `regression-fallacy`（回归谬误）—— 两种错误；**建页时须注明命名归属未取到一手**
-- `funnel-experiment`（戴明漏斗实验）—— **本批可核度最高的引注**（四条规则 + 方差翻倍 + 福特案例）
-- `dunning-kruger-effect`（邓宁-克鲁格效应）—— 有 1999 一手论文 + 2020 批评文献
-- `common-cause-vs-special-cause`（普通原因 / 特殊原因变异）—— 本讲最重要的边界条件，库内尚无对应页
+> 原节标题为「本页只列，不改动其他页」。**2026-09-19 北洛指示分批执行回填清单**，本份属**第 1 批（概率与预测）**。
+> 执行记录见 [[log]] 同日 `edit` 条目。**「建议新建」与「建议回填」两半均已于 2026-09-19 执行完毕**（逐条状态见下）。
 
-**建议新建实体页**
-- `francis-galton`（弗朗西斯·高尔顿）：回归均值提出者（1886）
-- `daniel-kahneman`（丹尼尔·卡尼曼）：本讲与「参考类预测」一讲**共同引用**的人物（后者见本批 `reference-class-notes`）
-- `w-edwards-deming`（戴明）：漏斗实验与「普通 / 特殊原因变异」的提出者
-- `david-dunning`（大卫·邓宁）：DKE 提出者之一 —— 库内首次出现
+**建议新建概念页（✅ 已执行 —— 本批 3 份清单共 10 项建议，合并后建 5 页）**
+- ⚠️ `regression-to-the-mean`（回归均值）→ **不另建** —— **该页已于本轮之前建成**（[[regression-to-the-mean]]）。
+  本项属**重复建议**（起草时未核已建页）。**本页即为该页的素材来源。**
+- ⚠️ `regression-fallacy`（回归谬误）→ **不另建** —— 其内容（两种错误：错把波动当因果 / 错把运气当实力）
+  **已由 [[regression-to-the-mean]] 的「要点 4」承载**。**并入，不单列。**
+- ⚠️ `funnel-experiment`（戴明漏斗实验）→ **不并入新页，改作独立页的核心内容** ——
+  它是新页 [[common-cause-vs-special-cause]] 的**机制主体**（四条规则表 + 福特/马自达案例）。
+  **理由**：漏斗实验是「两类原因」这条判据的**论证工具**，单独成页会与判据页割裂。
+- ✅ `dunning-kruger-effect`（邓宁-克鲁格效应）→ **已建** [[dunning-kruger-effect]]
+- ✅ `common-cause-vs-special-cause`（普通原因 / 特殊原因变异）→ **已建** [[common-cause-vs-special-cause]]。
+  ⚠️ **建页时发现并已标注**：该术语**在本份文件中仅出现于行 237（AI 段）**，讲稿段从未使用 —— 已在新页页首显式分层。
 
-**建议回填**
-- [[goodharts-law]]：补 NCLB 案例 —— **指标变化里的假信号从哪来**（第 1 条关系）
-- [[luck-over-talent]]：补「观测结果 = 真实水平 + 随机运气」这条同源公式（第 2 条关系）
-- [[cybernetic-learning]]：**补「普通原因 / 特殊原因」这条边界条件**（第 4 条关系，最重要）
-- [[deliberate-practice]]：补同一判据 —— **什么时候该动手、什么时候该不动**（第 4 条关系）
-- [[heavy-tailed-distribution]]、[[multiplicative-world]]：**显式登记「回归均值 vs 重尾」这处张力**（第 3 条关系）
-- [[prediction-error]]、[[nassim-taleb]]：补「极端值最吸引解读」这条接点
-- [[2026-09-19-selection-bias-notes]]：补行 49 的回指旁证（该页已记）
-- [[modern-thinking-tools]]：全课地图更新模块二已收数；缺口表增列
-  「**NCLB 与「CEO 三年回落」两条断言不可追溯**」与
-  「**第 5 种候选缺陷形态（AI 段自称已核查）出现首个反例：本讲核查段结论大体正确**」
+**建议新建实体页（⚠️ 按硬约束不建）**
+- ⚠️ `francis-galton`、`daniel-kahneman`、`w-edwards-deming`、`david-dunning` → **不单列** ——
+  按本库既定硬约束「**具名人物不单列实体页**（除非缺口表点名）」，四人均在 [[regression-to-the-mean]] /
+  [[common-cause-vs-special-cause]] / [[dunning-kruger-effect]] 页内提及。
+
+**建议回填（⏳ 待执行）**
+- [ ] [[goodharts-law]]：补 NCLB 案例 —— **指标变化里的假信号从哪来**（本页第 1 条关系）
+- [ ] [[luck-over-talent]]：补「观测结果 = 真实水平 + 随机运气」这条同源公式（第 2 条关系）
+- [ ] [[cybernetic-learning]]：**补「普通原因 / 特殊原因」这条边界条件**（第 4 条关系，最重要）
+- [ ] [[deliberate-practice]]：补同一判据 —— **什么时候该动手、什么时候该不动**（第 4 条关系）
+- [ ] [[heavy-tailed-distribution]]、[[multiplicative-world]]：**显式登记「回归均值 vs 重尾」这处张力**（第 3 条关系）
+- [ ] [[prediction-error]]、[[nassim-taleb]]：补「极端值最吸引解读」这条接点
+- [x] [[2026-09-19-selection-bias-notes]]：补行 49 的回指旁证 —— **该页已自记，无需回填**
+- [x] [[modern-thinking-tools]]：全课地图更新模块二已收数 —— **已随本批完成**；
+      「缺口表增列 NCLB / CEO 三年回落两条不可追溯」与「第 5 种候选缺陷形态出现首个反例」
+      **两项仍待办**（后者已在本批新页 [[dunning-kruger-effect]] 内写实）
 
 ## 待办 / 开放问题
 
