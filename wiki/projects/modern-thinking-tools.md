@@ -86,7 +86,7 @@ status: active
 | **发刊词** | 2 讲 | **1**（《现代精英的思维武器库》） | **本项目** | AI 84%；误引与使用失真并存于同一段 |
 | **一 · 基本世界观** | 7 讲 | **6**（正文六讲；缺《问答：叙事和讲故事、造梦的区别是什么？》） | **本项目** | **落差最大**：第 1 讲 7 条引注全真 ↔ 第 6 讲整页 `low` |
 | **二 · 模块一 成长战略** | 19 讲 | **19**（正文 15：官方编号 007–021 + 问答 3 + 收官直播 1）**+ 2 份关联档案** | **本项目** | **已收（2026-09-18）**。**本库 AI 加工占比最高的一条线**（多讲 AI 段 50–87%），也是**「AI 段与讲稿价值方向对撞」第一次规模化出现**的地方；14 讲判 `medium`、**1 讲判 `low`**、**2 份关联档案判 `low`** |
-| 三 · 模块二 决策判断 | 19 讲 | **20 份 raw + 20 份 sources 页**（2026-09-19） | **本项目** | **sources 侧完成；派生页 16 已建；回填已部分执行**（2026-09-19：16 个派生页已建；026 / 028 / 030 三份的「回填清单」已执行完毕，见缺口表）。16 讲正文 + 4 篇问答（1 篇属模块三）；48 张图已落地 |
+| 三 · 模块二 决策判断 | 19 讲 | **20 份 raw + 20 份 sources 页**（2026-09-19） | **本项目** | **sources 侧完成；派生页 21 已建；回填部分执行**（2026-09-19：16 个派生页已建、同日追加 5 个；3 份 sources 页的「回填清单」已执行，另 3 份的「建议新建」部分已执行，见缺口表与「分批计划」）。16 讲正文 + 4 篇问答（1 篇属模块三）；48 张图已落地 |
 | 四 · 模块三 学习教育 | 12 讲 | **9** + 1 份配图素材（**另缺 053 / 054 两讲**） | **[[peak-performance]]** | 见该页；起点素材含 AI 生成段与伪引注。**059 问答跨到此区**（4 节） |
 | 五 · 模块四 赚钱逻辑 | 12 讲 | **13 份 raw + 13 份 sources 页 + 22 个派生页**（2026-09-19） | **本项目** | **材料侧完成**。12 讲正文 + 3 篇问答（1 篇属模块五）；22 张图已落地。**AI 段分布两极**：5 份含大段 AI（最大是沃德利地图的 65.9% 离题扩展）、8 份零 AI 段 |
 | 六 · 模块五 参与者 | 17 讲 | 0 | — | 未收。**但有 1 篇问答被收纳在模块四的目录下**（见下「两处错收」） |
@@ -178,7 +178,7 @@ status: active
 | **【2026-09-18 新增，非阻塞】** 第 1 讲 F 段错配名单里的**贝佐斯**，出处仍未找到 | 已查明 F 段批判的真实对象是 [[2026-09-18-narrative-self]]，其「四大支柱」与名单中的**赫拉利／卡尼曼／惠勒／塔勒布全部落点可查**，**唯独贝佐斯在该文档中 0 次出现** | 找出 F 段读过的**第三份文本**；或确认「贝佐斯」确系生成的编造（即原判定只对了一人）。**不影响 `goal`** |
 | **【2026-09-18 · 模块一新增，非阻塞】015「认知解耦」的归属三方不一** | ①库内 015 的 sources 页自述来自得到《精英日课》、未署名；②收官直播把它列为「模块一」的工具并称是自建模型；③外核：「认知解耦」是 **Stanovich** 的既有术语。**三者互不完全一致** | 需一份能判定归属的材料（得到课程页的讲次表，或 015 原始文章的署名段）。**收官直播已把它登记为「本份最需要追的一条」** |
 | **【2026-09-18 · 模块一新增；2026-09-19 扩到模块二；非阻塞】「注释段未随正文导出」这条成因线** | 模块一三处：019 的注释 `[2]`（毛泽东《反对党八股》/ 张石山《母系家谱》）两次查证均未取到原文；013 的 `[5]` 无注释锚点；009 的注释段未随正文导出。**2026-09-19 模块二再添两例**：026（信息价值）的 `[3]` 悬空且全文无「注释 / 参考」节；030（期权）只有 `[2]` 没有 `[1]`，注释段同样未导出。**五处同因** | 这些注释段在原文中都存在，属抓取层缺口。**这是本课最系统的一个抓取层缺口** —— 若日后能取回，应一次性回填五处。**已从「模块一的问题」升格为「本课的抓取层问题」** |
-| **【阻塞】【2026-09-19 新增】模块一 + 模块二 + 模块四的回填仍未执行** | 三个模块共 **28 + 16 + 22 个派生页**。**实测：53 份 sources 页列有「回填清单」、未执行项 215 条、去重后指向 103 个不同目标页**（按出现次数：本页 49 次、[[wanweigang]] 34 次、[[multiplicative-world]] 18 次…）。既有概念页（[[multiplicative-world]]、[[opportunity-systems]]、[[effectuation]]、[[explore-exploit-tradeoff]]、[[narrative-economics]]、[[uncertainty-as-fuel]]、[[hard-constraints]]、[[goodharts-law]]、[[structural-holes]] 等 30+ 页）**尚未收到这三个模块的新证据**（模块二仅 026 / 028 / 030 三份已执行） | 按各 sources 页的「回填清单」逐条执行（wiki/schema.md §2 第 6 步：一份素材通常触及 10–15 个页面）。**这是本项目当前最大的挂账，且是多轮量 —— 一轮做不完** |
+| **【阻塞】【2026-09-19 新增】模块一 + 模块二 + 模块四的回填仍未执行**（模块二已部分执行） | 三个模块共 **28 + 16 + 22 个派生页**。**实测：53 份 sources 页列有「回填清单」、未执行项 215 条、去重后指向 103 个不同目标页**（按出现次数：本页 49 次、[[wanweigang]] 34 次、[[multiplicative-world]] 18 次…）。**2026-09-19 本批进展（模块二）**：处置 3 份清单的「建议新建」共 10 项 → **合并后只建 5 页**（4 项已被既有页承载故不另建、1 项作子形态并入）；**「建议回填」18 条与其余 17 份清单仍未做**。既有概念页（[[multiplicative-world]]、[[opportunity-systems]]、[[effectuation]]、[[explore-exploit-tradeoff]]、[[narrative-economics]]、[[uncertainty-as-fuel]]、[[hard-constraints]]、[[goodharts-law]]、[[structural-holes]] 等 30+ 页）**尚未收到这三个模块的新证据** | 按各 sources 页的「回填清单」逐条执行（wiki/schema.md §2 第 6 步：一份素材通常触及 10–15 个页面）。**这是本项目当前最大的挂账，且是多轮量 —— 一轮做不完**。**分批方案见「区块三 · 模块二」下的「回填与派生页 · 分批计划」** |
 | **【非阻塞】【2026-09-19 新增】本模块（四）新增的三类缺陷形态候选** | ①**「AI 段离题扩展」**（沃德利地图：664 行《孙子兵法》，既非立场改写、非寄生、也非操作化延伸 —— **丢了主题**）；②**「讲稿收尾小诗由 AI 代笔且未署名」**（经济租 / 机会窗口各一处，同课 SDT 讲的同格式小诗**署名了 Gemini**，这两首没署）；③**「素材自述与素材实际不符」**（059 问答的 raw `author` 字段自称含 AI 加工段，**实测 0 段** —— 批次模板残留） | ①②③ 均**未过 wiki/schema.md §1.3 的「≥2 份素材」阈值**（①n=1、②n=2 但性质弱、③n=2：065 同型）。**建议先记账，不动 schema**。见开放问题 |
 | **【非阻塞】【2026-09-19 新增】059 问答暴露的真缺口：053 讲与 054 讲** | 059 问答的 5 节覆盖 052/054/055/056/057 —— **跳过了 053**，且 **053、054 两讲在本库既无 raw 也无 sources 页**（054 人力资本、信号筛选和社交资本：学校教育到底是干啥的；053 未识别标题）。它们是**模块三 学习教育**的讲次 | 需北洛裁定是否补收。**注意**：模块三归 [[peak-performance]]，本项目只登记 |
 | **【非阻塞】【2026-09-19 新增】030 讲的「核潜伏（nuclear latency）」首创文献未取到** | 该术语是国际安全研究的通行语（具备快速造出核武的能力而未实际拥有），**本次检索未取到单一权威首创文献**。030 讲行 137–139 用它做「极端期权」的例证 —— 是全讲最锋利的一处示范 | 需一份国际安全 / 核不扩散领域的材料。**注意区分**：术语真实，**只是首创文献未取到** —— 属「不可追溯」，**不是**「已核实不存在」 |
@@ -358,19 +358,42 @@ status: active
 > 飞书 wiki 节点《03_决策判断》，共 **20 个子节点** = 16 篇讲次正文 + 4 篇问答。
 > **讲次表编号 026–044（19 讲）**；4 篇问答覆盖 5 讲一段，与模块一同体例。
 > **编号为推定**（依据见「全课地图」下方的警示块）—— 已建的 20 份 sources 页里写的是旧的「022–037」，**待北洛裁定后统一回填**。
-> **本批 sources 页 20 份已建（前一会话完成，4,461 行）；16 个派生页已于 2026-09-19 建成**（见下）。
-> **回填仍未执行** —— 20 份 sources 页的「回填清单」除 026 / 028 / 030 三份外只列未做。
+> **本批 sources 页 20 份已建（前一会话完成，4,461 行）；派生页 21 个已建成**（16 个 2026-09-19 建成 + 同日追加 5 个，见下）。
+> **回填仅部分执行** —— 20 份 sources 页的「回填清单」中，本批只处理了 3 份的「**建议新建**」这一半；
+> **「建议回填」全部与其余 17 份的「建议新建」仍未做**（分批方案见本节末「分批计划」）。
 
 - 16 篇正文（讲次表编号 → sources 页）：026 无免费午餐定理｜027 概率分布｜028 颗粒度和因果中介｜
   030 贝叶斯先验｜031 信息价值｜032 凯利公式｜033 非遍历性｜034 脆弱和反脆弱｜036 期权｜
   037 状态杠杆｜038 选择偏差｜039 回归均值｜040 前景理论｜042 参考类｜043 超级预测｜044 OODA 环
 - 4 篇问答：029 使命召唤｜035 最佳模型｜041 结构矩阵 vs 甘特图｜**047 加大「内存」（讲次表落在模块三，属错收）**
 - sources 页：`wiki/sources/2026-09-19-{no-free-lunch-theorem,probability-distribution,granularity-causal-mediation,bayesian-prior,value-of-information,kelly-criterion,non-ergodicity,antifragility,optionality,state-leverage,selection-bias,regression-to-the-mean,prospect-theory,reference-class,superforecasting,ooda-loop}-notes.md` + 4 份 `qa-*-notes.md`
-- **派生页 · 概念（16）【2026-09-19 建成】**：
+- **派生页 · 概念（24）【16 页 2026-09-19 建成；两批追加 8 页】**：
 [[no-free-lunch-theorem]]｜[[probability-distribution]]｜[[granularity-causal-mediation]]｜[[bayesian-prior]]｜
 [[value-of-information]]｜[[kelly-criterion]]｜[[non-ergodicity]]｜[[antifragility]]｜[[optionality]]｜
 [[state-leverage]]｜[[selection-bias]]｜[[regression-to-the-mean]]｜[[prospect-theory]]｜[[reference-class]]｜
 [[superforecasting]]｜[[ooda-loop]]
+- **第 1 批追加（5 页，2026-09-19）**：[[planning-fallacy]]｜[[common-cause-vs-special-cause]]｜
+[[dunning-kruger-effect]]｜[[survivorship-bias]]｜[[berksons-paradox]]
+  —— 出自 reference-class / regression-to-the-mean / selection-bias **三份** sources 页的「回填清单」。
+  **合并原则**：三份清单共建议新建 **10 项**，经辨析后**只建 5 页** ——
+  ① 4 项（`reference-class-forecasting` / `inside-vs-outside-view` / `regression-fallacy` / `funnel-experiment`）
+  **已被既有页承载**（分别是 [[reference-class]] 与 [[regression-to-the-mean]]），**不另建**；
+  ② 1 项（`healthy-worker-effect`）作为**子形态并入** [[survivorship-bias]]；
+  ③ 8 项实体候选（`bent-flyvbjerg` / `roger-buehler` / `francis-galton` / `daniel-kahneman` /
+  `w-edwards-deming` / `david-dunning` / `joseph-berkson` / `alan-krueger`）**一律不单列** ——
+  按本库既定硬约束「具名人物不单列实体页（除非缺口表点名）」，**在概念页内提及即可**。
+- **第 2 批追加（3 页，2026-09-19）**：[[mental-accounting]]｜[[outcome-bias]]｜[[systems-over-goals]]
+  —— 出自 kelly-criterion / no-free-lunch-theorem / ooda-loop / prospect-theory / probability-distribution
+  **五份** sources 页的「回填清单」。
+  **⚠️ 本批压缩比是 16:3（约 5:1），原因与前批不同** —— 这 16 项建议里**绝大多数已被上一轮建的 16 个派生页实质承载**：
+  `inductive-bias` / `bias-vs-dogmatism` / `decision-meta-rules` 已在 [[no-free-lunch-theorem]]；
+  `orientation-as-schwerpunkt` / `decision-advantage` 已在 [[ooda-loop]]；
+  `loss-aversion` / `reference-point` 已在 [[prospect-theory]]；
+  `probability-distribution-thinking` 与凸性（`asymmetry-of-payoffs`）已在 [[probability-distribution]] 与 [[antifragility]]；
+  `fractional-kelly` 已在 [[kelly-criterion]]。
+  **只有 3 项属于「提了一句但未展开」** → 建页。
+  **⚠️ 这是「清单起草者与建页者不同步」的第二次出现**（第 1 批是 4 项重复建议）——
+  **推论：后续批次的「建议新建」应默认先假设已被承载，逐个核完再决定建不建。**
 
 > [!note] ⚠️ 本批 16 页标注的「官方编号」沿用其 sources 页的**旧编号（022–037）**，与本区块上方列出的
 > **「讲次表编号」（026–044）不一致**（例：信息价值 = 旧 026 / 讲次表 031；状态杠杆 = 旧 031 / 讲次表 037；
@@ -381,6 +404,34 @@ status: active
 > [!note] 本批建页时登记的「同一门课内部未辨析的张力」共 **2 处**（本库处理：登记，不裁决）
 > ① [[state-leverage]]：TOC 的短板逻辑（产出由最窄处决定）vs 第 2 讲的**重尾 / 乘法**世界 ——
 > 讲稿把前者用到个人生活却未辨析；② [[probability-distribution]]：下限优先的决策原则 vs 期望值最大化。
+
+**回填与派生页 · 分批计划**【2026-09-19 立】
+
+> **为什么分批**：本项目「模块二 + 模块四」的「回填清单」总量是**多轮量**（53 份 sources 页、215 条未执行项）。
+> 一轮做完会**质量失控**，故按**主题域**分批，每批只处理 3–6 份 sources 页。
+> **合并原则（北洛 2026-09-19 指示）**：新建实体页 / 概念页**能合并就合并，不必每条建议各建一页**。
+> 三条具体判据：① 已被既有页承载的 → **不另建**；② 同一概念的别名 / 子形态 → **并入**；
+> ③ 具名人物 → **不单列实体页**（除非缺口表点名），在概念页内提及。
+
+| 批 | 主题域 | 来源页（份） | 状态 |
+|---|---|---|---|
+| **1** | 概率与预测 | reference-class / regression-to-the-mean / selection-bias（3） | **✅ 建议新建部分已完成（2026-09-19）**：10 项建议 → **建 5 页**；「建议回填」18 条待做 |
+| **2** | 风险与决策 | kelly-criterion / no-free-lunch-theorem / ooda-loop / prospect-theory / probability-distribution（5） | **✅ 建议新建部分已完成（2026-09-19）**：16 项建议 → **建 3 页**（其余 13 项已被既有页承载）；「建议回填」28 条待做 |
+| **3** | 商业与战略 | alpha-strategy / business-leverage / economic-rent / jevons-paradox / platform-business-model / window-of-opportunity / wardley-map / granularity-causal-mediation / state-leverage / baumols-cost-disease（10） | **🟡 部分完成（2026-09-19）**：建议新建 28 项 → **只建 1 页**（theory-of-constraints，其余 27 项已被既有页承载）；建议回填 57 条 → **已做 11 个高频页**（约 30 条），**12 个单条目标页待做** |
+| 4 | 反脆弱与信任 | antifragility / trustworthiness / effectuation / game-selection / bayesian-prior / superforecasting（6） | 待做 |
+| 5 | 情绪 / 心流 / 问答 | 2026-09-18 批 + `qa-*` 各篇（约 22） | 待做 |
+
+> **⚠️ 本表的批次划分不是承诺** —— 它按**主题域**聚簇（而非按编号），目的是让「合并」有判断依据。
+> **两批的实测数据可作后续校准**：第 1 批 10 项建议 → 5 页（**2:1**）；第 2 批 16 项 → 3 页（**约 5:1**）。
+> 压缩的三个来源：① **已被既有页承载的建议**（第 1 批 4 项、第 2 批 13 项）；
+> ② **具名人物候选约 60 个按判据 ③ 全部不建**；③ **同一概念的别名 / 子形态并入**。
+> **⚠️ 压缩比在上升（2:1 → 5:1）**，说明「建议新建」这一半的存量正在被抽干 ——
+> **后续批次的价值会越来越集中在「建议回填」那一半。**
+>
+> **⏳ 已积压的「建议回填」**：第 1 批 18 条 + 第 2 批 28 条 = **46 条**，涉及约 25 个既有页。
+> **它需要逐个读目标页找落点，是独立的一轮工作** —— 建议下一批**专做回填**（不再新建），
+> 或按主题域把「新建 + 回填」两半一起做掉。执行它的是 skill `llm-wiki-backfill-execution`
+> （四类处置：搬 / 拒收 / 留给项目层 / 不入缺口表）。
 
 **区块四 · 模块四 赚钱逻辑**【2026-09-19 新增，本项目第四条主线】
 
@@ -405,10 +456,11 @@ status: active
   [[2026-09-19-qa-focus-vs-stubborn]]（覆盖 058/060/061/062/063，**回指核查发现 1 节错位、1 节部分错位**）、
   [[2026-09-19-qa-boss-shorting]]（覆盖 066/067/068/**069**，**归属模块五，只登记不改挂**）
 
-**派生页 · 概念（15）**：
+**派生页 · 概念（16）**：
 [[economic-rent]]｜[[alpha-vs-beta]]｜[[business-leverage]]｜[[window-of-opportunity]]｜[[innovation-diffusion]]｜
 [[wardley-map]]｜[[baumols-cost-disease]]｜[[jevons-paradox]]｜[[platform-business-model]]｜[[enshittification]]｜
-[[entrustability]]｜[[focus-vs-stubborn]]｜[[formative-assessment]]｜[[parental-monitoring]]
+[[entrustability]]｜[[focus-vs-stubborn]]｜[[formative-assessment]]｜[[parental-monitoring]]｜
+[[theory-of-constraints]]
 
 **派生页 · 实体（7）**：
 [[michael-porter]]｜[[naval-ravikant]]｜[[simon-wardley]]｜[[william-baumol]]｜[[william-stanley-jevons]]｜

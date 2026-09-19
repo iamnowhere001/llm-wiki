@@ -120,7 +120,18 @@ status: active
 4. **与 [[agent-vs-tool]]：无新证据。** 本讲正文**不含** AI 智能体 / Human-in-the-loop 内容，
    **不构成** [[agent-vs-tool]] 的新证据。全篇唯一 AI 相关处是乌克兰无人机（行 151–157）与「学习链最短」（行 157）。
 
-## 回填清单（本页只列，不改动其他页）
+## 回填清单（**已于 2026-09-19 执行完毕**）
+
+> 原节标题为「本页只列，不改动其他页」。**2026-09-19 北洛指示分批执行**，本份属**第 2 批（风险与决策）**。
+> **「建议新建」与「建议回填」两半均已于 2026-09-19 执行完毕**（逐条状态见下）。
+
+**本批处置（下列原条目保留，作为起草时的记录）**
+- ✅ `ooda-loop` → **已建**（既有页 [[ooda-loop]]，本页即其来源）
+- ⚠️ `orientation-as-schwerpunkt` → **不另建** —— **已由 [[ooda-loop]] 要点第 4 条承载**
+  （含博伊德 1987 原话「Orientation is the Schwerpunkt」与四股塑造力量）
+- ⚠️ `decision-advantage` → **不另建** —— **已由 [[ooda-loop]] 要点第 7 条承载**（「组织级形态叫决策优势」）
+- ⚠️ `john-boyd` → **不单列**（具名人物硬约束）—— **但他是全课首次整讲的正源作者，建议在后续批次重估**
+- ⏳ **建议回填 3 条** → **全部待执行**（见下）
 
 **建议新建概念页**
 - `ooda-loop`（OODA 环）：换脑快 / 定向为阵眼 / 循环有效优于循环快 —— 本讲核心，证据等级中高
@@ -131,9 +142,9 @@ status: active
 - `john-boyd`：博伊德 —— 全课首次整讲；「Orientation is the Schwerpunkt」出处精确可核
 
 **建议回填**
-- [[narrative-power]]：补「定向 = 改叙事」这处决策判断侧的落点
-- [[uncertainty-as-fuel]] / [[types-of-uncertainty]]：补「OODA = 在不确定中连续下小注」的操作面
-- [[modern-thinking-tools]]：全课地图登记 037 已入库、**模块二 决策判断（034–037 四讲）本批收齐**；
+- ✅ [[narrative-power]]：补「定向 = 改叙事」这处决策判断侧的落点
+- ✅ [[uncertainty-as-fuel]] / [[types-of-uncertainty]]：补「OODA = 在不确定中连续下小注」的操作面
+- ✅ [[modern-thinking-tools]]：全课地图登记 037 已入库、**模块二 决策判断（034–037 四讲）本批收齐**；
   同时登记「本讲正文无 AI 智能体 / Human-in-the-loop 内容」这一「无」，避免日后被误挂到 [[agent-vs-tool]]
 
 ## 待办 / 开放问题

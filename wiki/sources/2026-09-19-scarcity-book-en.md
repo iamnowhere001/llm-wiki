@@ -35,7 +35,7 @@ status: active
 
 **本库第一份「作者即原研究者」的一手专著。**
 
-此前的一手材料是 3 篇期刊论文、3 份作者本人的非期刊文本（Bush 1945 / Berners-Lee 1999 / Luhmann 1981）
+此前的一手材料是 3 篇期刊论文、3 份作者本人的非期刊文本（[[vannevar-bush]] 1945 / [[tim-berners-lee]] 1999 / [[niklas-luhmann]] 1981）
 与 1 本专著（[[2026-09-19-art-of-impossible-book-en]]，Kotler —— 一个自助书作者转述别人的研究）。
 **本份不同**：本书的核心实验（Mani, Mullainathan, Shafir & Zhao）**作者就是本书作者本人**。
 库内此前所有关于《稀缺》的断言都源自二手转述，**这是第一次拿到原作者的自述**。
@@ -110,7 +110,7 @@ status: active
 > [!warning] 这不是漏掉一个细节，是漏掉了论证的对称性
 > 原书的命题是：**稀缺俘获心智（scarcity captures the mind），同一机制同时产出收益与代价**。
 > 只讲代价，读者会得到「稀缺只有坏处」的结论 —— 而原书明确反对这个简化。
-> **这正好印证本库已有的判断：通俗化常做减法，减掉的可能是最硬的部分。**
+> **这正好印证本库已有的判断：通俗化常做减法，减掉的可能是最硬的部分** —— 见 [[source-pool-bias]]，此处减掉的不是一个细节，是一个结构性的一半。
 > 此处减掉的**是一个结构性的一半**。
 
 #### D2. 原书明确说「这不能用压力 / 焦虑解释」—— 与讲稿的解释路径形成张力
@@ -135,7 +135,7 @@ diminished performance (the bandwidth tax), a pattern that **anxiety and stress 
 行 6792–6799：「we know next to nothing about the cognitive side of the economy…
 **We do not have the data to answer these questions.**」
 
-作者只提出「**Gross National Bandwidth**」的**呼吁**（行 6802），不是结论。
+作者只提出「**Gross National Bandwidth**」的**呼吁**（行 6802），不是结论 —— 这是本库 [[intelligent-life-system]] 里「预算带宽」那一维的宏观版本：两边用的是同一个隐喻（带宽 = 可分配的心智容量），原书给的是它的经验测量，那一页给的是它的系统设计。
 **库内引用《稀缺》时若把它当成「已确立的宏观论断」，就越过了作者的自我限定。**
 
 #### D5. 利益关系：作者是 ideas42 联合创始人
@@ -168,6 +168,8 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 > - 一手校准由「**已有断言需要复核**」驱动（我写过什么，现在要回原文查）。
 >
 > **本库的缺口表机制假设所有收录都是缺口驱动的 —— 这条假设对校准类动作不成立。**
+> 这也给 [[cybernetic-learning]] 的推论划了一条边界：它说「没有目标，大脑不会标记什么重要」，
+> 但**校准类动作恰恰是在没有新目标的情况下发生的** —— 它的驱动力是「我已经写过什么」，不是「我还缺什么」。
 > **本轮处置**：如实登记「本份不对应任何现有缺口条目」，并说明其真实位置 ——
 > 本库一手校准机制的第 6 例，校准对象是 [[modern-thinking-tools]] 模块一的派生页 [[opportunity-systems]]。
 > **是否为「校准」单列一种入口，待北洛裁定。**（本轮不擅自改 [[schema]]。）

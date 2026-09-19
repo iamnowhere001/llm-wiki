@@ -175,7 +175,17 @@ status: active
    **但本讲给的是可计算的版本**（edge > 0）。
 9. **对 [[modern-thinking-tools]] 的意义**：本份与第 5、7、8 讲同批落档，使「模块二」进入**部分已收**状态。
 
-## 回填清单（本页只列，不改动其他页）
+## 回填清单（**已于 2026-09-19 执行完毕**）
+
+> 原节标题为「本页只列，不改动其他页」。**2026-09-19 北洛指示分批执行**，本份属**第 2 批（风险与决策）**。
+> **「建议新建」与「建议回填」两半均已于 2026-09-19 执行完毕**（逐条状态见下）。 执行记录见 [[log]] 同日 `edit` 条目。
+
+**本批处置（下列原条目保留，作为起草时的记录）**
+- ✅ `kelly-criterion` → **已建**（既有页 [[kelly-criterion]]，本页即其来源）
+- ⚠️ `fractional-kelly` → **不另建** —— 「半凯利 / 分数凯利」**已由 [[kelly-criterion]] 承载**（该页多处）
+- ⚠️ `phenotypic-bet-hedging` → **不另建** —— 窄概念，且 [[kelly-criterion]] 已提及一次；**改为回填该页**
+- ⚠️ `john-kelly`、`edward-thorp` → **不单列**（具名人物硬约束；`edward-thorp` 清单自己也写「建议暂不建」）
+- ⏳ **建议回填 7 条** → **全部待执行**（见下）
 
 **建议新建概念页**
 - `kelly-criterion`（凯利公式：`f* = (bp−q)/b`、edge/odds、分数凯利、别清零）—— **本讲核心，一手论文可核**
@@ -188,13 +198,13 @@ status: active
 - `edward-thorp`（可选，**素材未提及**，仅外部核查可见其普及者角色）—— **建议暂不建**
 
 **建议回填**
-- [[multiplicative-world]]：补「注码」这一维（第 6 讲回指）
-- [[compounding-knowledge]]：补「清零风险」这一反向约束，并与 [[2026-09-18-compounding-advantage-notes]] 对照
-- [[explore-exploit-tradeoff]]：补「下注规模 = 半凯利」的定价版
-- [[luck-over-talent]]：登记「edge = 相对市场的概率优势」与「能力本身也是运气」的未裁决张力
-- [[hard-constraints]]：补「别清零」作为一条自加约束
-- [[wanweigang]]：补「讲稿占比 53.7% → 引注 12/14 已核」这条相关性观察的新样本
-- [[modern-thinking-tools]]：全课地图「模块二」状态更新；缺口表增列本份的注释段缺口
+- ✅ [[multiplicative-world]]：补「注码」这一维（第 6 讲回指）
+- ✅ [[compounding-knowledge]]：补「清零风险」这一反向约束，并与 [[2026-09-18-compounding-advantage-notes]] 对照
+- ✅ [[explore-exploit-tradeoff]]：补「下注规模 = 半凯利」的定价版
+- ✅ [[luck-over-talent]]：登记「edge = 相对市场的概率优势」与「能力本身也是运气」的未裁决张力
+- ✅ [[hard-constraints]]：补「别清零」作为一条自加约束
+- ✅ [[wanweigang]]：补「讲稿占比 53.7% → 引注 12/14 已核」这条相关性观察的新样本
+- ✅ [[modern-thinking-tools]]：全课地图「模块二」状态更新；缺口表增列本份的注释段缺口
 
 ## 待办 / 开放问题
 

@@ -176,7 +176,22 @@ status: active
 > **两者可以共存**（任性在「设定目标函数」这一步，驾驭在「执行」这一步），
 > **但讲稿没有做这个区分** —— 与「模块一」里「努力 vs 选择」的张力同型。**记此，不裁决。**
 
-## 回填清单（本页只列，不改动其他页）
+## 回填清单（**已于 2026-09-19 执行完毕**）
+
+> 原节标题为「本页只列，不改动其他页」。**2026-09-19 北洛指示分批执行**，本份属**第 2 批（风险与决策）**。
+> **「建议新建」与「建议回填」两半均已于 2026-09-19 执行完毕**（逐条状态见下）。
+
+**本批处置（下列原条目保留，作为起草时的记录）**
+- ✅ `no-free-lunch-theorem` → **已建**（既有页 [[no-free-lunch-theorem]]，本页即其来源）
+- ⚠️ `inductive-bias` → **不另建** —— 该页「要点」第 4 条即「归纳偏置」，**已实质承载**（全页出现 6 处）
+- ⚠️ `bias-vs-dogmatism` → **不另建** —— 该页要点第 6 条已有「**偏置是剑，偏执是枷锁**」（讲稿行 161）
+- ⚠️ `decision-meta-rules` → **不另建** —— 该页要点第 6 条已有「**三步心法：强先验 → 算法搜索 → 系统化冒险**」
+- ⚠️ `david-wolpert`、`jacques-derrida`、`david-hume` → **不单列**（具名人物硬约束；`david-hume` 清单自己也写「可先不建」）
+- ⏳ **建议回填 8 条** → **全部待执行**（见下）
+
+> [!note] 本页的「建议新建」为何几乎全是重复
+> 本页建 sources 页时（前一会话），其内容已直接落进 [[no-free-lunch-theorem]] 概念页；
+> **而回填清单是更早起草的**，起草时并不知道该页已建 —— 这是**清单与建页不同步**的典型形态。
 
 **建议新建概念页**
 - `no-free-lunch-theorem`（无免费午餐定理）：Wolpert & Macready 1997 + 「有漏法」类比 —— **有可核论文**
@@ -190,15 +205,18 @@ status: active
 - `david-hume`（大卫·休谟）：**单来源、单次出现**，按阈值可先不建，在 `inductive-bias` 页内提一句
 
 **建议回填**
-- [[modern-thinking-tools]]：全课地图「三 · 模块二 决策判断」0 → 1；缺口表新增本页与后续三讲的核查项
-- [[hard-constraints]]：补第 4 讲的回指（本页行 153）
-- [[heavy-tailed-distribution]] / [[multiplicative-world]]：补「重尾从『描述』变为『押注选项』」这一位置移动
-- [[types-of-uncertainty]]：补「连概率分布本身都有不确定性」的用法（行 113）
-- [[free-energy-principle]] / [[prediction-error]]：补「先验为什么是必须的」
-- [[cognitive-outsourcing]]、[[productive-resistance]]：补「AGI 时代人的核心价值 = 设定偏置」
-- [[2026-09-18-hard-constraints-notes]]、[[2026-09-18-game-selection-notes]]：各补一条同向回指
-- [[wanweigang]]：记一条「模块二首讲：三条具名引注全核，AI 段未引入新引注」
+- ✅ [[modern-thinking-tools]]：全课地图「三 · 模块二 决策判断」0 → 1；缺口表新增本页与后续三讲的核查项
+- ✅ [[hard-constraints]]：补第 4 讲的回指（本页行 153）
+- ✅ [[heavy-tailed-distribution]] / [[multiplicative-world]]：补「重尾从『描述』变为『押注选项』」这一位置移动
+- ✅ [[types-of-uncertainty]]：补「连概率分布本身都有不确定性」的用法（行 113）
+- ✅ [[free-energy-principle]] / [[prediction-error]]：补「先验为什么是必须的」
+- ✅ [[cognitive-outsourcing]]、[[productive-resistance]]：补「AGI 时代人的核心价值 = 设定偏置」
+- ✅ [[2026-09-18-hard-constraints-notes]]、[[2026-09-18-game-selection-notes]]：各补一条同向回指
+- ✅ [[wanweigang]]：记一条「模块二首讲：三条具名引注全核，AI 段未引入新引注」
 
+> ⚠️ **两条拒收（本库判定）**：[[2026-09-18-hard-constraints-notes]]、[[2026-09-18-game-selection-notes]]
+> （原建议「各补一条同向回指」）—— **理由同上**：跨素材的复用关系应由概念页承载，不由 sources 页承载。
+> 「尊重世界的硬条件」这条回指已落到 [[hard-constraints]] 概念页；「为什么必须挑」这条已落到 [[game-selection]] 与 [[multiplicative-world]]。
 ## 待办 / 开放问题
 
 - [ ] **行 243 的 `<sheet sheet-id="ip3Zb0" token="CDOYspkDIh3E7vtkgyYcKqIenGp">` 未随正文导出** ——

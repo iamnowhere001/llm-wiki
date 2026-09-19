@@ -78,6 +78,14 @@ EVIDENCE_TYPES = ("concept", "entity", "analysis")
 
 LINK_RE = re.compile(r"\[\[([^\[\]|]+)(?:\|([^\[\]]+))?\]\]")
 
+# 正文链接密度（2026-09-19 引入）—— 回答「这页是在论述，还是在罗列」。
+# `related` 字段是结构化挂靠，正文内链才是论述过程中真正发生的引用。一页很长却几乎
+# 不在正文里引用别的页，通常是「清单式挂靠」：页面被挂进了知识网，但没有参与论证。
+# 阈值 1.5 不是理论值，是实测出来的：素材页密度中位数从 09-18 批次的 1.68 掉到
+# 09-19 批次的 1.08（低于 1.5 的占比 40% → 83%），1.5 正好落在两个批次之间。
+BODY_LINK_DENSITY_MIN = 1.5     # 条 / 千字正文
+BODY_LINK_MIN_CHARS = 1000      # 短页密度波动大，不参与该项检查
+
 # ---------------------------------------------------------------- 基础工具
 
 
@@ -151,7 +159,8 @@ def parse_frontmatter(text):
 
 
 class Page(object):
-    __slots__ = ("path", "relpath", "fm", "body", "slug", "title", "type", "links")
+    __slots__ = ("path", "relpath", "fm", "body", "slug", "title", "type",
+                 "links", "body_links")
 
     def __init__(self, path, relpath, fm, body):
         self.path = path
@@ -164,12 +173,15 @@ class Page(object):
         # 提取链接前先剥掉代码块与行内代码 —— 文档里的示例（`[[x]]`）不是真链接
         scan = re.sub(r"```[\s\S]*?```", "", body)
         scan = re.sub(r"`[^`\n]*`", "", scan)
-        self.links = []
+        self.body_links = []
         for m in LINK_RE.finditer(scan):
             target = m.group(1).strip()
             if target:
-                self.links.append(target)
-        # frontmatter 里的 related 也算出链
+                self.body_links.append(target)
+        # 出链 = 正文内链 + frontmatter 的 related。
+        # 两者要分开记：related 是结构化挂靠，正文内链才是论述中真发生的引用，
+        # 密度检查（BODY_LINK_DENSITY_MIN）只认后者。
+        self.links = list(self.body_links)
         for r in self.fm.get("related") or []:
             if isinstance(r, str) and r.strip():
                 self.links.append(r.strip())
@@ -561,6 +573,30 @@ def cmd_lint(root):
                 advisories.append("    %-36s %d 份，全部来自 %s" % (s, n, f))
             if len(same_family) > 10:
                 advisories.append("    …… 另有 %d 个" % (len(same_family) - 10))
+        # 正文链接密度过低 —— 文章很长，却几乎不在正文里引用别的页。
+        # 典型成因是批量建页时的「清单式挂靠」：related 字段写满了，正文里一句没提。
+        # 这类页面进了知识网却没参与论证，链接总数上看不出来，只能按密度查。
+        thin = []
+        for p in pages:
+            # meta 页是目录 / 规范 / 日志，它们的链接本就是罗列，不适用密度判据
+            if p.type == "meta" or len(p.body) < BODY_LINK_MIN_CHARS:
+                continue
+            n = len({t for t in p.body_links if t in by_slug and t != p.slug})
+            d = n / (len(p.body) / 1000.0)
+            if d < BODY_LINK_DENSITY_MIN:
+                thin.append((d, p.slug, len(p.body), n))
+        if thin:
+            thin.sort()
+            advisories.append(
+                "以下 %d 个页面正文链接密度 < %s 条/千字 —— 文章很长却几乎不在正文里引用其他页，"
+                "通常是「清单式挂靠」（只写进 `related` 字段）而不是论述性引用，"
+                "页面进了知识网但没有参与论证："
+                % (len(thin), BODY_LINK_DENSITY_MIN))
+            for d, s, nc, n in thin[:12]:
+                advisories.append("    %-46s %.2f 条/千字（%s 字，%d 条）"
+                                  % (s, d, format(nc, ","), n))
+            if len(thin) > 12:
+                advisories.append("    …… 另有 %d 个" % (len(thin) - 12))
         # 缺口表已清空但项目还开着 —— 按 wiki/schema.md §1.6，可以收尾了
         for p in sorted(projects, key=lambda x: x.slug):
             if p.stage in ("planning", "active") and gap_table_rows(p.body) == 0:
