@@ -4,9 +4,10 @@ type: concept
 slug: critique-target-distortion
 tags: [本库方法论, 证据问题, AI生成, 已推翻]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [narrative-as-first-principle, narrative-power, narrative-identity, narrative-industrialization, meta-narrative, llm-wiki-research, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, modern-thinking-tools]
+evidence_tier: crossed
 confidence: low
 status: stale
 ---
@@ -25,6 +26,10 @@ status: stale
 > 完整论证见 [[2026-09-18-narrative-self]] 的「本库层面的重大修正」一节。
 >
 > **`status: stale`** —— 依 `AGENTS.md` 4.3「过期：新素材已推翻旧结论 → 旧页标 `status: stale`」。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 这件事的价值在哪里：方法对了，推断错了
 
@@ -113,6 +118,10 @@ F 段（`raw/2026-09-18-narrative-first-principle.md` 行 617–681，AI 生成�
       （同一次对话里读了两份文档，随后把它们混成一份）
 - [ ] **逆命题仍然值得查**：AI 生成的**支持性**内容会不会也张冠李戴（把关联文档的特征安给主文）？
       本库目前只在批判块上看到（本库立论，`low`）
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

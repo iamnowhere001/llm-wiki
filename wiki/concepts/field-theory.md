@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-field-and-habitus-notes]
 related: [symbolic-capital, pierre-bourdieu, opportunity-systems, victim-mentality, compensatory-control, multiplicative-world, social-capital, deliberate-practice, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 布迪厄的分析框架：**社会不是一个统一大市场，而是许多相对独立的场域**，
 > 每个场域有自己的规则（Doxa）、位置、惯习与资本 —— 「你优不优秀」不由你决定，**由场域的记分规则决定**。
 > 一句话判据：**努力不是硬通货，合规才是**（行 66）。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-field-and-habitus-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

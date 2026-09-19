@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
 related: [thomas-sowell, keith-stanovich, cognitive-decoupling, albert-ellis, emotion-regulation-toolkit, stimulus-response-gap, emotional-granularity]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-three-selves-notes, 2026-09-18-narrative-first-principle]
 related: [three-selves, narrative-identity, narrative-self-vs-bodily-self, narrative-as-first-principle, free-energy-principle, modern-thinking-tools, 2026-09-18-three-selves-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 - **类型**：人物（哲学家 / 认知科学家）
 - **别名**：Daniel C. Dennett
 - **外部链接**：无（本库未收录其著作）
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 

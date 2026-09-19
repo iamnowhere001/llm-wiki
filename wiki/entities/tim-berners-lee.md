@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-berners-lee-link-topology, 2026-09-18-appleton-bidirectional-links]
 related: [bidirectional-links, pkm-history, ted-nelson]
+evidence_tier: crossed
 confidence: high
 status: active
 ---

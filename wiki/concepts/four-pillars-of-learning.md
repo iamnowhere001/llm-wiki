@@ -4,9 +4,10 @@ type: concept
 slug: four-pillars-of-learning
 tags: [学习, 神经科学, 机制, 框架]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes]
 related: [stanislas-dehaene, prediction-error, retrieval-practice, spaced-repetition, consolidation-and-sleep, innate-knowledge, peak-performance, character-skills, 2026-09-18-how-we-learn-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 迪昂提出的框架：**有效学习需要四个神经机制同时在场 —— 注意（Attention）、主动参与（Active Engagement）、
 > 错误反馈（Error Feedback）、巩固（Consolidation）。缺一不可。**
 > 它把「怎么学」从方法清单改写成了**机制清单** —— 不是「你应该这样做」，而是「不这样大脑就不记录」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-how-we-learn-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -69,6 +74,10 @@ status: active
 - [ ] 迪昂是否真的用「四大支柱」这个词？**素材是笔记转述，本库无原书**。
       「four pillars」是原书框架（素材行 158 明说第三部分是「学习的四大支柱」），
       但具体表述的忠实度**未核实**。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

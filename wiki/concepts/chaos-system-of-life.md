@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-yjengo-escape-inner-friction]
 related: [yjengo, internal-friction, stimulus-response-gap, emotion-awareness, peak-performance, 2026-09-18-art-of-impossible-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 人生是混沌系统：为什么「正确的人生」是妄念
 
 > YJango 的核心论证：**人生并非由一个个孤立的选择线性排列而成，而是一个混沌系统** —— 每个选择都会引发新的分支和连锁反应，而**任何分支中都必然同时包含美好与遗憾**。因此「纠正过去以求一个正确人生」是永无止境的妄念。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-yjengo-escape-inner-friction]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

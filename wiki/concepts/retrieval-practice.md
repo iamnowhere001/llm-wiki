@@ -4,9 +4,10 @@ type: concept
 slug: retrieval-practice
 tags: [学习, 记忆, 方法, 机制]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]
 related: [four-pillars-of-learning, spaced-repetition, prediction-error, cybernetic-learning, dan-koe, deliberate-play, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes, cognitive-debt, writing-as-thinking, 2026-09-18-writing-is-thinking]
+evidence_tier: primary
 confidence: medium
 status: active
 ---
@@ -44,7 +45,7 @@ status: active
 > [!warning] 这是一处「外推式失真」
 > 引注是真的、论文是真的、结论方向对了一半 —— **失真的地方是「比较的对象」**：
 > 把「提取练习 > 概念图」外推成了「概念图 < 重复阅读」，而后者是原研究**没有做的比较**。
-> **本库尚未决定是否把它立为第五类证据问题**，详见 [[2026-09-18-how-we-learn-notes]] 的核查表。
+> **本库已裁定：并入第五类「引注的使用失真」，不再单列**（2026-09-18 与「错位引用」合并，见 [[decisions]]「『引注的使用失真』是怎么合并出来的」）。详见 [[2026-09-18-how-we-learn-notes]] 的核查表。
 
 ### 2026-09-18 第二轮核查：本库第一份一手文献
 
@@ -99,6 +100,10 @@ status: active
   - **2026-09-18 进展**：一手综述 [[2026-09-18-dunlosky-learning-techniques]] 也未收录「概念图 vs 重复阅读」这一比较（行 3315–3317 只比较了练习测试与 restudy）。**仍未获支撑，但已排除一个可能的佐证来源。**
 - [ ] 「提取练习」在中译本里的准确措辞未核（本库无原书）。
 - [ ] 与「主动回忆」（active recall）是否为同一概念？**素材未做区分。**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

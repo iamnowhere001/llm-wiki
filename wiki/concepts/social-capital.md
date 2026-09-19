@@ -4,9 +4,10 @@ type: concept
 slug: social-capital
 tags: [社会资本, 切蒂, 阶层流动, 网络, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-social-capital-structural-holes-notes]
 related: [structural-holes, opportunity-systems, raj-chetty, multiplicative-world, luck-over-talent, modern-thinking-tools]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -20,12 +21,16 @@ status: active
 **行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系，该 raw 共 646 行）。
 讲稿段行 35–147；其后的 AI 加工段行 155–646 **不作为本页依据**（仅用于登记限定）。
 
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-social-capital-structural-holes-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
+
 ## 要点
 
 - **三种社会资本**（行 63–65）：**经济连通性**（Economic Connectedness，跨阶层互动/友谊）／
   **社会凝聚力**（Social Cohesion，朋友圈紧密度）／**公民参与度**（Civic Engagement，参加社区活动）。
 - **只有经济连通性有效，且效应不小**：出身贫寒的孩子若在经济连通性高的社区长大，**成年收入平均提高 20%**（行 71）。
-  「天天跟朋友聚会、热心社区事务」感觉良好，但对**向上流动**几乎没有显著预测力（行 67）。
+  「天天跟朋友聚会、热心社区事务」感觉良好，但对**向上流动**几乎没有显著预测力（行 69）。
 - **机制是常识的扩散，不是给钱**：致富靠的是「什么样的举止是体面的、怎么申请好大学、哪些行业可能是风口」——
   富人从未刻意保密，但穷人的圈子里确实没有（行 70）。
 - **两个约束**：**暴露度（exposure）**不足（不同阶层碰撞的场合太少）+ **交友偏差（friending bias）**

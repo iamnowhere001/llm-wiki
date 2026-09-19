@@ -4,9 +4,9 @@ type: source
 slug: 2026-09-18-narrative-first-principle
 tags: [叙事, 世界观, 混层, AI生成, 叙事自我, 引注核查, 素材, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle]
-related: [narrative-self-vs-bodily-self, cybernetic-learning, emotion-awareness, cognitive-reappraisal, thinking-vs-feeling, internal-friction, 2026-09-18-emotion-awareness-notes, wanweigang, modern-thinking-tools, llm-wiki-research, traecode-pkm-article, 2026-09-18-narrative-self, meta-narrative, narrative-reframing, narrative-industrialization, yuval-harari]
+related: [narrative-self-vs-bodily-self, cybernetic-learning, emotion-awareness, cognitive-reappraisal, thinking-vs-feeling, internal-friction, 2026-09-18-emotion-awareness-notes, wanweigang, modern-thinking-tools, llm-wiki-research, traecode-pkm-article, 2026-09-18-narrative-self, meta-narrative, narrative-reframing, narrative-industrialization, yuval-harari, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 confidence: medium
 status: active
 ---
@@ -135,7 +135,7 @@ status: active
 > **下面这一节保留为记录** —— 它所示的「计数法」本身仍然有效，
 > 失效的是从计数到「幻觉」的那一步推断。
 
-已有的五类证据问题都不覆盖它：
+已有的六类证据问题都不覆盖它：
 
 | 类别 | 被伪造/放弃的是什么 |
 |---|---|
@@ -201,6 +201,21 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
    **但它零引注、自陈「基于实证研究」却举不出一项**。
    判据同 [[peak-performance]] 已确立的那条：**判据是材料类型，不是有没有这个形态。**
    **故：部分缓解该开放问题，不解决。Ricoeur / McAdams 一手仍然要找。**
+
+   > [!warning] 2026-09-19 更正 —— 上面这条判定的措辞有**术语错配**，且「部分缓解」不成立
+   > 本库第 7 次一手校准（[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]，
+   > 凭据为 White & Epston《Narrative Means to Therapeutic Ends》1990 英文原书全文）实测：
+   > **原书 `narrative identity` 0 命中** —— 该术语属 **McAdams / Ricoeur**，**不是 White & Epston 的**。
+   > 本书用的是 `storying` / `re-storying` / `text analogy`。
+   >
+   > **后果**：上面把 E 段称为「叙事身份理论的操作形态」，等于**把一份 AI 生成的操作材料
+   > 与 White & Epston 的方法并置**，两者实际**没有源流关系**。
+   > 因此「**部分缓解**该开放问题」**应撤回** ——
+   > [[narrative-identity]] 与 [[narrative-self-vs-bodily-self]] 要的 Ricoeur / McAdams 一手
+   > **仍完全缺失**，本轮反而**撤销了一份被误认的替代品**。
+   >
+   > **原文保留不删** —— 它记录的正是「术语用错会让缺口看起来被填上」这一形态，
+   > 与 [[2026-09-19-scarcity-book-en]] §三 第 3 条同型。
 
 5. **对 [[traecode-pkm-article]] 的动机层有弱贡献**（待裁定是否写入）：
    F 段「AI 时代即叙事工业化时代，信息与知识贬值，构建意义的能力成为最稀缺资源」
@@ -279,7 +294,12 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
 - [ ] **【等北洛】** 裁定「批判对象失真」是否入 `AGENTS.md` 4.1 分类表
 - [x] ~~核对「万维钢」实体页是否已存在~~ —— **已有 [[wanweigang]]**（2026-09-18 核对）。本素材是本库收录的其**第 11 份**材料，且第一次来自「基本世界观」板块（前九讲属「教育与学习」，另一份待核）
 - [ ] 取回 Wolfram Physics Project 关于 Ruliad 的一手说明（本素材只转述）
-- [ ] 取回 Ricoeur / McAdams 的叙事身份理论一手 —— E 段是操作形态，无出处
+- [ ] 取回 Ricoeur / McAdams 的叙事身份理论一手 —— E 段是操作形态，无出处。
+      **2026-09-19 更新（本库第 7 次一手校准）**：White & Epston 1990 原书**不能**替代它 ——
+      该书 `narrative identity` **0 命中**，该术语不属 White & Epston。
+      **本条的优先级因此上升**：库内「叙事身份」这条线**至今没有一份一手材料**，
+      而 [[narrative-identity]] 与 [[narrative-reframing]] 两页都建立在它上面。
+      详见 [[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]] §二 A2。
 - [x] ~~追一份素材：主文行 83 的 `<cite>` 指向飞书文档「叙事自我」（doc-id `GNALwzikvijEwCkDYZ9cHkyQnRg`），
       **本库未收录**，与本页面主题直接相关~~
       —— **2026-09-18 已收录**：`raw/2026-09-18-narrative-self.md`（2,279 行）。
@@ -293,3 +313,5 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
 ## 来源
 
 - [[2026-09-18-narrative-first-principle]]
+
+> [!note] **raw 元数据更正（2026-09-19，人类裁定）**：本页对应 raw 文件的 `capture_note` 里一处指向 `AGENTS.md` 旧章节号的指针已失效，按抓取元数据例外条款**优先「移除」而非「改正」**（原值：`（AGENTS.md 1.1）`）。**文件行数未变，本页的行区间引用不受影响。**依据见 [[decisions]]。

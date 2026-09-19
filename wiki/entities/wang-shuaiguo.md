@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]
 related: [cognitive-debt, cognitive-outsourcing, nataliya-kosmyna]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 清华大学在线教育中心主任。**「虚假的掌握感」（false sense of understanding）的提出者**，
 > 也是清华「**三层解耦架构**」的负责人。
 > **他是本主题中身份与工作内容被官方通稿独立印证的一位。**
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 一句话定位
 

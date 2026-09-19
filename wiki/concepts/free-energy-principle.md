@@ -4,9 +4,10 @@ type: concept
 slug: free-energy-principle
 tags: [神经科学, 预测, 机制, 未验证]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-three-selves-notes]
 related: [prediction-error, cybernetic-learning, three-selves, narrative-as-first-principle, four-pillars-of-learning, ai-convergence, intelligent-life-system, 2026-09-18-narrative-first-principle, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-three-selves-notes, modern-thinking-tools]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 每次收到「惊讶」就会抬高自由能，以此提醒自己**修改内部模型**，尽量把自由能压低。
 >
 > 在本素材里，它承担的是一个具体角色：**给「叙事的第一个作用是预测处理」提供机制底稿。**
+
+> [!warning] 名义交叉，实质同源
+> 本页有 3 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -199,6 +204,10 @@ status: active
       [[ai-convergence]] 提供了一个可观察信号（它进了「AI 口头禅」名单），但那**只是一份名单，不是频次**。
       若要检验本页那条「适用范围被过度扩张」的批评，**需要的是频次数据，而不是一次登场**。
       这是本库第一次意识到**「流行度」本身也可以是一种材料**。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

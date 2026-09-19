@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes]
 related: [peak-performance, ordinary-people-peak-performance, emotion-regulation-toolkit, cognitive-reappraisal, stoic-control-dichotomy, cybernetic-learning, mental-strength, four-pillars-of-learning, 2026-09-18-how-we-learn-notes]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

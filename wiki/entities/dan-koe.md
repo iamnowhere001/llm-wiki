@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dankoe-remember-what-you-read]
 related: [commonplace-book, cybernetic-learning, commonplace-book-vs-llm-wiki, eden]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 - **账号**：@thedankoe（X 蓝标认证）
 - **商业关联**：[[eden]]（eden.so）的运营者
 - **外部链接**：https://x.com/thedankoe
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-dankoe-remember-what-you-read]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 

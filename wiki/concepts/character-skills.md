@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
 related: [adam-grant, peak-performance, luck-over-talent, hard-constraints, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination, modern-thinking-tools, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

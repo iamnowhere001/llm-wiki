@@ -4,9 +4,10 @@ type: concept
 slug: multiplicative-world
 tags: [复利, 正反馈, 马太效应, 决策, 世界观]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-heavy-tail-notes]
-related: [heavy-tailed-distribution, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, cybernetic-learning, deliberate-practice, steady-state-survival-logic, agent-vs-tool, 2026-09-18-steady-state-trap-notes]
+updated: 2026-09-19
+sources: [2026-09-18-heavy-tail-notes, 2026-09-19-non-ergodicity-notes, 2026-09-19-optionality-notes]
+related: [heavy-tailed-distribution, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, cybernetic-learning, deliberate-practice, steady-state-survival-logic, agent-vs-tool, 2026-09-18-steady-state-trap-notes, explore-exploit-tradeoff]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > 做一次得一次钱、与过往积累无关 → **加法世界**（线性、无复利）。
 >
 > **这两个世界的分界，是素材给出的最锋利的一条判据**：它把「更努力」换成「换结构」。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 3 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -56,6 +61,31 @@ status: active
 **反转是这条概念的价值所在**：在加法世界里最优的「补齐短板」，搬到乘法世界就是错的；
 反之亦然。**用错世界的方法论，比不努力更糟。**
 
+## 2026-09-19 回填（028 讲）：乘数里含一个可以把你变成 0 的因子
+
+本页讲的是乘法的**收益侧**（增量 = 动作 × 存量）。[[2026-09-19-non-ergodicity-notes]]（模块二第 7 讲）
+补的是它的**风险侧**。
+
+行 67–81 的掷硬币实验：每把 +50% / −40%，**每把期望 +5%**，但一正一反 = ×0.9，
+连玩 100 次，100 万变成不到 1 万。机制是**几何平均 ≠ 算术平均**
+（行 91：`√(1.5×0.6) ≈ 0.9487 < 1`）加上**吸收壁**（行 93）—— **归零之后没有下一轮**。
+行 133：「**江湖险恶，本钱小没有资格乱折腾。**」
+
+**对本页的直接影响**：本页的「做长板、单点做到一流」在乘法世界里是对的，
+**但它有一个从未写出的前提 —— 你不能先被清零。**
+**（这一句是本库的补充；028 讲没有引用本页，本页也没有提过方差。）**
+
+## 2026-09-19 回填（030 讲）：重尾 → 多下注，有一条成本约束
+
+本页的推论容易被读成「多保留可能性」。[[2026-09-19-optionality-notes]]（模块二第 9 讲）行 157–161 给了上限：
+
+> 「**期权可不一定是越多越好，更不一定能拿着永远不动 —— 很多期权是有持有成本的，而且会过期。**」
+
+行 161 批评「太想保留期权了，为此宁愿支付很高的费用」；行 159 引入**破釜沉舟**（主动砍掉选项以取信于人）。
+
+**这是库内第一次给「重尾 → 多下注」这条推论加上成本约束。**
+（030 讲未点名本页，接缝由本库做出。）
+
 ## 与其他页面的关系
 
 - **是 [[heavy-tailed-distribution]] 的成因**：正反馈 → 重尾形态。两者是因果两端，不要分开引用。
@@ -79,6 +109,10 @@ status: active
 - [ ] **本概念的可证伪性存疑** —— 「加入乘法世界」是一个建议，不是一个可测命题。
       按 `AGENTS.md`，它属「显式加工品 / 待验证的方法」，**不冒充事实断言，故不降级**；
       但引用时不应当作已验证的规律
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-cognitive-load-theory, 2026-09-18-transfer-bridging, 2026-09-18-tacit-knowledge]
 related: [cognitive-load-theory, mental-models, transfer-of-learning, tacit-knowledge, explanatory-framework, 2026-09-18-mental-representations, 2026-09-18-cognitive-load-theory, zettelkasten, llm-wiki-pattern]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 把多个相关元素**打包成一个整体**的认知结构 —— 知识的压缩包、模式识别的模板。
 > 它在工作记忆里只占一个槽位，这是它唯一但决定性的作用。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 4 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 

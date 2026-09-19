@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum]
 related: [agents-md, 2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum, llm-wiki-pattern, obsidian]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

@@ -4,9 +4,10 @@ type: concept
 slug: psychological-safety
 tags: [组织行为学, 心理安全, 团队, 安全感, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-sense-of-security-notes]
 related: [amy-edmondson, attachment-theory, autonomy-support, scaffolding, victim-mentality, self-determination-theory]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 >
 > 本库经 017 讲（`raw/2026-09-18-sense-of-security-notes.md` 讲稿段行 134–146）进入。
 > **定义与 180 团队研究已核实**；**「心理安全＝绩效两倍」一句未在 Google 原报告定位 → 弱引注（未验证）**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-sense-of-security-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -102,6 +107,10 @@ sources 页核查：**未能在 Google 原报告 / re:Work 材料中定位到「
 - [ ] **收录 Edmondson 1999 一手文献**，以及 Project Aristotle 的原始报告 —— 本库目前只有转述。
 - [ ] **因果方向** —— 是心理安全带来绩效，还是高绩效团队**事后**更容易感到安全？素材与公开报道都未回答。
 - [ ] **「心理安全」与「心理安全感」的中文译名统一** —— 库内两页（本页与 [[attachment-theory]]）用词不同，待统一。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

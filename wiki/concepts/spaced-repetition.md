@@ -4,9 +4,10 @@ type: concept
 slug: spaced-repetition
 tags: [学习, 记忆, 方法, 神经科学]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]
 related: [four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, prediction-error, peak-performance, john-dunlosky, how-we-learn-and-how-to-improve, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes]
+evidence_tier: primary
 confidence: medium
 status: active
 ---
@@ -66,7 +67,7 @@ status: active
 ## 与其他页面的关系
 
 - **是 [[four-pillars-of-learning]] 中「巩固」支柱的操作方法。**
-- **与 [[retrieval-practice]] 是配套动作** —— 素材行 466「**复习即检索**：利用遗忘曲线，在快要遗忘时进行提取练习」。
+- **与 [[retrieval-practice]] 是配套动作** —— 素材行 514「**复习即检索**：利用遗忘曲线，在快要遗忘时进行提取练习」。
   **「在快要遗忘时提取」是两个概念的交点。**
 - **与 [[consolidation-and-sleep]] 共享同一个解释** —— 间隔效应之所以有效，部分原因是它给了睡眠更多次「存档」机会（行 134）。
 
@@ -76,6 +77,10 @@ status: active
   - **2026-09-18 进展**：已由 [[2026-09-18-dunlosky-learning-techniques]] 定位到转引 —— **Cepeda et al., 2009** 与 **Cepeda, Vul, Rohrer, Wixted, & Pashler, 2008**（行 2949–2951）。**但本库仍只有转引，原文未收录。**
 - [ ] 「24 小时」这个具体阈值是否有研究支撑？**未验证。** —— 2026-09-18 补充：一手文献给的是「间隔取决于期望保持时长」这一**原则**，未给任何固定阈值。
 - [ ] 与 Anki / 闪卡类工具的实践文献**本库无**（本项目不评产品，但工具背后的算法原理属知识范围）。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

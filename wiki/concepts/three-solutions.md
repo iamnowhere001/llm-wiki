@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus]
 related: [wanweigang, intelligent-life-system, ai-convergence, steady-state-survival-logic, victim-mentality, mental-models, cybernetic-learning, deliberate-practice, heavy-tailed-distribution, modern-thinking-tools, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-steady-state-trap-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > **传统观念**（押注勤奋与德行）、**市侩哲学**（把世界压成单一指标）、
 > **精英解法**（基于一个会自我纠错的复杂世界模型）。
 > 三者的根本区别不是勤奋程度，是**头脑里的「思维模型」**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-modern-thinking-tools-prospectus]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

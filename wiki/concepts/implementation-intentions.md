@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]
 related: [stimulus-response-gap, woop, cognitive-decoupling, internal-friction, rumination, scaffolding, peter-gollwitzer, self-determination-theory, 2026-09-18-woop-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > 把「**什么时候做、在哪里做、怎么做**」**提前绑定到情境线索上**，写成一句
 > 「**如果（If）……那么（Then）……**」，即 `If 情境 → Then 行动`。
 > 它是**往 [[stimulus-response-gap]] 那段间隙里预填的程序**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-woop-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, 2026-09-18-capability-seeking-theorem-notes]
 related: [cybernetic-learning, narrative-power, narrative-as-first-principle, emotion-awareness, prediction-error, 2026-09-18-narrative-first-principle, modern-thinking-tools, meta-narrative, 2026-09-18-capability-seeking-theorem-notes]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 >
 > **本页 `low`**：这句话本身只有一句断言；真正让它有分量的是它接上了 [[cybernetic-learning]] 的链条 ——
 > 而那个接缝是本库自己做的，素材没说破。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 3 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
 related: [internal-friction, narrative-self-vs-bodily-self, cognitive-decoupling, emotion-as-coupling, emotion-regulation-toolkit, emotion-awareness, peak-performance]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

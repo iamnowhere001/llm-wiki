@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-extended-mind-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
 related: [four-pillars-of-learning, prediction-error, retrieval-practice, spaced-repetition, consolidation-and-sleep, innate-knowledge, cybernetic-learning, human-sponge, scaffolding, deliberate-play, enactment-effect, character-skills, stanislas-dehaene, john-dunlosky, peak-performance, llm-wiki-research, ordinary-people-peak-performance, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes, cognitive-debt, brain-rot]
+evidence_tier: primary
 confidence: medium
 status: active
 ---

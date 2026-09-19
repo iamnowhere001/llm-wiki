@@ -4,9 +4,10 @@ type: concept
 slug: steady-state-survival-logic
 tags: [世界观, 文化滞后, 匮乏, 从众, 心智模型, 万维钢, 争议]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-steady-state-trap-notes]
 related: [agent-vs-tool, uncertainty-as-fuel, types-of-uncertainty, hard-constraints, modern-thinking-tools, wanweigang, 2026-09-18-steady-state-trap-notes, 2026-09-18-uncertainty-fuel-notes, mental-models, character-skills, victim-mentality, multiplicative-world, imperfectionism, deliberate-practice]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 > 它在那个环境里能保命，在高波动的现代世界则把人锁死。
 >
 > **三条基因 → 四类推论**：资源匮乏 / 强从众 / 简单模型 → 风险厌恶 · 低能动性 · 面子文化 · 指标崇拜。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-steady-state-trap-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 为什么它还在（机制：文化滞后）
 
@@ -117,6 +122,14 @@ status: active
 - [ ] 核「侘寂起源于物资匮乏」—— 与主流叙述（茶道 / 禅宗）不一致，**可查而未查**
 - [ ] 核泡菜 / 炸鱼薯条 / potluck 的「匮乏起源」说（现为未验证断言）
 - [ ] 取回《隐藏的博弈》「次级奖励」一手书页（现为二手印证）
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
+## 来源
+
+- [[2026-09-18-steady-state-trap-notes]]（A 段讲稿 —— 本页唯一素材）
 
 > [!note] 单来源声明
 > 本页内容**全部来自一份素材**（[[2026-09-18-steady-state-trap-notes]] 的 A 段讲稿）。

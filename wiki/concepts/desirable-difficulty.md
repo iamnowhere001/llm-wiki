@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-desirable-difficulty, 2026-09-18-dunlosky-learning-techniques]
 related: [retrieval-practice, spaced-repetition, consolidation-and-sleep, embodied-cognition, cognitive-load-theory, deliberate-practice, robert-bjork, wanweigang, 2026-09-18-desirable-difficulty, 2026-09-18-cognitive-load-theory, peak-performance, how-we-learn-and-how-to-improve, productive-resistance, cognitive-debt]
+evidence_tier: primary
 confidence: medium
 status: active
 ---
@@ -89,7 +90,7 @@ status: active
 - [ ] **比约克 1994 的原始文献未收录**。素材给了人名、机构、年代，但无文献题名 —— 属**可追溯但未核实**。
 - [ ] 「72% 的学生报告考试没那么紧张」—— 素材标「有研究发现」，**无年份无出处，标（未验证）**。
 - [ ] 本素材的数字簇（26.17% 中国青少年抑郁检出率、439 项研究系统综述、8 小时睡眠最优、
-      20 万中小学生双减研究）**全部未给出处** —— 属本库第五类「弱引注」，逐条标（未验证），不整页降级。
+      20 万中小学生双减研究）**全部未给出处** —— 属本库**第四类**「弱引注」（**不是第五类** —— 第五类是「引注的使用失真」），逐条标（未验证），不整页降级。
 - [ ] 睡眠时长建议（成人 ≥7 小时、青少年 8–10 小时）与 [[consolidation-and-sleep]] 应交叉核对。
 
 ## 来源

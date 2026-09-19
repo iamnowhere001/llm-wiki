@@ -4,9 +4,10 @@ type: concept
 slug: commonplace-book
 tags: [知识管理, 历史, 创作]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-dankoe-remember-what-you-read]
+updated: 2026-09-19
+sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [cybernetic-learning, commonplace-book-vs-llm-wiki, compounding-knowledge, pkm-history, zettelkasten]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -89,7 +90,12 @@ status: active
 | 摘录传统 | 共同笔记簿（本页） | 按阅读顺序记录 | 靠**记性**与重读 |
 | 结构化连接传统 | [[zettelkasten]] | 原子卡片 + 编号 + 交叉引用 | 靠**连接**与枢纽笔记 |
 
-**差别不只是「有没有编号」，而是取用机制。** 共同笔记簿假设你会重读，因此记录顺序重要；卡片盒假设你不会重读，因此**连接**必须显式写下来。[[niklas-luhmann]] 的「我从不从零开始写作，只是取出已准备好的思考」正是后者才能给出的说法。
+**差别不只是「有没有编号」，而是取用机制。** 共同笔记簿假设你会重读，因此记录顺序重要；卡片盒假设你不会重读，因此**连接**必须显式写下来 —— 卢曼的原话是「有些东西会渗漏掉（versickern），有些笔记我们再也不会见到」，所以他必须靠**关键词索引**与**连接**来调节「重新发现」的过程。
+
+> [!warning] 2026-09-19 更正：此处原引的卢曼引文未获一手支撑
+> 本页原写：「[[niklas-luhmann]] 的『我从不从零开始写作，只是取出已准备好的思考』正是后者才能给出的说法。」
+> **该引文在一手文献中查不到** —— Kuehn 英译全文（21 个段落）中 `scratch` 与 `prepared` 各 0 次，德文原刊 PDF 中 `fange` / `Null` / `vorbereit` 亦各 0 次；且原文主旨与之**相反**（出版物「不是通过抄写卡片盒里已经放好的东西而产生的」）。
+> 已替换为可直接核验的表述。完整核查见 [[2026-09-19-luhmann-communicating-with-slip-boxes]]。
 
 **一个应当保留的怀疑**：本页引用的名人清单与「燃料 vs 收藏」的判断都来自 [[dan-koe]] 的通俗转述（见下方置信度说明）。把它放进 [[pkm-history]] 的谱系时，本库只采用了**方向性判断**（笔记需被用于产出），没有采用其证据强度。
 
@@ -102,6 +108,9 @@ status: active
 ## 来源
 
 - [[2026-09-18-dankoe-remember-what-you-read]]
+- [[2026-09-19-luhmann-communicating-with-slip-boxes]]（2026-09-19 新增，**只支撑「取用机制」那一行对比**，不支撑本页其余内容）
 
 > [!note] 置信度说明
 > 本页关于历史实践者的描述来自 [[dan-koe]] 的通俗转述，**未核对一手史料**。其中《沉思录》与达芬奇的例子是学界共识，但清单中其余人名的说法需要验证。`confidence: medium`。
+> 2026-09-19 新增的一手文献**只支撑卡片盒一侧的取用机制**，不改变本页其余部分的置信度 ——
+> 因此 `evidence_tier` 升为 `crossed`，`confidence` **保持 `medium` 不变**（两者是两个维度，见 `wiki/schema.md` §1.2）。

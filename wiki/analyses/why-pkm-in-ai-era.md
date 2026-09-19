@@ -4,9 +4,10 @@ type: analysis
 slug: why-pkm-in-ai-era
 tags: [知识管理, LLM, 论证]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-frand-hixon-pkm, 2026-09-18-bush-as-we-may-think, 2026-09-18-writing-is-thinking]
+updated: 2026-09-19
+sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-frand-hixon-pkm, 2026-09-18-bush-as-we-may-think, 2026-09-18-writing-is-thinking, 2026-09-19-value-of-information-notes]
 related: [llm-wiki-pattern, cybernetic-learning, rag-vs-wiki, pkm-history, commonplace-book, use-cases, cognitive-outsourcing, cognitive-debt, productive-resistance]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -268,6 +269,28 @@ AI 会自信地编造，也会自信地**误读你的意思**。当你把一批�
 > 「必须由人类裁定」—— 但它只覆盖 frontmatter 的清理例外，不覆盖 ingest 本身。
 > **已记入 [[llm-wiki-research]] 的缺口表。**
 
+## 四·补二｜「消费价值 ≠ 决策价值」—— 一条支持、一条张力（2026-09-19 回填）
+
+[[2026-09-19-value-of-information-notes]]（模块二第 5 讲）行 61 主动设问，而它设的正是本页要回答的那个问题：
+
+> 「不是说要**终身学习**吗？……不是说『**无用之用方为大用**』吗？」
+
+它给的答案是：**「你也可以把注意力成本花费在跟决策无关的信息上，但那是消费价值，不是决策价值。」**
+
+**它对本页是双面的，两面都要记：**
+
+- **支持面 —— 它给「理由 2」补了一个成本侧的判据。** 行 43「**只有当一条信息能够改变你的实际行动时，它才有价值**」。
+  按此，**建库的门槛不是「有没有用」，而是「能不能改变行动」** —— 这与本页「先有目标，再有库」同向，
+  且比本页更可操作（它给了一个可以当场回答的问题）。
+- **张力面 —— 它承认「消费价值」的存在，却没说它该不该被积累。**
+  本页整条论证建立在「库要服务于目标」上；而 026 讲承认存在**不服务于目标的、纯消费性的**信息接触，
+  只说「那是另一种价值」。**它没有回答：那种价值该不该进库？**
+
+**本库的判断（`low`）**：两者未必冲突 —— 可以主张「**决策价值进库，消费价值不进库**」。
+但这条主张有直接的操作后果：**本库需要在收录时判断一次「这是决策价值还是消费价值」，
+而现行 `ingest` 流程（`wiki/schema.md` §2 的十一步）没有这一步。**
+**已记入下方「开放问题」。**
+
 ## 五、本库自身的对照
 
 **这个问题对本库是一面镜子。** 因为本库目前正踩在两个缺口上（见 [[overview]]）：
@@ -316,6 +339,10 @@ AI 会自信地编造，也会自信地**误读你的意思**。当你把一批�
 - **与 [[cognitive-outsourcing]] 是「补丁」关系（2026-09-18 新增）**：那页说的是「外包会退化」，
   本页说的是「为什么仍要建库」。**两者不冲突，但合起来要求一个更窄的立场** ——
   建库、外包维护、**但不外包判断**。见「四·补」。
+- **与 [[notes-apps-vs-llm-wiki]] 是「应用层」关系（2026-09-19 新增）**：本页回答「要不要上路」，
+  那页回答「上路时旧工具怎么办」。它把本页「四·补」的界线落成了可操作的分工表
+  （发现矛盾可外包 / 裁定矛盾不可外包），并给出了一个**本页没有的反向推论**：
+  手工维护里有一部分不是浪费，是认知训练。
 
 ## 来源
 

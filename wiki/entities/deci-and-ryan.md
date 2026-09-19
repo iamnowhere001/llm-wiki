@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-self-determination-theory-notes, 2026-09-18-growth-strategy-engineering-manual, 2026-09-18-autonomy-support]
 related: [self-determination-theory, autonomy-support, character-skills, flow-terminology, woop, 2026-09-18-self-determination-theory-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

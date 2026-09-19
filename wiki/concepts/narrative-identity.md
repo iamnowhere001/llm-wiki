@@ -4,9 +4,10 @@ type: concept
 slug: narrative-identity
 tags: [叙事, 自我, 心理学, 身份, AI生成]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
-related: [narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, three-selves, daniel-dennett, cognitive-reappraisal, internal-friction, emotion-awareness, 2026-09-18-narrative-first-principle, 2026-09-18-three-selves-notes, modern-thinking-tools, narrative-reframing, meta-narrative]
+related: [narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, three-selves, daniel-dennett, cognitive-reappraisal, internal-friction, emotion-awareness, 2026-09-18-narrative-first-principle, 2026-09-18-three-selves-notes, modern-thinking-tools, narrative-reframing, meta-narrative, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 >
 > **本库之所以建这一页，是因为 [[narrative-self-vs-bodily-self]] 的开放问题里点名要它。**
 > **但本页 `low`：库内支撑这一页的全部内容来自一份 AI 生成的、零引注的练习手册。**
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -175,10 +180,24 @@ E 段自称「**科学性：基于心理学理论和实证研究**」—— 但*
       **第一次写出了「丹·麦克亚当斯（Dan McAdams）的人格心理学」** —— 他是叙事身份理论的主要提出者（西北大学）。
       **但只有名字，没有文献。** 该页的 D 段还给了另一个可追的名字：**卡尼曼**（体验自我 / 记忆自我，行 232）。
       **两个名字，把「找不到出处」变成了「知道该找谁」** —— 开放问题**部分缓解，未解决**
+- [ ] **2026-09-19 追加：一个候选替代品已被排除。** 本库第 7 次一手校准拿到
+      White & Epston《Narrative Means to Therapeutic Ends》(1990) 原书全文
+      （[[2026-09-19-white-epston-narrative-means-therapeutic-ends-en]]），实测
+      **该书 `narrative identity` 0 命中** —— 叙事身份（narrative identity）是
+      **McAdams / Ricoeur 的术语，不是 White & Epston 的**。
+      **本页的开放问题因此没有缓解，反而更清楚：要找的是 McAdams / Ricoeur，不是叙事疗法。**
+      （同时撤销一处误认：[[2026-09-18-narrative-first-principle]] 曾把其 E 段称为
+      「叙事身份理论的操作形态」，该判定已更正。）
 - [ ] 「身体自我是否也是一个叙事？」—— [[narrative-self-vs-bodily-self]] 与本页共同未答的问题
 - [ ] 「记忆剪辑」「因果幻觉」这两条自陈特征的实证依据是什么？E 段零引注
-- [ ] 12 个练习是 AI 凭空生成的，还是有原型？**需要一份人类设计的同类方案做对照**
+- [ ] 12 个练习是 AI 凭空生成的，还是有原型？**需要一份人类设计的同类方案做对照**。
+      **2026-09-19 更新：本轮校准排除了一个候选** —— White & Epston 1990 与 E 段**无源流关系**
+      （术语集不重叠）。**本条仍未解决**，且「该找谁」的范围缩小了。
 - [ ] 叙事身份的「流动性」主张，与创伤情境下叙事固化的临床现象如何兼容？
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

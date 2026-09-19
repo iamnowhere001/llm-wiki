@@ -4,9 +4,10 @@ type: concept
 slug: narrative-as-first-principle
 tags: [叙事, 世界观, 物理学, 哲学, 隐喻]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [ruliad, narrative-power, narrative-identity, narrative-self-vs-bodily-self, critique-target-distortion, uncertainty-as-fuel, wishful-thinking-layers, types-of-uncertainty, wanweigang, 2026-09-18-narrative-first-principle, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-hard-constraints-notes, modern-thinking-tools, narrative-industrialization, meta-narrative]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 是因为**只有这样的定律才允许「讲故事」这件事发生**。
 >
 > **本库对它的判断：这是一句有启发性的隐喻，不是一个物理主张。** 连素材作者自己在注释里都承认了这一点。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -116,6 +121,10 @@ cluster decomposition）。素材用「后续讨论」这个中性措辞是准�
       只是被包装成了「第一性原理」。需要哲学侧材料判断。
 - [ ] Albert 与 Judes 的争论本库只有摘要层，未取回原文 —— 谁占上风不知道。
 - [ ] 素材说这是「六条世界观」之第一条，**其余五条未收录**，无法判断本条在其中的位置。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

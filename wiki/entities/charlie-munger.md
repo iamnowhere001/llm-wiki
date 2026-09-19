@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-emotion-awareness-notes, 2026-09-18-mental-representations, 2026-09-18-clear-thinking-notes, 2026-09-18-hard-constraints-notes]
 related: [mental-models, three-solutions, victim-mentality, shane-parrish, marcus-aurelius, intelligent-life-system, modern-thinking-tools, emotion-awareness, 2026-09-18-modern-thinking-tools-prospectus]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

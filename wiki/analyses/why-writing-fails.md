@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-tacit-knowledge]
 related: [writing-as-thinking, tacit-knowledge, alain-de-botton, michael-polanyi, cognitive-outsourcing, cognitive-debt, traecode-pkm-article]
+evidence_tier: crossed
 confidence: low
 status: active
 ---

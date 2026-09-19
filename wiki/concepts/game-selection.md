@@ -4,9 +4,10 @@ type: concept
 slug: game-selection
 tags: [赛道选择, 体制内, 体制外, 叙事权, 万维钢, 得到课程, 引注归属]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-game-selection-notes, 2026-09-18-qa-deepen-or-move-notes]
-related: [multiplicative-world, luck-over-talent, deliberate-practice, narrative-power, compensatory-control, steady-state-survival-logic, goodharts-law, effectuation, explore-exploit-tradeoff, modern-thinking-tools]
+updated: 2026-09-19
+sources: [2026-09-18-game-selection-notes, 2026-09-18-qa-deepen-or-move-notes, 2026-09-19-value-of-information-notes, 2026-09-19-non-ergodicity-notes]
+related: [multiplicative-world, luck-over-talent, deliberate-practice, narrative-power, compensatory-control, steady-state-survival-logic, goodharts-law, effectuation, explore-exploit-tradeoff, modern-thinking-tools, field-theory]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -21,6 +22,10 @@ status: active
 **行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系）。
 018 讲 raw（`raw/2026-09-18-game-selection-notes.md`，共 187 行）讲稿段行 33–177，收束小诗行 181–187，**无 AI 加工段**；
 五分类来自问答 raw（`raw/2026-09-18-qa-deepen-or-move-notes.md`，共 167 行）。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 4 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -93,6 +98,16 @@ status: active
 - 与 [[narrative-power]]：赛道选择在此被定义为一次**叙事位置的争夺**。
 - 与 [[luck-over-talent]]：见「边界」第一条。
 - [[goodharts-law]] 与 [[effectuation]] 是本讲派生的两个独立概念页。
+- **026 讲把本页压缩成半句话（2026-09-19 回填）**：[[2026-09-19-value-of-information-notes]] 行 123 建议员工关心
+  「你们公司这个特定**场域**的**奖励函数**」——「场域」是 019 讲的工具（[[field-theory]]）、
+  「奖励函数」是本页体制内逻辑的用语。**两讲的工具被压进一句建议里**，本页因此多一处入链。
+- **028 讲给了本页一个「换数学身份」的变体（2026-09-19 回填）**：[[2026-09-19-non-ergodicity-notes]] 行 155
+  「既然大多数散户都跑不赢大盘指数，那你为什么不做大盘指数呢」——
+  **本页问「选哪条赛道」（体制内 / 体制外），028 讲问「换一个数学身份」（从玩家变成庄家）**，
+  行 165 的判语是「**个体玩家怕方差，而庄家爱方差**」。
+  **两者共享「先换位置、再谈策略」这一形式，但 028 讲的不是职业赛道，是风险结构** ——
+  **本页的五分类里没有「庄家」这一格**（太上老君 / 工匠 / 散仙 / 小妖都不等于庄家）。
+  **本库登记为接缝，不合并**（028 讲未引用本页）。
 
 ## 开放问题
 

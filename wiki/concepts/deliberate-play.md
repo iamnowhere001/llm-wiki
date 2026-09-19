@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [imperfectionism, scaffolding, character-skills, peak-performance, cybernetic-learning, 2026-09-18-hidden-potential-notes, 2026-09-18-art-of-impossible-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > **刻意游戏 = 刻意练习 ∩ 自由玩耍。** 像自由玩耍一样**好玩**，但像刻意练习一样**为掌握而结构化**。
 > 它的作用不是让练习变轻松，而是**让高强度练习能持续下去** —— 因为「练得动」比「练得苦」更决定最终结果。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

@@ -114,3 +114,5 @@ status: active
 - [[llm-wiki-pattern]]
 - [[llm-wiki-research]]
 - [[ingest-query-lint]]
+
+> [!note] **raw 元数据更正（2026-09-19，人类裁定）**：本页对应 raw 文件的 `capture_note` 里一处指向 `AGENTS.md` 旧章节号的指针已失效，按抓取元数据例外条款**优先「移除」而非「改正」**（原值：`（AGENTS.md 1.1）`）。**文件行数未变，本页的行区间引用不受影响。**依据见 [[decisions]]。

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hard-constraints-notes]
 related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal, hard-constraints, 2026-09-18-hard-constraints-notes, modern-thinking-tools]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 - **类型**：人物（管理学作者、顾问）
 - **别名**：Stephen Covey / 史蒂芬·柯维（两种译名在本库素材中并存）
 - **外部链接**：—
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 

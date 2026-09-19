@@ -4,9 +4,10 @@ type: concept
 slug: icap-framework
 tags: [学习, 教育, 分类框架, 认知参与, AI时代, 实操]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-icap-framework]
 related: [cognitive-load-theory, schema-psychology, desirable-difficulty, transfer-of-learning, deliberate-practice, michelene-chi, wanweigang, 2026-09-18-icap-framework, llm-wiki-pattern, extended-mind, notebooklm, ingest-query-lint, peak-performance, productive-resistance, cognitive-outsourcing]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > 结论一句：学习效果 **I > C > A > P**。
 > **AI 时代的核心用法**：让 AI 当陪练和考官，**不要当写手** —— 否则你把自己的 C 层外包出去，
 > 反而退化成 P 层。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-icap-framework]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -232,6 +237,10 @@ I 层的价值来自「对方真的不同意你」。而 LLM 的默认倾向是*
 - [ ] 本库补充的两条陷阱（AI 无立场 / AI 总结制造更深的流利度幻觉）
       **无来源，属本库立论**，需实践检验或被素材推翻。
 - [ ] 本页未读的 AI 段：行 1010–1487（「三维标记法」等）未纳入。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -4,9 +4,10 @@ type: concept
 slug: subject-object-shift
 tags: [心理学, 元认知, 身份认同, 凯根, 心智发展, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-identity-metacognition-notes]
 related: [three-selves, narrative-identity, meta-narrative, robert-kegan, daniel-dennett, attachment-theory]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 >
 > **在身份认同上的应用**：「你不再『就是』某个身份，你只是『正在调用』某个身份」（素材行 146）。
 > 本库经 016 讲（`raw/2026-09-18-identity-metacognition-notes.md` 讲稿段行 39–197）进入。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-identity-metacognition-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -122,6 +127,10 @@ sources 页核查：该表述是 **Graeber & Wengrow《The Dawn of Everything》
 - [ ] **「政客≈细菌」的出处** —— 是素材未给，还是确无出处？**待核**（区分「不可追溯」与「不存在」）。
 - [ ] **Mauss 术语归属失真是否登记为综述的一类** —— sources 页列为待裁定事项。
 - [ ] **「剥离对方主体性」的伦理风险** —— AI 段把它推成常驻人格，是否升格为综述案例，**待人类裁定**。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

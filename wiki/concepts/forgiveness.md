@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]
 related: [complaining, victim-mentality, stoic-control-dichotomy, emotion-regulation-toolkit]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 宽恕：作为自我疗愈机制，而非道德姿态
 
 > 素材对宽恕的核心重构是**把它的受益人从对方换回自己**：「宽恕不是为了对方，而是为了大脑的健康」。它把宽恕从一种道德要求，改写成一种认知策略。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-emotion-awareness-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

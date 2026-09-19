@@ -4,9 +4,10 @@ type: concept
 slug: autonomy-support
 tags: [养育, 动机, 自主, 自我决定理论, 教育]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-autonomy-support]
 related: [scaffolding, wanweigang, 2026-09-18-autonomy-support, cybernetic-learning, character-skills, peak-performance]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 养育的核心问题从「怎么让孩子听话」改成「**怎么让孩子把规则变成自己的意志**」。
 > 最好的管教，不是让孩子听话，而是让孩子同意。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-autonomy-support]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -98,6 +103,10 @@ status: active
 - [ ] 本页主题（养育）**与库内四个项目的关系均未定** —— 它可能落在
       [[peak-performance]] 的动机侧，也可能属于北洛的私人领域而**不应展开**。
       **待北洛裁定是否保留本页。**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

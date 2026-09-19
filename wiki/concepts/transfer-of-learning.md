@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-transfer-bridging, 2026-09-18-mental-representations]
 related: [mental-models, schema-psychology, tacit-knowledge, deliberate-practice, desirable-difficulty, cognitive-load-theory, 2026-09-18-transfer-bridging, 2026-09-18-mental-representations, david-perkins, wanweigang, peak-performance, how-we-learn-and-how-to-improve, notebooklm]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 在一个情境里学到的东西，能不能在另一个情境里用出来。**它是「学会了」的唯一外部判据** ——
 > 换一个问法就不会了，等于没学会。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 

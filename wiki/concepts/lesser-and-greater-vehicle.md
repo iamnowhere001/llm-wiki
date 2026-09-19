@@ -4,9 +4,10 @@ type: concept
 slug: lesser-and-greater-vehicle
 tags: [世界观, 大乘, 改变环境, 士, 万维钢, 得到课程, AI生成, 人机共创]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-modern-thinking-tools-prospectus]
 related: [wanweigang, intelligent-life-system, three-solutions, ai-convergence, agent-vs-tool, cognitive-outsourcing, character-skills, deliberate-practice, imperfectionism, steady-state-survival-logic, modern-thinking-tools, 2026-09-18-modern-thinking-tools-prospectus]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -17,6 +18,10 @@ status: active
 > **小乘 = 改造自我**（刻意练习、微习惯、弱联系、成长思维模式），是「最基础的觉醒」；
 > **大乘 = 改变环境** —— 理解更大的图景、研究复杂系统的规律、做结构性的改造、承担超越自我的责任。
 > 作者给它起了一个名字：「**士**」的精神。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-modern-thinking-tools-prospectus]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -130,6 +135,10 @@ Q 段自己承认了这一点（「比例再高，如果建出来的东西没有
 - [ ] 「士」是否值得独立成页（目前 n=1 且未界定）
 - [ ] 收束小诗（行 222–227）与「生成」的关系：AI 段把它读成「把问题交给工具」，
       **讲稿的用法是否是同一个意思，素材没说**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

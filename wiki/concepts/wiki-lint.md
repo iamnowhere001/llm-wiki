@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [ingest-query-lint, compounding-knowledge, index-and-log]
+evidence_tier: single
 confidence: high
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # Wiki 体检（Lint）
 
 > 定期让 LLM 检查知识库的健康状况。它既修问题，也**生产下一步的选题** —— 这是 [[llm-wiki-pattern]] 对抗熵增的机制。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

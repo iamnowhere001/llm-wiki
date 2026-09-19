@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes]
 related: [marcus-aurelius, stephen-covey, stimulus-response-gap, cognitive-reappraisal, complaining, victim-mentality, 2026-09-18-hyperefficient-notes, flow-terminology]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

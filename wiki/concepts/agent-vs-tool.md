@@ -4,9 +4,10 @@ type: concept
 slug: agent-vs-tool
 tags: [能动, 主体性, 工具, 心智模型, 世界观, 万维钢]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-self-determination-theory-notes]
 related: [steady-state-survival-logic, cognitive-outsourcing, modern-thinking-tools, wanweigang, hard-constraints, three-selves, wishful-thinking-layers, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, mental-models, autonomy-support, llm-wiki-pattern, cybernetic-learning, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-self-determination-theory-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 >
 > **这是一句身份判据，不是一条方法建议。** 素材给出的「解药」不是「改掉这些习惯」，
 > 而是**先换身份** —— 工具再好，调用它的人与被调用的人，处境完全不同。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 6 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 它为什么是收束，而不是清单
 
@@ -194,6 +199,8 @@ status: active
 - [ ] 本页提供的判据（调用 vs 被调用）是否**接替 HFQ** 成为 [[cognitive-outsourcing]] 那条开放问题的判据？
       —— **这是本库层面的裁定，需北洛定，不是本页能决定的**
 - [ ] 「agent」这个词在素材里是否有意取 AI agent 的双关？—— 素材未说，**不可考**
+
+## 来源
 
 > [!note] 来源声明（2026-09-18 更新 —— 已不再是单来源）
 > 本页现在有**六份素材**支撑，且性质不同：

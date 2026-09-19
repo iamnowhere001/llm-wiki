@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
 related: [lisa-feldman-barrett, stimulus-response-gap, emotion-as-coupling, cognitive-decoupling, internal-friction, wang-lu]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---

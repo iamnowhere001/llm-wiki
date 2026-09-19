@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-identity-metacognition-notes]
 related: [subject-object-shift, three-selves, narrative-identity, john-bowlby]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -20,6 +21,10 @@ status: active
 - **类型**：人物（发展心理学家）
 - **别名**：Robert Kegan（哈佛大学心理学家）
 - **外部链接**：无（本库未收录其著作）
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-identity-metacognition-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 

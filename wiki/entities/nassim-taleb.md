@@ -4,9 +4,10 @@ type: entity
 slug: nassim-taleb
 tags: [人物, 风险, 不确定性, 反脆弱, 黑天鹅]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-narrative-first-principle]
-related: [types-of-uncertainty, uncertainty-as-fuel, heavy-tailed-distribution, multiplicative-world, intelligent-life-system, modern-thinking-tools, 2026-09-18-uncertainty-fuel-notes]
+updated: 2026-09-19
+sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-narrative-first-principle, 2026-09-19-non-ergodicity-notes]
+related: [types-of-uncertainty, uncertainty-as-fuel, heavy-tailed-distribution, multiplicative-world, intelligent-life-system, modern-thinking-tools, 2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -17,10 +18,18 @@ status: active
 > **建页理由（2026-09-18）**：他在库内已出现 **4 次**，早就超过 `AGENTS.md` 3.2 的「≥2 份素材」阈值，
 > 但此前每次都被判为「只出现一次、非核心」。**本批第 5 讲给了他第一条实质内容**（黑天鹅 / 反脆弱的二分），
 > 故补建。**这是一次欠账的补记，不是新发现。**
+>
+> **2026-09-19 补**：[[2026-09-19-non-ergodicity-notes]]（模块二第 7 讲）再添三处
+> （《非对称风险》/ 杠铃策略 / 杠铃 = 凯利变体），本页支撑素材因此增至 **5 份、七处提及**。
+> **`evidence_tier` 仍只是「名义交叉」**（全部来自同一来源族）。
 
 - **类型**：人物（交易员 / 风险研究者 / 作者）
 - **别名**：Nassim Nicholas Taleb；《黑天鹅》《反脆弱》
 - **外部链接**：无（本库未收录其著作）
+
+> [!warning] 名义交叉，实质同源
+> 本页有 5 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 
@@ -37,8 +46,17 @@ status: active
 | 1 | **「有的不确定性是好的」= 《反脆弱》（*Antifragile*）的核心主张** | `raw/2026-09-18-uncertainty-fuel-notes.md` 行 157（**讲稿段**） | **✅ 主张属实**。塔勒布的核心区分正是「脆弱 / 强韧 / 反脆弱」：**反脆弱的东西从波动中受益** |
 | 2 | **「最坏的不确定性能有多坏」= 《黑天鹅》（*The Black Swan*）的核心主张** | 同上（行 157） | **✅ 主张属实** |
 | 3 | 第 2 讲（「重尾」）引他讲**脆弱 / 反脆弱与第二曲线** | `raw/2026-09-18-heavy-tail-notes.md`（讲稿预告） | **✅ 出现事实已核**（该讲把「脆弱 / 反脆弱」「第二曲线」列为后续模块） |
+| 4 | **《非对称风险》（*Skin in the Game*）对非遍历性风险提出警告**（2026-09-19 补） | `raw/2026-09-19-non-ergodicity-notes.md` 行 111（**讲稿段**） | **✅ 已核**：Taleb, *Skin in the Game: Hidden Asymmetries in Daily Life*, Random House 2018（中译名《非对称风险》） |
+| 5 | **杠铃策略**：90% 放极低风险、10% 放高风险（2026-09-19 补） | 同上，行 137–149（**讲稿段**） | **✅ 策略属实**。⚠️ **性质须分清：这是讲稿在讲他的主张，不是他的文字** |
+| 6 | 「**杠铃策略就是我们上一讲说的『凯利公式』的一种变体**」（行 143），并给出 `p = 0.5, b = 50/40 = 1.25 → f* = 10%`（行 145）（2026-09-19 补） | 同上 | **✅ 数学已核**（本库独立复算一致）。**但「杠铃 = 凯利变体」是讲稿的归并，塔勒布本人未如此表述** —— 只登记，不判 |
 
-**四条引用中没有发现伪造或错配。** 但要注意：**库内引他，全是转述书名与一句概括，从来没有具体引文。**
+> [!warning] 2026-09-19 补记：同一讲的 AI 段把他的算式算反了
+> [[2026-09-19-non-ergodicity-notes]] 的 AI 段行 286 / 367 两次断言
+> 「用凯利公式也能算出：这个赌局最优下注比例为 0」，而**讲稿行 145 用同一赌局算出 `f* = 10%`**。
+> 本库复核后判定 **AI 段错**（`0.5·ln(1+0.5f) + 0.5·ln(1−0.4f)` 在 `f = 0` 处边际为正）。
+> **它不影响上面第 5、6 条的核查结论** —— 那两条核的是讲稿段，而错的是 AI 段。
+
+**六条引用中没有发现伪造或错配。** 但要注意：**库内引他，全是转述书名与一句概括，从来没有具体引文。**
 
 ### 提及但无引语
 

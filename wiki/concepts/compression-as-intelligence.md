@@ -4,9 +4,10 @@ type: concept
 slug: compression-as-intelligence
 tags: [智能, 压缩, 信息论, 最小描述长度, 大模型]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-modern-thinking-tools-prospectus]
 related: [information-bottleneck, learning-as-forgetting, marcus-hutter, llm-wiki-pattern, schema-psychology, mental-models, rag-vs-wiki, ai-convergence, 2026-09-18-modern-thinking-tools-prospectus]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -116,6 +117,10 @@ status: active
       AI 收敛出来的那批概念（WOOP / 古德哈特定律 / 对称性破缺……）按本页判据应属**好压缩**
       （短，且能解压回各自学科的完整内容）；但**讲稿一个定义都没给**，
       所以在本库内**无法检验它们是否可解压**。见 [[ai-convergence]] 反例 2。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -4,9 +4,10 @@ type: concept
 slug: hard-constraints
 tags: [世界观, 决策, 约束, 算账, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-hard-constraints-notes]
 related: [wishful-thinking-layers, intelligent-life-system, agent-vs-tool, steady-state-survival-logic, narrative-as-first-principle, multiplicative-world, 2026-09-18-hard-constraints-notes, modern-thinking-tools, charlie-munger]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -19,6 +20,10 @@ status: active
 >
 > **一句话判据**（该讲原话，`raw/2026-09-18-hard-constraints-notes.md` 行 140）：
 > 「你总不能说加法运算是你的敌人。这就是硬约束：**不见得有人故意跟你作对，是世界本来就充满限制。**」
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hard-constraints-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -117,6 +122,10 @@ status: active
   机会成本、能力圈一并列出（行 514–517），**但没有说明它们与「四种硬约束」的层级关系**
 - [ ] **DOGE 案例的时效性。** 素材写于 2026-03，引的是「截止 2025 年 10 月」的数据。
   若日后 DOGE 的最终账目公布，**本页的示范数字需要复核** —— 记在这里以免遗忘
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

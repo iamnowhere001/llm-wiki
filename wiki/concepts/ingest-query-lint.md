@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, wiki-lint, index-and-log]
+evidence_tier: single
 confidence: high
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 三个操作：Ingest / Query / Lint
 
 > [[llm-wiki-pattern]] 的全部日常操作收敛为三件事：把素材编译进 wiki、基于 wiki 回答问题、给 wiki 做体检。三者共同保证知识库「保鲜」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

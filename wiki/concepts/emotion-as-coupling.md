@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]
 related: [wang-lu, emotional-granularity, narrative-self-vs-bodily-self, emotion-regulation-toolkit]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 情绪是耦合：对「做情绪的主人」的拆解
 
 > 王路的核心主张：**情绪不是你内部独立产生的状态，而是你和你的处境之间震荡产生的信号；它存在于交互之中、关系之中。** 这个主张直接动摇了「情绪管理」这个说法的前提。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-emotion-awareness-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

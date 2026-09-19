@@ -4,9 +4,10 @@ type: concept
 slug: learning-as-forgetting
 tags: [学习, 遗忘, 压缩, 认知, 迁移]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-bjork-forgetting-friend-of-learning]
 related: [information-bottleneck, compression-as-intelligence, schema-psychology, spaced-repetition, retrieval-practice, transfer-of-learning, consolidation-and-sleep, mental-models, robert-bjork, desirable-difficulty, 2026-09-18-bjork-forgetting-friend-of-learning]
+evidence_tier: primary
 confidence: medium
 status: active
 ---
@@ -129,6 +130,10 @@ status: active
 - [ ] 与 [[spaced-repetition]] 的冲突需要一个能事先判断「该忘 / 不该忘」的判据，否则本页的区分不可证伪
 - [ ] **Bjork & Bjork (1992)《A New Theory of Disuse》原文取不回文本** —— 官网 PDF 是扫描件、无文本层（17 页）。
   本页的「storage / retrieval strength」目前是**转引自 Bjork 2014 的复述**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]
 related: [deliberate-play, character-skills, opportunity-systems, imperfectionism, peak-performance, 2026-09-18-hidden-potential-notes]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -16,6 +17,10 @@ status: active
 > **鹰架（scaffolding）是工地上的那种脚手架**：一个**临时**结构，让人能爬到自己爬不上去的高度，**建成即拆除**。
 > 它有四个性质：**来自他人 / 对症（tailored）/ 出现在关键时间点 / 临时**。
 > 这四个性质里，**「临时」最常被忘记** —— 大多数人要么从不求助，要么一求就变成永久依赖。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

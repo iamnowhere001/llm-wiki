@@ -4,9 +4,10 @@ type: concept
 slug: stimulus-response-gap
 tags: [情绪, 自由, 机制, 方法]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-clear-thinking-notes]
 related: [viktor-frankl, stephen-covey, cognitive-decoupling, emotional-granularity, stoic-control-dichotomy, emotion-regulation-toolkit, shane-parrish]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -111,6 +112,10 @@ status: active
 - [ ] 「解释既是解药也是毒药」这个张力（见上）—— 是否值得单独立一页？
 - [ ] **那段空间的「宽度」由什么决定？** 2026-09-18 新增：本页现在有三条压缩它的因素 —— 生理状态（[[emotion-regulation-toolkit]]）、认知工具（[[cognitive-decoupling]]）、以及本素材提出的「自由意志是否存在」。**三者是否可以用同一个框架描述？** 缺一份同时处理这三者的材料。
 - [ ] **「默认值」这个提法能否替代「反应」？** 本素材用「默认值」描述间隙里发生的自动行为，比「情绪反应」更宽（含社会默认、惯性默认）。**它是否与 [[emotion-regulation-toolkit]] 的「自动反应」是同一个概念？** 若不同，需要划界。
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

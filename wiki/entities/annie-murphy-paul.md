@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-extended-mind-notes]
 related: [extended-mind, embodied-cognition, peak-performance, 2026-09-18-extended-mind-notes, andrej-karpathy, dan-koe]
+evidence_tier: single
 confidence: low
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 > 她回答的是一个更靠前的问题：**「思考」这件事到底发生在哪里。**
 > 她把答案从「颅骨内」搬到了「大脑 + 身体 + 环境 + 他人」的系统里 ——
 > 而这个答案**恰好也是本库自己赖以成立的假设**。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-extended-mind-notes]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 

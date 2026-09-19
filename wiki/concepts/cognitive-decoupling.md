@@ -4,9 +4,10 @@ type: concept
 slug: cognitive-decoupling
 tags: [情绪, 认知, 方法, 元认知]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-09-18-cognitive-decoupling]
 related: [keith-stanovich, cognitive-reappraisal, stimulus-response-gap, emotional-granularity]
+evidence_tier: single
 confidence: medium
 status: active
 ---
@@ -14,6 +15,10 @@ status: active
 # 认知解耦：把叙事与事实拆开
 
 > **认知解耦（Cognitive Decoupling）= 把「心中的叙事」和「眼前的事实」拆开。** 它是「刺激与回应之间那段空间」里要跑的那段程序 —— 因为「只是沉默几秒并不会让你自动有更好的应对办法」。
+
+> [!warning] 孤证 —— 本页仅 1 份素材支撑
+> 支撑本页的只有 [[2026-09-18-cognitive-decoupling]]，尚未获得第二份独立来源的交叉验证。
+> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 要点
 
@@ -146,6 +151,10 @@ status: active
 - [ ] **三步顺序是否有实证支持？** 「接化发」是编排还是有效序列？
 - [ ] 「把他人当 NPC」的隐喻需要一份伦理层面的批评材料
 - [ ] 在真实的权力不对等或恶意场景中，「这只是你的感知」如何避免变成二次否认？
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

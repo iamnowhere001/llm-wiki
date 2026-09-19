@@ -4,9 +4,10 @@ type: concept
 slug: compensatory-control
 tags: [不确定性, 权力, 心理学, 政治, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-uncertainty-fuel-notes]
-related: [types-of-uncertainty, uncertainty-as-fuel, victim-mentality, steady-state-survival-logic, narrative-power, emotion-awareness, 2026-09-18-uncertainty-fuel-notes, modern-thinking-tools]
+updated: 2026-09-19
+sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-optionality-notes]
+related: [types-of-uncertainty, uncertainty-as-fuel, victim-mentality, steady-state-survival-logic, narrative-power, emotion-awareness, 2026-09-18-uncertainty-fuel-notes, modern-thinking-tools, explore-exploit-tradeoff]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -18,6 +19,10 @@ status: active
 >
 > 万维钢《现代思维工具》第 5 讲用它解释了「为什么人会主动让渡权力」：
 > 「谁提供确定感谁就得到权力，**谁渴望确定感谁就把权力让给别人**。」（`raw/2026-09-18-uncertainty-fuel-notes.md` 行 145）
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -82,6 +87,28 @@ status: active
 - **反例方向**：如果一个社会的秩序感**确实**改善了人的处境，那么「依附秩序」就不是补偿，而是理性。
   **素材没有给判据来区分「补偿性依附」与「理性合作」。**
 
+## 反向接点：主动放弃选项（030 讲的「破釜沉舟」，2026-09-19 回填）
+
+本页讲的是**被动让渡**：失去控制感 → 依附一个强大秩序，用确定感补偿失控（行 145）。
+[[2026-09-19-optionality-notes]]（模块二第 9 讲）行 159 给了一个**形态相似、方向相反**的动作：
+**破釜沉舟 —— 主动砍掉自己的选项**，以换取「承诺可信、协调合作」。
+
+| | 本页（补偿性依附） | 030 讲（破釜沉舟） |
+|---|---|---|
+| 谁在放弃 | 个体，**因失控**而放弃 | 个体，**主动**放弃 |
+| 放弃的是什么 | 主动性 / 判断权 | **可选项（期权）** |
+| 换来什么 | 确定感（心理补偿） | **可信度与协调能力**（社会收益） |
+| 可逆性 | **不可逆** —— 依附一旦形成会自我强化 | 可逆 —— 是策略选择，不是状态 |
+
+**两者都是「放弃选项」，但一个是被动让渡权力，一个是主动换取协调能力 —— 库内此前只有前者。**
+（030 讲未引用本页；接缝由本库做出，标 `low`。）
+
+> [!note] 这条接缝有一个可检验的推论（本库提出，未验证）
+> 本页说依附是**失控感的产物**；按 030 讲的口径，它同时也可以读成**一次失败的期权交易** ——
+> 个体用「判断权」这张期权，换回了一份**会持续贬值**的确定感（因为权威提供的确定感本身可能失效）。
+> **若这个读法成立，本页的「补偿」与 030 讲的「买贵了的期权」就是同一件事的两种描述。**
+> 库内**没有任何素材这样说过**，故只登记、不采纳。
+
 ## 与其他页面的关系
 
 - **与 [[uncertainty-as-fuel]] 是一对**：那页讲如何**正确地**处理不确定性（当燃料），
@@ -101,6 +128,10 @@ status: active
 - [ ] **格林那四条法则的其他内容要不要整理？** 本页只用了与不确定性相关的一条线
 - [ ] **它对「确定性产品」这个市场的解释力** —— 素材没往这个方向推，但库里 [[peak-performance]] 与
       [[emotion-awareness]] 两条主线都在处理「自我改善类内容」，**两者是否有共同机制，待判**
+
+> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
+> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
+> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
 
 ## 来源
 

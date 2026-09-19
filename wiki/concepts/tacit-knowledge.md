@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty]
 related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era, cognitive-outsourcing, writing-as-thinking]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -15,6 +16,10 @@ status: active
 
 > 「只可意会，不可言传」的知识。**我们能知道的比我们能说出来的多。**
 > 在 AI 时代，它同时是「人还剩下的东西」与「AI 正在吃掉的下一块」。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
