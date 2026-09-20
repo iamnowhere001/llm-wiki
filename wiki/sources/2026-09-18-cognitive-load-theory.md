@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-cognitive-load-theory
 tags: [万维钢, 学习, 教育, 认知负荷]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-cognitive-load-theory]
 related: [cognitive-load-theory, schema-psychology, desirable-difficulty, john-sweller, wanweigang, 2026-09-18-cognitive-load-diagrams, 2026-09-18-icap-framework, 2026-09-18-desirable-difficulty, peak-performance, how-we-learn-and-how-to-improve]
 confidence: medium
@@ -95,6 +95,19 @@ status: active
 **本讲的独特价值在别处**：它给本库带来**第一个带年份与规模的可核查引注簇**
 （斯韦勒 1980s/2023、2025 荟萃分析、十年 RCT）。**这使本库第一次可以对通俗素材做
 「按图索骥」的一手核查** —— 此前那批素材连「图」都没有。
+
+## 2026-09-20 回填（012 讲清单）
+
+> 来源：[[2026-09-18-active-cognitive-load-notes]]（成长战略第 6 讲）「回填清单」的建议。
+> **本条原写的是「同一术语在第 6 讲被反向使用」—— 该措辞已随 2026-09-20 裁定作废，此处按裁定重写。**
+
+- **与成长战略第 6 讲的对照**：012 讲把 CLT 里作为**负债 / 超载风险**的「认知负荷」
+  立为**要主动追求的目标状态**。本库 2026-09-18 曾判两者构成「术语符号对撞」，
+  **2026-09-20 北洛裁定该判定作废** —— 两者是**两个维度、互为条件**：
+  **本讲（学习与教育第 1 讲）说的是「工程化」**（怎么设计，让信息通过窄门），
+  **012 讲说的是「主动性」**（谁发起，要不要主动把任务变难）。
+  **缺主动性 → 工程化难落地；而把问题工程化处理，本身也是主动性的体现。**
+  详见 [[cognitive-load-theory]] 的 2026-09-20 节与 [[decisions]]。
 
 ## 待办 / 开放问题
 

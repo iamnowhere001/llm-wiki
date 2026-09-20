@@ -11,6 +11,10 @@ wiki.py -- LLM Wiki 零依赖工具链
   python3 tools/wiki.py search "<query>"   BM25 全文检索（支持中文二字组）
   python3 tools/wiki.py index              从 frontmatter 重建 wiki/index.md
   python3 tools/wiki.py build              生成单文件浏览站点 site/index.html
+                                           （同时写 site/.build-manifest.json 作为构建基准）
+  python3 tools/wiki.py buildcheck         对比构建基准，报「新建 / 更新」页数
+                                           （供 schema §2.1 判据 3 判断要不要构建）
+  python3 tools/wiki.py chapter-audit [-v] source 页的「正文 / 账目」分布审计（只读）
   python3 tools/wiki.py log <type> "msg"   追加一条日志
   python3 tools/wiki.py new <type> <slug>  按模板新建页面
                                            type: project | source | entity | concept | analysis
@@ -22,6 +26,7 @@ import math
 import os
 import re
 import sys
+import hashlib
 from collections import Counter, defaultdict
 from datetime import date
 
@@ -61,6 +66,65 @@ STAGE_LABEL = {
     "shipped": "已交付",
     "abandoned": "已放弃",
 }
+
+# ------------------------------------------------------- source 页的「正文 / 账目」
+#
+# 一页 source 的自然形状是三段：上款（标题·提要·出处卡）→ 正文 → 账目。
+# 「账目」是**为维护者写的**那一半（分层表、引注核查表、回填清单、定级理由……）。
+# 实测 127 页 source 里账目章节占全部章节的 **47%** —— 读者要找「这份素材讲了什么」，
+# 得先翻过等量的记账。站点侧因此给账目一个可折叠的边界（默认收起，文字一个不删）。
+#
+# 这三张表是**唯一真源**：`build` 把它们注入渲染器（见 cmd_build），
+# `chapter-audit` 直接读它们。**不要在 JS 里另抄一份** ——
+# [[conventions]] 的原话：「同一件事有两个版本，早晚会互相矛盾」。
+#
+# 「来源」「相关页面」只做**精确**匹配：当子串用会误伤
+# 「术语归属专段：…三个心法名的**来源**要分开说」。
+# 判定顺序 = 精确名 → 正文字串 → 账目子串 → **默认正文**。
+# 默认正文是故意的：误折一个正文章节（读者会以为库里没这段）
+# 比漏折一个账目章节（多划一屏）代价大得多。
+READ_EXACT = ["来源", "相关页面"]
+READ_H2 = [
+    "关键要点", "要点", "TL;DR", "摘要", "段摘要", "逐节摘要", "逐段摘要",
+    "与本库", "与现有", "与既有", "与库内", "与其他页面", "与素材",
+    "待办", "开放问题", "新出现的实体", "适用边界", "派生页",
+]
+LEDGER_H2 = [
+    "分层表", "素材分层", "引注", "数字与引注", "数字清单", "回填", "新建 / 回填",
+    "归属", "定级理由", "定级变更", "定级的理由", "证据性质", "证据层级",
+    "confidence", "置信度", "仍然收录的原因",
+    "AI 加工", "AI 段", "AI 生成", "核查", "核对", "校准", "回指", "核实",
+    "素材基本信息", "版本与捕获", "版本与获取", "抓取", "已知缺失", "已知缺陷",
+    "行号坐标系", "关键行号", "映射表", "对照表", "讲次总表", "内嵌资源",
+    "token 对照", "附段", "文档后段", "定语：", "校验", "台账",
+    "采集质量", "权威性", "分段（", "结构（", "取舍", "记账", "性质判定", "同源判定",
+]
+
+
+def classify_h2(title):
+    """章节属正文还是账目。与渲染器里的 classifyH2 同口径。"""
+    t = re.sub(r"<[^>]+>", "", str(title)).strip()
+    if t in READ_EXACT:
+        return "read"
+    if any(k in t for k in READ_H2):
+        return "read"
+    if any(k in t for k in LEDGER_H2):
+        return "ledger"
+    return "read"
+
+
+# 章节同义异名。**只用于审计报表，不用于批量改名** ——
+# 本库有 330 处页内指向引用（见下 / 见上 / 上表 / 「见下『素材基本信息』」），
+# 改名会让指名引用指空。所以这里只把「哪些页用了哪个名字」摆出来给人看，
+# 改不改由人决定。
+SECTION_FAMILIES = [
+    ("关系", ["与本库既有页面的关系", "与现有知识库的关系", "与现有库的关系",
+              "与其他页面的关系", "与既有页面的关系", "与本库的关系", "与库内既有页面的关系"]),
+    ("要点", ["关键要点", "要点"]),
+    ("待办", ["待办 / 开放问题", "待办", "开放问题"]),
+    ("分层表", ["素材分层表", "分层表"]),
+    ("核查表", ["引注核查表", "数字与引注核查表", "引注与内容核查", "回填清单"]),
+]
 
 META_FILES = {"index", "log", "overview", "conventions"}
 
@@ -228,6 +292,9 @@ class Page(object):
                 continue
             if b.startswith(">"):
                 b = re.sub(r"^>\s?", "", b, flags=re.M).strip()
+                # 去掉 callout 标记。摘要是一行文字，`[!warning]` 这种结构标记
+                # 在这里只会变成噪声 —— index 里曾出现「— [!warning] 2026-09-18 同日推翻」。
+                b = re.sub(r"^\[![A-Za-z]+\][+-]?\s*", "", b).strip()
                 if b:
                     return _clip(b, 90)
                 continue
@@ -1160,12 +1227,16 @@ status: active
 
 # {{TITLE}}
 
-> 一句话概括这份素材讲了什么。
+> 提要：这份素材讲了什么、为什么值得收。
+> **行号、坐标系、核查过程不写在这里** —— 那是账目区的事。站点侧会把这一段渲染成独立的提要面板。
 
+<!-- 上款：站点侧把这些 `- **标签**：值` 渲染成一张出处卡。读者第一眼要看到的就是它。 -->
 - **作者 / 来源**：
 - **链接**：
-- **发布时间**：
+- **发表**：
 - **素材路径**：`raw/{{SLUG}}.md`
+
+<!-- ================= 正文区：给读者看的，站点侧不折叠 ================= -->
 
 ## 关键要点
 
@@ -1177,7 +1248,7 @@ status: active
 
 按素材自身的逻辑复述，不加入素材以外的判断。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - 印证了：[[ ]]
 - 补充了：[[ ]]
@@ -1185,16 +1256,38 @@ status: active
 
 ## 新出现的实体 / 概念
 
-- 实体：[[]]
-- 概念：[[]]
+- 实体：[[ ]]
+- 概念：[[ ]]
 
-## 待办
+## 待办 / 开放问题
 
 - [ ]
 
 ## 相关页面
 
 - [[ ]]
+
+<!-- ================= 账目区：给维护者看的，站点侧默认折叠成卡片 =================
+     这里放分层表 / 引注核查表 / 回填清单 / 归属判断 / 定级理由 / 证据性质 /
+     AI 加工段判定 / 素材基本信息 / 行号坐标系之类的东西。
+     放这里不代表不重要 —— 只是读「这份素材讲了什么」的人不需要先翻过它。
+     判定词表见 wiki/schema.md §1.8；对账用 `python3 tools/wiki.py chapter-audit`。 -->
+
+## 素材基本信息
+
+## 素材分层表（文件绝对行号）
+
+## 引注核查表
+
+## 归属判断
+
+## 定级理由
+
+<!-- ================= 页脚 ================= -->
+
+## 来源
+
+- [[{{SLUG}}]]
 """
 
 TEMPLATES["entity"] = """---
@@ -1663,6 +1756,266 @@ a.wl.broken{color:#b91c1c;border-bottom:1px dashed #e0a0a0}
 /* 引文块内文字本身是深青色，链接需要更强的区分度 */
 article blockquote a{color:#0b5f57;font-weight:600;border-bottom:1px solid #7fbcb4}
 article blockquote a:hover{border-bottom-color:#0b5f57}
+
+/* ==================================================================
+   素材页（source）阅读层
+   ------------------------------------------------------------------
+   设计意图：一页 source 是一份**可追溯的凭据**，不是一个章节容器。
+   它的自然形状是三段而不是一列：
+
+       上款  标题 / 提要（TL;DR）/ 出处卡（作者·链接·路径）
+       正文  关键要点 / 摘要 / 与本库的关系 / 派生页
+       账目  分层表 / 引注核查表 / 归属判断 / 定级理由 / 回填清单
+
+   旧版把这三段平铺成同一种 `## 标题 + 段落`，于是一张 40 行的行号表
+   夹在「要点」和「摘要」之间 —— 读者要找「这份素材讲了什么」，
+   得先翻过记账。改革点只有一处：**给账目一个可折叠的边界**，
+   并且默认收起。文字一个不删，只是不再挡路。
+
+   另注：不做「账目统一搬到页尾」的自动重排 —— 实测本库 sources 里有
+   330 处页内指向引用（见下 138 / 见上 38 / 下文 57 / 上表 16 / 下表 6 …），
+   重排会让它们全部指错。置底做成用户可以自己按的开关，见 #ledgctl。
+   ================================================================== */
+
+/* ---- 上款 ---- */
+article blockquote.lead{
+  margin:20px 0 20px;padding:15px 20px 15px 22px;font-size:15.2px;line-height:1.78;
+  background:linear-gradient(180deg,#e9f4f2,#e3efed);border-left:3px solid var(--accent);
+  color:#1e4a45;border-radius:0 10px 10px 0;
+}
+.lead-eb{
+  display:flex;align-items:center;gap:8px;margin:0 0 9px;
+  font-size:10px;font-weight:700;letter-spacing:1.5px;color:#0b5f57;opacity:.72;
+}
+.lead-eb::before{content:"";width:14px;height:1px;background:currentColor}
+.lead-eb::after{content:"";flex:1;height:1px;background:currentColor;opacity:.35}
+article blockquote.lead p{margin:6px 0}
+article blockquote.lead p:first-of-type{margin-top:0}
+article blockquote.lead p:last-of-type{margin-bottom:0}
+
+/* 出处卡：作者 / 链接 / 发表 / 素材路径。旧版是一个和正文一样样的 <ul>，
+   于是「这份东西是什么、谁写的、原文在哪」和一条普通要点长得完全相同。 */
+.prov{
+  margin:0 0 26px;padding:13px 16px;background:var(--panel);
+  border:1px solid var(--line);border-radius:11px;
+}
+.prov .pv{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;padding:6px 0}
+.prov .pv.wide{grid-template-columns:minmax(0,1fr)}
+.prov .pv.wide .v{grid-column:1}
+.prov .pv + .pv{border-top:1px solid var(--line-soft)}
+.prov .pv:first-child{padding-top:2px}
+.prov .pv:last-child{padding-bottom:2px}
+.prov .k{
+  font-size:11.5px;line-height:1.75;color:var(--muted);letter-spacing:.2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:1px;
+}
+.prov .v{font-size:13.6px;line-height:1.72;min-width:0;overflow-wrap:anywhere}
+.prov .v > p:first-child{margin-top:0}
+.prov .v > p:last-child{margin-bottom:0}
+.prov .v code{font-size:12.4px;background:var(--code-bg);padding:1.5px 5px;border-radius:4px;
+  border:1px solid var(--line-soft)}
+.prov .v a{border-bottom:1px solid #b9d8d3}
+.prov .v a:hover{border-bottom-color:var(--accent)}
+.prov .v blockquote{margin:9px 0 3px;font-size:13px;padding:9px 13px;background:#fdf6e6;
+  border-left:3px solid #d9a441;color:#6b4c14;border-radius:0 7px 7px 0}
+.prov .v blockquote a{color:#8a5a06;border-bottom-color:#dcbc86}
+
+/* ---- 关键要点：悬挂序号。序号退到正文左侧的空白里，正文左缘保持一条直线 ---- */
+ol.keypoints{list-style:none;counter-reset:kp;margin:14px 0 20px;padding:0 0 0 36px}
+ol.keypoints > li{position:relative;margin:0 0 11px;padding:0}
+ol.keypoints > li::before{
+  counter-increment:kp;content:counter(kp);
+  position:absolute;left:-36px;top:.15em;width:22px;text-align:right;
+  font-size:12.5px;font-weight:700;line-height:1.7;color:var(--accent);opacity:.55;
+  font-variant-numeric:tabular-nums;
+}
+ol.keypoints > li:last-child{margin-bottom:0}
+/* 嵌套的编号表回落成普通十进制标号：悬挂序号只对顶层有意义，
+   套进子层之后 left:-36px 会按子层的行盒算，缩进会算重。
+   注意必须把 list-style 补回来、把 counter-increment 关掉 ——
+   子层 li 同样是 `ol.keypoints > li`，不关掉就会偷走外层的计数，
+   外层编号会跳号（1, 2, 4 …）。 */
+ol.keypoints ol.keypoints{list-style:decimal;padding-left:22px}
+ol.keypoints ol.keypoints > li{padding-left:0}
+ol.keypoints ol.keypoints > li::before{content:none;counter-increment:none}
+
+/* ---- 待办清单 ---- */
+ul.checklist{list-style:none;margin:13px 0 20px;padding:0}
+ul.checklist > li.task{display:flex;gap:10px;align-items:flex-start;margin:0;padding:4px 0}
+ul.checklist > li.task::marker{content:none}
+ul.checklist input[type=checkbox]{
+  appearance:none;-webkit-appearance:none;flex:0 0 15px;width:15px;height:15px;
+  margin:5px 0 0;border:1.5px solid #cbc7bf;border-radius:4.5px;background:#fff;
+  display:block;position:relative;cursor:default;
+}
+ul.checklist input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
+ul.checklist input[type=checkbox]:checked::after{
+  content:"";position:absolute;left:4px;top:.5px;width:4px;height:8px;
+  border:solid #fff;border-width:0 1.8px 1.8px 0;transform:rotate(42deg);
+}
+ul.checklist > li.task > .tx{min-width:0;flex:1}
+ul.checklist > li.task.done > .tx{
+  color:var(--muted);text-decoration:line-through;
+  text-decoration-color:#cfccc6;text-decoration-thickness:1px;
+}
+
+/* ---- callout：> [!note] / [!warning] / [!important] / [!success]
+       旧版完全没渲染，`[!warning]` 当字面文本印在正文里，且标题被并进后一段。 ---- */
+details.callout{
+  margin:17px 0;border:1px solid var(--co-line);border-radius:10px;
+  background:var(--co-bg);overflow:hidden;
+}
+details.callout > summary{
+  list-style:none;cursor:pointer;display:flex;align-items:flex-start;gap:9px;
+  padding:11px 15px;font-size:13.6px;font-weight:650;line-height:1.62;color:var(--co-ink);
+}
+details.callout > summary::-webkit-details-marker{display:none}
+details.callout > summary::before{
+  content:"";flex:0 0 17px;width:17px;height:17px;margin-top:1.5px;border-radius:5px;
+  background:var(--co-ink);display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:#fff;line-height:1;
+}
+/* 分隔线挂 .co-bd 上而不是 summary 上：只有标题、没有正文的 callout 不该拖一条悬空的横线 */
+.co-bd{padding:11px 15px 13px 41px;font-size:14.2px;line-height:1.76;color:#2b2c2f;
+  border-top:1px solid var(--co-line)}
+.co-bd > p:first-child{margin-top:0}
+.co-bd > p:last-child{margin-bottom:0}
+.co-bd table,.co-bd .tbl{font-size:12.9px}
+.co-bd .tbl{margin:11px 0}
+.co-bd blockquote{margin:11px 0;font-size:13.4px}
+details.co-tip{--co-ink:#0b5f57;--co-bg:#eaf4f2;--co-line:#bcd9d4}
+details.co-tip > summary::before{content:"i";font-family:Georgia,serif;font-style:italic}
+details.co-warn{--co-ink:#8a5a06;--co-bg:#fdf6e6;--co-line:#eedcb4}
+details.co-warn > summary::before{content:"!"}
+details.co-key{--co-ink:#3730a3;--co-bg:#eef0fb;--co-line:#d2d6f1}
+details.co-key > summary::before{content:"★";font-size:9.5px}
+details.co-ok{--co-ink:#12693a;--co-bg:#ecf6ee;--co-line:#c8e2ce}
+details.co-ok > summary::before{content:"✓"}
+details.co-bad{--co-ink:#9f1239;--co-bg:#fdedef;--co-line:#f1ccd4}
+details.co-bad > summary::before{content:"✕";font-size:9.5px}
+article blockquote a{color:#0b5f57}
+details.callout a{color:var(--co-ink);border-bottom:1px solid currentColor;font-weight:600}
+
+/* ---- 表格：行号表是本库的主体证据，窄列里五列会挤成一片 ----
+   .tbl 自成一个滚动区：一是横向能滚，二是表头能 sticky 住（40 行表不用再上下对表头）。 */
+.tbl{
+  margin:18px 0;border:1px solid var(--line);border-radius:11px;
+  background:var(--panel);overflow:auto;overscroll-behavior-x:contain;
+}
+.tbl table{margin:0;border:0;border-collapse:separate;border-spacing:0;width:100%;font-size:13.4px}
+.tbl th,.tbl td{
+  border:0;border-bottom:1px solid var(--line-soft);border-right:1px solid var(--line-soft);
+  padding:8px 12px;text-align:left;vertical-align:top;
+}
+.tbl th:last-child,.tbl td:last-child{border-right:0}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl thead th{
+  position:sticky;top:0;z-index:1;background:#f4f2ee;color:#4a4842;
+  font-weight:650;font-size:12.5px;letter-spacing:.2px;
+}
+.tbl tbody tr:nth-child(even){background:#fcfbf9}
+.tbl.tall{max-height:76vh}
+.tbl.tall thead th{box-shadow:0 1px 0 var(--line)}
+.tbl.num th:first-child,.tbl.num td:first-child{
+  white-space:nowrap;font-variant-numeric:tabular-nums;color:#57544e;
+}
+.tbl code{font-size:12.1px}
+/* 表格左出血：行号表五列，比正文列宽 84px。只往左借，不往右借 ——
+   右侧要留给固定目录，右出血会顶到目录底下。 */
+@media (min-width:1240px){
+  .tbl{margin-left:-84px;width:calc(100% + 84px)}
+}
+
+/* ---- 账目章节：可折叠的「凭据附件」 ---- */
+section.sec{scroll-margin-top:16px}
+section.ledger{
+  border:1px solid #eae7e1;border-radius:11px;background:#fbfaf8;
+  margin:16px 0;padding:0 16px 6px;
+}
+section.ledger > h2{
+  display:flex;align-items:center;gap:9px;
+  margin:0 -16px;padding:11px 16px;
+  font-size:13.2px;font-weight:650;letter-spacing:.2px;color:#6a6760;
+  background:linear-gradient(180deg,#f7f6f3,#f2f0ec);
+  border-bottom:1px solid #eae7e1;border-radius:11px 11px 0 0;
+  cursor:pointer;user-select:none;transition:color .12s;
+}
+section.ledger > h2:hover{color:var(--ink)}
+/* 箭头用 CSS 画，不写字符 —— 标题的 textContent 会被右侧目录读走，
+   塞一个「▾」进去，目录里就会出现「▾引注核查表」。 */
+section.ledger > h2::before{
+  content:"";flex:0 0 9px;width:7px;height:7px;margin-right:1px;
+  border-right:1.7px solid #a5a29b;border-bottom:1.7px solid #a5a29b;
+  transform:rotate(45deg) translate(-1px,-1px);transition:transform .16s ease;
+}
+section.ledger.collapsed > h2::before{transform:rotate(-45deg) translate(-1px,1px)}
+section.ledger.collapsed{padding-bottom:0}
+section.ledger.collapsed > .lg-bd{display:none}
+section.ledger .lg-bd{padding:2px 0 0}
+section.ledger .lg-bd h3{font-size:14.2px;margin:18px 0 7px}
+section.ledger .lg-bd > p,section.ledger .lg-bd > ul,
+section.ledger .lg-bd > ol,section.ledger .lg-bd > blockquote{font-size:14px}
+.lg-peek{
+  display:none;margin:10px 0 12px;font-size:12.6px;line-height:1.68;color:var(--muted);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+section.ledger.collapsed > .lg-peek{display:block}
+
+/* ---- 来源页脚：把一条 [[slug]] 变成一枚可点的凭据 chip ---- */
+section.prov-sec{margin:34px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+section.prov-sec > h2{
+  border:0;margin:0 0 11px;padding:0;font-size:10.5px;font-weight:700;
+  letter-spacing:1.3px;color:var(--muted);
+}
+section.prov-sec ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+section.prov-sec li{margin:0}
+section.prov-sec a{
+  display:inline-block;margin:0;padding:5px 11px;border-radius:8px;
+  background:var(--panel);border:1px solid var(--line);font-size:12.6px;
+  color:var(--ink);border-bottom:1px solid var(--line);
+}
+section.prov-sec a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---- 阅读进度 + 账目开关 ---- */
+#tabs{position:relative}
+#prog{
+  position:absolute;left:0;bottom:-1px;height:2px;width:0;
+  background:var(--accent);border-radius:0 2px 2px 0;transition:width .1s linear;
+}
+.segctl{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-right:12px}
+.segctl[hidden]{display:none}
+.segctl button{
+  border:0;background:transparent;font:inherit;font-size:11.8px;color:var(--muted);
+  padding:4px 10px;cursor:pointer;transition:background .12s,color .12s;
+}
+.segctl button + button{border-left:1px solid var(--line)}
+.segctl button:hover{background:var(--line-soft)}
+.segctl button.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+
+/* ---- TOC 双分组 ---- */
+#toc .tglbl{
+  display:block;padding:9px 9px 3px;font-size:9.5px;font-weight:700;
+  letter-spacing:1.3px;color:#a8a5a0;
+}
+#toc .tg-ledger .tglbl{color:#a8781f}
+#toc .tg-ledger a{opacity:.82}
+
+/* ---- 阅读度量 ---- */
+article{text-wrap:pretty}
+article h1,article h2,article h3{text-wrap:balance}
+article p{overflow-wrap:break-word}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+@media print{
+  #sidebar,#tabs,#toc,.segctl,#prog{display:none !important}
+  #view-browse{overflow:visible;padding:0}
+  section.ledger{border-color:#ddd;break-inside:avoid}
+  section.ledger.collapsed > .lg-bd{display:block}  /* 打印时账目一律展开 */
+  section.ledger .lg-peek{display:none !important}
+  details.callout{break-inside:avoid}
+}
 .pagemeta{
   display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:0 0 22px;
   padding-bottom:16px;border-bottom:1px solid var(--line-soft);
@@ -1679,6 +2032,22 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
 #backlinks a{display:inline-block;margin:0 8px 8px 0;padding:5px 11px;border-radius:7px;
   background:var(--panel);border:1px solid var(--line);font-size:12.6px;color:var(--ink);text-decoration:none}
 #backlinks a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---- 宽屏适配：正文列宽 + 目录占位 ----
+   旧版：目录是 position:fixed，不占布局宽度；正文在 #main 里居中，右缘算出
+   `296 + (W-296)/2 + 420`，而目录左缘是 `W - 206`。两者之间永远夹着一条等宽的
+   假空白，屏幕越宽越大 —— 1728px 下右侧空 296px、2K（2560px）下空 546px，
+   同时左侧空 752px。**结果是正文被挤在偏左的位置，右边一整片是空的。**
+   修法两条：
+   ① 目录宽度在所有宽屏下都从布局里扣掉（padding-right），正文改为在「扣除侧栏
+      与目录」的区间里居中 —— 左右留白自然对称，正文也不再被目录压住；
+   ② 正文列宽随视口增长，上限 1180px。760px 是单栏阅读的舒适宽度，但本库 sources
+      页有五列行号表，窄列下会挤成一片；再宽则中文单行超过 70 字，回视成本上升。
+   公式里的 160px = 正文两侧各留 80px 呼吸：屏幕变宽时先涨留白，涨满才轮到正文。 */
+@media (min-width:1001px){
+  #view-browse{padding-right:206px}   /* 目录：宽 190 + 距右缘 16 */
+  #wrap,#backlinks{max-width:clamp(760px, calc(100% - 160px), 1180px)}
+}
 
 /* ---------- graph ---------- */
 #view-graph{flex:1;position:relative;overflow:hidden;background:var(--panel)}
@@ -1743,7 +2112,13 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
       <button data-view="browse" class="active">浏览</button>
       <button data-view="graph">图谱</button>
       <span class="spacer"></span>
+      <div class="segctl" id="ledgctl" hidden>
+        <button data-lg="collapse" class="on">账目收起</button>
+        <button data-lg="expand">账目展开</button>
+        <button data-lg="end">账目置底</button>
+      </div>
       <span class="meta" id="tabmeta"></span>
+      <div id="prog"></div>
     </div>
     <div id="view-browse">
       <div id="wrap"><article id="page"></article></div>
@@ -1787,95 +2162,359 @@ function inline(s){
   return out;
 }
 
+/* [!type] → 5 种语气。本库实际只用了 note / warning / important / success 四种；
+   收成 5 种语气是为了「一眼分得清这是提示、警示还是结论」，不是为了穷举 Obsidian 的类型表。 */
+var CO_TONE = {
+  note:"tip", info:"tip", tip:"tip", hint:"tip", abstract:"tip", summary:"tip", todo:"tip",
+  question:"tip", quote:"tip", example:"tip", cite:"tip",
+  success:"ok", check:"ok", done:"ok",
+  important:"key", key:"key",
+  warning:"warn", caution:"warn",
+  danger:"bad", error:"bad", fail:"bad", failure:"bad", missing:"bad", bug:"bad"
+};
+var CO_LABEL = {tip:"提示", warn:"警示", key:"重要", ok:"结论", bad:"问题"};
+
+/* 代码块池：一次整页渲染共享一份，递归调用不会丢 */
+var _codePool = [];
+
+function mkCallout(type, folded, title, bodyLines){
+  var tone = CO_TONE[type] || "tip";
+  var body = bodyLines.length ? render(bodyLines.join("\n")) : "";
+  return '<details class="callout co-'+tone+'"'+(folded ? "" : " open")+'>' +
+           '<summary>'+(title ? inline(title) : CO_LABEL[tone])+'</summary>' +
+           (body ? '<div class="co-bd">'+body+'</div>' : "") +
+         '</details>';
+}
+
 function render(src){
-  var codeBlocks = [];
-  src = src.replace(/```[^\n]*\n([\s\S]*?)```/g, function(m, code){
-    codeBlocks.push("<pre><code>"+esc(code.replace(/\n$/,""))+"</code></pre>");
-    return "\u0000B"+(codeBlocks.length-1)+"\u0000";
+  src = String(src).replace(/```[^\n]*\n([\s\S]*?)```/g, function(m, code){
+    _codePool.push("<pre><code>"+esc(code.replace(/\n$/,""))+"</code></pre>");
+    return "\u0000B"+(_codePool.length-1)+"\u0000";
   });
 
   var lines = src.split("\n"), out = [], i = 0;
-  var listBuf = null, listType = null;
+  var RE_LIST = /^(\s*)([-*+]|\d+[.)])\s+(.*)$/;
+  var RE_QUOTE = /^\s*>\s?/;
+  var RE_PARA_STOP = /^(#{1,6}\s|\s*>|\||\s*[-*+]\s|\s*\d+[.)]\s|```)/;
 
-  function flushList(){
-    if (listBuf){ out.push("<"+listType+">"+listBuf.join("")+"</"+listType+">"); listBuf=null; listType=null; }
+  /* 列表：按缩进还原层级。
+     旧版忽略缩进，本库 99 行嵌套条目被拍平成同级 —— 「这三条属于上一条」这层信息直接丢了。 */
+  function parseList(start, base){
+    var kind = null, items = [], i = start, guard = 0;
+    while (i < lines.length && guard++ < 50000){
+      var m = RE_LIST.exec(lines[i]);
+      if (!m){
+        if (!items.length || !kind) break;
+        /* ① 缩进的续行 = 上一条的正文。markdown 里列表项常常写两三行，
+              续行缩进 2-3 格、不以列表符号开头。旧版把它当成「列表结束」，
+              结果是：条目被从中间劈开，续行变成列表外的独立段落，
+              而且整节的编号断成一串 `1. 1. 1.`（narrative-self 的「关键要点」
+              六条全中）。带 > | # ``` 的缩进行不算续行 —— 那是嵌套引用/表格，另有渲染路径。 */
+        if (/^\s+\S/.test(lines[i]) && !/^\s*(>|\||#{1,6}\s|```)/.test(lines[i])){
+          items[items.length-1].txt += " " + lines[i].trim();
+          i++; continue;
+        }
+        /* ② 空行之后还是同类型同级的列表项 = 同一个列表（CommonMark 的 loose list）。
+              不认这一条，中间隔了一个空行的编号表会被拆成两个 <ol>，编号从 1 重新数。 */
+        var j = i;
+        while (j < lines.length && !lines[j].trim()) j++;
+        if (j < lines.length && RE_LIST.test(lines[j])){
+          var m2 = RE_LIST.exec(lines[j]);
+          var ind2 = m2[1].replace(/\t/g, "  ").length;
+          if (ind2 === base && (/^\d/.test(m2[2]) ? "ol" : "ul") === kind){ i = j; continue; }
+        }
+        break;
+      }
+      var ind = m[1].replace(/\t/g, "  ").length;
+      if (ind < base) break;
+      if (ind > base){
+        if (!items.length) break;
+        var sub = parseList(i, ind);
+        if (!sub || sub.next <= i) break;
+        items[items.length-1].sub.push(sub.html);
+        i = sub.next; continue;
+      }
+      var t = /^\d/.test(m[2]) ? "ol" : "ul";
+      if (kind === null) kind = t; else if (t !== kind) break;
+      items.push({ txt: m[3], sub: [] });
+      i++;
+    }
+    if (!items.length || !kind) return null;
+    var hasTask = items.some(function(x){ return /^\[[ xX]\]\s/.test(x.txt); });
+    var body = items.map(function(it){
+      var task = /^\[([ xX])\]\s+([\s\S]*)$/.exec(it.txt);
+      if (task){
+        var done = task[1].toLowerCase() === "x";
+        return '<li class="task'+(done ? " done" : "")+'">' +
+                 '<input type="checkbox" disabled'+(done ? " checked" : "")+'>' +
+                 '<span class="tx">'+inline(task[2])+'</span>' + it.sub.join("") + '</li>';
+      }
+      return "<li>"+inline(it.txt)+it.sub.join("")+"</li>";
+    }).join("");
+    return { html: "<"+kind+(hasTask ? ' class="checklist"' : "")+">"+body+"</"+kind+">", next: i };
   }
 
   while (i < lines.length){
-    var line = lines[i];
+    var line = lines[i].replace(/\s+$/,"");
 
-    if (/^\u0000B\d+\u0000\s*$/.test(line.trim())){
-      flushList();
-      out.push(line.trim());
-      i++; continue;
-    }
-    if (!line.trim()){ flushList(); i++; continue; }
+    if (/^\u0000B\d+\u0000$/.test(line)){ out.push(line); i++; continue; }
+    if (!line.trim()){ i++; continue; }
 
     var h = /^(#{1,6})\s+(.*)$/.exec(line);
-    if (h){ flushList(); out.push("<h"+h[1].length+">"+inline(h[2])+"</h"+h[1].length+">"); i++; continue; }
+    if (h){ out.push("<h"+h[1].length+">"+inline(h[2])+"</h"+h[1].length+">"); i++; continue; }
 
-    if (/^(---|\*\*\*|___)\s*$/.test(line)){ flushList(); out.push("<hr>"); i++; continue; }
+    if (/^(---|\*\*\*|___)\s*$/.test(line)){ out.push("<hr>"); i++; continue; }
 
-    if (/^>\s?/.test(line)){
-      flushList();
+    if (RE_QUOTE.test(line)){
       var buf = [];
-      while (i < lines.length && /^>\s?/.test(lines[i])){ buf.push(lines[i].replace(/^>\s?/,"")); i++; }
-      out.push("<blockquote>"+render(buf.join("\n"))+"</blockquote>");
+      while (i < lines.length && RE_QUOTE.test(lines[i])){
+        buf.push(lines[i].replace(/^\s*>\s?/, "").replace(/\s+$/,"")); i++;
+      }
+      while (buf.length && !buf[buf.length-1].trim()) buf.pop();
+      while (buf.length && !buf[0].trim()) buf.shift();
+      /* 引用块首行是 [!type] 即 callout，其余仍是普通引用。
+         旧版一律走 blockquote：`[!warning]` 当字面文本印在页面上，
+         而且标题行与紧随的正文被合进同一个 <p> —— 标题等于没有。 */
+      var co = /^\[!([A-Za-z]+)\]([+-]?)\s*([\s\S]*)$/.exec((buf[0] || "").trim());
+      if (co) out.push(mkCallout(co[1].toLowerCase(), co[2] === "-", co[3].trim(), buf.slice(1)));
+      else out.push("<blockquote>"+render(buf.join("\n"))+"</blockquote>");
       continue;
     }
 
     if (/^\|/.test(line) && i+1 < lines.length && /^\|[\s:|-]+\|/.test(lines[i+1])){
-      flushList();
-      var head = line.split("|").slice(1,-1).map(function(c){return c.trim();});
-      i += 2;
-      var rows = [];
-      while (i < lines.length && /^\|/.test(lines[i])){
-        rows.push(lines[i].split("|").slice(1,-1).map(function(c){return c.trim();}));
-        i++;
-      }
-      var t = "<table><thead><tr>";
+      var cells = function(s){
+        /* 转义竖线 \| 先藏起来再切，否则 17 处含竖线的单元格会被切成两格 */
+        return s.replace(/\\\|/g, "\u0001").split("|").slice(1,-1)
+                .map(function(c){ return c.replace(/\u0001/g, "|").trim(); });
+      };
+      var head = cells(line), j = i + 2, rows = [];
+      while (j < lines.length && /^\|/.test(lines[j])){ rows.push(cells(lines[j])); j++; }
+      /* 表格从「一根线都不画的裸 table」变成自带滚动区的 .tbl：
+         横向能滚，表头 sticky —— 本库分层表常有 40 行，上下对表头是纯浪费。
+         只在行数多时限高，短表不给自己造第二个滚动条。 */
+      var isNum = head.length && /^(行|序号|#|编号|讲次|模块|步骤|页码|日期)/.test(head[0]);
+      var t = '<div class="tbl'+(rows.length >= 22 ? " tall" : "")+(isNum ? " num" : "")+'">' +
+              "<table><thead><tr>";
       head.forEach(function(c){ t += "<th>"+inline(c)+"</th>"; });
       t += "</tr></thead><tbody>";
       rows.forEach(function(r){
         t += "<tr>";
-        for (var k=0;k<head.length;k++) t += "<td>"+inline(r[k]||"")+"</td>";
+        for (var k = 0; k < head.length; k++) t += "<td>"+inline(r[k]||"")+"</td>";
         t += "</tr>";
       });
-      out.push(t+"</tbody></table>");
-      continue;
+      out.push(t+"</tbody></table></div>");
+      i = j; continue;
     }
 
-    var ul = /^(\s*)[-*+]\s+(.*)$/.exec(line);
-    var ol = /^(\s*)\d+[.)]\s+(.*)$/.exec(line);
-    if (ul || ol){
-      var wantType = ul ? "ul" : "ol";
-      if (listType !== wantType){ flushList(); listType = wantType; listBuf = []; }
-      var content = (ul || ol)[2];
-      var task = /^\[([ xX])\]\s+(.*)$/.exec(content);
-      if (task){
-        var checked = task[1].toLowerCase() === "x";
-        listBuf.push('<li style="list-style:none;margin-left:-18px">'+
-          '<input type="checkbox" disabled'+(checked?" checked":"")+'> '+inline(task[2])+'</li>');
-      } else {
-        listBuf.push("<li>"+inline(content)+"</li>");
-      }
-      i++; continue;
+    if (RE_LIST.test(line)){
+      var lm = RE_LIST.exec(line);
+      var lst = parseList(i, lm[1].replace(/\t/g, "  ").length);
+      if (lst){ out.push(lst.html); i = lst.next; continue; }
     }
 
-    flushList();
     var para = [line];
     i++;
-    while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|>|\||\s*[-*+]\s|\s*\d+[.)]\s|```)/.test(lines[i])){
-      para.push(lines[i]); i++;
+    while (i < lines.length && lines[i].trim() && !RE_PARA_STOP.test(lines[i])){
+      para.push(lines[i].replace(/\s+$/,"")); i++;
     }
     out.push("<p>"+inline(para.join(" "))+"</p>");
   }
-  flushList();
-  var html = out.join("\n");
-  html = html.replace(/\u0000B(\d+)\u0000/g, function(m, n){ return codeBlocks[+n]; });
-  return html;
+  return out.join("\n");
 }
 
+/* ==================== 素材页（source）布局 ====================
+   一页 source 的自然形状是三段，不是一列：
+
+       上款   标题 / 提要（TL;DR）/ 出处卡（作者·链接·路径）
+       正文   关键要点 / 摘要 / 与本库的关系
+       账目   分层表 / 引注核查表 / 归属判断 / 定级理由 / 回填清单
+
+   旧版把三段平铺成同一种「## 标题 + 段落」，于是一张 40 行的行号表
+   夹在「要点」和「摘要」之间。这里只做一件事：**给账目一个可折叠的边界**，
+   默认收起。文字一个不删，只是不再挡路。
+
+   不做「账目自动搬到页尾」：实测本库 sources 内有 330 处页内指向引用
+   （见下 138 / 见上 38 / 下文 57 / 上表 16 / 下表 6 …），重排会让它们全部指错。
+   置底做成用户自己按的开关，见 #ledgctl。 */
+
+/* 账目章节判定表由 build 从 wiki.py 的 READ_EXACT / READ_H2 / LEDGER_H2 注入 —— 
+   只此一份，不在 JS 里另抄。判定顺序即优先级：精确名 → 正文字串 → 账目子串 → 默认正文。 */
+var READ_EXACT = __READ_EXACT__, READ_H2 = __READ_H2__, LEDGER_H2 = __LEDGER_H2__;
+
+function classifyH2(title){
+  var t = String(title).replace(/<[^>]+>/g, "").trim();
+  for (var e = 0; e < READ_EXACT.length; e++) if (t === READ_EXACT[e]) return "read";
+  for (var i = 0; i < READ_H2.length; i++) if (t.indexOf(READ_H2[i]) >= 0) return "read";
+  for (var j = 0; j < LEDGER_H2.length; j++) if (t.indexOf(LEDGER_H2[j]) >= 0) return "ledger";
+  return "read";
+}
+
+/* 成对标签的切片（要处理 <ul> 里再套 <ul>，正则数不出来） */
+function cutTag(html, tag, from){
+  var s = html.indexOf("<"+tag, from || 0);
+  if (s < 0) return null;
+  var re = new RegExp("<\\/?"+tag+"\\b[^>]*>", "g");
+  re.lastIndex = s;
+  var depth = 0, m;
+  while ((m = re.exec(html))){
+    if (m[0].charAt(1) === "/"){ depth--; if (!depth) break; } else depth++;
+  }
+  if (!m) return null;
+  return { start: s, end: re.lastIndex, html: html.slice(s, re.lastIndex) };
+}
+
+function plainText(s){
+  return String(s).replace(/<[^>]+>/g, " ").replace(/\u0000B\d+\u0000/g, " ")
+                  .replace(/&[a-z]+;/g, " ").replace(/\s+/g, " ").trim();
+}
+
+/* 出处卡的数据来自**原文**而不是渲染后的 HTML。
+   原文里的元信息常被「续行」打断（`- **素材路径**：…` 下一行缩进两格继续写），
+   渲染成 HTML 后会被切成好几个 <ul> + 中间的 <p>。所以从 markdown 读，
+   并且把缩进续行并回上一条 —— 否则「（1,701 行；frontmatter 1–68）」这类
+   补充说明会变成悬在卡片外面的孤儿段落。 */
+function provFromBody(body){
+  var lines = String(body).split("\n"), items = [], keyed = 0;
+  for (var i = 0; i < lines.length; i++){
+    var L = lines[i];
+    if (/^##\s/.test(L)) break;
+    if (/^\s*>/.test(L) && !/^\s+\S/.test(L)) continue;   /* 顶格的引用是提要/警示，不是元信息 */
+    if (/^\s*$/.test(L)){
+      if (items.length && i + 1 < lines.length && /^\s+\S/.test(lines[i+1])) { items[items.length-1].v += "\n"; continue; }
+      if (items.length) break;
+      continue;
+    }
+    var m = /^[-*+]\s+\*\*(.+?)\*\*\s*[：:]\s*(.*)$/.exec(L);
+    if (m){ items.push({ k:m[1].trim(), v:m[2] }); keyed++; continue; }
+    if (/^\s+\S/.test(L) && items.length){                 /* 缩进续行 → 并回上一条 */
+      items[items.length-1].v += (items[items.length-1].v ? "\n" : "") + L.trim();
+      continue;
+    }
+    if (items.length) break;                                /* 顶格正文 = 元信息块结束 */
+  }
+  return keyed >= 2 ? items : null;
+}
+
+function provValue(it){
+  if (it.raw) return it.v;                       /* 从提要抽出来的段落已经是 HTML */
+  var v = it.v;
+  /* 裸 URL 自动成链（本库 60 份素材的「链接」行大多是裸 URL，旧版是死文本） */
+  if (v.indexOf("](") < 0) v = v.replace(/(^|[\s（(【])(https?:\/\/[^\s)）】]+)/g, "$1[$2]($2)");
+  return render(v);
+}
+
+function renderProv(items){
+  return '<div class="prov">' + items.map(function(it){
+    return '<div class="pv'+(it.k ? "" : " wide")+'">' +
+             (it.k ? '<span class="k">'+esc(it.k)+'</span>' : "") +
+             '<span class="v">'+provValue(it)+'</span>' +
+           '</div>';
+  }).join("") + '</div>';
+}
+
+function sourceLayout(html, p){
+  /* ① 切成「上款 + 每个 ## 一节」。
+        在代码块还原之前做，所以正文里不可能出现 <h2> 字面量。 */
+  var parts = html.split(/(?=<h2>)/);
+  var head = parts.shift() || "";
+  var secs = parts.map(function(chunk){
+    var m = /^<h2>([\s\S]*?)<\/h2>/.exec(chunk);
+    var inner = m ? m[1] : "";
+    return {
+      title: plainText(inner),
+      inner: inner,
+      body: m ? chunk.slice(m[0].length) : chunk,
+      kind: classifyH2(plainText(inner))
+    };
+  });
+
+  /* ② 提要：H1 之后的第一个引用块。
+        同时把「本页坐标系」这类声明抽出来 —— 它 57 页都有，是**维护者需要、
+        读者不需要**的元信息，却往往占提要一整段。抽走之后提要才是提要。 */
+  var lb = cutTag(head, "blockquote"), coordRows = [];
+  if (lb){
+    var innerQ = lb.html.replace(/^<blockquote[^>]*>/, "").replace(/<\/blockquote>$/, "");
+    var stripped = innerQ.replace(
+      /<p><strong>(本页坐标系|行号坐标系|坐标声明)<\/strong>([：:]?[\s\S]*?)<\/p>/g,
+      function(m, label, rest){
+        coordRows.push({ k: label, v: rest.replace(/^\s*[：:]\s*/, ""), raw: true });
+        return "";
+      });
+    /* 抽空了就退回去：宁可提要里留一段坐标系，也不能把提要抽成空白 */
+    if (plainText(stripped).length >= 12) innerQ = stripped; else coordRows = [];
+    head = head.slice(0, lb.start) +
+           '<blockquote class="lead"><div class="lead-eb">提要</div>' + innerQ + '</blockquote>' +
+           head.slice(lb.end);
+  }
+
+  /* ③ 出处卡：把「作者 / 链接 / 发表 / 素材路径」从一条普通 <ul> 里提出来。
+        旧版这几行和一条普通要点长得完全一样 —— 而它们回答的是
+        「这是什么东西、谁写的、原文在哪」，是整页最该被一眼看到的信息。
+
+        元信息块常被续行切成好几截（<ul> … <p>…</p> … <ul>），所以取的是
+        「提要之后的第一个 <ul>」到「最后一个 <ul>」这一整段，中间的续行段落
+        一并收走 —— 否则那些补充说明会变成悬在卡片外的孤儿。
+        校验用「所有标签名都在这一段里出现」，不靠数 <li>：数量对不上就原样保留，
+        绝不吞掉内容。 */
+  var pv = provFromBody(p.body), provHtml = "";
+  if (pv){
+    var from = lb ? lb.end : 0, uls = [], c;
+    while ((c = cutTag(head, "ul", from))){ uls.push(c); from = c.end; }
+    if (uls.length){
+      var rs = uls[0].start, re2 = uls[uls.length-1].end;
+      var seg = plainText(head.slice(rs, re2));
+      var keys = pv.filter(function(it){ return it.k; });
+      var hit = keys.filter(function(it){ return seg.indexOf(it.k) >= 0; }).length;
+      if (hit >= 2 && hit === keys.length) head = head.slice(0, rs) + head.slice(re2);
+      else pv = null;
+    } else pv = null;
+  }
+  if (pv && coordRows.length) pv = pv.concat(coordRows);
+  else if (coordRows.length) pv = coordRows;
+  if (pv) provHtml = renderProv(pv);
+
+  /* ④ 逐节包装 */
+  var out = [];
+  secs.forEach(function(s){
+    var isProv = (s.title === "来源");
+    var isKey = /^(关键)?要点$/.test(s.title) || s.title.indexOf("关键要点") === 0;
+    /* 全部顶层 <ol> 都要拿悬挂序号，不能只replace第一个 ——
+       一个「关键要点」节里常有被段落打断成两段的编号表（dunlosky 就是），
+       只改第一个会让第二段退回浏览器默认的深色行内标号。 */
+    if (isKey) s.body = s.body.replace(/<ol>/g, '<ol class="keypoints">');
+    if (isProv){
+      out.push('<section class="sec prov-sec"><h2>'+s.inner+'</h2>'+s.body+'</section>');
+      return;
+    }
+    if (s.kind === "ledger"){
+      var peek = plainText(s.body);
+      if (peek.length > 96) peek = peek.slice(0, 96) + "…";
+      out.push('<section class="sec ledger collapsed" data-kind="ledger">' +
+                 '<h2>'+s.inner+'</h2>' +
+                 '<div class="lg-bd">'+s.body+'</div>' +
+                 (peek ? '<p class="lg-peek">'+esc(peek)+'</p>' : "") +
+               '</section>');
+      return;
+    }
+    out.push('<section class="sec" data-kind="read"><h2>'+s.inner+'</h2>'+s.body+'</section>');
+  });
+
+  /* 出处卡插在提要之后（没有提要则紧跟标题） */
+  if (provHtml){
+    if (/<\/blockquote>/.test(head)) head = head.replace(/<\/blockquote>/, "</blockquote>\n"+provHtml);
+    else if (/<\/h1>/.test(head)) head = head.replace(/<\/h1>/, "</h1>\n"+provHtml);
+    else head = head + provHtml;
+  }
+  return head + "\n" + out.join("\n");
+}
+
+/* 整页渲染：递归共享同一个代码块池，最后一次性还原 */
+function renderPage(p){
+  _codePool = [];
+  var html = render(p.body);
+  if (p.type === "source") html = sourceLayout(html, p);
+  return html.replace(/\u0000B(\d+)\u0000/g, function(m, n){ return _codePool[+n]; });
+}
 /* ---------------- nav ---------------- */
 var ORDER = ["project","meta","source","entity","concept","analysis"];
 var nav = document.getElementById("nav");
@@ -2013,24 +2652,49 @@ var tabmeta = document.getElementById("tabmeta");
 var vb = document.getElementById("view-browse");
 
 /* ---------------- TOC ---------------- */
-/* 长页（本库最长 46KB）没有目录等于没有地图。标题少于 3 个时不显示，避免噪音。 */
+/* 长页（本库最长 46KB）没有目录等于没有地图。标题少于 3 个时不显示，避免噪音。
+   素材页的目录**分两组**：正文目录 / 账目目录。一页 source 有 5-8 个账目章节，
+   平铺会把正文目录冲没 —— 而正文才是来这页要读的东西。 */
 var tocEl = document.getElementById("toc");
-var tocHs = [], tocRaf = 0;
+var tocHs = [], tocRaf = 0, tocLedgerFrom = -1;
+
+function tocScrollTo(h){
+  /* 不用 offsetTop：章节被 <section> 包起来之后 offsetParent 变成了 body，
+     offsetTop 不再等于「相对滚动容器的距离」。直接用矩形差，跟 DOM 结构解耦。 */
+  var lg = h.closest ? h.closest("section.ledger") : null;
+  if (lg && lg.classList.contains("collapsed")) lg.classList.remove("collapsed");
+  var top = h.getBoundingClientRect().top - vb.getBoundingClientRect().top + vb.scrollTop;
+  vb.scrollTo({ top: top - 18, behavior: "smooth" });
+}
 
 function buildToc(root){
   tocHs = [].slice.call(root.querySelectorAll("h2,h3"));
   tocEl.hidden = tocHs.length < 3;          /* 少于 3 个标题的页不值得挂目录 */
   if (tocHs.length < 3){ tocEl.innerHTML = ""; return; }
   tocHs.forEach(function(h, i){ if (!h.id) h.id = "sec-" + i; });
-  tocEl.innerHTML = tocHs.map(function(h, i){
-    return '<a class="' + (h.tagName === "H3" ? "lv3" : "") + '" href="#" data-i="' + i + '">' +
-           esc(h.textContent) + '</a>';
-  }).join("");
+
+  var read = [], ledger = [];
+  tocHs.forEach(function(h, i){
+    var rec = { i: i, h: h };
+    (h.closest && h.closest("section.ledger") ? ledger : read).push(rec);
+  });
+  var link = function(r){
+    return '<a class="' + (r.h.tagName === "H3" ? "lv3" : "") + '" href="#" data-i="' + r.i + '">' +
+           esc(r.h.textContent) + '</a>';
+  };
+  var html = "";
+  if (read.length) html += read.map(link).join("");
+  if (ledger.length){
+    html += '<div class="tg-ledger"><span class="tglbl">账目 ' + ledger.length + '</span>' +
+            ledger.map(link).join("") + '</div>';
+  }
+  tocEl.innerHTML = html;
+  tocLedgerFrom = read.length ? 1 : 0;      /* 仅用于统计，不参与逻辑 */
   [].forEach.call(tocEl.querySelectorAll("a"), function(a){
     a.addEventListener("click", function(e){
       e.preventDefault();
       var h = tocHs[+a.dataset.i];
-      if (h) vb.scrollTo({ top: h.offsetTop - 18, behavior: "smooth" });
+      if (h) tocScrollTo(h);
     });
   });
   updateToc();
@@ -2043,9 +2707,61 @@ function updateToc(){
     if (tocHs[i].getBoundingClientRect().top <= 110) cur = i; else break;
   }
   [].forEach.call(tocEl.querySelectorAll("a"), function(a, i){
-    a.classList.toggle("on", i === cur);
+    a.classList.toggle("on", +a.dataset.i === cur);
+  });
+  var h = pageEl.offsetHeight - vb.clientHeight;
+  var pct = h > 40 ? Math.min(100, Math.max(0, vb.scrollTop / h * 100)) : 0;
+  progEl.style.width = pct + "%";
+}
+
+/* ---------------- 账目模式 ---------------- */
+/* 原地折叠是默认：不改章节顺序，所以 330 处「见下 / 见上 / 上表」全部仍然成立。
+   置底是给「想一口气读完正文」的人准备的开关，不是默认行为。 */
+var LG_KEY = "llmwiki.ledger";
+var ledgctl = document.getElementById("ledgctl");
+var progEl = document.getElementById("prog");
+var lgMode = "collapse";
+try { lgMode = localStorage.getItem(LG_KEY) || "collapse"; } catch(e){}
+
+function markLedgerButtons(){
+  [].forEach.call(ledgctl.querySelectorAll("button"), function(b){
+    b.classList.toggle("on", b.dataset.lg === lgMode);
   });
 }
+
+function applyLedgerMode(){
+  var secs = [].slice.call(pageEl.querySelectorAll("section.ledger"));
+  ledgctl.hidden = secs.length === 0;
+  if (!secs.length) return;
+  if (lgMode === "end"){
+    var anchor = pageEl.querySelector("section.prov-sec");
+    secs.forEach(function(s){
+      s.classList.add("collapsed");
+      if (anchor) pageEl.insertBefore(s, anchor); else pageEl.appendChild(s);
+    });
+  } else {
+    /* 还原必须**按 idx 降序**：每个账目章节要插回它的原始后继 __next 之前，
+       而那个后继通常正是下一个账目章节 —— 先还原后面的，前面的插入点才是
+       已经归位的节点。升序还原会把第一个账目章节留在页尾
+       （用纯数组模型跑过：升序得到「关键要点, 核查表, 适用边界, … 分层表, 来源」）。 */
+    secs.slice().sort(function(a, b){ return (+b.dataset.idx) - (+a.dataset.idx); })
+        .forEach(function(s){
+          s.classList.toggle("collapsed", lgMode === "collapse");
+          if (s.__next && s.__next.parentNode === pageEl) pageEl.insertBefore(s, s.__next);
+          else pageEl.appendChild(s);
+        });
+  }
+  markLedgerButtons();
+}
+
+ledgctl.addEventListener("click", function(e){
+  var b = e.target.closest ? e.target.closest("button") : null;
+  if (!b) return;
+  lgMode = b.dataset.lg;
+  try { localStorage.setItem(LG_KEY, lgMode); } catch(e2){}
+  applyLedgerMode();
+});
+
 vb.addEventListener("scroll", function(){
   if (tocRaf) return;
   tocRaf = requestAnimationFrame(function(){ tocRaf = 0; updateToc(); });
@@ -2062,7 +2778,22 @@ function go(slug){
   if (p.sources && p.sources.length) chips += '<span class="chip">来源 '+p.sources.length+'</span>';
   (p.tags||[]).forEach(function(t){ chips += '<span class="chip tag">#'+esc(t)+'</span>'; });
 
-  pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + render(p.body);
+  pageEl.className = "ptype-" + p.type;
+  pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + renderPage(p);
+
+  /* 记下账目章节的原始位置，供「回到原位」使用 */
+  [].forEach.call(pageEl.querySelectorAll("section.ledger"), function(s, i){
+    s.dataset.idx = i; s.__next = s.nextElementSibling;
+  });
+  /* 点账目章节头 = 展开 / 收起**这一张**。
+     刻意不改 lgMode：模式按钮描述的是「整页怎么排」，单卡点开是临时动作 ——
+     把它写回 localStorage 会让下一张页面莫名其妙地全部展开。 */
+  [].forEach.call(pageEl.querySelectorAll("section.ledger > h2"), function(h){
+    h.addEventListener("click", function(){
+      h.parentNode.classList.toggle("collapsed");
+    });
+  });
+  applyLedgerMode();
 
   [].forEach.call(pageEl.querySelectorAll("a.wl"), function(a){
     a.addEventListener("click", function(e){ e.preventDefault(); go(a.dataset.slug); });
@@ -2089,7 +2820,6 @@ function go(slug){
   buildToc(pageEl);
   document.title = p.title + " · " + DATA.title;
 }
-
 /* ---------------- search ---------------- */
 /* 打分与 `tools/wiki.py search` 同为 BM25。站点侧在此之上做了三处修正，都是 376 页规模逼出来的：
    ① 候选收敛 —— 先只用「有区分度的词」圈定候选集。旧版是二字组 OR，
@@ -2646,13 +3376,175 @@ def cmd_build(root, out_path=None):
     html = html.replace("__SITE_TITLE__", title)
     html = html.replace("__SITE_SUB__",
                         "%d 个页面 · %s 生成" % (len(pages), date.today().isoformat()))
+    # 章节判定词表从 Python 常量注入，保证站点与 chapter-audit 同口径（见常量区注释）
+    for ph, tbl in (("__READ_EXACT__", READ_EXACT), ("__READ_H2__", READ_H2),
+                    ("__LEDGER_H2__", LEDGER_H2)):
+        assert ph in html, "模板缺少占位符 %s" % ph
+        html = html.replace(ph, json.dumps(tbl, ensure_ascii=False))
 
     if out_path is None:
         out_path = os.path.join(root, "site", "index.html")
     write_text(out_path, html)
+
+    # 构建基准：记下本次构建时每个页面的内容指纹。
+    # 它是 [[schema]] §2.1 判据 3（「更新页面 > 5 或 新建页面 > 3」）唯一可执行的依据 ——
+    # `site/` 被 .gitignore 排除，git 给不出基准；文件 mtime 又分不开「新建」与「更新」。
+    manifest = {
+        "built": date.today().isoformat(),
+        "pages": len(pages),
+        "links": sum(len(v) for v in backlinks.values()),
+        "digests": {p.slug: page_digest(p) for p in pages},
+    }
+    write_text(os.path.join(root, "site", ".build-manifest.json"),
+               json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=1))
+
     print("已生成浏览站点: %s（%d 个页面，%d 条链接）"
           % (os.path.relpath(out_path, root), len(pages),
              sum(len(v) for v in backlinks.values())))
+    return 0
+
+
+# ---------------------------------------------------------------- buildcheck
+
+# 判据 3 的口径（见 [[schema]] §2.1）。改这两个数字要同步改 schema 与 decisions。
+BUILD_NEW_MAX = 3      # 新建页面 **大于** 此数即构建
+BUILD_UPD_MAX = 5      # 更新页面 **大于** 此数即构建
+# 自动生成页：每次改动都会变，且它们的更新是别的改动的**后果**、不是里程碑信号。
+# 计入会把阈值架空（每次 +2），故排除。
+BUILD_MANIFEST_SKIP = frozenset({"index", "log"})
+
+
+def page_digest(p):
+    """页面内容指纹。直接读原文 —— frontmatter 的键序变化也算一次更新。"""
+    try:
+        with open(p.path, "r", encoding="utf-8") as fh:
+            raw = fh.read()
+    except OSError:  # pragma: no cover
+        raw = p.body
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def cmd_buildcheck(root):
+    man_path = os.path.join(root, "site", ".build-manifest.json")
+    if not os.path.isfile(man_path):
+        print("没有构建基准（%s 不存在）。" % os.path.relpath(man_path, root))
+        print("说明：尚未构建过，或 site/ 被清理。**无法判断判据 3** —— 请先 build 一次建立基准。")
+        return 1
+    with open(man_path, "r", encoding="utf-8") as fh:
+        man = json.load(fh)
+    old = man.get("digests") or {}
+
+    new, changed, cur = [], [], {}
+    for p in load_pages(root):
+        if p.slug in BUILD_MANIFEST_SKIP:
+            continue
+        d = page_digest(p)
+        cur[p.slug] = d
+        if p.slug not in old:
+            new.append(p.slug)
+        elif old[p.slug] != d:
+            changed.append(p.slug)
+    gone = [s for s in old if s not in cur and s not in BUILD_MANIFEST_SKIP]
+
+    print("=" * 62)
+    print("构建判据 3 核验  |  基准：%s（%s 页 / %s 链接）"
+          % (man.get("built"), man.get("pages"), man.get("links")))
+    print("=" * 62)
+    print("新建页面: %d（阈值 > %d）" % (len(new), BUILD_NEW_MAX))
+    for s in sorted(new):
+        print("    + %s" % s)
+    print("更新页面: %d（阈值 > %d）" % (len(changed), BUILD_UPD_MAX))
+    for s in sorted(changed):
+        print("    ~ %s" % s)
+    if gone:
+        print("已删除页面: %d（不单独触发构建，但站点会留下指向它们的断链）" % len(gone))
+        for s in sorted(gone):
+            print("    - %s" % s)
+
+    hit_new = len(new) > BUILD_NEW_MAX
+    hit_upd = len(changed) > BUILD_UPD_MAX
+    print("-" * 62)
+    print("判据 3a 新建页面 > %d ：%s（%d）" % (BUILD_NEW_MAX, "**命中**" if hit_new else "不命中", len(new)))
+    print("判据 3b 更新页面 > %d ：%s（%d）" % (BUILD_UPD_MAX, "**命中**" if hit_upd else "不命中", len(changed)))
+    if hit_new or hit_upd:
+        print("→ **判据 3 命中，应构建。**（另请照 §2.1 逐条核判据 1/2/4/5）")
+    else:
+        print("→ 判据 3 不命中。（另请照 §2.1 逐条核判据 1/2/4/5 —— 都不命中才「明确地不构建」）")
+    if gone:
+        print("→ ⚠️ 有页面被删除：站点内可能留下断链，属「内容已错误」，**必须构建**。")
+    return 0
+
+
+# ---------------------------------------------------------------- chapter-audit
+
+
+def cmd_chapter_audit(root, verbose=False):
+    """source 页的「正文 / 账目」分布审计。**只读，不改任何文件。**
+
+    站点侧会按同一张词表把账目章节折叠起来（见常量区注释）。这份报表是给人看的
+    对账表：哪些页折了多少、哪些章节名落在词表之外（= 走了「默认正文」这条兜底）
+    —— 兜底命中的那些最值得人工确认，它们要么该补进词表，要么确实是正文。
+
+    **不做批量改名。** 本库有 330 处页内指向引用（见下 / 上表 /「见下『素材基本信息』」），
+    改名会让指名引用指空。同义异名只摆出来，改不改由人裁定。
+    """
+    pages = load_pages(root)
+    src = [p for p in pages if p.type == "source"]
+    if not src:
+        print("没有 source 页")
+        return 1
+
+    name_kind = Counter()          # 章节名 → 计数（按判定分桶）
+    fallback = Counter()           # 走兜底（默认正文）的章节名 → 计数
+    per_page = []
+    for p in sorted(src, key=lambda x: x.slug):
+        titles = re.findall(r"^##\s+(.+)$", p.body, flags=re.M)
+        read = led = 0
+        unk = []
+        for t in titles:
+            t = t.strip()
+            k = classify_h2(t)
+            name_kind[(k, t)] += 1
+            if k == "read":
+                read += 1
+                if not any(x in t for x in READ_H2) and t not in READ_EXACT:
+                    unk.append(t)
+            else:
+                led += 1
+        for t in unk:
+            fallback[t] += 1
+        per_page.append((p.slug, read, led, unk))
+
+    tot_r = sum(x[1] for x in per_page)
+    tot_l = sum(x[2] for x in per_page)
+    print("source 页 %d ｜ 正文章节 %d ｜ 账目章节 %d ｜ 账目占比 %.1f%%"
+          % (len(src), tot_r, tot_l, 100.0 * tot_l / max(1, tot_r + tot_l)))
+    n_l = sum(1 for x in per_page if x[2] == 0)
+    counts = sorted(x[2] for x in per_page)
+    print("每页账目数：中位 %d ｜ 最多 %d ｜ 零账目的页 %d（这些是早期简单页，正常）"
+          % (counts[len(counts) // 2], counts[-1], n_l))
+
+    if verbose:
+        print("\n=== 逐页 ===")
+        for slug, r, l, unk in per_page:
+            print("  %-44s 正文 %2d / 账目 %2d%s" % (slug, r, l, ("  ← " + " ｜ ".join(unk)) if unk else ""))
+
+    print("\n=== 走兜底（默认正文）的章节名 TOP20 —— 最值得人工确认的一批 ===")
+    if not fallback:
+        print("  （无）")
+    for t, n in fallback.most_common(20):
+        print("  %3d  %s" % (n, t))
+
+    print("\n=== 账目判定词表（%d 条子串 + %d 条精确名）===" % (len(LEDGER_H2), len(READ_EXACT)))
+    print("  正文精确：" + "、".join(READ_EXACT))
+    print("  正文字串：" + "、".join(READ_H2))
+    print("  账目子串：" + "、".join(LEDGER_H2))
+
+    print("\n=== 同义异名的用法分布（只报告，不改名）===")
+    for label, names in SECTION_FAMILIES:
+        rows = [(t, n) for (k, t), n in name_kind.items() if t in names]
+        if rows:
+            print("  【%s】%s" % (label, " ｜ ".join("%s ×%d" % (t, n) for t, n in sorted(rows, key=lambda x: -x[1]))))
     return 0
 
 
@@ -2685,6 +3577,10 @@ def main(argv):
         return cmd_index(root)
     if cmd == "build":
         return cmd_build(root, argv[2] if len(argv) > 2 else None)
+    if cmd == "buildcheck":
+        return cmd_buildcheck(root)
+    if cmd == "chapter-audit":
+        return cmd_chapter_audit(root, verbose=("-v" in argv or "--verbose" in argv))
     if cmd == "graph":
         return cmd_graph(root)
     if cmd == "search":
