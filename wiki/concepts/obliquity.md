@@ -80,7 +80,7 @@ Obliquity 指的是：当目标的特征是**复杂、含糊、且依赖于大�
 - 与 [[narrative-as-objective-function]] 相接：目标函数该写**背后之物**，而不是那些写不进去的东西（见 [[essential-by-products]] 行 52）。
 - 与 [[business-leverage]] / [[steady-state-survival-logic]] 相接：企业层面的迂回（利润作为副产品）与这两页的经营逻辑相连。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] Kay 是否给出过「何时该直取、何时该迂回」的判据？本库只有讲稿转述，未核原文。
 - [ ] 默克式案例的**失败率**素材未给 —— 「迂回」是否存在幸存者偏差？

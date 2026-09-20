@@ -20,8 +20,8 @@ status: active
 - **作者**：Susan Nolen-Hoeksema、Blair E. Wisco（Yale University）、Sonja Lyubomirsky（University of California, Riverside）
 - **素材路径**：`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`（**2,837 行**；frontmatter 行 1–48，正文自 [p.1] 起） ｜ `raw/assets/2026-09-18-nolen-hoeksema-rethinking-rumination.pdf`（25 页 / 269,833 字节）
 
-> [!warning] 行区间坐标系
-> 本页所有行号均为**文件绝对行号**（`wc -l` 的坐标系，总长 2,837 行）。
+> [!warning] 行号核对
+> 本页行号对应的文件总长 2,837 行（`wc -l`）。
 > **frontmatter 占 48 行** —— 若某处数据来自「内容相对行号」，差值应为 48。
 > 引用前请回 `raw/` 用 `sed -n 'N,Mp'` 核对。**凭记忆沿用行号是本库已犯过多次的错。**
 
@@ -111,13 +111,6 @@ status: active
 - **文本层有字距伪影** —— 大写字母后偶发多余空格（`W ood` / `V olume` / `T .B.`）。**引用原文措辞前须回 PDF 核对。**
 - 全部为英文原文；本页中文表述为本库翻译。
 
-## 素材基本信息
-
-- **出处**：*Perspectives on Psychological Science*, 3(5), 400–424（2008-09，SAGE / Association for Psychological Science）· DOI 10.1111/j.1745-6924.2008.00088.x
-- **证据层级**：**一手**（同行评议综述刊；APS 旗舰综述刊）
-- **下载源**：作者自存版本（第二作者 Lyubomirsky 官方站点 `drsonja.net`），非第三方镜像
-- **收录裁定**：北洛 2026-09-18 指示收录，用于补录 [[rumination-vs-reflection]] 所依据的外部文献
-
 ## 与本库既有页面的关系
 
 - **直接关闭 [[emotion-awareness]] 缺口表那条「补录反刍 / 反思文献素材」**
@@ -126,6 +119,16 @@ status: active
 - **给 [[internal-friction]]、[[complaining]] 的「用心理活动替代有效行动」补上临床对应物**（TABLE 1 第 4 行）
 - **与 [[cognitive-reappraisal]] 形成张力**：该页主张「改内容」，本素材转述的认知疗法机制是「改与认知的关系」
 - **给 [[cognitive-vs-somatic-paths]] 的「先身体后认知」找到第一条实验依据**（行 1723–1730）
+
+## 定级理由
+
+- **证据层级**：**一手**（同行评议综述刊；APS 旗舰综述刊）
+
+## 归属判断
+
+- **出处**：*Perspectives on Psychological Science*, 3(5), 400–424（2008-09，SAGE / Association for Psychological Science）· DOI 10.1111/j.1745-6924.2008.00088.x
+
+- **收录裁定**：北洛 2026-09-18 指示收录，用于补录 [[rumination-vs-reflection]] 所依据的外部文献
 
 ## 来源
 

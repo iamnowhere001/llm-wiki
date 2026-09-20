@@ -14,6 +14,13 @@ confidence: high
 status: active
 ---
 
+<!-- 建页提示（填完请删掉本块）
+  goal      必须可验收 —— 看到它能回答「做完了没有」。反例「学习 Rust」（schema §1.6）
+  tags      主题 / 系列 / 署名 / 角色四类 —— schema §1.7
+  evidence  项目页不填 evidence_tier：它的来源是意图，不是素材（schema §1.1）
+  项目页不发明 —— 项目由人类意图派生，不由素材派生（AGENTS.md §3 第 10 条）
+-->
+
 # {{TITLE}}
 
 > 一句话：这个项目要产出什么。
@@ -64,7 +71,7 @@ status: active
 
 - 
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ]
 

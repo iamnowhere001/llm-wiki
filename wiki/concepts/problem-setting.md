@@ -101,7 +101,7 @@ status: active
 - 与 [[goodharts-law]] 相接：立题者要考核，但考核会异化 —— 讲稿的处置是「保留最终判断权」。
 - 区别于 [[effectuation]]：该页讲在不确定中用手头手段生成目标，本页讲的是**谁有权定义题面**。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 「预设投射」的术语偏移（projection problem vs constancy under negation）是否要改用别的名字？
 - [ ] 「指挥官意图」（commander-intent）**库内无页**（本份只有 1 句转述 + AI 段 1 条，证据薄）—— 待前讲入库再议。

@@ -98,7 +98,7 @@ status: active
 | 浏览界面 | 自带单文件站点（图谱 + 全文搜索） | 依赖 Obsidian |
 | 运行环境 | 任意（纯本地脚本） | Claude Code |
 
-## 遗留问题
+## 待办 / 开放问题
 
 - [ ] `skills/wiki/README.md` 的页面规范与本仓库 `AGENTS.md` 的差异未比对
 - [ ] `wipe` 的回收站实现方式未知

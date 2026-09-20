@@ -77,7 +77,7 @@ status: active
 - 与 [[emotion-regulation-toolkit]] 相接：重评作用于评估层，本页说明**驱动层的偏差不走评估层**。
 - 与 [[free-energy-principle]] 的关系本库未做（预测误差与激励显著性是否同构）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 从大鼠电刺激到人类刷手机的外推强度，本库无中介材料 —— 是否需要在引用时统一加限定？
 - [ ] 「wanting / liking」术语化年份 1993 未在素材中出现，本页已补记；是否要收 Robinson & Berridge 1993 原文？

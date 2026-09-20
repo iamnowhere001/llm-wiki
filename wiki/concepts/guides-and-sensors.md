@@ -78,7 +78,7 @@ that mistake again」（见 [[harness-engineering]]）。
 - **与 [[agents-md]]**：本库的 `AGENTS.md` 是一个标准的 guide（前馈）。**本库此前只用「常驻成本」这一个视角看它，
   本页提供了第二个视角。**
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] Böckeler 提到的 "harness templates" 未收录，可能与 guides 的落地形式有关
 - [ ] 「computational / inferential」这一对术语是否为 Böckeler 原创，未核

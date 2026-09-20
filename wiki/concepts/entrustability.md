@@ -4,9 +4,9 @@ type: concept
 slug: entrustability
 tags: [万维钢, 得到课程, 不确定性, 可托付性, 托付, 高薪]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-trustworthiness]
-related: [types-of-uncertainty, uncertainty-as-fuel, frank-knight, psychological-safety, attachment-theory, 2026-09-19-trustworthiness, modern-thinking-tools]
+related: [types-of-uncertainty, uncertainty-as-fuel, frank-knight, psychological-safety, attachment-theory, 2026-09-19-trustworthiness, modern-thinking-tools, 2026-09-20-ritual-as-protocol]
 evidence_tier: single
 confidence: low
 status: active
@@ -150,6 +150,30 @@ status: active
 - **[[2026-09-19-inner-optimizer]]（115 讲）**：补**检验判据** ——
   「**内部目标不能靠表态判断，只能放到外部环境中测**」（行 198），配套四道分叉测试题（行 214，见 [[forking-test]]）。
   **即：可托付性可以被测，而测法不是问，是造分叉情境。**
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-ritual-as-protocol]]（070 讲）的「回填清单」建议。
+> 行号为该素材文件的**绝对行号**。
+> **⚠️ 目标页重定向一条**：该清单原写 `[[2026-09-19-trustworthiness]]`（**sources 页**）。
+> 按本库 2026-09-19 立的判据，**跨素材复用关系由概念页承载**；且 2026-09-20 立的那条例外
+> （「**必须显式区分否则会被误合并**」属防错、应执行）在本例中同样指向**概念层划界** ——
+> 故落在**本页**而非 sources 页。**已在 070 的回填清单里登记该重定向。**
+
+- **070 行 116 给了一个本页此前没有的二分** —— 日本社会心理学家**山岸俊男（Toshio Yamagishi）**的
+  **「安心」与「信任」**：「**强关系网络的礼提供『安心』，开放社会的礼则提供『信任』**」。
+- **与本页的划层（本库判断）**：
+
+  | | 依据 | 场景 |
+  |---|---|---|
+  | **安心（assurance）** | **关系约束** —— 对方跑不掉，所以你敢预期 | 熟人社会、强关系网络 |
+  | **信任（trust）** | **对陌生人的一般化预期** —— 没有关系兜底 | 开放社会、陌生人 |
+  | **可托付性（本页）** | **这个人值不值得把事交给他**（人格 / 能力侧） | 个体层面的判断 |
+
+  **三层不在同一轴**：安心与信任讲的是**你凭什么敢预期**（结构 vs 一般化信念）；
+  本页讲的是**对象本身的品质**。**070 那条补的正是本页缺的「结构侧」。**
+- **⚠️ 070 讲未使用「可托付性」一词，关联由本库建立**，故**不列入本页 `sources`**。
+
 ## 待办 / 开放问题
 
 - [ ] **是否与 [[uncertainty-as-fuel]] 合并或单列** —— 本页倾向单列（它是「燃料」在定价侧的落点）

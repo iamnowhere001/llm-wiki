@@ -4,9 +4,9 @@ type: concept
 slug: tacit-knowledge
 tags: [哲学, AI, 具身认知, 知识, 学徒制]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty]
-related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era, cognitive-outsourcing, writing-as-thinking]
+related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era, cognitive-outsourcing, writing-as-thinking, 2026-09-20-legibility-and-metis, legibility]
 evidence_tier: crossed
 confidence: medium
 status: active
@@ -114,6 +114,33 @@ status: active
   行 170「**工具不是经验的替代品，工具是经验的压缩算法**」。
   **与本页的关系**：本页讲「已压缩但不可言说的知识」，117 讲给的是**工具层面的压缩**（把经验压成可调用的短程序），
   两者都在讲「**压缩之后剩下的那个东西才是可用的**」。
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-legibility-and-metis]]（078 讲）的「回填清单」建议 —— 该条被标为「**最重要**」。
+> 行号为该素材文件的**绝对行号**。
+> **惯例**：回填只做正文互链，**不把互链素材加入 `sources`**。
+
+- **⭐ 一条必须登记的术语边界：米提斯 ≠ 默会知识。** 078 行 136 给了**素材自己的辨析**（这是本库少见的一处，
+  讲者主动区分了两个常被混用的概念）：
+  「**"默会知识"是强调你知道，但你说不出来；"米提斯"则是说只有在本地现场才知道 ——
+  也许你能说出来，也许你说不出来，要点是不在现场就学不会。**」
+- **两条判据轴不同**（**本库据行 136 归纳**）：
+
+  | | 判据轴 | 反面 |
+  |---|---|---|
+  | **默会知识**（波兰尼） | **能不能说出来**（表达轴） | 明言知识 |
+  | **米提斯**（詹姆斯·斯科特） | **在不在现场**（获取轴） | 普遍 / 可移植的技术知识 |
+
+  **两者正交，不是包含关系** —— 因此存在四种组合：
+  **说不出来、但不在现场也学得会**（面部识别，是默会而非米提斯）；
+  **说得出、但不在现场学不会**（怎么跟本地部门打交道，是米提斯而非默会）；
+  **两者交集**（老中医的脉诊手感）；**两者都不是**（教科书公式）。
+- **⚠️ 这是一条「未裁定的术语边界」，不是简单补充。** 本库此前在 `flow-terminology` /
+  `mental-strength-terminology` 两页做过同类的**术语层切分**，本次是**首次在「默会知识」这个词上做**。
+  **是否据行 136 把两者正式分列、以及是否另建独立的「米提斯」页，待北洛裁定** ——
+  本轮的处理是**并入 [[legibility]] 并在本页登记边界**，不擅自分列。
+
 ## 待办 / 开放问题
 
 - [ ] **波兰尼 1958（《个人知识》）与柯林斯的原始文献未收录**。

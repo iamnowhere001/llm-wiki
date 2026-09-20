@@ -25,8 +25,8 @@ status: active
 > 「See what your agent is really doing / Try LangSmith」。
 > **降级的是行为，不是作者身份** —— 本文的定义与分类是可用的，但引用时须带 `confidence: medium` 这个前提。
 
-> [!note] 行号坐标系
-> 本节所有行号均为**文件绝对行号**（`wc -l` = 211 的坐标系），已回原文逐条核对。
+> [!note] 行号核对
+> 本节行号已回原文逐条核对（`wc -l` = 211）。
 
 ## 关键要点
 
@@ -86,10 +86,6 @@ status: active
 - [ ] 逐条整理本页的「harness 构成清单」—— 它是「个人最小 harness」的直接材料来源
 - [ ] 核对本页对 context window 的论述与 [[llm-wiki-pattern]] 的「编译」主张是否有可对照之处
 
-## 素材基本信息
-
-- **性质**：**一手**（作者署名），但**含利益披露**
-
 ## 相关页面
 
 - [[harness]]
@@ -97,6 +93,10 @@ status: active
 - [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]
 - [[2026-09-19-hashimoto-my-ai-adoption-journey]]
 - [[2026-09-19-openai-harness-engineering-codex]]
+
+## 归属判断
+
+- **性质**：**一手**（作者署名），但**含利益披露**
 
 ## 来源
 

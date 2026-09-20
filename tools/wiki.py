@@ -18,6 +18,8 @@ wiki.py -- LLM Wiki 零依赖工具链
   python3 tools/wiki.py log <type> "msg"   追加一条日志
   python3 tools/wiki.py new <type> <slug>  按模板新建页面
                                            type: project | source | entity | concept | analysis
+  python3 tools/wiki.py template-check     模板体检：templates/*.md 与内联兜底模板是否一致、
+                                           5 个模板结构是否合规（只读，有问题返回非零）
   python3 tools/wiki.py graph              打印链接关系
 """
 
@@ -90,15 +92,24 @@ READ_H2 = [
     # 但将来若有人重新引入该章节名，--audit 会把它报进「走兜底」清单。
     "关键要点", "要点", "摘要", "段摘要", "逐节摘要", "逐段摘要",
     "与本库", "与现有", "与既有", "与库内", "与其他页面", "与素材",
-    "待办", "开放问题", "新出现的实体", "适用边界", "派生页",
+    # 「开放问题」已于 2026-09-20 全库统一为「待办 / 开放问题」并取消（见 schema §1.4）。
+    # 故意不留在表里：长名含「待办」子串，删掉它行为不变（兜底默认就是 read），
+    # 但将来若有人重新引入这个章节名，--audit 会把它报进「走兜底」清单。
+    "待办", "新出现的实体", "适用边界", "派生页",
 ]
 LEDGER_H2 = [
     "分层表", "素材分层", "引注", "数字与引注", "数字清单", "回填", "新建 / 回填",
     "归属", "定级理由", "定级变更", "定级的理由", "证据性质", "证据层级",
     "confidence", "置信度", "仍然收录的原因",
     "AI 加工", "AI 段", "AI 生成", "核查", "核对", "校准", "回指", "核实",
-    "素材基本信息", "版本与捕获", "版本与获取", "抓取", "已知缺失", "已知缺陷",
-    "行号坐标系", "关键行号", "映射表", "对照表", "讲次总表", "内嵌资源",
+    # 「素材基本信息」已于 2026-09-20 全库取消（北洛裁定：冗余 —— 装的东西 raw frontmatter 里都有）。
+    # 故意不留在表里：删掉它行为不变（兜底默认就是 read），但将来若有人重新引入这个章节名，
+    # chapter-audit 会把它报进「走兜底」清单。归位规则见 schema §1.8。
+    "版本与捕获", "版本与获取", "抓取", "已知缺失", "已知缺陷",
+    # 「行号坐标系」已于 2026-09-20 全库取消（北洛裁定：全库默认文件绝对行号，页内不再声明，
+    # 见 schema §3.3）。故意不留在表里：删掉它行为不变（兜底默认就是 read），
+    # 但将来若有人重新引入这个章节名，chapter-audit 会把它报进「走兜底」清单。
+    "关键行号", "映射表", "对照表", "讲次总表", "内嵌资源",
     "token 对照", "附段", "文档后段", "定语：", "校验", "台账",
     "采集质量", "权威性", "分段（", "结构（", "取舍", "记账", "性质判定", "同源判定",
 ]
@@ -117,7 +128,7 @@ def classify_h2(title):
 
 
 # 章节同义异名。**只用于审计报表，不用于批量改名** ——
-# 本库有 330 处页内指向引用（见下 / 见上 / 上表 / 「见下『素材基本信息』」），
+# 本库有 330 处页内指向引用（见下 / 见上 / 上表 / 「见下『归属判断』」），
 # 改名会让指名引用指空。所以这里只把「哪些页用了哪个名字」摆出来给人看，
 # 改不改由人决定。
 SECTION_FAMILIES = [
@@ -591,6 +602,23 @@ def cmd_lint(root):
                                     % (p.relpath, t))
         section("标签属于移除集", bad_tags)
 
+    # ---- 行号坐标系声明（2026-09-20 取消，见 schema §3.3）----
+    # 全库默认「文件绝对行号」，sources 页再声明一遍是冗余 —— 但它此前是硬要求，
+    # 所以「取消」必须可核：谁重新引入，lint 立刻报（判据同「判据若核不出来就等于不存在」）。
+    # 只拦**声明式**写法；讲历史（「raw 曾按内容相对行号」）与讲另一种坐标系（PDF 页码）不拦 ——
+    # 那两处是史实与边界，不是冗余声明。
+    COORD_DECL = ("**本页坐标系**", "**坐标系：文件绝对行号**",
+                  "行区间为**文件绝对行号**", "行区间 = **文件绝对行号**",
+                  "[!note] 行号坐标系", "[!note] 行区间坐标系", "（文件绝对行号）")
+    coord_decl = []
+    for p in pages:
+        if p.type != "source":
+            continue
+        for i, l in enumerate(p.body.split("\n"), 1):
+            if any(k in l for k in COORD_DECL):
+                coord_decl.append("%s  第 %d 行：%s" % (p.relpath, i, l.strip()[:70]))
+    section("sources 页残留行号坐标系声明", coord_decl)
+
     # ---- 项目层检查 ----
     projects = [p for p in pages if p.type == "project"]
     knowledge = [p for p in pages
@@ -1049,6 +1077,118 @@ def cmd_new(root, ptype, slug, title=None):
     return 0
 
 
+# ---------------------------------------------------------------- template-check
+
+
+# 每个模板的 frontmatter 必需字段。与 lint 的 REQUIRED_FM（只查 title/type/slug）不同：
+# lint 管的是「已入库的页」，这里管的是「模板产出的页该长什么样」—— 所以字段要求是完整的。
+TEMPLATE_REQUIRED_FM = {
+    "source": ["title", "type", "slug", "tags", "created", "updated",
+               "sources", "related", "confidence", "status"],
+    "entity": ["title", "type", "slug", "tags", "created", "updated",
+               "sources", "related", "evidence_tier", "confidence", "status"],
+    "concept": ["title", "type", "slug", "tags", "created", "updated",
+                "sources", "related", "evidence_tier", "confidence", "status"],
+    "analysis": ["title", "type", "slug", "tags", "created", "updated",
+                 "sources", "related", "evidence_tier", "confidence", "status"],
+    "project": ["title", "type", "slug", "tags", "created", "updated", "goal",
+                "stage", "started", "sources", "related", "confidence", "status"],
+}
+
+# 收尾节的现行名（schema §1.4 / §1.8）。2026-09-20 由「开放问题」「遗留问题」「待办」
+# 三种异名统一而来；模板是异名的源头，所以这一条单独断言。
+CLOSING_H2 = "待办 / 开放问题"
+
+
+def _tpl_h2(text):
+    return re.findall(r"^## (.+?)\s*$", text, re.M)
+
+
+def cmd_template_check(root):
+    """模板体检（只读）。核两件事，此前都只能靠人记着：
+
+      ① templates/*.md 与 wiki.py 内联兜底模板是否逐字节一致（schema §1.8 的要求）
+      ② 每个模板实例化后结构是否合规：frontmatter 字段齐、收尾节名统一、无未替换占位符
+
+    「判据若核不出来就等于不存在」—— 这个命令就是那条判据的核法。
+    有问题返回 1，全过返回 0；测不了（模板缺失）也返回 1，不报成「通过」。
+    """
+    problems = []
+    notes = []
+
+    for name in PAGE_DIRS:
+        path = os.path.join(root, "templates", "%s.md" % name)
+        if not os.path.isfile(path):
+            problems.append("templates/%s.md 缺失" % name)
+            continue
+        with open(path, "r", encoding="utf-8") as fh:
+            disk = fh.read()
+
+        inline = TEMPLATES.get(name)
+        if inline is None:
+            problems.append("wiki.py 内联模板缺 %s —— templates/ 缺失时 new 会直接失败" % name)
+        elif inline != disk:
+            problems.append(
+                "templates/%s.md 与 wiki.py 内联模板不一致（文件 %d 字符 / 内联 %d 字符）"
+                " —— schema §1.8 要求两者一致" % (name, len(disk), len(inline)))
+
+        today = date.today().isoformat()
+        text = (disk.replace("{{TITLE}}", "样例标题")
+                    .replace("{{SLUG}}", "sample-slug")
+                    .replace("{{DATE}}", today))
+
+        left = re.findall(r"\{\{[^}]*\}\}", text)
+        if left:
+            problems.append("templates/%s.md 有未替换的占位符：%s"
+                            % (name, "、".join(sorted(set(left)))))
+
+        m = re.match(r"^---\n(.*?)\n---", text, re.S)
+        if not m:
+            problems.append("templates/%s.md 缺 frontmatter" % name)
+            continue
+        keys = [ln.split(":", 1)[0].strip() for ln in m.group(1).split("\n") if ":" in ln]
+        want = TEMPLATE_REQUIRED_FM.get(name, [])
+        miss = [k for k in want if k not in keys]
+        if miss:
+            problems.append("templates/%s.md frontmatter 缺字段：%s" % (name, "、".join(miss)))
+        extra = [k for k in keys if k not in want]
+        if extra:
+            notes.append("templates/%s.md 有额外字段：%s" % (name, "、".join(extra)))
+
+        secs = _tpl_h2(text)
+        if CLOSING_H2 not in secs:
+            problems.append("templates/%s.md 缺收尾节「## %s」（现行名，schema §1.4）"
+                            % (name, CLOSING_H2))
+        # 其余章节名不在这里判「走兜底」—— 那是 chapter-audit 的职责（兜底默认按正文渲染，
+        # 是保守正确的设计）。本命令只拦「模板引入异名」这一件事，不重复报正常兜底。
+
+        n_blank = len(re.findall(r"\[\[\s*\]\]", text))
+        if n_blank:
+            notes.append("templates/%s.md 有 %d 处空链接占位符 [[ ]] —— lint 的正则要求目标至少 1 字符，"
+                         "忘填不会被报出来，建页时必须逐个落实" % (name, n_blank))
+
+    print("=" * 62)
+    print("模板体检  |  根目录: %s" % root)
+    print("=" * 62)
+    for name in PAGE_DIRS:
+        print("  %-9s templates/%s.md" % (name, name))
+
+    if notes:
+        print("\n提示（不计入问题数）  (%d)" % len(notes))
+        for n in notes:
+            print("  - " + n)
+
+    if problems:
+        print("\n问题  (%d)" % len(problems))
+        for p in problems:
+            print("  - " + p)
+        print("\n模板体检: %d 项问题。" % len(problems))
+        return 1
+
+    print("\n模板体检: 0 项问题。内联与文件一致，5 个模板结构合规。")
+    return 0
+
+
 # ---------------------------------------------------------------- graph
 
 
@@ -1228,12 +1368,25 @@ confidence: high
 status: active
 ---
 
+<!-- 建页提示（填完请删掉本块）
+  tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」（素材 / 一手文献 / AI生成 / 抓取元数据）—— schema §1.7
+  sources   指向本素材自己的 slug（自指），须与文件名一致
+  related   只写已存在的页 slug；正文里也要真的引用它 —— schema §1.5
+  evidence  source 页不填 evidence_tier —— 它衡量的是知识页的证据水位，不是素材页（schema §1.2）
+-->
+
 # {{TITLE}}
 
 > 提要：这份素材讲了什么、为什么值得收。
-> **行号、坐标系、核查过程不写在这里** —— 那是账目区的事。站点侧会把这一段渲染成独立的提要面板。
+> **行号、核查过程不写在这里** —— 那是账目区的事。站点侧会把这一段渲染成独立的提要面板。
 
-<!-- 上款：站点侧把这些 `- **标签**：值` 渲染成一张出处卡。读者第一眼要看到的就是它。 -->
+<!-- 上款：站点侧把这些 `- **标签**：值` 渲染成一张出处卡。读者第一眼要看到的就是它。
+     只放 4 项：作者 / 链接 / 发表 / 素材路径。
+     账目类字段按语义归位：性质 / 体裁与编号 / 讲次 / 编号依据 →「归属判断」；
+     证据层级 / 采集质量 →「定级理由」；内嵌资源 / 图片 file_token 对照表 →「素材分层表」。
+     「抓取」与「行号坐标系」声明不写在本页 —— 前者 raw frontmatter 的
+     capture_method / capture_note 里逐条都有（schema §1.8，2026-09-20 裁定），
+     后者已于 2026-09-20 全库取消：全库默认文件绝对行号，页内不必再声明（schema §3.3）。 -->
 - **作者 / 来源**：
 - **链接**：
 - **发表**：
@@ -1247,9 +1400,15 @@ status: active
 2.
 3.
 
+<!-- 关键要点一律编号列表（全库 123/123 页如此），不要写段落式。
+     也不要另开 TL;DR —— 它已于 2026-09-20 并入本节（schema §1.8）。 -->
+
 ## 摘要
 
 按素材自身的逻辑复述，不加入素材以外的判断。
+
+<!-- 长素材（得到讲稿 / 专著）可改用带行区间的分段形态，如「讲稿段摘要（C 段，行 35–185）」——
+     全库有 65 页这么做。分段摘要同时承担了分层表的作用，不必再重复列一次。 -->
 
 ## 与本库既有页面的关系
 
@@ -1272,17 +1431,19 @@ status: active
 
 <!-- ================= 账目区：给维护者看的，站点侧默认折叠成卡片 =================
      这里放分层表 / 引注核查表 / 回填清单 / 归属判断 / 定级理由 / 证据性质 /
-     AI 加工段判定 / 素材基本信息 / 行号坐标系之类的东西。
+     AI 加工段判定之类的东西。
      放这里不代表不重要 —— 只是读「这份素材讲了什么」的人不需要先翻过它。
+     下面 5 节是最常填的；其余按本份素材的实际需要增补，不需要的就不留空节。
+     没有「素材基本信息」这一节 —— 它于 2026-09-20 全库取消（schema §1.8）。
      判定词表见 wiki/schema.md §1.8；对账用 `python3 tools/wiki.py chapter-audit`。 -->
 
-## 素材基本信息
-
-## 素材分层表（文件绝对行号）
+## 素材分层表
 
 ## 引注核查表
 
 ## 归属判断
+
+## 回填清单
 
 ## 定级理由
 
@@ -1307,6 +1468,13 @@ confidence: medium
 status: active
 ---
 
+<!-- 建页提示（填完请删掉本块）
+  tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」—— schema §1.7
+  sources   支撑本页的 raw 素材 slug。挂了几份就按几份改 evidence_tier —— schema §1.2
+  evidence  single = 恰好 1 份 / crossed = ≥2 份 / primary = ≥1 份 paper
+  related   只写已存在的页 slug；正文里也要真的引用它 —— schema §1.5
+-->
+
 # {{TITLE}}
 
 > 一句话说明这是什么、为什么值得单独一页。
@@ -1314,6 +1482,12 @@ status: active
 - **类型**：人物 / 组织 / 工具 / 产品
 - **别名**：
 - **外部链接**：
+
+<!-- 若本实体的署名 / 归属有争议，或依据只有单一来源，放一个 > [!note] 块在这里（自写观察一律 note） -->
+
+## 要点
+
+- 3–6 条。本实体只在库里起单一作用时，可省略本节，直接进「是什么」。
 
 ## 是什么
 
@@ -1330,6 +1504,10 @@ status: active
 ## 相关概念
 
 - [[ ]]
+
+## 待办 / 开放问题
+
+- [ ]
 
 ## 来源
 
@@ -1350,14 +1528,24 @@ confidence: medium
 status: active
 ---
 
+<!-- 建页提示（填完请删掉本块）
+  tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」（素材 / AI生成 / 待裁定）—— schema §1.7
+  sources   支撑本页的 raw 素材 slug。挂了几份就按几份改 evidence_tier —— schema §1.2
+  evidence  single = 恰好 1 份 / crossed = ≥2 份 / primary = ≥1 份 paper
+  related   只写已存在的页 slug；正文里也要真的引用它，别只挂在字段里 —— schema §1.5
+-->
+
 # {{TITLE}}
 
 > 一句话定义。读者只看这一行也能知道这页在讲什么。
 
+<!-- 若本页有「自写观察」或「素材质量说明」，放在这里，用 > [!note]。
+     自写观察一律 note —— [!warning] 归脚本独占（schema §1.2）。 -->
+
 ## 要点
 
--
--
+- 3–6 条，每条尽量带出处（素材页 + 行号）。
+- 形态二选一：bullet 或编号列表，同一页只用一种（全库 bullet 118 页 / 编号 62 页）。
 
 ## 定义与背景
 
@@ -1373,7 +1561,7 @@ status: active
 - 是 [[ ]] 的前置：
 - 与 [[ ]] 互补：
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ]
 
@@ -1396,12 +1584,20 @@ confidence: medium
 status: active
 ---
 
+<!-- 建页提示（填完请删掉本块）
+  tags / sources / evidence / related 的判据见 schema §1.7 / §1.2 / §1.5
+  综合页必须逐节点标注证据性质：哪些是「事实」、哪些是「本库的推断」—— AGENTS.md §3 第 11 条
+  结论若建立在推断上，confidence 降级，并在正文里写明降级理由
+-->
+
 # {{TITLE}}
 
 > 一句话说明这份分析得出的结论。
 
 - **触发问题**：
 - **结论**：
+
+<!-- 方法论说明 / 自写观察放这里，用 > [!note] -->
 
 ## 对比 / 论证
 
@@ -1411,13 +1607,13 @@ status: active
 
 ## 证据
 
-每条证据标注来源页。
+每条证据标注来源页，并写明它是「事实」还是「本库的推断」。
 
 ## 结论与适用条件
 
 什么情况下该选 A，什么情况下该选 B。
 
-## 遗留问题
+## 待办 / 开放问题
 
 - [ ]
 
@@ -1441,6 +1637,13 @@ related: []
 confidence: high
 status: active
 ---
+
+<!-- 建页提示（填完请删掉本块）
+  goal      必须可验收 —— 看到它能回答「做完了没有」。反例「学习 Rust」（schema §1.6）
+  tags      主题 / 系列 / 署名 / 角色四类 —— schema §1.7
+  evidence  项目页不填 evidence_tier：它的来源是意图，不是素材（schema §1.1）
+  项目页不发明 —— 项目由人类意图派生，不由素材派生（AGENTS.md §3 第 10 条）
+-->
 
 # {{TITLE}}
 
@@ -1492,7 +1695,7 @@ status: active
 
 - 
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ]
 
@@ -2427,8 +2630,12 @@ function sourceLayout(html, p){
   });
 
   /* ② 提要：H1 之后的第一个引用块。
-        同时把「本页坐标系」这类声明抽出来 —— 它 57 页都有，是**维护者需要、
-        读者不需要**的元信息，却往往占提要一整段。抽走之后提要才是提要。 */
+        同时把「本页坐标系」这类声明抽出来 —— 它曾经 57 页都有，是**维护者需要、
+        读者不需要**的元信息，却往往占提要一整段。抽走之后提要才是提要。
+
+        2026-09-20：该声明已全库取消（schema §3.3 —— 全库默认文件绝对行号，页内不再声明），
+        现在这段正则常态不匹配。保留它是**兜底**：若有人重新引入这类声明，
+        提要仍能正确渲染，且 lint 会同时报「残留行号坐标系声明」。 */
   var lb = cutTag(head, "blockquote"), coordRows = [];
   if (lb){
     var innerQ = lb.html.replace(/^<blockquote[^>]*>/, "").replace(/<\/blockquote>$/, "");
@@ -3483,7 +3690,7 @@ def cmd_chapter_audit(root, verbose=False):
     对账表：哪些页折了多少、哪些章节名落在词表之外（= 走了「默认正文」这条兜底）
     —— 兜底命中的那些最值得人工确认，它们要么该补进词表，要么确实是正文。
 
-    **不做批量改名。** 本库有 330 处页内指向引用（见下 / 上表 /「见下『素材基本信息』」），
+    **不做批量改名。** 本库有 330 处页内指向引用（见下 / 上表 /「见下『归属判断』」），
     改名会让指名引用指空。同义异名只摆出来，改不改由人裁定。
     """
     pages = load_pages(root)
@@ -3608,6 +3815,8 @@ def main(argv):
             print("用法: wiki.py new <type> <slug> [title]")
             return 1
         return cmd_new(root, argv[2], argv[3], argv[4] if len(argv) > 4 else None)
+    if cmd == "template-check":
+        return cmd_template_check(root)
 
     print("未知命令: %s\n" % cmd)
     print(USAGE)

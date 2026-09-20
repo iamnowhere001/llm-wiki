@@ -79,18 +79,20 @@ status: active
 - [ ] PDF 提取后版面关系丢失（标题/要点/引文分栏被打散），个别句子顺序需对照原 PDF 核验
 - [ ] 文件名保留了检索阶段误记的 `1999-` 前缀（附件名不可改，见 [[plain-text-and-git]] 的不可变约定）
 
-## 素材基本信息
-
-- **场合**：Educom 98, Orlando, Florida, 1998-10-15
-- **存档**：https://digitalcommons.usf.edu/former-pub/246
-- **附件**：`raw/assets/1999-frand-hixon-pkm.pdf`
-
 ## 相关页面
 
 - [[pkm-history]]
 - [[llm-wiki-pattern]]
 - [[use-cases]]
 - [[vannevar-bush]]
+
+## 已知缺失
+
+- **附件**：`raw/assets/1999-frand-hixon-pkm.pdf`
+
+## 归属判断
+
+- **场合**：Educom 98, Orlando, Florida, 1998-10-15
 
 ## 来源
 

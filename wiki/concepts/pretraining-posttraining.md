@@ -106,7 +106,7 @@ status: active
 - 与 [[human-sponge]] / [[cognitive-load-theory]] 相接：预训练看输入，与该两页的「输入质量」主张同源。
 - 与 [[bayesian-prior]] / [[prediction-error]] 相接：「猜错就校准权重」字面就是预测误差最小化。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 「后训练只决定下限」vs 行 142「RLVR 也可能推高上限」—— 素材内部张力未裁决。
 - [ ] 涌现能力（Wei et al. 2022）近年有反方（质疑是度量假象），本库未检索。

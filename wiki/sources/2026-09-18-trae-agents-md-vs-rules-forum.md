@@ -55,18 +55,23 @@ status: active
 - [ ] 找 TRAE 官方是否在别处说明过 AGENTS.md 的加载时机（更新日志 / GitHub）
 - [ ] 实测：修改 `AGENTS.md` 后不重开会话，AI 是否遵守新内容
 
-## 素材基本信息
-
-- **来源**：https://forum.trae.cn/t/topic/171687
-- **板块**：互动交流 ｜ **标签**：rules、基础技巧
-- **参与者**：u3704704926759769（提问者）、汤圆、HancksLiu、我勒个去、GeneralC
-- **采集质量**：中（已剔除 Discourse 模板与导航，保留正文；但**所有技术结论均为用户说法**）
-
 ## 相关页面
 
 - [[2026-09-18-trae-rules-docs]]
 - [[traecode]]
 - [[agents-md]]
+
+## 定级理由
+
+- **采集质量**：中（已剔除 Discourse 模板与导航，保留正文；但**所有技术结论均为用户说法**）
+
+## 归属判断
+
+- **来源**：https://forum.trae.cn/t/topic/171687
+
+- **板块**：互动交流 ｜ **标签**：rules、基础技巧
+
+- **参与者**：u3704704926759769（提问者）、汤圆、HancksLiu、我勒个去、GeneralC
 
 ## 来源
 

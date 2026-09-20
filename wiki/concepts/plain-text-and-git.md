@@ -59,7 +59,7 @@ status: active
 - 与 [[obsidian]] 互补：Obsidian 是阅读层，git 是历史层。
 - 本仓库已初始化为 git 仓库，`site/` 与 `.workbuddy-ai/` 通过 `.gitignore` 排除。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] `raw/assets/` 在什么规模下必须切换到 Git LFS？
 - [ ] 是否应该给每次 ingest 打一个 tag（如 `ingest-2026-09-18-karpathy`），让「某份素材带来的全部改动」可以一次性 diff？

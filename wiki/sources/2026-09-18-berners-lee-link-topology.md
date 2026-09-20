@@ -55,15 +55,15 @@ status: active
 - [ ] 原文提到若干关联笔记（Building Back-links、Private overlaid web、Generic Links）未收录
 - [ ] 原文有拼写错误（indeicates / liks），系原页面如此，本库未修改
 
-## 素材基本信息
-
-- **性质**：W3C 设计笔记，页面未标注确切日期；1999 年这一年份依据 [[2026-09-18-appleton-bidirectional-links]] 的引用
-
 ## 相关页面
 
 - [[tim-berners-lee]]
 - [[bidirectional-links]]
 - [[pkm-history]]
+
+## 归属判断
+
+- **性质**：W3C 设计笔记，页面未标注确切日期；1999 年这一年份依据 [[2026-09-18-appleton-bidirectional-links]] 的引用
 
 ## 来源
 

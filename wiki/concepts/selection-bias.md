@@ -4,9 +4,9 @@ type: concept
 slug: selection-bias
 tags: [万维钢, 得到课程, 决策, 统计, 伯克森悖论, 幸存者偏差, 门槛偏差]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-selection-bias-notes]
-related: [luck-over-talent, heavy-tailed-distribution, opportunity-systems, cybernetic-learning, narrative-power, modern-thinking-tools]
+related: [luck-over-talent, heavy-tailed-distribution, opportunity-systems, cybernetic-learning, narrative-power, modern-thinking-tools, 2026-09-20-market-for-lemons]
 evidence_tier: single
 confidence: medium
 status: active
@@ -109,7 +109,23 @@ status: active
 - **[[2026-09-19-pretraining-posttraining]]（117 讲）**：同 [[prospect-theory]] 一条 ——
   行 172 把本页列入「知道但不调用」的工具名单；行 158 的「看参考类」示例里也含「幸存者偏差警觉」。
   **接口意义**：本页属于「后训练项目」，不属于「预训练语料」—— 知道它不难，能自动用它才难。
-## 开放问题
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-market-for-lemons]]（073 讲）的「回填清单」建议（该条原标「**本库判断，待定**」）。
+> 行号为该素材文件的**绝对行号**。
+
+- **073 行 68–74 给的是一种本页此前没有的选择偏差：内生选择偏差。** 本页现有例子多是
+  **观察者没看到全部样本**（幸存者 / 门槛 / 网眼）；073 给的是**市场机制自己把样本改掉了**：
+  「买家并不傻……我一定会把出价降低一些」→「**于是好车退出，坏车留下**」（行 70）→
+  「时间长了，坏车比例越来越高……于是更多好车退出」（行 72–74）。
+  073 行 74 并给它起了名：**「死亡螺旋（death spiral）」**。
+- **差别要写清**：**本页讲的是「你看到的样本不是真实世界」；073 讲的是「真实世界被机制改造成了那样」。**
+  前者是**认识论**的偏差，后者是**本体论**的 —— 后者里，你看到的样本**确实**代表当时的世界，
+  只是那个世界已经退化了。**把两者混为一谈会低估柠檬市场。**
+- **⚠️ 073 讲未提「选择偏差」之名，关联由本库建立**，故**不列入本页 `sources`**。
+
+## 待办 / 开放问题
 
 - [ ] **「Threshold Bias = Berkson's Paradox」能否核到规范来源？** 本页判「归属不当、等价命名不可追溯」；
       若要追，需一份流行病学 / 因果推断文献里「门槛偏差」的确切出处。
@@ -123,7 +139,7 @@ status: active
 ## 来源
 
 - [[2026-09-19-selection-bias-notes]]（`raw/` 527 行；讲稿段行 35–193，AI 段行 199–527；内含 2 张图已落地 `raw/assets/`）
-  —— 行号坐标系为**文件绝对行号**，该页已逐条 `sed -n` 回文件核对；**本页未独立复核行号**。
+
 - 外部核查来源（**均未收录进 `raw/`**，故只在此记录、不写入 `sources` 字段）：
   国家统计局 2023 年城镇化率与高教毛入学率公报；Azoulay, Jones, Kim & Miranda《Age and High-Growth Entrepreneurship》；
   Hunt et al. 2018《No More FOMO》*JSCP* 37(10):751–768；Hu et al. 2006/2009 的 J 型分布研究；

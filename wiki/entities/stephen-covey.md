@@ -4,9 +4,9 @@ type: entity
 slug: stephen-covey
 tags: [人物, 管理学]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hard-constraints-notes]
-related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal, hard-constraints, 2026-09-18-hard-constraints-notes, modern-thinking-tools]
+related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal, hard-constraints, 2026-09-18-hard-constraints-notes, modern-thinking-tools, 2026-09-20-unintended-consequences]
 evidence_tier: crossed
 confidence: medium
 status: active
@@ -109,6 +109,18 @@ status: active
   本份给出**另一处中文转述**，与前者**互相印证**。
 - ⚠️ **不上调 `confidence`** —— 两处落点都属**同一来源族**（同一位讲者的转述），
   **不是两个独立来源**。按本库判据：**同源不算交叉验证**（见 [[schema]] 的 `evidence_tier` 说明）。
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-unintended-consequences]]（081 讲）的「回填清单」建议 ——
+> **本页首次可与库内非柯维素材互链**。行号为该素材文件的**绝对行号**。
+
+- **081 行 182–184 讲的是柯维「无法选择后果」的同一命题，且给出了更硬的两句**：
+  「**意图属于你自己，可是后果属于世界。**」「**你不是你的意图，你是你的后果。**」
+- **与柯维的分工**：柯维那条是**伦理层**（人只能对自己的选择与回应负责，不能对后果负责 —— 所以责任落在「回应」上）；
+  081 这两句是**制度层**（评价一个人 / 一项政策，用的是后果不是意图）。
+  **两者同向，但一层管个人、一层管系统。**
+- 081 讲**未提柯维**，关联由本库建立，故**不列入本页 `sources`**。
 
 ## 来源
 

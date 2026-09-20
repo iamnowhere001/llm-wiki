@@ -4,9 +4,9 @@ type: concept
 slug: narrative-reframing
 tags: [情绪, 叙事, 方法, 认知重评, 自欺]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-narrative-self]
-related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
+related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en, 2026-09-20-third-thing, problem-externalization]
 evidence_tier: single
 confidence: low
 status: active
@@ -212,6 +212,28 @@ rather than the **"sad tale"** format」，并引 Goffman (1961, p.139) 原文�
 - **对 [[chaos-system-of-life]] 有呼应**：那一页说「任何分支中都必然同时包含美好与遗憾」，
   本页的第 3 步（拓宽视角）在做同一件事 —— **但它们没有互相引用**。
 
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-third-thing]]（084 讲）的「回填清单」建议 —— 该条被标为「⭐ 最重要」两条之一。
+> 行号为该素材文件的**绝对行号**。
+
+- **⭐ 084 行 120–132 补上了本页一手校准后缺的那一步。** 本页已在 2026-09-19 的一手校准中确认：
+  **White & Epston 原书唯一方法论章的第一步是 `externalizing`（外部化）—— 把问题变成独立于人的实体**
+  （原书行 1887–1894），而**本页的五步法全文没有这一步，第 1 步方向还相反**（把问题写进个人历史）。
+  084 行 120 正是这一派的**通俗表述**：「要求咨询师把『人』和『问题』分开：
+  **不是把来访者看成有问题的人，而是帮助他把问题从自我身份里拿出来，摆到面前，
+  像观察一个外部对象那样观察它**」；行 122 给出怀特的名言「**人不是问题，问题才是问题**」。
+- **084 行 128–130 给的操作示范，是本库迄今最具体的一例**：从「你怎么天天这么拖拉？」
+  改成「来，咱俩研究研究，这个『**晚睡怪**』一般几点钟冒出来？」→
+  「**孩子变成了和你并肩作战的侦探**」（行 130）。**这是 externalizing 的现场形态，不是转述。**
+- **⚠️ 这条不是给本页背书，方向相反。** 084 补的是**正确的那个方向**（问题外化），
+  本页描述的是**相反的那个方向**（问题内化）。**不能因为 084 讲得好，就把本页的 `low` 抹掉** ——
+  **本页的 `low` 现在有更准确的理由：它是一套与叙事疗法方向相反、且仍无出处的操作形态。**
+- **⚠️ 084 未给「叙事疗法」的方法论层次**（原书的 counter-practice 与「外化不免除责任」两层，084 都没有），
+  **它是通俗表述，不是理论引述。** 完整对照见 [[problem-externalization]]（本轮新建页）。
+- **是否把本页的 `sources` / `evidence_tier` 因 084 而变？—— 不变。** 084 **不包含**本页的五步法，
+  按 `AGENTS.md` §3 第 9 条「`sources` 必须指向真正包含该内容的素材」，**只做正文互链。**
+
 ## 待办 / 开放问题
 
 - [x] ~~**取回叙事疗法（narrative therapy）的一手文献** —— White & Epston《Narrative Means to Therapeutic Ends》(1990)。
@@ -236,9 +258,7 @@ rather than the **"sad tale"** format」，并引 Goffman (1961, p.139) 原文�
       两页都派生自同一批 AI 生成内容，**2026-09-19 校准又证明两者都不是 White & Epston 的术语**
       （原书 `narrative identity` **0 命中**）。**本页留待北洛裁定。**
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

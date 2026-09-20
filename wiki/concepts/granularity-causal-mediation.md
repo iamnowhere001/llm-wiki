@@ -136,7 +136,7 @@ status: active
 - 是 [[modern-thinking-tools]]「模块二 决策判断」第 3 讲（官方编号 **024**，**讲次为推定**）。
   **本页的建立即执行该讲 sources 页「建议新建概念页」挂账与项目页缺口表的【阻塞】。**
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **`good-regulator-theorem` / `minimum-description-length` / `mediator-variable` / `causal-ladder`
   要不要从本页拆出单列？** 项目页缺口表把本讲记为**一个**工具（「颗粒度与因果中介」），
@@ -153,7 +153,7 @@ status: active
 
 - [[2026-09-19-granularity-causal-mediation-notes]]（`raw/` 387 行；讲稿段行 35–185，分隔线行 189，
   AI 段行 191–387；内嵌图 2 张已落地 `raw/assets/`）
-  —— 行号坐标系为**文件绝对行号**，该页已逐段回原文核对；**本页未独立复核行号**。
+
 - 外部核查来源（**均未收录进 `raw/`**，故只在此记录、不写入 `sources` 字段）：
   Conant & Ashby 1970, *Int. J. Systems Science* 1(2):89–97；Rissanen 1978 的 MDL；
   Schoemaker 等 2016, *Breast Cancer Res.* 18(1):72；Heikkilä 等 2013, *BMJ* 346:f165；

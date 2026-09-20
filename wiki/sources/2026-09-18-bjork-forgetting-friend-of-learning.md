@@ -73,7 +73,7 @@ status: active
 **注意 `high` 不等于「本章的每个断言都已验证」** —— 它引的实验（Kornell & Bjork 2008、Vlach et al. 2008 等）
 本库**均未取回原文**，只能标（转引）。
 
-## 分段（行区间为**文件绝对行号**，已回文件核对）
+## 分段（已回文件核对）
 
 > **注意：本文件每页正文前有 `[p.N]` 标记行。行号 ≠ PDF 页码**，不可混用。
 
@@ -147,7 +147,7 @@ status: active
 - [ ] 本文后半部分（p.15–p.17，行 470–561）尚未逐段阅读 —— 本页目前只消化了 p.1–p.14
 - [ ] 本文提到的 McGeoch (1932)、Estes (1955)、Bower (1972) 均未取回
 
-## 素材基本信息
+## 归属判断
 
 - **出处**：D. S. Lindsay, C. M. Kelley, A. P. Yonelinas, & H. L. Roediger III (Eds.),
   *Remembering: Attributions, processes, and control in human memory: Papers in honour of Larry L. Jacoby*.

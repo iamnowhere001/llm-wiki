@@ -4,9 +4,9 @@ type: concept
 slug: cognitive-reappraisal
 tags: [认知, 方法, 心理学, 情绪调节]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes, 2026-09-18-narrative-self]
-related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, narrative-reframing]
+related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, narrative-reframing, problem-externalization, 2026-09-20-third-thing]
 evidence_tier: crossed
 confidence: high
 status: active
@@ -159,7 +159,28 @@ status: active
   列为本讲串联的工具之一 —— 与认知解离 / 身份叙事 / 框架效应 / 反刍 / 所罗门悖论 / 苏格拉底提问 / 顿悟并列，
   并归到同一个核心动作：「**把一个正在充当『主体』的东西……变成你眼前的『客体』**」（行 177）。
   **对本页的意义**：本页是那个动作的**方法之一**，不是唯一方法。
-## 开放问题
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：本轮新建 [[problem-externalization]] 的「待办 / 开放问题」第 6 条（**本库判断，非素材清单原条**）。
+> 行号为 [[2026-09-20-third-thing]]（084 讲）素材文件的**绝对行号**。
+
+- **一条比本页现有口径更细的区分**：本页（以及本库校准页行 84 的表述）把「改变意义」归在
+  **认知重评**名下；084 与一手原书给出的区分是三层，不是两层：
+
+  | 操作 | 改的是什么 | 例子 |
+  |---|---|---|
+  | **认知重评（本页）** | **意义** —— 事实不变，换个解释框架 | 把「威胁」改写成「挑战」 |
+  | **问题外化（084 / White & Epston）** | **归属** —— 这个问题属于谁：属于人，还是属于桌上那个东西 | 「晚睡怪」（084 行 128–130） |
+
+  **重评是「换个看法」，外化是「换个位置」。** 两者都能降低情绪负荷，但**外化不改变对事实的解读，
+  只改变问题与人之间的距离** —— 按校准页行 84 的原话，「两者都改意义，改的不是同一个东西」，
+  而更精确的说法是：**外化严格说并不改意义，它搬位置。**
+- **为什么这条对本页有用**：本页在库内是情绪调节的**主口径**；若把外化也算进重评，
+  就会丢掉「**把问题从人身上拿出去**」这一步的独立性 —— 而这一步正是叙事疗法与重评的分水岭。
+- **⚠️ 084 未提「认知重评」，关联由本库建立**，故**不列入本页 `sources`**。
+
+## 待办 / 开放问题
 
 - [ ] **「改内容」之外还有「改过程」，且一手文献的表述比本页的定位更激进。** 本页只覆盖认知重评，即改变想法的**内容**（威胁框架 → 挑战框架）。另有一条路是改变思维的**过程**（把「为什么是我」换成「怎么发生的」）—— 见 [[rumination-vs-reflection]]。
   **2026-09-18 升级（据一手素材）**：[[2026-09-18-nolen-hoeksema-rethinking-rumination]] 行 1918–1936 转述 Barber & DeRubeis (1989) 与 Teasdale 等 (1995) 的主张 —— **认知疗法「不是通过改变认知内容」起效，而是教人与认知保持距离**（原文：*works not by changing the content of depressed people's cognitions, but by teaching them methods for standing apart from those cognitions*）。
@@ -174,9 +195,7 @@ status: active
 - [ ] **在结构性不公的处境中，认知重评的适用边界在哪里？** 这是本页最需要的反方材料
 - [ ] 「ABC 模型」与认知重评的关系（[[albert-ellis]]）—— 两者是同一机制的不同表述，还是不同的东西？
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

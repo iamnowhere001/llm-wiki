@@ -56,7 +56,7 @@ status: active
 - Lint 展开为 [[wiki-lint]]。
 - 归档的 Query 产物存放在 `analyses/`，例如 [[rag-vs-wiki]]。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 是否需要一个「Ingest 检查清单」脚本，确保第 5 步（回填）没被跳过？
 

@@ -77,7 +77,7 @@ status: active
 - 结构类检查依赖 [[index-and-log]] 中的 frontmatter 约定。
 - 矛盾标注的实践见 [[rag-vs-wiki]]（本库中第一份显式标注来源局限的分析页）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 能否让 lint 自动生成「建议收录的素材清单」并写回 `wiki/overview.md`？
 - [ ] 过期论断的判定标准：多新的素材才算「新」？

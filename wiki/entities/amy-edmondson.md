@@ -71,7 +71,7 @@ status: active
   「Implicit Voice Theories: Taken-for-granted Rules of Self-Censorship at Work」，
   四项研究、职场自我审查来自内化的潜规则（行 112）。**该文献此前首见于 [[2026-09-18-social-capital-structural-holes-notes]]。**
 - ⚠️ **同一来源族，只增厚、不上调。** 素材称「四项研究」，**项数未单独核（未验证）**。
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **收录 Edmondson (1999) 一手文献** —— 本库目前只有转述。
 - [ ] **心理安全与绩效的因果方向** —— 相关，还是因果？素材与公开报道都未回答。

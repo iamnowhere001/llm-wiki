@@ -108,7 +108,7 @@ status: active
   [[narrative-power]] 讲「谁能设定叙事」（**权力决定叙事**）。
 - 是 [[modern-thinking-tools]]「模块二 决策判断」第 11 讲（官方编号 **032**，讲次为推定）四类偏差之一。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **要不要为「二战轰炸机装甲」（Abraham Wald）另收一份素材？**
       它是本主题最经典的案例，而**本讲完全没有提及** —— 属**文献缺口**（有来源提示过）。
@@ -123,7 +123,6 @@ status: active
 
 - [[2026-09-19-selection-bias-notes]]（`raw/` 527 行；讲稿段行 **35–193**（本页取 **93–119**），
   AI 段行 199–527（本页仅对照 **346–386**）；内含 2 张图已落地 `raw/assets/`）
-  —— 行号坐标系为**文件绝对行号**，该页已逐条 `sed -n` 回文件核对；**本页未独立复核行号**。
 - 外部核查来源（**均未收录进 `raw/`**，故只在此记录、不写入 `sources` 字段）：
   Azoulay, Jones, Kim & Miranda《Age and High-Growth Entrepreneurship》（NBER WP 24489 / *AER: Insights* 2020）；
   Arrighi & Hertz-Picciotto 1994 与 Buckley et al. 2015（healthy worker survivor bias）；
