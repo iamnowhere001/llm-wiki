@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-synthesis-research
 tags: [万维钢, 写作, PKM, 知识工作, 调研]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-synthesis-research]
 related: [synthesis-research, wanweigang, llm-wiki-pattern, llm-wiki-research, ingest-query-lint, 2026-09-18-mental-representations, explanatory-framework, why-pkm-in-ai-era]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里与本库自身主题最贴近的一讲** —— 它描述的动作，`llm-wiki` 正在做。
 
 - **作者**：万维钢（**行 102 图片水印「调研助手 By Weigang Wan」** —— 本批九讲里唯一的拉丁转写署名）
-- **链接**：https://my.feishu.cn/wiki/R5Zowh0RhiOVqMkr5eNcoy90npc
-- **原文**：https://www.dedao.cn/course/article?id=9GEyP73eprvKBPY9eQJcX8cLnOg
+- **链接**：https://my.feishu.cn/wiki/R5Zowh0RhiOVqMkr5eNcoy90npc ｜ https://www.dedao.cn/course/article?id=9GEyP73eprvKBPY9eQJcX8cLnOg
 - **发表**：2026-05-12 23:16
 - **素材路径**：`raw/2026-09-18-synthesis-research.md`（463 行，frontmatter 1–36）
-- **证据层级**：**方法论讲稿**（本讲几乎没有外部引注，内容主要是作者自述的方法与两个历史案例）
 
 ## 关键要点
 
@@ -34,7 +32,7 @@ status: active
 6. **高级的产出是新思想**：「**有时候真相不在任何一个材料里，真相是在材料之间。**」
 7. **斯诺 1854 霍乱地图**是高级调研的历史样本（死者名单 + 街道地图 + 水泵分布，三组材料叠加）。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -70,7 +68,7 @@ status: active
 差别：本库把「哪些是事实、哪些是本库立论、哪些是本库自造且零支持」**逐条标出来**
 （见 [[cognitive-vs-somatic-paths]]），作者没有。
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -102,6 +100,10 @@ status: active
       若属实，它是「作者自制 AI 工具」的一个样本，且带**自我推广**性质。
 - [ ] 「半熟知识」是否学界术语？待核。
 - [ ] 本讲应回填 [[llm-wiki-research]] 的缺口表（尚未执行）。
+
+## 素材基本信息
+
+- **证据层级**：**方法论讲稿**（本讲几乎没有外部引注，内容主要是作者自述的方法与两个历史案例）
 
 ## 来源
 

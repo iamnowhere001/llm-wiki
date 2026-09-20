@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-probability-distribution-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 结果偏误, 概率分布, 系统与目标]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-probability-distribution-notes]
 related: [modern-thinking-tools, wanweigang, luck-over-talent, heavy-tailed-distribution, multiplicative-world, types-of-uncertainty, uncertainty-as-fuel, compensatory-control, stoic-control-dichotomy, nassim-taleb, charlie-munger, deliberate-practice, character-skills, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-game-selection-notes, 2026-09-18-qa-deepen-or-move-notes]
 confidence: medium
@@ -29,25 +29,22 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/GQfSwMWpAi7PbFkT322chUXun0g
 - **素材路径**：`raw/2026-09-19-probability-distribution-notes.md`（422 行）
 
-## TL;DR
-
-**讲稿从「赤马红羊劫」的证伪实验讲起，落到一个工具：把决策从「选结果」改写成「选概率分布」。**
-讲稿给出六个参数（均值 / 方差 / 上下限 / 偏度 / 峰度 / 稳健性），
-并用孙子、芒格、塔勒布、索罗斯四句引文串成「**先求可活，再求必胜**」。
-
 ## 关键要点
 
-1. **开场是一次「讲者自己做的小型统计检验」**（行 35–49）：赤马红羊劫 —— 34 组赤马红羊年里
+1. **讲稿从「赤马红羊劫」的证伪实验讲起，落到一个工具：把决策从「选结果」改写成「选概率分布」。**
+它给出六个参数（均值 / 方差 / 上下限 / 偏度 / 峰度 / 稳健性），
+并用孙子、芒格、塔勒布、索罗斯四句引文串成「**先求可活，再求必胜**」。
+2. **开场是一次「讲者自己做的小型统计检验」**（行 35–49）：赤马红羊劫 —— 34 组赤马红羊年里
    13 组落在重大动荡期（**38%**），而随机抽取 34 组连续两年的比例「大约是 **37%**」。
    **讲稿主动交代「我直接让 GPT 列举了」**（行 39）—— 归属透明，是本库已记的正面样本类型。
-2. **「结果偏误（Outcome Bias）」是本节的可核概念**（行 63），并给出**安妮·杜克**的别名
+3. **「结果偏误（Outcome Bias）」是本节的可核概念**（行 63），并给出**安妮·杜克**的别名
    「结果论（Resulting）」与《对赌》（*Thinking in Bets*）的扑克 / 国际象棋比喻。
-3. **决策的词源论证**（行 81）：Decision ← 拉丁语 *decidere*，「切断」或「杀掉」。
-4. **六个决策参数**（行 103–113）：均值、方差、上限下限、偏度、峰度、稳健性 ——
+4. **决策的词源论证**（行 81）：Decision ← 拉丁语 *decidere*，「切断」或「杀掉」。
+5. **六个决策参数**（行 103–113）：均值、方差、上限下限、偏度、峰度、稳健性 ——
    **这是全课第一次把「概率分布」拆成可逐项检查的清单**。
-5. **四句引文构成「下限优先」的论证链**（行 133–137）：孙子 → 芒格 → 塔勒布 → 索罗斯。
+6. **四句引文构成「下限优先」的论证链**（行 133–137）：孙子 → 芒格 → 塔勒布 → 索罗斯。
    末句把落脚点定为「**对错之间的不对称性**」。
-6. **AI 加工段占正文 57.9%，判「人设化改写」**（套「90 天冲刺 / 时间盒 / 防爆雷」模板
+7. **AI 加工段占正文 57.9%，判「人设化改写」**（套「90 天冲刺 / 时间盒 / 防爆雷」模板
    并个性化到「开发者 / 孩子尚小 / Vlog / A 股」），且含**对话轮次残留** —— 见下「AI 段判定」。
 
 ## 素材分层表（文件绝对行号）
@@ -216,7 +213,7 @@ status: active
 - ✅ [[heavy-tailed-distribution]]：补「峰度作为决策参数」（行 111）
 - ✅ [[stoic-control-dichotomy]]：补「射箭手」比喻（行 187）
 - ✅ [[nassim-taleb]]、[[charlie-munger]]：各补一条新引注（含塔勒布的出处书）
-- ✅ [[compensatory-control]]、[[multiplicative-world]]、[[types-of-uncertainty]]：见「与既有页面的关系」
+- ✅ [[compensatory-control]]、[[multiplicative-world]]、[[types-of-uncertainty]]：见「与本库既有页面的关系」
 - ✅ [[2026-09-18-uncertainty-fuel-notes]]：补第 5 讲 → 本讲的推进（态度 → 参数）
 - ✅ [[wanweigang]]：记一条「讲稿主动交代 GPT 参与」（行 39，与 [[2026-09-18-game-selection-notes]] 行 99 同型）
 

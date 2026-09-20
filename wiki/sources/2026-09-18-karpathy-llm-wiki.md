@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-karpathy-llm-wiki
 tags: [知识管理, 模式, LLM, RAG]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-karpathy-llm-wiki-r2]
 related: [llm-wiki-pattern, three-layer-architecture, ingest-query-lint]
 confidence: high
@@ -19,26 +19,6 @@ status: active
 - **链接**：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 - **发布时间**：2026-04-04
 - **素材路径**：`raw/2026-09-18-karpathy-llm-wiki.md`（r1）、`raw/2026-09-18-karpathy-llm-wiki-r2.md`（r2，推荐引用）
-
-## 版本与捕获
-
-同一份 Gist 存在两个抓取版本，**内容有实质差异**：
-
-| | r1 | r2 |
-|---|---|---|
-| 文件 | `raw/2026-09-18-karpathy-llm-wiki.md` | `raw/2026-09-18-karpathy-llm-wiki-r2.md` |
-| 正文行内超链接 | **丢失** | 保留 |
-| `->` 字符 | 转成了纯文本 | 保留为 `→` |
-
-具体差异（r2 相对 r1）：
-
-1. `Tolkien Gateway` 在 r1 中是纯文本，r2 中带链接 → `https://tolkiengateway.net/wiki/Main_Page`
-2. `qmd` 在 r1 中是纯文本，r2 中带链接 → `https://github.com/tobi/qmd`
-3. 两处 `Settings -> Files and links` / `Settings -> Hotkeys` 的箭头字符
-
-**这不是作者改稿，是 r1 的抓取缺陷** —— 2026-09-18 07:05 首次抓取该页面时行内链接还在（见 `wiki/log.md`），07:06 落盘的 r1 已丢失。因此 r2 才是忠实副本，**引用时应指向 r2**。
-
-按 `AGENTS.md` 的 `raw/` 不可变约定，r1 未被修改，两版并存。r2 的 frontmatter 中 `supersedes` 字段指向 r1。
 
 ## 来源边界（重要）
 
@@ -75,7 +55,7 @@ Gist 页面正文之后附有一段中文项目说明（关于 `ChavesLiu/second
 
 最后，作者解释了为什么这件事现在可行：维护知识库真正累人的不是阅读和思考，而是**记账** —— 更新交叉引用、保持摘要新鲜、记录矛盾、维持几十个页面的一致性。人类放弃 wiki 是因为维护成本增长快于价值增长。LLM 不会厌烦、不会忘记更新引用、能一次改动 15 个文件。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - 这是本知识库的**第一份素材**，也是本知识库自身的构建依据。本仓库的 `AGENTS.md` 即该文所述 schema 层的一个具体实例。
 - 作者把思想源头指向 [[vannevar-bush]] 1945 年的 Memex 构想：私人、主动策展、文档之间的连接与文档本身同样有价值。Bush 没能解决的是「谁来做维护」—— 这正是 LLM 补上的那一环。
@@ -87,12 +67,36 @@ Gist 页面正文之后附有一段中文项目说明（关于 `ChavesLiu/second
 - 分析：[[rag-vs-wiki]]
 - 已提及但未独立成页（仅出现一次，未达 `AGENTS.md` 的建页阈值）：Tolkien Gateway、Marp、Dataview、Obsidian Web Clipper、ChatGPT 文件上传
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **补录 Gist 页面附加的中文项目说明**，解决 [[second-brain-skill]] 的悬空引用（优先级最高）
 - [ ] 补充其他 Agent 平台（Codex / OpenCode）对 schema 文件的约定差异
 - [ ] 找到 qmd 的实际基准数据，评估在多少页之后索引文件开始失效
 - [ ] Tolkien Gateway 是「社区共建 wiki」的最佳实例，值得收录一份独立素材
+
+## 版本与捕获
+
+同一份 Gist 存在两个抓取版本，**内容有实质差异**：
+
+| | r1 | r2 |
+|---|---|---|
+| 文件 | `raw/2026-09-18-karpathy-llm-wiki.md` | `raw/2026-09-18-karpathy-llm-wiki-r2.md` |
+| 正文行内超链接 | **丢失** | 保留 |
+| `->` 字符 | 转成了纯文本 | 保留为 `→` |
+
+具体差异（r2 相对 r1）：
+
+1. `Tolkien Gateway` 在 r1 中是纯文本，r2 中带链接 → `https://tolkiengateway.net/wiki/Main_Page`
+2. `qmd` 在 r1 中是纯文本，r2 中带链接 → `https://github.com/tobi/qmd`
+3. 两处 `Settings -> Files and links` / `Settings -> Hotkeys` 的箭头字符
+
+**这不是作者改稿，是 r1 的抓取缺陷** —— 2026-09-18 07:05 首次抓取该页面时行内链接还在（见 `wiki/log.md`），07:06 落盘的 r1 已丢失。因此 r2 才是忠实副本，**引用时应指向 r2**。
+
+按 `AGENTS.md` 的 `raw/` 不可变约定，r1 未被修改，两版并存。r2 的 frontmatter 中 `supersedes` 字段指向 r1。
+
+## 来源
+
+- [[2026-09-18-karpathy-llm-wiki]]（`raw/2026-09-18-karpathy-llm-wiki.md`）
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-extended-mind-notes
 tags: [巅峰表现, 具身认知, 扩展心智]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-extended-mind-notes]
 related: [peak-performance, emotion-awareness, annie-murphy-paul, extended-mind, embodied-cognition, situated-cognition, distributed-cognition, enactment-effect, interoception, cognitive-vs-somatic-paths, why-pkm-in-ai-era, llm-wiki-pattern, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-hidden-potential-notes]
 confidence: low
@@ -27,10 +27,8 @@ status: active
 
 - **作者**：安妮·墨菲·保罗（Annie Murphy Paul，原书作者）。**笔记本身未署名。**
 - **链接**：https://my.feishu.cn/wiki/J1qywXKRhiA6IgkVpkNcR69On4e
-- **原书出版**：2021 年 6 月（*The Extended Mind: The Power of Thinking Outside the Brain*）；中文版 2023 年 11 月
+- **发表**：2021 年 6 月（*The Extended Mind: The Power of Thinking Outside the Brain*）；中文版 2023 年 11 月
 - **素材路径**：`raw/2026-09-18-extended-mind-notes.md`（495 行，正文 11,709 字符）
-- **内嵌资源**：**无** —— 本库收录的混层素材中第一份零内嵌资源的
-- **抓取**：`lark-cli docs +fetch --doc-format markdown --as user`，`revision_id: 1226`
 
 ## 关键要点
 
@@ -41,7 +39,7 @@ status: active
 5. **操作效应**（行 143–147）：动作与信息联系时，陈述性记忆与程序性记忆同时被激活，记得更准。这是素材里**唯一带书名号引文标记、可确认为原书正文**的一段。
 6. **内感受是决策的底层输入**（行 269–278）：身体的内脏信号先于有意识决策出现。这一条把本素材与 [[emotion-awareness]] 的「身体路径」直接接上。
 
-## 分层表（本素材的证据结构）
+## 素材分层表（本素材的证据结构）
 
 **本库第五份混层素材。** 四段证据性质不同，单一 `confidence` 无法表达：
 
@@ -110,7 +108,7 @@ status: active
 > 本库当初建议写入的理由被采纳：它的识别方式与前三类都不同 —— 它要求**核查引注所指向研究的当前状态**，
 > 而不只是核查「有没有出处」。**本页是本类首例**（见 §3.6.1 候选表第 1 行）。
 
-## 已知缺陷
+## 已知缺失
 
 - **无署名、无整理时间**，无法判断整理者身份与用途。
 - **A、B、C 三段均为 AI 生成**，占正文绝大部分。**可确认为原书正文的只有 A3 / A4 / A6 三小段（行 143–154、182–196）**，合计不足全文 10%。
@@ -120,7 +118,7 @@ status: active
 - **D 段只有目录没有内容**，不能当作书籍内容使用。
 - **利益披露**：文档含得到电子书销售页链接（`dedao.cn/ebook/detail?id=...`），属商业销售页 —— 本素材可能是为卖书而做的解读。按 `AGENTS.md` 的利益披露条款，`confidence` 已降级。
 
-## 与本库的关系
+## 与本库既有页面的关系
 
 - **填 [[peak-performance]] 的哪条缺口？** 填的是缺口表里那条**具身认知材料**（原文：「一份同时处理具身与认知两条路径的临床材料」）。**它是本库第一份专门以「身体」为主题的素材** —— 此前库内关于身体的材料只有 [[2026-09-18-emotion-awareness-notes]] 里梅洛-庞蒂的一段转述。
   - **但它不是「临床材料」**：缺口原文点名的是「具身认知 / 躯体体验疗法 / 创伤知情正念」这一类有临床实践基础的材料，本素材是**通俗科普综述**。**这条缺口因此是「部分填上」，不是「解掉」。**
@@ -159,6 +157,11 @@ status: active
 - [ ] 本素材与 [[cognitive-vs-somatic-paths]] 的关系需要北洛裁定：**它是「验证材料」还是「又一个不可靠的来源」？**
 - [ ] 是否要读 *The Extended Mind* 英文原书？本库现在只有 AI 生成的二手转述 —— **同 [[peak-performance]] 对前三份素材的同一个问题**
 - [ ] 本素材未署名且含商业销售页链接，是否需要核实它与得到讲书体系的关系？
+
+## 素材基本信息
+
+- **内嵌资源**：**无** —— 本库收录的混层素材中第一份零内嵌资源的
+- **抓取**：`lark-cli docs +fetch --doc-format markdown --as user`，`revision_id: 1226`
 
 ## 来源
 

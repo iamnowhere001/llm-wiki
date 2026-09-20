@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-narrative-self
 tags: [叙事, 反脆弱, 元叙事, 叙事自我]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-narrative-self]
 related: [2026-09-18-narrative-first-principle, narrative-identity, narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, narrative-as-objective-function, critique-target-distortion, meta-narrative, narrative-reframing, narrative-industrialization, modern-thinking-tools, wanweigang, yuval-harari, nassim-taleb, viktor-frankl, cognitive-reappraisal, cybernetic-learning, emotion-awareness, peak-performance, traecode-pkm-article, ai-convergence, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 confidence: low
@@ -26,11 +26,9 @@ status: active
 
 - **作者**：未署名。文档内混有**署名作者段**（曾国藩一节自带《科学思考者》-万维钢的 dedao 电子书链接），其余段落无署名，判为 AI 生成
 - **链接**：https://my.feishu.cn/wiki/GNALwzikvijEwCkDYZ9cHkyQnRg
-- **发布**：无标注。飞书 node 元数据：创建 **2025-03-05 14:04:59**，最后编辑 **2026-09-12 22:23:50**
+- **发表**：无标注。飞书 node 元数据：创建 **2025-03-05 14:04:59**，最后编辑 **2026-09-12 22:23:50**
 - **素材路径**：`raw/2026-09-18-narrative-self.md`（2,337 行；frontmatter 1–58，第 59 行空行，**正文自第 60 行起**）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系）＝ 本文档原始行号 **+59**，已逐段回文件核对
-- **抓取**：`lark-cli wiki +node-get` → `lark-cli docs +fetch --doc XoRddxNRvod8MOxCQlZc8tGxnMf --doc-format markdown`
-  ｜ `revision_id: 923` ｜ 47,673 字符 / 2,279 行 ｜ **无图片、无附件**，正文外链仅 1 条
+
 - **`confidence: low`** —— 见「定级理由」
 
 ## 关键要点
@@ -72,7 +70,7 @@ status: active
 与第 6 讲那「整段粘进文档的对话记录」（见 [[2026-09-18-three-selves-notes]]）同型，但**整理程度更低** ——
 第 6 讲至少把轮次分开了，本档把「原料 + 解读 + 排版方案」混排在一条流里。
 
-## 分层表
+## 素材分层表
 
 > 行区间 = **文件绝对行号**（本档原始行号 +59）。
 
@@ -103,7 +101,7 @@ status: active
 **AI 生成占比**：约 **93%** —— 可确认为署名作者原文的只有 **C（10 行）+ E（24 行）+ G（57 行）= 91 行 / 2,279 行**。
 按 2026-09-18 裁定，**占比本身不是降级理由**；本页 `low` 的理由见下节。
 
-## 引注与内容核查
+## 引注核查表
 
 > 16 条具名引注，本轮全部外部核查。**15 条可核，1 条为「来源等级冒认」。**
 
@@ -199,7 +197,7 @@ F 段的错误不在「伪造了一个被批判对象」，而在**把它算在�
 > 当时的措辞「A 段中四人零次出现」本身是**对的**；错的是从「A 段没有」直接推到「这是幻觉」——
 > **中间那一步「主文引了谁」被跳过了。**
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 1. **关闭本库一条挂账待办。** [[2026-09-18-narrative-first-principle]] 的待办里写着：
    「追一份素材：主文行 83 的 `<cite>` 指向飞书文档『叙事自我』（doc-id `GNALwzikvijEwCkDYZ9cHkyQnRg`），**本库未收录**」。
@@ -309,7 +307,7 @@ F 段的错误不在「伪造了一个被批判对象」，而在**把它算在�
 **分层标注**：C / E / G 三段单独标 `medium`（署名作者的通俗写作，其中 G 段自带来源链接）。
 **引用本档内容时必须指明段号与行号**，不允许整份引用。
 
-## 待办
+## 待办 / 开放问题
 
 - [x] ~~**【等北洛】** 关闭「追一份素材」待办~~ —— 本轮完成，同时核实 node 父子关系
 - [ ] **【等北洛】** 裁定「来源等级冒认」是否单列证据类别（见上文待裁定块两条）
@@ -330,6 +328,12 @@ F 段的错误不在「伪造了一个被批判对象」，而在**把它算在�
 - [ ] 判断**「量子叙事学派 → Zenodo 预印本 → 被 AI 引用」这条闭环**是否值得单独立页
 - [ ] **追查第一讲 F 段的生成链**：F 段是否与 C/D/E 段**出自同一次 AI 对话**？
       若是，则「张冠李戴」的成因可以确定（同一次对话里读了本档，随后把它当成了主文）
+
+## 素材基本信息
+
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系）＝ 本文档原始行号 **+59**，已逐段回文件核对
+- **抓取**：`lark-cli wiki +node-get` → `lark-cli docs +fetch --doc XoRddxNRvod8MOxCQlZc8tGxnMf --doc-format markdown`
+  ｜ `revision_id: 923` ｜ 47,673 字符 / 2,279 行 ｜ **无图片、无附件**，正文外链仅 1 条
 
 ## 来源
 

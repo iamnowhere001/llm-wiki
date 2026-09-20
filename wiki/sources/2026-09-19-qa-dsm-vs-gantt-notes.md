@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-qa-dsm-vs-gantt-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 反脆弱, 禁食, 设计结构矩阵]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-qa-dsm-vs-gantt-notes]
 related: [wanweigang, modern-thinking-tools, nassim-taleb, uncertainty-as-fuel, types-of-uncertainty, explore-exploit-tradeoff, hard-constraints, 2026-09-18-qa-hard-to-start-notes, 2026-09-18-qa-deepen-or-move-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-growth-strategy-engineering-manual]
 confidence: medium
@@ -25,13 +25,9 @@ status: active
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述）
 - **链接**：https://my.feishu.cn/wiki/GaZWwb2OsiqRCck4kVXct1Dinuc ｜ **原文出处**：https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMjGJ7DOop10vZwL（付费内容搬运）
-- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
-- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: ZHBBdZsdLoILHNx1OKDclOF1n8d` ｜ `revision_id: 86` ｜ **内嵌图 2 张**（行 99 / 107，讲稿段里「我用 ChatGPT 画的图」）
 - **素材路径**：`raw/2026-09-19-qa-dsm-vs-gantt-notes.md`（**312 行**；frontmatter 1–25，正文自 27 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 8,057 字符 / **284 行**」，而 `312 − 25 = 287` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
-## 要点
+## 关键要点
 
 1. **4 节 = 模块二 4 讲**：《脆弱和反脆弱》→《状态杠杆》→《选择偏差》→《回归均值》。**题名问题出自《状态杠杆》节**（行 79「是甘特图的升级版吗？」）——**标题是编辑挑的「头条问题」，不是本份的主题。**
 2. **本份最值钱的一段是《回归均值》节**（行 149–159）：它给出一个**不靠更多数据**的判据 ——「**关键是看导致这个事件发生的原因，是普通原因还是系统性的原因**」。对应 Shewhart / Deming 的**普通原因变异 / 特殊原因变异**（素材未点名）。**库内此前没有这条。**
@@ -60,7 +56,7 @@ status: active
 **汇总**：问答正文 **122 行（42.5%）**｜**AI 加工段 148 行（51.6%）**｜标题块 7 行｜空行 ≈8 行。
 **提问 4 条**（37 / 79 / 117 / 145，全部单行 `>` 引用块）｜**回答 4 段**（41–73 / 83–111 / 121–139 / 149–159）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -197,6 +193,13 @@ status: active
 - [ ] **G 段那位「39 岁偏瘦男性」是谁？** 该追问未出现在文档里 —— **是同一整理者的私聊，还是抓取时混入了相邻内容？待核**
 - [ ] **F 段未披露的 L-Nutra 权益**是否要升格为库级标记（对照 013 WOOP 的伦理风险登记）？
 - [ ] **间歇性禁食的「过强引注」候选**是否登记？讲稿说「当前科学理解所能提供的最佳方案」，而近年有大型 RCT 得零结果
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
+- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: ZHBBdZsdLoILHNx1OKDclOF1n8d` ｜ `revision_id: 86` ｜ **内嵌图 2 张**（行 99 / 107，讲稿段里「我用 ChatGPT 画的图」）
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 8,057 字符 / **284 行**」，而 `312 − 25 = 287` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
 ## 来源
 

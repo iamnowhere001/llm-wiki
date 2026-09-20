@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-bayesian-prior-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 自由能原理, 克伦威尔法则, 贝叶斯先验]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-bayesian-prior-notes]
 related: [modern-thinking-tools, wanweigang, free-energy-principle, prediction-error, ai-convergence, heavy-tailed-distribution, types-of-uncertainty, cognitive-outsourcing, productive-resistance, viktor-frankl, 2026-09-18-free-energy-alignment-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-modern-thinking-tools-prospectus]
 confidence: medium
@@ -29,27 +29,23 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/MP4Bw5VX8iAKOvk30uTc9SrBnAq
 - **素材路径**：`raw/2026-09-19-bayesian-prior-notes.md`（276 行）
 
-## TL;DR
-
-**讲稿用贝叶斯公式把「主观判断」从道德审判的领域搬到认知工程的领域。**
-工具是三个动作：**设定先验 → 用证据更新 → 永不给先验设 0 或 1（克伦威尔法则）**。
-本讲**显式回指「自由能原理」**，并补上该框架的另一半 —— **主动推断**（改变环境而不是改变模型）。
-
 ## 关键要点
 
-1. **它是「模块二」四讲里唯一一份「注释段随正文一起导出」的素材**（行 171–175）——
+1. **讲稿用贝叶斯公式把「主观判断」从道德审判的领域搬到认知工程的领域**，
+工具是三个动作：**设定先验 → 用证据更新 → 永不给先验设 0 或 1（克伦威尔法则）**。
+2. **它是「模块二」四讲里唯一一份「注释段随正文一起导出」的素材**（行 171–175）——
    两条注释完整可读。**这与 019 讲「注释 [2] 未取到原文」形成直接对照**，是本批抓取层的一个正面样本。
-2. **罕见病算例是本节的技术核心**（行 67–75）：发病率 0.1%、灵敏度 99%、误报率 1% →
+3. **罕见病算例是本节的技术核心**（行 67–75）：发病率 0.1%、灵敏度 99%、误报率 1% →
    后验 **1/11**。**本页已独立复算，内部一致**（见核查表第 2 条）。
-3. **频率主义 vs 贝叶斯主义的对立被定位为「旁观者 vs 参与者」**（行 87–93）——
+4. **频率主义 vs 贝叶斯主义的对立被定位为「旁观者 vs 参与者」**（行 87–93）——
    这是全讲最哲学的一句，也是本库 [[types-of-uncertainty]] 一线的新材料。
-4. **两种错误有各自的名字与判据**（行 141–155）：①完全没有先验；②先验不可动摇 →
+5. **两种错误有各自的名字与判据**（行 141–155）：①完全没有先验；②先验不可动摇 →
    **克伦威尔法则**（1650 年克伦威尔致苏格兰教会的信）。
-5. **它显式接入库内既有的「自由能原理」**（行 127–133），并补上**主动推断**这一侧 ——
-   这是本讲对 [[free-energy-principle]] 最直接的贡献。
-6. **两处需要公示的事实问题**：①**凯恩斯那句名言的归属查无实据**（两位权威传记作者判为 apocryphal）；
+6. **它显式接入库内既有的「自由能原理」**（行 127–133），并补上**主动推断**这一侧 ——
+即**改变环境而不是改变模型**，这是本讲对 [[free-energy-principle]] 最直接的贡献。
+7. **两处需要公示的事实问题**：①**凯恩斯那句名言的归属查无实据**（两位权威传记作者判为 apocryphal）；
    ②**「贝叶斯在 1740 年代推导出公式」与学界通说不符** —— 见核查表第 3、4 条。
-7. **AI 加工段占正文 37.5%，判「人设化改写」**（套「普通中年人」模板）—— 见下「AI 段判定」。
+8. **AI 加工段占正文 37.5%，判「人设化改写」**（套「普通中年人」模板）—— 见下「AI 段判定」。
 
 ## 素材分层表（文件绝对行号）
 
@@ -220,7 +216,7 @@ status: active
 - [[ai-convergence]]：补讲稿正文对 LLM / 对齐的正面描述（行 117–121）
 - [[viktor-frankl]]：**加一条反向指针** —— 「引文归属追查」在库内第二次出现（凯恩斯名言）
 - [[types-of-uncertainty]]、[[heavy-tailed-distribution]]：补「极低先验 + 强证据」的算例
-- [[cognitive-outsourcing]]、[[productive-resistance]]：见「与既有页面的关系」第 5 条
+- [[cognitive-outsourcing]]、[[productive-resistance]]：见「与本库既有页面的关系」第 5 条
 - [[2026-09-18-free-energy-alignment-notes]]：补同概念第 2 次出现的指针
 - [[2026-09-18-cognitive-decoupling]]：补「先验 vs 证据」的贝叶斯版表述
 - [[2026-09-18-modern-thinking-tools-prospectus]]：**补一条反向对照** —— 发刊词的 AI 收敛性来自 AI 生成段，

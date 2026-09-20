@@ -17,11 +17,8 @@ status: active
 > 也是唯一**已有对应图片素材**的一讲（[[2026-09-18-cognitive-load-diagrams]]）。
 
 - **作者**：万维钢（推定，见 [[wanweigang]] 的身份推定表）
-- **链接**：https://my.feishu.cn/wiki/GElVw9bNuirYpxkUlrEcJ6FKnZg
-- **原文**：https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWQLXzD9BkoajY4x
+- **链接**：https://my.feishu.cn/wiki/GElVw9bNuirYpxkUlrEcJ6FKnZg ｜ https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWQLXzD9BkoajY4x
 - **素材路径**：`raw/2026-09-18-cognitive-load-theory.md`（258 行，frontmatter 1–36）
-- **内嵌资源**：6 张图片 token —— **未下载**（bot 身份无媒体权限，见 frontmatter 已知缺失）
-- **证据层级**：**二手科普讲稿**。提出者被点名（斯韦勒），但本库无其文献
 
 ## 关键要点
 
@@ -33,7 +30,7 @@ status: active
 5. **有效教学四心法**：管理内在负荷 / 直接教学（范例学习 + 指导淡出）/ 消除外在负荷 / 差异化教学。
 6. **AI 当导师 ≠ 当代写神器** —— 外包增益负荷则图式不形成，成绩下降。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -66,7 +63,7 @@ status: active
 **判定**：两者属同一讲。**但图片原件未下载，无法做字节比对** ——
 该判定基于图注文本，不是基于文件本身。**孤儿素材的出处问题因此「部分解决」而非「解决」。**
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -116,6 +113,11 @@ status: active
 - [ ] 核查表第 2 条（拉美电脑 RCT）与第 7 条（AI 当导师效果高于传统课堂）**优先级最高** ——
       前者是本讲的核心案例，后者直接指导本库自己的用法。
 - [ ] 斯韦勒 2023 年论文：若能定位，可解决 [[john-sweller]] 页的开放问题。
+
+## 素材基本信息
+
+- **内嵌资源**：6 张图片 token —— **未下载**（bot 身份无媒体权限，见 frontmatter 已知缺失）
+- **证据层级**：**二手科普讲稿**。提出者被点名（斯韦勒），但本库无其文献
 
 ## 来源
 

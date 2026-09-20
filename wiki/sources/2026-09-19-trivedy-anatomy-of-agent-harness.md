@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-trivedy-anatomy-of-agent-harness
 tags: [AI, Agent, harness, LangChain]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-trivedy-anatomy-of-agent-harness]
 related: [harness, harness-engineering, 2026-09-19-bockeler-harness-engineering-coding-agent-users]
 confidence: medium
@@ -17,9 +17,8 @@ status: active
 
 - **作者**：Vivek Trivedy（LangChain）
 - **链接**：https://blog.langchain.com/the-anatomy-of-an-agent-harness/
-- **发布时间**：2026-03-10
+- **发表**：2026-03-10
 - **素材路径**：`raw/2026-09-19-trivedy-anatomy-of-agent-harness.md`（211 行）
-- **性质**：**一手**（作者署名），但**含利益披露**
 
 > [!warning] 利益披露（按 [[schema]] §3.4 处理）
 > 作者为 LangChain 员工，文末含 LangSmith（LangChain 自家 Agent 工程平台）的推广段
@@ -59,7 +58,7 @@ status: active
 
 **上下文管理是全文的组织轴** —— 多处讨论都围绕 context window 展开。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **本项目的第三份一手素材**，也是 [[harness-engineering]] 这个概念页的**定义来源**。
 - **与 [[2026-09-19-bockeler-harness-engineering-coding-agent-users]] 构成一条链**：
@@ -82,10 +81,14 @@ status: active
 - 文末推广段保留（已在上方利益披露中标注）。
 - 文中提到的「明天的 agent 需要的组件」部分**本库尚未逐条核对**，摘要只覆盖了 Key Takeaways 层面的内容。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 逐条整理本页的「harness 构成清单」—— 它是「个人最小 harness」的直接材料来源
 - [ ] 核对本页对 context window 的论述与 [[llm-wiki-pattern]] 的「编译」主张是否有可对照之处
+
+## 素材基本信息
+
+- **性质**：**一手**（作者署名），但**含利益披露**
 
 ## 相关页面
 

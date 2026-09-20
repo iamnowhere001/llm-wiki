@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-how-we-learn-notes
 tags: [学习, 巅峰表现, 神经科学]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-how-we-learn-notes]
 related: [peak-performance, stanislas-dehaene, four-pillars-of-learning, retrieval-practice, spaced-repetition, consolidation-and-sleep, prediction-error, innate-knowledge, cybernetic-learning, flow-terminology, human-sponge, 2026-09-18-hidden-potential-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-extended-mind-notes]
 confidence: low
@@ -21,11 +21,8 @@ status: active
 
 - **作者**：斯坦尼斯拉斯·迪昂（Stanislas Dehaene，原书作者，认知神经科学家）。**笔记与全部加工段均未署名。**
 - **链接**：https://my.feishu.cn/wiki/Dmqnw4GmEitPzdkEc63cANq4nQd
-- **原书出版**：2018 年（*How We Learn: Why Brains Learn Better Than Any Machine… for Now*）
+- **发表**：2018 年（*How We Learn: Why Brains Learn Better Than Any Machine… for Now*）
 - **素材路径**：`raw/2026-09-18-how-we-learn-notes.md`（844 行，frontmatter 1–47）
-- **内嵌资源**：**无** —— 无图片、无附件、无表格、无脚注（本库混层素材中第二份零内嵌资源的，第一份是 [[2026-09-18-extended-mind-notes]]）
-- **证据层级**：**二手 + AI 加工**。原书未收录，**本库无法做「素材 vs 原书」的逐行比对** ——
-  这与 [[2026-09-18-hidden-potential-notes]] / [[2026-09-18-clear-thinking-notes]] 不同，那两份都带原书 PDF
 
 ## 关键要点
 
@@ -37,7 +34,7 @@ status: active
 6. **神经元再利用** —— 人之所以能学会阅读、数学这些进化中未预设的技能，是因为旧神经回路被「重新分配」（见 [[innate-knowledge]]）。
 7. **注意力是生理闸门，不是意志力** —— 「多任务处理是伪命题」，切换有代价。
 
-## 分层表（本素材的证据结构）
+## 素材分层表（本素材的证据结构）
 
 **本库又一份混层素材。** 按 [[2026-09-18-extended-mind-notes]] 的计数顺次为**第六份** ——
 但需注意：**库内对前几份的计数本身存在分歧**，[[2026-09-18-hidden-potential-notes]] 与
@@ -117,7 +114,7 @@ E 段自陈在加工「**你的稿件**」（行 558），那么 A–D 段就是
 > **一份素材里同一个对象有多套并列清单，是 AI 多轮加工的强信号。**
 > 详见 [[flow-terminology]] 的对照记录。
 
-## 数字与引注核查表
+## 引注核查表
 
 > 本项目的【阻塞】缺口之一就是「核心数字全部无出处」。本页逐条列出本素材的数字与引注，
 > 并标注**本库核实到哪一步** —— 「不可追溯」（判断）与「已核实不存在」（事实）必须分开。
@@ -179,6 +176,12 @@ E 段自陈在加工「**你的稿件**」（行 558），那么 A–D 段就是
 - [ ] **行 594 的修正注脚指向的句子在哪？** 本页判断「在被截掉的对话里」——
       若原书或对话记录可得，可验证这个判断。
 - [ ] 本文档是**从一份完整对话里截取的**。是否还有第二份、第三份？**若整理者保留了完整对话，那份材料的价值高于本文档。**
+
+## 素材基本信息
+
+- **内嵌资源**：**无** —— 无图片、无附件、无表格、无脚注（本库混层素材中第二份零内嵌资源的，第一份是 [[2026-09-18-extended-mind-notes]]）
+- **证据层级**：**二手 + AI 加工**。原书未收录，**本库无法做「素材 vs 原书」的逐行比对** ——
+  这与 [[2026-09-18-hidden-potential-notes]] / [[2026-09-18-clear-thinking-notes]] 不同，那两份都带原书 PDF
 
 ## 来源
 

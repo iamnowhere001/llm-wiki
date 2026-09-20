@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-transfer-bridging
 tags: [万维钢, 学习, 心智模型, 迁移, 情境]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-transfer-bridging]
 related: [transfer-of-learning, mental-models, schema-psychology, david-perkins, wanweigang, 2026-09-18-mental-representations, how-we-learn-and-how-to-improve, peak-performance, llm-wiki-pattern]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里对本库缺口命中率最高的一份** —— 它直接填上 [[peak-performance]] 的头号空白。
 
 - **作者**：万维钢（行 167 提到「罗振宇老师在《文明之旅》节目里」，行 46 自陈「咱们这个板块的最后一讲」）
-- **链接**：https://my.feishu.cn/wiki/VwBOwaYwaiG9mMkhbrRch93TnOh
-- **原文**：https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMMwXw6bEOLl5GPx
+- **链接**：https://my.feishu.cn/wiki/VwBOwaYwaiG9mMkhbrRch93TnOh ｜ https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMMwXw6bEOLl5GPx
 - **发表**：2026-05-20 05:56
 - **素材路径**：`raw/2026-09-18-transfer-bridging.md`（471 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**核心框架点名到人与年份（珀金斯与所罗门 1988）**
 
 ## 关键要点
 
@@ -36,7 +34,7 @@ status: active
 7. **对比两个表面不同的案例**是训练桥接最有效的教法（素材称迁移率提升两倍）。
 8. **收尾样本苏东坡**：博观约取（压缩成图式）+ 复杂经历（拥抱）+ 高路迁移（桥接遥远万物）。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -47,7 +45,7 @@ status: active
 
 > [!note] 行区间为**文件绝对行号**，2026-09-18 首次测量并回文件核对。
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -102,6 +100,10 @@ status: active
       它是本讲唯一一个量化的效果主张，且无出处。
 - [ ] 费曼巴西轶事、怀特海 1929 **均未核实**。
 - [ ] 本讲是系列最后一讲，**是否要收录该系列其他板块？** 取决于缺口表。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**核心框架点名到人与年份（珀金斯与所罗门 1988）**
 
 ## 来源
 

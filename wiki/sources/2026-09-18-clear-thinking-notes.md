@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-clear-thinking-notes
 tags: [决策, 平庸, 清晰思考, 默认值]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-clear-thinking-notes]
 related: [shane-parrish, stimulus-response-gap, viktor-frankl, complaining, victim-mentality, stoic-control-dichotomy, thinking-vs-feeling, peak-performance, emotion-awareness]
 confidence: medium
@@ -20,10 +20,8 @@ status: active
 
 - **作者**：Shane Parrish（沙恩·帕里什，原书作者）。**整理者与讲者均未署名。**
 - **链接**：https://my.feishu.cn/wiki/KPQCwX5Cai44KXkiPmrcjnV8nsg
-- **原书出版**：2023 年 10 月（*Clear Thinking: Turning Ordinary Moments into Extraordinary Results*，Portfolio / Penguin）
+- **发表**：2023 年 10 月（*Clear Thinking: Turning Ordinary Moments into Extraordinary Results*，Portfolio / Penguin）
 - **素材路径**：`raw/2026-09-18-clear-thinking-notes.md`（1,404 行；`wc -l` 报 1,403，因末行无换行符 —— **本页全部行号均指文件绝对行号，可直接 `sed -n 'Np'` 核对**）
-- **内嵌资源**：5 份，已下载至 `raw/assets/` ——
-  **英文原版 PDF**（322 页）、决策过程四阶段图、可逆性-后果坐标图、决策时间图、巴菲特旅鼠名言图
 
 ## 关键要点
 
@@ -34,7 +32,7 @@ status: active
 5. **可逆性决定决策时点** —— 「可逆决策尽快做，不可逆决策尽量延后」；配套一条个人规则：**重大决策后先睡一觉，睡前写下理由，第二天再决定是否公开**。
 6. **什么值得你想要** —— 全书第五部分把问题推到底：**「有效的决策让你得到目前的目标，好的决策让你得到真正的目标。」** 工具是「把终点当起点」——贝索斯的 80 岁回望、乔布斯的 *memento mori*、皮勒摩的老人访谈。
 
-## 分层表（本素材的证据结构）
+## 素材分层表（本素材的证据结构）
 
 **这是本库第四份混层素材**，三段证据性质不同，单一 `confidence` 无法表达。
 **行区间为文件绝对行号**（`raw/` 的 `capture_note` 已声明坐标系；引用前请回文件核对）：
@@ -175,7 +173,7 @@ C 段在同一篇讲稿里同时说了两件事：
 > 可以同时成立（环境设计正是「行使选择」的一种方式）。
 > **但素材没有给出这个调和，本库也不替它给出。** 记为张力，见 [[stimulus-response-gap]]。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **补充了 [[stimulus-response-gap]]**：该页此前只有「那段空间存在」这一层。本素材补上了一个**具体机制层** —— 空间里要跑的是「识别四种默认值 → 用预设规则替代临场决策」。另见上节的张力。
 - **补充了 [[complaining]] 与 [[victim-mentality]]**：本素材第三部分「自我问责」一节（B 段行 527–612）用**同一个论证**同时处理了抱怨与受害者叙事，且给了一个本库此前没有的操作句：**「这一行为会让未来变得更容易还是更困难？」**
@@ -217,7 +215,7 @@ C 段在同一篇讲稿里同时说了两件事：
 > **素材的性质决定缺口与页面怎么写，先看清再拆。**
 > 本素材的归属未定 —— 若另开项目，概念页的 `related` 与 `confidence` 都要按新项目的框架重定。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **归属裁定** —— 另开项目 / 并进 [[peak-performance]] / 并进 [[emotion-awareness]] / 不收（见上节）
 - [ ] **核实得到讲书稿的讲者身份** —— 文内「我们专栏」「何帆老师」的措辞指向得到系专栏，但**文档内无署名**，本库不作断言
@@ -226,6 +224,11 @@ C 段在同一篇讲稿里同时说了两件事：
 - [ ] **B 段的节选比例** —— 28,141 字符 vs 原书 399,522 字符（英文）。粗略估算约 1/4，**未精确核算**
 - [ ] 芒格那句话（「如果你闯入一个新的领域……」）的原始出处 —— **本素材第二次给出转引，仍无出处**。应与 [[emotion-awareness]] 的同类待核项合并追踪
 - [ ] **「刺激与回应之间的空间」的归属链**是否值得单独归档为一页 `analyses/` 案例（本库第二次遇到同一处错误归因）
+
+## 素材基本信息
+
+- **内嵌资源**：5 份，已下载至 `raw/assets/` ——
+  **英文原版 PDF**（322 页）、决策过程四阶段图、可逆性-后果坐标图、决策时间图、巴菲特旅鼠名言图
 
 ## 相关页面
 

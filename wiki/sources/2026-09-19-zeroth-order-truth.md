@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-zeroth-order-truth
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 可评估性假说, 大局观, 权重思维, 聚焦错觉]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-zeroth-order-truth]
 related: [modern-thinking-tools, wanweigang, value-of-information, hard-constraints, compression-as-intelligence, mental-accounting, feedback-loop, cybernetic-learning, narrative-as-objective-function, marginal-analysis, goodharts-law, intelligent-life-system, systems-over-goals, 2026-09-19-value-of-information-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-19-adaptive-cycle, 2026-09-19-path-creation]
 confidence: medium
@@ -30,18 +30,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/JJkxwnpYwiQrcDkTVmCcItdEnIe
 - **素材路径**：`raw/2026-09-19-zeroth-order-truth.md`（275 行）
 
-## TL;DR
+## 关键要点
 
-**本讲是「模块八 高观点」的开篇，也是全课的收束板块的第一讲。** 它把物理学的**微扰理论（perturbation theory）**
-与**主导平衡（dominant balance）** 搬进决策 —— 两者都是**既有方法**（见「术语归属专段」，非万维钢自造）；
-**「零阶道理」这个说法才是讲稿自创**（行 40 素材**自陈**「我原创的说法」，态度正确）。
-它给 [[value-of-information]] 补上了**认知层前提**：VOI 问「这条信息能不能改变行动」，
-本讲问「**先问权重，再问真假**」——**对你不重要的事，它是真是假都不重要**（行 158）。
-本份**含一段无署名 AI 加工段**（行 219–274，六节模板摘要，占比 **22.9%**，见「AI 加工段判定」）——
-与同门课模块七的 [[2026-09-19-adaptive-cycle]]（0%）不同，本模块此篇**带 AI 摘要段**。
-**具名引注整体质量高**：Klein 1908 / Hsee 1996 / 卡尼曼聚焦错觉 / 孟子两处 /《魏略》诸葛亮 /
-《三国演义》「小人之儒」/ 孔乙己「回字四样写法」/ 微扰理论与主导平衡**均外核属实**；
-**两处现代政治引文（邓小平 1992、毛泽东《矛盾论》）本轮未取回来源**，如实标（未验证）（见核查表）。
+1. **本讲是「模块八 高观点」的开篇，也是全课的收束板块的第一讲。**
+2. **把物理学的微扰理论（perturbation theory）与主导平衡（dominant balance）搬进决策** —— 两者都是**既有方法**（见「术语归属专段」，非万维钢自造）；**「零阶道理」这个说法才是讲稿自创**（行 40 素材**自陈**「我原创的说法」，态度正确）。
+3. **给 [[value-of-information]] 补上了认知层前提**：VOI 问「这条信息能不能改变行动」，本讲问「**先问权重，再问真假**」——**对你不重要的事，它是真是假都不重要**（行 158）。
+4. **本份含一段无署名 AI 加工段**（行 219–274，六节模板摘要，占比 **22.9%**，见「AI 加工段判定」）—— 与同门课模块七的 [[2026-09-19-adaptive-cycle]]（0%）不同，本模块此篇**带 AI 摘要段**。
+5. **具名引注整体质量高**：Klein 1908 / Hsee 1996 / 卡尼曼聚焦错觉 / 孟子两处 /《魏略》诸葛亮 /《三国演义》「小人之儒」/ 孔乙己「回字四样写法」/ 微扰理论与主导平衡**均外核属实**；**两处现代政治引文（邓小平 1992、毛泽东《矛盾论》）本轮未取回来源**，如实标（未验证）（见核查表）。
 
 ## 素材基本信息
 
@@ -78,7 +73,7 @@ status: active
 | 06 | 180 | `GyL5bNPPMobLCIxbCcDcKT9inSe` | `raw/assets/2026-09-19-zeroth-order-truth-img-06.png` |
 | 07 | 215 | `XF3Db2JHboDZs0xSwIXc5rP9n6Z` | `raw/assets/2026-09-19-zeroth-order-truth-img-07.png` |
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -299,7 +294,7 @@ status: active
 - [[modern-thinking-tools]]：全课地图「九 · 模块八 高观点」计数 **0 → 已收**；并登记「本份带 22.9% AI 加工段，与模块七纯讲稿形成对照」。
 - [[wanweigang]]：作者页可登记「**高观点反思**」这条线（本板块第一批正源讲稿）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **`zeroth-order-truth` 要不要建页？** 它是**讲稿自创术语 + 既有方法骨架**的复合体，建页须同时写清两层。**倾向：建。**
 - [ ] **「显眼性偏差」这一 AI 段自造标签如何处置？** 现判：**登记为 AI 段自拟**，不建页、不当既有术语引用。

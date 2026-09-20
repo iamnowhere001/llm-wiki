@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-sense-of-security-notes
 tags: [成长战略, 万维钢, 得到课程, 依恋理论, 安全感, 心理安全, 鲍尔比]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-sense-of-security-notes]
 related: [wanweigang, modern-thinking-tools, cognitive-decoupling, 2026-09-18-cognitive-decoupling, rumination, compensatory-control, 2026-09-18-woop-notes, victim-mentality]
 confidence: medium
@@ -23,20 +23,12 @@ status: active
 > 但**有一处过期共识**（安全型依恋比例）与**一处拼写错误**（Bowlby 被写成 Bowlly）。
 
 - **作者**：行 37–175 万维钢（得到课程讲稿）；行 179 起**无署名，判为 AI 加工**
-- **链接**：https://my.feishu.cn/wiki/EXo3w07uNiYgHFkE3accgYQDnSb
-- **原文出处**：https://www.dedao.cn/course/article?id=xzYo2GPNq4W8VEb2WzJejyRBZbnw0d&fullScreen=true
-- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 10 讲，官方编号 **017**（**推定**，见 raw 的 `capture_note`；编号依据模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 给出的 007–021 顺序）
-- **发布**：未标注
+- **链接**：https://my.feishu.cn/wiki/EXo3w07uNiYgHFkE3accgYQDnSb ｜ https://www.dedao.cn/course/article?id=xzYo2GPNq4W8VEb2WzJejyRBZbnw0d&fullScreen=true
 - **素材路径**：`raw/2026-09-18-sense-of-security-notes.md`（**543 行**；frontmatter 1–25，正文自 26 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 515 行」，与绝对行数不符：**543 − 25（frontmatter）= 518**，差 **3 行** ——
-  该「515 行」既不是绝对行号、也不严格等于「总行数 − frontmatter」，**引用前必须回文件核对**，不要沿用
-- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: IWu6dglaNobgEFxk01TcgEYqnkg` ｜ `revision_id: 385` ｜ 13,888 字符 ｜ 2 张图全部下载（约 17.3 MB）
-- **内容引用**：正文含 1 个飞书 `<cite>` 块，指向库外文档《园丁与木匠》
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **讲稿把「安全感」定位为最基本的人类需求**，用一个场景引出**安斯沃斯（Mary Ainsworth）1970 年代的陌生情境实验**：
    孩子的表现分**焦虑型 / 回避型 / 安全型**三类，安全型是多数（素材称「大约 65% 到 70%」）。
@@ -79,7 +71,7 @@ status: active
 > **分母说明**：若按全文 543 行计，讲稿占 25.6%、AI 段占 67.2%。
 > **AI 段占比（约 70%）接近 [[2026-09-18-woop-notes]]（78%）的量级** —— 且本份是**同一页内讲稿与三份手册并置**。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -137,7 +129,7 @@ status: active
 **H 段的「7 天重启」是伦理风险，不是证据问题**：行 487「狠狠弹一下皮筋」用**自伤式痛感**打断情绪，
 行 530「**用打火机把它烧掉，或者撕得粉碎扔进马桶冲走**」，行 531「**『原生家庭』这个词从你的字典里彻底删除**」。
 这些是**方法建议**（不冒充事实），但其中若干条对创伤人群有潜在伤害。本库的处理：**在页内标记，不改写素材**，
-并在「待办」里列为需要人类裁定的事项（是否在综述里作为「AI 段把心理工具改写成硬核纪律」的典型引用）。
+并在「待办 / 开放问题」里列为需要人类裁定的事项（是否在综述里作为「AI 段把心理工具改写成硬核纪律」的典型引用）。
 
 ## 引注核查表
 
@@ -272,6 +264,16 @@ status: active
       本库倾向在综述里作为案例引用。**待人类裁定**
 - [ ] **AI 段内部矛盾（自我关怀 ↔ 放弃安抚）是否需要单独登记** —— 它证明 AI 段由不同提示词驱动。**待裁定**
 - [ ] **2 张图的图内数字未核** —— 图片已下载（约 17.3 MB），图中文字未逐字核对；与库内既有的「图缺失处置建议」同一问题
+
+## 素材基本信息
+
+- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 10 讲，官方编号 **017**（**推定**，见 raw 的 `capture_note`；编号依据模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 给出的 007–021 顺序）
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 515 行」，与绝对行数不符：**543 − 25（frontmatter）= 518**，差 **3 行** ——
+  该「515 行」既不是绝对行号、也不严格等于「总行数 − frontmatter」，**引用前必须回文件核对**，不要沿用
+- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: IWu6dglaNobgEFxk01TcgEYqnkg` ｜ `revision_id: 385` ｜ 13,888 字符 ｜ 2 张图全部下载（约 17.3 MB）
+- **内容引用**：正文含 1 个飞书 `<cite>` 块，指向库外文档《园丁与木匠》
 
 ## 来源
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-adaptive-cycle
 tags: [现代思维工具, 演化者, 万维钢, 得到课程, 适应性循环]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-adaptive-cycle]
 related: [modern-thinking-tools, wanweigang, explore-exploit-tradeoff, antifragility, systems-over-goals, chaos-system-of-life, enshittification, goodharts-law, non-ergodicity, optionality, wardley-map, steady-state-survival-logic, 2026-09-19-antifragility-notes, 2026-09-19-path-creation]
 confidence: medium
@@ -28,16 +28,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/CGwrw0GKOipTIWko2qFcjjVPnMd
 - **素材路径**：`raw/2026-09-19-adaptive-cycle.md`（205 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把霍林（C. S. Holling）的「适应性循环」引入本库** —— 它是**既有生态学框架**（1986），素材**已正确署名**（见「术语归属专段」），
-不是万维钢自造词。它给 [[explore-exploit-tradeoff]] 的「探索 / 利用」补上了**动力学与后半环**：
-从开拓（r）到守成（K）就是「探索 → 利用」的加深，但**守成期最危险的地方是「系统不是停止优化，而是再也停不下优化」**（行 108）。
-它同时把 [[antifragility]] 的「**稳定是一种幻觉**」落到了一个**四阶段机制**上。
-**本份是纯讲稿**：无正文级 `---` 分隔线、无 AI 加工段（见「AI 加工段判定」，占比 **0%**），
-内部用 6 个 `✵` 分节（行 52 / 88 / 120 / 142 / 162 / 178）。
-**具名引注整体质量高**：Holling 1986 / r-K-Ω-α / panarchy / revolt·remember / 熊彼特创造性破坏 / 唐代户口数字**均外核属实**；
-**唯一未取回来源的是「窑洞对」那一段**（黄炎培引文与日期），如实标（未验证）（见核查表）。
+1. **把霍林（C. S. Holling）的「适应性循环」引入本库** —— 它是**既有生态学框架**（1986），素材**已正确署名**（见「术语归属专段」），不是万维钢自造词。
+2. **给 [[explore-exploit-tradeoff]] 的「探索 / 利用」补上动力学与后半环**：从开拓（r）到守成（K）就是「探索 → 利用」的加深，但**守成期最危险的地方是「系统不是停止优化，而是再也停不下优化」**（行 108）。
+3. **把 [[antifragility]] 的「稳定是一种幻觉」落到了一个四阶段机制上。**
+4. **本份是纯讲稿**：无正文级 `---` 分隔线、无 AI 加工段（见「AI 加工段判定」，占比 **0%**），内部用 6 个 `✵` 分节（行 52 / 88 / 120 / 142 / 162 / 178）。
+5. **具名引注整体质量高**：Holling 1986 / r-K-Ω-α / panarchy / revolt·remember / 熊彼特创造性破坏 / 唐代户口数字**均外核属实**；**唯一未取回来源的是「窑洞对」那一段**（黄炎培引文与日期），如实标（未验证）（见核查表）。
 
 ## 素材基本信息
 
@@ -64,7 +61,7 @@ status: active
 **一处抓取事实（图片）**：下载图片时首次误用 `drive +download`，对文档内嵌图**全部返回 HTTP 403**；
 改用 `docs +media-download` 后全部取回，**同一轮 ingest 内已更正**（见 raw `capture_method` 与 `wiki/log.md`）。本页不重复。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -249,7 +246,7 @@ status: active
 - [[wanweigang]]：作者页可登记「**演化 / 系统变革**」这条线（本模块第一批正源讲稿）。
 - [[2026-09-19-antifragility-notes]]：与 [[antifragility]] 同批，补「四阶段」这一**上游框架**的登记（该 notes 页是塔勒布线，本讲是霍林线，两条线在「稳定 vs 韧性」处交汇）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **`adaptive-cycle` 要不要建页？** 它是既有框架又带自拟类比，建页须同时写清两层。**倾向：建，且与 `path-creation` 一起构成本模块的两条主概念。**
 - [ ] **「四劫 ↔ 四阶段」这个类比的处置** 是否要在页内升级为「要标注的误读风险」？**现判：素材态度正确**（未声称是佛学原说），故只登记，不改 raw。

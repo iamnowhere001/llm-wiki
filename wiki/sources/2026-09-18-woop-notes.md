@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-woop-notes
 tags: [成长战略, 万维钢, 得到课程, 执行意图, WOOP, 心理比对]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-woop-notes]
 related: [wanweigang, modern-thinking-tools, ai-convergence, stimulus-response-gap, internal-friction, autonomy-support, wishful-thinking-layers, scaffolding, deliberate-practice, 2026-09-18-three-selves-notes, 2026-09-18-clear-thinking-notes, 2026-09-18-cognitive-decoupling]
 confidence: medium
@@ -22,17 +22,13 @@ status: active
 > 真正的风险不在证据层，在**价值方向**：**AI 段与讲稿在同一页里直接对撞。**
 
 - **作者**：行 1–245 万维钢（得到课程讲稿，末尾有「——万维钢」署名）；行 251 起**无署名，判为 AI 加工**
-- **链接**：https://my.feishu.cn/wiki/Xac3wQLAOivOWYkvp9Uc09X7nLf
-- **原文出处**：https://www.dedao.cn/course/article?id=7EGBgdkRbn1mKgd6d5VY890D3rvPOA
-- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 7 讲，官方编号 **013**（**推定**，见 raw 的 `capture_note`）
-- **发布**：2026-04-02 07:20
+- **链接**：https://my.feishu.cn/wiki/Xac3wQLAOivOWYkvp9Uc09X7nLf ｜ https://www.dedao.cn/course/article?id=7EGBgdkRbn1mKgd6d5VY890D3rvPOA
+- **发表**：2026-04-02 07:20
 - **素材路径**：`raw/2026-09-18-woop-notes.md`（**1,316 行**；frontmatter 1–25，正文自 26 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 1,288 行」是**内容相对**行数（1,316 − 28），**不是绝对行号** —— 引用前必须回文件核对
-- **抓取**：`lark-cli docs +fetch --as user` ｜ `document_id: G4TFdTvHGoFcUvx76nrce3iOnFb` ｜ `revision_id: 684` ｜ 31,390 字符 ｜ 6 张图全部下载
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **讲稿的主线是「默认设置 → 漂流 → 夺回主权」的因果链。** 拿破仑·希尔《智胜恶魔》借魔鬼之口断言
    **98% 的人终生漂流**；机制叫**催眠节律（hypnotic rhythm）**；日常版本是**默认选项（Default Options）**
@@ -90,7 +86,7 @@ status: active
 > 两种口径下**这仍是本库 AI 加工占比最高的一份课程素材** —— 高于重尾（92% 属另一量级，但那是一份 2,619 行的独立 AI 产物；
 > 本份是**同一页内**讲稿与 AI 段并置，对撞因而更直接）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -149,7 +145,7 @@ AI 回复紧随其后且**以「你这个联想简直绝了！」（行 495）�
 ### 一个必须登记的风险（不属四种缺陷型）
 
 **J 段的欺骗话术是伦理风险，不是证据问题。** 本库的处理：**在页内标记，不改写素材**，
-并在「待办」里列为需要人类裁定的事项（是否在综述里作为「AI 段把工具改写成操纵术」的典型案例引用）。
+并在「待办 / 开放问题」里列为需要人类裁定的事项（是否在综述里作为「AI 段把工具改写成操纵术」的典型案例引用）。
 
 ## 引注核查表
 
@@ -315,6 +311,13 @@ AI 回复紧随其后且**以「你这个联想简直绝了！」（行 495）�
       这与项目页已登记的那条非阻塞缺口是同一问题，**待做综述时一并处理**
 - [ ] **6 张图的图内数字未核** —— 图片已下载（约 18.8 MB），但**图中数字（如行 199 图注的「减重 10 磅」）未核对**；
       本库此前累计 23 张图缺失的处置建议同样适用
+
+## 素材基本信息
+
+- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 7 讲，官方编号 **013**（**推定**，见 raw 的 `capture_note`）
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 1,288 行」是**内容相对**行数（1,316 − 28），**不是绝对行号** —— 引用前必须回文件核对
+- **抓取**：`lark-cli docs +fetch --as user` ｜ `document_id: G4TFdTvHGoFcUvx76nrce3iOnFb` ｜ `revision_id: 684` ｜ 31,390 字符 ｜ 6 张图全部下载
 
 ## 来源
 

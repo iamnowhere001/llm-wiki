@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-three-selves-notes
 tags: [世界观, 万维钢, 得到课程, 自我, 预测加工, 基本世界观, 自由能]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-three-selves-notes]
 related: [three-selves, daniel-dennett, modern-thinking-tools, wanweigang, free-energy-principle, prediction-error, cybernetic-learning, agent-vs-tool, emotion-awareness, 2026-09-18-modern-thinking-tools-prospectus]
 confidence: low
@@ -46,7 +46,7 @@ status: active
    「好，我们直接进入**执行层**」—— 那段「30 天训练程序」是**一次真实人机对话的原样搬运**。
    这比第 3 讲「AI 自陈」的证明力**更强**：那里是 AI 说自己做了什么，这里是**对话过程本身**。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 内容 |
 |---|---|---|---|---|
@@ -159,7 +159,7 @@ status: active
 
 **因此，I / J / K / L 四段的性质判定不需要靠行文风格推测 —— 有结构性证据。**
 
-## AI 段的性质（F–H 段）
+## AI 加工段判定（F–H 段）
 
 **① 三类缺陷，本份各占一点：**
 
@@ -187,7 +187,7 @@ status: active
 「**做错是对的**」（行 955）。这与库内 [[deliberate-practice]]（需要明确反馈与修正）**方向不完全一致** ——
 它奖励的是**行动本身**，不是**修正后的正确性**。**本库不收这套程序，只记录它的存在。**
 
-## 与现有库的关系
+## 与本库既有页面的关系
 
 1. **它是「基本世界观」六讲的收束，且收在「人」上。** 讲稿自己说了理由：
    「现代人应该了解的世界基本设定也许不可尽数，但**最终都会归结到人**」（行 49）。
@@ -209,7 +209,7 @@ status: active
 7. **它承认 AI 类比是**「**我们**（作者 + GPT）把现代学者的理论和古代先贤的看法摊在一起，聊出一个工作模型」（行 59）。
    **这是一处主动交代** —— 与第 4 讲行 161「我让 GPT 算了一下」同型。**本库第二次见到这种交代。**
 
-## 新建 / 回填
+## 回填清单
 
 **新建概念页**：[[three-selves]]
 **新建实体页**：[[daniel-dennett]]（库内第二次出现，满足阈值）

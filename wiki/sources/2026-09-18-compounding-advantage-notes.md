@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-compounding-advantage-notes
 tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 复利, 资本]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-compounding-advantage-notes]
 related: [compounding-knowledge, multiplicative-world, heavy-tailed-distribution, character-skills, steady-state-survival-logic, luck-over-talent, modern-thinking-tools, wanweigang]
 confidence: medium
@@ -40,7 +40,7 @@ status: active
    「在AI时代的当下，普通中年人如何借用AI这个杠杆……」）—— 按 [[modern-thinking-tools]]「不做什么」的既定处置：
    **只在分层表标明性质与篇幅，不单独建页、不进知识列表。**
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 内容 |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ status: active
 **④ ROI 与人生复利路线（行 138–158）** —— 18–25 抬利率 / 25–35 锁赛道 / 35–50 规模 / 50–65 抗衰 / 65+ 分红。
 **⑤ 穷富翁大作战（行 164–168）** —— 全讲唯一的「反例」，用来承认**「有条件积累复利本身就是幸运」**。
 
-## AI 段的性质（D / E 段）
+## AI 加工段判定（D / E 段）
 
 **判定：命中「人设化改写」型**，且是该项目模板的**第五次出现**（前四次在「基本世界观」第 3–6 讲）。
 
@@ -120,7 +120,7 @@ status: active
 **本讲的「可验算」只有小张小李一处，其余全是具名引注 —— 而具名引注里有两处数字对不上。**
 **这份素材的核心事实（复利数学、皮凯蒂、布迪厄、格兰诺维特）站得住，失真的都在「讲故事用的具体数字」上。**
 
-## 与现有库的关系
+## 与本库既有页面的关系
 
 1. **它是 [[compounding-knowledge]] 的「同数学形态、不同应用域」项。** 该页讲的是**知识库**的复利
    （页面互引使知识复利），本讲讲的是**个人回报结构**的复利（早开始 + 不下牌桌）。

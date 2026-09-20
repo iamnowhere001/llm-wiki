@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-field-and-habitus-notes
 tags: [成长战略, 万维钢, 得到课程, 场域, 布迪厄, 惯习, 象征资本]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-field-and-habitus-notes]
 related: [opportunity-systems, compensatory-control, victim-mentality, narrative-power, multiplicative-world, deliberate-practice, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes]
 confidence: medium
@@ -27,20 +27,16 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/G0SRwpMUOikeRikj6GbcqxUanYf
 - **素材路径**：`raw/2026-09-18-field-and-habitus-notes.md`（183 行）
 
-## TL;DR
-
-**它把一个日常抱怨（「这是潜规则」）升级成一个分析框架** —— 布迪厄的 field / Doxa / habitus / capital：
-场域是一张由位置构成的关系网，**努力不是硬通货，合规才是**（行 66）；
-因此正确的动作不是抱怨，而是识别 Doxa、校准惯习、积累场域看重的资本，**实在不行就换个场域**。
-
 ## 关键要点
 
 1. **它是全课第一个「纯社会学框架」**，也是库里第三个把评价归因到**结构层**的材料
    （另两个是 [[opportunity-systems]] 与第 8 讲的「位置论」）。
-2. **四个概念构成一个可操作的四步攻略**（行 96–102）：网络结构 → 识别 Doxa → 校准惯习 → 积累资本。
+2. **它把一个日常抱怨（「这是潜规则」）升级成一个分析框架** —— 布迪厄的 field / Doxa / habitus / capital：
+   场域是一张由位置构成的关系网；**四个概念构成一个可操作的四步攻略**（行 96–102）：
+   网络结构 → 识别 Doxa → 校准惯习 → 积累资本，**实在不行就换个场域**。
 3. **最锋利的判据是「努力不是硬通货，合规才是」**（行 66）——
    这是库内对「努力」的第三次定性（前两次：第 2 讲「线性思维」、第 11 讲「对辛苦的补偿」）。
-4. **行 110–122 用萨根 1992 年落选美国科学院院士讲「学术界的 Doxa」**，并称之为「**反向市场**」与「萨根效应」。
+4. **行 110–122 用萨根 1992 年落选美国科学院院士讲「学术界的 Doxa」**，并称之为「**反向市场**」与「**萨根效应**」。
 5. **象征资本 = 场域的最高叙事权**（行 142）；**象征暴力** = 让人不敢反驳（行 140）。
 6. **本份不含 AI 加工段，但含一个注释节 —— 而这条注释是一场「引文归属追查」**（行 183，见核查表第 4 条）。
 

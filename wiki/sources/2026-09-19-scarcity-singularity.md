@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-scarcity-singularity
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 鲍莫尔成本病, 稀缺, 不可通约, 位置性商品, 奇点]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-scarcity-singularity]
 related: [modern-thinking-tools, wanweigang, baumols-cost-disease, william-baumol, structural-holes, social-capital, entrustability, hard-constraints, marginal-analysis, optionality, goodharts-law, economic-rent, jevons-paradox, 2026-09-19-scarcity-book-en, 2026-09-19-self-constraint, 2026-09-19-moral-scalability, 2026-09-19-problem-setting, 2026-09-19-objective-function, 2026-09-19-by-products, 2026-09-19-qa-first-credit, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-capability-seeking-theorem-notes]
 confidence: medium
@@ -29,16 +29,14 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/Mf6vwI853ius8CkrlD6c4bqAnN6
 - **素材路径**：`raw/2026-09-19-scarcity-singularity.md`（507 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把「稀缺」从行为经济学义项切换成经济学的「位置性稀缺」** —— 义项来自 **Fred Hirsch《Social Limits to Growth》(1976)** 的「位置性商品（positional goods）」，素材**已正确署名**（见「术语归属专段」）。
-⚠️ **它与库内 [[2026-09-19-scarcity-book-en]] 的「稀缺」同名不同义**（那是 Mullainathan & Shafir 2013 的认知带宽 / 隧道效应），**两者不可互引、不可互证**。
-**本份是模块八分层最复杂、AI 占比最高的一份**：讲稿段 C 占正文 **40.4%**，**无署名 AI 加工段占 54.2%**（行 249–507，**四段**，见「AI 加工段判定」）。
-四段中 **①②③ 同源**（`###` + `####` 编号小节模板），**④ 异源**（无标题、行内 `**一，**` 编号，且自述在评「文中附带的那段 AI 回复」）。
-**四段都做了大量「加法」** —— 补进讲稿 0 次出现的术语与具名：**「Skin in the Game」/ 吉拉尔拟态欲望 / 加缪西西弗斯 / 尼采末人 / 特德·姜 / Myerson–Satterthwaite 定理 / VCG 拍卖 / Lean 证书 / Thomas Bloom**（逐条见下）。
-**引注线整体可核**：Arrow 1950 / Hirsch 1976 / Berlin 价值多元论 / Chang 1997 / Myerson–Satterthwaite 1983 / Astra 2026-08-01 / GPT-5 2025-10 事件**全部外核属实**；
-**未取回的只有两条**：贝佐斯「2012 年」的年份、同治八年（1869）卖地契的「二十四个中人」，以及 AI 段引的特德·姜那句话（**未找到**）。
-**占比 54.2% < 60%**，按 `schema.md` §2 第 5 步**不触发反方检索**（但 L0 中已顺手取到两条现成反方，见「反方与失败条件」）。
+1. **把「稀缺」从行为经济学义项切换成经济学的「位置性稀缺」** —— 义项来自 **Fred Hirsch《Social Limits to Growth》(1976)** 的「位置性商品（positional goods）」，素材**已正确署名**（见「术语归属专段」）。
+2. ⚠️ **与库内 [[2026-09-19-scarcity-book-en]] 的「稀缺」同名不同义**（那是 Mullainathan & Shafir 2013 的认知带宽 / 隧道效应），**两者不可互引、不可互证**。
+3. **本份是模块八分层最复杂、AI 占比最高的一份**：讲稿段 C 占正文 **40.4%**，**无署名 AI 加工段占 54.2%**（行 249–507，**四段**，见「AI 加工段判定」）。
+4. **四段中 ①②③ 同源**（`###` + `####` 编号小节模板），**④ 异源**（无标题、行内 `**一，**` 编号，且自述在评「文中附带的那段 AI 回复」）。
+5. **四段都做了大量「加法」** —— 补进讲稿 0 次出现的术语与具名：**「Skin in the Game」/ 吉拉尔拟态欲望 / 加缪西西弗斯 / 尼采末人 / 特德·姜 / Myerson–Satterthwaite 定理 / VCG 拍卖 / Lean 证书 / Thomas Bloom**（逐条见下）。
+6. **引注线整体可核，占比未触发反方检索**：Arrow 1950 / Hirsch 1976 / Berlin 价值多元论 / Chang 1997 / Myerson–Satterthwaite 1983 / Astra 2026-08-01 / GPT-5 2025-10 事件**全部外核属实**；**未取回的只有两条**：贝佐斯「2012 年」的年份、同治八年（1869）卖地契的「二十四个中人」，以及 AI 段引的特德·姜那句话（**未找到**）。**占比 54.2% < 60%**，按 `schema.md` §2 第 5 步**不触发反方检索**（但 L0 中已顺手取到两条现成反方，见「反方与失败条件」）。
 
 ## 素材基本信息
 
@@ -77,7 +75,7 @@ status: active
 > 该图是**课程配套信息图**（alt 由抓取工具自动生成，属视图层），**它承载了讲稿没有的内容**。
 > **本库处置**：**只登记、不采** —— 信息图内容不作讲稿主张引用，也不计入分层表的任何一段。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -377,7 +375,7 @@ status: active
 - [[modern-thinking-tools]]：全课地图「九 · 模块八 高观点」的 **sources 页计数 +1**；并登记本份为**推定次序 116（待核）**。
 - [[wanweigang]]：作者页可登记「**高观点 / 稀缺与位置**」这条线（本模块第一批正源讲稿）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **推定次序 116 是否成立？** 现依据：行 166 回指 111（在 111 之后）+ 118 问答覆盖本份（在 118 之前）+ `node_create_time` 升序（08-05）。**待核。**
 - [ ] **「稀缺」的同名异义要不要升格为一条库级登记项？** 本份是**第一次出现「同一个词、两个义项、各有一页」**。

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-marginal-analysis
 tags: [现代思维工具, 演化者, 万维钢, 得到课程, S曲线, 第二曲线, 边际分析]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-marginal-analysis]
 related: [modern-thinking-tools, wanweigang, business-leverage, platform-business-model, multiplicative-world, explore-exploit-tradeoff, theory-of-constraints, innovation-diffusion, cybernetic-learning]
 confidence: medium
@@ -28,18 +28,14 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/TcLiwEJGkihrMgktr4Scxdovn9c
 - **素材路径**：`raw/2026-09-19-marginal-analysis.md`（208 行）
 
-## TL;DR
+## 关键要点
 
-**本讲的工具叫「边际分析（marginal analysis）」**：它是一个**反馈式决策法**（行 44）——「根据输出的变化决定你下一轮的输入」，
-不必先把系统全貌搞清就能拿到决策信号。它给四种局面的判据、给 S 曲线与第二曲线（Handy 1994，行 119），
-并落到**两个持续增长的奇迹**（摩尔定律 + AI 缩放定律，行 135–151）与**中国经济**（行 155–163）两个案例。
-**本份是纯讲稿、无 AI 加工段**（见「AI 加工段判定」），与同批的 [[2026-09-19-self-organized-criticality]] 同型。
-**具名引注质量较高**：Handy 1994 第二曲线、Kaplan 2020 缩放定律、摩尔定律、Intel 4004 / Blackwell 晶体管数、白重恩 & 张琼 2014 **外核属实**（核查表）。
-**三条须如实登记**：①「**边际效益 = 边际收益 − 边际成本**」是**讲稿自拟的合成量**，与标准术语「边际效益（marginal benefit）」不同义（见术语专段）；
-②中国资本回报率那条**存在学术争议**（Tang 等 2017 的复核与「2008 后下行」相左），讲稿未提争议；
-③两条数字**未逐字核实**（OECD 平均 60.1%、世行引号内「在许多领域」）。
-本讲显式回指 **[[business-leverage]]**（行 91「应该使用商业杠杆把它不断放大」）与 **[[platform-business-model]]**（行 87「我们前面为什么说『平台』」）；
-**并关闭了库内一条悬空预告** ——「第二曲线」（见回填清单对 [[multiplicative-world]] 的处置）。
+1. **工具叫「边际分析（marginal analysis）」**：它是一个**反馈式决策法**（行 44）——「根据输出的变化决定你下一轮的输入」，不必先把系统全貌搞清就能拿到决策信号。
+2. **给四种局面的判据、给 S 曲线与第二曲线**（Handy 1994，行 119），并落到**两个持续增长的奇迹**（摩尔定律 + AI 缩放定律，行 135–151）与**中国经济**（行 155–163）两个案例。
+3. **本份是纯讲稿、无 AI 加工段**（见「AI 加工段判定」），与同批的 [[2026-09-19-self-organized-criticality]] 同型。
+4. **具名引注质量较高**：Handy 1994 第二曲线、Kaplan 2020 缩放定律、摩尔定律、Intel 4004 / Blackwell 晶体管数、白重恩 & 张琼 2014 **外核属实**（核查表）。
+5. **三条须如实登记**：①「**边际效益 = 边际收益 − 边际成本**」是**讲稿自拟的合成量**，与标准术语「边际效益（marginal benefit）」不同义（见术语专段）；② 中国资本回报率那条**存在学术争议**（Tang 等 2017 的复核与「2008 后下行」相左），讲稿未提争议；③ 两条数字**未逐字核实**（OECD 平均 60.1%、世行引号内「在许多领域」）。
+6. **两条库内接点**：本讲显式回指 **[[business-leverage]]**（行 91「应该使用商业杠杆把它不断放大」）与 **[[platform-business-model]]**（行 87「我们前面为什么说『平台』」）；**并关闭了库内一条悬空预告** ——「第二曲线」（见回填清单对 [[multiplicative-world]] 的处置）。
 
 ## 素材基本信息
 
@@ -58,7 +54,7 @@ status: active
 
 **一处抓取事实**：图片下载首用 `drive +download` 对内嵌图**全部返回 HTTP 403**，改用 `docs +media-download` 后 8/8 取回（`capture_method` 已记）。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -226,7 +222,7 @@ status: active
 - [[window-of-opportunity]]：可选（「在旧曲线到顶之前启动」是一种时机判据），无落点则不动。
 - [[wanweigang]]：作者页登记「模块七 演化者」这条线。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **讲次表编号字段名待裁定**：raw frontmatter 的 `series` 写「讲次表编号（推定）103」。与模块一 / 二 / 四那批是**同一个待裁定项**。
 - [ ] **「边际效益」这个自拟定义要不要在概念页里纠正？** 本库**不臆改讲稿**；但建页时必须**同时给出标准术语**（marginal benefit / marginal profit），否则读者会把自拟定义当学界定义。

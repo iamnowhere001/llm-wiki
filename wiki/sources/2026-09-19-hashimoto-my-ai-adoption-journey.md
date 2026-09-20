@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-hashimoto-my-ai-adoption-journey
 tags: [AI, Agent, harness]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-hashimoto-my-ai-adoption-journey]
 related: [harness, harness-engineering, agents-md, 2026-09-19-trivedy-anatomy-of-agent-harness]
 confidence: high
@@ -17,9 +17,8 @@ status: active
 
 - **作者**：Mitchell Hashimoto（HashiCorp 联合创始人；Vagrant / Terraform / Ghostty 作者）
 - **链接**：https://mitchellh.com/writing/my-ai-adoption-journey
-- **发布时间**：2026-02-05
+- **发表**：2026-02-05
 - **素材路径**：`raw/2026-09-19-hashimoto-my-ai-adoption-journey.md`（291 行）
-- **性质**：**一手**（作者自述）。文末脚注明确声明 **"I don't work for, invest in, or advise any AI companies"** —— 本库登记的**无利益关联**。
 
 > [!note] 行号坐标系
 > 本节所有行号均为**文件绝对行号**（`wc -l` = 291 的坐标系），已回原文逐条核对。
@@ -51,7 +50,7 @@ status: active
 
 **第六步是目标而非现状。** 作者明确拒绝「为了跑而跑」。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **本项目（[[harness]]）的第一份一手素材**，也是「命名现场」的唯一直接证据。
 - **校准了中文二手材料的普遍说法**：中文材料普遍把 Harness Engineering 描述成一个 2026 年 2 月「突然火起来」的业界术语。
@@ -75,10 +74,14 @@ status: active
 - 页面导航与「Table of Contents」列表在提取时被保留，未与正文区分。
 - **作者引用的 Ghostty `AGENTS.md` 原文未收录** —— 它是「每一行对应一次错误」这一说法的凭据。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 抓取 Ghostty 的 `AGENTS.md`（GitHub 上，链接在原文行 223）—— **这是「第一种形式」唯一的实物证据**
 - [ ] 核对第 2 步的三条方法论与 [[traecode-pkm-article]] 缺口表里「从零跑通」的需求是否有可复用之处
+
+## 素材基本信息
+
+- **性质**：**一手**（作者自述）。文末脚注明确声明 **"I don't work for, invest in, or advise any AI companies"** —— 本库登记的**无利益关联**。
 
 ## 相关页面
 

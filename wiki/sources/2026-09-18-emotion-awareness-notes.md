@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-emotion-awareness-notes
 tags: [情绪, 主题笔记]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-emotion-awareness-notes]
 related: [wang-lu, marcus-aurelius, thomas-sowell, maurice-merleau-ponty, emotional-granularity, emotion-as-coupling, internal-friction]
 confidence: low
@@ -15,11 +15,9 @@ status: active
 
 > 一份围绕「情绪觉知」主题的个人整理笔记，把斯多葛哲学、得到课程《情绪觉知100讲》、神经科学解释和一套可执行清单缝在了一起。**它是本库中来源最混杂的一份素材** —— 同一份文件里既有逐字引文，也有 AI 辅助阐释。
 
-- **作者 / 来源**：北洛整理；内含王路《情绪觉知》课文稿、马可·奥勒留、芒格、索维尔、弗兰克尔、弗洛伊德等引文
+- **作者**：北洛整理；内含王路《情绪觉知》课文稿、马可·奥勒留、芒格、索维尔、弗兰克尔、弗洛伊德等引文
 - **链接**：https://my.feishu.cn/wiki/W7G4wbfEAi8e1MkZTy0cpR8Zn6f
-- **采集时状态**：revision 796
 - **素材路径**：`raw/2026-09-18-emotion-awareness-notes.md`
-- **采集质量**：高（官方 API 直取 markdown，行内格式与链接完整）；**但内容证据等级低，见下**
 
 > [!warning] 这份素材必须分段对待，不能整体引用
 > 它是**混合来源**，内部至少四类成分，证据强度依次递减：
@@ -66,7 +64,7 @@ status: active
 
 **附带的私人段落。** 「情绪硬隔离与内核修炼指南」与「上医治未病」两节，是针对作者本人具体家庭处境（伴侣关系）写成的应对指南，含「透明墙」观想、课题分离、上游思维五策略（主动汇报、情绪投喂、物理扫雷、低谷期回避、人设管理）。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **它是本库第一个「个人实践类」素材，与既有的知识管理主线没有内容重叠。** 既有 11 份素材全部围绕 PKM / LLM Wiki / 双向链接展开，本份与它们唯一的接口是 [[cybernetic-learning]] —— 王路「认知是耦合」的论证与 Dan Koe「没有目标就没有误差信号」的论证，都在拆「能力属于个人」这个前提。
 - **它给 [[wiki-lint]] 和 [[use-cases]] 提供了一个反例样本**：同一份文件里混杂了四类证据强度的内容，正是「不区分来源等级就会污染置信度」的实例。本库对它的处理方式（分段标注 + 整页降级为 low）可以当作一条操作示范。
@@ -77,13 +75,18 @@ status: active
 - 实体：[[wang-lu]]、[[marcus-aurelius]]、[[thomas-sowell]]、[[maurice-merleau-ponty]]、[[viktor-frankl]]（均新建）
 - 概念：[[emotional-granularity]]、[[emotion-as-coupling]]、[[stimulus-response-gap]]、[[internal-friction]]、[[complaining]]、[[forgiveness]]、[[thinking-vs-feeling]]、[[narrative-self-vs-bodily-self]]、[[victim-mentality]]、[[stoic-control-dichotomy]]、[[emotion-regulation-toolkit]]（均新建）
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **核对全部逐字引文** —— 马可·奥勒留、芒格、弗兰克尔、索维尔、弗洛伊德五处引文目前均为转引，需找原文核对（尤以弗兰克尔那句的常见误引为甚）
 - [ ] **导出两处内嵌电子表格** —— ABCDE 情绪思维模型与「三重威胁」表是 `<sheet>` 块，需从飞书侧单独导出
 - [ ] **确认「AI 辅助阐释」段落的比例** —— 素材中无署名的阐释性段落占相当篇幅，需要判断哪些有独立价值、哪些只是对引文的扩写
 - [ ] **追溯王路课程的一手形态** —— 目前是文稿转述，得到课程的原始音频/讲义未收录
 - [ ] 核对「90 秒情绪峰值」「5 秒糖水提升自控力」等具体数字是否有可查研究支持（目前均为素材内的转述）
+
+## 素材基本信息
+
+- **采集时状态**：revision 796
+- **采集质量**：高（官方 API 直取 markdown，行内格式与链接完整）；**但内容证据等级低，见下**
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-qa-deepen-or-move-notes
 tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 赛道选择, 认知重评, 默会知识]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-qa-deepen-or-move-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-growth-strategy-module-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-identity-metacognition-notes, 2026-09-18-sense-of-security-notes, 2026-09-18-game-selection-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-field-and-habitus-notes, tacit-knowledge, cognitive-reappraisal, narrative-identity, opportunity-systems, michael-polanyi]
 confidence: medium
@@ -22,22 +22,15 @@ status: active
 > **并把 018 讲的「天兵 / 悟空」二分扩成五分类**（太上老君 / 工匠 / 散仙 / 小妖，行 157–165）—— 库内此前没有。
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述；正文第一人称作答，含课程预告）
-- **链接**：https://my.feishu.cn/wiki/FWSrwVG7eiFmyGkf5qmcSDaynEd
-- **原文出处**：https://www.dedao.cn/course/article?id=Lpy0edZAG5mnK0w2vxXzD9BkoajY4x（得到课程文章，付费内容搬运）
-- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**（若出现满足 [[schema]] §1.3 阈值的新概念，只在「回填清单」里提请主控裁定）。
-- **发布**：未标注
+- **链接**：https://my.feishu.cn/wiki/FWSrwVG7eiFmyGkf5qmcSDaynEd ｜ https://www.dedao.cn/course/article?id=Lpy0edZAG5mnK0w2vxXzD9BkoajY4x（得到课程文章，付费内容搬运）
 - **素材路径**：`raw/2026-09-18-qa-deepen-or-move-notes.md`（**167 行**；frontmatter 1–23，正文自 24 行起，正文合计 144 行）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 4,821 字符 / **141 行**」，而 `167 − 23（frontmatter）= 144` —— **差 3 行**，
-  该「141 行」是**内容相对口径**，**引用前必须回文件核对，不要反推**。
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: Y3kMdgpzOoIuQHxZOSUcC0jHnTb` ｜ `revision_id: 80` ｜ 4,821 字符 ｜ **无内嵌图片**
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **5 节 = 成长战略 014–018**：**《社交资本、结构洞和搬家》**（014）→ **《认知解耦》**（015）→ **《身份认同》**（016）→ **《安全感》**（017）→ **《赛道选择》**（018）。
-   **与另两份问答合起来是连续的 15 讲（004–018）**，每份 5 讲 —— 见「与其他页面的关系」。
+   **与另两份问答合起来是连续的 15 讲（004–018）**，每份 5 讲 —— 见「与本库既有页面的关系」。
 2. **文档的题名问题出自《社交资本》节的第二条提问**（行 61：「……有没有实用的信号，能帮助人早点判断『该深耕』还是『该挪位置』？」）。
    **标题是编辑挑的「头条问题」，不是本份的主题。**
 3. **本份最值钱的一处是给「认知重评」划边界**（行 85–107）：把三个易混概念并列 ——
@@ -80,7 +73,7 @@ status: active
 > **回答段共 7 段**（行 39–57 / 63–75 / 85–107 / 117–121 / 127–133 / 143–147 / 157–167，合计 **83 行**）。
 > 节标题 5 行（行 33 / 79 / 111 / 137 / 151）；**《社交资本》一节连排两问两答，故 7 段回答对应 5 个节标题**。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 > **本份逐条判为「不命中」，并给出判据。**
@@ -227,6 +220,15 @@ status: active
 - [ ] **五分类（太上老君 / 工匠 / 散仙 / 小妖）是否要在综述里单列？** —— 它是「018 讲之后的实质性扩展」，与项目页「不做什么」（不为 AI 段建页）不冲突（本问答非 AI 段）
 - [ ] **「先验 > 身份」是否要写进 016 讲的关系节？** —— 它与 016 的「身份是界面、内核要稳定」可以合成一条两层结构，**待做综述时定**
 - [ ] **三份问答的「节标题覆盖 15 讲（004–018）」是否在项目页显式登记？** —— 不影响「19 讲」口径，但是可自查的结构事实
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**（若出现满足 [[schema]] §1.3 阈值的新概念，只在「回填清单」里提请主控裁定）。
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 4,821 字符 / **141 行**」，而 `167 − 23（frontmatter）= 144` —— **差 3 行**，
+  该「141 行」是**内容相对口径**，**引用前必须回文件核对，不要反推**。
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: Y3kMdgpzOoIuQHxZOSUcC0jHnTb` ｜ `revision_id: 80` ｜ 4,821 字符 ｜ **无内嵌图片**
 
 ## 来源
 

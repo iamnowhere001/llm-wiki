@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-narrative-first-principle
 tags: [世界观, 得到课程, 叙事, 叙事自我]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-narrative-first-principle]
 related: [narrative-self-vs-bodily-self, cybernetic-learning, emotion-awareness, cognitive-reappraisal, thinking-vs-feeling, internal-friction, 2026-09-18-emotion-awareness-notes, wanweigang, modern-thinking-tools, llm-wiki-research, traecode-pkm-article, 2026-09-18-narrative-self, meta-narrative, narrative-reframing, narrative-industrialization, yuval-harari, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 confidence: medium
@@ -22,14 +22,10 @@ status: active
 > 而这四个人在它批判的主文里**零次出现**。
 
 - **作者**：A 段为万维钢（文首自带得到课程链接，属署名作者的通俗写作）；B 段为三名读者；C–F 段未署名，判为 AI 生成
-- **链接**：https://my.feishu.cn/wiki/O6UPwafnNiqlqakqyKYcJGKHnOf
-- **原文出处**：https://www.dedao.cn/course/article?id=89GEyP73eprvKBPebQJq2Mb0kRD64d
-- **发布**：2026-03-18 00:41（正文首行自带）
+- **链接**：https://my.feishu.cn/wiki/O6UPwafnNiqlqakqyKYcJGKHnOf ｜ https://www.dedao.cn/course/article?id=89GEyP73eprvKBPebQJq2Mb0kRD64d
+- **发表**：2026-03-18 00:41（正文首行自带）
 - **素材路径**：`raw/2026-09-18-narrative-first-principle.md`（681 行；frontmatter 1–75，第 76 行空行，**正文自第 77 行起**）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
-- **抓取**：`lark-cli docs +fetch --as bot`（user token 本日失效），`document_id: YJv0dPMAmoNuSnx87oBc1u8PnNc` ｜ `revision_id: 364` ｜ 15,559 字符 / 606 行
-- **已知缺失**：4 张内嵌图片**未下载** —— bot 身份无 `docs:document.media:download` 权限（HTTP 400 / 99991672），
-  user token 失效无法续期。图注文字完整保留在 markdown 的 alt 文本里，信息未丢，但原件不在库内
+
 - **`confidence: medium`** —— A 段配得上 `medium`（署名作者 + 引注全真）；C–F 段占全篇约 60% 篇幅且无出处，拉住了整页
 
 ## 关键要点
@@ -39,20 +35,20 @@ status: active
    所以「狭义相对论提供因果，量子力学提供想象力，广义相对论提供舞台」（行 123）。
 2. **自我的位置被倒置了**：丹尼特说自我只是「叙事重心」（行 133），素材据此推出
    「**叙事不是因为『我』而存在，『我』是因为叙事而存在**」（行 135–137）。
-   **这与本库既有页 [[narrative-self-vs-bodily-self]] 的立场相反** —— 见「与现有知识库的关系」第 1 条。
+   **这与本库既有页 [[narrative-self-vs-bodily-self]] 的立场相反** —— 见「与本库既有页面的关系」第 1 条。
 3. **叙事的三个作用**：预测处理（弗里斯顿自由能原理，行 141）／提供意义／公共协调（赫拉利的虚构秩序，行 149）。
    行动层判据：**「我们从来都不是对一堆事实和数据做反应，我们是对叙事做反应」**。
 4. **「叙事决定你的目标函数」**（行 183）是本素材最锋利的一句，它直接对着
-   [[cybernetic-learning]] 的「目标→误差信号」链条 —— 见「与现有知识库的关系」第 2 条。
+   [[cybernetic-learning]] 的「目标→误差信号」链条 —— 见「与本库既有页面的关系」第 2 条。
 5. **注释 [9] 是素材自己给出的反方**（行 210）：引 Albert 2012 与 Judes 2010 说明
    「也许叙事并不是这个宇宙真正的第一性原理」，并自嘲「叙事的艺术就在于只给部分事实」。
    **这是本库第一份自带反方的素材**，此前每一份的反方都要靠外部检索去找（[[andrew-saxe]] 那次最快，也是收录当天）。
 6. **F 段的批判对象是幻觉**（行 617–681）：它点名主文「缝合了卡尼曼、惠勒、塔勒布、贝佐斯」，
-   但这四人在 A 段**零次出现**。详见「引注与内容核查」表第 8 条 —— **这是本库遇到的一种新失真形态**。
+   但这四人在 A 段**零次出现**。详见「引注核查表」表第 8 条 —— **这是本库遇到的一种新失真形态**。
 7. **它填不上任何项目的【阻塞】缺口，但对 [[emotion-awareness]] 的三条非阻塞缺口有实质贡献。**
    归属待北洛裁定，见「归属判断」。
 
-## 分层表
+## 素材分层表
 
 > 一份素材内部混层，单一 `confidence` 不够（本库已有六例，本份是第七例，且**首次达到六层**）。
 > 行区间为**文件绝对行号**。
@@ -104,7 +100,7 @@ status: active
 注释 [9] 自陈：有物理学家认为相对论性量子场论的时空切片族具有「不可叙事性」，引 Albert 2012 与 Judes 2010，
 **并承认「也许叙事并不是这个宇宙真正的第一性原理……叙事的艺术就在于只给部分事实」。**
 
-## 引注与内容核查
+## 引注核查表
 
 > 七条具名引注 + 一条内容错配。全部于 2026-09-18 外部核查。
 
@@ -171,7 +167,7 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
 **引注质量取决于「有没有人为这些内容负责」，而不是「内容难不难」。**
 （本条为本库立论，`low`，未验证 —— 只有 1 份反例样本）
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 1. **与 [[narrative-self-vs-bodily-self]] 立场相反 —— 本库第二处明确的内部矛盾。**
    - 那一页（来自 [[2026-09-18-emotion-awareness-notes]]）主张：叙事自我用**事后解释覆盖**身体的当下体验，
@@ -284,7 +280,7 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
 本次补建。**这是本页 A 段里唯一一位在 F 段错配名单中同样出现的人** ——
 这条重合正是「张冠李戴」判定的关键细节之一。
 
-## 待办
+## 待办 / 开放问题
 
 - [x] ~~**【等北洛】** 写「人类先问」一节（收录理由 + 1–3 个问题）~~ —— **2026-09-18 已废止**：北洛裁定全面移除 HFQ，不再有这个人前置条件。本节已从本页删除
 - [x] ~~**【等北洛】** 裁定归属项目~~ —— **2026-09-18 已裁定**：另开 [[modern-thinking-tools]]，本板块六讲一并归入。详见「归属判断」一节
@@ -309,6 +305,13 @@ F 段**能**（它的批判是可独立评估的论证，不依赖被批判对�
       且创建于 **2025-03-05** —— **早于本页一年有余**
 - [ ] 五份后五讲的 sources 页尚未建（~~卡在 HFQ 闸门~~ —— **该闸门已于 2026-09-18 移除，现无任何前置条件**）。
       本页的「分层表 / 引注核查」目前是**六讲里唯一做过的**，其余五讲的做法应与之对齐
+
+## 素材基本信息
+
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
+- **抓取**：`lark-cli docs +fetch --as bot`（user token 本日失效），`document_id: YJv0dPMAmoNuSnx87oBc1u8PnNc` ｜ `revision_id: 364` ｜ 15,559 字符 / 606 行
+- **已知缺失**：4 张内嵌图片**未下载** —— bot 身份无 `docs:document.media:download` 权限（HTTP 400 / 99991672），
+  user token 失效无法续期。图注文字完整保留在 markdown 的 alt 文本里，信息未丢，但原件不在库内
 
 ## 来源
 

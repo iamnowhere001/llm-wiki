@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-tacit-knowledge
 tags: [万维钢, 哲学, AI, 具身认知, 知识]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-tacit-knowledge]
 related: [tacit-knowledge, michael-polanyi, embodied-cognition, transfer-of-learning, schema-psychology, wanweigang, llm-wiki-pattern, second-brain-skill, why-pkm-in-ai-era, 2026-09-18-desirable-difficulty]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里对本库自身最有"冒犯性"的一讲** —— 它论证了本库这套做法覆盖不到的那一层。
 
 - **作者**：万维钢（推定）
-- **链接**：https://my.feishu.cn/wiki/CC6VwMl0YiRgKakjXXHcOx1Snyh
-- **原文**：https://www.dedao.cn/course/article?id=l9WNdP1QvaeKYdoWqxXAzx82Dyog0B
+- **链接**：https://my.feishu.cn/wiki/CC6VwMl0YiRgKakjXXHcOx1Snyh ｜ https://www.dedao.cn/course/article?id=l9WNdP1QvaeKYdoWqxXAzx82Dyog0B
 - **发表**：2026-05-13 23:11
 - **素材路径**：`raw/2026-09-18-tacit-knowledge.md`（584 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**哲学部分点名到人与年份，AI 部分为作者论点**
 
 ## 关键要点
 
@@ -38,7 +36,7 @@ status: active
 8. **三个抵抗理由**（作者自称「并不是绝对的」）：波兰尼的公理背景、柯林斯的动态演化、
    **莫拉维克悖论**。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -61,7 +59,7 @@ status: active
 「手慢了不行，手快了不行，这个劲儿到底怎么用，我无法用语言表达，我都没法传授给我的儿子。」
 **「如果你听说前公司把你写成了 SKILL.md，你完全可以对他们说一句：你们蒸馏的，是我的糟粕。」**
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -76,7 +74,7 @@ status: active
 > 波兰尼（1958）、赖尔、柯林斯、莫拉维克 —— 都是**可查的具名来源**。
 > 真正缺出处的是 **AI 能力主张**（第 6 条），而那恰好是最需要出处的一类。
 
-## 与本库的关系：一个结构性提醒
+## 与本库既有页面的关系：一个结构性提醒
 
 本讲提出了一个本库此前没问过的问题：
 
@@ -106,6 +104,10 @@ status: active
 - [ ] 哈里·柯林斯**本库无页面**，且其「集体默会知识」是本讲对 AI 抵抗最强的论点。
 - [ ] 莫拉维克悖论**本库无独立页面**。
 - [ ] **是否把「知识库的结构性边界」写进 `AGENTS.md`？** 待北洛裁定。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**哲学部分点名到人与年份，AI 部分为作者论点**
 
 ## 来源
 

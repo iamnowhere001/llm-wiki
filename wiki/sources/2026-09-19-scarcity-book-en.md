@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-scarcity-book-en
 tags: [现代思维工具, 万维钢, 得到课程, 稀缺, 行为经济学, 认知带宽]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-scarcity-book-en]
 related: [2026-09-18-capability-seeking-theorem-notes, opportunity-systems, intelligent-life-system, cybernetic-learning, modern-thinking-tools, 2026-09-19-art-of-impossible-book-en, source-pool-bias]
 confidence: high
@@ -19,11 +19,8 @@ status: active
 > **结果四类共 15 条：推翻 2 / 补齐 4 / 证实 4 / 新增 5。**
 
 - **作者**：Sendhil Mullainathan & Eldar Shafir
-- **出版**：Times Books / Henry Holt and Company，First Edition 2013（ISBN 978-0-8050-9264-6）
-- **链接**：**无独立来源 URL** —— 2026-09-19 由北洛直接提供 PDF
-- **素材路径**：`raw/2026-09-19-scarcity-book-en.md`（8,589 行 / 526,235 字符（不含换行）/ 254 页）
-- **原件**：`raw/assets/2026-09-19-scarcity-book.pdf`（2,006,542 字节，SHA-1 `3b0a82ac…`，**未改动**）
-- **抓取**：pypdf 6.19.0 逐页提取（PDF 自带文本层，未做 OCR），每页 `[p.N]` 分隔
+- **发表**：Times Books / Henry Holt and Company，First Edition 2013（ISBN 978-0-8050-9264-6）
+- **素材路径**：`raw/2026-09-19-scarcity-book-en.md`（8,589 行 / 526,235 字符（不含换行）/ 254 页） ｜ `raw/assets/2026-09-19-scarcity-book.pdf`（2,006,542 字节，SHA-1 `3b0a82ac…`，**未改动**）
 
 > [!note] 本页有一手专著支撑
 > **`evidence_tier` 会停在 `single`** —— 按 2026-09-19 裁定，`PRIMARY_KINDS = ("paper",)` **不扩到 `book`**，
@@ -241,6 +238,11 @@ a nonprofit that designs behavioral economics solutions to social problems.」
   价值取决于**相对排序**而非绝对数量（见 [[positional-goods]]）。
 - **处置：两页不可互引、不可互证。** 它们只在中文译名上撞车（都叫「稀缺」），机制、来源、量纲全不同。
   **这是本库第一次出现「同一个词、两个义项、各有一页」** —— 不登记这一条，后来的读者会把它们合并。
+## 素材基本信息
+
+- **链接**：**无独立来源 URL** —— 2026-09-19 由北洛直接提供 PDF
+- **抓取**：pypdf 6.19.0 逐页提取（PDF 自带文本层，未做 OCR），每页 `[p.N]` 分隔
+
 ## 来源
 
 - `raw/2026-09-19-scarcity-book-en.md`（8,589 行；正文自第 78 行起）

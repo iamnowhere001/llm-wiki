@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-qa-mission-calling-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 场域, 共鸣, 无免费午餐定理]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-qa-mission-calling-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-field-and-habitus-notes, field-theory, symbolic-capital, 2026-09-18-resonance-notes, resonance, alienation, 2026-09-18-qa-deepen-or-move-notes, 2026-09-18-qa-hard-to-start-notes, multiplicative-world, luck-over-talent, uncertainty-as-fuel, narrative-power, intelligent-life-system, ruliad, compression-as-intelligence]
 confidence: medium
@@ -24,13 +24,9 @@ status: active
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述，并**主动标注「正文含 AI 加工段（无署名）」**）
 - **链接**：https://my.feishu.cn/wiki/XgDbwmMrhieyGwksNbTcwBM6ngh ｜ **原文出处**：https://www.dedao.cn/course/article?id=zl12vGeNAM0YVpMQaeJdmxjOQBP5oL（付费内容搬运）
-- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
-- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: CO3GdkdwLoGn7OxIuFacnP52ngg` ｜ `revision_id: 92` ｜ **无内嵌图片**
 - **素材路径**：`raw/2026-09-19-qa-mission-calling-notes.md`（**285 行**；frontmatter 1–25，正文自 27 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 6,584 字符 / **257 行**」，而 `285 − 25 = 260` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
-## 要点
+## 关键要点
 
 1. **4 节覆盖 4 讲，且跨模块**：《场域：识时务者为俊杰》（**模块一 019**，见 [[2026-09-18-field-and-habitus-notes]]）→《共鸣：高级生活的秘密》（**模块一 021**，见 [[2026-09-18-resonance-notes]]）→《无免费午餐定理》（模块二）→《概率分布》（模块二）。**问答不计入官方编号，故「跨模块」是它的常态**（模块一 3 份问答也跨板块）。
 2. **题名问题出自《共鸣》节**（行 83「如果，终其一生，我也修炼不够，没有机缘得到使命召唤……」）——**标题是编辑挑的「头条问题」，不是本份的主题。**
@@ -59,7 +55,7 @@ status: active
 **提问 5 条**（39 / 83 / 223 / 261 / 277，全部单行 `>` 引用块）｜**回答 5 段**（43–75 / 87–123 / 227–257 / 265–269 / 281–285）｜
 节标题 4 行（35 / 79 / 219 / 273）—— **《无免费午餐定理》一节连排两问两答，故 5 段回答对应 4 个节标题**。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -185,6 +181,13 @@ status: active
 - [ ] **「循吏 / 酷吏」与「技术官僚」的类比是否成立？** 讲稿自己已说「很像，但并不完全是」，**该边界要不要在概念页里写实？**
 - [ ] **「发愿」这个词是万维钢的既有用语还是本讲的临时提法？** 库内此前无记录，**待核**
 - [ ] **《无免费午餐定理》节的两条预测**（不出现全能大模型 / 调度层方案）—— 建议登记为**可回看的预测**，半年后核对
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
+- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: CO3GdkdwLoGn7OxIuFacnP52ngg` ｜ `revision_id: 92` ｜ **无内嵌图片**
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 6,584 字符 / **257 行**」，而 `285 − 25 = 260` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
 ## 来源
 

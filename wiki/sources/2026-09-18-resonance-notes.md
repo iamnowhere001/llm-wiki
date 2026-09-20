@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-resonance-notes
 tags: [成长战略, 万维钢, 得到课程, 共鸣, 异化, 罗萨, 比较, 使命感, 社会加速]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-resonance-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-growth-strategy-module-notes, flow-terminology, autonomy-support, lesser-and-greater-vehicle, stoic-control-dichotomy, cybernetic-learning]
 confidence: medium
@@ -24,21 +24,12 @@ status: active
 > 但**行 176–205 亦为未署名 AI 加工** —— 本页因此把 AI 段划为 **176–307**。
 
 - **作者**：行 34–168 万维钢（得到课程讲稿）；行 176 起**无署名，判为 AI 加工**
-- **链接**：https://my.feishu.cn/wiki/EUxewTXyMi11Gtkdq8Zcgefansh
-- **原文出处**：https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3mobqK5YmP6DOjxAL
-- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 14 讲，官方编号 **021**（**推定**，来源见下）；**本模块正文最后一讲**
-- **发布**：未标注
+- **链接**：https://my.feishu.cn/wiki/EUxewTXyMi11Gtkdq8Zcgefansh ｜ https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3mobqK5YmP6DOjxAL
 - **素材路径**：`raw/2026-09-18-resonance-notes.md`（**307 行**；frontmatter 1–24，正文自 26 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 7,363 字符 / **280 行**」，而 `307 − 24（frontmatter）= 283` —— **差 3**，
-  **不能反推为 frontmatter 长度**（与 [[schema]] §3.3 记的「差 46 / 差 39」**不是同一情况**）。**引用前必须回文件核对。**
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: JeVwdVQ5VoEWn9xXjMFceiofnyc` ｜ `revision_id: 207` ｜ 7,363 字符 ｜ 2 张图全部下载（合计约 18.3 MB）
-- **编号依据**：raw 的 `capture_note` 指向同 wiki 空间的模块目录文档 —— 该页已建成，即 [[2026-09-18-growth-strategy-module-notes]]
-  （其「模块讲次总表」行 92 记：**021 = 共鸣: 高级生活的秘密**）
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **讲稿从「努力叙事的困境」切入**：享乐适应（hedonic adaptation）让一切竞争成果「不过如此」，
    于是躺平成为流行的人生观。讲稿的回击是「**你之所以应该拒绝躺平，是因为躺平不高级**」，
@@ -92,7 +83,7 @@ status: active
 > **处置：本页登记该分歧，不改 raw**（[[schema]] §3.2）—— 若日后需 raw 自陈完整，须走 `-r2` 重抓或由人类裁定，
 > **LLM 不自行修改 raw**。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -319,6 +310,17 @@ E 段（行 211–307，97 行）不属于四种缺陷型中的任何一种。�
 - [ ] **图片 2 张（9.3 MB / 9.9 MB）的图内数字未核** —— 图片已下载，图中内容未逐字核对
 - [ ] **共鸣是否可与「延展心智（[[extended-mind]]）」对照？** —— 本讲行 98 的「他人表征纳入自我表征」
       与该页的「认知延伸出体外」**形似而实不同**（一个是自我边界、一个是认知载体），**本库暂不做等同**，登记备查
+
+## 素材基本信息
+
+- **讲次**：得到《现代思维工具课》「模块一 成长战略」第 14 讲，官方编号 **021**（**推定**，来源见下）；**本模块正文最后一讲**
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 7,363 字符 / **280 行**」，而 `307 − 24（frontmatter）= 283` —— **差 3**，
+  **不能反推为 frontmatter 长度**（与 [[schema]] §3.3 记的「差 46 / 差 39」**不是同一情况**）。**引用前必须回文件核对。**
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: JeVwdVQ5VoEWn9xXjMFceiofnyc` ｜ `revision_id: 207` ｜ 7,363 字符 ｜ 2 张图全部下载（合计约 18.3 MB）
+- **编号依据**：raw 的 `capture_note` 指向同 wiki 空间的模块目录文档 —— 该页已建成，即 [[2026-09-18-growth-strategy-module-notes]]
+  （其「模块讲次总表」行 92 记：**021 = 共鸣: 高级生活的秘密**）
 
 ## 来源
 

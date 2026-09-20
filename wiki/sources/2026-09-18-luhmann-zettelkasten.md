@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-luhmann-zettelkasten
 tags: [知识管理, 历史, 卡片盒]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-luhmann-zettelkasten]
 related: [zettelkasten, niklas-luhmann, pkm-history, communication-partner, 2026-09-19-luhmann-communicating-with-slip-boxes]
 confidence: medium
@@ -23,7 +23,6 @@ status: active
 - **作者**：Ernest Chiang
 - **链接**：https://www.ernestchiang.com/en/posts/2025/niklas-luhmann-original-zettelkasten-method/
 - **发表**：2025-10-25（更新至 2026-03-01）
-- **性质**：⚠️ **二手文献，非一手史料**
 - **素材路径**：`raw/2026-09-18-luhmann-zettelkasten.md`
 
 ## 关键要点
@@ -77,7 +76,7 @@ status: active
 > 本文**明确区分「卢曼原法」与「Ahrens 再诠释」**这一点，经一手文献证实是对的，也是它对本库最大的价值。
 > 它的问题集中在**引文的呈现方式**，不在**事实框架**。按 `wiki/schema.md` §3.6，这属于**弱引注（引文带引号但无出处）** + **引注的使用失真**，**不构成伪引注**（没有伪造的年份与机构名），因此**不整页降级**，改为逐条标注。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这是本库历史链条上「手工时代」的关键一环。** 在 LLM 出现之前，Luhmann 的卡片盒是**唯一被大规模验证过的、可持续数十年的个人知识系统**。它与 [[commonplace-book]] 的区别在于**结构化的连接机制** —— 共同笔记簿是摘录的集合，卡片盒是一张有编号、有交叉引用的网络。
 
@@ -85,7 +84,7 @@ status: active
 
 **一个反直觉的对照**：卢曼明确**反对按主题分类**（一手原文的理由是「预先承诺秩序会与系统的可发展性冲突」，见要点 5 的更正）。而本库采用 `sources/ entities/ concepts/ analyses/` 的四分目录 + `tags` —— 这是一种轻度分类。张力是真实的：分类让检索稳定，却可能让连接变窄。本库的应对是让 `related` 字段与 `[[wikilink]]` 承担跨分类连接（见 [[bidirectional-links]]）。
 
-## 待办
+## 待办 / 开放问题
 
 - [x] ~~本文是二手文献。卢曼的一手文献是 1981 年《Kommunikation mit Zettelkästen》（英译 "Communicating with Slip Boxes"），**本库尚未收录，属缺口**~~ —— **2026-09-19 已收录**（[[2026-09-19-luhmann-communicating-with-slip-boxes]]）
 - [ ] **本页三处转引已被判定未获一手支撑**，见上方「一手校准结果」。**其中「我从不从零开始写作」的真正出处仍未查明** —— 若日后收到卢曼访谈或文集，优先核查
@@ -93,6 +92,10 @@ status: active
 - [ ] 枢纽笔记 / 结构笔记的发现归功于 Johannes Schmidt，未找到其原始出处
 - [ ] 原文的行内脚注编号在抽取后失去锚点
 - [ ] **德文原刊未收录**；其两个脚注含卢曼卡片盒的实例编号 `2113d26g104,1`，本库目前只能从外部 PDF 间接得知
+
+## 素材基本信息
+
+- **性质**：⚠️ **二手文献，非一手史料**
 
 ## 相关页面
 

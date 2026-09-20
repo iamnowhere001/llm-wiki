@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-qa-hard-to-start-notes
 tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 复利, 零内省]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-qa-hard-to-start-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-growth-strategy-module-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-free-energy-alignment-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-18-woop-notes, internal-friction, stimulus-response-gap, free-energy-principle, autonomy-support]
 confidence: medium
@@ -23,22 +23,15 @@ status: active
 > 013 讲稿本身没给这条限定。
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述；正文第一人称作答，含个人经历与课程互指）
-- **链接**：https://my.feishu.cn/wiki/QmPPwUSI6i6MZbk9uzMcLUPhnOd
-- **原文出处**：https://www.dedao.cn/course/article?id=BM30m4na5NkyKQQwQYKjvDg7Eowd2G（得到课程文章，付费内容搬运）
-- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**。
-- **发布**：未标注
+- **链接**：https://my.feishu.cn/wiki/QmPPwUSI6i6MZbk9uzMcLUPhnOd ｜ https://www.dedao.cn/course/article?id=BM30m4na5NkyKQQwQYKjvDg7Eowd2G（得到课程文章，付费内容搬运）
 - **素材路径**：`raw/2026-09-18-qa-hard-to-start-notes.md`（**155 行**；frontmatter 1–23，正文自 24 行起，正文合计 132 行）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 4,393 字符 / **129 行**」，而 `155 − 23（frontmatter）= 132` —— **差 3 行**，
-  该「129 行」是**内容相对口径**，**引用前必须回文件核对，不要反推**。
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: Ne8ldKnraoG5aOxPkYacFuC5ntb` ｜ `revision_id: 76` ｜ 4,393 字符 ｜ **无内嵌图片**
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **5 节 = 成长战略 009–013**：**《复利》**（009）→ **《自我决定理论》**（010）→ **《自由能原理》**（011）→ **《主动高认知负荷》**（012）→ **《WOOP》**（013）。
-   **与另两份问答合起来是连续的 15 讲（004–018）**，每份 5 讲 —— 见「与其他页面的关系」。
+   **与另两份问答合起来是连续的 15 讲（004–018）**，每份 5 讲 —— 见「与本库既有页面的关系」。
 2. **文档的题名问题出自《自我决定理论》节的第一条提问**（行 81：「自我决定理论听起来好像是从事自己喜欢的事情很容易启动……
    为啥我启动费劲呢？」）。**标题是编辑挑的「头条问题」，不是本份的主题。**
 3. **本份最硬的一条是给 WOOP 划的边界**（行 151–155）：WOOP 的作用是把「**障碍纯粹来自你自己**」的事用 if-then 克服，
@@ -80,7 +73,7 @@ status: active
 > **回答段共 6 段**（行 39–45 / 53–73 / 85–107 / 117–125 / 135–141 / 151–155，合计 **72 行**）。
 > 节标题 5 行（行 33 / 77 / 111 / 129 / 145）；**《复利》一节连排两问两答，故 6 段回答对应 5 个节标题**。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 > **本份逐条判为「不命中」，并给出判据。**
@@ -226,6 +219,15 @@ status: active
 - [ ] **「多做少想」vs「先写预案」的处方张力** 是否写进综述的「矛盾」一节？ —— 本库倾向要，它是同一门课里两条相反处方
 - [ ] **复利「重开一局」与 007「增加选项」是否要并列做进张力表？** —— 与库内既有「课程线 vs 学习与教育九讲」同源，待做综述时一并处理
 - [ ] **「吸血鬼悖论」是否有更早的出处？** —— 素材称「我们以前讲过」，但本批素材里未再出现。**待核**
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**。
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 4,393 字符 / **129 行**」，而 `155 − 23（frontmatter）= 132` —— **差 3 行**，
+  该「129 行」是**内容相对口径**，**引用前必须回文件核对，不要反推**。
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: Ne8ldKnraoG5aOxPkYacFuC5ntb` ｜ `revision_id: 76` ｜ 4,393 字符 ｜ **无内嵌图片**
 
 ## 来源
 

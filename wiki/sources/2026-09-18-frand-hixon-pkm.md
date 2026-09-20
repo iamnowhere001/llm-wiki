@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-frand-hixon-pkm
 tags: [知识管理, 历史, 术语起源]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-frand-hixon-pkm]
 related: [pkm-history, llm-wiki-pattern, use-cases]
 confidence: high
@@ -16,10 +16,7 @@ status: active
 > **「Personal Knowledge Management」（PKM）这个术语的首发文献。** 1998 年 10 月 15 日 EDUCOM'98 会议上的演讲幻灯片，作者来自 UCLA：商学院讲信息系统，图书馆讲研究支持。它把「个人如何管理自己面对的信息」从企业知识管理中切分出来，作为一个独立议题。
 
 - **作者**：Jason L. Frand（UCLA Anderson Graduate School of Management）、Carol Hixson（UCLA Young Research Library）
-- **场合**：Educom 98, Orlando, Florida, 1998-10-15
-- **存档**：https://digitalcommons.usf.edu/former-pub/246
 - **素材路径**：`raw/2026-09-18-frand-hixon-pkm.md`
-- **附件**：`raw/assets/1999-frand-hixon-pkm.pdf`
 
 ## 关键要点
 
@@ -65,7 +62,7 @@ status: active
 
 幻灯片后半部分转向教育语境：知识管理在大学环境中的「适配」问题、隐性与显性知识的区分（引 Nonaka & Takeuchi）、以及「整合的责任被留给了学习者」这一诊断。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这份素材补上了本库历史上最大的一块空白。** 在收录之前，本库的历史纵深只有 1945（[[vannevar-bush]]）和当下（[[llm-wiki-pattern]]），中间 70 年没有锚点。Frand & Hixon 给出了**「PKM」这个名字本身的出处**，并且它出现的时间点（1998）恰好在万维网普及（1993 起）之后 —— 即「信息过载从专业问题变成个人问题」的那个转折点。
 
@@ -75,12 +72,18 @@ status: active
 
 **与 [[llm-wiki-pattern]] 的关系**：本文提出的「一个 schema 覆盖全部载体」在 1998 年是愿望；本库的 [[three-layer-architecture]] 与统一的 frontmatter 规范可以视为这个愿望的一次具体实现。差别在于：Frand & Hixon 时代的 schema 必须由人手工维持，而 LLM 可以承担维持工作。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 幻灯片中的若干引文（Davenport & Prusak 1998、Lethbridge 1994、Klapp 1986、Nonaka & Takeuchi 1995）未单独收录
 - [ ] 「PKM 术语由本文首发」这一判断基于检索，未穷尽 1998 年之前的文献
 - [ ] PDF 提取后版面关系丢失（标题/要点/引文分栏被打散），个别句子顺序需对照原 PDF 核验
 - [ ] 文件名保留了检索阶段误记的 `1999-` 前缀（附件名不可改，见 [[plain-text-and-git]] 的不可变约定）
+
+## 素材基本信息
+
+- **场合**：Educom 98, Orlando, Florida, 1998-10-15
+- **存档**：https://digitalcommons.usf.edu/former-pub/246
+- **附件**：`raw/assets/1999-frand-hixon-pkm.pdf`
 
 ## 相关页面
 

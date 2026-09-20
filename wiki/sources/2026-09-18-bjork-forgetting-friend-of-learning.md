@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-bjork-forgetting-friend-of-learning
 tags: [学习, 记忆, 遗忘, 可取困难, 归纳学习, 抽象]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-bjork-forgetting-friend-of-learning]
 related: [learning-as-forgetting, information-bottleneck, robert-bjork, desirable-difficulty, retrieval-practice, spaced-repetition, schema-psychology, transfer-of-learning, john-dunlosky, 2026-09-18-learning-is-forgetting, 2026-09-18-dunlosky-learning-techniques]
 confidence: high
@@ -19,25 +19,9 @@ status: active
 > 它是本库**第二份一手学术文献**（第一份是 [[2026-09-18-dunlosky-learning-techniques]]），
 > 也是第一次在「人类认知侧」给 [[learning-as-forgetting]] 拿到一手背书。
 
-- **作者 / 来源**：Robert A. Bjork，University of California, Los Angeles（Distinguished Research Professor）
-- **出处**：D. S. Lindsay, C. M. Kelley, A. P. Yonelinas, & H. L. Roediger III (Eds.),
-  *Remembering: Attributions, processes, and control in human memory: Papers in honour of Larry L. Jacoby*.
-  New York: Psychology Press, 2014（ISBN 9781848725546）
+- **作者**：Robert A. Bjork，University of California, Los Angeles（Distinguished Research Professor）
 - **链接**：https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/11/RABjork_JacobyFestschriftChapterFigsEmbedded052014.pdf
-- **素材路径**：`raw/2026-09-18-bjork-forgetting-friend-of-learning.md`（730 行 / 39,272 字符 / 23 页）
-- **原件**：`raw/assets/2026-09-18-bjork-forgetting-friend-of-learning.pdf`（1,758,409 字节）
-
-## 关于 `confidence: high`
-
-本库给 `high` 的判据从来不是「结论对」，而是**材料类型与可核查性**。本素材同时满足四条：
-
-1. **无转述层** —— 直接下载作者本人实验室官网公开的 PDF 原件，pypdf 提取，**未经 AI 中介、未经 OCR、未重写**；
-2. **署名与出处完整** —— 单一作者、机构、纪念文集、ISBN、出版年份（2014-11-13）全部可核；
-3. **文本层完好** —— 可逐页检索原文，任何引用都能回文件核对；
-4. **无利益披露问题** —— 学术纪念文集章节，无产品、课程或商业引流。
-
-**注意 `high` 不等于「本章的每个断言都已验证」** —— 它引的实验（Kornell & Bjork 2008、Vlach et al. 2008 等）
-本库**均未取回原文**，只能标（转引）。
+- **素材路径**：`raw/2026-09-18-bjork-forgetting-friend-of-learning.md`（730 行 / 39,272 字符 / 23 页） ｜ `raw/assets/2026-09-18-bjork-forgetting-friend-of-learning.pdf`（1,758,409 字节）
 
 ## 关键要点
 
@@ -77,6 +61,18 @@ status: active
 5. **反直觉的那部分本身也是实验结果（行 430–437）**：学习者**主观相信**集中（blocking）更好，
    **即使最终测试表现已经证明相反**。作者把它接到 [[desirable-difficulty]] 与流畅性错觉上。
 
+## 关于 `confidence: high`
+
+本库给 `high` 的判据从来不是「结论对」，而是**材料类型与可核查性**。本素材同时满足四条：
+
+1. **无转述层** —— 直接下载作者本人实验室官网公开的 PDF 原件，pypdf 提取，**未经 AI 中介、未经 OCR、未重写**；
+2. **署名与出处完整** —— 单一作者、机构、纪念文集、ISBN、出版年份（2014-11-13）全部可核；
+3. **文本层完好** —— 可逐页检索原文，任何引用都能回文件核对；
+4. **无利益披露问题** —— 学术纪念文集章节，无产品、课程或商业引流。
+
+**注意 `high` 不等于「本章的每个断言都已验证」** —— 它引的实验（Kornell & Bjork 2008、Vlach et al. 2008 等）
+本库**均未取回原文**，只能标（转引）。
+
 ## 分段（行区间为**文件绝对行号**，已回文件核对）
 
 > **注意：本文件每页正文前有 `[p.N]` 标记行。行号 ≠ PDF 页码**，不可混用。
@@ -97,7 +93,7 @@ status: active
 | **References** | 562–583 | p.18 |
 | 图注 / 附录 | 584–730 | p.19–p.23 |
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 ### 校准 [[learning-as-forgetting]]：从「归属存疑」到「有一手支撑」——但**机制不同，不能混同**
 
@@ -141,7 +137,7 @@ status: active
 - **但有一条新的取回限制**：Bjork & Bjork (1992) 的原文 PDF **是扫描件、无文本层**（17 页），
   本库**拿得到文件但取不到文本**。这条记在 raw frontmatter 与本页待办里。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **取回 Kornell & Bjork 2008**（画家风格归纳学习）与 **Vlach et al. 2008**（间隔诱发遗忘促进抽象）——
   它们是本文「遗忘促进抽象」论断的实验来源，目前**只是转引**。
@@ -150,6 +146,16 @@ status: active
   缓解：本文已正面复述了其核心公式（行 210、248），**可暂用，但引用须标（转引）**。
 - [ ] 本文后半部分（p.15–p.17，行 470–561）尚未逐段阅读 —— 本页目前只消化了 p.1–p.14
 - [ ] 本文提到的 McGeoch (1932)、Estes (1955)、Bower (1972) 均未取回
+
+## 素材基本信息
+
+- **出处**：D. S. Lindsay, C. M. Kelley, A. P. Yonelinas, & H. L. Roediger III (Eds.),
+  *Remembering: Attributions, processes, and control in human memory: Papers in honour of Larry L. Jacoby*.
+  New York: Psychology Press, 2014（ISBN 9781848725546）
+
+## 来源
+
+- [[2026-09-18-bjork-forgetting-friend-of-learning]]（`raw/2026-09-18-bjork-forgetting-friend-of-learning.md`）
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-qa-admitting-mistakes-notes
 tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 内核自我, 逆火效应]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-qa-admitting-mistakes-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-growth-strategy-module-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, cognitive-outsourcing, narrative-identity, three-selves, hard-constraints, uncertainty-as-fuel]
 confidence: medium
@@ -21,24 +21,17 @@ status: active
 > 风险因此从「AI 改写价值方向」变成「**弱引注 + 一处过期共识**」。
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述；正文以第一人称「我」作答，含个人经历与课程内互指）
-- **链接**：https://my.feishu.cn/wiki/I5KvwgKWqiaBpOk4blrcYBQlnOe
-- **原文出处**：https://www.dedao.cn/course/article?id=Lpy0edZAG5mnK0wp3QXzD9BkoajY4x（得到课程文章，付费内容搬运）
-- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**（15 讲正文 + 3 问答 + 1 收官直播 = 19）。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**（若出现满足 [[schema]] §1.3 阈值的新概念，只在「回填清单」里提请主控裁定）。
-- **发布**：未标注（frontmatter `published: 未标注`）
+- **链接**：https://my.feishu.cn/wiki/I5KvwgKWqiaBpOk4blrcYBQlnOe ｜ https://www.dedao.cn/course/article?id=Lpy0edZAG5mnK0wp3QXzD9BkoajY4x（得到课程文章，付费内容搬运）
 - **素材路径**：`raw/2026-09-18-qa-admitting-mistakes-notes.md`（**188 行**；frontmatter 1–23，正文自 24 行起，正文合计 165 行）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 4,311 字符 / **162 行**」，而 `188 − 23（frontmatter）= 165` —— **差 3 行**，
-  该「162 行」是**内容相对口径**（既不等于绝对行号，也不严格等于「总行数 − frontmatter」），**引用前必须回文件核对，不要反推**。
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: EKC4dVA8pojoOlx5kyTcMsZOnVg` ｜ `revision_id: 117` ｜ 4,311 字符 ｜ **无内嵌图片**
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **本份是一个「跨板块」的问答合集。** 5 节的节标题按顺序是：**《约束》《可能》《内核》**（均属「基本世界观」板块，第 4–6 讲）
    → **《能耐寻求定理》《供给侧心态》**（属「模块一 成长战略」，007、008）。
    即：**标题写着「模块一 成长战略」问答，却覆盖了上一板块的三讲**。同批另两份问答（[[2026-09-18-qa-hard-to-start-notes]]、[[2026-09-18-qa-deepen-or-move-notes]]）的节标题分别是
-   009–013 与 014–018 —— **三份合起来正好是连续的 15 讲（004–018）**，每份 5 讲。这是一条**结构性事实**，见「与其他页面的关系」。
+   009–013 与 014–018 —— **三份合起来正好是连续的 15 讲（004–018）**，每份 5 讲。这是一条**结构性事实**，见「与本库既有页面的关系」。
 2. **文档的题名问题不是独立一节，而是《内核》节的第 4 条提问**（行 142：「对于一个被灌输了几十年垃圾数据的大脑，让他承认『原来我是错的』，
    打碎整个价值观，会不会适得其反？」）。**标题是编辑挑出来的「头条问题」，不是本份的主题。**
 3. **它的核心贡献集中在两处**：① **《内核》节的回答**给「内核自我」补了一条**可操作的修改路径**（发现苗头 → 在苗头再次发生的时刻做反向训练），
@@ -78,7 +71,7 @@ status: active
 > **回答段共 9 段**（行 39–45 / 51–61 / 73–87 / 97–110 / 116–124 / 130–138 / 144–154 / 164–170 / 180–188，合计 **92 行**）。
 > 节标题 5 行（行 33 / 65 / 91 / 158 / 174）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 > **本份逐条判为「不命中」，并给出判据** —— 这一节是本页最需要写清的部分，因为「问答体裁」天然带有形似特征。
@@ -224,6 +217,15 @@ status: active
 - [ ] **回答是否可能经助理整理 / 润色？** —— 正文无任何 AI 加工段的形态特征，本页据内容判「不含 AI 段」；
       若有更硬的旁证（如原始发布顺序），可回核。**登记为低优先开放项**
 - [ ] **「GPT-5.4 Pro」等 2026 年产品名**（行 61）—— 属讲者个人使用自述，**不构成可核断言**，不单列
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**。它在模块目录文档 [[2026-09-18-growth-strategy-module-notes]] 的 007–021 编号里**没有编号**（目录止于 021），**不进 007–021 编号序列**；但它**计入「模块一 19 讲」的 3 篇问答之一**（15 讲正文 + 3 问答 + 1 收官直播 = 19）。本页按裁定与关联档案同口径处理：**建 1 页 `sources/`、不进编号序列、不派生概念页**（若出现满足 [[schema]] §1.3 阈值的新概念，只在「回填清单」里提请主控裁定）。
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 4,311 字符 / **162 行**」，而 `188 − 23（frontmatter）= 165` —— **差 3 行**，
+  该「162 行」是**内容相对口径**（既不等于绝对行号，也不严格等于「总行数 − frontmatter」），**引用前必须回文件核对，不要反推**。
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: EKC4dVA8pojoOlx5kyTcMsZOnVg` ｜ `revision_id: 117` ｜ 4,311 字符 ｜ **无内嵌图片**
 
 ## 来源
 

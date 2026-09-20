@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-wardley-map
 tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 沃德利地图, Wardley, 孙子兵法, 离题扩展]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-wardley-map]
 related: [modern-thinking-tools, wanweigang, effectuation, 2026-09-19-alpha-strategy, 2026-09-19-economic-rent, 2026-09-19-ooda-loop-notes, wardley-map, simon-wardley]
 confidence: medium
@@ -29,13 +29,12 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/F7cowuWNRiefQykRf29cztG4nte
 - **素材路径**：`raw/2026-09-19-wardley-map.md`（1035 行）
 
-## TL;DR
+## 关键要点
 
-**讲稿（C 段，行 35–209）给的是一把真刀**：沃德利地图（Wardley Mapping，本库已有独立概念页 [[wardley-map]]）由英国人 **Simon Wardley**（[[simon-wardley]]，前 Fotango CEO）约 2005 年提出，
-纵轴「价值链可见度」、横轴「演进」四阶段（创生 → 定制 → 产品或租赁 → 商品或公共设施），核心假设「万物皆演进」。
-**讲稿段的引注质量高**：点名了作者、年份、公司，框架描述与一手资料逐条吻合（见核查表 #1–#3）。
-**但全份的 82.6% 不在讲稿里**：行 214–877 是 664 行无署名中文加工段，**整段讲《孙子兵法》的「五事」（道/天/地/将/法）**，
-与「沃德利地图」这个主题**几乎不相干**；行 880–1034 是 155 行抓取自 `wardleymaps.com` 的英文页。
+1. **讲稿（C 段，行 35–209）给的是一把真刀**：沃德利地图（Wardley Mapping，本库已有独立概念页 [[wardley-map]]）由英国人 **Simon Wardley**（[[simon-wardley]]，前 Fotango CEO）约 2005 年提出。
+2. **两个轴与一个核心假设**：纵轴「**价值链可见度**」、横轴「**演进**」四阶段（创生 → 定制 → 产品或租赁 → 商品或公共设施），核心假设「**万物皆演进**」。
+3. **讲稿段的引注质量高**：点名了作者、年份、公司，框架描述与一手资料逐条吻合（见核查表 #1–#3）。
+4. **但全份的 82.6% 不在讲稿里**：行 214–877 是 664 行无署名中文加工段，**整段讲《孙子兵法》的「五事」（道/天/地/将/法）**，与「沃德利地图」这个主题**几乎不相干**；行 880–1034 是 155 行抓取自 `wardleymaps.com` 的英文页。
 
 ## 素材基本信息
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-uncertainty-fuel-notes
 tags: [世界观, 万维钢, 得到课程, 不确定性, 运气, 基本世界观]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-uncertainty-fuel-notes]
 related: [types-of-uncertainty, uncertainty-as-fuel, luck-over-talent, compensatory-control, nassim-taleb, modern-thinking-tools, wanweigang, heavy-tailed-distribution, multiplicative-world, steady-state-survival-logic, narrative-as-first-principle, 2026-09-18-modern-thinking-tools-prospectus]
 confidence: medium
@@ -43,7 +43,7 @@ status: active
    **「我们最喜欢的是把不确定变成确定的那个瞬间……我们用叙事组织生活，就是因为它们由一个个这样的瞬间组成。」**
    —— 这是把叙事从「认识论装置」改写成了**奖励装置**。已回填该页。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 内容 |
 |---|---|---|---|---|
@@ -125,7 +125,7 @@ status: active
 > **本库判断（`low`）：引注质量的分布跟着「讲稿有没有被 AI 段淹没」走，而不是跟着「作者水平」走。**
 > 这条只是一条相关性观察，样本 n=6，**不作为结论**。
 
-## AI 段的性质（I–J 段）
+## AI 加工段判定（I–J 段）
 
 **① 与第 3、4 讲同型：人设化改写。** 讲稿是一个观察者在讲「世界为什么是这样」；
 AI 段把它改写成**「2026 年边缘化中年人的杠铃策略」**（行 313–363），包含：
@@ -143,7 +143,7 @@ AI 吞噬符号工作者 / 「金丝雀型」组织 / 考公是最大泡沫 / �
 **那是库内 [[2026-09-18-tacit-knowledge]] 与 [[michael-polanyi]] 的主题**。
 但该段把波兰尼的概念降级成「AI 缺乏现实泥泞感」的通俗用法 —— **本库不收这个用法**（见下）。
 
-## 与现有库的关系
+## 与本库既有页面的关系
 
 1. **是第 2 讲（[[2026-09-18-heavy-tail-notes]]）的机制补齐**：重尾是现象，运气是机制。
 2. **与 [[steady-state-survival-logic]] 正面相反**：第 3 讲把「求稳」讲成人类的基因（描述性的），
@@ -157,7 +157,7 @@ AI 吞噬符号工作者 / 「金丝雀型」组织 / 考公是最大泡沫 / �
 6. **与 [[uncertainty-as-fuel]] 相关的库内先例**：[[four-pillars-of-learning]] / [[prediction-error]] 讲过「预测误差是学习的燃料」，
    **本讲说的是「不确定性是意义的燃料」** —— 句式相同、层级不同（一在认知、一在存在）。**本库注意到这个同构，不合并。**
 
-## 新建 / 回填
+## 回填清单
 
 **新建概念页**：[[types-of-uncertainty]]、[[uncertainty-as-fuel]]、[[luck-over-talent]]、[[compensatory-control]]
 **新建实体页**：[[nassim-taleb]]（库内第 4 次出现，本讲给了他第一条实质内容）

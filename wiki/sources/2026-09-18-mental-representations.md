@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-mental-representations
 tags: [万维钢, 学习, 认知, 心智模型, 压缩, 自造概念]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-mental-representations]
 related: [mental-models, schema-psychology, explanatory-framework, cognitive-load-theory, transfer-of-learning, wanweigang, notebooklm, 2026-09-18-transfer-bridging, peak-performance, llm-wiki-research]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里唯一包含「作者自陈自造概念」的一讲**，也是唯一带 `<cite>` 引用北洛其他 wiki 文档的一讲。
 
 - **作者**：万维钢（推定）
-- **链接**：https://my.feishu.cn/wiki/VmQywAcG9iCTplkgrhHcyg6fnZd
-- **原文**：https://www.dedao.cn/course/article?id=qavDm012GolV7OYAjxVxPjEy8zdk73
+- **链接**：https://my.feishu.cn/wiki/VmQywAcG9iCTplkgrhHcyg6fnZd ｜ https://www.dedao.cn/course/article?id=qavDm012GolV7OYAjxVxPjEy8zdk73
 - **发表**：2026-05-11 23:26
 - **素材路径**：`raw/2026-09-18-mental-representations.md`（1,450 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**四个层级里有三个点名了提出者与年份**
 
 ## 关键要点
 
@@ -36,7 +34,7 @@ status: active
 6. **MIT 研究生用 NotebookLM 把一学期课压缩到 48 小时**（2026 年 3 月，X 上报道）——
    他问的是「五大核心心智模型」与「三个最大争议点」，**问模型不问知识点**。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -56,7 +54,7 @@ status: active
 | **`<cite>` 引用北洛的其他 wiki 文档** | 行 46–48 引用「MIT 研究生用 NotebookLM 48 小时学完一学期」与「学习即遗忘，理解即压缩，压缩即智能」 | 这两份文档**本库未收录**，是可追的后续素材 |
 | **AI 生成图片的自述** | 行 200「[GPT 按照这一讲的思路总结的学习逻辑图，可惜它处理中文仍然有问题。]」 | 作者**主动标注 AI 产物的缺陷** —— 与那些把 AI 输出混进正文的素材形成对比 |
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -86,6 +84,10 @@ status: active
 - [ ] 行 46–48 引用的两份北洛 wiki 文档**值得收录**（尤其「学习即遗忘，理解即压缩，压缩即智能」）。
 - [ ] Tishby 的信息瓶颈理论**在库内是孤例**（无其他素材提到），需更多来源或明确标注为单源。
 - [ ] MIT/NotebookLM 案例为二手轶事，**不应作为 AI 辅助学习的证据使用**。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**四个层级里有三个点名了提出者与年份**
 
 ## 来源
 

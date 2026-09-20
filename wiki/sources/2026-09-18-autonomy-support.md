@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-autonomy-support
 tags: [万维钢, 动机, 自我决定理论, 养育, 自主]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-autonomy-support]
 related: [autonomy-support, scaffolding, wanweigang, cybernetic-learning, character-skills, peak-performance, 2026-09-18-cognitive-load-theory]
 confidence: medium
@@ -18,11 +18,9 @@ status: active
 > 它与库内既有四个项目的关系**均未定**，需北洛裁定。
 
 - **作者**：万维钢（推定）
-- **链接**：https://my.feishu.cn/wiki/JEfowPTAgiSBLzk4mcYc4W9Tn3f
-- **原文**：https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWWvXzD9BkoajY4x
+- **链接**：https://my.feishu.cn/wiki/JEfowPTAgiSBLzk4mcYc4W9Tn3f ｜ https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWWvXzD9BkoajY4x
 - **发表**：2026-05-18 23:08
 - **素材路径**：`raw/2026-09-18-autonomy-support.md`（680 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**四项大样本荟萃分析，全部只给年份与规模**
 
 > [!note] 一个待核的巧合
 > 本讲的 dedao 原文 id（`py0edZAG5mnK0wYWWvXzD9BkoajY4x`）与第 1 讲
@@ -40,7 +38,7 @@ status: active
 6. **分阶段退出**：0–3 岁及时响应 / 3–11 岁脚手架 / 12 岁以上优雅撤退。
    「**太早退出叫甩手，永不退出叫统治。**」
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -51,7 +49,7 @@ status: active
 
 > [!note] 行区间为**文件绝对行号**，2026-09-18 首次测量并回文件核对。
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -108,6 +106,10 @@ status: active
 - [ ] 四项荟萃分析（2015 / 2021 / 2025 ×2）**均需核实**，优先级：第 6 条（2025 自主支持）
       与第 1 条（2015 遗传率 49%）。
 - [ ] 脚手架的提出者本讲未给（应为 Wood, Bruner & Ross 1976），**未核实**。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**四项大样本荟萃分析，全部只给年份与规模**
 
 ## 来源
 
