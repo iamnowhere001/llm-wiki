@@ -127,7 +127,7 @@ status: active
 **讲稿的落点是「特权」（别人想要也没有），AI 段的落点变成「普通人可买的人生跃迁战略」。**
 这是本库已命名的「人设化改写」模板（「普通中年人 / 人生跃迁」家族）的**弱化版**：
 它没有把讲稿的方向**反转**，只是把「稀缺性」这个承重概念在应用段淡化了。
-**处置**：按 `AGENTS.md` 4.1 的「判据的判据」——读者能自己发现（摘要段行 208 就写着稀缺性），
+**处置**：按 [[schema]] §3.5 的「判据的判据」——读者能自己发现（摘要段行 208 就写着稀缺性），
 **不降级**；但**不得把行 240–294 的「普通人战略」当作讲稿主张引用**。
 
 ## 引注核查表
@@ -223,7 +223,7 @@ status: active
 
 - [[2026-09-19-optionality-notes]]（294 行；讲稿段行 35–173，收束小诗行 179–193，AI 段行 201–294；
   内含 2 张图，已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：McGrath, Ferrier & Mendelow 2004 *AMR* 29(1):86–101；
   Fisher, Ury & Patton《Getting to Yes》与 Harvard PON 的 BATNA 条目；
   Amazon 2015 Letter to Shareholders（Type 1 / Type 2 decisions）；

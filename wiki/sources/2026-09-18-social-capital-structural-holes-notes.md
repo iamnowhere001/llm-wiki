@@ -130,7 +130,7 @@ status: active
 看起来像在反驳讲稿。**但讲稿行 141–145 本身已有同向限定**（「这不是投机取巧，更不是求人恩赐」），
 **两者不构成矛盾**；AI 段只是把这个限定展开成了「好位置 × 高行动密度 × 有效能力 × 网络连接 × 长期积累」。
 
-**定级**：AI 段**不冒充事实断言**（它是显式的加工品与建议），按 `AGENTS.md` 4.1「按内容质量定」栏
+**定级**：AI 段**不冒充事实断言**（它是显式的加工品与建议），按 [[schema]] §3.5「按内容质量定」栏
 **不因「是 AI 生成的」而降级**；但**不得当作讲稿主张引用**，且其中的 AI 时代判断（如「我会什么正在越来越不值钱」）
 属**未验证的方法建议**，引用时须标注。
 
@@ -215,7 +215,7 @@ status: active
 ## 来源
 
 - [[2026-09-18-social-capital-structural-holes-notes]]（646 行；讲稿段行 35–147，AI 段行 155–646；**本文档无内嵌图片**）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Chetty et al. 2014 *QJE* 129(4):1553-1623 / NBER WP 19843；
   Chetty, Jackson, Kuchler, Stroebel et al. 2022 *Nature* 608:108-121（*Social Capital I*）；
   Harris, Iyer, Rutter, Johnston et al. 2025 *Social Capital in the United Kingdom: Evidence from Six Billion Friendships*；

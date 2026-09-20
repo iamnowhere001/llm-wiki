@@ -231,7 +231,7 @@ status: active
       **是否需要一个可检索的库级标记（如 `引文归属待核` 标签），待裁定**
 - [ ] **「贝叶斯在 1740 年代推导出公式」要不要在 `thomas-bayes` 页显式更正？**
       本页判「与学界通说不符」而非「不可追溯」—— 因为**有一手史料（1763/1764 年的发表记录）可以反驳它**。
-      **这与「查不到出处」是两种强度的断言，必须分开写**（`AGENTS.md` 4.1）
+      **这与「查不到出处」是两种强度的断言，必须分开写**（[[schema]] §2）
 - [ ] **「LLM 是巨型贝叶斯预测机」要不要作为本库的主张？**
       它是类比而非事实断言，且学界有争议 —— **本页按 4.1 标「（未验证）」、不采纳为库内主张**
 - [ ] **「成为范式发生在 1920-1930 年代」这处措辞要不要更正？** 通说把这段时期描述为
@@ -244,7 +244,7 @@ status: active
 
 - [[2026-09-19-bayesian-prior-notes]]（276 行；讲稿段行 35–167、注释段行 171–175，
   分隔线行 179，AI 段行 183–276；内嵌图 6 张已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Quote Investigator 对「When the facts change, I change my mind」的追查
   （含 Skidelsky 的「apocryphal」与 Moggridge 的「there is no evidence」）；凯恩斯 1924 年
   *Investment Policy for Insurance Companies*；Thomas Bayes 的发表史（1763 年 Price 提交、1764 年发表）；

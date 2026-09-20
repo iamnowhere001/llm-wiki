@@ -128,7 +128,7 @@ status: active
 > 「模块一 成长战略」里 AI 段占比 50–87% 的讲次，多数命中已命名的缺陷型（寄生 / 立场改写 /
 > 人设化改写 / 逐字保留对话轮次）。**本份是「模块二」的第一份，AI 段 46.5%，判「操作化延伸」** ——
 > 与 010（SDT）、021（共鸣）同型。**这条对照是本页最值得记的结构性观察**：
-> 「AI 占比高」与「AI 段有缺陷」是两件事（`AGENTS.md` 4.1）。
+> 「AI 占比高」与「AI 段有缺陷」是两件事（[[schema]] §3.5）。
 
 ## 引注核查表
 
@@ -235,7 +235,7 @@ status: active
 
 - [[2026-09-19-no-free-lunch-theorem-notes]]（350 行；讲稿段行 35–192，分隔线行 196，AI 段行 200–350；
   内嵌图 3 张已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Wolpert & Macready 1997 *IEEE TEC* 1(1):67–82（及 Wolpert 2005 年的自述）；
   Derrida *Deconstruction and the Possibility of Justice*（1992）p. 24；休谟生卒年。
   **均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段

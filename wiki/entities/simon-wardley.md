@@ -54,7 +54,7 @@ status: active
 
 > [!note] **单来源声明**
 > 本页全部内容只来自一份素材 [[2026-09-19-wardley-map]]（及其外部核查）。
-> 按 `AGENTS.md` 第 7 节，**单来源 + 通俗文献 → 降 `confidence` 为 `medium`**。
+> 按 [[schema]] §6，**单来源 + 通俗文献 → 降 `confidence` 为 `medium`**。
 
 ## 来源
 

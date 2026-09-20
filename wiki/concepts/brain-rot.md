@@ -4,9 +4,9 @@ type: concept
 slug: brain-rot
 tags: [认知, AI时代, 注意力]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-writing-is-thinking]
-related: [cognitive-outsourcing, cognitive-debt, peak-performance, retrieval-practice]
+related: [cognitive-outsourcing, cognitive-debt, peak-performance, retrieval-practice, attention-what-it-is-and-how-to-improve]
 evidence_tier: single
 confidence: medium
 status: active
@@ -90,6 +90,9 @@ status: active
 
 - **是本项目「注意力 / 专注」一侧的新材料**，但**填不上 [[peak-performance]] 的材料类型缺口** ——
   它同样是「通俗转述 + 大量 AI 生成」。已按该项目的判据记录：**换了作者，材料类型仍未换。**
+- **是 [[attention-what-it-is-and-how-to-improve]] 里五条进路之一**（2026-09-20 新增）：那页把库内关于注意力的
+  说法并排成五条互不统属的进路，本页在其中属**负向机制**一侧 —— 与 [[cognitive-outsourcing]] 的
+  「主动把思考交出去」并列，本页讲的是「**被动被内容侵蚀**」。两者都导致能力退化，但一个是你交出去的、一个是它抢走的。
 - **与 [[cognitive-outsourcing]] 是同一条链的两端**：
   那页讲**主动**把思考交出去（省事），本页讲**被动**被垃圾内容侵蚀（受害）。**两者都导致能力退化。**
 - **与 [[retrieval-practice]] 的隐藏联系**：元分析发现**成瘾 > 时长**，

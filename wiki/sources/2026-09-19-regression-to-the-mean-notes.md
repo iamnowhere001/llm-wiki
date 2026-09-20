@@ -152,7 +152,7 @@ status: active
 **但 I 段仍有两处瑕疵，必须标注：**
 
 1. **行 372 的「一半」零引注**：「原始图表中那种极其夸张的偏差确实有**一半**是统计学背锅」——
-   **精确数字、零来源** → 按 `AGENTS.md` 4.1 判**弱引注**（逐条标「（未验证）」），**不整页降级**。
+   **精确数字、零来源** → 按 [[schema]] §3.6 判**弱引注**（逐条标「（未验证）」），**不整页降级**。
 2. **行 347 的「随后在 2021-2022 年，大量科普媒体（如《科学美国人》、McGill 大学科学与社会办公室等）
    纷纷跟进报道」** —— **本次检索未取到该两条媒体跟进的一手页面** → 判**不可追溯（未取到）**。
 
@@ -268,7 +268,7 @@ status: active
 ## 来源
 
 - [[2026-09-19-regression-to-the-mean-notes]]（379 行；讲稿段行 35–200，AI 段行 208–379；内含 2 张图，已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Kahneman《Thinking, Fast and Slow》(2011) Ch. 17；
   Galton, "Regression towards Mediocrity in Hereditary Stature" (1886)；
   Deming《Out of the Crisis》(1986) Ch. 11 与 Minitab 的漏斗实验仿真；Deming Institute 关于 Ford–Mazda 变速箱的记载；

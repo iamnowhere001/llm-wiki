@@ -157,7 +157,7 @@ status: active
 **`confidence: medium`。** 依据：
 
 - **升不上去（不能判 high）的理由**：①本份是**通俗课程讲稿的搬运**，非一手研究；②**一条引语未验证且文字可疑**（张忠谋自传 #15）；③**一条通行引语出处未坐实**（激光 #10，弱引注）；④讲稿仍以**通俗故事**（张忠谋）承担主要说服力。
-- **降不下去（不判 low）的理由**：按 `AGENTS.md` 4.1 的「判据的判据」——**六组具名学术来源全部可核**（Kauffman / Johnson / Merton / Arthur / Hidalgo-Hausmann / Longo-Montévil-Kauffman），
+- **降不下去（不判 low）的理由**：按 [[schema]] §3.5 的「判据的判据」——**六组具名学术来源全部可核**（Kauffman / Johnson / Merton / Arthur / Hidalgo-Hausmann / Longo-Montévil-Kauffman），
   **无伪引注、无引注的使用失真、无 AI 加工段**。污染类降级**一条都不命中**。
 - **为什么不是 high**：本库模块四唯一判 `high` 的 [[2026-09-19-alpha-strategy]] 的前提是「零 AI 段 + 具名引注全核 + **无未验证引语**」；本份多出 #15 这条可疑引语，故**降半档判 `medium`** —— 这与同批 [[2026-09-19-generativity]] / [[2026-09-19-symmetry-breaking]] / [[2026-09-19-business-leverage]] 一致。
 

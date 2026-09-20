@@ -216,7 +216,7 @@ status: active
 
 - [[2026-09-19-antifragility-notes]]（615 行；讲稿段行 37–163，AI 段行 171–425，
   异源文本行 198–225 与 428–615；内嵌图片 3 张，均已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Taleb, *Antifragile* (2012) 与 *Skin in the Game* (2018)；
   Calabrese & Baldwin, *Nature* 421(6924):691–692 (2003)；
   Minsky 的金融不稳定假说与「Minsky moment」（McCulley 1998）；

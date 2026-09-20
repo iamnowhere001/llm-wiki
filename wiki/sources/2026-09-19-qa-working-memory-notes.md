@@ -60,7 +60,7 @@ status: active
 
 ## AI 加工段判定：本份**没有** AI 加工段
 
-> 按 `AGENTS.md` 4.1。**这是判定，不是省略。** 六条判据：
+> 按 [[schema]] §2。**这是判定，不是省略。** 六条判据：
 
 1. **全文无正文级 `---` 分隔线。** `grep -E '^[-]{3,}$'` 只命中 frontmatter 的**行 1 与行 25**。**另三份问答都有正文级 `---`**（`qa-mission-calling` 行 127；`qa-dsm-vs-gantt` 行 163 / 241；`qa-best-model` 11 处）。**分隔线是本库判定「讲稿段 / AI 段」最硬的结构证据**，本份缺失。
 2. **无第二人称的对话痕迹**：没有「你贴的文章」「我帮你把它拆开说」这类把正文当外部文本的句子（对照 `qa-mission-calling` 行 131、`qa-dsm-vs-gantt` 行 167）。
@@ -125,7 +125,7 @@ status: active
 
 1. **不降级的理由**：① **不含任何 AI 加工段**（六条判据一致）；② **无推广、无商业索取、无伪造引注**；③ **两条最硬主张与主流元分析逐条对上**；④ 它给 [[cognitive-load-theory]] 补上了该页缺的那一问，是**新增内容**。
 2. **不给 `high` 的理由**：① **全文无编号引注、无注释段** —— 学术主张全部零引注，属**弱引注**；② 3 条不可追溯（其中「龙虾」疑为抓取残留）；③ 一处原创框架无外部出处。
-3. **为什么不是 `low`**：`low` 的三条典型理由是「AI 段成了推广载体」「大量精确数字零引注、冒充事实断言」「一手内容为零 + 未标注冒充课程转述」。**本份三条都不成立** —— 它是课程原生问答，且**精确数字只有一个（0.5），它是对的**。→ **降级的对象是行为，不是体裁**（`AGENTS.md` 4.1）。
+3. **为什么不是 `low`**：`low` 的三条典型理由是「AI 段成了推广载体」「大量精确数字零引注、冒充事实断言」「一手内容为零 + 未标注冒充课程转述」。**本份三条都不成立** —— 它是课程原生问答，且**精确数字只有一个（0.5），它是对的**。→ **降级的对象是行为，不是体裁**（[[schema]] §3.5）。
 
 ## 回填清单（**已于 2026-09-19 部分执行**）
 > **2026-09-19 第 4、5 批执行说明**：本批按北洛指示「两半一起做」。
@@ -168,5 +168,5 @@ status: active
 ## 来源
 
 - [[2026-09-19-qa-working-memory-notes]]（`raw/2026-09-19-qa-working-memory-notes.md`，151 行；问答正文行 35–151；**无正文级 `---`**；内嵌图 2 张）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源（**均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段）：Melby-Lervåg & Hulme 2013 *Developmental Psychology* 49(2):270-291；Melby-Lervåg et al. 2016；Rodas et al. 2024；Syed et al. 2024 *Journal of Intelligence* 12:114；Ackerman, Beier & Boyle 2005；Kahneman & Tversky 1979 *Econometrica* 47:263-291；Kahneman & Lovallo 1993 *Management Science* 39(1):17-31；Tetlock 2015 *Superforecasting*；Boyd 的 OODA 与 2026 年 OODA 智能体论文（arXiv:2608.24368）；HITL / HOTL / HOOTL 的治理文献定义

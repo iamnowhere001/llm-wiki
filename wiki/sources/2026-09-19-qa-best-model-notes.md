@@ -68,7 +68,7 @@ status: active
 
 ## AI 加工段的性质判定
 
-> 按 `AGENTS.md` 4.1。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
+> 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
 ### 命中：**逐字保留对话轮次**（强证据，行 238 + 244–742）
 
@@ -197,5 +197,5 @@ status: active
 ## 来源
 
 - [[2026-09-19-qa-best-model-notes]]（`raw/2026-09-19-qa-best-model-notes.md`，742 行；问答正文行 35–205，AI 段行 207–742；**无内嵌图片**；正文级 `---` 11 处）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源（**均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段）：Scott Page, *The Model Thinker* (2018)；Judea Pearl & Dana Mackenzie, *The Book of Why* (2018)；Steven Schuster, *The Art of Thinking in Systems* (2018)；Donella H. Meadows, *Thinking in Systems: A Primer* (2008)；Clifton et al., *Primal World Beliefs*, *Psychological Assessment* 31(1):82-99 (2019)；OpenAI 的 GPT-5.5 发布（2026-04-23，含 GPT-5.5 Pro）；John L. Kelly, *A New Interpretation of Information Rate* (1956)；Ole Peters 的 ergodicity economics；Taleb, *Antifragile* (2012)

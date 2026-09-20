@@ -54,7 +54,7 @@ status: active
 
 > [!note] **单来源声明**
 > 本页全部内容只来自一份素材 [[2026-09-19-jevons-paradox]]（及其外部核查）。
-> 按 `AGENTS.md` 第 7 节，**单来源 + 通俗文献 → 降 `confidence` 为 `medium`**。
+> 按 [[schema]] §6，**单来源 + 通俗文献 → 降 `confidence` 为 `medium`**。
 > 本页仅登记与杰文斯悖论相关的信息，未展开其边际革命等其余学术贡献。
 
 ## 来源
