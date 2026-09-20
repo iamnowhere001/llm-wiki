@@ -211,7 +211,7 @@ status: active
 
 - [[2026-09-19-non-ergodicity-notes]]（459 行；讲稿段行 35–199，AI 段行 203–459；
   内嵌图片 1 张，已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Peters, "The time resolution of the St Petersburg paradox", *Phil. Trans. R. Soc. A* (2011)；
   Peters & Gell-Mann, "Evaluating gambles using dynamics", *Chaos* 26:023103 (2016)；
   Peters 关于 Peters coin toss 的自述（ergodicityeconomics.com）；

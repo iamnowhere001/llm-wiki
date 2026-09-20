@@ -62,7 +62,7 @@ status: active
 
 ## AI 加工段的性质判定
 
-> 按 `AGENTS.md` 4.1。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
+> 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
 ### 命中：**逐字保留对话轮次**（G 段，行 243–312）
 
@@ -201,5 +201,5 @@ status: active
 ## 来源
 
 - [[2026-09-19-qa-dsm-vs-gantt-notes]]（`raw/2026-09-19-qa-dsm-vs-gantt-notes.md`，312 行；问答正文行 35–159，AI 段行 165–312；内嵌图 2 张）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源（**均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段）：Ohsumi 2016 诺贝尔奖官方页；Brandhorst, Levine, … Longo, *Nature Communications* 15:1309 (2024-02-20)；USC Leonard Davis 新闻稿（2024-02-20）；Medscape 报道（2024-04-09，含 24/86 人生物年龄上升等局限）；Sutton et al., *Cell Metabolism* 27(6):1212-1221 (2018)；Steger et al., *Obesity* 31(S1):96-107 (2023)；Mattson & de Cabo, *NEJM* 综述（2019）与 Johns Hopkins Medicine 页面；Steward 的 DSM（*IEEE Trans. Eng. Management*）与 DSM 教程（UMD）；Shewhart / Deming 的 common-special cause 与 tampering；OpenAI「ChatGPT 图像 2.0」发布页（2026-04-21）

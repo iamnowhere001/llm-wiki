@@ -209,7 +209,7 @@ status: active
 
 - [[2026-09-19-value-of-information-notes]]（1143 行；讲稿段行 37–158，框架图行 160–162，AI 段行 168–1143；
   内嵌图片 3 张，均已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Howard, *Information Value Theory*, IEEE Trans. SSC 2(1):22–26 (1966)；
   EVPI / EVSI 的标准定义；2026 年关于 Polymarket 跨市场时差套利的公开资料。
   **均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段

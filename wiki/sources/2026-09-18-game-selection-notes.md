@@ -182,7 +182,7 @@ status: active
 
 ## 待办 / 开放问题
 
-- [ ] **「Game Selection」要不要单列为一个「学科归属错配」的新类别？** 本库 `AGENTS.md` 4.1 的
+- [ ] **「Game Selection」要不要单列为一个「学科归属错配」的新类别？** 本库 [[schema]] §2 的
       「引注的使用失真」只写了「数字 / 结论的对应关系被搞错」——**学科归属错配是同性质、不同对象**（待裁定）
 - [x] **「能耐寻求定理」出自哪一讲？** 已定位：模块一第 1 讲 → [[2026-09-18-capability-seeking-theorem-notes]]（见核查表第 7 条）
 - [ ] **政治技巧 [1][2] 的注释段能否补录？** 两条所指研究都存在，缺的只是素材侧的注释文本
@@ -193,7 +193,7 @@ status: active
 ## 来源
 
 - [[2026-09-18-game-selection-notes]]（187 行；讲稿段行 33–175，收束小诗行 181–187；**本文档无内嵌图片**）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Sarasvathy 2001 *AMR* 26(2):243-263；Goodhart 1975 与 Strathern 的通俗化；
   Ferris 等 political skill 研究与 2015 年 *Personnel Psychology* 元分析；
   Odling-Smee 1988 / Odling-Smee et al. 2003；扑克行话中 "game selection" 的通用定义（pokerroom.games / primedope / pokerrailbird）。

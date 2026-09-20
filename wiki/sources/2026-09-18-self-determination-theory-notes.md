@@ -181,14 +181,14 @@ status: active
       （doc-id `M2N7wVjaliW0Efka4I0c14oonJe`）。**它是不是与 [[2026-09-18-narrative-self]] 同型的「关联档案」？
       未取回。** 若是，可能改变本讲的归属判断
 - [ ] **图片 2 的 alt 被截断**（行 181 只有「图片为漫画形式，讲述了朱」）—— 一处**抓取缺陷**。
-      图片本身已下载，可人工补读内容后回填本页（`AGENTS.md` 1.1：这属于「阅读结论」，写本页、不写 raw）
+      图片本身已下载，可人工补读内容后回填本页（[[schema]] §3.2：这属于「阅读结论」，写本页、不写 raw）
 - [ ] **「过度理由效应」的命名归属要不要单独记一条？** 它是本库「引注的使用失真」里
       **第一次出现「术语命名错位」**（此前两类是范围外推与数字错配）
 
 ## 来源
 
 - `raw/2026-09-18-self-determination-theory-notes.md`（349 行；正文自第 27 行起）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（遵守 `AGENTS.md` 1.1，本页不重复抓取事实）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（遵守 [[schema]] §3.2，本页不重复抓取事实）
 - 外部核查所用来源：Deci (1971) *JPSP* 18(1)、Lepper, Greene & Nisbett (1973) *JPSP* 28(1)、
   Deci & Ryan (1985)、Ryan & Deci (2000) *American Psychologist* 55(1)、Rotter (1966) *Psychological Monographs* 80(1)、
   Seligman & Maier (1967) *JEP* 74(1)、*Atomic Habits* (2018)、《论语·雍也》、微软日本 2019 年度实验报告。

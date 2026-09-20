@@ -110,7 +110,7 @@ status: active
 
 ## AI 加工段的性质判定
 
-> 按 `AGENTS.md` 4.1。本库已命名的四种 AI 段缺陷型是 **寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
+> 按 [[schema]] §3.6。本库已命名的四种 AI 段缺陷型是 **寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
 ### 结论：**本素材未发现 AI 加工段**
 
@@ -334,9 +334,9 @@ status: active
 ## 来源
 
 - [[2026-09-18-five-thinking-tools-livestream]]（`raw/2026-09-18-five-thinking-tools-livestream.md`，264 行；正文自第 23 行起）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源 —— Stanovich, West & Toplak (2014) 双加工理论章（cognitive decoupling 为 Type 2 核心特征）；
   《荀子·修身》（「君子役物，小人役于物」）；VERSES AI 公司资料；Sheeran et al. (2013) *Health Psychology* 32(7)；
   Goodhart 1975 —— **均未收录进 `raw/`**，故只在本页记录，**不写入 `sources` 字段**
-- 素材的分层、行区间、回指与引注核查表在本页维护，**不写回 `raw/`**（`AGENTS.md` 1.1）
+- 素材的分层、行区间、回指与引注核查表在本页维护，**不写回 `raw/`**（[[schema]] §3.3）
 - **本素材无内嵌图片**（前述逐条比对与行号核对均已在文件内完成）

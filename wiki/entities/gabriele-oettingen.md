@@ -61,5 +61,5 @@ status: active
   **本页行号已回 raw 核对（文件绝对行号）。**
 - 外部文献（**未收录进 `raw/`**）：Kappes & Oettingen (2011)；Duckworth et al. (2013)；Sheeran et al. (2013)；Monin et al. (2021)；*Rethinking Positive Thinking* (2014)。
 
-> [!note] 单来源声明（`AGENTS.md` §7）
+> [!note] 单来源声明（[[schema]] §6）
 > 本页**全部内容**来自**一份素材**（得到课程讲稿的转述），本库**无一手续材料**（无原著、无论文原文）。其名下四项研究已在 sources 页逐条外部核到原文，**但那一步是 sources 页做的，不在 `raw/` 里**。

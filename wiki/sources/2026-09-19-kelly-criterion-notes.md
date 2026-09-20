@@ -127,7 +127,7 @@ status: active
 
 > [!note] 判定为「操作化延伸」的判据
 > AI 段没有引入任何新的**事实断言**：它引入的是**变量与场景的展开**（无 p 时怎么办）。
-> 按 `AGENTS.md` 4.1「降级的是行为，不是『AI 写的』这个身份」—— 本段**不降级**，
+> 按 [[schema]] §3.5「降级的是行为，不是『AI 写的』这个身份」—— 本段**不降级**，
 > 但因其对讲稿做了解释性延伸，**引用时须标注「AI 段」**。
 
 ## 引注核查表
@@ -222,7 +222,7 @@ status: active
 
 - [[2026-09-19-kelly-criterion-notes]]（361 行；讲稿段行 35–209，讲稿注释行 211–215，AI 段行 225–361；
   内嵌图片 4 张，均已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：Kelly, *A New Interpretation of Information Rate*, BSTJ 35(4):917–926 (1956)；
   Kelly 生平（1923–1965）；`edge = (p − P_m)/P_m` 与 `P_m = 1/(b+1)` 的代数自洽性；
   细菌 bet-hedging 与 Kelly betting 的教材化讲授（Caltech BE150）与 Kussell & Leibler 2005 一系；

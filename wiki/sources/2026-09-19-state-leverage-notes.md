@@ -147,7 +147,7 @@ status: active
   **这是本库已命名的「普通中年人 / 中年防爆仓」模板家族在模块二的首次出现**
   （前例见 [[2026-09-18-woop-notes]]、[[2026-09-18-sense-of-security-notes]]、[[2026-09-18-explore-exploit-notes]] 的「终身探索者计划」等）。
 - **与强版本的区别**：它**不寄生产品、不给「90 天变现」纪律、不反转价值方向** ——
-  因此按 `AGENTS.md` 4.1「判据的判据」（读者能自己发现：讲稿就在上面），**不降级**；
+  因此按 [[schema]] §3.5「判据的判据」（读者能自己发现：讲稿就在上面），**不降级**；
   但**不得把 J 段的三类清单当作讲稿主张引用**。
 - **其余各段（E–I、K–M）判「操作化延伸」**：把讲稿的三种杠杆翻译成现代职场 / 生活场景，
   是**显式的加工品**，不冒充事实断言。
@@ -252,7 +252,7 @@ status: active
 ## 来源
 
 - [[2026-09-19-state-leverage-notes]]（482 行；讲稿段行 35–185，AI 段行 193–482；内含 2 张图，已落地 `raw/assets/`）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：NIST Planning Report 02-3 (2002) 与 RTI 摘要页；Flyvbjerg & Gardner《How Big Things Get Done》(2023)；
   Goldratt《The Goal》(1984) 与 TOC 五步法的标准表述；Mabin & Balderstone《The World of the Theory of Constraints》
   （78 家企业汇总，两套数字见核查表第 5 条）；Bellman "The Theory of Dynamic Programming" (1954) 与 Principle of Optimality 原文；

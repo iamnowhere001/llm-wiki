@@ -85,7 +85,7 @@ status: active
 > 更明显的是行 425 那段「用AI帮你把这个洞察包装成一篇文章……分享到你的朋友圈」：
 > **讲稿整篇没出现一次「经营个人品牌」的指令，AI 段把它做成了每月任务。**
 >
-> **判定**：按 `AGENTS.md` 4.1 的判据**不降级** —— 它是显式的操作化加工，不冒充事实断言
+> **判定**：按 [[schema]] §3.5 的判据**不降级** —— 它是显式的操作化加工，不冒充事实断言
 > （唯一例外是 D 段自称的「事实核查」，见下），也未伪造引注。
 > **但必须逐段标注性质，且不得当作讲稿主张引用。**
 
@@ -164,7 +164,7 @@ status: active
 ## 来源
 
 - `raw/2026-09-18-compounding-advantage-notes.md`（491 行；正文自第 26 行起）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（遵守 `AGENTS.md` 1.1，本页不重复抓取事实）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（遵守 [[schema]] §3.2，本页不重复抓取事实）
 - 外部核查所用来源：*Capital in the Twenty-First Century*（Piketty）、Bourdieu, "The Forms of Capital" (1986)、
   Granovetter, *AJS* 78(6) (1973)、Becker, *Human Capital* (1964)、Van Boven & Gilovich, *JPSP* 85(6) (2003)、
   Vanguard *How America Saves*、RTHK《穷富翁大作战》节目资料。

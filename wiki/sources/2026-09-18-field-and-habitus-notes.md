@@ -127,7 +127,7 @@ status: active
 **第 4 条是本份唯一的「具名归属断言」，也是最需要写清的一条** ——
 它同时示范了本库已记过两次的那个坑：**「不可追溯」（判断）与「已核实不存在」（事实）是两种强度的断言**。
 本次**只能说「未取到原文」**，**不能**说「这条注释是假的」。**检索范围已写明**（两次查《反对党八股》、一次查张石山），
-符合 `AGENTS.md` 4.2 第 6 条「说『没有』必须写明检索了哪几段 / 哪几个来源」。
+符合 [[schema]] §4 第 6 条「说『没有』必须写明检索了哪几段 / 哪几个来源」。
 
 ## 与本库既有页面的关系
 
@@ -197,7 +197,7 @@ status: active
   | 1 | `RqjSbI9NEo5EExxEtNzclhTMnWb` | `assets/2026-09-18-field-and-habitus-notes-img-01.png` | 8,762,226 |
 
   （对照表来自抓取产物 `/tmp/growth/imgmaps/2026-09-18-field-and-habitus-notes.md`；行 124 的图片链接已改写为本地相对路径。）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源：布迪厄 *La Distinction* (1979)、*The Forms of Capital* (1986)；
   NAS 1992 年院士投票与 1994 年 Public Welfare Medal 的公开记录；普利策奖 1981 年非虚构奖记录。
   **均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段

@@ -73,11 +73,11 @@ status: active
 
 ## AI 加工段的性质判定
 
-> 按 `AGENTS.md` 4.1。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
+> 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
 ### 结论：**AI 加工段 0 行**（逐段检索，行 26–165 全覆盖）
 
-**检索范围与检索项**（按 `AGENTS.md` 4.2 第 6 条，说「没有 X」必须写明检索了哪几段）：
+**检索范围与检索项**（按 [[schema]] §4 第 6 条，说「没有 X」必须写明检索了哪几段）：
 
 | 检索项 | 结果 |
 |---|---|
@@ -94,7 +94,7 @@ status: active
 - raw 的 `author` 写：「万维钢（讲稿）；**正文另含无署名 AI 加工段，有无与边界见对应 sources 页**」。
 - **该字段自相矛盾**：前半句**断言存在** AI 加工段，后半句又说「**有无**见对应 sources 页」——即把判定权交还给本页。
 - **本页的判定是「无」**（依据见上表）。**成因推测**：该字段与同批 `qa-best-model`（AI 段 74.9%）、`qa-dsm-vs-gantt`（51.6%）共用了一套批次模板。
-- **处置**：**只登记，不修改**。`author` 属 `AGENTS.md` 1.1 的**黑名单字段（绝不可改）**，且 raw 不可变 ——
+- **处置**：**只登记，不修改**。`author` 属 [[schema]] §3.2 的**黑名单字段（绝不可改）**，且 raw 不可变 ——
   本库的做法是在本页写明「raw 元数据自述如此，实际为彼」，**不改 raw**。
 
 ### 不命中：**逐字保留对话轮次**
@@ -233,7 +233,7 @@ status: active
 ## 来源
 
 - [[2026-09-19-qa-teenager-talk]]（`raw/2026-09-19-qa-teenager-talk.md`，165 行；问答正文行 35–165，共 5 节；**无内嵌图片**；正文级 `---` 0 处）
-- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 `AGENTS.md` 1.1）
+- 抓取方式与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**，遵守 [[schema]] §3.2）
 - 外部核查所用来源（**均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段）：
   Stattin, H. & Kerr, M., *Parental Monitoring: A Reinterpretation*, *Child Development* 71(4):1072-1085 (2000)；
   Fu, R. & Koh, K., *Developing and validating teacher formative assessment literacy questionnaire in the high-stakes examination culture: a case of China*, *Frontiers in Psychology* 17, e1771941 (2026-02-11)（**候选，不能确证即素材所指**）；
