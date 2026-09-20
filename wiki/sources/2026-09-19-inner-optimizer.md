@@ -28,6 +28,10 @@ status: active
 > frontmatter 占 **1–28** 行，**正文自第 30 行起（30–304 = 275 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/EwQmwdDh0iO4sCkae3ecYMWMnjd
+- **素材路径**：`raw/2026-09-19-inner-optimizer.md`（305 行）
+
 ## TL;DR
 
 **本讲把 AI 对齐研究的一组既有术语（mesa-optimizer / mesa-objective / inner alignment / pseudo-alignment / deceptive alignment，均出自 Hubinger et al. 2019）第一次引入本库正文**，

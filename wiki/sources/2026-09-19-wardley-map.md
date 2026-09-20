@@ -25,6 +25,10 @@ status: active
 > **本份的两个「最」**：①全批最长（1,034 行）；②**本库目前见过的最大规模 AI 离题扩展** ——
 > 讲稿段仅 175 行（正文 17.4%），其后 **664 行（65.9%）的无署名中文 AI 段整段在讲《孙子兵法》五事，从头到尾再未回到「沃德利地图」**。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/F7cowuWNRiefQykRf29cztG4nte
+- **素材路径**：`raw/2026-09-19-wardley-map.md`（1035 行）
+
 ## TL;DR
 
 **讲稿（C 段，行 35–209）给的是一把真刀**：沃德利地图（Wardley Mapping，本库已有独立概念页 [[wardley-map]]）由英国人 **Simon Wardley**（[[simon-wardley]]，前 Fotango CEO）约 2005 年提出，

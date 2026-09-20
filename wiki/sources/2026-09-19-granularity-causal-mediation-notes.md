@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-granularity-causal-mediation-notes.md`，
 > 共 **387** 行）。frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/PqC1wLxH1iwD9BkUoZacHzKQnoe
+- **素材路径**：`raw/2026-09-19-granularity-causal-mediation-notes.md`（387 行）
+
 ## TL;DR
 
 **讲稿从「癌症是气出来的」这个伪科学讲起，落到一个可操作的动作：找到中介变量。**

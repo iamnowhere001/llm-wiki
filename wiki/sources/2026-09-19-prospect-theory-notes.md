@@ -22,6 +22,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-prospect-theory-notes.md`，共 **916** 行）。
 > frontmatter 占 1–25 行，正文自第 27 行起。写本页前已逐段回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/NGvWwGG1VihA2bkKPpPczw9ynef
+- **素材路径**：`raw/2026-09-19-prospect-theory-notes.md`（916 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「前景理论（Prospect Theory）」**（本库已有独立概念页 [[prospect-theory]]）：人类对得失不对称（损失大概两倍于收益）、按参照点而非绝对财富做决策。

@@ -28,6 +28,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-regression-to-the-mean-notes.md`，共 **379** 行）。
 > frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/BgWwwxTtaiDX2LkwKZTcqxdEnSb
+- **素材路径**：`raw/2026-09-19-regression-to-the-mean-notes.md`（379 行）
+
 ## TL;DR
 
 **讲稿给的工具叫「回归均值（Regression to the Mean）」**：极端表现里有运气的成分，所以下一次自然没那么极端。

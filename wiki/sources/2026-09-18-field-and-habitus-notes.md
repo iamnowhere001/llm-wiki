@@ -23,6 +23,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-field-and-habitus-notes.md`，共 **183** 行）。
 > frontmatter 占 1–24 行，**正文自第 25 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/G0SRwpMUOikeRikj6GbcqxUanYf
+- **素材路径**：`raw/2026-09-18-field-and-habitus-notes.md`（183 行）
+
 ## TL;DR
 
 **它把一个日常抱怨（「这是潜规则」）升级成一个分析框架** —— 布迪厄的 field / Doxa / habitus / capital：

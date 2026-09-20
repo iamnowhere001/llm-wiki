@@ -22,6 +22,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-reference-class-notes.md`，共 **672** 行）。
 > frontmatter 占 1–25 行，正文自第 27 行起。写本页前已逐段回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/DHyiw3qkBieNX6kVwNBcZvQWnVh
+- **素材路径**：`raw/2026-09-19-reference-class-notes.md`（672 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「参考类预测（Reference Class Forecasting, RCF）」**（本库已有独立概念页 [[reference-class]]）：系统性地低估时间/成本/风险是「规划谬误」，

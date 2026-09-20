@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-non-ergodicity-notes.md`，共 **459** 行）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。写本页前已逐条 `grep -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/X8CFwBP4yifYaQkK2vicAmaxnid
+- **素材路径**：`raw/2026-09-19-non-ergodicity-notes.md`（459 行）
+
 ## TL;DR
 
 **本讲的思维工具是「非遍历性（non-ergodicity）」**：掷硬币思想实验（+50% / −40%）显示，

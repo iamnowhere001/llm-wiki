@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-scarcity-singularity.md`，`wc -l` = **506**，末行无换行、实为 **507** 个物理行）。
 > frontmatter 占 **1–28** 行，**正文自第 30 行起（30–507 = 478 行）**。写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/Mf6vwI853ius8CkrlD6c4bqAnN6
+- **素材路径**：`raw/2026-09-19-scarcity-singularity.md`（507 行）
+
 ## TL;DR
 
 **本讲把「稀缺」从行为经济学义项切换成经济学的「位置性稀缺」** —— 义项来自 **Fred Hirsch《Social Limits to Growth》(1976)** 的「位置性商品（positional goods）」，素材**已正确署名**（见「术语归属专段」）。

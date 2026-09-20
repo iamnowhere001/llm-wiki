@@ -24,6 +24,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-kelly-criterion-notes.md`，共 **361** 行）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。写本页前已逐条 `grep -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/Qwpjw94NsiTHvTkzLZic4eR9nPd
+- **素材路径**：`raw/2026-09-19-kelly-criterion-notes.md`（361 行）
+
 ## TL;DR
 
 **本讲的思维工具是「凯利公式（Kelly criterion）」**：它解决的不是「怎么赢」，而是「**怎么一直赢**」（行 71）——

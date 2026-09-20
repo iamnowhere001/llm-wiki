@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-antifragility-notes.md`，共 **615** 行）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。写本页前已逐条 `grep -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/YWKgwZRgGi1mrTkKiWWclyHnnjf
+- **素材路径**：`raw/2026-09-19-antifragility-notes.md`（615 行）
+
 ## TL;DR
 
 **本讲的思维工具是塔勒布的「脆弱 / 反脆弱」**：脆弱 = 凹函数（波动越大越糟），

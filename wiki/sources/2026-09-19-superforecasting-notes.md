@@ -22,6 +22,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-superforecasting-notes.md`，共 **264** 行）。
 > frontmatter 占 1–25 行，正文自第 27 行起。写本页前已回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/B8zkwlaXSiOUWBkIcJNc0kOnnjg
+- **素材路径**：`raw/2026-09-19-superforecasting-notes.md`（264 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「超级预测（Superforecasting）」**：依托泰特洛克（Philip Tetlock）的「良好判断项目」，

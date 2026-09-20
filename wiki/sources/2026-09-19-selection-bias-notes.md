@@ -30,6 +30,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-selection-bias-notes.md`，共 **527** 行）。
 > frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/XmOBwMizji2BagkxQB5c6Alqnyh
+- **素材路径**：`raw/2026-09-19-selection-bias-notes.md`（527 行）
+
 ## TL;DR
 
 **讲稿给的工具叫「选择偏差（selection bias）」**（本库已有独立概念页 [[selection-bias]]），并把「十几种」选择偏差（行 61）粗略归为四类：

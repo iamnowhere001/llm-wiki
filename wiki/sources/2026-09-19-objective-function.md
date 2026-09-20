@@ -27,6 +27,10 @@ status: active
 > 末行无换行、实为 **286** 个物理行）。frontmatter 占 **1–28** 行，**正文自第 30 行起（30–286 = 257 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/Oz0uwqEzxim3sLkRiMBc3gIlnjc
+- **素材路径**：`raw/2026-09-19-objective-function.md`（286 行）
+
 ## TL;DR
 
 **本讲把「目标函数」从一个工程术语抬成了世界观问题** —— 它是 [[narrative-as-objective-function]] 那句

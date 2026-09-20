@@ -25,6 +25,10 @@ status: active
 > `raw/2026-09-19-jevons-paradox.md` 共 **337** 行；因末行无换行符，`wc -l` 报 336）。
 > frontmatter 占 1–25 行，正文自第 27 行（标题）起。写本页前已逐段回文件 `grep -n` 核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/WhDxwdMwtiDaJPkQREScLgSMnje
+- **素材路径**：`raw/2026-09-19-jevons-paradox.md`（337 行）
+
 ## TL;DR
 
 **讲稿是一篇「反 AI 末日论」**：面对阿莫迪「AI 一到五年内消灭一半初级白领岗位」的预言，万维钢给出暴论

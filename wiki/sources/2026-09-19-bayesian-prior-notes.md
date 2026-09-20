@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-bayesian-prior-notes.md`，
 > 共 **276** 行）。frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/MP4Bw5VX8iAKOvk30uTc9SrBnAq
+- **素材路径**：`raw/2026-09-19-bayesian-prior-notes.md`（276 行）
+
 ## TL;DR
 
 **讲稿用贝叶斯公式把「主观判断」从道德审判的领域搬到认知工程的领域。**

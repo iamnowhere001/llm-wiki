@@ -26,6 +26,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-trustworthiness.md`，`wc -l` = **211**）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。写本页前已逐段回文件核对（`grep -n` / `nl -ba`）。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/Mx9nwWRh8itDOAkCRddcCrkvnid
+- **素材路径**：`raw/2026-09-19-trustworthiness.md`（212 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「托付」**（本库已有独立概念页 [[entrustability]]）：高薪买的不是优秀，而是**可托付性** —— 你能不能不要求别人先把任务说清楚，

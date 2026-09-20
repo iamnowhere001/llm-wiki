@@ -23,6 +23,11 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-social-capital-structural-holes-notes.md`，共 **646** 行）。
 > frontmatter 占 1–23 行，**正文自第 24 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/IXarwfcruihufBkgGngcbpkKnVg
+- **发表**：2026-04-02 23:07
+- **素材路径**：`raw/2026-09-18-social-capital-structural-holes-notes.md`（646 行）
+
 ## TL;DR
 
 **它把「个人奋斗论」改写成「位置论」** —— 用切蒂的代际流动数据证明：同样的天资与勤奋，

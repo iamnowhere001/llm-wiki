@@ -20,6 +20,11 @@ status: active
 > **本页坐标系**：所有行号均为**文件绝对行号**（`raw/2026-09-18-uncertainty-fuel-notes.md`，共 373 行）。
 > frontmatter 占 1–39 行，**正文自第 41 行起**（正文行号 = 文件行号 − 40）。
 
+- **作者**：万维钢
+- **链接**：https://my.feishu.cn/wiki/VhptwjIZkiDJ0LkaPKSczDSbnTe
+- **发表**：2026-03-22 23:02
+- **素材路径**：`raw/2026-09-18-uncertainty-fuel-notes.md`（374 行）
+
 ## 关键要点
 
 1. **这是本库目前引注质量最好的第二份素材。** 8 条具名引注**全部核完且全部为真**，
