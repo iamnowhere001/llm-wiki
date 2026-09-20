@@ -28,8 +28,8 @@ status: active
 > **本文件经 AI 中介提取**（`capture_quality: medium`，**未做逐字比对**）—— 这是「**记的可能不准**」。
 > **两者是不同的问题，降级理由不同，不要合并成一条。**
 
-> [!note] 行号坐标系
-> 本节所有行号均为**文件绝对行号**（`wc -l` = 200 的坐标系），已回原文逐条核对。
+> [!note] 行号核对
+> 本节行号已回原文逐条核对（`wc -l` = 200）。
 
 ## 关键要点
 
@@ -106,10 +106,6 @@ status: active
 - [ ] 回填 [[agents-md]]：补上「规则腐坏」与「指导过载」两个本库未评估的失败模式
 - [ ] 核对文中「Ralph Wiggum Loop」的所指
 
-## 素材基本信息
-
-- **性质**：**厂商自述**（利益披露）+ **经 AI 中介提取**（官方站 403）
-
 ## 相关页面
 
 - [[harness]]
@@ -118,6 +114,10 @@ status: active
 - [[2026-09-19-hashimoto-my-ai-adoption-journey]]
 - [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]
 - [[2026-09-19-trivedy-anatomy-of-agent-harness]]
+
+## 归属判断
+
+- **性质**：**厂商自述**（利益披露）+ **经 AI 中介提取**（官方站 403）
 
 ## 来源
 

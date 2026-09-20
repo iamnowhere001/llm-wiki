@@ -4,9 +4,9 @@ type: entity
 slug: michael-polanyi
 tags: [人物, 哲学家, 默会知识, 科学哲学]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-tacit-knowledge]
-related: [tacit-knowledge, embodied-cognition, 2026-09-18-tacit-knowledge, wanweigang, llm-wiki-pattern, second-brain-skill]
+related: [tacit-knowledge, embodied-cognition, 2026-09-18-tacit-knowledge, wanweigang, llm-wiki-pattern, second-brain-skill, 2026-09-20-legibility-and-metis]
 evidence_tier: single
 confidence: medium
 status: active
@@ -60,6 +60,18 @@ status: active
 > 总有一层背景是写不出来的。
 > 本库的处理不是放弃显性化，而是**把「写不出来的那部分」也写下来**
 > （如 [[cognitive-vs-somatic-paths]] 逐条区分「事实／本库立论／本库自造且零支持」）。
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-legibility-and-metis]]（078 讲）的「回填清单」建议。行号为该素材文件的**绝对行号**。
+
+- **本页的「默会知识」与詹姆斯·斯科特的「米提斯」不是同一件事 —— 078 讲自己做了这个辨析。** 078 行 136：
+  「**"默会知识"是强调你知道，但你说不出来；"米提斯"则是说只有在本地现场才知道 ——
+  也许你能说出来，也许你说不出来，要点是不在现场就学不会。**」
+  **即：波兰尼那条讲的是「能不能说出来」，斯科特那条讲的是「在不在现场」。**
+- **⚠️ 归属要分清楚**：**米提斯不出自波兰尼**。078 行 136 明写它出自**詹姆斯·斯科特**（[[2026-09-20-legibility-and-metis]]
+  的素材页已把斯科特与 078 的「六个动作」一并登记）。**凡见到「波兰尼的米提斯」这类说法，是误挂。**
+- 完整辨析与 2×2 组合表见 [[tacit-knowledge]] 的同名回填节 —— **该页是这条边界的主承载页，本页只登记归属。**
 
 ## 待办 / 开放问题
 

@@ -4,9 +4,9 @@ type: concept
 slug: skin-in-the-game
 tags: [万维钢, 得到课程, 风险]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-self-constraint]
-related: [self-constraint, credible-commitment, antifragility, nassim-taleb, entrustability, agent-vs-tool, steady-state-survival-logic, modern-thinking-tools, wanweigang]
+related: [self-constraint, credible-commitment, antifragility, nassim-taleb, entrustability, agent-vs-tool, steady-state-survival-logic, modern-thinking-tools, wanweigang, 2026-09-20-soft-budget-constraint, 2026-09-20-scapegoat, 2026-09-20-slow-variables]
 evidence_tier: single
 confidence: low
 status: active
@@ -71,7 +71,25 @@ status: active
 - 与 [[agent-vs-tool]] 相接：本页给出「人 vs AI」的一个**非能力维度**的分界（谁能被伤害）。
 - 与 [[entrustability]] 相接：可托付性的一部分正来自「你跑不掉」。
 
-## 开放问题
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：本批 13 份 `sources/` 页的「回填清单」建议。行号为各素材文件的**绝对行号**。
+> **惯例**：回填只做正文互链，**不把互链素材加入 `sources`**。
+
+- **[[2026-09-20-soft-budget-constraint]]（076）：本页缺的一层「谁在花谁的钱」。** 076 行 154 给弗里德曼的
+  **「花钱四象限」**：「花自己的钱办自己的事，最在乎节省也最在乎效果；而**花别人的钱办别人的事，
+  则既不心疼也不讲效果，最浪费**」。**本页讲的是「谁承担后果」（可被伤害性），076 讲的是「谁在承担成本」** ——
+  两者是同一根轴的两个刻度：**不是自己的钱 + 不是自己的后果 = 双重无险可押。**
+- **[[2026-09-20-scapegoat]]（080）：「潜在条件 vs 显性失误」—— 本库判断。** 080 的核心区分是
+  **显性失误（看得见的错）与潜在条件（让错误成为可能的系统状态）**；
+  本页讲的「可被伤害性」正是**让人去盯潜在条件**的那种压力 —— 没有它，系统只会**在事后指认一个人**（080 的替罪羊机制）。
+  **本讲未提 Skin in the Game，本页与它的关联由本库建立，故不列入 `sources`。**
+- **[[2026-09-20-slow-variables]]（082）：结算层 —— 最后的承诺到底算不算数。** 082 行 90 把
+  「**结算层**」列为平台四层规则之一：「货币信用、财政信用、执法信用，**最后的承诺到底算不算数**」。
+  **这是本页「可被伤害性」的制度化版本** —— 本页讲个人（AI 交不出人质），082 讲整个系统
+  （谁在最后为承诺承担后果）。082 行 198 的判据句同向：「**二者的区别就在于，债主们是否相信这个政府会遵守财产和债务契约。**」
+
+## 待办 / 开放问题
 
 - [ ] 讲稿未署名塔勒布，「skin in the game」是 AI 段补的锚 —— 是否应改用中文标题（如「可被伤害性」）作为主标题？**本页已按此处理。**
 - [ ] 「AI 无险可押」是结构性的还是制度性的？讲稿按结构性论述，本库未核。

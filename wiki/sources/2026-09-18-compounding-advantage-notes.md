@@ -18,7 +18,7 @@ status: active
 > **一句话内容**：复利的秘密不是利率高，是**时间长、早开始、不下牌桌**；
 > 而资本不止是钱 —— 布迪厄的视角下有七种资本都值得积累。
 >
-> **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-compounding-advantage-notes.md`，`wc -l` = **491 行**）。
+> 素材文件（`raw/2026-09-18-compounding-advantage-notes.md`，`wc -l` = **491 行**）。
 > frontmatter 占 1–24 行，**正文自第 26 行起**。
 
 - **作者**：万维钢（讲稿）
@@ -40,7 +40,7 @@ status: active
    「在AI时代的当下，普通中年人如何借用AI这个杠杆……」）—— 按 [[modern-thinking-tools]]「不做什么」的既定处置：
    **只在分层表标明性质与篇幅，不单独建页、不进知识列表。**
 
-## 素材分层表（文件绝对行号）
+## 素材分层表
 
 | 段 | 行区间 | 行数 | 性质 | 内容 |
 |---|---|---|---|---|
@@ -137,11 +137,6 @@ status: active
    而该页正是讲性格技能 —— **本讲给了「尽责性为什么重要」的复利解释**（它是整套系统的操作系统）。
 
 ## 回填清单（**已于 2026-09-19 部分执行**）
-> **2026-09-19 第 4、5 批执行说明**：本批按北洛指示「两半一起做」。
-> - **「建议新建」**：经逐项核实，**绝大多数已被既有页实质承载**，**故本批未新建页面**。
-> - **「建议回填」**：本批**只做完目标页 ≥2 条的 12 个高频页**；**单条目标页留待下一轮**。
-> - **具名人物候选一律不单列**（本库硬约束：具名人物不单列实体页，除非缺口表点名）。
-
 
 - **回填 [[multiplicative-world]]**：补「谁在乘法世界」（讲稿行 72/84）+ 幸存者偏差解法（行 94）
 - **回填 [[compounding-knowledge]]**：加一节「与个人复利的区别」，引本页
@@ -174,11 +169,3 @@ status: active
   Granovetter, *AJS* 78(6) (1973)、Becker, *Human Capital* (1964)、Van Boven & Gilovich, *JPSP* 85(6) (2003)、
   Vanguard *How America Saves*、RTHK《穷富翁大作战》节目资料。
   **以上均未收录进 `raw/`**，故只在本页记录、不写入 `sources` 字段
-
-### 图片对照表
-
-| # | 原 file_token | 本地文件 | 字节 |
-|---|---|---|---|
-| 1 | `Sl7EbCva0ok7M3xzm7UcT3WmnX0` | `assets/2026-09-18-compounding-advantage-notes-img-01.png` | 262,705 |
-| 2 | `Z25LbWJ0wokn2YxjQa5cJ0LBn7f` | `assets/2026-09-18-compounding-advantage-notes-img-02.png` | 211,188 |
-| 3 | `Oj9ibgHPso6UYex0bZKcxhAinWK` | `assets/2026-09-18-compounding-advantage-notes-img-03.png` | 8,254,753 |

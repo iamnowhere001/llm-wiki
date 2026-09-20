@@ -96,7 +96,7 @@ status: active
 - 与 [[compounding-knowledge]] 同构：价值都来自**关系**而非节点本身。
 - 本库自身使用 `[[wikilink]]` 与 `related` 字段，可视为在私有域内实践双向链接 —— 见 [[three-layer-architecture]] 与 [[index-and-log]]。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] [[2026-09-18-berners-lee-link-topology]] 的确切日期未核实
 - [ ] WebMentions 的治理模型值得独立成页（需要专门素材）

@@ -65,16 +65,16 @@ status: active
 - [ ] 核对乔布斯 2005 年斯坦福演讲的原文，确认「退学是最好的决策之一」「被解雇是最幸运的事」「死亡是最棒的发明」三处的表述准确性
 - [ ] 判断作者身份与利益披露的处理方式是否与本库既有约定一致（对比 [[2026-09-18-karpathy-llm-wiki]] 的 `confidence` 处理）
 
-## 素材基本信息
-
-- **采集质量**：高（官方 API 直取 markdown，正文完整，文末署名保留）
-
 ## 相关页面
 
 - [[emotion-awareness]]
 - [[2026-09-18-emotion-awareness-notes]]
 - [[chaos-system-of-life]]
 - [[yjengo]]
+
+## 定级理由
+
+- **采集质量**：高（官方 API 直取 markdown，正文完整，文末署名保留）
 
 ## 来源
 

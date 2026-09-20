@@ -106,7 +106,7 @@ status: active
   这与本库其他地方记录的「**两变量真有关系**」的案例（如 [[goodharts-law]] 的指标被博弈）
   **表面相似、实质相反** —— 判据是「**关系是筛选造成的，还是行为造成的**」。**登记，不裁决。**
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **「Threshold Bias = Berkson's Paradox」能否核到规范来源？**
       本页判「归属不当、等价命名不可追溯」。若要追，需一份流行病学 / 因果推断文献里「门槛偏差」的确切出处。
@@ -121,7 +121,7 @@ status: active
 
 - [[2026-09-19-selection-bias-notes]]（`raw/` 527 行；讲稿段行 **35–193**（本页取 **141–167**），
   AI 段行 199–527（本页仅对照 **435–475**）；内含 2 张图（行 163 为伯克森悖论示意图）已落地 `raw/assets/`）
-  —— 行号坐标系为**文件绝对行号**，该页已逐条 `sed -n` 回文件核对；**本页未独立复核行号**。
+
 - 外部核查来源（**均未收录进 `raw/`**，故只在此记录、不写入 `sources` 字段）：
   Berkson, J. (1946), "Limitations of the Application of Fourfold Table Analysis to Hospital Data"；
   collider bias / endogenous selection bias 的现代因果推断文献。

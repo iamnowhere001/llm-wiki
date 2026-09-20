@@ -21,7 +21,7 @@ status: active
 - **作者**：Shane Parrish（沙恩·帕里什，原书作者）。**整理者与讲者均未署名。**
 - **链接**：https://my.feishu.cn/wiki/KPQCwX5Cai44KXkiPmrcjnV8nsg
 - **发表**：2023 年 10 月（*Clear Thinking: Turning Ordinary Moments into Extraordinary Results*，Portfolio / Penguin）
-- **素材路径**：`raw/2026-09-18-clear-thinking-notes.md`（1,404 行；`wc -l` 报 1,403，因末行无换行符 —— **本页全部行号均指文件绝对行号，可直接 `sed -n 'Np'` 核对**）
+- **素材路径**：`raw/2026-09-18-clear-thinking-notes.md`（1,404 行；`wc -l` 报 1,403，因末行无换行符 —— **行号可直接 `sed -n 'Np'` 核对**）
 
 ## 关键要点
 
@@ -35,7 +35,7 @@ status: active
 ## 素材分层表（本素材的证据结构）
 
 **这是本库第四份混层素材**，三段证据性质不同，单一 `confidence` 无法表达。
-**行区间为文件绝对行号**（`raw/` 的 `capture_note` 已声明坐标系；引用前请回文件核对）：
+**引用前请回文件核对**：
 
 | 段 | 行区间 | 内容 | 性质 |
 |---|---|---|---|
@@ -67,6 +67,8 @@ status: active
 > 因此本库**不把 A 段整体判为「AI 生成」** —— 只逐条标注已核实的缺陷。
 > （对照先例：[[2026-09-18-art-of-impossible-notes]] 的 A 段与
 > [[2026-09-18-hyperefficient-notes]] 的 A 段，两段都无此特征。）
+
+- **内嵌资源**：5 份，已下载至 `raw/assets/` ——
 
 ## 逐行核对结论：A 段的加法清单
 
@@ -132,7 +134,6 @@ status: active
 > 都只应写作「本素材未给出处」，不能写作「无出处」。**
 > （[[2026-09-18-art-of-impossible-notes]] 的成书 PDF 已在 `raw/assets/`，可回头核对；
 > [[2026-09-18-hyperefficient-notes]] 的原书未收录，暂时无解。）
-
 
 ## 本素材与 [[viktor-frankl]] 的关系：第三条独立证据
 
@@ -225,11 +226,6 @@ C 段在同一篇讲稿里同时说了两件事：
 - [ ] 芒格那句话（「如果你闯入一个新的领域……」）的原始出处 —— **本素材第二次给出转引，仍无出处**。应与 [[emotion-awareness]] 的同类待核项合并追踪
 - [ ] **「刺激与回应之间的空间」的归属链**是否值得单独归档为一页 `analyses/` 案例（本库第二次遇到同一处错误归因）
 
-## 素材基本信息
-
-- **内嵌资源**：5 份，已下载至 `raw/assets/` ——
-  **英文原版 PDF**（322 页）、决策过程四阶段图、可逆性-后果坐标图、决策时间图、巴菲特旅鼠名言图
-
 ## 相关页面
 
 - [[shane-parrish]]
@@ -242,6 +238,10 @@ C 段在同一篇讲稿里同时说了两件事：
 - [[thinking-vs-feeling]]
 - [[peak-performance]]
 - [[emotion-awareness]]
+
+## 归属判断
+
+  **英文原版 PDF**（322 页）、决策过程四阶段图、可逆性-后果坐标图、决策时间图、巴菲特旅鼠名言图
 
 ## 来源
 

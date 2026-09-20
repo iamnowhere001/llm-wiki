@@ -4,9 +4,9 @@ type: concept
 slug: self-determination-theory
 tags: [成长战略, 万维钢, 得到课程, 动机, 心理学, 自我决定理论]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-self-determination-theory-notes]
-related: [autonomy-support, flow-terminology, character-skills, deliberate-practice, agent-vs-tool, deci-and-ryan, implementation-intentions, woop, modern-thinking-tools, peak-performance, 2026-09-18-self-determination-theory-notes]
+related: [autonomy-support, flow-terminology, character-skills, deliberate-practice, agent-vs-tool, deci-and-ryan, implementation-intentions, woop, modern-thinking-tools, peak-performance, 2026-09-18-self-determination-theory-notes, 2026-09-20-incentive-compatibility, 2026-09-20-unintended-consequences]
 evidence_tier: single
 confidence: medium
 status: active
@@ -91,7 +91,26 @@ status: active
 - **[[2026-09-19-by-products]]（110 讲）**：补一处**对照（登记差异，不合并）** ——
   SDT 讲「满足自主 / 胜任 / 关联需求会带来内在动机」，110 讲讲的是「**有些状态逻辑上不可能被直接追求**」（行 64–66）。
   **两者不同型**：前者是需求满足的因果链，后者是**目标结构的逻辑不可能性**（见 [[essential-by-products]]）。
-## 开放问题
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：本批 13 份 `sources/` 页的「回填清单」建议。行号为各素材文件的**绝对行号**。
+> **惯例**：回填只做正文互链，**不把互链素材加入 `sources`**。
+
+- **[[2026-09-20-incentive-compatibility]]（072）：本课把本页当作「激励相容」的处方。** 072 行 164 明写：
+  「要点在于，这种**多维度、复杂的任务，最好是自我驱动的，讲究内在动机**。根据『自我决定理论』，
+  **一个激励相容的制度应该给人提供自由宽松的管理环境**。」
+  **这是本库第一次出现「SDT 被当成制度设计依据」的用法** —— 此前本页只在「个人动机」层面被引用。
+  配套的反面在同一段（072 行 162）：强激励单维指标 → 多任务委托代理问题 + 古德哈特定律
+  → 工作被异化。**正反两面合起来，是本页最完整的一条「制度含义」。**
+- **[[2026-09-20-unintended-consequences]]（081）：挤出效应的实证案例（本库判断）。**
+  081 讲的**幼儿园罚款实验**（对迟到接孩子的家长罚款，结果迟到**更多**）是**外在激励挤出内在动机**的经典落点 ——
+  与 010 讲本页的「自主感 / 胜任感 / 关系感」三需求被压制后动机枯萎同向。
+  **⚠️ 081 未提 SDT，属本库对读，故不列入 `sources`。**
+  同时 081 行 182–184 的判据句（「**你不是你的意图，你是你的后果**」）给本页补了**制度层的时间尺度**：
+  动机的挤出效果**不在意图里显现，只在后果里显现**。
+
+## 待办 / 开放问题
 
 - [ ] **Deci & Ryan 1985 / 2000 两条文献仍未收录** —— 本库只有讲稿的转述
 - [ ] 行 127「多巴胺系统更活跃」缺一手（自主动机 vs 受控动机的神经影像研究）

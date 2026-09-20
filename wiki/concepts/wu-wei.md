@@ -80,7 +80,7 @@ status: active
 - 与 [[rumination]] / [[stimulus-response-gap]] 相接：「减」与「忘」都可视为降低自我监控密度的手段。
 - 与 [[self-determination-theory]] 的关系本库未核（自主性与无为何干，素材未提）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 四家互斥，本库无判据选择 —— 是否按任务类型分流？素材未提供。
 - [ ] 「德」作为无为的后果，与 [[essential-by-products]] 的「声望长在别人脑子里」是同一条，本库未做贯通。

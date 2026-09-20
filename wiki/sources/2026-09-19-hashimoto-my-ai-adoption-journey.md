@@ -20,12 +20,12 @@ status: active
 - **发表**：2026-02-05
 - **素材路径**：`raw/2026-09-19-hashimoto-my-ai-adoption-journey.md`（291 行）
 
-> [!note] 行号坐标系
-> 本节所有行号均为**文件绝对行号**（`wc -l` = 291 的坐标系），已回原文逐条核对。
+> [!note] 行号核对
+> 本节行号已回原文逐条核对（`wc -l` = 291）。
 
 ## 关键要点
 
-1. **六步历程**（括号内为该文件绝对行号）：
+1. **六步历程**（括号内为该文件行号）：
    Step 1 Drop the Chatbot（57）→ Step 2 Reproduce Your Own Work（92）→ Step 3 End-of-Day Agents → Step 4 Outsource the Slam Dunks（169）→ **Step 5 Engineer the Harness（206）** → Step 6 Always Have an Agent Running。
 2. **命名现场，原文（行 214–215）**：
    > "I don't know if there is a broad industry-accepted term for this yet, but I've grown to calling this 'harness engineering.' It is the idea that anytime you find an agent makes a mistake, you take the time to engineer a solution such that the agent never makes that mistake again."
@@ -79,10 +79,6 @@ status: active
 - [ ] 抓取 Ghostty 的 `AGENTS.md`（GitHub 上，链接在原文行 223）—— **这是「第一种形式」唯一的实物证据**
 - [ ] 核对第 2 步的三条方法论与 [[traecode-pkm-article]] 缺口表里「从零跑通」的需求是否有可复用之处
 
-## 素材基本信息
-
-- **性质**：**一手**（作者自述）。文末脚注明确声明 **"I don't work for, invest in, or advise any AI companies"** —— 本库登记的**无利益关联**。
-
 ## 相关页面
 
 - [[harness]]
@@ -91,6 +87,10 @@ status: active
 - [[2026-09-19-trivedy-anatomy-of-agent-harness]]
 - [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]
 - [[2026-09-19-openai-harness-engineering-codex]]
+
+## 归属判断
+
+- **性质**：**一手**（作者自述）。文末脚注明确声明 **"I don't work for, invest in, or advise any AI companies"** —— 本库登记的**无利益关联**。
 
 ## 来源
 

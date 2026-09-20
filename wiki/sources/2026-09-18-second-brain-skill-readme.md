@@ -61,11 +61,6 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 - [ ] 查看 `skills/wiki/README.md` 与 `IDEA.md`，确认页面规范是否与本仓库的 `AGENTS.md` 有差异
 - [ ] 确认 OpenClaw 是什么（Web 端运行环境？）
 
-## 素材基本信息
-
-- **仓库创建**：2026-04-14 ｜ **最后推送**：2026-04-15
-- **采集时数据**：54 stars / 9 forks / Python / 默认分支 `main`
-
 ## 相关页面
 
 - [[second-brain-skill]]

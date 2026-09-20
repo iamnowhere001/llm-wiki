@@ -69,16 +69,16 @@ Bush 承认人类无法在速度与灵活性上比拟「心智沿着联想路径
 - [ ] 关于「Bush 是互联网奠基推动者之一」的说法来自 [[2026-09-18-appleton-bidirectional-links]]，属转引，未在本素材中直接出现
 - [ ] 1994 年电子版制作者 Denys Duchier 的校订说明保留了，但未核对其与 1945 年印刷版的差异
 
-## 素材基本信息
-
-- **实际抓取来源**：MIT STS.035 课程镜像 PDF（`raw/assets/1945-bush-as-we-may-think.pdf`）
-
 ## 相关页面
 
 - [[vannevar-bush]]
 - [[pkm-history]]
 - [[bidirectional-links]]
 - [[commonplace-book]]
+
+## 归属判断
+
+- **实际抓取来源**：MIT STS.035 课程镜像 PDF（`raw/assets/1945-bush-as-we-may-think.pdf`）
 
 ## 来源
 

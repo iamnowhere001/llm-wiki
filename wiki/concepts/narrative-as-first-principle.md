@@ -4,9 +4,9 @@ type: concept
 slug: narrative-as-first-principle
 tags: [世界观, 叙事, 哲学, 物理学, 隐喻]
 created: 2026-09-18
-updated: 2026-09-19
-sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
-related: [ruliad, narrative-power, narrative-identity, narrative-self-vs-bodily-self, critique-target-distortion, uncertainty-as-fuel, wishful-thinking-layers, types-of-uncertainty, wanweigang, 2026-09-18-narrative-first-principle, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-hard-constraints-notes, modern-thinking-tools, narrative-industrialization, meta-narrative]
+updated: 2026-09-20
+sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, 2026-09-20-exploration-and-generation]
+related: [ruliad, narrative-power, narrative-identity, narrative-self-vs-bodily-self, critique-target-distortion, uncertainty-as-fuel, wishful-thinking-layers, types-of-uncertainty, wanweigang, 2026-09-18-narrative-first-principle, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-hard-constraints-notes, modern-thinking-tools, narrative-industrialization, meta-narrative, exploration-and-generation, 2026-09-20-exploration-and-generation]
 evidence_tier: crossed
 confidence: low
 status: active
@@ -20,7 +20,7 @@ status: active
 > **本库对它的判断：这是一句有启发性的隐喻，不是一个物理主张。** 连素材作者自己在注释里都承认了这一点。
 
 > [!warning] 名义交叉，实质同源
-> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 本页有 3 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
 > 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
@@ -122,16 +122,27 @@ cluster decomposition）。素材用「后续讨论」这个中性措辞是准�
 - **[[2026-09-19-second-order-desire]]（109 讲）**：行 187「**宇宙的第一性原理是叙事，自由的第一性原理是跳出叙事**」——
   与本页的直接接口，建议登记为「叙事的**可跳出性**」这一新面向。
   **与本页原论的关系**：本页讲叙事是底层（第一性原理），109 讲补的是**底层也可以被站上去看**（否则自由无从谈起）。
-## 开放问题
+
+### 2026-09-20 追加：本课**尾声讲**的显式回扣（首尾闭合）
+
+- **[[2026-09-20-exploration-and-generation]]（尾声讲，讲次表未编号）行 207**：
+  「**这门课的第一讲就说『这个宇宙的第一性原理是叙事』，现在最后一讲，我想把一个终极叙事交到你手里：
+  你是一个探索和生发的人**」；行 209：「**意义提供叙事，叙事提供身份**。有这个叙事，你任何时候都知道自己是在干什么。」
+- **这是本课程首尾两讲的显式咬合** —— 第一讲提出命题，**最后一讲把它当作交付物交还读者**。
+  **本库此前没有登记过这条线索**（此前只有 109 讲的回扣，且 109 讲讲的是「可跳出」，不是「回扣」）。
+- **它改变了本页的用途定位**：本页此前只在**世界观层**起作用（见上「与其他页面的关系」）；
+  尾声讲把它接到了**身份层** —— 叙事不是用来解释世界的，是用来**回答「我在干什么」**的。
+  **这与本页原判断并不冲突**（本库认为它是隐喻不是物理主张），反而印证了那句判断：
+  **正因为它不是物理主张，它才正好能当叙事用。**
+- ⚠️ **不构成交叉验证**：尾声讲与 109 讲、第 1 讲**同属万维钢一人的转述**，按 [[schema]] §1.2 是「名义交叉，实质同源」。
+## 待办 / 开放问题
 
 - [ ] **这条论证是「人择原理」的一个科普版本吗？** 若是，它在哲学上其实有正统地位，
       只是被包装成了「第一性原理」。需要哲学侧材料判断。
 - [ ] Albert 与 Judes 的争论本库只有摘要层，未取回原文 —— 谁占上风不知道。
 - [ ] 素材说这是「六条世界观」之第一条，**其余五条未收录**，无法判断本条在其中的位置。
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

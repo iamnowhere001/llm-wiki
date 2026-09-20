@@ -92,7 +92,7 @@ status: active
 - 与 [[cybernetic-learning]] / [[feedback-loop]] 相接：「通过控制这一刻的输出，改变下一刻收到的输入」（行 195）**字面就是一个反馈回路**，本页是它在自我治理上的实例。
 - 区别于 [[emotion-regulation-toolkit]]：该页处理情绪，本页处理欲望；机制相似（命名即降权），对象不同。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 沃森的 regress objection 讲稿只引了一句，未给法兰克福学界的回应 —— 是否值得补一手？
 - [ ] 「自我塑造自由」与 [[narrative-identity]] 的关系未打通：布置环境是否等同于改写叙事？

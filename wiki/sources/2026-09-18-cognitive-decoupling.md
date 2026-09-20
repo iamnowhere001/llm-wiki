@@ -184,17 +184,16 @@ status: active
 - [ ] 核对「8 分钟的愤怒发作就能削弱血管扩张功能」的原始研究
 - [ ] 核对「成长型思维」的提出者（文中未点名，通行为 Carol Dweck）
 
-## 素材基本信息
-
-- **采集时状态**：revision 500
-- **采集质量**：高（官方 API 直取 markdown）；4 张配图未下载
-
 ## 相关页面
 
 - [[emotion-awareness]]（本项目入口）
 - [[cognitive-decoupling]]、[[cognitive-reappraisal]]、[[rumination]]
 - [[viktor-frankl]]、[[stimulus-response-gap]]
 - [[2026-09-18-emotion-awareness-notes]]
+
+## 定级理由
+
+- **采集质量**：高（官方 API 直取 markdown）；4 张配图未下载
 
 ## 来源
 

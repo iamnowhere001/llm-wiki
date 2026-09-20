@@ -4,10 +4,10 @@ type: concept
 slug: ruliad
 tags: [世界观, 物理学, 计算]
 created: 2026-09-18
-updated: 2026-09-19
-sources: [2026-09-18-narrative-first-principle]
-related: [narrative-as-first-principle, information-bottleneck, compression-as-intelligence, 2026-09-18-narrative-first-principle, modern-thinking-tools]
-evidence_tier: single
+updated: 2026-09-20
+sources: [2026-09-18-narrative-first-principle, 2026-09-20-exploration-and-generation]
+related: [narrative-as-first-principle, information-bottleneck, compression-as-intelligence, 2026-09-18-narrative-first-principle, modern-thinking-tools, 2026-09-20-exploration-and-generation, exploration-and-generation]
+evidence_tier: crossed
 confidence: low
 status: active
 ---
@@ -18,11 +18,20 @@ status: active
 > 中提出的概念：**所有可能规则被穷尽应用后得到的那个对象**，也就是**一切可能计算的纠缠极限**。
 > 我们这个宇宙，是它的一个切片。
 >
-> **本页 `low`：全库关于它只有一份通俗转述，一手未取回，内容未验证。**
+> **本页 `low` 的理由（2026-09-20 改写，更精确了，但结论没变）**：
+> 全库关于它**仍只有通俗转述**；**沃尔夫勒姆的一手原文仍未收进 `raw/`**。
+> 2026-09-20 的变化是：现在有了**一条可核的一手出处** —— [[2026-09-20-exploration-and-generation]]
+> 的注释 [3] 给出了 Wolfram 2026-02-04 的文章《What Ultimately Is There? Metaphysics and the Ruliad》
+> （**文章真实存在，标题与日期已核**）。**有出处 ≠ 已核内容**，故本页不升 `confidence`。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-narrative-first-principle]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
+> **关于下方脚本块的补充（自写，用 note 以免与脚本块同题重复）**：
+> 新增的第二份支撑素材 [[2026-09-20-exploration-and-generation]] **同样出自万维钢的转述**，
+> 因此本页从 `single` 变 `crossed` **只是字段的事实变化，不是证据变强了** ——
+> 两条支撑是同一转述者的两次转述。
+
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -81,16 +90,20 @@ Wolfram 侧脸 + 右侧橙色光点向外辐射，标注 **Branchial space**、*
 - **是 [[narrative-as-first-principle]] 的必要前提**（见上）。
 - 与 [[information-bottleneck]] 的并列**只是直觉上的，不是论证上的** —— 见边界最后一条。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 取回 Wolfram Physics Project 关于 Ruliad 的一手说明（本素材只转述了一句）
+- [x] ~~**「一手未取回」** —— **2026-09-20 部分解除**：已有一条**可核的一手出处**（Wolfram 2026-02-04，
+      《What Ultimately Is There? Metaphysics and the Ruliad》，见 [[2026-09-20-exploration-and-generation]] 注 [3]），
+      **文章真实存在**。**但原文仍未收进 `raw/`**，故本项**只划掉一半**：从「无出处」变成「有出处、未取原文」。
+      **下一步是按这条出处去取回原文**，而不是继续等人提供。
+- [ ] **注 [3] 那条线索还没用来核本页内容** —— 本页的「一切可能计算的纠缠极限」这一定义**仍只有转述**，
+      未与 Wolfram 原文逐句核对。按 [[schema]] §3.8，这属于 L1 全文校准的候选。
 - [ ] 那张未下载的图里 **Observer foliation** 是否是该框架原生术语？若是，
       [[narrative-as-first-principle]] 的「观察者一致性」论证可能不是素材原创
 - [ ] WPP 在物理学界的接受度如何？需要一份独立评价，而不是 Wolfram 自己的宣传材料
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

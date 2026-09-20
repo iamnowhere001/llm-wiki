@@ -4,9 +4,9 @@ type: concept
 slug: positional-goods
 tags: [万维钢, 得到课程, 鲍莫尔成本病, 稀缺, 经济学, 位置性商品, 奇点]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-scarcity-singularity]
-related: [baumols-cost-disease, william-baumol, value-incommensurability, arrows-impossibility-theorem, economic-rent, social-capital, structural-holes, entrustability, hard-constraints, marginal-analysis, jevons-paradox, optionality, modern-thinking-tools, wanweigang]
+related: [baumols-cost-disease, william-baumol, value-incommensurability, arrows-impossibility-theorem, economic-rent, social-capital, structural-holes, entrustability, hard-constraints, marginal-analysis, jevons-paradox, optionality, modern-thinking-tools, wanweigang, 2026-09-20-social-status]
 evidence_tier: single
 confidence: medium
 status: active
@@ -88,7 +88,22 @@ status: active
 - 与 [[social-capital]] 相接：中人制度是社会资本的制度化形态。
 - 与 [[marginal-analysis]] / [[jevons-paradox]] 的区别：边际与杰文斯讲**量的扩张**，本页讲**量的扩张无效**的那一类。
 
-## 开放问题
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-social-status]]（069 讲）的「回填清单」建议。行号为该素材文件的**绝对行号**。
+
+- **069 行 84 给了本页在社会评价维度的落点**：「**地位永远是相对于你周围的人的**，
+  你并不在乎不相干的人比你高还是比你低 —— **地位看的是相对位置，而不是绝对水平**。」
+  **这与本页「价值不来自它是什么，而来自它排第几」是同一个命题**，只是本页说的是**商品**，
+  069 说的是**人**。
+- **069 行 100 补上了本页缺的那一句「零和」**：「这真是人世间一个残酷的设定。
+  要知道**坐标之争必定是零和的**。科技再发展，社会再富裕，**全班排第一的那个位置上也只有一个人**。」
+  **本页原有只讲「位置有限」，069 补的是「为什么有限」—— 因为它是序数，不是基数。**
+- **是否合并待裁定**：069 的 sources 页已登记「`social-status` 同时是本页在社会评价维度的落点，
+  **是否合并待裁定**」。**本轮不合并**（两者一个是经济学概念、一个是社会心理学概念，出处不同），
+  **本页只对读，不并入**。
+
+## 待办 / 开放问题
 
 - [ ] 「三种位置」是讲稿自拟框架，无既有来源 —— 是否值得作为独立主张？
 - [ ] 「认证会被攻击」这条边界（AI 段自提）讲稿未处理，本库是否要单独登记为开放问题？**本页已登记。**

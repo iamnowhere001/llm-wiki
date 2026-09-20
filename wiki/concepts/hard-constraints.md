@@ -4,10 +4,10 @@ type: concept
 slug: hard-constraints
 tags: [世界观, 万维钢, 得到课程, 决策, 算账, 约束]
 created: 2026-09-18
-updated: 2026-09-19
-sources: [2026-09-18-hard-constraints-notes]
-related: [wishful-thinking-layers, intelligent-life-system, agent-vs-tool, steady-state-survival-logic, narrative-as-first-principle, multiplicative-world, 2026-09-18-hard-constraints-notes, modern-thinking-tools, charlie-munger]
-evidence_tier: single
+updated: 2026-09-20
+sources: [2026-09-18-hard-constraints-notes, 2026-09-20-exploration-and-generation]
+related: [wishful-thinking-layers, intelligent-life-system, agent-vs-tool, steady-state-survival-logic, narrative-as-first-principle, multiplicative-world, 2026-09-18-hard-constraints-notes, modern-thinking-tools, charlie-munger, exploration-and-generation, 2026-09-20-exploration-and-generation]
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -21,9 +21,9 @@ status: active
 > **一句话判据**（该讲原话，`raw/2026-09-18-hard-constraints-notes.md` 行 140）：
 > 「你总不能说加法运算是你的敌人。这就是硬约束：**不见得有人故意跟你作对，是世界本来就充满限制。**」
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-hard-constraints-notes]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 要点
 
@@ -161,7 +161,22 @@ status: active
   讲稿读作「硬约束淘汰掉不可持续的价值观后剩下的共识」。
 - **[[2026-09-19-pretraining-posttraining]]（117）**：一条**对照** —— 117 讲的「预训练决定上限 / 后训练决定下限」
   与本页「约束决定表现」同型：**上限是给定的，发挥是可训练的**。
-## 开放问题
+## 2026-09-20 回填（本课尾声讲：硬约束被抬到了本体论位置）
+
+> 来源 [[2026-09-20-exploration-and-generation]]（万维钢《现代思维工具课》**尾声讲**，讲次表未编号）。行号为该文件绝对行号。
+
+- **「宇宙没有奖励函数，只有硬约束」**（行 41–43）：它「不会因为你做对了什么就给你加分 —— 它只有一片片不能踩的悬崖」。
+  讲者认为这**恰恰是最好的设定**：若宇宙明码标价，所有人都会对那个东西古德哈特化，
+  「千军万马挤上同一条赛道，最后大家变成一个样，整个系统就变得脆弱」。**只画悬崖，不设奖励，世界才能多姿多彩地长久存在。**
+- **★ 本页最有分量的一次升级 —— 道德被算了账**（行 141）：
+  「**道德不是探索的税，道德是可能性这块公地的维护成本**」。
+  本页此前对道德的登记停留在「硬约束决定道德和伦理」（行 45）；**这一句给出了计价方式** ——
+  不是「你该不该交」，而是「**这块公地靠什么维持**」。
+- **作恶被定义成可能性的负账**（行 145）：制造大毁灭也是「新」，但它不可继承、消灭邻近可能，
+  「这是严重的作恶，因为它**关闭了别人本来可以拥有的未来**」，「在生发的账本上是负数」。
+  **注意这个定义的落点是可能性，不是痛苦或意图。**
+
+## 待办 / 开放问题
 
 - [ ] **四种硬约束的清单是完备的吗？** 素材说「**以我之见**，以下四种……是我们无论如何都无法逃避的」——
   **明确标了是个人主张，不是研究结论。** 本库不判完备性，但记下：这是一个**未经论证的枚举**
@@ -173,9 +188,7 @@ status: active
 - [ ] **DOGE 案例的时效性。** 素材写于 2026-03，引的是「截止 2025 年 10 月」的数据。
   若日后 DOGE 的最终账目公布，**本页的示范数字需要复核** —— 记在这里以免遗忘
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

@@ -59,7 +59,7 @@ status: active
 
 **对 [[llm-wiki-pattern]] 的意义**：他的折中方案 ——「单向数据模型 + 自动生成反向链接」—— 在 1999 年难以实施（需要全网协作或可信的后台进程）。**在 LLM 出现后它变得可行**：让 LLM 维护私有知识库里的 `related` 字段与反向链接，等价于他描述的「后台进程收集反向链接」，只是作用域从全网缩小到单库。见 [[bidirectional-links]]。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] 他的设计笔记**未标注确切日期**，「1999」来自二手引用，需向 W3C 或互联网档案馆核验
 - [ ] 笔记中提到若干关联设计（Building Back-links、Private overlaid web、Generic Links）未收录

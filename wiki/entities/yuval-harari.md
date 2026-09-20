@@ -86,7 +86,7 @@ status: active
 - [[narrative-economics]]（与席勒并列的叙事经济学来源）
 - [[narrative-identity]]（**注意：这一层不用他**）
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **取回《人类简史》一手** —— 本库引他 ≥10 处，**没有一条有页码**。
       这是本页 `medium` 而非 `high` 的唯一原因

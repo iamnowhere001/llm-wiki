@@ -27,8 +27,8 @@ status: active
 > **同类错误值得系统排查**：中文圈有把 `martinfowler.com` 上的文章一律归给 Fowler 的倾向。
 > 这条已记入本页「待办 / 开放问题」。
 
-> [!note] 行号坐标系
-> 本节所有行号均为**文件绝对行号**（`wc -l` = 241 的坐标系），已回原文逐条核对。
+> [!note] 行号核对
+> 本节行号已回原文逐条核对（`wc -l` = 241）。
 
 ## 关键要点
 
@@ -85,10 +85,6 @@ status: active
 - [ ] 核对文中 "Fitness Functions" 的出处（作者当作既有概念使用）
 - [ ] **系统排查本库是否还有其他「martinfowler.com → 误记为 Fowler」的署名错误**
 
-## 素材基本信息
-
-- **性质**：**一手**（作者本人署名文章）
-
 ## 相关页面
 
 - [[harness]]
@@ -97,6 +93,10 @@ status: active
 - [[2026-09-19-trivedy-anatomy-of-agent-harness]]
 - [[2026-09-19-hashimoto-my-ai-adoption-journey]]
 - [[2026-09-19-openai-harness-engineering-codex]]
+
+## 归属判断
+
+- **性质**：**一手**（作者本人署名文章）
 
 ## 来源
 

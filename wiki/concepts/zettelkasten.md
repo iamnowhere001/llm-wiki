@@ -114,7 +114,7 @@ This idea relates to the self-referential nature of social systems.
 - 与 [[compounding-knowledge]] 相接：本页的「临界质量」是那页「复利」的**启动门槛**。
 - 与 [[2026-09-18-writing-is-thinking]] 相接：一手原文的支点句「没有写作就无法思考」是该命题目前在本库能找到的最早一手出处（1981）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [x] ~~全部依赖一份二手文献~~ —— **2026-09-19 已解决**：一手文献 [[2026-09-19-luhmann-communicating-with-slip-boxes]] 已收录
 - [ ] **卡片数 / 两套盒子规模 / 70 本书，仍无一级来源** —— 一手文献不含任何数字，要核验须转向比勒费尔德档案研究（Johannes Schmidt 2016 那章本库未收录）
@@ -124,9 +124,7 @@ This idea relates to the self-referential nature of social systems.
 - [ ] 「连接优于分类」能否用本库自身验证？本库的 `related` 字段与目录分类是否冲突？
 - [ ] 一手文献的德文原刊未收录（本次核查用了外部 PDF，OCR 质量差）；其两个脚注含卢曼卡片盒的实例编号 `2113d26g104,1`
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

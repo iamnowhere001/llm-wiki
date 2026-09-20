@@ -36,7 +36,7 @@ status: active
 9. **出版物不是从卡片盒里复制出来的**（行 76，本页最需要被本库记住的一条）：「理论出版物**因此也不是**通过抄写卡片盒里为此已经放好的东西而产生的。与卡片盒的沟通**只在很高的概括层次上**才富有成果 —— 即建立『沟通之关系的诸关系』。而且它**只在评价的那一刻**才有生产力，因此**绑定在特定的时间上，且高度偶然**。」
 10. **偶然需要组织**（行 80–82）：用进化模型看，偶然扮演最重要的角色，**真正的问题因此变成「如何以足够提高的选中概率来生产偶然」**；突变是**复杂的、高度受调控的事件**。「秩序只从无序与秩序的结合中产生」；「**即便是随机建议的产生也需要组织**」。
 
-## 结构（文件绝对行号，`wc -l` = 87）
+## 结构（`wc -l` = 87）
 
 | 节 | 行区间 | 内容 |
 |---|---|---|
@@ -103,15 +103,6 @@ status: active
 - [ ] 本文提到的系统论背景（自创生、沟通理论）与本库 [[cybernetic-learning]] 的关系未展开
 - [ ] 比勒费尔德大学卢曼档案馆的数字化卡片盒值得独立成页
 
-## 素材基本信息
-
-- **英译**：Manfred Kuehn
-- **原刊**：Horst Baier / Hans Mathias Kepplinger / Kurt Reumann (Hg.), *Öffentliche Meinung und sozialer Wandel. Für Elisabeth Noelle-Neumann*, Opladen: Westdeutscher Verlag, 1981, S. 222–228
-  （书目依据：Niklas Luhmann-Archiv, Bielefeld，号 `luhmann_1981_AB46`；重印见 1992 年 *Universität als Milieu*，号 `luhmann_1992_AB08`）
-- **德文副题**：*Ein Erfahrungsbericht*（一份经验报告）
-- **性质**：✅ **一手文献**（作者自述）
-- **服务于**：[[llm-wiki-research]] 缺口表第 1 条「卢曼的一手文献缺失」
-
 ## 相关页面
 
 - [[zettelkasten]]
@@ -119,6 +110,19 @@ status: active
 - [[communication-partner]]
 - [[pkm-history]]
 - [[bidirectional-links]]
+
+## 归属判断
+
+- **英译**：Manfred Kuehn
+
+- **原刊**：Horst Baier / Hans Mathias Kepplinger / Kurt Reumann (Hg.), *Öffentliche Meinung und sozialer Wandel. Für Elisabeth Noelle-Neumann*, Opladen: Westdeutscher Verlag, 1981, S. 222–228
+  （书目依据：Niklas Luhmann-Archiv, Bielefeld，号 `luhmann_1981_AB46`；重印见 1992 年 *Universität als Milieu*，号 `luhmann_1992_AB08`）
+
+- **德文副题**：*Ein Erfahrungsbericht*（一份经验报告）
+
+- **性质**：✅ **一手文献**（作者自述）
+
+- **服务于**：[[llm-wiki-research]] 缺口表第 1 条「卢曼的一手文献缺失」
 
 ## 来源
 

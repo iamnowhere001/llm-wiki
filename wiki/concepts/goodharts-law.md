@@ -4,9 +4,9 @@ type: concept
 slug: goodharts-law
 tags: [万维钢, 得到课程, 古德哈特定律, 体制, 考核, 指标]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-game-selection-notes]
-related: [game-selection, agent-vs-tool, narrative-as-objective-function, steady-state-survival-logic, modern-thinking-tools]
+related: [game-selection, agent-vs-tool, narrative-as-objective-function, steady-state-survival-logic, modern-thinking-tools, 2026-09-20-market-for-lemons, 2026-09-20-unintended-consequences, 2026-09-20-soft-budget-constraint, third-object, 2026-09-20-incentive-compatibility, self-determination-theory, scapegoat-mechanism]
 evidence_tier: single
 confidence: high
 status: active
@@ -19,7 +19,6 @@ status: active
 > once pressure is placed upon it for control purposes」；通俗版由 Marilyn Strathern 普及。
 > 018 讲的用法：**体制内生存最大的伤害是把「指标（metrics）」当成「目的（purpose）」**（行 125）。
 
-**行号坐标系**：本页所有行号均为**文件绝对行号**（`wc -l` 坐标系，`raw/2026-09-18-game-selection-notes.md` 共 187 行，讲稿段行 33–177）。
 
 > [!warning] 孤证 —— 本页仅 1 份素材支撑
 > 支撑本页的只有 [[2026-09-18-game-selection-notes]]，尚未获得第二份独立来源的交叉验证。
@@ -133,7 +132,41 @@ status: active
   一旦可得，信号价值归零；与本页「指标一旦成为目标就失效」同源。
 - **[[2026-09-19-pretraining-posttraining]]（117）**：补**自我训练层的操作版** ——
   行 214「拿点赞、掌声、领导的夸奖做奖励，你练出来的是迎合评委的谄媚倾向」；配套实证是 Anthropic 2023 的 sycophancy 研究（行 88）。
-## 开放问题
+
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：本批 13 份 `sources/` 页的「回填清单」建议。行号为各素材文件的**绝对行号**。
+> **⚠️ 本批五条里有四条，其 sources 页明写「本讲未点古德哈特之名」** —— 那些属**本库对读**，
+> 按本库做法只在正文互链、**不加入 `sources`**，且**不得当作素材主张引用**。
+
+本批补的是**同一机制在四个不同领域的落点**，其中一条是本页此前没有的**极端案例**：
+
+- **⭐ [[2026-09-20-market-for-lemons]]（073）+ [[2026-09-20-unintended-consequences]]（081）：论文工厂 —— 本页最强的极端案例。**
+  两讲讲的是**同一件事的两层**：073 行 80 讲**学术市场被指标改造**（「政府不知道哪个研究做得好，
+  就只能看论文数量和影响因子。于是搞科研变成了发论文」；一项研究分析了截至 2022 年 6 月
+  **被认定来自论文工厂的 1,182 篇撤稿论文**）；073 行 82 讲它的**反噬**（「全体中国医生写的论文都被降级了信任度」）。
+  081 行 130 明写**回指 073**（「我们讲『柠檬市场』的时候说过的」），行 138 给出机制句：
+  「**系统本想选拔最卓越的医生。结果系统奖励的，却是伪装卓越的本事 —— 会拿手术刀的不如会拿课题的**」。
+  **这是「指标失效」从『数字不准』升级到『现实被改造』的一例**，比本页现有的分数 / 名次 / KPI 例子严重得多。
+  **⚠️ 两讲均未点古德哈特之名**（本库对读）。
+- **[[2026-09-20-soft-budget-constraint]]（076）：晋升锦标赛。** 076 行 126 给出**组织内部的传导链** ——
+  李宏彬与周黎安命名的「**晋升锦标赛（promotion tournament）**」：地方官员像运动员一样比赛 GDP 增长率，
+  谁的数字漂亮谁更可能升迁。**与本页 018 讲的「体制内打法」是同一机制，但 076 补上了它的组织层与激励层。**
+  **⚠️ 本讲未点古德哈特之名**（本库对读）。
+- **[[scapegoat-mechanism]]（080）：指标失效之后，系统怎么处理失效。** 080 行 184 是机制句：
+  「**人之所以走捷径，往往是因为系统在奖励走捷径**」。**本页讲「指标会失效」，080 讲失效之后的归因层** ——
+  系统不修指标，而是**找一个走捷径的人**，于是指标问题被读成人的问题。**两页互补，是本页缺的下半段。**
+- **[[third-object]]（084）：KPI 的两面。** 084 行 196：「**KPI 可以让目标可见，也可以让人为了指标牺牲真实价值**」——
+  这是本页最凝练的一句通俗表述；084 并把它放进**第三物**的框架：
+  **同一个东西可以是「大家围着它一起行动」，也可以变成「大家眼里只剩下它」。**
+  **⚠️ 084 未点古德哈特之名**（本库对读）。
+- **[[2026-09-20-incentive-compatibility]]（072）：一条指向「解药」的指针。** 072 行 162 **讲稿直接点名本页**
+  （「这里涉及到『多任务委托代理问题』和『古德哈特定律（Goodhart's Law）』，咱们后面再详细讲」）——
+  这是本批唯一一处**素材自己写出「古德哈特定律」这个名字**的地方。
+  072 行 164 随即给出**处方**：多维复杂任务「最好是自我驱动的，讲究内在动机」，
+  按「自我决定理论」，激励相容的制度应给人自由宽松的管理环境 —— **即 [[self-determination-theory]]。**
+
+## 待办 / 开放问题
 
 - [ ] **Goodhart 1975 的原文未收录 `raw/`** —— 现在只在本页记录出处
 - [ ] **是否与 Campbell's Law / Cobra effect 合并成「指标退化」一族？** 本库倾向**分列并互指**

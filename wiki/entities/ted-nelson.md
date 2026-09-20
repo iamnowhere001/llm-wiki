@@ -56,7 +56,7 @@ Appleton 给了一个重要的判断框架：**Xanadu 应当被理解为一种 p
 
 **对 [[llm-wiki-pattern]] 的意义**：Nelson 的 Xanadu 面临的核心难题 —— **谁维护这张网络、如何治理引用** —— 与 [[vannevar-bush]] 面对的是同一个问题。本库的主张是：这个问题在公开网络上无解（见 [[bidirectional-links]] 的治理分析），但在**私有知识库 + LLM 维护**的设定下可以绕过。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **「hypertext」的创造年份存在来源冲突**：本库采用 1965（见 [[2026-09-18-appleton-bidirectional-links]] 与检索结果），但另有来源称 1960 年代早期他已构思并使用该词。详见 [[pkm-history]] 的年份矛盾一节
 - [ ] Xanadu 的完整失败史（多次宣称即将完成）未收录

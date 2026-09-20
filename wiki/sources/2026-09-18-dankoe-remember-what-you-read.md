@@ -74,16 +74,16 @@ status: active
 - [ ] Naval 与 Devon Eriksen 的两段引文未找到原始出处，属于**二次转引**
 - [ ] MyMind 与 Eden 的能力描述需独立验证，不能采信厂商自述
 
-## 素材基本信息
-
-- **形式**：X 长文（Article），非推文 —— 推文本身只是一个指向文章的链接
-
 ## 相关页面
 
 - [[commonplace-book-vs-llm-wiki]]
 - [[cybernetic-learning]]
 - [[commonplace-book]]
 - [[2026-09-18-karpathy-llm-wiki]]
+
+## 归属判断
+
+- **形式**：X 长文（Article），非推文 —— 推文本身只是一个指向文章的链接
 
 ## 来源
 

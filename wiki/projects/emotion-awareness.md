@@ -84,7 +84,7 @@ status: active
 - **方法层**：[[emotion-regulation-toolkit]]、[[stoic-control-dichotomy]]、[[mental-strength]]（低置信度）、[[mental-strength-terminology]]（**2026-09-19 新增** —— 本项目多处用到「心力」一词，先划清它的三种用法与引用边界）
 - **哲学层**：[[chaos-system-of-life]]（来自 [[yjengo]]，本项目唯一的「拆信念」型页面）
 - **人物层**：[[wang-lu]]、[[marcus-aurelius]]、[[viktor-frankl]]、[[thomas-sowell]]、[[maurice-merleau-ponty]]、[[yjengo]]、[[keith-stanovich]]、[[lisa-feldman-barrett]]、[[james-gross]]、[[albert-ellis]]、[[stephen-covey]]、[[nolen-hoeksema]]、[[ed-watkins]]（**后两位 2026-09-18 新增**，随一手素材收录而建页）
-- **姊妹项目**：[[peak-performance]]（2026-09-18 立项，接管了本页移交的两条缺口。**两者在正念、具身认知、心流的神经化学上有实质重叠，而通用边界规则尚未定** —— 见 [[peak-performance]] 的「开放问题」）
+- **姊妹项目**：[[peak-performance]]（2026-09-18 立项，接管了本页移交的两条缺口。**两者在正念、具身认知、心流的神经化学上有实质重叠，而通用边界规则尚未定** —— 见 [[peak-performance]] 的「待办 / 开放问题」）
 
 > [!note] 与本库主线的接口
 > 本项目与既有的 PKM / LLM Wiki 主线**没有内容重叠**，但有一个结构同源的接口：
@@ -162,7 +162,7 @@ status: active
 - **不引用 AI 生成内容而不标注** —— 允许引用（2026-09-18 北洛裁定），但引用时必须写明其 AI 生成性质与 `confidence: low`
 - **不再单独追踪「反方素材」与「两条路径验证」两条缺口** —— 2026-09-18 移交 [[peak-performance]]。**这不是放弃**，是换一个项目记账（见缺口表下方警示块）
 
-## 开放问题
+## 待办 / 开放问题
 
 > ①②③④ 已由北洛回答（见「决策记录」）。以下为剩余的待办。
 

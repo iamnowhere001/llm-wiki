@@ -4,9 +4,9 @@ type: concept
 slug: situated-cognition
 tags: [知识管理, 认知科学, 具身认知, 环境]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-extended-mind-notes]
-related: [extended-mind, embodied-cognition, distributed-cognition, why-pkm-in-ai-era, llm-wiki-pattern, plain-text-and-git, commonplace-book, peak-performance]
+related: [extended-mind, embodied-cognition, distributed-cognition, why-pkm-in-ai-era, llm-wiki-pattern, plain-text-and-git, commonplace-book, peak-performance, 2026-09-20-legibility-and-metis, schema, legibility]
 evidence_tier: single
 confidence: low
 status: active
@@ -70,16 +70,28 @@ status: active
 - **与 [[plain-text-and-git]] 的关系**：纯文本与 Git 是让「空间索引」可被机器读取的前提。**素材没有涉及这一层**（它讲的是物理空间，不是文件系统）。
 - **与 [[commonplace-book]] 的接口**：「把资料铺满桌面」与「共同笔记簿」是同一个动作的两种介质。
 
-## 开放问题
+## 2026-09-20 回填（模块五 参与者 · 本批 13 份清单）
+
+> 来源：[[2026-09-20-legibility-and-metis]]（078 讲）的「回填清单」建议。行号为该素材文件的**绝对行号**。
+
+- **078 行 198 把本页的概念与「米提斯」显式接了起来**，且用的是**本页术语的正名**：
+  「米提斯的学习是一种『**情境学习（situated learning）**』，新人要通过『**合法边缘参与
+  （legitimate peripheral participation）**』进入实践共同体 —— 说白了就是得有师傅领你进圈子。」
+- **归属**：情境学习与合法边缘参与是 **Lave & Wenger** 的既有术语；078 讲只用了这两个词、
+  未给引注（按 [[schema]] §3.6 属**弱引注**），但**用法正确**。
+- **本页因此得到一条「反面」**：078 行 198 上一句说「**米提斯从来不是孤胆英雄的专利，
+  它常常长在一群人的共同记忆里**」—— **这正是本页「认知在情境中、在共同体中」的主张**，
+  而 **078 讲的「可读性」（国家把地方知识简化成可统计的格式）恰恰是它的反面**：
+  **把知识从情境里抽出来，代价就是米提斯被抹掉。** 见 [[legibility]]。
+
+## 待办 / 开放问题
 
 - [ ] **「可索引的乱」与「不可操作的乱」的分界线是什么？** 素材给了判据的方向但没给操作标准
 - [ ] 超大屏幕实验（「鲍尔」）的原始出处
 - [ ] 天花板高度 / 神经建筑学的证据状态 —— 素材提到的「神经建筑学」「间歇性合作」两个概念**库内均无专页**
 - [ ] 本页与 [[llm-wiki-pattern]] 的场景差异判断（单人短期 vs 长期共享）**是本库自造，需要材料验证**
 
-> [!note] 行号坐标系（2026-09-19 全库概念审查补记）
-> 本页行号为**文件绝对行号**（`wc -l` 坐标系，**含 frontmatter**），指向本页「来源」一节列出的素材。
-> **跨素材的行号不可混用** —— 每条行号只在其所属素材内有效；同一页引用多份素材时，行号须连同素材名一起读。
+
 
 ## 来源
 

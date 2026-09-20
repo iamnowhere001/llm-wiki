@@ -43,8 +43,8 @@ status: active
 
 ## 二、校准结果：四类，共 15 条
 
-校准对象是库内关于《稀缺》的**全部**断言。**行号一律为 `raw/2026-09-19-scarcity-book-en.md` 的
-文件绝对行号**（坐标系声明见 §四）；引用前请回 `raw/` 核对。
+校准对象是库内关于《稀缺》的**全部**断言。**行号一律指向 `raw/2026-09-19-scarcity-book-en.md`**
+（核对说明见 §四）；引用前请回 `raw/` 核对。
 
 ### A. 推翻（2 条）
 
@@ -190,8 +190,8 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 6. **Notes 段是宝藏** —— 行 6971–7770 逐章列出，含期刊卷期页码。**核引注从这里开始比从正文找快得多。**
    本库此前的 PDF 素材多缺这一段（上一份专著的注释段即缺失）。
 
-> [!note] 行号坐标系
-> 本页所有行号均为 **`raw/2026-09-19-scarcity-book-en.md` 的文件绝对行号**（`wc -l` 坐标系）。
+> [!note] 行号核对
+> 本页行号指向 `raw/2026-09-19-scarcity-book-en.md`（`wc -l` 计）。
 > 该文件 frontmatter 结束于第 **77** 行，正文自第 **78** 行起（**偏移 d = 78**）。
 > 全部行号已在**归一化 + 段落合并**后的文本中定位，**再回原文件逐行核对**。
 
@@ -229,7 +229,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 
 ## 2026-09-20 回填（模块八清单）
 
-> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号指向各素材文件。
 
 **与 [[2026-09-19-scarcity-singularity]] 的「同名异义」辨析（必读；来源：116 讲回填清单第 1 条，2026-09-20 执行）**
 
@@ -238,11 +238,6 @@ a nonprofit that designs behavioral economics solutions to social problems.」
   价值取决于**相对排序**而非绝对数量（见 [[positional-goods]]）。
 - **处置：两页不可互引、不可互证。** 它们只在中文译名上撞车（都叫「稀缺」），机制、来源、量纲全不同。
   **这是本库第一次出现「同一个词、两个义项、各有一页」** —— 不登记这一条，后来的读者会把它们合并。
-## 素材基本信息
-
-- **链接**：**无独立来源 URL** —— 2026-09-19 由北洛直接提供 PDF
-- **抓取**：pypdf 6.19.0 逐页提取（PDF 自带文本层，未做 OCR），每页 `[p.N]` 分隔
-
 ## 来源
 
 - `raw/2026-09-19-scarcity-book-en.md`（8,589 行；正文自第 78 行起）
