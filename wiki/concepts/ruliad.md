@@ -2,7 +2,7 @@
 title: Ruliad：一切可能计算的纠缠极限
 type: concept
 slug: ruliad
-tags: [物理学, 计算, 世界观, 未验证]
+tags: [世界观, 物理学, 计算]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle]

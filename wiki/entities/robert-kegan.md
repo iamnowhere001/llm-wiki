@@ -2,12 +2,12 @@
 title: 罗伯特·凯根（Robert Kegan）
 type: entity
 slug: robert-kegan
-tags: [人物, 心理学家, 心智发展, 元认知, 身份认同]
+tags: [人物, 元认知, 心理学家, 身份认同, 心智发展]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-identity-metacognition-notes]
+sources: [2026-09-18-identity-metacognition-notes, 2026-09-19-second-order-desire]
 related: [subject-object-shift, three-selves, narrative-identity, john-bowlby]
-evidence_tier: single
+evidence_tier: crossed
 confidence: medium
 status: active
 ---
@@ -22,9 +22,9 @@ status: active
 - **别名**：Robert Kegan（哈佛大学心理学家）
 - **外部链接**：无（本库未收录其著作）
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-identity-metacognition-notes]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
+> [!warning] 名义交叉，实质同源
+> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
+> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
 
 ## 是什么
 
@@ -62,6 +62,16 @@ status: active
 - [[three-selves]] —— 素材把他的机制接到该模型的「界面 / 内核」上
 - [[narrative-identity]] —— 与他的「衣服」隐喻形成张力
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-second-order-desire]]（109 讲）是第二份素材**：行 185 给出凯根式定义
+  ——「他给『成长』下的定义就是这一句话：**让曾经的主体，变成客体**」，
+  并点出「人的每一次成熟，都是一次『主体—客体转化（Subject–Object Shift）』」。
+- **接口意义**：本页此前只在模块一出现（016 讲）；109 讲把凯根接到**二阶意愿与元表征**这条线上，
+  于是凯根在本库的角色从「成人发展理论家」扩展到「**自由如何可能的机制提供者**」。
+- ⚠️ **同一来源族，只增厚、不上调 `confidence`。**
 ## 开放问题
 
 - [ ] **收录凯根的原著** —— 本库目前只有转述，6/58/35/1% 无一手支撑。

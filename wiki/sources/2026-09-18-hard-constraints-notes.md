@@ -2,7 +2,7 @@
 title: 约束：先尊重，再行动（万维钢《现代思维工具》「基本世界观」第 4 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-hard-constraints-notes
-tags: [世界观, 万维钢, 得到课程, 混层, AI生成, 硬约束, 算账, 引注核查, 基本信息世界观]
+tags: [世界观, 万维钢, 得到课程, 算账, 基本信息世界观]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hard-constraints-notes]

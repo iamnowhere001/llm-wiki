@@ -2,7 +2,7 @@
 title: TraeCode
 type: entity
 slug: traecode
-tags: [工具, IDE, AI]
+tags: [工具, AI, IDE]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum]

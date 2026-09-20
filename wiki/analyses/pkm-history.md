@@ -2,7 +2,7 @@
 title: 个人知识管理系统的历史与演进（1945–2026）
 type: analysis
 slug: pkm-history
-tags: [历史, 知识管理, 综述]
+tags: [知识管理, 历史, 综述]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-frand-hixon-pkm, 2026-09-18-luhmann-zettelkasten, 2026-09-19-luhmann-communicating-with-slip-boxes]

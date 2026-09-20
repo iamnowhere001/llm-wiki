@@ -2,7 +2,7 @@
 title: 无免费午餐定理（No Free Lunch）：任何有用之法都是有漏之法
 type: concept
 slug: no-free-lunch-theorem
-tags: [决策, 算法, 归纳偏置, 先验, 元规则, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 先验, 归纳偏置, 元规则, 算法]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-no-free-lunch-theorem-notes]

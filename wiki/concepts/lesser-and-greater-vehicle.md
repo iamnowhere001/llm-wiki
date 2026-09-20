@@ -2,7 +2,7 @@
 title: 小乘 / 大乘思维（改造自我 vs 改变环境）
 type: concept
 slug: lesser-and-greater-vehicle
-tags: [世界观, 大乘, 改变环境, 士, 万维钢, 得到课程, AI生成, 人机共创]
+tags: [世界观, 万维钢, 得到课程, 人机共创, 士, 大乘, 改变环境]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-modern-thinking-tools-prospectus]

@@ -2,7 +2,7 @@
 title: 约翰·斯韦勒（John Sweller）
 type: entity
 slug: john-sweller
-tags: [人物, 研究者, 教育心理学, 认知负荷]
+tags: [人物, 研究者, 认知负荷, 教育心理学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-load-theory]

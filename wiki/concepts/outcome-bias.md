@@ -2,7 +2,7 @@
 title: 结果偏误（Outcome Bias / Resulting）：用结果评价决策，是错的
 type: concept
 slug: outcome-bias
-tags: [决策, 行为经济学, 结果偏误, 安妮·杜克, 运气, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 行为经济学, 结果偏误, 运气, 安妮·杜克]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-probability-distribution-notes]

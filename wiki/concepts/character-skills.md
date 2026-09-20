@@ -2,7 +2,7 @@
 title: 品格技能：以价值观驾驭本能的能力
 type: concept
 slug: character-skills
-tags: [品格, 学习, 巅峰表现, 可塑性, 单来源]
+tags: [学习, 巅峰表现, 品格, 可塑性]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]

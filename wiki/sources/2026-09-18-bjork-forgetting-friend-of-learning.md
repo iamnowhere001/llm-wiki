@@ -2,7 +2,7 @@
 title: "Forgetting as a Friend of Learning（Bjork，2014）"
 type: source
 slug: 2026-09-18-bjork-forgetting-friend-of-learning
-tags: [学习, 遗忘, 记忆, 一手文献, 抽象, 归纳学习, 可取困难]
+tags: [学习, 记忆, 遗忘, 可取困难, 归纳学习, 抽象]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-bjork-forgetting-friend-of-learning]

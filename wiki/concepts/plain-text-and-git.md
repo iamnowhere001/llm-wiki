@@ -2,7 +2,7 @@
 title: 纯文本与 Git：知识库的基础设施
 type: concept
 slug: plain-text-and-git
-tags: [基础设施, 版本控制, 约定]
+tags: [约定, 基础设施, 版本控制]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

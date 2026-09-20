@@ -2,7 +2,7 @@
 title: 叙事工业化：AI 让叙事第一次达到工业规模
 type: concept
 slug: narrative-industrialization
-tags: [AI时代, 叙事, 竞争, 注意力, 低置信度]
+tags: [叙事, AI时代, 注意力, 竞争]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-self]

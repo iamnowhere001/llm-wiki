@@ -2,7 +2,7 @@
 title: 丽莎·费德曼·巴瑞特：情绪是被构建的
 type: entity
 slug: lisa-feldman-barrett
-tags: [人物, 神经科学, 情绪建构, 一手]
+tags: [人物, 神经科学, 情绪建构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling]

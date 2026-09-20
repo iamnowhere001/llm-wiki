@@ -2,7 +2,7 @@
 title: 艾米·埃德蒙森（Amy Edmondson）
 type: entity
 slug: amy-edmondson
-tags: [人物, 组织行为学, 心理安全, 哈佛商学院]
+tags: [人物, 心理安全, 哈佛商学院, 组织行为学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-sense-of-security-notes]
@@ -63,6 +63,14 @@ status: active
 - [[attachment-theory]] —— 讲稿用它从个人层面过渡到团队层面
 - [[autonomy-support]] —— 「支持性环境」这一族的另一支
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-self-constraint]]（111 讲）是第二份素材**：Detert & Edmondson 2011（*AMJ* 54(3):461–488）——
+  「Implicit Voice Theories: Taken-for-granted Rules of Self-Censorship at Work」，
+  四项研究、职场自我审查来自内化的潜规则（行 112）。**该文献此前首见于 [[2026-09-18-social-capital-structural-holes-notes]]。**
+- ⚠️ **同一来源族，只增厚、不上调。** 素材称「四项研究」，**项数未单独核（未验证）**。
 ## 开放问题
 
 - [ ] **收录 Edmondson (1999) 一手文献** —— 本库目前只有转述。

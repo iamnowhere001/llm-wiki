@@ -2,9 +2,9 @@
 title: 「心力」的三种用法与引用边界
 type: concept
 slug: mental-strength-terminology
-tags: [心力, 术语边界, 词义辨析, 证据分类, 概念辨析]
+tags: [心力, 术语边界, 概念辨析, 词义辨析]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-hard-constraints-notes, 2026-09-18-clear-thinking-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-identity-metacognition-notes, 2026-09-18-mental-strength]
 related: [mental-strength, flow-terminology, character-skills, internal-friction, emotion-awareness, peak-performance]
 evidence_tier: crossed
@@ -129,7 +129,11 @@ wiki 侧检索「心力」「心理资本」「韧性」「ego depletion」四�
 - [ ] **是否把谭嗣同《仁学》收为素材？** 它是目前唯一能为一处「心力」定义提供一手文本的来源（界说第一、二条）。**收录与否由北洛决定** —— 它由人类写入 `raw/`，LLM 不代收（待核：维基文库文本在《仁学》正文后半部分是否还有「心力」，本次检索因文本截断未覆盖）
 - [ ] 是否由北洛给一个**工作定义**（stipulative）—— 若给出，须标注「本库工作定义，非引用来源」，不可当事实引用
 - [ ] ego depletion 的重复危机综述 —— 它的当前状态与义项 ② 的「有限、可消耗」**直接相关**
-- [ ] 修 5 处悬空引用：`overview.md`、`decisions.md`、`projects/peak-performance.md`、`concepts/mental-strength.md`、`sources/2026-09-18-mental-strength.md` 都写着「`AGENTS.md` 第 4.1 节」，而当前 `AGENTS.md`（130 行）**已无 4.1 节**
+- [ ] **（2026-09-20 更正：本条原先的记法与数字都不准确）** 原写「修 5 处悬空引用」（指 `overview.md`、`decisions.md`、`projects/peak-performance.md`、`concepts/mental-strength.md`、`sources/2026-09-18-mental-strength.md`）。两点更正：
+  - **数字**：全库实际是 **86 个文件、160 处**（不含 `wiki/log.md` 里的 14 处 —— 那是 append-only，改不了也不该改）。原先只记了当时顺手看到的 5 处。
+  - **性质**：这**不是一批待修的断链**。[[decisions]] 的「旧 → 新章节对照」已裁定：「**历史文件里的旧编号不追改**……**旧编号用本表翻译**」，并特别警告旧 4.1 一节里同时装着 ingest 流程、抓取质量、利益披露、AI 生成判据与证据五类，翻译时**必须看上下文判断指的是哪一段，不能整批替换成同一个新编号**。
+  - **仍未裁定的边界（待北洛定）**：该裁定举的例子是 `log.md` 与 `raw/`；而 `concepts/`、`sources/`、`entities/` 下的**现行页**里同样有这 160 处，**裁定没说现行页算不算「历史文件」**。两种读法都讲得通：现行页是活文档，读者会照着点；但它也是历史记述，改了就丢了「当时依据哪一条」。
+  - **本轮的处置**：只修掉本页与 [[mental-strength]] 两页的引用（改指 [[schema]] §3.5 / §3.6），**其余 158 处不擅自动** —— 等北洛裁定边界后按裁定批量处理。
 - [ ] 义项 ② 的两位「作者」（两个 AI 段）是否值得各自记录？目前它们只在素材页的分层表里有编号（S 段 / I 段）
 
 > [!note] 检索方法上的一条提醒（2026-09-19）

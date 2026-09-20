@@ -2,7 +2,7 @@
 title: 商业杠杆（Business Leverage）
 type: concept
 slug: business-leverage
-tags: [商业杠杆, 规模化, 非竞争性, 边际成本, 固定成本, 罗默, 纳瓦尔, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 商业杠杆, 规模化, 边际成本, 非竞争性, 固定成本, 纳瓦尔, 罗默]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-business-leverage]

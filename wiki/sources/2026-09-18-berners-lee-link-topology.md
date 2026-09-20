@@ -2,7 +2,7 @@
 title: HyperText Design Issues — Topology（1999）— Tim Berners-Lee
 type: source
 slug: 2026-09-18-berners-lee-link-topology
-tags: [万维网, 超文本, 一手材料]
+tags: [万维网, 超文本]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-berners-lee-link-topology]

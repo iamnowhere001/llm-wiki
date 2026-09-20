@@ -2,7 +2,7 @@
 title: Eden（知识库与内容研究工具）
 type: entity
 slug: eden
-tags: [工具, 产品, 检索]
+tags: [工具, 检索, 产品]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dankoe-remember-what-you-read]

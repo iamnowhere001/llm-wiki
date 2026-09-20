@@ -2,7 +2,7 @@
 title: 巩固与睡眠：学习发生在学完之后
 type: concept
 slug: consolidation-and-sleep
-tags: [学习, 睡眠, 记忆, 神经科学]
+tags: [学习, 记忆, 神经科学, 睡眠]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes]

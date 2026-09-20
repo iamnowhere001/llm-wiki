@@ -2,7 +2,7 @@
 title: 一厢情愿的六层：小说里的许愿阶梯
 type: concept
 slug: wishful-thinking-layers
-tags: [叙事, 世界观, 分类框架, 万维钢, 得到课程]
+tags: [世界观, 万维钢, 得到课程, 叙事, 分类框架]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-hard-constraints-notes]

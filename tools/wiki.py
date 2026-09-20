@@ -25,6 +25,12 @@ import sys
 from collections import Counter, defaultdict
 from datetime import date
 
+# 标签准入规则（见 wiki/schema.md §1.7）。缺失时降级为「不检查标签」，不让工具链挂掉。
+try:
+    from tags_vocab import REMOVE
+except ImportError:  # pragma: no cover
+    REMOVE = frozenset()
+
 # ---------------------------------------------------------------- 常量
 
 PAGE_DIRS = {
@@ -502,6 +508,18 @@ def cmd_lint(root):
                                  % (p.relpath, declared, t, n))
     section("知识页缺少 evidence_tier", tier_missing)
     section("evidence_tier 与支撑素材不符", tier_mismatch)
+
+    # 标签准入 —— 规则见 wiki/schema.md §1.7，移除集见 tools/tags_vocab.py。
+    # 这条只拦一件事：**「这页自己是什么」不该做标签**（素材形态 / 核查状态 / 生成方式 / 抓取元数据）。
+    # 它**不**拦「主题词多而杂」—— 那是导航的自然结果，不是错误；也不再校验频次门槛。
+    if REMOVE:
+        bad_tags = []
+        for p in pages:
+            for t in p.tags:
+                if t in REMOVE:
+                    bad_tags.append("%s  标签「%s」属于移除集（素材形态 / 核查状态 / 生成方式 / 抓取元数据）"
+                                    % (p.relpath, t))
+        section("标签属于移除集", bad_tags)
 
     # ---- 项目层检查 ----
     projects = [p for p in pages if p.type == "project"]
@@ -1470,47 +1488,136 @@ body{
 #app{display:flex;height:100vh;overflow:hidden}
 
 /* ---------- sidebar ---------- */
+/* 左侧栏的横向基准线：组头文字与条目文字都落在 36px 处。
+   组头 padding-left 20 + caret 9 + gap 7 = 36；
+   条目 nav padding 10 + 左边框 2 + padding 10 + dot 6 + gap 8 = 36。 */
 #sidebar{
-  width:290px;flex:0 0 290px;background:var(--panel);border-right:1px solid var(--line);
+  width:296px;flex:0 0 296px;background:var(--panel);border-right:1px solid var(--line);
   display:flex;flex-direction:column;overflow:hidden;
 }
-.brand{padding:18px 20px 12px;border-bottom:1px solid var(--line-soft)}
+.brand{padding:17px 20px 11px;border-bottom:1px solid var(--line-soft)}
 .brand h1{margin:0;font-size:15px;letter-spacing:.2px;font-weight:650}
 .brand .sub{font-size:11.5px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
-.searchwrap{padding:12px 16px 10px}
+.searchwrap{position:relative;padding:11px 16px 9px}
 #search{
-  width:100%;padding:8px 11px;border:1px solid var(--line);border-radius:8px;
+  width:100%;padding:8px 30px 8px 11px;border:1px solid var(--line);border-radius:8px;
   background:var(--bg);font-size:13px;color:var(--ink);outline:none;font-family:inherit;
+  transition:border-color .14s,box-shadow .14s,background .14s;
 }
-#search:focus{border-color:var(--accent);background:#fff}
-#nav{flex:1;overflow-y:auto;padding:4px 10px 24px}
-.grp{margin-bottom:14px}
-.grp h3{
-  margin:0;padding:6px 10px;font-size:11px;font-weight:650;letter-spacing:.9px;
-  color:var(--muted);text-transform:uppercase;display:flex;justify-content:space-between;
+#search:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-soft)}
+#search::placeholder{color:#a8a5a0}
+#searchclear{
+  position:absolute;right:24px;top:calc(50% - 1px);transform:translateY(-50%);
+  width:18px;height:18px;padding:0;border:0;border-radius:50%;
+  background:var(--line-soft);color:var(--muted);cursor:pointer;display:none;
+  font-family:inherit;font-size:11px;line-height:1;
 }
-.grp h3 span{font-weight:400;font-variant-numeric:tabular-nums}
+#searchclear.on{display:block}
+#searchclear:hover{background:var(--line);color:var(--ink)}
+.navtools{display:flex;align-items:center;gap:2px;padding:0 16px 8px}
+.navtools .lbl{font-size:10.5px;font-weight:650;letter-spacing:1.1px;color:#a8a5a0}
+.navtools .sp{flex:1}
+.navtools button{
+  border:0;background:transparent;font:inherit;font-size:11.5px;color:var(--muted);
+  cursor:pointer;padding:3px 7px;border-radius:6px;transition:background .12s,color .12s;
+}
+.navtools button:hover{background:var(--line-soft);color:var(--accent)}
+#nav{flex:1;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:0 10px 32px}
 .nav-item{
-  display:block;padding:5px 10px;border-radius:6px;cursor:pointer;font-size:13.2px;
-  color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  border-left:2px solid transparent;
+  display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;cursor:pointer;
+  font-size:13.2px;line-height:1.45;color:var(--ink);text-decoration:none;
+  overflow:hidden;border-left:2px solid transparent;
+  transition:background .12s,color .12s;
 }
 .nav-item:hover{background:var(--line-soft)}
 .nav-item.active{background:var(--accent-soft);border-left-color:var(--accent);font-weight:600;color:var(--accent)}
-.nav-item .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:8px;vertical-align:1px}
+.nav-item:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.nav-item .dot{flex:0 0 6px;width:6px;height:6px;border-radius:50%}
+.nav-item .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .res-count{font-size:11.5px;color:var(--muted);padding:4px 12px 8px}
-.nav-item.res{white-space:normal;line-height:1.45;padding:6px 10px}
-.nav-item.res .r-title{display:block;font-size:13.2px}
+/* 搜索结果：dot 与标题首行基线对齐，摘要/元信息缩进到标题列。
+   旧版 dot 是 inline-block、标题是 block，dot 会被挤成单独一行。 */
+.nav-item.res{
+  display:grid;grid-template-columns:6px 1fr;column-gap:8px;align-items:start;
+  white-space:normal;padding:7px 10px;
+}
+.nav-item.res .dot{grid-row:1 / span 3;margin-top:7px}
+.nav-item.res .r-title{grid-column:2;font-size:13.2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .nav-item.res .r-snip{
-  display:block;font-size:11.8px;color:var(--muted);margin:2px 0 0 18px;line-height:1.5;
+  grid-column:2;font-size:11.8px;color:var(--muted);line-height:1.5;
   max-height:3em;overflow:hidden;
 }
-.nav-item.res .r-meta{display:block;font-size:11px;color:var(--muted);margin:3px 0 0 18px;font-variant-numeric:tabular-nums}
+.nav-item.res .r-meta{grid-column:2;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 .nav-item.res mark,.nav-item.res.active mark{background:#fde68a;color:inherit;border-radius:2px;padding:0 1px}
+/* 必须在 .nav-item.res 之后：隐藏规则与 display:flex/grid 同级，靠顺序决胜 */
+.nav-item[hidden]{display:none}
 .res-more{
   display:block;width:100%;text-align:left;border:0;background:transparent;font:inherit;
   font-size:12px;color:var(--accent);cursor:pointer;padding:6px 12px;
 }
+
+/* ---------- 一级分组（侧栏不再有二级） ---------- */
+/* 只有 6 个类型组，组内平铺。此前按 tag 切的二级分类已删除 —— 一页平均 5.6 个 tag，
+   强行互斥归类必然错配，分类本身比不分类更难用。
+   替代方案是「组内筛选框」（组大到 20 页以上才出现）：收敛交给用户输入，不交给猜测。
+   组头 sticky：长列表滚到哪儿都知道自己在哪个类型里。
+   展开状态写 localStorage（file:// 下不可用时静默降级为「本次会话有效」）。 */
+.grp{margin-bottom:2px}
+.grp + .grp{border-top:1px solid var(--line-soft)}
+.grp h3{
+  height:30px;margin:0 -10px;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:11px;font-weight:650;letter-spacing:.5px;color:var(--muted);
+  position:sticky;top:0;z-index:2;cursor:pointer;user-select:none;
+  background:var(--panel);   /* 必须不透明：渐变会让下方条目透出来，sticky 时糊成一片 */
+  transition:color .12s,background .12s;
+}
+.grp h3:hover{color:var(--ink);background:var(--line-soft)}
+.grp h3 .gl{display:flex;align-items:center;min-width:0}
+.grp h3 .caret{
+  flex:0 0 9px;width:9px;margin-right:7px;color:#a5a29b;
+  transition:transform .16s ease;
+}
+.grp.collapsed h3 .caret{transform:rotate(-90deg)}
+.grp h3 .gtxt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grp h3 .n{
+  flex:0 0 auto;font-size:10.5px;font-weight:500;letter-spacing:0;color:#a8a5a0;
+  background:var(--line-soft);border-radius:20px;padding:1px 7px;font-variant-numeric:tabular-nums;
+}
+.grp.collapsed .grpbody{display:none}
+.grpfind{position:sticky;top:30px;z-index:1;padding:6px 0;background:var(--panel)}
+.gfbox{position:relative;display:block}
+.grpfind input{
+  width:100%;padding:5px 56px 5px 10px;border:1px solid var(--line);border-radius:6px;
+  background:var(--bg);font-family:inherit;font-size:12px;color:var(--ink);outline:none;
+  transition:border-color .14s,background .14s;
+}
+.grpfind input:focus{border-color:var(--accent);background:#fff}
+.grpfind input::placeholder{color:#a8a5a0}
+/* 命中数放在输入框内侧右端：筛选时组头可能已经 sticky 出界，只有这里能告诉你收窄到几条 */
+.gfbox.on input{background:var(--accent-soft);border-color:#bcd9d4}
+.fcount{
+  position:absolute;right:9px;top:50%;transform:translateY(-50%);
+  font-size:10.5px;color:var(--accent);font-variant-numeric:tabular-nums;pointer-events:none;
+}
+.fcount[hidden]{display:none}
+.grpempty{padding:6px 10px 12px;font-size:12px;color:var(--muted)}
+.grpempty[hidden]{display:none}
+.res-tip{font-size:11.5px;color:#a8781f;background:#fdf6e6;border:1px solid #f2e3bd;
+  border-radius:6px;padding:6px 9px;margin:2px 10px 8px;line-height:1.5}
+/* ---------- TOC ---------- */
+#toc{
+  display:block;position:fixed;top:92px;right:16px;width:190px;max-height:calc(100vh - 140px);
+  overflow-y:auto;font-size:12px;line-height:1.65;padding-left:2px;
+}
+#toc[hidden]{display:none}
+#toc a{
+  display:block;padding:2px 8px;color:var(--muted);text-decoration:none;
+  border-left:2px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+#toc a:hover{color:var(--accent)}
+#toc a.on{color:var(--accent);border-left-color:var(--accent);font-weight:600}
+#toc a.lv3{padding-left:20px;font-size:11.3px}
 
 /* ---------- main ---------- */
 #main{flex:1;display:flex;flex-direction:column;overflow:hidden}
@@ -1590,6 +1697,26 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
 ::-webkit-scrollbar-thumb{background:#dcd9d3;border-radius:5px}
 ::-webkit-scrollbar-thumb:hover{background:#c6c2ba}
 ::-webkit-scrollbar-track{background:transparent}
+
+/* ---------- 窄屏：侧栏改抽屉 ---------- */
+#burger{
+  display:none;border:0;background:transparent;font:inherit;font-size:15px;line-height:1;
+  color:var(--muted);cursor:pointer;padding:6px 9px;border-radius:7px;margin-right:2px;
+}
+#burger:hover{background:var(--line-soft)}
+#mask{display:none;position:fixed;inset:0;background:rgba(0,0,0,.26);z-index:8}
+#mask.on{display:block}
+@media (max-width:1000px){
+  #sidebar{
+    position:fixed;z-index:9;left:0;top:0;height:100vh;
+    transform:translateX(-100%);transition:transform .18s ease;box-shadow:0 0 26px rgba(0,0,0,.14);
+  }
+  #sidebar.open{transform:translateX(0)}
+  #burger{display:inline-block}
+  #toc{display:none}
+  #wrap{padding:0 20px}
+  #backlinks{padding:20px 20px 0}
+}
 </style>
 </head>
 <body>
@@ -1599,10 +1726,20 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
       <h1>__SITE_TITLE__</h1>
       <div class="sub">__SITE_SUB__</div>
     </div>
-    <div class="searchwrap"><input id="search" placeholder="搜索页面…（多词用空格分隔，按 / 聚焦）" autocomplete="off"></div>    <nav id="nav"></nav>
+    <div class="searchwrap">
+      <input id="search" placeholder="搜索页面…（空格分词，按 / 聚焦）" autocomplete="off">
+      <button id="searchclear" type="button" title="清空搜索">✕</button>
+    </div>
+    <div class="navtools">
+      <span class="lbl">目录</span><span class="sp"></span>
+      <button id="expandall" type="button">展开全部</button>
+      <button id="collapseall" type="button">折叠全部</button>
+    </div>
+    <nav id="nav"></nav>
   </aside>
   <main id="main">
     <div id="tabs">
+      <button id="burger" title="目录">☰</button>
       <button data-view="browse" class="active">浏览</button>
       <button data-view="graph">图谱</button>
       <span class="spacer"></span>
@@ -1619,6 +1756,8 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
     </div>
   </main>
 </div>
+<div id="mask"></div>
+<nav id="toc"></nav>
 <script>
 var DATA = __WIKI_DATA__;
 var TYPECOLOR = {project:"#7c3aed",source:"#0f766e",entity:"#b45309",concept:"#4338ca",analysis:"#be123c",meta:"#6b7280"};
@@ -1740,26 +1879,112 @@ function render(src){
 /* ---------------- nav ---------------- */
 var ORDER = ["project","meta","source","entity","concept","analysis"];
 var nav = document.getElementById("nav");
+var COLLAPSE_MIN = 8;    /* 一级组超过这个页数默认折叠 —— 让 6 个组头一屏看全 */
+var FIND_MIN = 20;       /* 组内页数达到这个量级才挂筛选框，小复组不必多一层控件 */
+var LS_KEY = "llmwiki.navstate";
+
+function loadState(){ try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}") || {}; } catch(e){ return {}; } }
+function saveState(){
+  try {
+    var s = {}, els = nav.querySelectorAll("[data-key]");
+    for (var i = 0; i < els.length; i++) s[els[i].dataset.key] = els[i].classList.contains("collapsed");
+    localStorage.setItem(LS_KEY, JSON.stringify(s));
+  } catch(e){}
+}
+
+/* 组内筛选。二级分类按 tag 切过一版，结论是不可用：一页平均 5.6 个 tag，互斥归类必然错配，
+   用户拿到的是「猜错的分组 + 折叠状态」两层额外成本。改成让用户自己输入关键词收敛。
+   匹配面 = 标题 + slug + tags，比只匹配标题宽容一档，且不隐藏「为什么它在这儿」。 */
+function filterGroup(g, body, q){
+  q = (q || "").trim().toLowerCase();
+  var links = body.querySelectorAll(".nav-item"), hit = 0;
+  for (var i = 0; i < links.length; i++){
+    var p = BYSLUG[links[i].dataset.slug];
+    var hay = p ? (p.title + " " + p.slug + " " + (p.tags || []).join(" ")).toLowerCase() : "";
+    var ok = !q || hay.indexOf(q) >= 0;
+    links[i].hidden = !ok;
+    if (ok) hit++;
+  }
+  body.querySelector(".grpempty").hidden = hit > 0;
+  var box = body.querySelector(".gfbox"), n = box.querySelector(".fcount");
+  box.classList.toggle("on", !!q);
+  n.textContent = hit + "/" + links.length;
+  n.hidden = !q;
+}
+
+function groupOf(el){ return el.closest ? el.closest(".grp") : null; }
+
+function setAllGroups(collapsed){
+  [].forEach.call(nav.querySelectorAll(".grp[data-key]"), function(g){
+    g.classList.toggle("collapsed", collapsed);
+  });
+  saveState();
+}
+
+function mkLink(p){
+  var a = document.createElement("a");
+  a.className = "nav-item"; a.href = "#" + p.slug; a.dataset.slug = p.slug;
+  a.title = p.title;
+  /* 每个条目都带类型点（含 meta）—— 组内没有二级标题，颜色点是唯一的类型提示；
+     缺了它，系统组的条目会比别的组整体左移 14px。 */
+  a.innerHTML = '<i class="dot" style="background:' + (TYPECOLOR[p.type] || "#999") + '"></i>' +
+                '<span class="t">' + esc(p.title) + '</span>';
+  return a;
+}
 
 function buildNav(){
+  var st = loadState();
   nav.innerHTML = "";
   ORDER.forEach(function(t){
     var items = PAGES.filter(function(p){ return p.type === t; });
     if (!items.length) return;
-    var g = document.createElement("div"); g.className = "grp";
-    g.innerHTML = "<h3>"+(TYPELABEL[t]||t)+"<span>"+items.length+"</span></h3>";
-    items.forEach(function(p){
-      var a = document.createElement("a");
-      a.className = "nav-item"; a.href = "#"+p.slug; a.dataset.slug = p.slug;
-      a.title = p.title;
-      a.innerHTML = (t==="meta"?"":'<i class="dot" style="background:'+TYPECOLOR[t]+'"></i>')+
-                    esc(p.title);
-      a.addEventListener("click", function(e){ e.preventDefault(); go(p.slug); });
-      g.appendChild(a);
-    });
+    var key = "t:" + t;
+    var g = document.createElement("div"); g.className = "grp"; g.dataset.key = key;
+    var collapsed = (st[key] === undefined) ? (items.length > COLLAPSE_MIN) : !!st[key];
+    if (collapsed) g.classList.add("collapsed");
+
+    var h = document.createElement("h3");
+    h.innerHTML = '<span class="gl"><span class="caret">▾</span>' +
+                  '<span class="gtxt">' + esc(TYPELABEL[t] || t) + '</span></span>' +
+                  '<span class="n">' + items.length + '</span>';
+    g.appendChild(h);
+
+    var body = document.createElement("div"); body.className = "grpbody";
+    if (items.length >= FIND_MIN){
+      var fi = document.createElement("input");
+      fi.type = "text"; fi.autocomplete = "off";
+      fi.placeholder = "在「" + (TYPELABEL[t] || t) + "」内筛选…";
+      fi.addEventListener("input", function(){ filterGroup(g, body, fi.value); });
+      var fc = document.createElement("span"); fc.className = "fcount"; fc.hidden = true;
+      var box = document.createElement("div"); box.className = "gfbox";
+      box.appendChild(fi); box.appendChild(fc);
+      var fw = document.createElement("div"); fw.className = "grpfind";
+      fw.appendChild(box); body.appendChild(fw);
+    }
+    var list = document.createElement("div"); list.className = "grplist";
+    items.forEach(function(p){ list.appendChild(mkLink(p)); });
+    body.appendChild(list);
+    var emp = document.createElement("div");
+    emp.className = "grpempty"; emp.textContent = "没有匹配的页面"; emp.hidden = true;
+    body.appendChild(emp);
+
+    g.appendChild(body);
     nav.appendChild(g);
   });
 }
+
+/* 事件委托：384 个条目各挂一个 listener 是浪费，也拖慢重建。
+   h3 只在一级分组上生效（搜索结果那块 h3 没有 data-key，自然不响应折叠）。 */
+nav.addEventListener("click", function(e){
+  var h = e.target.closest ? e.target.closest("h3") : null;
+  if (h){
+    var box = h.parentNode;
+    if (box.dataset.key){ box.classList.toggle("collapsed"); saveState(); }
+    return;
+  }
+  var a = e.target.closest ? e.target.closest(".nav-item") : null;
+  if (a && a.dataset.slug){ e.preventDefault(); go(a.dataset.slug); closeDrawer(); }
+});
 
 function markActive(slug){
   [].forEach.call(nav.querySelectorAll(".nav-item"), function(el){
@@ -1767,10 +1992,64 @@ function markActive(slug){
   });
 }
 
+/* 从搜索结果或反向链接跳进来时，目标可能躺在折叠组里（或被组内筛选挡住）—— 先把它变可见 */
+function revealActive(slug){
+  var a = nav.querySelector('.nav-item[data-slug="' + slug + '"]');
+  if (!a) return;
+  var g = a.closest(".grp");
+  if (!g) return;
+  if (a.hidden){
+    var fi = g.querySelector(".grpfind input");
+    if (fi){ fi.value = ""; filterGroup(g, g.querySelector(".grpbody"), ""); }
+  }
+  if (g.classList.contains("collapsed")){ g.classList.remove("collapsed"); saveState(); }
+  try { a.scrollIntoView({ block: "nearest" }); } catch(e){}
+}
+
 /* ---------------- page ---------------- */
 var pageEl = document.getElementById("page");
 var blEl = document.getElementById("backlinks");
 var tabmeta = document.getElementById("tabmeta");
+var vb = document.getElementById("view-browse");
+
+/* ---------------- TOC ---------------- */
+/* 长页（本库最长 46KB）没有目录等于没有地图。标题少于 3 个时不显示，避免噪音。 */
+var tocEl = document.getElementById("toc");
+var tocHs = [], tocRaf = 0;
+
+function buildToc(root){
+  tocHs = [].slice.call(root.querySelectorAll("h2,h3"));
+  tocEl.hidden = tocHs.length < 3;          /* 少于 3 个标题的页不值得挂目录 */
+  if (tocHs.length < 3){ tocEl.innerHTML = ""; return; }
+  tocHs.forEach(function(h, i){ if (!h.id) h.id = "sec-" + i; });
+  tocEl.innerHTML = tocHs.map(function(h, i){
+    return '<a class="' + (h.tagName === "H3" ? "lv3" : "") + '" href="#" data-i="' + i + '">' +
+           esc(h.textContent) + '</a>';
+  }).join("");
+  [].forEach.call(tocEl.querySelectorAll("a"), function(a){
+    a.addEventListener("click", function(e){
+      e.preventDefault();
+      var h = tocHs[+a.dataset.i];
+      if (h) vb.scrollTo({ top: h.offsetTop - 18, behavior: "smooth" });
+    });
+  });
+  updateToc();
+}
+
+function updateToc(){
+  if (!tocHs.length) return;
+  var cur = -1;
+  for (var i = 0; i < tocHs.length; i++){
+    if (tocHs[i].getBoundingClientRect().top <= 110) cur = i; else break;
+  }
+  [].forEach.call(tocEl.querySelectorAll("a"), function(a, i){
+    a.classList.toggle("on", i === cur);
+  });
+}
+vb.addEventListener("scroll", function(){
+  if (tocRaf) return;
+  tocRaf = requestAnimationFrame(function(){ tocRaf = 0; updateToc(); });
+});
 
 function go(slug){
   var p = BYSLUG[slug];
@@ -1805,29 +2084,21 @@ function go(slug){
   }
 
   tabmeta.textContent = p.relpath;
-  markActive(slug);
-  document.getElementById("view-browse").scrollTop = 0;
+  markActive(slug); revealActive(slug);
+  vb.scrollTop = 0;
+  buildToc(pageEl);
   document.title = p.title + " · " + DATA.title;
 }
 
-/* ---------------- search (BM25) ---------------- */
-/* 打分与 `tools/wiki.py search` 同源：中文二字组 + 英文词，BM25 排序。
-   站点在此基础上加两项：标题/标签命中加权、标题整串命中额外加分。
-   旧版是「整串子串匹配 + 无排序」，命中一次的页与标题即该词的页同列 —— 已废弃。 */
-var CJK_RE = /[\u4e00-\u9fff]+/g, WORD_RE = /[a-z0-9_]+/g;
-
-function tokenize(s){
-  var toks = [], m;
-  WORD_RE.lastIndex = 0;
-  while ((m = WORD_RE.exec(s))) toks.push(m[0]);
-  CJK_RE.lastIndex = 0;
-  while ((m = CJK_RE.exec(s))){
-    var t = m[0];
-    if (t.length === 1) toks.push(t);
-    else for (var i = 0; i < t.length - 1; i++) toks.push(t.substr(i, 2));
-  }
-  return toks;
-}
+/* ---------------- search ---------------- */
+/* 打分与 `tools/wiki.py search` 同为 BM25。站点侧在此之上做了三处修正，都是 376 页规模逼出来的：
+   ① 候选收敛 —— 先只用「有区分度的词」圈定候选集。旧版是二字组 OR，
+      「注意力机制」被切成 注意/意力/力机/机制，「机制」满库都是，结果命中 309/376 页，等于没搜。
+   ② 最长命中加成 —— 命中完整短语的页必须压过只命中碎片的页，否则长文档靠词频霸榜。
+   ③ 系统页降权 —— log / index 这类系统页不该占前排。 */
+var CJK_TEST = /[\u4e00-\u9fff]/;
+var STOP_RATIO = 0.30;     /* 出现在超过 30% 页面里的词视为噪声词，不参与收敛候选 */
+var META_DEMOTE = 0.55;
 
 /* 一次性预处理：小写文本 + 文档长度 */
 var NDOC = PAGES.length, AVGDL = 0;
@@ -1853,35 +2124,22 @@ function countOf(s, t){
   while (i >= 0){ c++; i = s.indexOf(t, i + t.length); if (c > 400) break; }
   return c;
 }
-function scorePage(p, terms){
-  var s = 0, dl = p._dl;
-  for (var i = 0; i < terms.length; i++){
-    var t = terms[i];
-    var f = countOf(p._b, t) + countOf(p._h, t) * 5;
-    if (!f) continue;
-    var df = dfOf(t) || 1;
-    var idf = Math.log(1 + (NDOC - df + 0.5) / (df + 0.5));
-    s += idf * (f * 2.5) / (f + 1.5 * (1 - 0.75 + 0.75 * dl / AVGDL));
-  }
-  return s;
+
+/* 分层切词：整串 → 逐级降长的子串。整串排在最前，后面 ① 会优先拿它去收敛。 */
+function splitFragments(raw){
+  return raw.split(/[\s,，、;；:：()（）\/]+/).filter(function(s){ return s.length > 0; });
 }
-/* 标题整串命中：把「标题就是这个词的页」抬到最前 —— 纯词频做不到这件事 */
-function titleBonus(p, raw){
-  var t = p.title.toLowerCase(), b = 0;
-  raw.split(/[\s,，、;；]+/).forEach(function(w){
-    if (w.length < 2) return;
-    if (t === w) b += 25; else if (t.indexOf(w) >= 0) b += 14;
+function termsOf(raw){
+  var out = [], seen = {};
+  function add(t){ if (!seen[t]){ seen[t] = 1; out.push(t); } }
+  splitFragments(raw).forEach(function(f){
+    if (CJK_TEST.test(f)){
+      add(f);
+      for (var L = Math.min(f.length - 1, 6); L >= 2; L--)
+        for (var i = 0; i + L <= f.length; i++) add(f.substr(i, L));
+    } else add(f);
   });
-  return b;
-}
-function buildTerms(raw){
-  var terms = [], seen = {};
-  tokenize(raw).forEach(function(t){ if (!seen[t]){ seen[t] = 1; terms.push(t); } });
-  raw.split(/[\s,，、;；]+/).forEach(function(w){
-    w = w.trim();
-    if (w.length >= 2 && !seen[w]){ seen[w] = 1; terms.push(w); }
-  });
-  return terms;
+  return out;
 }
 function hl(text, needles){
   var lc = text.toLowerCase(), ranges = [];
@@ -1933,18 +2191,32 @@ function snippet(p, needles){
 }
 
 var searchEl = document.getElementById("search");
-var SEARCH_CAP = 30, lastHits = [], lastNeedles = [];
+var SEARCH_CAP = 30, WIDE_AT = 60, lastHits = [], lastNeedles = [], lastMode = "";
+var lastRaw = "", lastExactMiss = false;
 
 function renderHits(cap){
   var top = lastHits.length ? lastHits[0].s : 0;
-  /* 阈值：低于最高分 18% 的长尾视为噪声，不默认展示（可展开） */
-  var shown = lastHits.filter(function(x){ return x.s >= Math.max(1.2, top * 0.18); });
+  /* 阈值：低于最高分 25% 的长尾视为噪声，不默认展示（可展开）。
+     旧版用 18%，在 376 页规模下会把上百条弱相关一起放出来。 */
+  var shown = lastHits.filter(function(x){ return x.s >= Math.max(1.2, top * 0.25); });
   nav.innerHTML = "";
   var g = document.createElement("div"); g.className = "grp";
-  g.innerHTML = "<h3>搜索结果<span>" + shown.length + "</span></h3>";
   if (!shown.length){
+    g.innerHTML = "<h3>搜索结果<span>0</span></h3>";
     var d = document.createElement("div"); d.className = "res-count"; d.textContent = "无匹配页面";
     g.appendChild(d); nav.appendChild(g); return;
+  }
+  g.innerHTML = "<h3>搜索结果<span>" + shown.length + "</span></h3>";
+  /* 整串在库里一次都没出现过 —— 明说。否则「搜了个不存在的词却出来 116 条」会让人误判为搜到了 */
+  if (lastExactMiss){
+    var em = document.createElement("div"); em.className = "res-tip";
+    em.textContent = "「" + lastRaw + "」在本库没有完整匹配，以下是分词命中的近似结果，相关度普遍偏低。";
+    g.appendChild(em);
+  } else if (shown.length > WIDE_AT){
+    /* 候选过宽时也明说，而不是让用户在一百条弱相关里自己捞 */
+    var tip = document.createElement("div"); tip.className = "res-tip";
+    tip.textContent = "命中 " + shown.length + " 页，结果过宽。这一 query 的词在本库过于常见，补充更具体的词会显著收敛。";
+    g.appendChild(tip);
   }
   shown.slice(0, cap).forEach(function(x){
     var p = x.p, sn = snippet(p, lastNeedles);
@@ -1954,7 +2226,6 @@ function renderHits(cap){
       '<span class="r-title">' + hl(p.title, lastNeedles) + '</span>' +
       (sn ? '<span class="r-snip">' + sn + '</span>' : '') +
       '<span class="r-meta">' + (TYPELABEL[p.type]||p.type) + ' · 相关度 ' + x.s.toFixed(1) + '</span>';
-    a.addEventListener("click", function(e){ e.preventDefault(); go(p.slug); });
     g.appendChild(a);
   });
   if (shown.length > cap){
@@ -1967,43 +2238,116 @@ function renderHits(cap){
   nav.appendChild(g);
   markActive((location.hash||"#").slice(1));
 }
+
 function runSearch(){
   var raw = searchEl.value.trim().toLowerCase();
-  if (!raw){ buildNav(); markActive((location.hash||"#").slice(1)); return; }
-  var terms = buildTerms(raw);
-  var scored = [];
-  PAGES.forEach(function(p){
-    var s = scorePage(p, terms) + titleBonus(p, raw);
-    if (s > 0) scored.push({p: p, s: s});
-  });
+  if (!raw){ buildNav(); markActive((location.hash||"#").slice(1)); revealActive((location.hash||"#").slice(1)); return; }
+  lastRaw = raw;
+
+  var terms = termsOf(raw).map(function(t){ return { t: t, df: dfOf(t) }; })
+                          .filter(function(x){ return x.df > 0; });
+  var fragsAll = splitFragments(raw);
+  lastExactMiss = fragsAll.length > 0 && fragsAll.every(function(f){ return dfOf(f) === 0; });
+  if (!terms.length){ lastHits = []; lastNeedles = []; renderHits(SEARCH_CAP); return; }
+
+  /* ① 候选收敛 */
+  var discr = terms.filter(function(x){ return x.df / NDOC <= STOP_RATIO; });
+  var cand, mode;
+  if (discr.length){
+    mode = "收敛";
+    cand = PAGES.filter(function(p){
+      return discr.some(function(x){ return p._b.indexOf(x.t) >= 0 || p._h.indexOf(x.t) >= 0; });
+    });
+  } else {
+    /* 全部词都是高频词（例如「为什么」）——退化到最长片段的整串命中 */
+    mode = "短语";
+    var longest = terms.slice().sort(function(a, b){ return b.t.length - a.t.length; })[0];
+    cand = PAGES.filter(function(p){
+      return p._b.indexOf(longest.t) >= 0 || p._h.indexOf(longest.t) >= 0;
+    });
+  }
+
+  var frags = splitFragments(raw).filter(function(f){ return f.length >= 2; });
+  var scored = cand.map(function(p){
+    var s = 0, maxLen = 0;
+    terms.forEach(function(x){
+      var f = countOf(p._b, x.t) + countOf(p._h, x.t) * 3;   /* 标题/标签命中加权 */
+      if (!f) return;
+      if (x.t.length > maxLen) maxLen = x.t.length;
+      var df = x.df || 1, idf = Math.log(1 + (NDOC - df + 0.5) / (df + 0.5));
+      s += idf * (f * 2.5) / (f + 1.5 * (1 - 0.75 + 0.75 * p._dl / AVGDL));
+    });
+    s += maxLen * 3.5;                                        /* ② 最长命中加成 */
+    if (p.title.toLowerCase().indexOf(raw) >= 0) s += 30;
+    else if (frags.some(function(f){ return p.title.toLowerCase().indexOf(f) >= 0; })) s += 16;
+    if (p.type === "meta") s *= META_DEMOTE;                  /* ③ 系统页降权 */
+    return { p: p, s: s };
+  }).filter(function(x){ return x.s > 0; });
   scored.sort(function(a, b){ return b.s - a.s; });
-  lastHits = scored; lastNeedles = terms;
+
+  lastHits = scored;
+  lastNeedles = terms.map(function(x){ return x.t; });
+  lastMode = mode;
   renderHits(SEARCH_CAP);
 }
 var sTimer = null;
 searchEl.addEventListener("input", function(){
+  syncClear();
   if (sTimer) clearTimeout(sTimer);
   sTimer = setTimeout(runSearch, 110);
 });
 searchEl.addEventListener("keydown", function(e){
-  if (e.key === "Escape"){ searchEl.value = ""; runSearch(); }
+  if (e.key === "Escape"){ searchEl.value = ""; syncClear(); runSearch(); }
 });
+
+/* 清空按钮：只在有字时露出，避免空框里挂一个永远按不动的控件 */
+var clearBtn = document.getElementById("searchclear");
+function syncClear(){ clearBtn.classList.toggle("on", searchEl.value.length > 0); }
+clearBtn.addEventListener("click", function(){
+  searchEl.value = ""; syncClear(); runSearch(); searchEl.focus();
+});
+/* j/k 或 ↑↓ 在当前可见列表里前后翻页。搜索框聚焦时不抢键。 */
+function stepNav(d){
+  var list = [].filter.call(nav.querySelectorAll(".nav-item"), function(el){ return !el.hidden; });
+  if (!list.length) return;
+  var cur = (location.hash || "#").slice(1), i = -1;
+  for (var k = 0; k < list.length; k++){ if (list[k].dataset.slug === cur){ i = k; break; } }
+  var n = list[Math.max(0, Math.min(list.length - 1, i + d))];
+  if (n){ go(n.dataset.slug); try { n.scrollIntoView({ block: "nearest" }); } catch(e){} }
+}
 document.addEventListener("keydown", function(e){
-  if (e.key === "/" && document.activeElement !== searchEl && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
-    e.preventDefault(); searchEl.focus(); searchEl.select();
+  var tag = document.activeElement ? document.activeElement.tagName : "";
+  var typing = /^(INPUT|TEXTAREA)$/.test(tag);
+  if (e.key === "/" && !typing){
+    e.preventDefault(); searchEl.focus(); searchEl.select(); return;
   }
+  if (e.key === "Escape"){ closeDrawer(); return; }
+  if (typing) return;
+  if (e.key === "j" || e.key === "ArrowDown"){ e.preventDefault(); stepNav(1); }
+  else if (e.key === "k" || e.key === "ArrowUp"){ e.preventDefault(); stepNav(-1); }
 });
 
 /* ---------------- tabs ---------------- */
 var canvas = document.getElementById("canvas");
-[].forEach.call(document.querySelectorAll("#tabs button"), function(b){
+var sidebar = document.getElementById("sidebar"), mask = document.getElementById("mask");
+function openDrawer(){ sidebar.classList.add("open"); mask.classList.add("on"); }
+function closeDrawer(){ sidebar.classList.remove("open"); mask.classList.remove("on"); }
+document.getElementById("burger").addEventListener("click", function(){
+  sidebar.classList.contains("open") ? closeDrawer() : openDrawer();
+});
+mask.addEventListener("click", closeDrawer);
+
+/* 选择器必须限定 [data-view]：否则汉堡按钮会被当成视图切换键，点了会切走 browse */
+[].forEach.call(document.querySelectorAll("#tabs button[data-view]"), function(b){
   b.addEventListener("click", function(){
-    [].forEach.call(document.querySelectorAll("#tabs button"), function(x){ x.classList.remove("active"); });
+    [].forEach.call(document.querySelectorAll("#tabs button[data-view]"), function(x){ x.classList.remove("active"); });
     b.classList.add("active");
     var v = b.dataset.view;
     document.getElementById("view-browse").hidden = (v !== "browse");
     document.getElementById("view-graph").hidden = (v !== "graph");
+    tocEl.hidden = (v !== "browse") || tocHs.length < 3;   /* 图谱页不该挂着正文目录 */
     if (v === "graph") startGraph();
+    else closeDrawer();
   });
 });
 
@@ -2013,9 +2357,9 @@ var ctx = canvas.getContext("2d");
 
 function startGraph(){
   resize();
+  /* buildGraph 内部以分帧方式算布局，此处不能再调 fitGraph/draw，否则会画到未收敛的坐标 */
   if (!G.built) buildGraph();
-  fitGraph();
-  draw();
+  else { fitGraph(); draw(); }
 }
 
 function radius(n){ return 4 + Math.min(9, n.deg * 1.5); }
@@ -2048,7 +2392,21 @@ function buildGraph(){
   legend.innerHTML = ["project","source","entity","concept","analysis"].map(function(t){
     return '<div><i style="background:'+TYPECOLOR[t]+'"></i>'+TYPELABEL[t]+'</div>';
   }).join("");
-  relax(700);
+  relaxAsync(700);
+}
+
+/* 370 节点 × 700 步的 O(n²) 力导向实测 265ms，同步跑会结结实实卡一次主线程。
+   切成 24 帧边算边画：用户看到的是布局收敛的过程，而不是一段白屏。 */
+function relaxAsync(steps, done){
+  var FRAMES = 36;                                   /* 每帧 ~10ms，压在 60fps 预算内 */
+  var per = Math.max(12, Math.ceil(steps / FRAMES)), s = 0;
+  (function frame(){
+    relax(Math.min(per, steps - s));
+    s += per;
+    fitGraph(); draw();
+    if (s < steps) requestAnimationFrame(frame);
+    else if (done) done();
+  })();
 }
 
 function resize(){
@@ -2058,9 +2416,32 @@ function resize(){
   ctx.setTransform(dpr,0,0,dpr,0,0);
 }
 
+var MAX_F = 60;      /* 斥力上限 */
+var MAX_STEP = 14;   /* 单步位移上限 */
+
+function clampStep(v, m){ return v > m ? m : (v < -m ? -m : v); }
+
+/* 坐标发散的最后防线：真的炸了就复位成环形重排，总好过整张图画不出来 */
+function sanitizeGraph(){
+  var i, ok = true;
+  for (i = 0; i < G.nodes.length; i++){
+    if (!isFinite(G.nodes[i].x) || !isFinite(G.nodes[i].y)){ ok = false; break; }
+  }
+  if (ok) return false;
+  var W = canvas.clientWidth || 900, H = canvas.clientHeight || 600;
+  var R = Math.min(W, H) * 0.40;
+  for (i = 0; i < G.nodes.length; i++){
+    var a = i / G.nodes.length * Math.PI * 2;
+    G.nodes[i].x = W/2 + Math.cos(a) * R;
+    G.nodes[i].y = H/2 + Math.sin(a) * R;
+    G.nodes[i].vx = 0; G.nodes[i].vy = 0;
+  }
+  return true;
+}
+
 function relax(steps){
   var nodes = G.nodes, edges = G.edges, n = nodes.length;
-  var W = canvas.clientWidth, H = canvas.clientHeight;
+  var W = canvas.clientWidth || 900, H = canvas.clientHeight || 600;
   for (var s=0; s<steps; s++){
     var i, j, a, b, dx, dy, d2, d, ux, uy, f;
     for (i=0;i<n;i++){
@@ -2070,6 +2451,9 @@ function relax(steps){
         dx = b.x-a.x; dy = b.y-a.y;
         d2 = dx*dx+dy*dy || 0.01; d = Math.sqrt(d2);
         f = 26000 / d2;
+        /* 不设上限时，403 个节点挤在初始圆上会让合力指数发散：
+           实测每 5 步放大约 2 万倍，700 步后溢出成 NaN，整张图画不出来。 */
+        if (f > MAX_F) f = MAX_F;
         ux = dx/d; uy = dy/d;
         a.vx -= ux*f; a.vy -= uy*f; b.vx += ux*f; b.vy += uy*f;
       }
@@ -2086,7 +2470,10 @@ function relax(steps){
       a = nodes[i];
       a.vx = (a.vx + (W/2 - a.x) * 0.0012) * 0.78;
       a.vy = (a.vy + (H/2 - a.y) * 0.0012) * 0.78;
-      if (a !== G.drag){ a.x += a.vx; a.y += a.vy; }
+      if (a !== G.drag){
+        a.x += clampStep(a.vx, MAX_STEP);
+        a.y += clampStep(a.vy, MAX_STEP);
+      }
     }
     /* 硬性去重叠：保证节点之间留得下标签 */
     for (i=0;i<n;i++){
@@ -2105,6 +2492,7 @@ function relax(steps){
       }
     }
   }
+  sanitizeGraph();
 }
 
 function fitGraph(){
@@ -2210,6 +2598,8 @@ window.addEventListener("resize", function(){ if (G.built) { resize(); fitGraph(
 
 /* ---------------- boot ---------------- */
 buildNav();
+document.getElementById("expandall").addEventListener("click", function(){ setAllGroups(false); });
+document.getElementById("collapseall").addEventListener("click", function(){ setAllGroups(true); });
 window.addEventListener("hashchange", function(){ go((location.hash||"#").slice(1)); });
 var start = (location.hash||"#").slice(1);
 if (!BYSLUG[start]) start = DATA.startSlug;

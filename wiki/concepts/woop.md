@@ -2,7 +2,7 @@
 title: WOOP（心理比对 + 执行意图）
 type: concept
 slug: woop
-tags: [WOOP, 心理比对, 执行意图, 动机, 成长战略, 得到课程, AI收敛概念]
+tags: [成长战略, 得到课程, 动机, 执行意图, WOOP, 心理比对, AI收敛概念]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]
@@ -91,6 +91,13 @@ status: active
 - **与 [[autonomy-support]] 方向相反**：那一页的自主感**由他人支持**，013 讲的自主感**由自我编程取得**。
 - 服务于 [[modern-thinking-tools]]（013 讲属「模块一 成长战略」第 7 讲）。
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-second-order-desire]]（109 讲）**：同 [[implementation-intentions]] 一条 ——
+  109 讲的「布置」（行 120）与本页的「计划 + 障碍」同型，但**讲稿自拟、未署名**。
+  另：109 讲的 `self-training-loop`（察觉 / 重编 / 布置）**素材已判不单列**，并入 [[second-order-volition]]，本页只需登记这条相邻关系。
 ## 开放问题
 
 - [ ] **「外部障碍」这一处改写要不要进综述？** 同一讲的三种加工品立场各不相同，是本库「AI 加工品价值方向不稳定」最干净的一组对照

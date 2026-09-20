@@ -2,7 +2,7 @@
 title: second-brain-skill 评估：把 LLM Wiki 封装成 Skill
 type: analysis
 slug: second-brain-skill
-tags: [工具, 实现, Skill]
+tags: [工具, Skill, 实现]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-second-brain-skill-readme]

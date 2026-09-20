@@ -2,7 +2,7 @@
 title: 间隔重复与遗忘曲线：把信息投射到最远的未来
 type: concept
 slug: spaced-repetition
-tags: [学习, 记忆, 方法, 神经科学]
+tags: [学习, 方法, 记忆, 神经科学]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]

@@ -2,7 +2,7 @@
 title: 内感受（Interoception）
 type: concept
 slug: interoception
-tags: [情绪, 身体, 认知科学, 决策]
+tags: [决策, 情绪, 认知科学, 身体]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

@@ -2,7 +2,7 @@
 title: A Short History of Bi-Directional Links — Maggie Appleton
 type: source
 slug: 2026-09-18-appleton-bidirectional-links
-tags: [历史, 双向链接, 万维网]
+tags: [历史, 万维网, 双向链接]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-appleton-bidirectional-links]

@@ -2,7 +2,7 @@
 title: 认知路径与身体路径：一个串联假设
 type: analysis
 slug: cognitive-vs-somatic-paths
-tags: [情绪, 身体, 认知, 综合, 立论]
+tags: [情绪, 认知, 身体, 综合, 立论]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]

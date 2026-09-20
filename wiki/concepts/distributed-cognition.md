@@ -2,7 +2,7 @@
 title: 分布式认知（Distributed Cognition）
 type: concept
 slug: distributed-cognition
-tags: [认知科学, 协作, 学习, 具身认知]
+tags: [学习, 认知科学, 具身认知, 协作]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

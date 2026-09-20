@@ -2,7 +2,7 @@
 title: The Anatomy of an Agent Harness（Vivek Trivedy，2026-03-10）
 type: source
 slug: 2026-09-19-trivedy-anatomy-of-agent-harness
-tags: [AI, Agent, harness, 一手, 英文, LangChain]
+tags: [AI, Agent, harness, LangChain]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-trivedy-anatomy-of-agent-harness]

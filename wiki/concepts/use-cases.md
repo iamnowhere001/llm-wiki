@@ -2,7 +2,7 @@
 title: 适用场景：五类积累型知识领域
 type: concept
 slug: use-cases
-tags: [场景, 选型]
+tags: [选型, 场景]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]

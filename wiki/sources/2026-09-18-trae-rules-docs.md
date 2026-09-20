@@ -2,7 +2,7 @@
 title: TraeCode 规则文档 — 规则体系的一手说明
 type: source
 slug: 2026-09-18-trae-rules-docs
-tags: [工具, IDE, 规则, 素材]
+tags: [工具, IDE, 规则]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-trae-rules-docs]

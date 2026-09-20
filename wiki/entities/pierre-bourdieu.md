@@ -2,7 +2,7 @@
 title: 皮埃尔·布迪厄
 type: entity
 slug: pierre-bourdieu
-tags: [人物, 社会学, 场域, 惯习]
+tags: [人物, 场域, 社会学, 惯习]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-field-and-habitus-notes]

@@ -2,7 +2,7 @@
 title: Saras D. Sarasvathy
 type: entity
 slug: saras-sarasvathy
-tags: [人物, 创业学者, 效应化, 达顿商学院]
+tags: [人物, 效应化, 创业学者, 达顿商学院]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-game-selection-notes]

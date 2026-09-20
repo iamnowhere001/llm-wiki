@@ -2,7 +2,7 @@
 title: The Art of Impossible（英文原书）—— 本库第一次一手校准的凭据
 type: source
 slug: 2026-09-19-art-of-impossible-book-en
-tags: [巅峰表现, 心流, 一手文献, 校准, 英文原书, 素材]
+tags: [巅峰表现, 心流]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-art-of-impossible-book-en]

@@ -2,7 +2,7 @@
 title: "「学习即遗忘，理解即压缩，压缩即智能」（李继刚）"
 type: source
 slug: 2026-09-18-learning-is-forgetting
-tags: [学习, 压缩, 遗忘, 信息论, 大模型, 混层, AI生成, 引注核查, 素材]
+tags: [学习, 压缩, 信息论, 大模型, 遗忘]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

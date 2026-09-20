@@ -2,7 +2,7 @@
 title: 机会体系：把「谁有机会」变成设计问题
 type: concept
 slug: opportunity-systems
-tags: [制度, 教育, 招聘, 公平, 巅峰表现, 系统设计]
+tags: [巅峰表现, 教育, 制度, 公平, 招聘, 系统设计]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-hidden-potential-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-19-scarcity-book-en]
@@ -177,6 +177,25 @@ status: active
   （家庭收入 / 学校结构 / 招聘流程决定谁有机会）；该页行 133 的**低收学生例外**
   （名校对弱势家庭学生有**实际帮助**）补上了**机会流动**的那一半。
   **两者不矛盾，是同一张图的两半。**
+
+
+## 2026-09-19 回填（第 3 批清单）
+
+> 来源：[[2026-09-19-opportunity-window]] 的「回填清单」建议。
+
+- **⚠️ 与 [[window-of-opportunity]]：消歧指针（本页与它中文都含「机会」）。**
+  本页的「机会」是**结构性机会**（制度 / 家庭收入 / 招聘流程决定**谁有机会**）；
+  该页的「机会窗口」是**时机问题**（在主导类别与主导设计之间**什么时候入场**）。
+  **一个问「轮不轮得到你」，一个问「现在是不是时候」—— 引用时不要混用。**
+
+## 2026-09-19 回填（第 4、5 批清单）
+
+> 来源：[[2026-09-18-field-and-habitus-notes]]、[[2026-09-18-social-capital-structural-holes-notes]] 的「回填清单」建议。
+
+- **与 [[field-theory]]：本页作为制度层的另一半。** 该页讲**场域内的评价规则**（进场之后怎么被评判）；
+  本页讲**入口**（谁有机会进场）。**一个管场内，一个管门口。**
+- **与 [[structural-holes]]：同一批 Chetty 研究的两种读法。** 该页是**个人策略读法**（占住结构洞）；
+  本页是**制度层读法**（机会的分配结构）。**同一份数据，两层结论。**
 
 ## 待办 / 开放问题
 

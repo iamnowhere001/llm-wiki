@@ -2,7 +2,7 @@
 title: 科里·多克托罗（Cory Doctorow）
 type: entity
 slug: cory-doctorow
-tags: [人物, 科幻作家, 活动家, 平台, enshittification, 互操作性]
+tags: [人物, 平台, enshittification, 互操作性, 活动家, 科幻作家]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-platform-business-model]

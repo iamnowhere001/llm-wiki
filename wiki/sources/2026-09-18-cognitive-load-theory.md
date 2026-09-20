@@ -2,7 +2,7 @@
 title: "认知负荷理论：因为文具多，所以是差生（《现代思维工具》学习与教育 第 1 讲）"
 type: source
 slug: 2026-09-18-cognitive-load-theory
-tags: [学习, 教育, 认知负荷, 万维钢, 系列, 素材]
+tags: [万维钢, 学习, 教育, 认知负荷]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-load-theory]

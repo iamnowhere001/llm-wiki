@@ -2,7 +2,7 @@
 title: "《我们如何学习：大脑为何比机器学得快》（《精准学习》）读书笔记（含 AI 对话加工）"
 type: source
 slug: 2026-09-18-how-we-learn-notes
-tags: [巅峰表现, 学习, 神经科学, 混层, AI生成, 素材]
+tags: [学习, 巅峰表现, 神经科学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes]

@@ -2,7 +2,7 @@
 title: 颗粒度和因果中介：用模型思考（万维钢《现代思维工具》「模块二 决策判断」第 3 讲）
 type: source
 slug: 2026-09-19-granularity-causal-mediation-notes
-tags: [万维钢, 得到课程, 决策判断, 现代思维工具, 素材, 颗粒度, 因果中介, 最小描述长度, 好调节器定理, 混层, AI生成, 引注核查]
+tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 最小描述长度, 因果中介, 好调节器定理, 颗粒度]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-granularity-causal-mediation-notes]

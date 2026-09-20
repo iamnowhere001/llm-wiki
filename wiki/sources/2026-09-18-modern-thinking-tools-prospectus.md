@@ -2,7 +2,7 @@
 title: "00_发刊词：现代精英的思维武器库（万维钢《现代思维工具》课程发刊词 + 2 条读者留言 + 19 份 AI 生成块）"
 type: source
 slug: 2026-09-18-modern-thinking-tools-prospectus
-tags: [世界观, 发刊词, 万维钢, 得到课程, 混层, AI生成, 引注核查, 智能生活系统, 素材]
+tags: [世界观, 万维钢, 得到课程, 智能生活系统]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus]

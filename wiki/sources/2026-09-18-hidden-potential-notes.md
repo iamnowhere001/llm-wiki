@@ -2,7 +2,7 @@
 title: "《隐藏的潜能》读书笔记（亚当·格兰特）"
 type: source
 slug: 2026-09-18-hidden-potential-notes
-tags: [巅峰表现, 学习, 品格, 混层, AI生成, 弱引注, 素材]
+tags: [学习, 巅峰表现, 品格]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

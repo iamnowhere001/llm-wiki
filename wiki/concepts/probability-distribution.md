@@ -2,7 +2,7 @@
 title: 概率分布：决策决的不是结果，而是一个分布
 type: concept
 slug: probability-distribution
-tags: [决策, 概率, 结果偏误, 方差, 斯多葛, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 概率, 斯多葛, 结果偏误, 方差]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-probability-distribution-notes]

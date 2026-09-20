@@ -2,7 +2,7 @@
 title: 综合调研（Synthesis）
 type: concept
 slug: synthesis-research
-tags: [调研, 知识工作, 写作, 判断力, PKM]
+tags: [写作, PKM, 判断力, 知识工作, 调研]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-synthesis-research]

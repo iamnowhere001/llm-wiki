@@ -2,7 +2,7 @@
 title: "刻意练习：天赋的作用究竟是什么？（《现代思维工具》学习与教育 第 3 讲）"
 type: source
 slug: 2026-09-18-deliberate-practice-talent
-tags: [学习, 专长, 天赋, 刻意练习, 万维钢, 素材]
+tags: [万维钢, 学习, 专长, 刻意练习, 天赋]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-deliberate-practice-talent]

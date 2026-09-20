@@ -2,7 +2,7 @@
 title: Ted Nelson 与超文本
 type: entity
 slug: ted-nelson
-tags: [人物, 超文本, 历史]
+tags: [人物, 历史, 超文本]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-appleton-bidirectional-links]

@@ -2,7 +2,7 @@
 title: "Improving Students' Learning With Effective Learning Techniques（Dunlosky 等，2013）"
 type: source
 slug: 2026-09-18-dunlosky-learning-techniques
-tags: [学习, 元分析, 一手文献, 记忆, 方法, 素材]
+tags: [学习, 方法, 记忆, 元分析]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dunlosky-learning-techniques]

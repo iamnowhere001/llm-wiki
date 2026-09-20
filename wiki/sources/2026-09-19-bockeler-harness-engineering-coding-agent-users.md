@@ -2,7 +2,7 @@
 title: Harness engineering for coding agent users（Birgitta Böckeler，2026-04-02）
 type: source
 slug: 2026-09-19-bockeler-harness-engineering-coding-agent-users
-tags: [AI, Agent, harness, 一手, 英文, Thoughtworks]
+tags: [AI, Agent, harness, Thoughtworks]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-bockeler-harness-engineering-coding-agent-users]

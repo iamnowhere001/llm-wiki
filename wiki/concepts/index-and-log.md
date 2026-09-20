@@ -2,7 +2,7 @@
 title: 索引与日志：index.md 与 log.md
 type: concept
 slug: index-and-log
-tags: [导航, 约定]
+tags: [约定, 导航]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

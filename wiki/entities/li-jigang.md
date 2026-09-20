@@ -2,7 +2,7 @@
 title: 李继刚
 type: entity
 slug: li-jigang
-tags: [创作者, 提示词, 大模型, 通俗解读]
+tags: [大模型, 创作者, 提示词, 通俗解读]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

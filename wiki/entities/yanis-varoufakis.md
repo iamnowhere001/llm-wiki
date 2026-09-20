@@ -2,7 +2,7 @@
 title: 亚尼斯·瓦鲁法基斯（Yanis Varoufakis）
 type: entity
 slug: yanis-varoufakis
-tags: [人物, 经济学家, 技术封建主义, 平台, cloud capital]
+tags: [人物, 平台, 经济学家, 技术封建主义, cloud capital]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-platform-business-model]

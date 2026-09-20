@@ -2,7 +2,7 @@
 title: 马库斯·胡特（Marcus Hutter）
 type: entity
 slug: marcus-hutter
-tags: [人工智能, 信息论, 压缩, 强化学习, 通用人工智能]
+tags: [压缩, 信息论, 强化学习, 人工智能, 通用人工智能]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

@@ -2,7 +2,7 @@
 title: 安妮·墨菲·保罗（Annie Murphy Paul）
 type: entity
 slug: annie-murphy-paul
-tags: [人物, 认知科学, 科学写作, 具身认知]
+tags: [人物, 认知科学, 具身认知, 科学写作]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-extended-mind-notes]

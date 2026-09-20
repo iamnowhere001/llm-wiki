@@ -2,7 +2,7 @@
 title: 心力（一份与 Claude 的对话记录）
 type: source
 slug: 2026-09-18-mental-strength
-tags: [情绪, AI生成, 心力, 素材, 反例]
+tags: [情绪, 心力]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-strength]

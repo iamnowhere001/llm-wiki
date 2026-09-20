@@ -2,7 +2,7 @@
 title: 王路与《情绪觉知100讲》
 type: entity
 slug: wang-lu
-tags: [人物, 课程, 情绪, 一手]
+tags: [人物, 情绪]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

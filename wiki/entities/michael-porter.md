@@ -2,7 +2,7 @@
 title: Michael E. Porter（迈克尔·波特）
 type: entity
 slug: michael-porter
-tags: [人物, 战略学者, 哈佛商学院, 竞争战略, 战略定位]
+tags: [人物, 战略定位, 哈佛商学院, 战略学者, 竞争战略]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-alpha-strategy]

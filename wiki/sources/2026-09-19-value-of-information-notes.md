@@ -2,7 +2,7 @@
 title: 信息价值：怎样区分沙子和金子（万维钢《现代思维工具》「模块二 决策判断」第 5 讲）
 type: source
 slug: 2026-09-19-value-of-information-notes
-tags: [万维钢, 得到课程, 决策判断, 现代思维工具, 素材, 混层, AI生成, 信息价值, VOI, FOMO, 决策边界, 引注核查]
+tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 信息价值, VOI, 决策边界, FOMO]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-value-of-information-notes]

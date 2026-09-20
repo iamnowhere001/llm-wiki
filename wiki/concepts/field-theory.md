@@ -2,7 +2,7 @@
 title: 场域理论（field / Doxa / habitus / capital）
 type: concept
 slug: field-theory
-tags: [社会学, 布迪厄, 结构, 场域, 惯习, 资本]
+tags: [场域, 社会学, 布迪厄, 惯习, 资本, 结构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-field-and-habitus-notes]

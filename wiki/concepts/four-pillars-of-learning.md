@@ -2,7 +2,7 @@
 title: 学习的四大支柱：注意、主动参与、错误反馈、巩固
 type: concept
 slug: four-pillars-of-learning
-tags: [学习, 神经科学, 机制, 框架]
+tags: [学习, 机制, 神经科学, 框架]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes]

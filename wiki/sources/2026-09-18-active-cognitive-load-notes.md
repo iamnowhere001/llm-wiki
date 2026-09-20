@@ -2,7 +2,7 @@
 title: "主动高认知负荷：注意力的 Pro 模式（《现代思维工具》模块一 成长战略 第 6 讲）"
 type: source
 slug: 2026-09-18-active-cognitive-load-notes
-tags: [注意力, 认知负荷, 心流, 万维钢, 系列, 素材]
+tags: [万维钢, 心流, 注意力, 认知负荷]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-active-cognitive-load-notes]
@@ -168,7 +168,13 @@ status: active
 - 库内**第一次**出现「高认知负荷是快乐源泉」的因果链（走神 → 不快乐，而非反向）。
 - 讲稿点名但**库内无实体页**：Cal Newport、Matthew Killingsworth、Daniel Gilbert；AI 段点名但库内无实体页：Marcus Raichle、Steven Kotler、Wolfram Schultz、Simone Weil、William James。
 
-## 回填清单（列出，本页不改任何页面）
+## 回填清单（**已于 2026-09-19 部分执行**）
+> **2026-09-19 第 4、5 批执行说明**：本批按北洛指示「两半一起做」。
+> - **「建议新建」**：经逐项核实，**绝大多数已被既有页实质承载**（antifragility 一页即覆盖否定法 / 毁灭隔离 /
+>   毒物兴奋 / 杠铃 / 利益攸关 / 凸性），**故本批未新建页面**。
+> - **「建议回填」**：本批**只做完目标页 ≥2 条的 12 个高频页**；**单条目标页留待下一轮**。
+> - **具名人物候选一律不单列**（本库硬约束：具名人物不单列实体页，除非缺口表点名）。
+
 
 - `wiki/concepts/cognitive-load-theory.md` —— 加一条「符号对撞」记录：本讲把 CLT 的**负债量**立成了**目标状态**。本批素材里对该页最硬的一次冲击。
 - `wiki/sources/2026-09-18-cognitive-load-theory.md`（学习与教育第 1 讲）—— 补一句「同一术语在成长战略第 6 讲被反向使用」。

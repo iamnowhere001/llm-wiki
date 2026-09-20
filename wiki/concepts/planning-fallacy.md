@@ -2,7 +2,7 @@
 title: 规划谬误（Planning Fallacy）：现实往往比你最悲观的估计还要悲观
 type: concept
 slug: planning-fallacy
-tags: [决策, 预测, 规划谬误, 外部视角, 傅以斌, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 预测, 外部视角, 规划谬误, 傅以斌]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-reference-class-notes]

@@ -2,7 +2,7 @@
 title: "拥抱和桥接：知识迁移，学以致用（《现代思维工具》学习与教育 第 9 讲）"
 type: source
 slug: 2026-09-18-transfer-bridging
-tags: [学习, 迁移, 心智模型, 情境, 万维钢, 系列收尾, 素材]
+tags: [万维钢, 学习, 心智模型, 迁移, 情境]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-transfer-bridging]

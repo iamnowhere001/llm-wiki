@@ -2,7 +2,7 @@
 title: 依恋理论
 type: concept
 slug: attachment-theory
-tags: [心理学, 依恋理论, 发展心理学, 安全感, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 心理学, 依恋理论, 发展心理学, 安全感]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-sense-of-security-notes]

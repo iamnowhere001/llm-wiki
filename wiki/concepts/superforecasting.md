@@ -2,7 +2,7 @@
 title: 超级预测（Superforecasting）：把预测从「表态」变成「算账」
 type: concept
 slug: superforecasting
-tags: [决策, 预测, 概率, 贝叶斯, 泰特洛克, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 概率, 贝叶斯, 预测, 泰特洛克]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-superforecasting-notes]

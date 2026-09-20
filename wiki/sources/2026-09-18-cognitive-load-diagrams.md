@@ -2,7 +2,7 @@
 title: "认知负荷理论图解（6 张 AI 生成可视化）—— 本库第一份孤儿素材"
 type: source
 slug: 2026-09-18-cognitive-load-diagrams
-tags: [认知负荷, AI生成, 孤儿素材, 可视化, 素材]
+tags: [认知负荷, 可视化]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-load-diagrams]

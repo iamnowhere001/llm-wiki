@@ -2,7 +2,7 @@
 title: "综合调研：在没有教科书的地方挖掘真知（《现代思维工具》学习与教育 第 5 讲）"
 type: source
 slug: 2026-09-18-synthesis-research
-tags: [调研, 知识工作, 写作, 万维钢, PKM, 素材]
+tags: [万维钢, 写作, PKM, 知识工作, 调研]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-synthesis-research]

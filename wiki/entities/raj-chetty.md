@@ -2,7 +2,7 @@
 title: 拉杰·切蒂（Raj Chetty）
 type: entity
 slug: raj-chetty
-tags: [人物, 经济学家, 代际流动, 社会资本, 哈佛]
+tags: [人物, 经济学家, 社会资本, 代际流动, 哈佛]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-18-five-thinking-tools-livestream]

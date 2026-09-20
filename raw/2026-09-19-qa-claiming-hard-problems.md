@@ -1,6 +1,6 @@
 ---
 title: "问答：怎样在没有正式授权的时候主动认领难题？"
-author: 万维钢（问答回答）；括号内为读者提问；覆盖 5 讲，判定见对应 sources 页
+author: 万维钢（问答回答）；引用块内为读者提问；覆盖 5 讲，判定见对应 sources 页
 url: https://my.feishu.cn/wiki/OsXEwjFT7iEowykdZBIcmUHInEh
 source_url: https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMb9Xw6bEOLl5GPx
 kind: course-article
@@ -13,6 +13,7 @@ capture_method: >
   document_id: SdykdasnKoTODIxib3RcfyUfnMd ｜ revision_id: 72 ｜ 正文 4,235 字符 / 127 行（均指本文件去掉 frontmatter 之后的正文）。
   结构化端点抓取：标题层级、行内链接、加粗标记、引用块均保留；未做 HTML 渲染，无 `→` 转 `->` 一类损失。
   内嵌图片 0/0 张（本份无内嵌图片）。
+  **图片下载路径（抓取事实）：** `lark-cli docs +media-download --token <file_token>` —— 首次误用 `drive +download`，对文档内嵌图**全部返回 HTTP 403**；改用 `docs +media-download` 后全部取回。**同一轮 ingest 内已更正，见 `wiki/log.md`。**
   正文中的图片链接已就地改写为本地相对路径 `assets/...`；file_token 与本地文件名的对照表维护在对应的 wiki/sources/ 页。
 capture_note: >
   **本字段只记「抓取事实」，不记「阅读结论」。**（`AGENTS.md` 1.1）

@@ -2,7 +2,7 @@
 title: 伯克森悖论（Berkson's Paradox）：门槛会制造对立，筛子会伪造规律
 type: concept
 slug: berksons-paradox
-tags: [决策, 统计, 伯克森悖论, 门槛偏差, 选择偏差, 因果推断, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 决策, 统计, 伯克森悖论, 选择偏差, 门槛偏差, 因果推断]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-selection-bias-notes]

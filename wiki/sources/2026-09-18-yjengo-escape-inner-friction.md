@@ -2,7 +2,7 @@
 title: 摆脱内耗：如何在焦虑与懊悔中找回自我（YJango）
 type: source
 slug: 2026-09-18-yjengo-escape-inner-friction
-tags: [情绪, 内耗, 焦虑, 素材, 一手]
+tags: [情绪, 内耗, 焦虑]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-yjengo-escape-inner-friction]

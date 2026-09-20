@@ -2,7 +2,7 @@
 title: How to remember everything you read (stop trying) — Dan Koe
 type: source
 slug: 2026-09-18-dankoe-remember-what-you-read
-tags: [学习方法, 知识管理, 创作]
+tags: [知识管理, 创作, 学习方法]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dankoe-remember-what-you-read]

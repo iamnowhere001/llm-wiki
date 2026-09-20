@@ -2,7 +2,7 @@
 title: 季清华（Michelene T. H. Chi）
 type: entity
 slug: michelene-chi
-tags: [人物, 研究者, 教育, ICAP]
+tags: [人物, 教育, 研究者, ICAP]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-icap-framework]

@@ -2,7 +2,7 @@
 title: 加布里埃尔·厄廷根（Gabriele Oettingen）
 type: entity
 slug: gabriele-oettingen
-tags: [人物, 研究者, 动机, WOOP, 心理比对]
+tags: [人物, 动机, 研究者, WOOP, 心理比对]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]

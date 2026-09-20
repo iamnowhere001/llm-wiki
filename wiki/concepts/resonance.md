@@ -2,7 +2,7 @@
 title: 共鸣（罗萨）
 type: concept
 slug: resonance
-tags: [共鸣, 罗萨, 比较, 使命, 社会学, 成长战略]
+tags: [成长战略, 社会学, 共鸣, 罗萨, 比较, 使命]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-resonance-notes]

@@ -2,7 +2,7 @@
 title: 操作效应（Enactment Effect）
 type: concept
 slug: enactment-effect
-tags: [记忆, 学习, 具身认知]
+tags: [学习, 记忆, 具身认知]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

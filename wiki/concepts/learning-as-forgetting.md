@@ -2,7 +2,7 @@
 title: 学习即遗忘
 type: concept
 slug: learning-as-forgetting
-tags: [学习, 遗忘, 压缩, 认知, 迁移]
+tags: [学习, 认知, 压缩, 迁移, 遗忘]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-bjork-forgetting-friend-of-learning]
@@ -120,6 +120,12 @@ status: active
   （本库自造的读法，`confidence: low`）
 - 与 [[mental-models]] 相接：思维模型是压缩的产物，而压缩靠遗忘实现。
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-pretraining-posttraining]]（117 讲）**：同 [[tacit-knowledge]] 一条 ——
+  行 170 的「工具是经验的压缩算法」与本页「学习即遗忘（去掉细节、保住结构）」同向。
 ## 开放问题
 
 - [x] ~~「遗忘作为学习机制」在认知科学里有没有一手文献？~~ → **2026-09-18 已解**：

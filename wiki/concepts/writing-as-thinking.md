@@ -2,7 +2,7 @@
 title: 写作即思考：写不是思考的出口，是思考的场所
 type: concept
 slug: writing-as-thinking
-tags: [写作, 认知, 元认知, 知识管理, 实践]
+tags: [知识管理, 认知, 元认知, 写作, 实践]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-writing-is-thinking, 2026-09-19-luhmann-communicating-with-slip-boxes]

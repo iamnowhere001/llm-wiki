@@ -2,7 +2,7 @@
 title: "表征、图式、心智模型和解释框架：学习学的是什么（《现代思维工具》学习与教育 第 4 讲）"
 type: source
 slug: 2026-09-18-mental-representations
-tags: [学习, 认知, 心智模型, 压缩, 万维钢, 自造概念, 素材]
+tags: [万维钢, 学习, 认知, 心智模型, 压缩, 自造概念]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations]

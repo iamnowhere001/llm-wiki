@@ -2,7 +2,7 @@
 title: 创新扩散
 type: concept
 slug: innovation-diffusion
-tags: [创新扩散, 罗杰斯, 巴斯, S曲线, 采用者分类, 扩散模型]
+tags: [S曲线, 创新扩散, 巴斯, 扩散模型, 罗杰斯, 采用者分类]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-opportunity-window]

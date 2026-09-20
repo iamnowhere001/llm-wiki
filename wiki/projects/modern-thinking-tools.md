@@ -2,7 +2,7 @@
 title: 现代思维工具（万维钢 · 得到课程）
 type: project
 slug: modern-thinking-tools
-tags: [万维钢, 得到课程, 课程级项目, 研究, 系列]
+tags: [万维钢, 得到课程]
 created: 2026-09-18
 updated: 2026-09-19
 goal: 把《现代思维工具》已收板块的素材编译成逐条标注证据性质的综述，并维护一张覆盖全课的「板块 × 证据质量」地图
@@ -90,9 +90,9 @@ status: active
 | 四 · 模块三 学习教育 | 12 讲 | **9** + 1 份配图素材（**另缺 053 / 054 两讲**） | **[[peak-performance]]** | 见该页；起点素材含 AI 生成段与伪引注。**059 问答跨到此区**（4 节） |
 | 五 · 模块四 赚钱逻辑 | 12 讲 | **13 份 raw + 13 份 sources 页 + 22 个派生页**（2026-09-19） | **本项目** | **材料侧完成**。12 讲正文 + 3 篇问答（1 篇属模块五）；22 张图已落地。**AI 段分布两极**：5 份含大段 AI（最大是沃德利地图的 65.9% 离题扩展）、8 份零 AI 段 |
 | 六 · 模块五 参与者 | 17 讲 | 0 | — | 未收。**但有 1 篇问答被收纳在模块四的目录下**（见下「两处错收」） |
-| 七 · 模块六 领导者 | 12 讲 | 0 | — | 未收 |
-| 八 · 模块七 演化者 | 已更新 | 0 | — | 未收 |
-| 九 · 模块八 高观点 | — | 0 | — | 未收 |
+| 七 · 模块六 领导者 | 12 讲 | **11**（模块六 / 七合计，2026-09-19 同批落档） | **本项目** | **2026-09-19 由「未收」变为已收**（模块六 / 七共用这 11 份；**具体分属待核**）。**纯讲稿占比高**（多份 0% AI 段），与模块一「几乎每讲都有 AI 段」形成对照 |
+| 八 · 模块七 演化者 | 已更新 | 同上（与模块六同批落档） | **本项目** | 同上 |
+| 九 · 模块八 高观点 | **12 篇**（本库推定 107–118；讲次表只覆盖 107–109） | **12 份 raw + 12 份 sources 页 + 22 个派生页**（2026-09-19） | **本项目** | **sources 侧完成、派生页 22 已建（2026-09-19）**；**回填清单（约 60 个目标页）尚未执行**。⚠️ 本模块**带 AI 加工段的比例高于模块七**（0%–54.2%，见各 sources 页） |
 | **尾声** | — | 0 | — | 未收 |
 
 **这张表要说清三件事：**
@@ -417,7 +417,7 @@ status: active
 |---|---|---|---|
 | **1** | 概率与预测 | reference-class / regression-to-the-mean / selection-bias（3） | **✅ 建议新建部分已完成（2026-09-19）**：10 项建议 → **建 5 页**；「建议回填」18 条待做 |
 | **2** | 风险与决策 | kelly-criterion / no-free-lunch-theorem / ooda-loop / prospect-theory / probability-distribution（5） | **✅ 建议新建部分已完成（2026-09-19）**：16 项建议 → **建 3 页**（其余 13 项已被既有页承载）；「建议回填」28 条待做 |
-| **3** | 商业与战略 | alpha-strategy / business-leverage / economic-rent / jevons-paradox / platform-business-model / window-of-opportunity / wardley-map / granularity-causal-mediation / state-leverage / baumols-cost-disease（10） | **🟡 部分完成（2026-09-19）**：建议新建 28 项 → **只建 1 页**（theory-of-constraints，其余 27 项已被既有页承载）；建议回填 57 条 → **已做 11 个高频页**（约 30 条），**12 个单条目标页待做** |
+| **3** | 商业与战略 | alpha-strategy / business-leverage / economic-rent / jevons-paradox / platform-business-model / window-of-opportunity / wardley-map / granularity-causal-mediation / state-leverage / baumols-cost-disease（10） | **✅ 已完成（2026-09-19）**：建议新建 28 项 → **只建 1 页**（theory-of-constraints，其余 27 项已被既有页承载）；建议回填 57 条 → **已全部执行**（11 个高频页 + 12 个单条页） |
 | 4 | 反脆弱与信任 | antifragility / trustworthiness / effectuation / game-selection / bayesian-prior / superforecasting（6） | 待做 |
 | 5 | 情绪 / 心流 / 问答 | 2026-09-18 批 + `qa-*` 各篇（约 22） | 待做 |
 
@@ -490,6 +490,60 @@ status: active
 - [[victim-mentality]] —— 归属 [[emotion-awareness]]。第 3 讲 AI 段给了它第二份素材，**未上调其 `confidence`**
 - [[deliberate-practice]] / [[character-skills]] —— 归属 [[peak-performance]]。
   它们是张力表的对手方，**第 5 讲已分别回填两页**
+
+**区块六 · 模块六 / 模块七 演化者**【2026-09-19 新收录，本项目第五条主线】
+
+> 本批 **11 份 raw + 11 份 sources 页**落档，两个区块在全课地图里由 `0` 变为已收。
+> ⚠️ **模块六与模块七的具体分属待核** —— 本批按「同批落档」合并登记，不擅自拆分。
+> **共同特征：纯讲稿占比高**（多份 AI 段占比 **0%**），与模块一形成对照。
+
+*11 份素材（sources 页）*：
+[[2026-09-19-marginal-analysis]]｜[[2026-09-19-adaptive-cycle]]｜[[2026-09-19-path-creation]]｜
+[[2026-09-19-symmetry-breaking]]｜[[2026-09-19-self-organized-criticality]]｜[[2026-09-19-feedback-loops]]｜
+[[2026-09-19-feedback-loop-essay]]｜[[2026-09-19-adjacent-possible]]｜[[2026-09-19-generativity]]｜
+[[2026-09-19-qa-claiming-hard-problems]]｜[[2026-09-19-qa-ordinary-people-safety]]
+
+**派生页（已建）**：[[marginal-analysis]]｜[[adaptive-cycle]]｜[[path-creation]]｜[[symmetry-breaking]]｜
+[[self-organized-criticality]]｜[[feedback-loop]]｜[[adjacent-possible]]｜[[generativity]]
+
+> **本批新建 3 页**：`marginal-analysis` / `adaptive-cycle` / `path-creation` ——
+> 建页的**直接动因是修断链**：`feedback-loop` / `self-organized-criticality` / `symmetry-breaking` 三页
+> 引用了尚未建立的 `marginal-analysis` / `adaptive-cycle` / `path-creation`，造成 4 项断链。
+> **这印证了一条：sources 页建完不等于该讲落地 —— 概念页没建，引用它的页就会断。**
+
+**区块七 · 模块八 高观点**【2026-09-19 新收录，本项目第六条主线】
+
+> 本批 **12 份 raw + 12 份 sources 页**落档，全课地图「九 · 模块八 高观点」由 `0` 变为已收。
+> **本模块是全课的收束板块，也是本库第一次成批进入 AI 对齐术语**（[[instrumental-convergence]] / [[mesa-optimization]] / [[forking-test]]）。
+> ⚠️ **与模块六 / 七的差别**：模块七多份 AI 段占比 **0%**，本模块**普遍带 AI 加工段**（0%–**54.2%**，最高为 [[2026-09-19-scarcity-singularity]]），
+> 且**多处术语锚是 AI 段自己补的**（如「Skin in the game」「Distribution Shift」「纳什均衡」）—— **引用时须标层**。
+
+*12 份素材（sources 页）*：
+[[2026-09-19-zeroth-order-truth]]｜[[2026-09-19-objective-function]]｜[[2026-09-19-second-order-desire]]｜
+[[2026-09-19-by-products]]｜[[2026-09-19-self-constraint]]｜[[2026-09-19-qa-no-dwelling-and-objective]]｜
+[[2026-09-19-moral-scalability]]｜[[2026-09-19-problem-setting]]｜[[2026-09-19-inner-optimizer]]｜
+[[2026-09-19-scarcity-singularity]]｜[[2026-09-19-pretraining-posttraining]]｜[[2026-09-19-qa-first-credit]]
+
+**派生页（22 页，2026-09-19 本轮建成）**：
+
+| 讲 | 派生页 | 归属判据（既有术语 / 讲稿自拟） |
+|---|---|---|
+| 107 零阶道理 | [[zeroth-order-truth]]｜[[salience-vs-importance]] | 前者**讲稿自创**（自陈），后者**合并两个既有概念**（Hsee 1996 / Kahneman） |
+| 108 目标函数 | [[instrumental-convergence]]｜[[hume-guillotine]] | 均为**既有术语**（Bostrom 2012 / Omohundro 2008；休谟《人性论》） |
+| 109 二阶意愿 | [[second-order-volition]]｜[[metarepresentation]] | 均为**既有术语**（Frankfurt 1971；Pylyshyn 1978 / Proust 2007） |
+| 110 副产品 | [[essential-by-products]]｜[[ironic-process-theory]]｜[[obliquity]]｜[[wu-wei]] | 均为**既有框架**（Elster 1983；Wegner 1987/1994；John Kay 2010；Slingerland 2014） |
+| 111 自我约束 | [[self-constraint]]｜[[credible-commitment]]｜[[skin-in-the-game]] | 前两者**既有**（Schelling 1960 / Williamson 1983）；**skin-in-the-game 的术语锚是 AI 段补的** |
+| 113 道德的可扩展性 | [[moral-scalability]] | **讲稿自拟**（外核未检到该英文词的既有学术定义） |
+| 114 立题 | [[problem-setting]] | **讲稿自拟**（与传播学 agenda-setting 异义） |
+| 115 内部优化器 | [[mesa-optimization]]｜[[forking-test]]｜[[wanting-vs-liking]] | 均为**既有术语**（Hubinger 2019；Langosco 2022；Berridge & Valenstein 1991） |
+| 116 稀缺 | [[positional-goods]]｜[[arrows-impossibility-theorem]]｜[[value-incommensurability]] | 均为**既有概念**（Hirsch 1976；Arrow 1950；Berlin / Chang 1997） |
+| 117 预训练和后训练 | [[pretraining-posttraining]] | **既有 ML 术语**（Chinchilla 2022 / Yue et al. 2025 / LIMA 2023） |
+
+> [!note] 本批建页时统一执行的一条（自写）
+> **每页都在页首显式分层**：① 学术既有概念（有出处 / 年份 / 可署名）② 讲稿自拟的命名与表述 ③ AI 加工段自己补的术语锚。
+> 这样做的原因是本模块**三种来源混写的情况比前几个模块严重** —— 典型如 [[skin-in-the-game]]（讲稿只说「可被伤害」，英文术语是 AI 段补的）
+> 与 [[forking-test]]（对应既有概念 goal misgeneralization，而「Distribution Shift」是 AI 段补的锚）。
+> **不分层就会把 AI 段的加法当成讲稿主张** —— 这是本库在 [[harness-engineering]] 那批已经犯过一次的同类错误。
 
 ## 产出（外向回路）
 

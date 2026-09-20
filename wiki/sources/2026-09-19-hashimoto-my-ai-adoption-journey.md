@@ -2,7 +2,7 @@
 title: My AI Adoption Journey（Mitchell Hashimoto，2026-02-05）
 type: source
 slug: 2026-09-19-hashimoto-my-ai-adoption-journey
-tags: [AI, Agent, harness, 一手, 英文]
+tags: [AI, Agent, harness]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-hashimoto-my-ai-adoption-journey]

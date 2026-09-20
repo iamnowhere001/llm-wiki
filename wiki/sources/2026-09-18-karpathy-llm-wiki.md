@@ -2,7 +2,7 @@
 title: LLM Wiki — 用 LLM 构建个人知识库的模式
 type: source
 slug: 2026-09-18-karpathy-llm-wiki
-tags: [知识管理, LLM, RAG, 模式]
+tags: [知识管理, 模式, LLM, RAG]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-karpathy-llm-wiki-r2]

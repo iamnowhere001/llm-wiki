@@ -2,7 +2,7 @@
 title: LLM Wiki 模式研究
 type: project
 slug: llm-wiki-research
-tags: [知识管理, LLM, 研究]
+tags: [知识管理, LLM]
 created: 2026-09-18
 updated: 2026-09-19
 goal: 把 LLM Wiki 模式的思想谱系、机制与适用边界研究到能写出一篇对外文章的深度

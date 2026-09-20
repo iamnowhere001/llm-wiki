@@ -2,7 +2,7 @@
 title: "《思考如何超越思考》读书笔记（安妮·墨菲·保罗）"
 type: source
 slug: 2026-09-18-extended-mind-notes
-tags: [巅峰表现, 具身认知, 扩展心智, 混层, AI生成, 弱引注, 过期引注, 素材]
+tags: [巅峰表现, 具身认知, 扩展心智]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-extended-mind-notes]

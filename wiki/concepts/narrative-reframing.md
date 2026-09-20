@@ -2,7 +2,7 @@
 title: 叙事重构：把「受害者剧本」改写成「英雄剧本」
 type: concept
 slug: narrative-reframing
-tags: [叙事, 情绪, 方法, 认知重评, 自欺, 低置信度]
+tags: [情绪, 叙事, 方法, 认知重评, 自欺]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-self]

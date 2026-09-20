@@ -2,7 +2,7 @@
 title: 专注 vs 固执
 type: concept
 slug: focus-vs-stubborn
-tags: [战略, 取舍, 专注, 固执, 前置信号, 万维钢, 得到课程, 作者自造判据]
+tags: [万维钢, 得到课程, 战略, 专注, 前置信号, 取舍, 固执]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-qa-focus-vs-stubborn]

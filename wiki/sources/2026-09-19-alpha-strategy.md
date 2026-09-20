@@ -2,7 +2,7 @@
 title: 阿尔法：优势战略意识（万维钢《现代思维工具》「模块四 赚钱逻辑」第 058 讲）
 type: source
 slug: 2026-09-19-alpha-strategy
-tags: [万维钢, 得到课程, 赚钱逻辑, 现代思维工具, Alpha, Beta, 经济租, 竞争优势, 战略定位, 波特, 哈耶克, 柯兹纳, 引注核查, 素材]
+tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 竞争优势, 经济租, 战略定位, Alpha, Beta, 波特, 哈耶克, 柯兹纳]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-alpha-strategy]

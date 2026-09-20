@@ -2,7 +2,7 @@
 title: "写作即思考：不要把认知外包（飞书文档，多来源缝合）"
 type: source
 slug: 2026-09-18-writing-is-thinking
-tags: [AI时代, 认知外包, 写作, 认知债务, 脑腐, 混层, AI生成, 引注使用失真, 素材]
+tags: [AI时代, 写作, 脑腐, 认知债务, 认知外包]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]

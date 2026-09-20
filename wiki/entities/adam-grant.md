@@ -2,7 +2,7 @@
 title: 亚当·格兰特（Adam Grant）
 type: entity
 slug: adam-grant
-tags: [人物, 组织心理学, 巅峰表现, 学习, 单来源]
+tags: [人物, 学习, 巅峰表现, 组织心理学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

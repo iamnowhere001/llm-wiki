@@ -2,7 +2,7 @@
 title: 约翰·邓洛斯基（John Dunlosky）
 type: entity
 slug: john-dunlosky
-tags: [人物, 研究者, 学习, 一手]
+tags: [人物, 学习, 研究者]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dunlosky-learning-techniques]

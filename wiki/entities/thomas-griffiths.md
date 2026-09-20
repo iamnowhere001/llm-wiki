@@ -2,7 +2,7 @@
 title: 托马斯·格里菲斯（Thomas L. Griffiths）
 type: entity
 slug: thomas-griffiths
-tags: [认知科学, 机器学习, 计算认知科学, 大模型, 一手研究者]
+tags: [认知科学, 大模型, 机器学习, 一手研究者, 计算认知科学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

@@ -2,7 +2,7 @@
 title: 凯利公式：乘法世界里的认知变现（万维钢《现代思维工具》「模块二 决策判断」第 6 讲）
 type: source
 slug: 2026-09-19-kelly-criterion-notes
-tags: [万维钢, 得到课程, 决策判断, 现代思维工具, 素材, 混层, AI生成, 凯利公式, 仓位管理, 乘法世界, 引注核查]
+tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 乘法世界, 仓位管理, 凯利公式]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-kelly-criterion-notes]

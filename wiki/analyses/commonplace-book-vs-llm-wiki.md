@@ -2,7 +2,7 @@
 title: 共同笔记簿 vs LLM Wiki：两条独立路径走到同一个架构
 type: analysis
 slug: commonplace-book-vs-llm-wiki
-tags: [对比, 综合, 模式]
+tags: [模式, 对比, 综合]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]

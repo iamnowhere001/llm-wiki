@@ -2,7 +2,7 @@
 title: 丹尼尔·丹内特（Daniel Dennett）
 type: entity
 slug: daniel-dennett
-tags: [人物, 哲学家, 认知科学, 叙事, 意识]
+tags: [人物, 叙事, 认知科学, 哲学家, 意识]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-three-selves-notes, 2026-09-18-narrative-first-principle]

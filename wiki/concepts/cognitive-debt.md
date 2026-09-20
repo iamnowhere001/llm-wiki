@@ -2,7 +2,7 @@
 title: 认知债务：外包思考要还的账
 type: concept
 slug: cognitive-debt
-tags: [AI时代, 认知, 学习, 记忆, 低置信度]
+tags: [学习, 认知, 记忆, AI时代]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]

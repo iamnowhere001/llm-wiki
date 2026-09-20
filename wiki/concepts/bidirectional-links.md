@@ -2,7 +2,7 @@
 title: 双向链接：一个被治理成本否决的设计
 type: concept
 slug: bidirectional-links
-tags: [超文本, 万维网, 设计]
+tags: [万维网, 超文本, 设计]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes]

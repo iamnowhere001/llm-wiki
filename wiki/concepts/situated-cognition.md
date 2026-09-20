@@ -2,7 +2,7 @@
 title: 情境认知（Situated Cognition）
 type: concept
 slug: situated-cognition
-tags: [认知科学, 环境, 知识管理, 具身认知]
+tags: [知识管理, 认知科学, 具身认知, 环境]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

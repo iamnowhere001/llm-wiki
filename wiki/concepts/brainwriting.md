@@ -2,7 +2,7 @@
 title: 脑力写作：先各自想，再一起评
 type: concept
 slug: brainwriting
-tags: [团队, 集体智慧, 会议, 制度, 机会体系]
+tags: [制度, 机会体系, 团队, 会议, 集体智慧]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

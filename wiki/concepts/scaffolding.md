@@ -2,7 +2,7 @@
 title: 鹰架：临时、对症、按时的外部支撑
 type: concept
 slug: scaffolding
-tags: [支持结构, 学习, 动机, 巅峰表现, 临时性]
+tags: [学习, 巅峰表现, 动机, 临时性, 支持结构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

@@ -2,7 +2,7 @@
 title: "自主支持：「献祭式养育」终结者（《现代思维工具》学习与教育 第 8 讲）"
 type: source
 slug: 2026-09-18-autonomy-support
-tags: [养育, 动机, 自主, 自我决定理论, 万维钢, 素材]
+tags: [万维钢, 动机, 自我决定理论, 养育, 自主]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-autonomy-support]

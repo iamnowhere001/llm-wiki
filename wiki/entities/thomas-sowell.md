@@ -2,7 +2,7 @@
 title: 托马斯·索维尔与「思考 ≠ 感觉」
 type: entity
 slug: thomas-sowell
-tags: [人物, 批判性思维, 认知, 争议]
+tags: [人物, 认知, 批判性思维]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-heavy-tail-notes]

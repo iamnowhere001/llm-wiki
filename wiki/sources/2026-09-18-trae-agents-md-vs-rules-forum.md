@@ -2,7 +2,7 @@
 title: 社区讨论 — AGENTS.md 与 rules 的区别，以及加载时机
 type: source
 slug: 2026-09-18-trae-agents-md-vs-rules-forum
-tags: [工具, IDE, 规则, 素材]
+tags: [工具, IDE, 规则]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-trae-agents-md-vs-rules-forum]

@@ -2,7 +2,7 @@
 title: 认知解耦：三步调节负面情绪（得到《精英日课》）
 type: source
 slug: 2026-09-18-cognitive-decoupling
-tags: [情绪, 情绪调节, 认知, 素材, 一手]
+tags: [情绪, 认知, 情绪调节]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling]

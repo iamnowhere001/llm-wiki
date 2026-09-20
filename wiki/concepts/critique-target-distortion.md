@@ -2,7 +2,7 @@
 title: 批判对象失真：一个已被推翻的类别候选
 type: concept
 slug: critique-target-distortion
-tags: [本库方法论, 证据问题, AI生成, 已推翻]
+tags: [本库方法论]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
