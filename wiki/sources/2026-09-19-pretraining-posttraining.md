@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-pretraining-posttraining
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 后训练, 强化学习, 预训练]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-pretraining-posttraining]
 related: [modern-thinking-tools, wanweigang, goodharts-law, cybernetic-learning, deliberate-practice, transfer-of-learning, feedback-loop, explore-exploit-tradeoff, compression-as-intelligence, entrustability, hard-constraints, tacit-knowledge, three-selves, agent-vs-tool, intelligent-life-system, narrative-as-objective-function, how-we-learn-and-how-to-improve, 2026-09-19-inner-optimizer, 2026-09-19-objective-function, 2026-09-19-self-constraint]
 confidence: medium
@@ -31,19 +31,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/OPOGw6gQ7i7iqtkZlOwcarEGnif
 - **素材路径**：`raw/2026-09-19-pretraining-posttraining.md`（231 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把 AI 训练的整套既有术语（预训练/后训练/SFT/RLHF/RLVR/pass@k/pass@1/涌现/grokking/表面对齐假说/对齐税/scaling law）
-当一个统一脚手架，映射到「人的能力养成」上。** 绝大部分术语是**ML 既有缩写**（素材基本用了英文原文并自注中文），
-只有很少几个是讲稿自造或比喻性外推（见「术语归属专段」）。
-**本份是纯讲稿**：无正文级 `---` 分隔线、无 markdown 标题层级、无 AI 加工段（见「AI 加工段判定」，占比 **0%**），
-内部用 **8 个 `✵` 分节**（行 52 / 76 / 96 / 132 / 150 / 164 / 192 / 204）。
-**具名/带数字引注整体核对顺利**：grokking → Power et al. 2022（素材写「2022 年 OpenAI 的研究者」，**归属属实**）、涌现 → Wei et al. 2022（**素材只用了术语、未署名**，本库补归属）、
-Chinchilla → Hoffmann et al. 2022（DeepMind，素材署名）、Anthropic 谄媚研究 → Sharma et al. 2023（**任务点名的，已精确定位**）、清华黄高团队 → Yue et al.
-(NeurIPS 2025 最佳论文亚军)、LIMA/表面对齐假说 → Zhou et al. 2023、InstructGPT → Ouyang et al. 2022、
-2019 确认偏误训练实验 → Sellier, Scopelliti & Morewedge 2019（**19% 属 2020 更正后数字**）**均外核属实**（见核查表）。
-**唯一不可核的是「Anthropic 一线工程师私下聊 scaling law」那一段**（行 140，人际私谈，无文献），如实标（未验证）；
-**并发现一处抓取事实与正文的矛盾**：raw `capture_note` 称「本份正文内无讲次编号」，但**正文行 38 自陈「第 99 讲」**（见「开放问题」）。
+1. **把 AI 训练的整套既有术语当一个统一脚手架，映射到「人的能力养成」上**（预训练 / 后训练 / SFT / RLHF / RLVR / pass@k / pass@1 / 涌现 / grokking / 表面对齐假说 / 对齐税 / scaling law）。绝大部分术语是 **ML 既有缩写**（素材基本用了英文原文并自注中文），只有很少几个是讲稿自造或比喻性外推（见「术语归属专段」）。
+2. **本份是纯讲稿**：无正文级 `---` 分隔线、无 markdown 标题层级、无 AI 加工段（见「AI 加工段判定」，占比 **0%**），内部用 **8 个 `✵` 分节**（行 52 / 76 / 96 / 132 / 150 / 164 / 192 / 204）。
+3. **具名 / 带数字引注整体核对顺利**：grokking → Power et al. 2022（素材写「2022 年 OpenAI 的研究者」，**归属属实**）、涌现 → Wei et al. 2022（**素材只用了术语、未署名**，本库补归属）、Chinchilla → Hoffmann et al. 2022（DeepMind，素材署名）、Anthropic 谄媚研究 → Sharma et al. 2023（**任务点名的，已精确定位**）、清华黄高团队 → Yue et al. (NeurIPS 2025 最佳论文亚军)、LIMA / 表面对齐假说 → Zhou et al. 2023、InstructGPT → Ouyang et al. 2022、2019 确认偏误训练实验 → Sellier, Scopelliti & Morewedge 2019（**19% 属 2020 更正后数字**）**均外核属实**（见核查表）。
+4. **唯一不可核的是「Anthropic 一线工程师私下聊 scaling law」那一段**（行 140，人际私谈，无文献），如实标（未验证）。
+5. **发现一处抓取事实与正文的矛盾**：raw `capture_note` 称「本份正文内无讲次编号」，但**正文行 38 自陈「第 99 讲」**（见「待办 / 开放问题」）。
 
 ## 素材基本信息
 
@@ -62,7 +56,7 @@ Chinchilla → Hoffmann et al. 2022（DeepMind，素材署名）、Anthropic 谄
 **行号坐标系声明**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），非「跳过 frontmatter 后的内容相对行号」。
 本素材 `capture_method` 记的「正文 202 行」与去 frontmatter 后的实际一致。**引用前已逐条回文件核对。**
 
-**编号依据（沿用 `capture_note` 的抓取事实）**：本份正文内**通常无讲次编号**（但见「开放问题」的例外：行 38 自陈「第 99 讲」，与 `capture_note` 的「无讲次编号」表述相抵，须登记）。
+**编号依据（沿用 `capture_note` 的抓取事实）**：本份正文内**通常无讲次编号**（但见「待办 / 开放问题」的例外：行 38 自陈「第 99 讲」，与 `capture_note` 的「无讲次编号」表述相抵，须登记）。
 父文档《09_高观点》首段那 10 条编号标题（090–099）是**早期规划稿**，**本库不采信**（与模块一 / 二 / 四 / 五 / 七同型）。
 据外部讲次表 `wwg000`–`wwg109`，**「模块八 高观点」在该表内只有 3 条：wwg107 零阶道理 / wwg108 目标函数 / wwg109 二阶意愿和元表征**；
 该表**未覆盖本模块其余 9 篇**。**故本份 117 是「本库推定次序」。**
@@ -79,7 +73,7 @@ Chinchilla → Hoffmann et al. 2022（DeepMind，素材署名）、Anthropic 谄
 | 03 | 148 | `img-03.png` | `PkhvbES3io1GDUxdq8kcwZaanYc` | 「能力地图：段誉、乔峰和你」——初学者/熟练工/乔峰/段誉在发挥（pass@1）与潜力（pass@k）上的位置 |
 | 04 | 231 | `img-04.png` | `XVflbyPg5oDQj1xUBe3cyLiGnVb` | 全讲总览「预训练决定能力上限，后训练决定能力下限」 |
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -204,7 +198,7 @@ Chinchilla → Hoffmann et al. 2022（DeepMind，素材署名）、Anthropic 谄
 | 15 | **Anthropic 一位一线负责预训练的工程师私下聊**：认为预训练 scaling law 并未结束；听说 OpenAI 下一代模型基于更大预训练基座（行 140） | 人际私谈 + 未经署名的「听说」，**无文献、无公开来源可核** | ⚠️ **（未验证）** —— 不可追溯（人际轶事，非「已核实不存在」） |
 | 16 | **2019 年，三位行为科学家给 290 名来自三个专业项目的研究生**做「确认偏误」训练；几周后遇挑战者号决策原型的商业案例、毫无预告提醒，**受过训练的学生选中劣质方案概率低 19 个百分点**（行 186–188） | **Sellier, Scopelliti & Morewedge 2019**（*Psychological Science*；实验为 290 名研究生、三个专业项目、以挑战者号发射决策为原型、课程排程决定谁先受训、无预告）。**关键版本事实：原文 2019 初版报告 29%，2020 年勘误（corrigendum）后订正为 19%** —— 素材采用的「19%」**正是更正后数字**。三项（290 人 / 挑战者号案例 / 19%）全部对上 | ✅ 已核（**290 人 / 19% / 挑战者号案例全部对上**）；⚠️ **数字版本登记：2019 初版 29% → 2020 更正月 19%** |
 | 17 | 收尾「有偈为证」四句（行 222–227） | 代笔者未披露 | ⚠️ 只登记，不单列、不计 AI 占比 |
-| 18 | 行 38 自陈「**这是现代思维工具课的第 99 讲**」 | 与 raw `capture_note`「本份正文内无讲次编号」**相抵**；且与本库推定次序 117 差距大（外部讲次表 `wwg000`–`wwg109` 中，099 落在模块六 / 七区间，与本份所属模块八不符） | ⚠️**抓取事实矛盾登记**（见「开放问题」），正文自述编号不采信 |
+| 18 | 行 38 自陈「**这是现代思维工具课的第 99 讲**」 | 与 raw `capture_note`「本份正文内无讲次编号」**相抵**；且与本库推定次序 117 差距大（外部讲次表 `wwg000`–`wwg109` 中，099 落在模块六 / 七区间，与本份所属模块八不符） | ⚠️**抓取事实矛盾登记**（见「待办 / 开放问题」），正文自述编号不采信 |
 
 **核查小结**：18 条中 **已核 12**（#2、#3、#6、#10、#11、#12、#13、#14、#16；#1、#4、#5、#8、#9 为既有术语且归属已核）、
 **未验证 1**（#15 Anthropic 工程师私谈）、**通用行话 / 未取到首创 1**（#7 对齐税）、
@@ -333,7 +327,7 @@ InstructGPT（Ouyang 2022）/ 确认偏误实验（Sellier et al. 2019）**全�
 - [[modern-thinking-tools]]：全课地图「九 · 模块八 高观点」一行的**已收计数 +1**；并登记「117 之后为 118 问答（待核）」。
 - [[wanweigang]]：作者页可登记「**高观点 / AI 训练映射人类学习**」这条线。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **117 是「本库推定次序」，且外部讲次表未覆盖它。** 依据是 115→本份的文内互指（行 88「有伪对齐」）+ `node_create_time` 升序；
       **118（问答）尚未入库**，本份的边界待其入库后核对。**且行 38 自陈「第 99 讲」与 117 差距大，需一并说明该自陈的来由。**

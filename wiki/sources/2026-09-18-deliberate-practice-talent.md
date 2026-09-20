@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-deliberate-practice-talent
 tags: [万维钢, 学习, 专长, 刻意练习, 天赋]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-deliberate-practice-talent]
 related: [deliberate-practice, anders-ericsson, mental-models, desirable-difficulty, transfer-of-learning, wanweigang, 2026-09-18-icap-framework, 2026-09-18-transfer-bridging, peak-performance, deliberate-play]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里唯一在正文里直接贴出 Claude 对话链接的一份。**
 
 - **作者**：万维钢（行 56 自陈「我们**《精英日课》专栏**多次聊过刻意练习」）
-- **链接**：https://my.feishu.cn/wiki/PIBAwqoc1i8HpbkQeFJcX8cLnOg
-- **原文**：https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYdjxVlY4jRMdvmbE
+- **链接**：https://my.feishu.cn/wiki/PIBAwqoc1i8HpbkQeFJcX8cLnOg ｜ https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYdjxVlY4jRMdvmbE
 - **发表**：2026-05-10 23:24
 - **素材路径**：`raw/2026-09-18-deliberate-practice-talent.md`（651 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**给出年份与百分比但未给文献题名**
 
 ## 关键要点
 
@@ -36,7 +34,7 @@ status: active
 6. **2025 年的新证据仍在支持它**：88 名医学生的神经外科模拟 RCT（AI 识错 + 专家反馈）、
    心理咨询师训练综述。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -55,7 +53,7 @@ status: active
 |---|---|---|
 | **44** | `https://claude.ai/chat/beb64a44-9fb7-4a36-99f4-43097299c5e3` | **Claude 对话分享链接**。与 [[2026-09-18-how-we-learn-notes]] 行 59、[[2026-09-18-extended-mind-notes]] 的情况同型 —— 本库**第三次**在素材里遇到 AI 对话链接。**该链接不可访问**（需登录），本库只记录「素材自陈此处有 AI 对话」 |
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -86,6 +84,10 @@ status: active
 - [ ] 核查表第 3、4 条（2014 / 2016 两项研究）**优先级最高**。
 - [ ] 与 [[deliberate-play]]（Grant 侧）的冲突**未处理**。
 - [ ] 行 44 的 Claude 对话链接不可访问；**若保留有完整对话，价值高于本素材**。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**给出年份与百分比但未给文献题名**
 
 ## 来源
 

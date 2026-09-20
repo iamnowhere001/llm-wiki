@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-trae-rules-docs
 tags: [工具, IDE, 规则]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-trae-rules-docs]
 related: [traecode, agents-md, three-layer-architecture, llm-wiki-pattern]
 confidence: high
@@ -15,11 +15,8 @@ status: active
 
 > [[traecode]] 官方文档中「规则」一节的逐字副本。它是判断「AI 到底按什么规则干活」的**唯一权威依据** —— 因为它来自产品方，不是社区转述。
 
-- **来源**：https://docs.trae.cn/ide_rules
-- **发布方**：TRAE（字节跳动）
-- **采集时状态**：文档自称发布于 2026-09-18
+- **发表**：TRAE（字节跳动）
 - **素材路径**：`raw/2026-09-18-trae-rules-docs.md`
-- **采集质量**：高（正文为逐字原文；但配图未下载，图片链接失效）
 
 ## 关键要点
 
@@ -60,7 +57,7 @@ status: active
 
 「示例」一节按场景给出五组规则样例：基础交互（中文回答、关键逻辑加中文注释、超过 20 行考虑抽象）、通用编码、重构（小步重构 + 测试保障 + 代码审查）、代码可读性、性能优化。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **它把 [[three-layer-architecture]] 的第三层具体化了。** 本库把 schema 层放在 `AGENTS.md`，而这份文档说明了 `AGENTS.md` 在 IDE 侧是如何被加载和与 `.trae/rules/` 分工的 —— 也就是「schema 层」在真实工具里的落地形态。新建的 [[agents-md]] 页专门讨论这一点。
 - **它是 [[llm-wiki-pattern]] 里「工具链尽量薄」取向的一个外部对照。** 本库选择零依赖 CLI，而 TraeCode 选择在 IDE 内做一套四档生效方式的规则系统 —— 两者解决的是同一个问题（让 AI 稳定遵守约定），路径不同。
@@ -76,11 +73,17 @@ status: active
 - 实体：[[traecode]]（新建）
 - 概念：[[agents-md]]（新建）
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 实测「设置 > 规则 > 导入设置」开启后，AGENTS.md 是否真的进入上下文
 - [ ] 验证 `.trae/rules/` 与 `AGENTS.md` 冲突时的实际优先级
 - [ ] 确认「智能生效」在实际对话中的判定准确率（文档只说由 AI 判断相关性）
+
+## 素材基本信息
+
+- **来源**：https://docs.trae.cn/ide_rules
+- **采集时状态**：文档自称发布于 2026-09-18
+- **采集质量**：高（正文为逐字原文；但配图未下载，图片链接失效）
 
 ## 相关页面
 

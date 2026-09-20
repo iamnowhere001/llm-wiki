@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-social-capital-structural-holes-notes
 tags: [成长战略, 万维钢, 得到课程, 重尾, 结构洞, 社交资本]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-social-capital-structural-holes-notes]
 related: [opportunity-systems, heavy-tailed-distribution, luck-over-talent, multiplicative-world, steady-state-survival-logic, compensatory-control, narrative-power, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-hidden-potential-notes]
 confidence: medium
@@ -28,23 +28,20 @@ status: active
 - **发表**：2026-04-02 23:07
 - **素材路径**：`raw/2026-09-18-social-capital-structural-holes-notes.md`（646 行）
 
-## TL;DR
-
-**它把「个人奋斗论」改写成「位置论」** —— 用切蒂的代际流动数据证明：同样的天资与勤奋，
-生在圣何塞有 **12.9%** 概率进入收入前 20%，生在夏洛特只有 **4.4%**；
-因此「换位置」（搬家）+「换网络」（社交资本、结构洞）比「更努力」更重要。
-
 ## 关键要点
 
-1. **它是「基本世界观」第 2 讲《重尾》的直接下游。** 行 51 显式回指：
+1. **它把「个人奋斗论」改写成「位置论」** —— 用切蒂的代际流动数据证明：同样的天资与勤奋，
+   生在圣何塞有 **12.9%** 概率进入收入前 20%，生在夏洛特只有 **4.4%**；
+   因此「换位置」（搬家）+「换网络」（社交资本、结构洞）比「更努力」更重要。
+2. **它是「基本世界观」第 2 讲《重尾》的直接下游。** 行 51 显式回指：
    「了解了**重尾分布**你就该知道这个世界的各个位置是绝对不平等的。但人是活的！」
    —— 第 2 讲说「位置不平等」，本讲说「所以你要去好位置」。**这是库内第 2→8 讲的文内互指。**
-2. **社交资本三种里只有一种管用**（行 63–67）：经济连通性 / 社会凝聚力 / 公民参与度，
+3. **社交资本三种里只有一种管用**（行 63–67）：经济连通性 / 社会凝聚力 / 公民参与度，
    而**只有经济连通性对向上流动有显著预测力**。「想要成为富人，你最好结交一些富人。」
-3. **结构洞的本质被讲稿重新定义为「翻译」**（行 113），不是传话。例证是邓小平（行 115–121）。
-4. **它是本库「制度层归因」框架的第二份证据**，与 [[opportunity-systems]] 同主题、不同来源。
-5. **行 137 直接反驳稳态生存的「安土重迁」**：「那是因为天下的土地都有主……可是现代社会的机会是流动的。」
-6. **正文近八成为 AI 加工段**，且该段带着可识别的对话痕迹（行 304「你贴的文章」、行 404）。
+4. **结构洞的本质被讲稿重新定义为「翻译」**（行 113），不是传话。例证是邓小平（行 115–121）。
+5. **它是本库「制度层归因」框架的第二份证据**，与 [[opportunity-systems]] 同主题、不同来源。
+6. **行 137 直接反驳稳态生存的「安土重迁」**：「那是因为天下的土地都有主……可是现代社会的机会是流动的。」
+7. **正文近八成为 AI 加工段**，且该段带着可识别的对话痕迹（行 304「你贴的文章」、行 404）。
 
 ## 素材分层表（文件绝对行号）
 
@@ -206,7 +203,7 @@ status: active
 **建议回填**
 - [[heavy-tailed-distribution]]：补第 8 讲的回指证据
 - [[opportunity-systems]]：加本页作为**同一批 Chetty 研究的另一种读法**（制度层 vs 个人策略）
-- [[luck-over-talent]]、[[multiplicative-world]]、[[steady-state-survival-logic]]、[[compensatory-control]]：见「与既有页面的关系」
+- [[luck-over-talent]]、[[multiplicative-world]]、[[steady-state-survival-logic]]、[[compensatory-control]]：见「与本库既有页面的关系」
 - [[modern-thinking-tools]]：缺口表增列「第 8 讲 4% 系数未核」「位置归因 vs 运气归因未辨析」
 
 ## 待办 / 开放问题

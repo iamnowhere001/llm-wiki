@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-five-thinking-tools-livestream
 tags: [成长战略, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-five-thinking-tools-livestream]
 related: [modern-thinking-tools, wanweigang, cognitive-decoupling, free-energy-principle, 2026-09-18-free-energy-alignment-notes, 2026-09-18-woop-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-game-selection-notes, 2026-09-18-narrative-first-principle, 2026-09-18-active-cognitive-load-notes]
 confidence: medium
@@ -27,21 +27,11 @@ status: active
 
 - **作者**：得到直播逐字稿 —— **主讲万维钢**，**主持小影**（万维钢主编）。全文为两人口播的转写
 - **链接**：https://my.feishu.cn/wiki/U4yAwG2xVinRytkI2qfcwQ3rn9d
-- **原文出处**：**无** —— 直播无 `dedao.cn/course/article` 链接（与所有课程文章类素材不同）
-- **体裁与编号**：**模块一收官直播串讲**，`kind: livestream-transcript`，**无官方编号**。
-  官方编号依据在 raw 的 `capture_note` 里：同 wiki 空间的模块目录文档给出 **007–021** 的官方顺序（**照抄，非本页发明**）；
-  该目录文档（`2026-09-18-growth-strategy-module-notes`）**尚未建 sources 页**
-- **发布**：**未标注**（raw `published: 未标注`）
 - **素材路径**：`raw/2026-09-18-five-thinking-tools-livestream.md`（**264 行**；frontmatter 占 **1–22**，正文自 **23** 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），写前已逐段 `sed -n` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 **239 行**」是**内容相对行号**（不含 frontmatter），
-  而实测正文 23–264 = **242 行**，**差 3** —— 与同批 `capability` / `supply-side` 两份文件的偏差一致，属同一基准差。
-  **引用前必须回文件核对，不要沿用 `capture_method` 的行数。**
-- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: CQTadq6GJo9Q51xoH17cmLCmnCg` ｜ `revision_id: 99` ｜ 正文 17,554 字符 ｜ **无内嵌图片**
+
 - **`confidence: medium`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **它把「模块一」收成一张图：两条线索 + 五个工具。** 行 74–80 是全场唯一一次「课后反思」——
    「一百讲里那么多思维工具，其中有两条线索：**第一条是主动**……**第二条是工程化**」。
@@ -108,7 +98,7 @@ status: active
 > **形式提示**：本份**没有**「讲稿 vs AI 加工」的二分，因此没有「讲稿占比」这个指标；
 > 与它可比的是**非空内容行占比**（66 / 264 ≈ 25%）与**时间戳密度**（47 处）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名的四种 AI 段缺陷型是 **寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -330,6 +320,19 @@ status: active
       是否要在项目页「板块 × 证据质量」地图里**为直播类素材加一列**？待裁定
 - [ ] **主持人贡献的内容要不要单列** —— 行 120（把「拆小惊讶」外推为组织工作方法）是**主持人**说的，
       且是全场少见的实质贡献。**引用时如何区分主讲 / 主持，待裁定**
+
+## 素材基本信息
+
+- **原文出处**：**无** —— 直播无 `dedao.cn/course/article` 链接（与所有课程文章类素材不同）
+- **体裁与编号**：**模块一收官直播串讲**，`kind: livestream-transcript`，**无官方编号**。
+  官方编号依据在 raw 的 `capture_note` 里：同 wiki 空间的模块目录文档给出 **007–021** 的官方顺序（**照抄，非本页发明**）；
+  该目录文档（`2026-09-18-growth-strategy-module-notes`）**尚未建 sources 页**
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），写前已逐段 `sed -n` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 **239 行**」是**内容相对行号**（不含 frontmatter），
+  而实测正文 23–264 = **242 行**，**差 3** —— 与同批 `capability` / `supply-side` 两份文件的偏差一致，属同一基准差。
+  **引用前必须回文件核对，不要沿用 `capture_method` 的行数。**
+- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: CQTadq6GJo9Q51xoH17cmLCmnCg` ｜ `revision_id: 99` ｜ 正文 17,554 字符 ｜ **无内嵌图片**
 
 ## 来源
 

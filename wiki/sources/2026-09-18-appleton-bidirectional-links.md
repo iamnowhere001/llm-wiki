@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-appleton-bidirectional-links
 tags: [历史, 万维网, 双向链接]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-appleton-bidirectional-links]
 related: [bidirectional-links, pkm-history, ted-nelson, tim-berners-lee]
 confidence: medium
@@ -42,7 +42,7 @@ status: active
 - **1989→ / 万维网**：Xanadu 没实现，我们得到的是「没那么花哨，但真实得多、可用得多」的万维网。作者引用 [[tim-berners-lee]] 1999 年的一份笔记，说明他**确实权衡过双向链接的利弊**，但显然的设计问题是：双向连接自由流动会带来恶意引用的后果。过滤、审核、权限的设计细节变得复杂，最终「用更简单的单向链接实现万维网是正确的事，因为创造者要的是普遍采用」。
 - **当下 / 数字花园**：在**单一作者站点**范围内加双向链接绕开了治理问题。作者点名 **Andy Matuschak 的笔记**是这股风潮的起点，其关键是每篇笔记底部的 "Links to this Note" 区块。此外还有 TiddlyWiki（非开发者方案）与 **WebMentions**（IndieWeb 社区推动，W3C 于 2017 年给出规范推荐状态）—— 一种「可选加入」的双向链接系统。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这是本库 [[pkm-history]] 这条线的主干文献之一。** 它把 1945（Bush）→ 1965（Nelson）→ 1989/1999（万维网妥协）→ 2020（数字花园复兴）串成一条有因果关系的链条，而不是一串孤立的年份。
 
@@ -50,7 +50,7 @@ status: active
 
 **它引入了两个新实体**：[[ted-nelson]] 与 [[roam-research]]；以及一份一手材料 [[2026-09-18-berners-lee-link-topology]]。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 原文的多张插图（Xanadu 设计稿、Andy Matuschak 笔记截图）未下载
 - [ ] Appleton 称 Xanadu 为 pattern language 并提到 transclusion / transcopyright，本库尚无独立页

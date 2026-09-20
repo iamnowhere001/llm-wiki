@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-modern-thinking-tools-prospectus
 tags: [世界观, 万维钢, 得到课程, 智能生活系统]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-modern-thinking-tools-prospectus]
 related: [wanweigang, modern-thinking-tools, intelligent-life-system, three-solutions, ai-convergence, lesser-and-greater-vehicle, charlie-munger, compression-as-intelligence, cybernetic-learning, cognitive-outsourcing, 2026-09-18-narrative-first-principle, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes]
 confidence: medium
@@ -21,22 +21,15 @@ status: active
 > **本份的 AI 段是「一场连续多轮对话的完整存档」** —— 从行 471 起，用户提问以 `>` 引用块逐条出现，
 > AI 回答紧随其后，一路到行 1701。**这不是整理者贴在讲稿后面的附录，是一份对话记录本身。**
 
-- **作者**：**B 段万维钢 —— 本份有直接自称**（行 94：「欢迎来到现代思维工具课，**我是万维钢**」）。
-  C 段两条读者留言分别署名「常觉不在」「张凤煜」；**D–V 共 19 段全部无署名，判为 AI 生成**
-- **链接**：https://my.feishu.cn/wiki/Fk7hwvEbWiDeMUkc6HEcpUhXndc
-- **原文出处（正文自带）**：https://www.dedao.cn/course/article?id=qzk8vQM4oYjrXm1Ao9Xw6bEOLl5GPx
-- **发布**：2026-03-18 00:25
-- **素材路径**：`raw/2026-09-18-modern-thinking-tools-prospectus.md`
-  （1,701 行；frontmatter 1–68，**正文自第 70 行起**）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件 `sed -n` 核对
-- **抓取**：`lark-cli wiki +node-get` → `docs +fetch --as bot` ｜
-  `document_id: UmOudHoP5oEaEmxuXvvcuWIznwd` ｜ `revision_id: 1650` ｜ 45,319 字符
-- **已知缺失**：**2 张内嵌图片未下载**（bot 无 `docs:document.media:download`，图注完整留在 alt 文本）；
-  **课程目录未取得**（`wiki +node-list` 缺 scope，见 raw frontmatter）
+- **作者**：**B 段万维钢 —— 本份有直接自称**（行 94：「欢迎来到现代思维工具课，**我是万维钢**」）。 C 段两条读者留言分别署名「常觉不在」「张凤煜」；**D–V 共 19 段全部无署名，判为 AI 生成**
+- **链接**：https://my.feishu.cn/wiki/Fk7hwvEbWiDeMUkc6HEcpUhXndc ｜ https://www.dedao.cn/course/article?id=qzk8vQM4oYjrXm1Ao9Xw6bEOLl5GPx
+- **发表**：2026-03-18 00:25
+- **素材路径**：`raw/2026-09-18-modern-thinking-tools-prospectus.md` （1,701 行；frontmatter 1–68，**正文自第 70 行起**）
+
 - **`confidence: medium`** —— 本份**无推广内容**，不触发利益披露降级
   （与 [[2026-09-18-heavy-tail-notes]] 不同，那份整页 `low` 的唯一理由是末尾的引流话术）。
   按 2026-09-18 北洛裁定，**AI 占比 84% 本身不是降级理由**。
-  不给 `high` 的理由写在「定级的理由」一节。
+  不给 `high` 的理由写在「定级理由」一节。
 
 ## 关键要点
 
@@ -69,7 +62,7 @@ status: active
    **作者未标注它是否含 AI 参与** —— 而同课程第 4 讲《约束》注释 [9] 自述其小诗前两句为 GPT 所作。
    本库标为**存疑**，不假定原创（同 [[2026-09-18-steady-state-trap-notes]] 的判例）。
 
-## 分层表
+## 素材分层表
 
 > 行区间为**文件绝对行号**，已逐行回文件核对。
 > 判为 AI 生成的依据见「AI 段的判定依据」一节 —— 本份有**硬证据**，不需靠文风推测。
@@ -211,11 +204,11 @@ A+C 段 26 行 / 1.6%；**AI 段 D–V 合计 1,371 行 / 84.0%**；余 100 行�
 > **本库判前者为「整理事故」，判本份为「多轮对话的自然产物」—— 后者不是一个错误，
 > 但它让「这份文档讲了什么」变得无法用「一次摘要」回答。** 本页的分层表因此必须逐段列，不能合并。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 1. **本份是「基本世界观」六讲的第 00 讲，也是本库第一次拿到课程的总纲。**
    - 发布时间 **2026-03-18 00:25**，比第 1 讲《叙事》（00:41）**早 16 分钟** ——
-     **这是同一批发布里最先的一篇**，本库此前的「讲 01」判断需要按此重排编号（见「归属」）。
+     **这是同一批发布里最先的一篇**，本库此前的「讲 01」判断需要按此重排编号（见「归属判断」）。
    - **外部核查附带确认了课程的官方区块结构**（见下第 5 条），这直接**回答**了
      [[modern-thinking-tools]] 的两条开放问题（「板块到底几讲」、「回指指的是哪些讲」）。
 
@@ -325,7 +318,7 @@ A+C 段 26 行 / 1.6%；**AI 段 D–V 合计 1,371 行 / 84.0%**；余 100 行�
   它们是 AI 生成的实操化产物，但**命题源头是讲稿的「大乘思维」**（且用户在 M 段贡献了原始用词）。
   处置：写入 [[lesser-and-greater-vehicle]]，**标注「AI 生成 + 人机共创、非讲稿主张」**
 
-## 定级的理由
+## 定级理由
 
 **整页 `confidence: medium`**，与 [[2026-09-18-steady-state-trap-notes]] 同级，理由不同：
 
@@ -338,7 +331,7 @@ A+C 段 26 行 / 1.6%；**AI 段 D–V 合计 1,371 行 / 84.0%**；余 100 行�
   **虽然都标了性质，但读者要读完整页才能分清哪句是讲稿**。
 - **B 段单独 `medium`，D–V 段整体 `low`（加工品，引用须标注）。**
 
-## 归属（待北洛裁定）
+## 归属判断（待北洛裁定）
 
 > **本节的结论是「请裁定」，不是「已完成归属」。** 按 [[schema]] §2 第 0 步，
 > 素材对不上任何现有项目的缺口时**应先向人类指出**。本份落在边界上：**它能对上，但只对上「总纲」这一层。**
@@ -364,7 +357,7 @@ A+C 段 26 行 / 1.6%；**AI 段 D–V 合计 1,371 行 / 84.0%**；余 100 行�
 本份与本板块六讲**共享同一个作者、同一门课、同一套语汇**（四元素、小乘大乘、古德哈特等），
 把它挂到别处反而更难找；而**乙的收益足够真实**，值得单独问一次。
 
-## 待办
+## 待办 / 开放问题
 
 - [x] ~~**【等北洛】归属裁定**：甲 / 乙 / 丙（见上）~~ —— **已关闭（2026-09-18 21:0x）**：随本板块项目**升格为课程级**（[[modern-thinking-tools]]），落地为原**乙**方案 —— 课程级总纲归课程级项目。见 [[overview]] 的「第四条线的位置」。**2026-09-20 盘点时发现本条未同步。**
 - [ ] **【北洛可核，本库已核】** 德鲁克误引 —— 本库已核到「德鲁克研究所否认 + 戴明反话」，
@@ -384,6 +377,14 @@ A+C 段 26 行 / 1.6%；**AI 段 D–V 合计 1,371 行 / 84.0%**；余 100 行�
 - [ ] 富勒引语的一手来源（Mike Vance & Diane Deacon *Think Out of the Box*, 1995）本库未收录
 - [ ] 眼镜蛇效应的史料争议：素材以「著名的」引入，**未标存疑** —— 是否回填到
       [[modern-thinking-tools]] 的引注缺口，待裁定
+
+## 素材基本信息
+
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件 `sed -n` 核对
+- **抓取**：`lark-cli wiki +node-get` → `docs +fetch --as bot` ｜
+  `document_id: UmOudHoP5oEaEmxuXvvcuWIznwd` ｜ `revision_id: 1650` ｜ 45,319 字符
+- **已知缺失**：**2 张内嵌图片未下载**（bot 无 `docs:document.media:download`，图注完整留在 alt 文本）；
+  **课程目录未取得**（`wiki +node-list` 缺 scope，见 raw frontmatter）
 
 ## 来源
 

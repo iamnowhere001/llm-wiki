@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-qa-boss-shorting
 tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 参与者, 地位, 定价权]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-qa-boss-shorting]
 related: [modern-thinking-tools, wanweigang, 2026-09-19-jevons-paradox, 2026-09-19-trustworthiness, 2026-09-19-economic-rent, 2026-09-19-qa-best-model-notes, 2026-09-19-qa-dsm-vs-gantt-notes, victim-mentality, field-theory, symbolic-capital, pierre-bourdieu, hard-constraints, stoic-control-dichotomy, luck-over-talent, uncertainty-as-fuel, types-of-uncertainty, agents-md, nassim-taleb, game-selection, social-capital, structural-holes, alienation, agent-vs-tool, obsidian, roam-research]
 confidence: medium
@@ -24,15 +24,14 @@ status: active
 >
 > **归属由北洛裁定，本页不擅自改挂、不改任何目录** —— 见「归属判断」一节。
 
-- **作者 / 体裁**：提问为读者（blockquote 原文），回答为**万维钢**；得到《现代思维工具课》**问答**，**讲次表编号（推定）071**
-- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI，非渲染页提取）｜ `document_id: BDFIdT120oc0XKxBHTUclv54nkh` ｜ `revision_id: 56` ｜ `capture_quality: high` ｜ `node_create_time` 2026-06-05 23:51
+- **作者**：提问为读者（blockquote 原文），回答为**万维钢**；得到《现代思维工具课》**问答**，**讲次表编号（推定）071**
 - **素材路径**：`raw/2026-09-19-qa-boss-shorting.md`（**161 行**）｜ **内嵌图片 0 张** ｜ **正文级 `---` 0 处**（`grep -n '^---'` 只命中行 1 与 25）
 
 **行号坐标系声明**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），写前已逐段 `sed -n 'X,Yp'` / `nl -ba` 回文件核对。
 ⚠️ 本份有一个必须写清的细节：`wc -l` 报 **160**，但**末行（第 161 行）无尾换行**（`awk 'END{print NR}'` = **161**）。**本页一律用 1–161 这一套。**
 旁证：`capture_method` 记「正文 4,483 字符 / **135 行**」，而 **161 − 26 = 135**，**逐条吻合** —— 偏移 26 = frontmatter 25 行 + 空行 26。**故本份不存在「偏一个 frontmatter 长度」的错位。**
 
-## 要点
+## 关键要点
 
 1. **四讲映射成立**：**066 杰文斯 / 067 平台 / 068 托付 / 069 地位**。前三讲属「模块四 赚钱逻辑」（057–068），**069 是「模块五 参与者」（069–085）的第一讲**（外部讲次表已核实）。
 2. **本份是「AI 加工段 0%」的纯讲稿问答**：无正文级 `---`、无提示词、无多版本回答、无第二人称对话体、无编号引注、无注释段。**四种缺陷型（寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次）一条都不适用。**
@@ -58,6 +57,8 @@ status: active
 | 正文级 `---` 分隔线 | **0 处**（只有 frontmatter 的 1 / 25 两行） |
 | 版权性质 | 得到付费课程正文的搬运；以个人研究用途存档于本地 `raw/`，不对外发布 |
 
+
+- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI，非渲染页提取）｜ `document_id: BDFIdT120oc0XKxBHTUclv54nkh` ｜ `revision_id: 56` ｜ `capture_quality: high` ｜ `node_create_time` 2026-06-05 23:51
 ## 素材分层表（文件绝对行号）
 
 > **坐标系：文件绝对行号**（1–161）。占比以**正文 135 行**（行 27–161）为分母。
@@ -101,7 +102,7 @@ status: active
 5. **口吻全程单一第一人称讲者**：行 57「**据我了解**，当前最强的专业影像 AI……」、行 111「**我看**这个『小群』机制……」、行 125「**这是我多次说过的一个建议**」—— 无「AI 段接在讲稿后面、以讲稿延伸的姿态出现」那种断裂。
 
 > [!note] 四种缺陷型（寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次）**一条都不适用**。
-> **本份的问题不在「AI 段」，而在「讲稿自身的引注强度」与「归属」两处** —— 见后文两节。
+> **本份的问题不在「AI 段」，而在「讲稿自身的引注强度」与「归属判断」两处** —— 见后文两节。
 
 ## 讲稿段摘要（四节）
 

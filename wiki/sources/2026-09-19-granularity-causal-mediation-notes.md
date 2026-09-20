@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-granularity-causal-mediation-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 最小描述长度, 因果中介, 好调节器定理, 颗粒度]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-granularity-causal-mediation-notes]
 related: [modern-thinking-tools, wanweigang, compression-as-intelligence, information-bottleneck, mental-models, schema-psychology, explanatory-framework, cognitive-load-theory, prediction-error, tacit-knowledge, transfer-of-learning, 2026-09-18-active-cognitive-load-notes, 2026-09-18-game-selection-notes, 2026-09-18-hard-constraints-notes]
 confidence: high
@@ -29,27 +29,24 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/PqC1wLxH1iwD9BkUoZacHzKQnoe
 - **素材路径**：`raw/2026-09-19-granularity-causal-mediation-notes.md`（387 行）
 
-## TL;DR
-
-**讲稿从「癌症是气出来的」这个伪科学讲起，落到一个可操作的动作：找到中介变量。**
-两个要求 —— ①模型的**颗粒度**要压到「最小描述长度（MDL）」（既不过拟合也不欠拟合）；
-②模型里要有**因果关系**（珀尔的 do-operator），并**盯住中介而不是终点**。
-经典案例是《点球成金》的「**上垒**」与足球的「**期望威胁（xT）**」。
-
 ## 关键要点
 
-1. **本讲是「模块二」里引注最硬的一份。** 具名可核的至少六条：**好调节器定理**（Conant & Ashby 1970）、
+1. **讲稿从「癌症是气出来的」这个伪科学讲起，落到一个可操作的动作：找到中介变量** ——
+两个要求：① 模型的**颗粒度**要压到「最小描述长度（MDL）」（既不过拟合也不欠拟合）；
+② 模型里要有**因果关系**（珀尔的 do-operator），并**盯住中介而不是终点**。
+经典案例是《点球成金》的「**上垒**」与足球的「**期望威胁（xT）**」。
+2. **本讲是「模块二」里引注最硬的一份。** 具名可核的至少六条：**好调节器定理**（Conant & Ashby 1970）、
    **MDL**、**珀尔 + do-operator**、**《点球成金》**、**xT**、以及两项**大规模流行病学研究**
    （10 万英国女性 / 11 万人荟萃分析）—— **全部方向一致，无一被证伪**（见核查表）。
-2. **开篇是一次「反伪科学」的论证**（行 39–49）：市侩哲学「癌症是气出来的」→
+3. **开篇是一次「反伪科学」的论证**（行 39–49）：市侩哲学「癌症是气出来的」→
    ACS 与 NCI 的官方口径 → 两项大样本研究 → **「直接 vs 间接」的区分**。
-3. **好调节器定理给了「为什么必须有模型」一个数学表述**（行 65）：
+4. **好调节器定理给了「为什么必须有模型」一个数学表述**（行 65）：
    「系统的每一个好调节器，都必须是该系统的一个模型。」
-4. **「颗粒度」被操作化为 MDL 的两项之和**（行 81–87）：模型本身的长度 + 数据补丁的长度。
+5. **「颗粒度」被操作化为 MDL 的两项之和**（行 81–87）：模型本身的长度 + 数据补丁的长度。
    讲稿用天气描述（过拟合 / 欠拟合 / 恰到好处）把三项讲清。
-5. **因果关系的判据是「干预」而非「共现」**（行 105–109）：公鸡打鸣 vs 按开关。
+6. **因果关系的判据是「干预」而非「共现」**（行 105–109）：公鸡打鸣 vs 按开关。
    行 123 给出本讲的核心链条：**生气 → 不良生活习惯 → 癌症**。
-6. **AI 加工段占正文 54.4%，判「操作化延伸」**（四种缺陷型全不命中）——
+7. **AI 加工段占正文 54.4%，判「操作化延伸」**（四种缺陷型全不命中）——
    但含**一处 AI 向用户提问的对话轮次残留**与**一处未导出的 `<sheet>`** —— 见下「AI 段判定」。
 
 ## 素材分层表（文件绝对行号）
@@ -212,7 +209,7 @@ status: active
 - [[cognitive-load-theory]]：**补一条显式辨析** —— 本讲的「过拟合 / 欠拟合」与 012 讲的「认知欠载」
   **不是同一处问题**（防止下游误并）
 - [[prediction-error]]：补控制论侧的「同构」要求
-- [[tacit-knowledge]]、[[transfer-of-learning]]、[[2026-09-18-game-selection-notes]]：见「与既有页面的关系」
+- [[tacit-knowledge]]、[[transfer-of-learning]]、[[2026-09-18-game-selection-notes]]：见「与本库既有页面的关系」
 - [[wanweigang]]：记一条「本讲具名引注 9/11 可核，含两项大规模流行病学研究」
 
 ## 待办 / 开放问题

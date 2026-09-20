@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-game-selection-notes
 tags: [成长战略, 万维钢, 得到课程, 效应化, 古德哈特定律, 赛道选择, 利基构建]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-game-selection-notes]
 related: [multiplicative-world, heavy-tailed-distribution, luck-over-talent, deliberate-practice, narrative-power, compensatory-control, steady-state-survival-logic, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-capability-seeking-theorem-notes]
 confidence: medium
@@ -26,26 +26,23 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/QODowcTyUiIHpjkpiB0cBIw0nte
 - **素材路径**：`raw/2026-09-18-game-selection-notes.md`（187 行）
 
-## TL;DR
-
-**讲稿给出的工具叫「赛道选择（Game Selection）」**：不是选专业、选行业，而是**选你打算入哪个局** ——
-天兵天将（体制内，遵守流程、被考核、可替代）与孙悟空（体制外，直面物理世界、自设目标、不可替代）是两种游戏，
-最难的不是努力，而是**用对了自己那个游戏的心智**。
-
 ## 关键要点
 
-1. **它是「基本世界观」第 2 讲《重尾》的直接下游，且回指是显式的。** 行 33：
+1. **讲稿给出的工具叫「赛道选择（Game Selection）」**：不是选专业、选行业，而是**选你打算入哪个局** ——
+   天兵天将（体制内，遵守流程、被考核、可替代）与孙悟空（体制外，直面物理世界、自设目标、不可替代）是两种游戏；
+   最难的不是努力，而是**用对了自己那个游戏的心智**。
+2. **它是「基本世界观」第 2 讲《重尾》的直接下游，且回指是显式的。** 行 33：
    「**加法世界里结果正态分布**……可是在我们这个**重尾世界**，你想有大成就，就得跟人**做乘法**。
    那么**选择跟谁相乘**就特别重要。」**第 2 讲说「世界是乘法的」，本讲说「那你要挑乘数」。**
-2. **核心二分是「体制内 / 体制外」**，配套两条逻辑（行 77–79）：
+3. **核心二分是「体制内 / 体制外」**，配套两条逻辑（行 77–79）：
    体制内 = **人际关系逻辑**（待遇由上级分配，必须被认可）；
    体制外 = **物理世界逻辑**（技术条件、成本、市场、用户）。
-3. **它点名了「古德哈特定律」**（行 125）：体制内的最大伤害是**把指标（metrics）当成目的（purpose）** ——
+4. **它点名了「古德哈特定律」**（行 125）：体制内的最大伤害是**把指标（metrics）当成目的（purpose）** ——
    这是库内第一次出现该定律。
-4. **两个体制外战略能力**：**利基构建（Niche Construction）**（行 145，生物学概念）
+5. **两个体制外战略能力**：**利基构建（Niche Construction）**（行 145，生物学概念）
    与**效应化（Effectuation）**（行 149，萨拉斯瓦蒂 2001 年提出）。
-5. **本份不含 AI 加工段** —— 讲稿自行收束（行 175 预告下一讲 + 行 179 收束小诗），见下「AI 段判定」。
-6. **它的定位是库内「努力 vs 选择」张力的第四方**：与 [[deliberate-practice]]、[[luck-over-talent]] 同场对撞。
+6. **本份不含 AI 加工段** —— 讲稿自行收束（行 175 预告下一讲 + 行 179 收束小诗），见下「AI 段判定」。
+7. **它的定位是库内「努力 vs 选择」张力的第四方**：与 [[deliberate-practice]]、[[luck-over-talent]] 同场对撞。
 
 ## 素材分层表（文件绝对行号）
 
@@ -180,7 +177,7 @@ status: active
 - [[multiplicative-world]]：补第 11 讲的回指（第三次）+「怎么挑乘数」的推进
 - [[luck-over-talent]]：补「幸存者偏差」这一处**讲稿自陈的运气让步**（第 3 条关系）
 - [[narrative-power]]：补「人生叙事权 / NPC vs 叙事原点」
-- [[compensatory-control]]、[[steady-state-survival-logic]]、[[deliberate-practice]]：见「与既有页面的关系」
+- [[compensatory-control]]、[[steady-state-survival-logic]]、[[deliberate-practice]]：见「与本库既有页面的关系」
 - [[2026-09-18-capability-seeking-theorem-notes]]：补本页行 135 的回指 —— 那是「能耐寻求定理」在库内的第二次出现
 - [[modern-thinking-tools]]：缺口表增列「『Game Selection』的博弈论归属错配」
 

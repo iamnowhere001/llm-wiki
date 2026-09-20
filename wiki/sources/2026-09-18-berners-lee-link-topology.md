@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-berners-lee-link-topology
 tags: [万维网, 超文本]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-berners-lee-link-topology]
 related: [tim-berners-lee, bidirectional-links, pkm-history]
 confidence: high
@@ -17,7 +17,6 @@ status: active
 
 - **作者**：[[tim-berners-lee]]
 - **链接**：https://www.w3.org/DesignIssues/Topology.html
-- **性质**：W3C 设计笔记，页面未标注确切日期；1999 年这一年份依据 [[2026-09-18-appleton-bidirectional-links]] 的引用
 - **素材路径**：`raw/2026-09-18-berners-lee-link-topology.md`
 
 ## 关键要点
@@ -42,7 +41,7 @@ status: active
 
 **关于附属信息的一节**也值得记录，因为它直接对应现代笔记工具的设计困境。作者的态度是否定的：「可读信息不再只存在于节点内容里……沿这条路走下去，**链接很快会变成节点本身**，可被注释等等。这显著扭曲了数据模型，我看不出这是好主意。」—— 三十多年后，双向链接笔记工具（[[roam-research]]、[[obsidian]]）恰恰把链接提升为一等公民（块引用、链接面板），可以理解为对这份判断的一次实践反驳。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这是本库 [[bidirectional-links]] 与 [[pkm-history]] 的关键一手证据。** 在此之前的叙述是「万维网用了单向链接」，容易读成疏漏或权宜之计；这份笔记证明它是**被论证过的工程取舍**，且设计者本人认为双向在信息层面更优（「免费增加信息」），只是治理成本过高。
 
@@ -50,11 +49,15 @@ status: active
 
 **一处需要标注的张力**：本笔记没有明说万维网最终为何采用单向，只是列出了权衡。把它读成「最终决策依据」需要谨慎 —— 严格的因果链在 [[2026-09-18-appleton-bidirectional-links]] 中才有，而那是通俗转述。本库因此把「治理成本导致放弃双向」记为**中等置信度**。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 页面未标注确切日期，「1999」为二手引用，需向 W3C 或互联网档案馆核验
 - [ ] 原文提到若干关联笔记（Building Back-links、Private overlaid web、Generic Links）未收录
 - [ ] 原文有拼写错误（indeicates / liks），系原页面如此，本库未修改
+
+## 素材基本信息
+
+- **性质**：W3C 设计笔记，页面未标注确切日期；1999 年这一年份依据 [[2026-09-18-appleton-bidirectional-links]] 的引用
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-problem-setting
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 重尾, 议程设定, 预设投射]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-problem-setting]
 related: [modern-thinking-tools, wanweigang, heavy-tailed-distribution, multiplicative-world, game-selection, narrative-power, narrative-as-objective-function, goodharts-law, systems-over-goals, optionality, effectuation, victim-mentality, stoic-control-dichotomy, meta-narrative, subject-object-shift, path-creation, adjacent-possible, 2026-09-19-zeroth-order-truth, 2026-09-19-objective-function, 2026-09-19-second-order-desire, 2026-09-19-by-products, 2026-09-18-narrative-first-principle, 2026-09-18-game-selection-notes, 2026-09-18-synthesis-research]
 confidence: medium
@@ -29,18 +29,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/LPoKwMwlKis0A3k3rotcSaWJn9g
 - **素材路径**：`raw/2026-09-19-problem-setting.md`（286 行）
 
-## TL;DR
+## 关键要点
 
-**本讲是本库第一份正面处理「出题权 / 定题权」的素材，而它用的核心词「立题」是讲稿自拟词**（见「术语归属专段」）——
-中文「立题」本身是常用词，但它作为本讲的工具名、以及对译的英文 `agenda-setting`，**与传播学的既有术语 agenda-setting（McCombs & Shaw 1972，媒介为公众设置议题）同形异义**，本库登记时不要混。
-它给 [[heavy-tailed-distribution]] / [[multiplicative-world]] 补上了一条**行动侧接口**：**「答题提高均值，立题打开重尾」**（行 154）——
-该页此前讲「世界是重尾的」，本讲讲「你可以选择活在哪个分布里」。
-它同时把 [[game-selection]]（先选游戏）与 [[narrative-power]]（争取叙事权）**合流到「给他人立题」这一层管理手艺**（行 162–174）。
-**本份是「讲稿 + 无署名 AI 加工段」的混层素材**：正文级 `---` 在**行 247**，其后行 **249–286** 是 AI 段（**占正文 14.8%**，见「AI 加工段判定」）。
-**占比 14.8% < 60%，按 `schema.md` §2 第 5 步不触发反方检索。**
-**引注整体质量中上**：Frege 1892 / Strawson 1950 / Buchanan & Tullock 1962 / 1986 诺奖 / Einstein & Infeld 1938 /
-Getzels & Csikszentmihalyi 1964 / Yifang Ma 2020 PNAS / Logan 2009 / 司马迁 / 韩非子 / 康德 / 毛泽东 / 横渠四句**均外核属实**；
-**两处未找到来源**（1962 七千人大会的因果叙述、「弱者报复…」俗语），另**一处术语用法偏移**（「预设投射」，见核查表）。
+1. **本讲是本库第一份正面处理「出题权 / 定题权」的素材，而它用的核心词「立题」是讲稿自拟词**（见「术语归属专段」）—— 中文「立题」本身是常用词，但它作为本讲的工具名、以及对译的英文 `agenda-setting`，与传播学的既有术语 agenda-setting（McCombs & Shaw 1972，媒介为公众设置议题）**同形异义**，本库登记时不要混。
+2. **给 [[heavy-tailed-distribution]] / [[multiplicative-world]] 补上一条行动侧接口**：「**答题提高均值，立题打开重尾**」（行 154）—— 该页此前讲「世界是重尾的」，本讲讲「你可以选择活在哪个分布里」。
+3. **把 [[game-selection]]（先选游戏）与 [[narrative-power]]（争取叙事权）合流到「给他人立题」这一层管理手艺**（行 162–174）。
+4. **本份是「讲稿 + 无署名 AI 加工段」的混层素材**：正文级 `---` 在**行 247**，其后行 **249–286** 是 AI 段（**占正文 14.8%**，见「AI 加工段判定」）。**占比 14.8% < 60%，按 `schema.md` §2 第 5 步不触发反方检索。**
+5. **引注整体质量中上**：Frege 1892 / Strawson 1950 / Buchanan & Tullock 1962 / 1986 诺奖 / Einstein & Infeld 1938 / Getzels & Csikszentmihalyi 1964 / Yifang Ma 2020 PNAS / Logan 2009 / 司马迁 / 韩非子 / 康德 / 毛泽东 / 横渠四句**均外核属实**；**两处未找到来源**（1962 七千人大会的因果叙述、「弱者报复…」俗语），另**一处术语用法偏移**（「预设投射」，见核查表）。
 
 ## 素材基本信息
 
@@ -63,7 +58,7 @@ Getzels & Csikszentmihalyi 1964 / Yifang Ma 2020 PNAS / Logan 2009 / 司马迁 /
 是**早期规划稿**（10 条标题与实际 12 个子节点大部分不一致），**本库不采信**。
 据外部讲次表 `wwg000`–`wwg109`（110 条，止于 **109 = 二阶意愿和元表征**），**「模块八 高观点」= wwg107–wwg109（3 条）**，
 **该表未覆盖本模块其余 9 篇**。**故本份编号为「推定」，非官方编号的直接抄录**；110 起为本库**推定次序**
-（依据：文内互指 + `node_create_time` 升序）。本份 **114** 的定位依据见「开放问题」。
+（依据：文内互指 + `node_create_time` 升序）。本份 **114** 的定位依据见「待办 / 开放问题」。
 
 **文内互指（用于定位本份，已回文件核对）**：行 60 自述「我们前面讲的「**元表征**」和「**应无所住**」」→ 在 **109（[[2026-09-19-second-order-desire]]）之后**（弱约束）；
 行 166 回指「我们讲「**叙事权**」时说过"定我"」→ 指向**模块一第 1 讲「叙事」**（[[2026-09-18-narrative-first-principle]] 行 189 给出「争取叙事权 / 给别人设定叙事」）。
@@ -73,7 +68,7 @@ Getzels & Csikszentmihalyi 1964 / Yifang Ma 2020 PNAS / Logan 2009 / 司马迁 /
 **一处抓取事实（图片）**：`capture_method` 记 8/8 张内嵌图已下载（`lark-cli docs +media-download`），
 file_token 与本地文件名对照见 JSON `/tmp/wwg09/json/CmF0dEqMSolJ6Tx7Ovsc1r4unzd.json`（`https://feishu.cn/file/<token>` 按序对应 img-01…08）。本页不重复。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -276,7 +271,7 @@ Getzels & Csikszentmihalyi / Yifang Ma 2020 PNAS / Logan 2009 / 康德 1787 / �
 - **归 [[modern-thinking-tools]]**：本份是得到《现代思维工具课》「模块八 高观点」正文，归属该课程级项目，
   对应全课地图「**九 · 模块八 高观点**」。
 - **推定次序 114**：外部讲次表未覆盖本份（止于 109）；本库据「文内互指 + `node_create_time` 升序」推定。
-  父文档目录（090–099）不采信。**待核**（见「开放问题」）。
+  父文档目录（090–099）不采信。**待核**（见「待办 / 开放问题」）。
 - **服务哪个缺口**：本份填的是 [[modern-thinking-tools]] 全课地图里「**模块八 高观点已落档、sources 页未齐**」这一行
   （本模块 12 篇中，截至本页已建 sources 页的有 107 / 108 / 109 / 110 与 114）。
 - **与 [[2026-09-19-second-order-desire]]（109）的关系**：**本份显式回指 109** —— 行 60「我们前面讲的「元表征」和「应无所住」，是教你**跳出**别人的题；跳出之后呢？也许你可以尝试**建立**」。
@@ -332,7 +327,7 @@ Getzels & Csikszentmihalyi / Yifang Ma 2020 PNAS / Logan 2009 / 康德 1787 / �
 - [[2026-09-18-narrative-first-principle]]：登记一条**下游回指** —— 本份行 166 回指该讲的「叙事权 / 定我」。
 - [[2026-09-18-synthesis-research]] / [[2026-09-18-game-selection-notes]]：各补一条接口（「自己给自己立题」/「先选游戏」）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **`problem-setting` 要不要建页？** 它是本讲核心概念、又是讲稿自拟词，建页须同时写清「自拟」与「agenda-setting 异义」两层。**倾向：建。**
 - [ ] **「预设投射」的术语偏移（核查表 #3）要不要升格为「引注的使用失真」？**

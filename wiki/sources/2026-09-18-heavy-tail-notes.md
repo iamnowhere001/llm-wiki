@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-heavy-tail-notes
 tags: [世界观, 万维钢, 得到课程, 重尾]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-heavy-tail-notes]
 related: [wanweigang, modern-thinking-tools, heavy-tailed-distribution, multiplicative-world, thomas-sowell, cybernetic-learning, 2026-09-18-narrative-first-principle, deliberate-practice]
 confidence: low
@@ -21,14 +21,10 @@ status: active
 > ②**AI 生成占比最高的一份**（约 92%）—— 且**AI 输出量是原稿的 15 倍**。
 
 - **作者**：A 段万维钢（沿用本库既有课程认定，文档内无署名）；B 段读者「常觉不在」「左星星」；C–O 段**无署名，判为 AI 生成**
-- **链接**：https://my.feishu.cn/wiki/UBvywh91YizXpkkSHqYc1Ao0noh
-- **原文出处**：https://www.dedao.cn/course/article?id=BQe6EGjvO7zRKZqLkLXnDrkMLPgAp9
-- **发布**：2026-03-18 00:55
+- **链接**：https://my.feishu.cn/wiki/UBvywh91YizXpkkSHqYc1Ao0noh ｜ https://www.dedao.cn/course/article?id=BQe6EGjvO7zRKZqLkLXnDrkMLPgAp9
+- **发表**：2026-03-18 00:55
 - **素材路径**：`raw/2026-09-18-heavy-tail-notes.md`（2,619 行；frontmatter 1–40，**正文自第 42 行起**）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
-- **抓取**：`lark-cli docs +fetch --as bot` ｜ `document_id: HDrTd8zS3ofz0WxyoqTcmqDRnwd` ｜ `revision_id: 1070` ｜ 26,715 字符
-- **已知缺失**：2 张内嵌图片未下载（bot 无 `docs:document.media:download`）；
-  1 处飞书多维表格以 `<sheet>` 块存在未导出；**讲稿的注释 / 参考文献段未随正文导出**
+
 - **`confidence: low`** —— 两条理由：① 可作证据的讲稿段仅占 5.7%；
   ② **末段含推广内容**（索取「乘法」领飞书模板、引流私域），按 `AGENTS.md` 利益披露条款降级。
   **这不否定 A 段本身** —— A 段单独标 `medium`，见分层表
@@ -53,7 +49,7 @@ status: active
    AI 段不是「摘要 + 扩展」，而是**一整套面向文档整理者个人的商业产品设计** ——
    从世界观一路做到变现飞轮和公众号投放建议。**它与讲稿的关系是寄生，不是阐释。**
 
-## 分层表
+## 素材分层表
 
 > 行区间为**文件绝对行号**。C–O 段虽可再细分，但它们**同属一段连续 AI 对话**，
 > 拆开只是为了标出它推进到了哪一步 —— 判为 AI 生成的依据是：无署名、通篇第二人称「你」、
@@ -123,7 +119,7 @@ status: active
 **风险层**：正 feedback 不总是好事 —— 病毒、恐慌、金融风暴、黑天鹅都是它；
 且任何增长都会边际递减，所以要准备**第二曲线**。「身处重尾世界你不能光想着发达，你得先保本。」
 
-## 引注与内容核查
+## 引注核查表
 
 > 2026-09-18 外部核查。**具名引注 5 条已核**；无出处的精确数字 4 条按弱引注标注。
 
@@ -154,7 +150,7 @@ status: active
 「AI 摘要段补进原文没有的数字」（加法）；本份的 AI 段**几乎不含讲稿的数字**，
 它做的是另一件事 —— **把讲稿当成一句口号，往上盖产品**。**两种缺陷不同型。**
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 1. **与 [[deliberate-practice]] 线方向相反 —— 本库第二处需要标注的板块内张力。**
    - **能动讲**（第 3 讲，行 **145**）：「**『努力』**，就是一种线性思维。……人们不管这些，
@@ -200,13 +196,13 @@ status: active
     [[2026-09-18-narrative-first-principle]] 的 B 段）。**已达阈值下沿，但他们是留言者不是论点主体**，
     暂不建页，等第三次出现。
 
-## 归属
+## 归属判断
 
 **[[modern-thinking-tools]]** —— 2026-09-18 北洛裁定，本板块六讲一并归入。本页是该项目**第 2 讲**。
 本页填的是该项目缺口表里的：**「重尾」讲三个核心数字无出处**（部分——已标弱引注，一手仍缺）、
 **具名引注未核查**（部分——5 条已核，Oracle/AMD 那条待核）。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **Oracle / AMD 2025 年因宣布与 OpenAI 合作股价一夜涨 30–40%** —— 可核的公开事件，未核（**计入项目【阻塞】**）
 - [ ] 取回索维尔《社会正义谬误》乌干达段的一手书页（现为二手印证）
@@ -216,6 +212,13 @@ status: active
       见 [[2026-09-18-steady-state-trap-notes]]。**HFQ 前置条件已移除，现无任何前置条件**
 - [ ] 与 [[deliberate-practice]] 线的张力裁决（[[modern-thinking-tools]] 的非【阻塞】缺口）
 - [ ] 判定「常觉不在」是否建实体页（已在本库出现 2 次）
+
+## 素材基本信息
+
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
+- **抓取**：`lark-cli docs +fetch --as bot` ｜ `document_id: HDrTd8zS3ofz0WxyoqTcmqDRnwd` ｜ `revision_id: 1070` ｜ 26,715 字符
+- **已知缺失**：2 张内嵌图片未下载（bot 无 `docs:document.media:download`）；
+  1 处飞书多维表格以 `<sheet>` 块存在未导出；**讲稿的注释 / 参考文献段未随正文导出**
 
 ## 来源
 

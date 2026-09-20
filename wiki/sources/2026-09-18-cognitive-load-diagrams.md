@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-cognitive-load-diagrams
 tags: [认知负荷, 可视化]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-cognitive-load-diagrams]
 related: [cognitive-load-theory, schema-psychology, wanweigang, 2026-09-18-cognitive-load-theory, peak-performance]
 confidence: low
@@ -16,10 +16,7 @@ status: active
 > **本库第一份「孤儿素材」** —— 图片存在且可读，但入库时无 URL、无作者、无抓取记录。
 > 2026-09-18 收录 [[2026-09-18-cognitive-load-theory]] 后，**出处问题部分解决**。
 
-- **来源**：**未记录**（图片于 2026-09-18 12:24–12:25 入库，本批九讲抓取之前约 40 分钟）
 - **素材路径**：`raw/2026-09-18-cognitive-load-diagrams.md`（105 行，为图片容器 + LLM 读图转录）
-- **图片**：6 张 PNG 在 `raw/assets/2026-09-18-cognitive-load-*.png`
-- **证据层级**：**AI 生成 + 来源缺失，双重降级**。`confidence: low`
 
 ## 为什么它值得保留
 
@@ -77,6 +74,12 @@ status: active
 - [ ] 图 1 角注的学理归属**待北洛裁定**。
 - [ ] **是否要把「孤儿素材」立为一类形态并写入 `AGENTS.md`？**
       本库此前假定 `raw/` 里的东西都有抓取记录，这份素材证明该假定不成立。
+
+## 素材基本信息
+
+- **来源**：**未记录**（图片于 2026-09-18 12:24–12:25 入库，本批九讲抓取之前约 40 分钟）
+- **图片**：6 张 PNG 在 `raw/assets/2026-09-18-cognitive-load-*.png`
+- **证据层级**：**AI 生成 + 来源缺失，双重降级**。`confidence: low`
 
 ## 来源
 

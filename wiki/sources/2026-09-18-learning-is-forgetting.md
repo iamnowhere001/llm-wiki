@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-learning-is-forgetting
 tags: [学习, 压缩, 信息论, 大模型, 遗忘]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-learning-is-forgetting]
 related: [information-bottleneck, compression-as-intelligence, learning-as-forgetting, naftali-tishby, marcus-hutter, thomas-griffiths, andrew-saxe, li-jigang, llm-wiki-pattern, rag-vs-wiki, cognitive-outsourcing, schema-psychology, mental-models]
 confidence: medium
@@ -25,18 +25,6 @@ status: active
 - **发布时间**：未标注。可定位的下界是所评论文的提交日期 2026-04-08
 - **素材路径**：`raw/2026-09-18-learning-is-forgetting.md`（543 行，13,964 字符；三张 PNG 全部下载成功）
 
-## 关于本页 `confidence: medium` 的限定
-
-本库此前收到的混层素材（[[2026-09-18-art-of-impossible-notes]]、[[2026-09-18-hyperefficient-notes]] 等）
-核心引注**查不到**，故整页 `low`。**本素材性质不同 —— 它的核心引注经外部核查为真**：
-
-- arXiv:2604.07569 **确实存在**，标题《Learning is Forgetting: LLM Training As Lossy Compression》，
-  八位作者署名完整，ICLR 2026，提交日期 2026-04-08。**这不是伪引注。**
-
-但 `medium` **只覆盖这一层**：「素材指向的论文真实存在，且素材转述的结论方向与该论文摘要一致」。
-**素材内部的实验细节（软熵估计、OLMo2 7B vs 1B 的对比）在论文摘要层不获支撑，一律标（未验证）**，
-不参与本页置信度。分层表里 B/C/D/E/F/G 六段按本库先例各自降为 `low`。
-
 ## 关键要点
 
 1. **核心引注已核实为真**，且本库拿到了除素材之外的独立信息：论文八位作者、ICLR 2026、摘要原文。
@@ -52,7 +40,19 @@ status: active
 5. 它与 [[cognitive-outsourcing]] 构成**真冲突**：素材主张「把装箱期外包给 AI 是对的」，
    而 [[cognitive-outsourcing]] 主张「外包有代价」。两边都不是同一材料类型，本库**不裁定，只并列**。
 
-## 分层表（行区间为**文件绝对行号**，已回文件核对）
+## 关于本页 `confidence: medium` 的限定
+
+本库此前收到的混层素材（[[2026-09-18-art-of-impossible-notes]]、[[2026-09-18-hyperefficient-notes]] 等）
+核心引注**查不到**，故整页 `low`。**本素材性质不同 —— 它的核心引注经外部核查为真**：
+
+- arXiv:2604.07569 **确实存在**，标题《Learning is Forgetting: LLM Training As Lossy Compression》，
+  八位作者署名完整，ICLR 2026，提交日期 2026-04-08。**这不是伪引注。**
+
+但 `medium` **只覆盖这一层**：「素材指向的论文真实存在，且素材转述的结论方向与该论文摘要一致」。
+**素材内部的实验细节（软熵估计、OLMo2 7B vs 1B 的对比）在论文摘要层不获支撑，一律标（未验证）**，
+不参与本页置信度。分层表里 B/C/D/E/F/G 六段按本库先例各自降为 `low`。
+
+## 素材分层表（行区间为**文件绝对行号**，已回文件核对）
 
 | 段 | 行区间 | 性质 | 署名 | 置信度 |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ status: active
    素材说「小模型没有容量，所以压缩不了」。**前者是观察，后者是机制断言。**
    这与 [[2026-09-18-writing-is-thinking]] 暴露的「数字张冠李戴」是同一族问题的不同形态。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **印证（且给本库自己的模式提供了一条外部理论）**：[[llm-wiki-pattern]] —— 素材主张
   「AI 是最强的知识压缩机，人类的角色是设定目标函数、做提问者与裁判员」（行 445–456）。
@@ -124,7 +124,7 @@ status: active
 - 概念：[[information-bottleneck]]、[[compression-as-intelligence]]、[[learning-as-forgetting]]
 - 实体：[[naftali-tishby]]、[[marcus-hutter]]、[[thomas-griffiths]]、[[andrew-saxe]]、[[li-jigang]]
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **把 arXiv:2604.07569 的 PDF 取回 `raw/`** —— 这是本库第一次遇到「素材评论的论文比素材本身近得多、且可一键取回」的情形。
   **顺便**：Tishby 1999、Shwartz-Ziv & Tishby 2017、Saxe et al. 2018 三篇也在同一条脉络上，可一并取回 —— 取回后本库第一次拥有一条完整脉络的正反双方。
@@ -133,6 +133,10 @@ status: active
 - [ ] 核查第 7 条（怀特海引语）的真实来源 —— 需查怀特海《教育的目的》1929 原文
 - [ ] 定位第 9 条的「发刊词」（四大要素）—— 若属万维钢课程，可并入 [[wanweigang]]
 - [ ] 判断 E/F 两段对话体的原始对话是否可追溯（素材未附链接；对比 [[2026-09-18-extended-mind-notes]] 附了 Claude 分享链接的先例）
+
+## 来源
+
+- [[2026-09-18-learning-is-forgetting]]（`raw/2026-09-18-learning-is-forgetting.md`）
 
 ## 相关页面
 

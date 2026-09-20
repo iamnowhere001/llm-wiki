@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-growth-strategy-module-notes
 tags: [成长战略, 万维钢, 得到课程]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-18-growth-strategy-module-notes]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-modern-thinking-tools-prospectus, intelligent-life-system, cybernetic-learning, peak-performance, 2026-09-19-scarcity-book-en]
 confidence: low
@@ -21,16 +21,13 @@ status: active
 > 本模块其余 raws 的 `capture_note` 都写着「编号依据是 [[2026-09-18-growth-strategy-module-notes]]」，
 > 本页建成即把那个悬空链接**闭合**，并把项目页「全课地图」的「19 讲」第一次**拆开**。
 
-- **性质**：**模块层关联档案**（模块目录 / 导览），**不是课程文章** —— 无讲次、无发布日期、无 `dedao.cn/course/article` 链接
 - **作者**：**未署名** —— 目录与各讲提炼为文档整理者所作，正文《15篇人生成长战略思维工具》为 AI 生成（frontmatter `author` 已如此自述，标题亦自标「（AI 生成）」）
 - **链接**：https://my.feishu.cn/wiki/CC7KwPsXziPA3Kk9Q1hcwgtAnAf
 - **素材路径**：`raw/2026-09-18-growth-strategy-module-notes.md`（**1,135 行**；frontmatter 1–22，正文自 23 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 1,110 行」，而 `1,135 − 22（frontmatter）= 1,113` —— **差 3，不能反推为 frontmatter 长度**（与 [[schema]] §3.3 记的那个「差 46 / 差 39」的实例**不是同一情况**）。引用前必须回文件核对，不要用 `capture_method` 的行数反推。
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user` ｜ `document_id: D6uod2dUsohwCdxQS3rcMs18nmh` ｜ `revision_id: 84` ｜ 24,775 字符 ｜ **无内嵌图片**
+
 - **`confidence: low`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **本页的第一价值是「编号」：行 26–54 是 007–021 的官方编号目录**，逐条为
    `编号 + 标题`。本库其余模块素材（含 `2026-09-18-growth-strategy-engineering-manual`）的
@@ -102,7 +99,7 @@ status: active
 
 > [!warning] 两处必须显式声明的不确定性
 > 1. **问答与收官直播无编号。** 本份目录止于 021。它们若另有官方编号（022 起），**本份未给出** ——
->    本页**不臆造**。已列「待办」。
+>    本页**不臆造**。已列「待办 / 开放问题」。
 > 2. **「—」不等于「无编号体系」。** 收官直播的 raw frontmatter 自述
 >    「计为模块讲次之一」—— 它是**计入 19 的有效讲次**，只是不在 007–021 的目录里。
 >    **别把「无编号」误读成「不算讲次」。**
@@ -152,7 +149,7 @@ status: active
 > **本份不保留任何讲稿** —— 它对课程的关系是**转述，不是收录**。
 > 这也是它必须 `low` 的第一条（见文末）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -348,6 +345,13 @@ status: active
       与 [[2026-09-18-woop-notes]] 行 1124–1129 同类 —— **本库目前对「素材自己辟谣」只做逐页登记，未成体系**，待裁定
 - [ ] **本份的「六层结构图」（行 446–488）与 [[intelligent-life-system]] 的坐标是否要对照？**
       本库倾向**不做**（它是 AI 构造），但记一条开放项
+
+## 素材基本信息
+
+- **性质**：**模块层关联档案**（模块目录 / 导览），**不是课程文章** —— 无讲次、无发布日期、无 `dedao.cn/course/article` 链接
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 1,110 行」，而 `1,135 − 22（frontmatter）= 1,113` —— **差 3，不能反推为 frontmatter 长度**（与 [[schema]] §3.3 记的那个「差 46 / 差 39」的实例**不是同一情况**）。引用前必须回文件核对，不要用 `capture_method` 的行数反推。
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user` ｜ `document_id: D6uod2dUsohwCdxQS3rcMs18nmh` ｜ `revision_id: 84` ｜ 24,775 字符 ｜ **无内嵌图片**
 
 ## 来源
 

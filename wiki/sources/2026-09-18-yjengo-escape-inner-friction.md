@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-yjengo-escape-inner-friction
 tags: [情绪, 内耗, 焦虑]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-yjengo-escape-inner-friction]
 related: [yjengo, internal-friction, chaos-system-of-life, emotion-awareness]
 confidence: medium
@@ -15,11 +15,10 @@ status: active
 
 > 一篇**署名完整、逻辑自洽的单作者长文**。它不提供操作清单，而是回答一个更靠前的问题：焦虑和懊悔为什么必然存在，以及为什么「消灭它们」这个目标本身是错的。
 
-- **作者 / 来源**：YJango（独立创作者，自称制作过「高效学习任何知识」课程）
+- **作者**：YJango（独立创作者，自称制作过「高效学习任何知识」课程）
 - **链接**：https://my.feishu.cn/wiki/WR3gw9fN8iQCblkhLwjcy4n4ngf ｜ 原视频：B 站《在焦虑中摆脱内耗》BV1TiD3Y1ECz
-- **发布时间**：2026-03-13
+- **发表**：2026-03-13
 - **素材路径**：`raw/2026-09-18-yjengo-escape-inner-friction.md`
-- **采集质量**：高（官方 API 直取 markdown，正文完整，文末署名保留）
 
 > [!note] 利益披露
 > 作者在文中自述制作过一套「高效学习任何知识」的课程，并明确说明**这篇文章正是为了修正那套课程的一个盲区**（详见「破除内耗」一节的转折）。
@@ -49,7 +48,7 @@ status: active
 
 **3. 总结。** 以乔布斯演讲原文（"You can't connect the dots looking forward..."）收尾，把全文压缩为一个意象：**把每个选择下的美好串珠成链**。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **它是本库第二份「非知识管理」主题的素材，与 [[2026-09-18-emotion-awareness-notes]] 构成一对**：那一份给操作（清单、话术、步骤），这一份给论证（为什么焦虑与懊悔不可消灭）。两者**没有冲突，但重心相反** —— 素材一倾向「情绪可以被管理」，素材二倾向「痛苦是默认配置」。
 - **与 [[cybernetic-learning]] 存在一处值得注意的张力。** Dan Koe 主张「没有目标就没有误差信号，没有留存」；YJango 则主张「执迷于『正确的人生』本身就是妄念」。两者并不直接矛盾（一个说的是学习机制，一个说的是人生选择），但若并置阅读会引出真问题：**目标到底是误差信号的来源，还是焦虑的来源？** 这一点记入 [[emotion-awareness]] 的缺口表。
@@ -60,11 +59,15 @@ status: active
 - 实体：[[yjengo]]（新建）
 - 概念：[[chaos-system-of-life]]（新建）、[[internal-friction]]（与素材一共用）
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 核对《蝴蝶效应》的公映版结局描述是否准确（作者转述，未核对原片）
 - [ ] 核对乔布斯 2005 年斯坦福演讲的原文，确认「退学是最好的决策之一」「被解雇是最幸运的事」「死亡是最棒的发明」三处的表述准确性
 - [ ] 判断作者身份与利益披露的处理方式是否与本库既有约定一致（对比 [[2026-09-18-karpathy-llm-wiki]] 的 `confidence` 处理）
+
+## 素材基本信息
+
+- **采集质量**：高（官方 API 直取 markdown，正文完整，文末署名保留）
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-white-epston-narrative-means-therapeutic-ends-en
 tags: [现代思维工具, Epston, White, 叙事疗法, 叙事重构, 外部化, 情绪觉知]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 related: [narrative-reframing, 2026-09-18-narrative-self, 2026-09-18-narrative-first-principle, narrative-identity, narrative-self-vs-bodily-self, cognitive-reappraisal, meta-narrative, narrative-power, rumination, emotion-awareness, modern-thinking-tools, 2026-09-19-scarcity-book-en, 2026-09-19-art-of-impossible-book-en]
 confidence: high
@@ -20,11 +20,9 @@ status: active
 > **结果四类共 14 条：推翻 2 / 补齐 5 / 证实 3 / 新增 4。**
 
 - **作者**：Michael White（Dulwich Centre, Adelaide）& David Epston（The Family Therapy Centre, Auckland）
-- **出版**：W. W. Norton & Company，First Edition 1990（ISBN 0-393-70098-4）；版权页记 Copyright © 1990 by Dulwich Centre
 - **链接**：https://josefaruiztagle.cl/wp-content/uploads/2020/09/Michael-White-David-Epston-Narrative-Means-to-Therapeutic-Ends-W.-W.-Norton-Company-1990-1.pdf
-- **素材路径**：`raw/2026-09-19-white-epston-narrative-means-therapeutic-ends-en.md`（9,417 行 / 449,254 字符（含 `[p.N]`、不含换行）/ 264 页）
-- **原件**：`raw/assets/1990-white-epston-narrative-means-therapeutic-ends.pdf`（19,958,311 字节，SHA-1 `86222304…`，**未改动**）
-- **抓取**：pypdf 6.19.0 逐页提取（**OCR 文本层**，非原生电子版），每页 `[p.N]` 分隔
+- **发表**：W. W. Norton & Company，First Edition 1990（ISBN 0-393-70098-4）；版权页记 Copyright © 1990 by Dulwich Centre
+- **素材路径**：`raw/2026-09-19-white-epston-narrative-means-therapeutic-ends-en.md`（9,417 行 / 449,254 字符（含 `[p.N]`、不含换行）/ 264 页） ｜ `raw/assets/1990-white-epston-narrative-means-therapeutic-ends.pdf`（19,958,311 字节，SHA-1 `86222304…`，**未改动**）
 
 > [!note] 本页有一手专著支撑
 > **`evidence_tier` 会停在 `single`** —— 按 2026-09-19 裁定，`PRIMARY_KINDS = ("paper",)` **不扩到 `book`**，
@@ -406,12 +404,16 @@ family life**」（White, 1988）对应。
 5. **[[narrative-identity]] 要的 Ricoeur / McAdams 一手仍未入库**（§二 A2）——
    本份**不能**替代它，本轮反而**撤销了**一份误认的替代品。
 
+## 素材基本信息
+
+- **抓取**：pypdf 6.19.0 逐页提取（**OCR 文本层**，非原生电子版），每页 `[p.N]` 分隔
+
 ## 来源
 
 - `raw/2026-09-19-white-epston-narrative-means-therapeutic-ends-en.md`（9,417 行；正文自第 59 行起）
 - 抓取事实与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**）
 - 校准对象（库内关于叙事疗法的全部断言）：
-  [[narrative-reframing]]（全文，尤其行 29–34 / 76–77 / 124–127 与「待办」）、
+  [[narrative-reframing]]（全文，尤其行 29–34 / 76–77 / 124–127 与「待办 / 开放问题」）、
   [[2026-09-18-narrative-self]] 行 404–647（I 段五步法）、
   [[2026-09-18-narrative-first-principle]] 行 374–615（E 段 12 练习）与行 198–203、
   [[narrative-identity]] 的开放问题

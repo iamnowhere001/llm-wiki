@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-qa-best-model-notes
 tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 心智模型, 非遍历性, 凯利公式, 贝叶斯先验]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-qa-best-model-notes]
 related: [wanweigang, modern-thinking-tools, mental-models, explanatory-framework, schema-psychology, free-energy-principle, prediction-error, compression-as-intelligence, information-bottleneck, multiplicative-world, nassim-taleb, explore-exploit-tradeoff, attachment-theory, autonomy-support, self-determination-theory, psychological-safety, deliberate-practice, character-skills, internal-friction, cognitive-outsourcing, productive-resistance, agent-vs-tool, 2026-09-18-woop-notes, 2026-09-18-three-selves-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-growth-strategy-engineering-manual, 2026-09-18-qa-hard-to-start-notes]
 confidence: medium
@@ -25,13 +25,9 @@ status: active
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述，并**主动标注「正文含 AI 加工段（无署名）」**）
 - **链接**：https://my.feishu.cn/wiki/KK9uw2Em5iLfySkz4dwca2oXn3d ｜ **原文出处**：https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWM7MJ7DOop10vZwL（付费内容搬运）
-- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
-- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: IDYmdNyskoHksFxs4r2chAIJnDb` ｜ `revision_id: 82` ｜ **无内嵌图片** ｜ **正文级 `---` 11 处**
 - **素材路径**：`raw/2026-09-19-qa-best-model-notes.md`（**742 行**；frontmatter 1–25，正文自 27 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 15,795 字符 / **714 行**」，而 `742 − 25 = 717` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
-## 要点
+## 关键要点
 
 1. **5 节 = 模块二 5 讲**：《颗粒度和因果中介》→《贝叶斯先验》→《信息价值》→《凯利公式》→《非遍历性》。**题名问题出自《颗粒度和因果中介》节**（行 43），且它在讲稿里是**万维钢转述的「好几个读者问」的合并版**，不是一条单独的读者 blockquote。
 2. **讲稿段行 91–131 是一份 GPT-5.5 Pro 生成的 20 条清单，而万维钢主动交代了它的来历**：行 91「**今天正好赶上 GPT-5.5 发布，我就让 5.5 Pro 列举**它所能想到的、五岁的孩子有什么样的好先验最有利于成长。它一口气列了 20 条，我一看说得实在是漂亮，干脆都摘抄在这里」。**这是本库第一处「讲稿主动署名 AI 产物 + 给出模型名与版本」**（对照 [[2026-09-18-heavy-tail-notes]] 的推广与 [[2026-09-18-growth-strategy-engineering-manual]] 的未标注 AI 转述）。
@@ -66,7 +62,7 @@ status: active
 **提问 5 条**（39 / 65 / 141 / 163 / 179，全部单行 `>` 引用块）｜**回答 5 段**（43–57 / 69–133 / 145–155 / 167–171 / 183–201）。
 ⚠️ **行 238 的 blockquote 不是读者提问** —— 它是对 AI 的指令，且后面跟的是 AI 回答而非万维钢回答。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -193,6 +189,13 @@ status: active
 - [ ] **3 处框架归属可疑（平庸之恶的反向 / 贝特森-斯多葛 / 斯托克代尔）** 是否登记为「AI 段归属瑕疵」？
 - [ ] **AI 段回答的不是讲稿论点** —— 这一「对照失效」是否要写进综述的方法论一节？
 - [ ] **「汉娜·阿伦特」是否值得建实体页？** 本份出现一次，且是**唯一一处生造式归属**，**待核**
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**，**无官方编号**（不进模块二的 022–037 序列）。按模块一裁定同口径：**建 1 页 `sources/`、不进编号序列、不派生概念页**
+- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI）｜ `document_id: IDYmdNyskoHksFxs4r2chAIJnDb` ｜ `revision_id: 82` ｜ **无内嵌图片** ｜ **正文级 `---` 11 处**
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 15,795 字符 / **714 行**」，而 `742 − 25 = 717` —— **差 3 行**（内容相对口径）。**引用前回文件核对。**
 
 ## 来源
 

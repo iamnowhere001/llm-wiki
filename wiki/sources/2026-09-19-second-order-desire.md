@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-second-order-desire
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 二阶意愿, 元表征]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-second-order-desire]
 related: [modern-thinking-tools, wanweigang, subject-object-shift, robert-kegan, narrative-identity, narrative-as-objective-function, narrative-as-first-principle, cognitive-reappraisal, rumination, three-selves, stimulus-response-gap, cybernetic-learning, meta-narrative, feedback-loop]
 confidence: medium
@@ -30,14 +30,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/QRz1w6DI0ia0G9kAPXlcWFS9nZ9
 - **素材路径**：`raw/2026-09-19-second-order-desire.md`（505 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把两条既有学术线引入本库** —— 法兰克福的**欲望分层**（一阶欲望 / 二阶欲望 / **二阶意愿**，1971）与认知科学的**元表征**（派利夏恩 1978、普鲁斯特的「开放式递归性」），
-并把它们收束到一个动作上：**主体 → 客体**（= 本库已有的 [[subject-object-shift]]，凯根）。
-**本份是「混层素材」**：正文有**两条正文级 `---` 分隔线**（行 **258** / **305**），各起一段**无署名 AI 加工段**（A：行 258–304；B：行 305–505）。
-**AI 加工占比 = 52.1%（未过 60% 阈值，按 `schema.md` §2 第 5 步不触发强制反方检索）**，但**两段均为独立 AI 摘要**，是本库少见的多段 AI 混层样本。
-**讲稿具名引注整体可核**：Henden 2008 / Frankfurt 1971 / Pylyshyn 1978 / Watson 1975 / Kegan / Zahavy《LLMs Can't Jump》/《金刚经》/《庄子·逍遥游》**全部外核属实**（见核查表）；
-**两处未署名项**：「2025 年 LLM 内部状态研究」与「目标推理（goal reasoning）」。
+1. **把两条既有学术线引入本库** —— 法兰克福的**欲望分层**（一阶欲望 / 二阶欲望 / **二阶意愿**，1971）与认知科学的**元表征**（派利夏恩 1978、普鲁斯特的「开放式递归性」）。
+2. **两条线收束到一个动作上**：**主体 → 客体**（= 本库已有的 [[subject-object-shift]]，凯根）。
+3. **本份是「混层素材」**：正文有**两条正文级 `---` 分隔线**（行 **258** / **305**），各起一段**无署名 AI 加工段**（A：行 258–304；B：行 305–505）。
+4. **AI 加工占比 = 52.1%**（未过 60% 阈值，按 `schema.md` §2 第 5 步不触发强制反方检索），但**两段均为独立 AI 摘要**，是本库少见的多段 AI 混层样本。
+5. **讲稿具名引注整体可核**：Henden 2008 / Frankfurt 1971 / Pylyshyn 1978 / Watson 1975 / Kegan / Zahavy《LLMs Can't Jump》/《金刚经》/《庄子·逍遥游》**全部外核属实**（见核查表）；**两处未署名项**：「2025 年 LLM 内部状态研究」与「目标推理（goal reasoning）」。
 
 ## 素材基本信息
 
@@ -64,7 +63,7 @@ status: active
 **两处文内互指（抓取事实）**：① 行 38 自述「**上一讲我们说这个宇宙没有外部的奖励函数**」—— 与讲次表 **108 = 目标函数** 紧接（见 [[narrative-as-objective-function]]）；
 ② 后续讲 **114 立题** 自述「我们前面讲的『元表征』和『应无所住』」—— 立题在**本份之后**，是「本份 = 109」的旁证。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -253,7 +252,7 @@ C 段末尾另有课程原生体裁块：**【有诗赞曰】四句七言**（�
 - [[modern-thinking-tools]]：全课地图「区块九 · 模块八 高观点」的 sources 页计数 +1；登记「**109 是讲次表覆盖到的最后一讲**」。
 - [[wanweigang]]：作者页可登记「**高观点 / 自由与自我治理**」这条线。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **两段 AI 加工段是否同一来源 / 同一模板？** 现判「模板不同，不能判定同源」（见 AI 加工段判定）。
   如项目需要坐实，须另找生成侧证据 —— **本库不为此收新素材**。

@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-free-energy-alignment-notes
 tags: [成长战略, 得到课程, 自由能原理, 预测加工]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-free-energy-alignment-notes]
 related: [free-energy-principle, prediction-error, three-selves, 2026-09-18-three-selves-notes, 2026-09-18-narrative-first-principle, narrative-as-first-principle, cybernetic-learning, uncertainty-as-fuel, desirable-difficulty, modern-thinking-tools, wanweigang]
 confidence: medium
@@ -24,12 +24,10 @@ status: active
 > 引用前已回文件 `sed -n` 核对。
 
 - **作者**：行 36–172、175–177 为万维钢（署名作者，文首自带得到课程链接）；行 183–190 为读者留言 + **作者本人回复**；行 197–414 未署名，判为 AI 生成
-- **链接**：https://my.feishu.cn/wiki/EhX1wIsDfi4QwVkLisUcaPWkntg
-- **原文出处**：https://www.dedao.cn/course/article?id=Pvz6E94NYDg2JjQmxjVL3rAkWQjnwp
-- **发布**：2026-03-30 23:10（正文首行自带）
+- **链接**：https://my.feishu.cn/wiki/EhX1wIsDfi4QwVkLisUcaPWkntg ｜ https://www.dedao.cn/course/article?id=Pvz6E94NYDg2JjQmxjVL3rAkWQjnwp
+- **发表**：2026-03-30 23:10（正文首行自带）
 - **素材路径**：`raw/2026-09-18-free-energy-alignment-notes.md`（414 行；frontmatter 1–24）
-- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI），`document_id: P2Tqdu3BLopN6wxmjFkcedZgnsf` ｜ `revision_id: 317` ｜ 11,059 字符 / 387 行
-- **已知缺失**：内嵌图片 1 张**已下载**（8.4 MB，见页尾对照表）；图中数字未逐一核对
+
 - **`confidence: medium`** —— 讲稿段有实质内容（本库第一次拿到 FEP 的完整表述），引注 10 条中 8 条可核；
   AI 段占比 56% 且为人设化改写，拉住整页
 
@@ -43,7 +41,7 @@ status: active
 3. **结构是「马尔可夫毯」**（行 90–96）：感官状态是内部受外部影响的唯一入口，
    行动状态是内部影响外部的唯一出口 —— 「你是通过世界打在你毯子上的投影去推测世界」。
 4. **两条对策**（行 100–104）：**知觉推断**（改模型去适应世界）/ **主动推断**（改世界去符合模型）。
-   这与第 6 讲的「打脸时三条路」（改注意力 / 改行为 / 改模型）是**同一件事的另一种切法** —— 见「与现有库的关系」。
+   这与第 6 讲的「打脸时三条路」（改注意力 / 改行为 / 改模型）是**同一件事的另一种切法** —— 见「与本库既有页面的关系」。
 5. **全讲的着力点是「惊讶的度」**（行 119–129）：不追求把惊讶降成 0，而要**主动来点可控的小惊讶**。
    讲稿把它接到「刻意练习的学习区」「心流」「SDT 胜任感」「喜欢 = 熟悉 + 意外」上 ——
    **接法有一处归属错位**，见引注核查表第 9 条。
@@ -51,7 +49,7 @@ status: active
    行 306 直接把该人设写进方案名。按 [[modern-thinking-tools]]「不做什么」处置 ——
    **只在分层表标明性质与篇幅，不单独建页、不进知识列表**。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 > 一份素材内部混层，单一 `confidence` 不够。本份六段，**AI 段占比是本板块已收三讲里最高的之一**。
 
@@ -99,7 +97,7 @@ status: active
 - **收束**（行 161–171）：「活着就是对齐」；「你不是为了预测而预测，你是为了生存而预测」；
   结尾引 **Gemini** 的浪漫洞见 —— 「所谓爱一个人，就是将对方纳入了自己的马尔可夫毯之内」。
 
-## AI 段的性质
+## AI 加工段判定
 
 **判定：行 237–414 命中「人设化改写」。** 依据：
 
@@ -155,7 +153,7 @@ status: active
 > 学界对 FEP 有一条常见批评：**不可证伪 / 适用范围被过度扩张**（Millidge, Seth & Buckley 2021, arXiv:2108.13343 等）。
 > **素材没有提这条批评。** 本库把它登记为「**被验证的现象、未被素材处理**」，见 [[free-energy-principle]] 的既有判断。
 
-## 与现有库的关系
+## 与本库既有页面的关系
 
 > 任务要求逐一比对五页。**结论：五页全部同向，无矛盾。**
 
@@ -229,6 +227,11 @@ AI 段《中年反熵增计划》按项目页「不做什么」处置，**不建
 - [ ] 「蒙台梭利 × 自由能原理」的分析出处 —— 素材无名字、无文献，待补一手
 - [ ] 「计算精神病学 / 抑郁负先验」的一手文献（素材未点名）
 - [ ] 内嵌图片 1 张（行 74）图注完整，**图中数字未逐一核对**
+
+## 素材基本信息
+
+- **抓取**：`lark-cli docs +fetch --as user`（飞书官方 OpenAPI），`document_id: P2Tqdu3BLopN6wxmjFkcedZgnsf` ｜ `revision_id: 317` ｜ 11,059 字符 / 387 行
+- **已知缺失**：内嵌图片 1 张**已下载**（8.4 MB，见页尾对照表）；图中数字未逐一核对
 
 ## 来源
 

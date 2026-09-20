@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-by-products
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, 副产品, 无为, 迂回]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-by-products]
 related: [modern-thinking-tools, wanweigang, narrative-as-objective-function, systems-over-goals, goodharts-law, flow-terminology, stoic-control-dichotomy, rumination, self-determination-theory, subject-object-shift, generativity, luck-over-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-19-adaptive-cycle]
 confidence: medium
@@ -30,15 +30,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/H7XLwyoXvibh9WkuCzAcChl0nwe
 - **素材路径**：`raw/2026-09-19-by-products.md`（294 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把埃尔斯特的「本质副产品」引入本库** —— 它是**既有哲学 / 社科框架**（*Sour Grapes*, 1983），素材**已正确署名**（见「术语归属专段」），
-不是万维钢自造词。它给 [[narrative-as-objective-function]] 补上了**缺失的边界**：该页讲「叙事决定目标函数」，
-本讲说「**你最想要的那些东西，恰恰不能直接写进目标函数**」（行 52）—— 有些状态**逻辑上不可能**被目标函数收编。
-对内一路（监控进程）与 [[goodharts-law]] 的「指标崇拜」同源；对外一路（表演污染证据）给 [[systems-over-goals]] 的「过程属性」提供了心理侧机制。
-**本份是「讲稿 + 无署名 AI 加工段」的混层素材**：讲稿 C 段 191 行（**72.1%**），AI 加工段 D 段 63 行（**23.8%**，见「AI 加工段判定」）。
-**具名引注整体质量高**：Elster 1983 / Wegner 1987 / Mill / Mauss 2011 / Ford & Mauss 2015 / John Kay 2010 / Merck 1950 / Slingerland 2014 / orthosomnia 2017 **均外核属实，署名与年份逐条对上**；
-**唯一未署名项是「摩洛克」（行 208）**，如实登记（见核查表）。
+1. **把埃尔斯特的「本质副产品」引入本库** —— 它是**既有哲学 / 社科框架**（*Sour Grapes*, 1983），素材**已正确署名**（见「术语归属专段」），不是万维钢自造词。
+2. **给 [[narrative-as-objective-function]] 补上缺失的边界**：该页讲「叙事决定目标函数」，本讲说「**你最想要的那些东西，恰恰不能直接写进目标函数**」（行 52）—— 有些状态**逻辑上不可能**被目标函数收编。
+3. **两条下游接点**：对内一路（监控进程）与 [[goodharts-law]] 的「指标崇拜」同源；对外一路（表演污染证据）给 [[systems-over-goals]] 的「过程属性」提供了心理侧机制。
+4. **本份是「讲稿 + 无署名 AI 加工段」的混层素材**：讲稿 C 段 191 行（**72.1%**），AI 加工段 D 段 63 行（**23.8%**，见「AI 加工段判定」）。
+5. **具名引注整体质量高**：Elster 1983 / Wegner 1987 / Mill / Mauss 2011 / Ford & Mauss 2015 / John Kay 2010 / Merck 1950 / Slingerland 2014 / orthosomnia 2017 **均外核属实，署名与年份逐条对上**；**唯一未署名项是「摩洛克」（行 208）**，如实登记（见核查表）。
 
 ## 素材基本信息
 
@@ -77,7 +75,7 @@ status: active
 | `2026-09-19-by-products-img-06.png` | 194 | `OhIBbbWOBoRbkPxXXNJc4D6unUb` |
 | `2026-09-19-by-products-img-07.png` | 226 | `Jyz0bVZfYo4ayixACH4czCFFn6E` |
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -166,7 +164,7 @@ AI 加工占比（按正文行数）= 63 ÷ 265 = 23.8%。** 四条依据：
 
 **因此本份计 AI 加工占比 23.8%。** 占比 **23.8% < 60%**，按 `schema.md` §2 第 5 步**不触发反方检索**。
 （附：本轮 L0 外核顺带观察 —— Mauss 2011 / Ford & Mauss 2015 这条线在库外**仍有后续复现**，未见针对本讲核心主张的复现失败；但**这不构成本库的正式反方检索**，仅作观察登记。）
-**注意**：这条结论是**基于上述四条判据的判定**；D 段的「拔高」是否升格为一种缺陷型，见「开放问题」。
+**注意**：这条结论是**基于上述四条判据的判定**；D 段的「拔高」是否升格为一种缺陷型，见「待办 / 开放问题」。
 
 ## 引注核查表（L0）
 
@@ -301,7 +299,7 @@ AI 加工占比（按正文行数）= 63 ÷ 265 = 23.8%。** 四条依据：
 - [[modern-thinking-tools]]：全课地图「区块九 · 模块八 高观点」由 `0` 变**已收**（推定 110）；登记本模块 12 篇（10 正文 + 2 问答）。
 - [[wanweigang]]：作者页可登记「**高观点**」这条线（本模块第一批正源讲稿）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **本份 AI 加工段占 23.8%（< 60%），未触发反方检索。** 但 D 段把讲稿收束句拔高为「宇宙…最后一份温情与诗意」，
   **是否算「价值拔高」并升格为一种缺陷型？** **现判：轻度拔高，不降级**（未伪造引注、未改方向、未加数字）。登记待裁。

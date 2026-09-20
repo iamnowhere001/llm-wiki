@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-growth-strategy-engineering-manual
 tags: [成长战略, 万维钢, 得到课程, 工程化手册]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-growth-strategy-engineering-manual]
 related: [wanweigang, modern-thinking-tools, 2026-09-18-growth-strategy-module-notes, 2026-09-18-woop-notes, 2026-09-18-heavy-tail-notes, agent-vs-tool, intelligent-life-system, cybernetic-learning, free-energy-principle]
 confidence: low
@@ -24,20 +24,13 @@ status: active
 > 降级的实际理由见文末「证据性质」：**① 一手内容为零；② 两处对讲稿的改写未被标注（且与本模块讲稿方向不符）；
 > ③ 借用多个真实学术概念的名称却零出处。**
 
-- **性质**：**模块层关联档案**（AI 生成的「工程化设计手册」）—— **不是课程文章**
-  （无讲次、无发布日期、无 `dedao.cn/course/article` 链接；`series` 字段自述「非课程文章，不计讲次」）
 - **作者**：**未署名 —— AI 生成**（`raw` 的 frontmatter `author` 字段如此自述；标题亦自标「（AI 生成）」）
-- **文件自标**：`版本 v1.0 / 日期 2026-05 / 定位: 个人成长操作系统 (Personal Growth OS, PG-OS)`（行 28–30）
 - **链接**：https://my.feishu.cn/wiki/OdtqwZLwaiBmjpkIw9hcHBPBndc
 - **素材路径**：`raw/2026-09-18-growth-strategy-engineering-manual.md`（**2,044 行**；frontmatter 1–22，正文自 23 行起）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
-  ⚠️ raw 的 `capture_method` 记「正文 30,523 字符 / **2,019 行**」，而 `2,044 − 22（frontmatter）= 2,022` —— **差 3**，
-  与本批各讲 raw 的实测偏差一致（如 `identity-metacognition` 记 372、实为 375）。**引用前必须回文件核对，不要用 `capture_method` 的行数反推。**
-- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
-  `document_id: Flevdm8TmobDxxxEyeyc7QuFnSh` ｜ `revision_id: 22` ｜ 30,523 字符 ｜ **无内嵌图片**
+
 - **`confidence: low`** —— 理由见文末「证据性质」一节
 
-## 要点
+## 关键要点
 
 1. **它不是讲稿，是「系统的说明书」。** 全文 7 章：一、系统架构（行 42–206）→ 二、协议设计（行 208–1,385）
    → 三、仪表盘设计（行 1,387–1,543）→ 四、反馈环设计（行 1,547–1,663）→ 五、容错与韧性（行 1,666–1,786）
@@ -323,6 +316,17 @@ status: active
       [[schema]] §3.6 第 4 类的例子里是「精确数字 + 有研究表明」，**本份是「概念名 + 零归属」** —— **待裁定是否算同一类**
 - [ ] **本份的「六层架构」与 [[intelligent-life-system]] 的坐标是否要对照？** 本库倾向**不做**（它是 AI 构造），记一条开放项
 - [ ] **两份关联档案（本页 + module-notes）是否需要一份合并处置说明？** 它们同型、同批、互为引用 —— **待裁定**
+
+## 素材基本信息
+
+- **性质**：**模块层关联档案**（AI 生成的「工程化设计手册」）—— **不是课程文章**
+  （无讲次、无发布日期、无 `dedao.cn/course/article` 链接；`series` 字段自述「非课程文章，不计讲次」）
+- **文件自标**：`版本 v1.0 / 日期 2026-05 / 定位: 个人成长操作系统 (Personal Growth OS, PG-OS)`（行 28–30）
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段 `sed -n 'X,Yp'` 回文件核对。
+  ⚠️ raw 的 `capture_method` 记「正文 30,523 字符 / **2,019 行**」，而 `2,044 − 22（frontmatter）= 2,022` —— **差 3**，
+  与本批各讲 raw 的实测偏差一致（如 `identity-metacognition` 记 372、实为 375）。**引用前必须回文件核对，不要用 `capture_method` 的行数反推。**
+- **抓取**：`lark-cli docs +fetch --doc "<wiki url>" --doc-format markdown --as user`（飞书官方 OpenAPI，非渲染页提取）｜
+  `document_id: Flevdm8TmobDxxxEyeyc7QuFnSh` ｜ `revision_id: 22` ｜ 30,523 字符 ｜ **无内嵌图片**
 
 ## 来源
 

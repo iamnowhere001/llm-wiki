@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-hard-constraints-notes
 tags: [世界观, 万维钢, 得到课程, 算账, 基本信息世界观]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-hard-constraints-notes]
 related: [hard-constraints, wishful-thinking-layers, modern-thinking-tools, wanweigang, stephen-covey, intelligent-life-system, steady-state-survival-logic, narrative-as-first-principle, 2026-09-18-modern-thinking-tools-prospectus]
 confidence: medium
@@ -41,9 +41,9 @@ status: active
 5. **本份是「立场改写型」AI 加工的第二次出现，且这次改的是价值方向。**
    讲稿说约束是**好消息**（「有约束才可预期，才讲章法，才值得研究和学习」，行 177）；
    AI 段却说「**严禁『为了成长而学习』**：任何不能在 90 天内辅助变现……都是精神自慰」（行 425）。
-   **两句直接对撞** —— 详见下文「AI 段的性质」。
+   **两句直接对撞** —— 详见下文「AI 加工段判定」。
 
-## 分层表（22 段合并为 8 个区段；文件绝对行号）
+## 素材分层表（22 段合并为 8 个区段；文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 内容 |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ status: active
 **DOGE 那组数字（第 3–8 条）是本库目前「零引注但可算可核」的最干净一例** ——
 它不是转引，是**公开预算结构**，任何人可以自己验算。项目页把它列为待核缺口，**现已关闭**。
 
-## AI 段的性质（G–K 段）
+## AI 加工段判定（G–K 段）
 
 **① 它不是「寄生」，是「人设化改写」** —— 与第 3 讲同型，但更值得记：
 
@@ -141,7 +141,7 @@ status: active
 **② 归属透明的一处正面样本**：讲稿行 161「我让 GPT 算了一下」。
 同一份素材里，**讲稿主动交代 AI 参与，AI 段却伪装成作者的延伸** —— 这个对照本身值得记。
 
-## 与现有库的关系
+## 与本库既有页面的关系
 
 1. **它关闭了 [[modern-thinking-tools]] 缺口表里 2 条**：DOGE 一组数字 ✅ 已核；「他人也是能动者，不是 NPC」✅ 进讲稿正文。
 2. **它是 [[agent-vs-tool]] 的第三次出现，且终于是讲稿主张**（前两次：第 3 讲讲稿 + 第 3 讲 AI 段）。
@@ -155,7 +155,7 @@ status: active
 7. **与库内九讲的张力**：AI 段的「90 天变现」与 [[deliberate-practice]] / [[character-skills]] 方向相反，
    **但那是 AI 段的主张，不进张力裁决表** —— 张力表只收讲稿主张（见 [[modern-thinking-tools]]）。
 
-## 新建 / 回填
+## 回填清单
 
 **新建概念页**：[[hard-constraints]]、[[wishful-thinking-layers]]
 **回填**：[[stephen-covey]]（柯维第一条可核引注）、[[agent-vs-tool]]（第三次出现，转为讲稿主张）、

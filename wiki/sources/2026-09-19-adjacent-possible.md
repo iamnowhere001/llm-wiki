@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-adjacent-possible
 tags: [现代思维工具, 演化者, 万维钢, 得到课程, 临近可能, 不可预先陈述性, 产品空间, 组合进化]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-adjacent-possible]
 related: [modern-thinking-tools, wanweigang, effectuation, state-leverage, types-of-uncertainty, optionality, explore-exploit-tradeoff, 2026-09-19-generativity, 2026-09-19-symmetry-breaking]
 confidence: medium
@@ -27,14 +27,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/DeQuwpu4riJuUVkaXPUcLVC7nng
 - **素材路径**：`raw/2026-09-19-adjacent-possible.md`（230 行）
 
-## TL;DR
+## 关键要点
 
-**本讲是「临近可能」这条线的第一份素材，也是本模块与前面诸讲接口最密的一讲** —— 它**直接回指**「效果推理」「状态杠杆」「能耐寻求定理」三个前讲工具（行 112–116），
-并与 [[effectuation]]、[[state-leverage]]、[[types-of-uncertainty]]、[[optionality]]、[[explore-exploit-tradeoff]] 都接得上。
-它用**张忠谋**的一生做主轴（17 岁想当作家 → 两次博士资格考试落榜 → 德州仪器 → 52 岁被挤出权力中心 → **55 岁创办台积电**），
-再给「**不可预先陈述性（unprestatability）**」这个更强的版本：**连未来可能空间里会出现哪些变量、功能、生态位都无法预先列举**（行 124–126）。
-**本份是「无 AI 加工段」的纯讲稿**；具名来源质量高：Kauffman 2000 / Johnson 2010 / Merton 1961 / Arthur 2009 / Hidalgo & Hausmann 2007 / Kauffman-Longo-Montévil 2012 **逐条外核属实**。
-**两处需如实登记**：① 张忠谋自传的引语文字**可疑、未逐条核**（「那两个半单位」费解）；② 激光「一个寻找问题的解决方案」是**通行的通俗引语，原始出处未坐实**。
+1. **「临近可能」这条线的第一份素材，也是本模块与前面诸讲接口最密的一讲** —— 它**直接回指**「效果推理」「状态杠杆」「能耐寻求定理」三个前讲工具（行 112–116），并与 [[effectuation]]、[[state-leverage]]、[[types-of-uncertainty]]、[[optionality]]、[[explore-exploit-tradeoff]] 都接得上。
+2. **主轴是张忠谋的一生**：17 岁想当作家 → 两次博士资格考试落榜 → 德州仪器 → 52 岁被挤出权力中心 → **55 岁创办台积电**。
+3. **给出「不可预先陈述性（unprestatability）」的更强版本**：**连未来可能空间里会出现哪些变量、功能、生态位都无法预先列举**（行 124–126）。
+4. **本份是「无 AI 加工段」的纯讲稿**；具名来源质量高：Kauffman 2000 / Johnson 2010 / Merton 1961 / Arthur 2009 / Hidalgo & Hausmann 2007 / Kauffman-Longo-Montévil 2012 **逐条外核属实**。
+5. **两处需如实登记**：① 张忠谋自传的引语文字**可疑、未逐条核**（「那两个半单位」费解）；② 激光「一个寻找问题的解决方案」是**通行的通俗引语，原始出处未坐实**。
 
 ## 素材基本信息
 
@@ -57,7 +56,7 @@ status: active
 采信公开课程讲次表 `wwg000`–`wwg109`：**模块七 演化者 = wwg097–wwg106**，本份 = **099（推定）**。
 **时序旁证**：本份 `node_create_time`（2026-07-16 23:20）**早于上一讲 098（同日 23:23）3 分钟** —— 但两者正文互指关系为「098 → 099」（098 行 192 回指 097；099 行 38 承接 098），**故按讲次表排为 099，不按 `node_create_time` 排**。
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -199,7 +198,7 @@ status: active
 - [[2026-09-18-capability-seeking-theorem-notes]]：行 116 回指「能耐寻求定理：最优策略……是前往能给下一步打开更多可能性的地方」—— **库内该定理无概念页**（见开放问题），先回填到 source 页
 - [[modern-thinking-tools]] / [[wanweigang]]：全课地图与作者页登记
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **编号字段名待裁定**：与模块一 / 模块二 / 模块四那 60 份页面同一问题。
 - [ ] **`node_create_time` 与讲次表顺序相反**（099 的建节点时间早于 098）—— 本页按正文互指关系排 099。**这是本批第一次出现「建节点时间 ≠ 讲次顺序」**，是否要登记一种「时序旁证失效」的形态待定。

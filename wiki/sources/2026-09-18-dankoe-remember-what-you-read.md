@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-dankoe-remember-what-you-read
 tags: [知识管理, 创作, 学习方法]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-dankoe-remember-what-you-read]
 related: [cybernetic-learning, commonplace-book, commonplace-book-vs-llm-wiki]
 confidence: medium
@@ -17,8 +17,7 @@ status: active
 
 - **作者**：[[dan-koe]]
 - **链接**：https://x.com/thedankoe/status/2081415714636996844
-- **形式**：X 长文（Article），非推文 —— 推文本身只是一个指向文章的链接
-- **发布**：2026-07-26 ｜ **采集时数据**：23,480 赞 / 220 回复
+- **发表**：2026-07-26 ｜ **采集时数据**：23,480 赞 / 220 回复
 - **素材路径**：`raw/2026-09-18-dankoe-remember-what-you-read.md`
 
 ## 关键要点
@@ -46,7 +45,7 @@ status: active
 
 因此他给出三步法，其中 Step 1 的关键是「让想法不会消失在虚空里」—— 因为创作依赖你**重新浮现**它们的能力。他给出两条路：Claude Code + Obsidian（自建），或 MyMind / Eden（托管，自动打标签、分类、嵌入）。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这是本知识库目前最重要的一个交叉点。** 它同时提供了三样东西：
 
@@ -68,12 +67,16 @@ status: active
 - 分析：[[commonplace-book-vs-llm-wiki]]
 - 已提及但未独立成页（出现一次或仅为引文）：Naval Ravikant、Devon Eriksen、Marcus Aurelius、Leonardo da Vinci、Seneca、Mark Twain、H.P. Lovecraft、Thomas Jefferson、Montaigne、Rick Rubin、Roam Research、Kortex、MyMind、Claude Code、After Effects
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 封面图未下载成功（pbs.twimg.com 在本环境被拦截），仅存 URL
 - [ ] 正文经 AI 抓取工具提取，存在转写偏差风险，需与原文比对核校
 - [ ] Naval 与 Devon Eriksen 的两段引文未找到原始出处，属于**二次转引**
 - [ ] MyMind 与 Eden 的能力描述需独立验证，不能采信厂商自述
+
+## 素材基本信息
+
+- **形式**：X 长文（Article），非推文 —— 推文本身只是一个指向文章的链接
 
 ## 相关页面
 

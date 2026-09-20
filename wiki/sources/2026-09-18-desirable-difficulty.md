@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-desirable-difficulty
 tags: [万维钢, 学习, 记忆, 具身认知, 睡眠]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-desirable-difficulty]
 related: [desirable-difficulty, robert-bjork, embodied-cognition, retrieval-practice, spaced-repetition, consolidation-and-sleep, cognitive-load-theory, wanweigang, 2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques, peak-performance]
 confidence: medium
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里对本库既有页面校准作用最大的一讲** —— 它补上了本库一处明确的归属缺失。
 
 - **作者**：万维钢（**行 136 自陈「我们《精英日课》专栏已经讲过太多跟睡眠有关的研究了」**）
-- **链接**：https://my.feishu.cn/wiki/Id2ywhOz1i0y0xkkdsJcF7K2nie
-- **原文**：https://www.dedao.cn/course/article?id=AgOBQ46R1rnXRQomwPJdLzGqEZ3aY7
+- **链接**：https://my.feishu.cn/wiki/Id2ywhOz1i0y0xkkdsJcF7K2nie ｜ https://www.dedao.cn/course/article?id=AgOBQ46R1rnXRQomwPJdLzGqEZ3aY7
 - **发表**：2026-05-14 23:01
 - **素材路径**：`raw/2026-09-18-desirable-difficulty.md`（436 行，frontmatter 1–36）
-- **证据层级**：二手科普讲稿；**核心概念点名到人（比约克夫妇 / UCLA），数字簇全部无出处**
 
 ## 关键要点
 
@@ -33,7 +31,7 @@ status: active
 5. **身体侧**：急性运动约 20 分钟（乳酸供能 + BDNF）、睡眠是学习的一道工序
    （类淋巴系统清垃圾、海马体转写）、**具身认知四心法**（动手/手写/读纸书/走几步）。
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -55,7 +53,7 @@ status: active
 对比本库其他素材：[[2026-09-18-how-we-learn-notes]] 要靠「审稿人」自陈来推断，
 [[2026-09-18-icap-framework]] 要靠「你这篇」来推断 —— **本讲不需要推断。**
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -113,6 +111,10 @@ CLT 说「减少外在负荷」，本讲说「**内在负荷不但不能减，�
 - [ ] 核查表第 2 条（26.17%）**优先级最高** —— 精确数字 + 大样本 + 社会议题，若不实影响最大。
 - [ ] 睡眠时长建议应与 [[consolidation-and-sleep]] 交叉核对（本库已有该页）。
 - [ ] 具身认知四心法与本库 [[embodied-cognition]] 页的关系**尚未回填**。
+
+## 素材基本信息
+
+- **证据层级**：二手科普讲稿；**核心概念点名到人（比约克夫妇 / UCLA），数字簇全部无出处**
 
 ## 来源
 

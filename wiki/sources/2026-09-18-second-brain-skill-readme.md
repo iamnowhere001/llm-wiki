@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-second-brain-skill-readme
 tags: [工具, Skill, 实现]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-second-brain-skill-readme]
 related: [second-brain-skill, llm-wiki-pattern, three-layer-architecture]
 confidence: high
@@ -17,8 +17,6 @@ status: active
 
 - **作者**：ChavesLiu
 - **链接**：https://github.com/ChavesLiu/second-brain-skill
-- **仓库创建**：2026-04-14 ｜ **最后推送**：2026-04-15
-- **采集时数据**：54 stars / 9 forks / Python / 默认分支 `main`
 - **素材路径**：`raw/2026-09-18-second-brain-skill-readme.md`（README 逐字副本，取自 GitHub API）
 
 ## 关键要点
@@ -41,7 +39,7 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 
 文档体系包含三份：`docs/user-guide.md`（使用手册，含 Obsidian 集成与 OpenClaw 接入）、`skills/wiki/IDEA.md`（设计理念）、`skills/wiki/README.md`（技术文档）。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **印证**了 [[three-layer-architecture]] 与 [[ingest-query-lint]] —— 目录结构与工作流几乎逐项对应。
 - **补充**了原构想中没有的 `conventions.md` 落点机制：README 明确列出「回答要标注来源 → 记录偏好到 conventions.md」。
@@ -57,11 +55,16 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 - 实体：ChavesLiu（未独立成页，仅出现一次）、OpenClaw（未独立成页）
 - 概念：[[second-brain-skill]]（评估）
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 核实 LICENSE 文件是否真的缺失
 - [ ] 查看 `skills/wiki/README.md` 与 `IDEA.md`，确认页面规范是否与本仓库的 `AGENTS.md` 有差异
 - [ ] 确认 OpenClaw 是什么（Web 端运行环境？）
+
+## 素材基本信息
+
+- **仓库创建**：2026-04-14 ｜ **最后推送**：2026-04-15
+- **采集时数据**：54 stars / 9 forks / Python / 默认分支 `main`
 
 ## 相关页面
 

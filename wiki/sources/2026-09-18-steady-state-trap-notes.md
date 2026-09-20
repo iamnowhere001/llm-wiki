@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-steady-state-trap-notes
 tags: [世界观, 万维钢, 得到课程, 能动, 文化滞后, 稳态]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-steady-state-trap-notes]
 related: [wanweigang, modern-thinking-tools, steady-state-survival-logic, agent-vs-tool, multiplicative-world, heavy-tailed-distribution, victim-mentality, mental-models, character-skills, deliberate-practice, cognitive-outsourcing, imperfectionism, 2026-09-18-narrative-first-principle]
 confidence: medium
@@ -23,14 +23,10 @@ status: active
 > **超出的部分不是被邀请的。**
 
 - **作者**：A 段万维钢（沿用本库既有课程认定，文档内无署名）；B–I 段**无署名，判为 AI 生成**
-- **链接**：https://my.feishu.cn/wiki/P13wwdfnsizkSvkhVwQcarTXnIg
-- **原文出处**：https://www.dedao.cn/course/article?id=5Mr9mzb36pP4JL5g9kXkWqB2EYNegL
-- **发布**：2026-03-18 22:49
+- **链接**：https://my.feishu.cn/wiki/P13wwdfnsizkSvkhVwQcarTXnIg ｜ https://www.dedao.cn/course/article?id=5Mr9mzb36pP4JL5g9kXkWqB2EYNegL
+- **发表**：2026-03-18 22:49
 - **素材路径**：`raw/2026-09-18-steady-state-trap-notes.md`（575 行；frontmatter 1–37，**正文自第 39 行起**）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
-- **抓取**：`lark-cli docs +fetch --as bot` ｜ `document_id: Hirddawh7o2ZBVxZEb3cY2RDnYe` ｜ `revision_id: 219` ｜ 12,872 字符
-- **已知缺失**：1 张内嵌图片未下载（bot 无 `docs:document.media:download`，图注完整留在 alt 文本）；
-  **讲稿的注释 / 参考文献段未随正文导出** —— 因此 `[3]` `[4]` 不可追溯
+
 - **`confidence: medium`** —— 本份**无推广内容**，不触发利益披露降级
   （这点与 [[2026-09-18-heavy-tail-notes]] 不同，那份整页 `low` 的唯一理由是末尾的引流话术）。
   按 2026-09-18 北洛裁定，**AI 占比 72% 本身不是降级理由**。
@@ -49,14 +45,14 @@ status: active
 5. **从众来自弱规则，不是来自国民性**（行 113–119）。规则完善 → 不违规即可个性化；
    规则弱 → 不知道什么会得罪谁 → 最安全是随大流。推论：顺从被当成价值观，家长夸孩子「听话」。
 6. **「努力」被定性为线性思维**（行 145）—— 只要我努力了，世界就应该给我回报。
-   **这句是本库 [[deliberate-practice]] 线张力的真正源头**（见「与现有知识库的关系」第 1 条）。
+   **这句是本库 [[deliberate-practice]] 线张力的真正源头**（见「与本库既有页面的关系」第 1 条）。
 7. **「指标主义」**：达成指标后认为世界欠自己一份待遇，而不问自己给世界提供了什么（行 151–153）。
 8. **讲稿的收束不是方法，是身份**：「你得是个**能动者（agent）**，你是调用工具的人。你不能是别人的工具。」（行 175）
 9. **本页真正的发现不在讲稿里，在 AI 段的立场改写。** 讲稿行 61 明确声明
    「**我不想用『弱者』『底层』『前现代』之类的词形容这些观念……这些是策略问题，不是阶层问题**」，
    而 AI 生成段通篇用「底层」「穷人」「平民子弟」「向上攀爬」—— **恰恰是讲稿拒绝的那套语汇**。
 
-## 分层表
+## 素材分层表
 
 > 行区间为**文件绝对行号**。判为 AI 生成的依据是：无署名、通篇第二人称「你」、
 > 出现「如果你在小镇」「你上一世已经通关过一次」这类只有对话方能知道的信息，
@@ -109,7 +105,7 @@ status: active
 **收束**（行 171–175）：真正爱孩子的家长应该希望孩子「不要那么听话、不必过于努力、不用害怕群体压力，
 甚至敢去创造一点波动」。前提是**你得是个「能动者（agent）」，你是调用工具的人。你不能是别人的工具。**
 
-## 引注与内容核查
+## 引注核查表
 
 > 2026-09-18 外部核查。**具名引注 2 条已核**（Hoffman & Yoeli、苏超）；
 > 1 条概念可核但讲稿未具名（文化滞后）；**1 条与主流叙述有张力**（侘寂起源）；**2 条不可追溯**（`[3]` `[4]`）。
@@ -157,7 +153,7 @@ C 段（195–208）与 D 段（222–235）**逐字重复**（除「☆记住�
 D 段还把行 47–49 的开头问句重贴了一遍。这是**复制粘贴未清理**的痕迹，
 也说明这份文档是**多轮 AI 对话的堆积，没有经过整理**。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 1. **本讲是 [[deliberate-practice]] 线张力的真正源头 —— 行号已核实。**
    - [[2026-09-18-heavy-tail-notes]] 的关系一节曾引用这句，当时标的行号是「行 ~107」（**估计值**）。
@@ -221,13 +217,13 @@ D 段还把行 47–49 的开头问句重贴了一遍。这是**复制粘贴未�
 - **不建的次要点**：文化滞后、次级奖励、指标主义、面子文化 —— 均为单一素材内的一次性术语，
   已写进 [[steady-state-survival-logic]]，等再次出现再独立成页
 
-## 归属
+## 归属判断
 
 **[[modern-thinking-tools]]** —— 2026-09-18 北洛裁定，本板块六讲一并归入。本页是该项目**第 3 讲**。
 本页填的是该项目缺口表里的：**「具名引注未核查」**（部分 —— Hoffman & Yoeli 一条已核，
 `[3]` `[4]` 因注释段未导出而不可追溯）、**「与九讲的张力」**（部分 —— 定位到精确行号，仍未裁决）。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **收束小诗（行 181–185）是否含 GPT 参与？** 素材未标，但同讲行 189 证明作者已用 GPT，
       且第 4 讲注释 [9] 自述其小诗前两句为 GPT 所作 —— **可查而未查，不计入【阻塞】（无一手可查），但应标注**
@@ -238,6 +234,13 @@ D 段还把行 47–49 的开头问句重贴了一遍。这是**复制粘贴未�
 - [ ] 其余三讲（约束 / 可能 / 内核）的 ingest
 - [ ] 与 [[deliberate-practice]] 线的张力裁决（[[modern-thinking-tools]] 的非【阻塞】缺口）
 - [ ] 与 [[character-skills]] 的张力（本页新提出，尚未进任何缺口表）
+
+## 素材基本信息
+
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**（`wc -l` 坐标系），已逐段回文件核对
+- **抓取**：`lark-cli docs +fetch --as bot` ｜ `document_id: Hirddawh7o2ZBVxZEb3cY2RDnYe` ｜ `revision_id: 219` ｜ 12,872 字符
+- **已知缺失**：1 张内嵌图片未下载（bot 无 `docs:document.media:download`，图注完整留在 alt 文本）；
+  **讲稿的注释 / 参考文献段未随正文导出** —— 因此 `[3]` `[4]` 不可追溯
 
 ## 来源
 

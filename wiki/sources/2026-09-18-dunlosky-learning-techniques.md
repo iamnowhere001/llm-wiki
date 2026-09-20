@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-dunlosky-learning-techniques
 tags: [学习, 方法, 记忆, 元分析]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-dunlosky-learning-techniques]
 related: [retrieval-practice, spaced-repetition, four-pillars-of-learning, prediction-error, consolidation-and-sleep, how-we-learn-and-how-to-improve, john-dunlosky, peak-performance, stanislas-dehaene, 2026-09-18-how-we-learn-notes]
 confidence: high
@@ -18,11 +18,7 @@ status: active
 > **把本库此前五份学习类素材（全部是笔记 / 讲稿 / AI 加工）从「互相印证的自洽叙事」提升为「可被外部文献校准的主张」。**
 
 - **作者**：John Dunlosky、Katherine A. Rawson（Kent State）、Elizabeth J. Marsh（Duke）、Mitchell J. Nathan（Wisconsin-Madison）、Daniel T. Willingham（Virginia）
-- **出处**：*Psychological Science in the Public Interest*, 14(1), 4–58（2013-01，SAGE）· DOI 10.1177/1529100612453266
-- **素材路径**：`raw/2026-09-18-dunlosky-learning-techniques.md`（5,910 行；frontmatter 1–37）
-- **PDF 原件**：`raw/assets/2026-09-18-dunlosky-learning-techniques.pdf`（55 页 / 1,618,194 字节）
-- **证据层级**：**一手**（同行评议综述）。本库**第一次**拿到这个层级的材料
-- **收录裁定**：北洛 2026-09-18 裁定收录（此前本库以「外部核查、未入库」的方式使用过它）
+- **素材路径**：`raw/2026-09-18-dunlosky-learning-techniques.md`（5,910 行；frontmatter 1–37） ｜ `raw/assets/2026-09-18-dunlosky-learning-techniques.pdf`（55 页 / 1,618,194 字节）
 
 ## 关键要点
 
@@ -33,7 +29,7 @@ status: active
 5. **最优间隔不是定值** —— 行 2948–2951：**最优间隔取决于期望的保持时长**（引 Cepeda et al., 2009；Cepeda, Vul, Rohrer, Wixted, & Pashler, 2008）。
 6. **本素材全文未使用「desirable difficulty / 必要难度」一词**（2026-09-18 全文件检索零命中）—— 库内 [[spaced-repetition]] 记录的那个术语**不是**来自这份文献，其出处仍归 Bjork（素材未点名）。
 
-## 分层表（本素材的证据结构）
+## 素材分层表（本素材的证据结构）
 
 **本素材不分层** —— 这是它与本库其他素材最根本的差别。
 
@@ -79,19 +75,25 @@ status: active
 - 页眉（*Improving Student Achievement N*）与正文交错，未剥离。
 - 全部为英文原文；本页的中文表述为本库翻译，**引用原文时请回 `raw/` 取英文原句**。
 
-## 与其他页面的关系
+## 与本库既有页面的关系
 
 - **校准了 [[retrieval-practice]]、[[spaced-repetition]]**（见核查表第 1–5 条）
 - **是 [[how-we-learn-and-how-to-improve]] 中「操作清单」的证据来源** —— 该页此前把本素材标为「未收录」，收录后该标注已撤销
 - **与 [[stanislas-dehaene]] 的关系**：两人都是一手研究者，但**层级不同** —— 迪昂是原书作者（经笔记转述进入本库），Dunlosky 是**文献本体直接入库**。**本库第一次出现「一手研究者的原话，而不是别人转述他的话」**
 - **对 [[peak-performance]] 的意义**：它是该项目缺口表里「类型不同的材料」的**第一个实物**
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **Cepeda et al. 2009 / 2008 原文未收录** —— 目前只有转引（行 2949–2951）
 - [ ] **迁移（transfer）**：本素材只在自我解释一节提到 transfer（行 1055 附近），**没有专门处理**。[[how-we-learn-and-how-to-improve]] 识别的这个空白仍未填
 - [ ] **这份分级本身的「过期复查」** —— 见适用边界第 3 条
 - [ ] 交错练习的「中」评级是否已在 2013 年后上调？该领域当时「文献还很小」
+
+## 素材基本信息
+
+- **出处**：*Psychological Science in the Public Interest*, 14(1), 4–58（2013-01，SAGE）· DOI 10.1177/1529100612453266
+- **证据层级**：**一手**（同行评议综述）。本库**第一次**拿到这个层级的材料
+- **收录裁定**：北洛 2026-09-18 裁定收录（此前本库以「外部核查、未入库」的方式使用过它）
 
 ## 来源
 

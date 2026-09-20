@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-nolen-hoeksema-rethinking-rumination
 tags: [情绪, 反刍, 综述, 反思]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-nolen-hoeksema-rethinking-rumination]
 related: [rumination, rumination-vs-reflection, emotion-awareness, internal-friction, complaining, cognitive-reappraisal, cognitive-vs-somatic-paths, nolen-hoeksema, ed-watkins]
 confidence: high
@@ -18,12 +18,7 @@ status: active
 > 反刍与反思的边界 —— 并且**推翻了本库在同一天、用同一批二手印象做出的一个断言**。见下方核查表。
 
 - **作者**：Susan Nolen-Hoeksema、Blair E. Wisco（Yale University）、Sonja Lyubomirsky（University of California, Riverside）
-- **出处**：*Perspectives on Psychological Science*, 3(5), 400–424（2008-09，SAGE / Association for Psychological Science）· DOI 10.1111/j.1745-6924.2008.00088.x
-- **素材路径**：`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`（**2,837 行**；frontmatter 行 1–48，正文自 [p.1] 起）
-- **PDF 原件**：`raw/assets/2026-09-18-nolen-hoeksema-rethinking-rumination.pdf`（25 页 / 269,833 字节）
-- **证据层级**：**一手**（同行评议综述刊；APS 旗舰综述刊）
-- **下载源**：作者自存版本（第二作者 Lyubomirsky 官方站点 `drsonja.net`），非第三方镜像
-- **收录裁定**：北洛 2026-09-18 指示收录，用于补录 [[rumination-vs-reflection]] 所依据的外部文献
+- **素材路径**：`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`（**2,837 行**；frontmatter 行 1–48，正文自 [p.1] 起） ｜ `raw/assets/2026-09-18-nolen-hoeksema-rethinking-rumination.pdf`（25 页 / 269,833 字节）
 
 > [!warning] 行区间坐标系
 > 本页所有行号均为**文件绝对行号**（`wc -l` 的坐标系，总长 2,837 行）。
@@ -40,7 +35,7 @@ status: active
 6. **本理论被作者自己修正（行 1980–1984）**：反刍确实预测抑郁的**发作**，但「自报反刍**不能可靠预测**重性抑郁发作的**持续时间**」——原始预测未获支持。分心同理：实验操作有效，自报测量无效。
 7. **反刍的适应不良成分是「抽象分析」而非「自我反思」本身（行 1811–1814）**：原文为「the maladaptive component of rumination may be its abstract analytical aspects, whereas a more experiential form of self-reflection is not maladaptive」。
 
-## 分层表（本素材的证据结构）
+## 素材分层表（本素材的证据结构）
 
 **本素材不分层** —— 与 [[2026-09-18-dunlosky-learning-techniques]] 同属一手材料。
 
@@ -116,7 +111,14 @@ status: active
 - **文本层有字距伪影** —— 大写字母后偶发多余空格（`W ood` / `V olume` / `T .B.`）。**引用原文措辞前须回 PDF 核对。**
 - 全部为英文原文；本页中文表述为本库翻译。
 
-## 与其他页面的关系
+## 素材基本信息
+
+- **出处**：*Perspectives on Psychological Science*, 3(5), 400–424（2008-09，SAGE / Association for Psychological Science）· DOI 10.1111/j.1745-6924.2008.00088.x
+- **证据层级**：**一手**（同行评议综述刊；APS 旗舰综述刊）
+- **下载源**：作者自存版本（第二作者 Lyubomirsky 官方站点 `drsonja.net`），非第三方镜像
+- **收录裁定**：北洛 2026-09-18 指示收录，用于补录 [[rumination-vs-reflection]] 所依据的外部文献
+
+## 与本库既有页面的关系
 
 - **直接关闭 [[emotion-awareness]] 缺口表那条「补录反刍 / 反思文献素材」**
 - **校准并部分推翻 [[rumination-vs-reflection]]** —— 见核查表，该页已据本素材重写
@@ -124,3 +126,7 @@ status: active
 - **给 [[internal-friction]]、[[complaining]] 的「用心理活动替代有效行动」补上临床对应物**（TABLE 1 第 4 行）
 - **与 [[cognitive-reappraisal]] 形成张力**：该页主张「改内容」，本素材转述的认知疗法机制是「改与认知的关系」
 - **给 [[cognitive-vs-somatic-paths]] 的「先身体后认知」找到第一条实验依据**（行 1723–1730）
+
+## 来源
+
+- [[2026-09-18-nolen-hoeksema-rethinking-rumination]]（`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`）

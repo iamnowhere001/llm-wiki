@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-bockeler-harness-engineering-coding-agent-users
 tags: [AI, Agent, harness, Thoughtworks]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-bockeler-harness-engineering-coding-agent-users]
 related: [harness, harness-engineering, agents-md, 2026-09-19-trivedy-anatomy-of-agent-harness]
 confidence: high
@@ -17,16 +17,15 @@ status: active
 
 - **作者**：Birgitta Böckeler（Thoughtworks 的 Distinguished Engineer）
 - **链接**：https://martinfowler.com/articles/harness-engineering.html
-- **发布时间**：2026-04-02（文末记 2026-02-17 另有一份初版 memo）
+- **发表**：2026-04-02（文末记 2026-02-17 另有一份初版 memo）
 - **素材路径**：`raw/2026-09-19-bockeler-harness-engineering-coding-agent-users.md`（241 行）
-- **性质**：**一手**（作者本人署名文章）
 
 > [!warning] 署名纠错 —— 本库第一处此类
 > 本页**挂在 `martinfowler.com` 域名下，但作者不是 Martin Fowler**，是 **Birgitta Böckeler**。
 > 本库此前的调研笔记与多份中文转述都把此文记作「Fowler 的文章」—— **这是错的**。
 > 正确说法：**Fowler 站点上、由 Böckeler 署名的文章**。
 > **同类错误值得系统排查**：中文圈有把 `martinfowler.com` 上的文章一律归给 Fowler 的倾向。
-> 这条已记入本页「待办」。
+> 这条已记入本页「待办 / 开放问题」。
 
 > [!note] 行号坐标系
 > 本节所有行号均为**文件绝对行号**（`wc -l` = 241 的坐标系），已回原文逐条核对。
@@ -58,7 +57,7 @@ status: active
 再落到三类 regulation category，其中 **behaviour harness 被她明确标为未解** —— 这一条对本库「个人如何高效实践」维度是负面证据：
 **连团队尺度都还没解决「怎么验证功能行为」，个人尺度更不可能直接照搬。**
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **本项目的第二份一手素材**，且是**唯一系统化的分析**。
 - **与 [[2026-09-19-trivedy-anatomy-of-agent-harness]] 是上下游关系**：Trivedy 给出定义，Böckeler 引用它并收窄它。
@@ -80,11 +79,15 @@ status: active
 - 文末修订历史保留（含 2026-02-17 的初版 memo 链接，**该 memo 未收录**）。
 - 作者提到的 **"harness templates"** 未在本文展开，指向了别处 —— 若本项目要落地「个人最小 harness 清单」，**这是需要追的一条线**。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 追 "harness templates" 的指向（正文提及但未展开）
 - [ ] 核对文中 "Fitness Functions" 的出处（作者当作既有概念使用）
 - [ ] **系统排查本库是否还有其他「martinfowler.com → 误记为 Fowler」的署名错误**
+
+## 素材基本信息
+
+- **性质**：**一手**（作者本人署名文章）
 
 ## 相关页面
 

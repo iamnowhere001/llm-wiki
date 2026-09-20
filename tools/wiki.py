@@ -85,7 +85,10 @@ STAGE_LABEL = {
 # 比漏折一个账目章节（多划一屏）代价大得多。
 READ_EXACT = ["来源", "相关页面"]
 READ_H2 = [
-    "关键要点", "要点", "TL;DR", "摘要", "段摘要", "逐节摘要", "逐段摘要",
+    # 「TL;DR」已于 2026-09-20 并入「关键要点」并全库取消（见 schema §1.8）。
+    # 故意不留在表里：兜底默认就是 read，删掉它行为不变，
+    # 但将来若有人重新引入该章节名，--audit 会把它报进「走兜底」清单。
+    "关键要点", "要点", "摘要", "段摘要", "逐节摘要", "逐段摘要",
     "与本库", "与现有", "与既有", "与库内", "与其他页面", "与素材",
     "待办", "开放问题", "新出现的实体", "适用边界", "派生页",
 ]
@@ -1763,7 +1766,7 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
    设计意图：一页 source 是一份**可追溯的凭据**，不是一个章节容器。
    它的自然形状是三段而不是一列：
 
-       上款  标题 / 提要（TL;DR）/ 出处卡（作者·链接·路径）
+       上款  标题 / 提要（一句话内容）/ 出处卡（作者·链接·路径）
        正文  关键要点 / 摘要 / 与本库的关系 / 派生页
        账目  分层表 / 引注核查表 / 归属判断 / 定级理由 / 回填清单
 
@@ -1920,11 +1923,6 @@ details.callout a{color:var(--co-ink);border-bottom:1px solid currentColor;font-
   white-space:nowrap;font-variant-numeric:tabular-nums;color:#57544e;
 }
 .tbl code{font-size:12.1px}
-/* 表格左出血：行号表五列，比正文列宽 84px。只往左借，不往右借 ——
-   右侧要留给固定目录，右出血会顶到目录底下。 */
-@media (min-width:1240px){
-  .tbl{margin-left:-84px;width:calc(100% + 84px)}
-}
 
 /* ---- 账目章节：可折叠的「凭据附件」 ---- */
 section.sec{scroll-margin-top:16px}
@@ -2325,7 +2323,7 @@ function render(src){
 /* ==================== 素材页（source）布局 ====================
    一页 source 的自然形状是三段，不是一列：
 
-       上款   标题 / 提要（TL;DR）/ 出处卡（作者·链接·路径）
+       上款   标题 / 提要（一句话内容）/ 出处卡（作者·链接·路径）
        正文   关键要点 / 摘要 / 与本库的关系
        账目   分层表 / 引注核查表 / 归属判断 / 定级理由 / 回填清单
 
@@ -3534,6 +3532,13 @@ def cmd_chapter_audit(root, verbose=False):
         print("  （无）")
     for t, n in fallback.most_common(20):
         print("  %3d  %s" % (n, t))
+    if len(fallback) > 20:
+        # 静默截断会让人把「没列出来」读成「不存在」—— 这正是本库记过的
+        # 「测不了 ≠ 不命中」。所以把省略数写出来，并指明可靠的核法。
+        print("  ……另有 %d 个兜底名未列出（多为只出现 1 次的页内特有名）。" % (len(fallback) - 20))
+        print("     本表是**截断**的，不能用来下「某个名字不存在」的结论。")
+        print("     要确认某个**特定名字**（例如已废除的 `TL;DR`）是否被重新引入，")
+        print("     用 `python3 tools/wiki.py chapter-audit -v` 逐页看。")
 
     print("\n=== 账目判定词表（%d 条子串 + %d 条精确名）===" % (len(LEDGER_H2), len(READ_EXACT)))
     print("  正文精确：" + "、".join(READ_EXACT))

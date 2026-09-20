@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-bush-as-we-may-think
 tags: [知识管理, 历史, 信息检索]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-bush-as-we-may-think]
 related: [vannevar-bush, pkm-history, bidirectional-links]
 confidence: high
@@ -16,9 +16,8 @@ status: active
 > 1945 年 7 月《大西洋月刊》上的文章，提出 **Memex**：一台私人的、机械化的文件与图书馆装置，其核心不是存储，而是**在任意两个条目之间建立永久的「关联路径」（associative trail）**。这是整条个人知识管理谱系的起点文献。
 
 - **作者**：[[vannevar-bush]]
+- **链接**：https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/ （有付费墙）
 - **发表**：The Atlantic Monthly, 1945 年 7 月
-- **原文链接**：https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/ （有付费墙）
-- **实际抓取来源**：MIT STS.035 课程镜像 PDF（`raw/assets/1945-bush-as-we-may-think.pdf`）
 - **素材路径**：`raw/2026-09-18-bush-as-we-may-think.md`
 
 ## 关键要点
@@ -54,7 +53,7 @@ Bush 承认人类无法在速度与灵活性上比拟「心智沿着联想路径
 
 > Wholly new forms of encyclopedias will appear, ready-made with a mesh of associative trails running through them, ready to be dropped into the memex and there amplified.
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 **这是本库历史纵深的起点，也是此前最大的一处证据缺口。** 在本次收录之前，[[vannevar-bush]] 页关于 Memex 的描述**只有 [[andrej-karpathy]] 的二手转述**，因此被标注 `confidence: medium` 并挂了「待核验」警告。原文到位后该警告可以撤销。
 
@@ -64,11 +63,15 @@ Bush 承认人类无法在速度与灵活性上比拟「心智沿着联想路径
 
 **一个尚未被解决的问题**：Bush 没有回答**谁来做维护**。他设想的路径由用户手工拉出，且「路径不会消退」是假设而非结论 —— 现实中链接会腐烂、页面会被移动。这一点直到 LLM 能持续维护知识库时才有人接手（见 [[pkm-history]] 的「缺失的一环」一节）。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] 原文的 6 张插图（memex 桌面示意图等）未下载，仅存文本
 - [ ] 关于「Bush 是互联网奠基推动者之一」的说法来自 [[2026-09-18-appleton-bidirectional-links]]，属转引，未在本素材中直接出现
 - [ ] 1994 年电子版制作者 Denys Duchier 的校订说明保留了，但未核对其与 1945 年印刷版的差异
+
+## 素材基本信息
+
+- **实际抓取来源**：MIT STS.035 课程镜像 PDF（`raw/assets/1945-bush-as-we-may-think.pdf`）
 
 ## 相关页面
 

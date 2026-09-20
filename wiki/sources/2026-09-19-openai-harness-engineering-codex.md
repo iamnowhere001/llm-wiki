@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-openai-harness-engineering-codex
 tags: [AI, Agent, harness, Codex, OpenAI]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-openai-harness-engineering-codex]
 related: [harness, harness-engineering, agents-md]
 confidence: medium
@@ -18,9 +18,8 @@ status: active
 
 - **作者**：Ryan Lopopolo（OpenAI, Member of the Technical Staff）—— **个人署名，不是「Harness 团队」**
 - **链接**：https://openai.com/index/harness-engineering/
-- **发布时间**：2026-02-11
+- **发表**：2026-02-11
 - **素材路径**：`raw/2026-09-19-openai-harness-engineering-codex.md`（200 行）
-- **性质**：**厂商自述**（利益披露）+ **经 AI 中介提取**（官方站 403）
 
 > [!warning] 两条降级理由，不要混
 > ① **利益披露**：OpenAI 自述自家产品实践，数字（0 行手写代码 / 约 100 万行 / 约 1500 PR / 3.5 PR 每人每天）
@@ -70,7 +69,7 @@ status: active
 文章也记录了失败：**「一个大 `AGENTS.md`」这条路走不通**，原因是上下文稀缺、指导过载、瞬间腐坏、难以验证。
 他们的解法是把它当目录而不是百科全书。
 
-## 与现有知识库的关系
+## 与本库既有页面的关系
 
 - **本项目的第四份一手素材**，也是「业界实践」维度的**最大样本**（也是唯一的团队尺度样本）。
 - **校准了一条中文圈广泛流传的说法**：普遍表述是「OpenAI 提出了 Harness Engineering」。
@@ -101,11 +100,15 @@ status: active
 - 小节锚点列表未保留。
 - **未做逐字比对** —— 若本项目要引用具体数字，**需先补一次真正的一手核对**。
 
-## 待办
+## 待办 / 开放问题
 
 - [ ] **补一次真正的一手核对**：换一条路径拿原始 HTML（或找可访问的官方镜像），把本页的 `capture_quality` 从 medium 升到 high
 - [ ] 回填 [[agents-md]]：补上「规则腐坏」与「指导过载」两个本库未评估的失败模式
 - [ ] 核对文中「Ralph Wiggum Loop」的所指
+
+## 素材基本信息
+
+- **性质**：**厂商自述**（利益披露）+ **经 AI 中介提取**（官方站 403）
 
 ## 相关页面
 

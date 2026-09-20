@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-qa-teenager-talk
 tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 经济租, 形成性评价, 自主支持, 学习教育, 庭审证词, 知识迁移]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-qa-teenager-talk]
 related: [wanweigang, modern-thinking-tools, peak-performance, formative-assessment, parental-monitoring, desirable-difficulty, autonomy-support, self-determination-theory, transfer-of-learning, deliberate-practice, cognitive-outsourcing, agent-vs-tool, heavy-tailed-distribution, multiplicative-world, social-capital, structural-holes, economic-rent, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, 2026-09-18-qa-admitting-mistakes-notes, 2026-09-19-qa-working-memory-notes, 2026-09-19-qa-dsm-vs-gantt-notes, 2026-09-19-qa-best-model-notes, 2026-09-18-growth-strategy-module-notes, 2026-09-18-heavy-tail-notes, 2026-09-19-qa-mission-calling-notes, 2026-09-18-self-determination-theory-notes, 2026-09-19-economic-rent]
 confidence: medium
@@ -29,20 +29,9 @@ status: active
 
 - **作者**：提问为读者（blockquote 原文），回答为**万维钢**（raw 的 `author` 字段如此自述，但该字段后半句与实际不符，见下）
 - **链接**：https://my.feishu.cn/wiki/BXTqwrm98ioaOokgjwncYZp9nAe ｜ **原文出处**：https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYd3oVlY4jRMdvmbE（付费内容搬运）
-- **体裁与编号**：**问答**。**讲次表编号（推定）059**（属模块四「赚钱逻辑」057–068 区间）。
-  **编号依据**：一份公开课程讲次表（`wwg000`–`wwg109`）与本库抓到的 `node_create_time` 升序**逐条吻合**，
-  且六个模块的边界与讲数**与得到官方课程页公开大纲全部一致**（见 [[modern-thinking-tools]] 全课地图）。
-  **父文档《05_赚钱逻辑》的目录不采信** —— 它是早期规划稿（048–057，与已发布篇目不符）。
-  **⚠️ 口径冲突须知**：本批此前 20 份模块二 sources 页写作「**无官方编号**（不进 022–037 序列）」，
-  而 022–037 这套编号已被本库 2026-09-19 判定为**伪编号**（成因见 [[2026-09-18-growth-strategy-module-notes]]）。
-  **本页按新口径写作「讲次表编号（推定）」**；字段名与 40 份旧页是否回填，**待北洛裁定**。
-- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI，非渲染页提取）｜ `document_id: Qitzddp4ToNkhXxNwKOcuxzDnjd` ｜ `revision_id: 86` ｜ **内嵌图片 0 张** ｜ **正文级 `---` 0 处**（全文仅 frontmatter 的 2 处，行 1 / 25）
 - **素材路径**：`raw/2026-09-19-qa-teenager-talk.md`（**165 行**；frontmatter 1–25，正文 26–165 = 140 行）
-- **行号坐标系**：本页所有行区间均为**文件绝对行号**，已逐段 `sed -n 'X,Yp'` 回文件核对。
-  本文件**末行无换行符**，故 `wc -l` = 164 而实际 165 行 —— 本页以 **165 行为准**。
-  ⚠️ raw 的 `capture_method` 记「正文 4,700 字符 / **139 行**」，而 `165 − 25 = 140` —— **差 1 行**（内容相对口径，疑似自第 27 行起算）。**引用前回文件核对。**
 
-## 要点
+## 关键要点
 
 1. **5 节 = 5 讲，且跨两个模块**：《可取（以及不可取的）困难》（**052**，学习教育）→《人力资本、信号筛选和社交资本》（**054**，学习教育）→《自主支持》（**055**，学习教育）→《拥抱和桥接》（**056**，学习教育）→《经济租：赚钱的秘密》（**057**，**赚钱逻辑**）。**题名问题出自《自主支持》节**（行 97）——**标题是编辑挑的「头条问题」，不是本份的主题**。
 2. **`node_create_time` = 2026-05-23 07:46**（抓取事实，见 raw frontmatter）。**它不是课程发布日**，只作讲次排序依据。该时点晚于马斯克诉 OpenAI 案一审判决（2026-05-18）**5 天** —— 时效观察见下。
@@ -71,7 +60,7 @@ status: active
 **汇总**：5 节合计 **119 行（85.0%）**｜**自然段 52 个**（5 提问 + 47 回答）｜标题块 5 行｜**AI 加工段 0 行（0%）**｜正文级分隔线 0 处｜内嵌图 0 张。
 **提问 5 条**（37 / 69 / 97 / 117 / 133，全部单行 `>` 引用块，均为**读者对万维钢的提问**）｜**回答 5 段**（41–63 / 73–91 / 101–111 / 121–127 / 137–165）。
 
-## AI 加工段的性质判定
+## AI 加工段判定
 
 > 按 [[schema]] §3.6。本库已命名四种缺陷型：**寄生 / 立场改写 / 人设化改写 / 逐字保留对话轮次**。
 
@@ -229,6 +218,20 @@ status: active
 - [ ] **行 163「xAI 是失败的项目」** 已在核查表标（未验证）—— **是否升格为库级登记**（素材以定性判断冒充例证）？
 - [ ] **时效观察是否要写进综述？** 素材引用庭审证词（05-12），而案件 05-18 已判败诉 —— 这类「**引用进行中事件**」的素材，本库尚无处置惯例
 - [ ] **节标题与回答正文的「术语落差」**（信号筛选 / 拥抱和桥接）是否登记为一种**抓取整理层缺陷**？它会让下游引用「引到一片空白」
+
+## 素材基本信息
+
+- **体裁与编号**：**问答**。**讲次表编号（推定）059**（属模块四「赚钱逻辑」057–068 区间）。
+  **编号依据**：一份公开课程讲次表（`wwg000`–`wwg109`）与本库抓到的 `node_create_time` 升序**逐条吻合**，
+  且六个模块的边界与讲数**与得到官方课程页公开大纲全部一致**（见 [[modern-thinking-tools]] 全课地图）。
+  **父文档《05_赚钱逻辑》的目录不采信** —— 它是早期规划稿（048–057，与已发布篇目不符）。
+  **⚠️ 口径冲突须知**：本批此前 20 份模块二 sources 页写作「**无官方编号**（不进 022–037 序列）」，
+  而 022–037 这套编号已被本库 2026-09-19 判定为**伪编号**（成因见 [[2026-09-18-growth-strategy-module-notes]]）。
+  **本页按新口径写作「讲次表编号（推定）」**；字段名与 40 份旧页是否回填，**待北洛裁定**。
+- **抓取**：`lark-cli docs +fetch`（飞书官方 OpenAPI，非渲染页提取）｜ `document_id: Qitzddp4ToNkhXxNwKOcuxzDnjd` ｜ `revision_id: 86` ｜ **内嵌图片 0 张** ｜ **正文级 `---` 0 处**（全文仅 frontmatter 的 2 处，行 1 / 25）
+- **行号坐标系**：本页所有行区间均为**文件绝对行号**，已逐段 `sed -n 'X,Yp'` 回文件核对。
+  本文件**末行无换行符**，故 `wc -l` = 164 而实际 165 行 —— 本页以 **165 行为准**。
+  ⚠️ raw 的 `capture_method` 记「正文 4,700 字符 / **139 行**」，而 `165 − 25 = 140` —— **差 1 行**（内容相对口径，疑似自第 27 行起算）。**引用前回文件核对。**
 
 ## 来源
 

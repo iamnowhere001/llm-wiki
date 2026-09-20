@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-18-icap-framework
 tags: [万维钢, 学习, 教育, ICAP, AI扩展]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources: [2026-09-18-icap-framework]
 related: [icap-framework, michelene-chi, cognitive-load-theory, schema-psychology, wanweigang, 2026-09-18-cognitive-load-theory, 2026-09-18-transfer-bridging, peak-performance]
 confidence: low
@@ -17,11 +17,9 @@ status: active
 > **本批九讲里 AI 扩展占比最高的一份** —— 正文只占 173 行，AI 生成段占 1,276 行（87%）。
 
 - **作者**：万维钢（推定，见 [[wanweigang]]）
-- **链接**：https://my.feishu.cn/wiki/PJhfwtPD6iNIT1k4dzick0vJnEf
-- **原文**：https://www.dedao.cn/course/article?id=8QZdRM1OmLxVvGYd9xJG69rgYPjqWp
+- **链接**：https://my.feishu.cn/wiki/PJhfwtPD6iNIT1k4dzick0vJnEf ｜ https://www.dedao.cn/course/article?id=8QZdRM1OmLxVvGYd9xJG69rgYPjqWp
 - **发表**：2026-05-07 23:02
 - **素材路径**：`raw/2026-09-18-icap-framework.md`（**1,487 行**，本批最长；frontmatter 1–36）
-- **证据层级**：**二手科普讲稿 + 大段 AI 生成扩展** —— 本页 `confidence: low`
 
 ## 关键要点（仅 A 段，即讲稿原文）
 
@@ -32,7 +30,7 @@ status: active
 4. **A 层（记笔记、划重点、暂停回放）不产生新信息** —— 这是本框架最有冲击力的推论。
 5. **上一讲 CLT 讲大脑的硬件规律，本讲讲操作姿势。**
 
-## 分层表
+## 素材分层表
 
 | 段 | 行区间（文件绝对行号） | 内容 | 性质 |
 |---|---|---|---|
@@ -77,7 +75,7 @@ C 段（506–1487）出现了原文没有的多个框架：
 **待北洛裁定如何处理**：本库此前遇到的都是「AI 摘要与原文冲突」，
 **这是第一次遇到「AI 扩展段与原文（甚至跨讲）冲突」**。
 
-## 数字与引注核查表
+## 引注核查表
 
 | # | 行 | 内容 | 状态 |
 |---|---|---|---|
@@ -104,6 +102,10 @@ C 段（506–1487）出现了原文没有的多个框架：
 - [ ] **AI 扩展段与原文冲突**是否是新的证据问题类别？本库已有六类候选，
       这一条**不属于任何一类**（它不是引注问题，是**生成内容与源内容的关系问题**）。
 - [ ] B 段起首（行 213）之前是否还有被截掉的对话？**若整理者保留了完整对话，价值高于本素材。**
+
+## 素材基本信息
+
+- **证据层级**：**二手科普讲稿 + 大段 AI 生成扩展** —— 本页 `confidence: low`
 
 ## 来源
 

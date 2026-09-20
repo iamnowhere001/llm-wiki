@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-inner-optimizer
 tags: [现代思维工具, 高观点, 万维钢, 得到课程, AI对齐, 古德哈特定律, 内部优化器]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 sources: [2026-09-19-inner-optimizer]
 related: [modern-thinking-tools, wanweigang, goodharts-law, narrative-as-objective-function, agent-vs-tool, alienation, cognitive-outsourcing, brain-rot, hard-constraints, systems-over-goals, three-selves, cybernetic-learning, intelligent-life-system, enshittification, game-selection, steady-state-survival-logic, dunning-kruger-effect, entrustability, 2026-09-19-objective-function, 2026-09-19-self-constraint, 2026-09-19-zeroth-order-truth, 2026-09-19-moral-scalability, 2026-09-19-qa-no-dwelling-and-objective, 2026-09-19-second-order-desire, 2026-09-19-scarcity-book-en, 2026-09-19-by-products, 2026-09-19-problem-setting, 2026-09-19-adaptive-cycle, 2026-09-19-wardley-map, 2026-09-19-trustworthiness, 2026-09-18-game-selection-notes, 2026-09-18-capability-seeking-theorem-notes]
 confidence: medium
@@ -32,18 +32,13 @@ status: active
 - **链接**：https://my.feishu.cn/wiki/EwQmwdDh0iO4sCkae3ecYMWMnjd
 - **素材路径**：`raw/2026-09-19-inner-optimizer.md`（305 行）
 
-## TL;DR
+## 关键要点
 
-**本讲把 AI 对齐研究的一组既有术语（mesa-optimizer / mesa-objective / inner alignment / pseudo-alignment / deceptive alignment，均出自 Hubinger et al. 2019）第一次引入本库正文**，
-并把它们当一把**通用刀**：从训练 AI，切到个体心理（演化失配、想要 ≠ 喜欢），再切到组织（指标养器、减负变成新的负担）。
-它是 [[goodharts-law]] 的**升级版**——该页讲「指标一旦成为目标就失效」，本讲讲**失效之后还会自我保存**：
-「古德哈特定律只是尺子被利用；成精的内部优化器是考生开始研究监考老师」（行 126）。
-它也是 [[narrative-as-objective-function]] 与同课 [[2026-09-19-objective-function]]（108）的**下游**——
-108 讲「宇宙没发目标函数，你得自己设」，本讲讲**你设的那个函数会被自己训练出来的东西偷换掉**。
-**本份是混层素材**：讲稿占正文 **74.5%**，**无署名 AI 加工段占 16.0%**（行 261–304，`### 核心洞见` 起）。
-**具名引注整体质量高**：Hubinger 2019 / Evan Hubinger 现职 / Langosco 2022 CoinRun + 2% 随机化 /
-Berridge & Valenstein 1991 大鼠实验 / Graeber 2018 / 2025-02《人民日报》昆明减负 /《聊斋·梦狼》引文 /《论语·为政》**均外核属实**；
-**唯一未取到出处的是「3×3 格子世界」这一具体例证**（见核查表），如实标（未验证）。
+1. **把 AI 对齐研究的一组既有术语第一次引入本库正文**（mesa-optimizer / mesa-objective / inner alignment / pseudo-alignment / deceptive alignment，均出自 Hubinger et al. 2019），并把它们当一把**通用刀**：从训练 AI，切到个体心理（演化失配、想要 ≠ 喜欢），再切到组织（指标养器、减负变成新的负担）。
+2. **它是 [[goodharts-law]] 的升级版** —— 该页讲「指标一旦成为目标就失效」，本讲讲**失效之后还会自我保存**：「古德哈特定律只是尺子被利用；成精的内部优化器是考生开始研究监考老师」（行 126）。
+3. **它也是 [[narrative-as-objective-function]] 与同课 [[2026-09-19-objective-function]]（108）的下游** —— 108 讲「宇宙没发目标函数，你得自己设」，本讲讲**你设的那个函数会被自己训练出来的东西偷换掉**。
+4. **本份是混层素材**：讲稿占正文 **74.5%**，**无署名 AI 加工段占 16.0%**（行 261–304，`### 核心洞见` 起）。
+5. **具名引注整体质量高**：Hubinger 2019 / Evan Hubinger 现职 / Langosco 2022 CoinRun + 2% 随机化 / Berridge & Valenstein 1991 大鼠实验 / Graeber 2018 / 2025-02《人民日报》昆明减负 /《聊斋·梦狼》引文 /《论语·为政》**均外核属实**；**唯一未取到出处的是「3×3 格子世界」这一具体例证**（见核查表），如实标（未验证）。
 
 ## 素材基本信息
 
@@ -86,7 +81,7 @@ Berridge & Valenstein 1991 大鼠实验 / Graeber 2018 / 2025-02《人民日报�
 | 04 | 212 | `img-04.png` | `VmDlbg7yaocN5YxkzEgc74Dnn5R` | 「那片灰区」：耐心不解决问题，换方向才解决 |
 | 05 | 253 | `img-05.png` | `QlF6b9Jzlo8Pykxr7INcxfIOnVg` | 全讲总览图（内部优化器 / 阿蒙 / 欲望仪表盘 / 养器指标 / 识妖） |
 
-## 分层表（文件绝对行号）
+## 素材分层表（文件绝对行号）
 
 | 段 | 行区间 | 行数 | 性质 | 判定依据 / 内容 |
 |---|---|---|---|---|
@@ -341,7 +336,7 @@ Graeber 2018 五分类 /《聊斋·梦狼》引文 /《论语·为政》**逐条
 - [[modern-thinking-tools]]：全课地图「九 · 模块八 高观点」一行的**已收计数 +1**。
 - [[wanweigang]]：作者页可登记「**高观点 / AI 对齐**」这条线（本模块第一批正源讲稿）。
 
-## 开放问题
+## 待办 / 开放问题
 
 - [ ] **115 是「本库推定次序」，且外部讲次表未覆盖它。** 三条互指（117 / 118 / 本份行 142 → 108）
       **均待 117 / 118 入库后回填核对**。本模块 110 起的次序依据（文内互指 + `node_create_time` 升序）是否需要单独落档？
