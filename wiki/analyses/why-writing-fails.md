@@ -2,7 +2,7 @@
 title: 写不出来的四种病因：一个分类尝试
 type: analysis
 slug: why-writing-fails
-tags: [写作, 认知, 立论, 分类, 边界]
+tags: [认知, 写作, 立论, 边界, 分类]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-tacit-knowledge]

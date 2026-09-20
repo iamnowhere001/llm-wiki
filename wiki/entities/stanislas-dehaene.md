@@ -2,7 +2,7 @@
 title: 斯坦尼斯拉斯·迪昂（Stanislas Dehaene）
 type: entity
 slug: stanislas-dehaene
-tags: [人物, 认知神经科学, 学习, 一手]
+tags: [人物, 学习, 认知神经科学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes]

@@ -2,7 +2,7 @@
 title: 回归均值：不要大惊小怪，要有点定力（万维钢《现代思维工具》「模块二 决策判断」第 12 讲 + AI 加工段）
 type: source
 slug: 2026-09-19-regression-to-the-mean-notes
-tags: [万维钢, 得到课程, 决策判断, 现代思维工具, 素材, 回归均值, 回归谬误, 戴明漏斗实验, 邓宁-克鲁格效应, 混层, AI生成, 引注核查]
+tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 回归均值, 回归谬误, 戴明漏斗实验, 邓宁-克鲁格效应]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-regression-to-the-mean-notes]

@@ -2,7 +2,7 @@
 title: "《清晰思考》读书笔记（含中文译本节选与得到讲书稿）— Shane Parrish"
 type: source
 slug: 2026-09-18-clear-thinking-notes
-tags: [决策, 清晰思考, 默认值, 平庸, 混层, 素材]
+tags: [决策, 平庸, 清晰思考, 默认值]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-clear-thinking-notes]

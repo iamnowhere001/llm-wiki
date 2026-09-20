@@ -2,7 +2,7 @@
 title: 查理·芒格（Charlie Munger）
 type: entity
 slug: charlie-munger
-tags: [人物, 投资者, 多元思维模型, 激励, 转引, 待核]
+tags: [人物, 多元思维模型, 投资者, 激励, 转引]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-emotion-awareness-notes, 2026-09-18-mental-representations, 2026-09-18-clear-thinking-notes, 2026-09-18-hard-constraints-notes]

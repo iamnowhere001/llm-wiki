@@ -2,7 +2,7 @@
 title: 不完美主义：在瑕疵与完美之间找甜蜜点
 type: concept
 slug: imperfectionism
-tags: [完美主义, 学习, 品格, 目标设定, 巅峰表现]
+tags: [学习, 巅峰表现, 品格, 完美主义, 目标设定]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

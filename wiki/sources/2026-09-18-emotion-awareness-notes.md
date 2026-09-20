@@ -2,7 +2,7 @@
 title: 情绪觉知（个人主题笔记集）
 type: source
 slug: 2026-09-18-emotion-awareness-notes
-tags: [情绪, 主题笔记, 混合来源, 素材]
+tags: [情绪, 主题笔记]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

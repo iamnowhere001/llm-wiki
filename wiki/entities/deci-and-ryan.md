@@ -2,7 +2,7 @@
 title: Edward Deci 与 Richard Ryan
 type: entity
 slug: deci-and-ryan
-tags: [人物, 研究者, 动机, 自我决定理论]
+tags: [人物, 动机, 研究者, 自我决定理论]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-self-determination-theory-notes, 2026-09-18-growth-strategy-engineering-manual, 2026-09-18-autonomy-support]

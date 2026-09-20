@@ -2,7 +2,7 @@
 title: 人生是混沌系统：为什么「正确的人生」是妄念
 type: concept
 slug: chaos-system-of-life
-tags: [情绪, 决策, 哲学, 内耗]
+tags: [决策, 情绪, 哲学, 内耗]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-yjengo-escape-inner-friction]

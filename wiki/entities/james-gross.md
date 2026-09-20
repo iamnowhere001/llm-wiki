@@ -2,7 +2,7 @@
 title: 詹姆斯·格罗斯：情绪调节过程模型
 type: entity
 slug: james-gross
-tags: [人物, 心理学, 情绪调节, 一手]
+tags: [人物, 心理学, 情绪调节]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling]

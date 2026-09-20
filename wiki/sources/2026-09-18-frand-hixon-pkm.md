@@ -2,7 +2,7 @@
 title: Personal Knowledge Management — Who? What? Why? When? Where? How? — Frand & Hixon
 type: source
 slug: 2026-09-18-frand-hixon-pkm
-tags: [知识管理, 术语起源, 历史]
+tags: [知识管理, 历史, 术语起源]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-frand-hixon-pkm]

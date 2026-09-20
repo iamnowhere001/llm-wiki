@@ -2,7 +2,7 @@
 title: 刻意游戏：把练习设计成好玩的
 type: concept
 slug: deliberate-play
-tags: [练习, 动机, 学习, 巅峰表现, 刻意练习]
+tags: [学习, 巅峰表现, 动机, 刻意练习, 练习]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

@@ -2,7 +2,7 @@
 title: 可取困难（Desirable Difficulties）
 type: concept
 slug: desirable-difficulty
-tags: [学习, 记忆, 比约克, 提取练习, 间隔, 交错]
+tags: [学习, 记忆, 交错, 提取练习, 比约克, 间隔]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-desirable-difficulty, 2026-09-18-dunlosky-learning-techniques]

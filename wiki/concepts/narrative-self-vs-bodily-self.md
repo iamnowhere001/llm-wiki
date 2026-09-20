@@ -2,7 +2,7 @@
 title: 叙事自我与身体自我
 type: concept
 slug: narrative-self-vs-bodily-self
-tags: [情绪, 身体, 哲学, 机制]
+tags: [情绪, 机制, 哲学, 身体]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]

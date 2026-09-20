@@ -2,7 +2,7 @@
 title: 可能：不确定性是意义的燃料（万维钢《现代思维工具》「基本世界观」第 5 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-uncertainty-fuel-notes
-tags: [世界观, 万维钢, 得到课程, 混层, AI生成, 不确定性, 运气, 引注核查, 基本世界观]
+tags: [世界观, 万维钢, 得到课程, 不确定性, 运气, 基本世界观]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-uncertainty-fuel-notes]

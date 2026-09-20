@@ -2,7 +2,7 @@
 title: 维克多·弗兰克尔与「刺激与回应之间的间隙」
 type: entity
 slug: viktor-frankl
-tags: [人物, 意义疗法, 情绪, 待核验]
+tags: [人物, 情绪, 意义疗法]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-narrative-self, 2026-09-18-capability-seeking-theorem-notes]
@@ -121,6 +121,15 @@ status: active
 - [[stoic-control-dichotomy]] —— 判断论与这段间隙的对应关系
 - [[cognitive-decoupling]] —— 那段空间里「要跑的程序」
 - [[emotion-awareness]] —— 项目缺口表里「关键引文全部是转引」这一条，他是第一个案例，也是第一个被解决的
+
+## 2026-09-19 回填（第 4、5 批清单）
+
+> 来源：[[2026-09-19-bayesian-prior-notes]] 的「回填清单」建议。
+
+- **本页作为「引文归属追查」这条工作线的样本之一。** 该讲在核查一条**凯恩斯名言**的归属时，
+  走了与本页（弗兰克尔引文）**同一条追查流程** —— **这是该流程在库内第二次出现**。
+  **意义**：它说明「引文归属追查」不是一次性动作，而是本库反复要做的核查类型
+  （判据见 [[schema]]「三个专查动作」里的**核归属**一条）。
 
 ## 来源
 

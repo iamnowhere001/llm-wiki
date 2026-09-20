@@ -2,7 +2,7 @@
 title: 心智模型（Mental Model）
 type: concept
 slug: mental-models
-tags: [学习, 认知, 心智模型, 推演, 思维工具]
+tags: [学习, 认知, 心智模型, 思维工具, 推演]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-transfer-bridging]
@@ -73,6 +73,17 @@ status: active
   两者的边界在哪里，本库尚未处理。
 - 与 [[deliberate-practice]]：刻意练习的第一条件是「导师帮你建立一套精准的**心理表征**」——
   Ericsson 用的是 mental representations，与本页的 mental model 同源但不等同，**本库未做区分裁定**。
+
+## 2026-09-19 回填（第 3 批清单）
+
+> 来源：[[2026-09-19-granularity-causal-mediation-notes]] 的「回填清单」建议。
+
+- **与 [[granularity-causal-mediation]]：心智模型的一个此前未记的维度 —— 颗粒度。**
+  该页行 81–87 把颗粒度操作化为 **MDL 的两项之和**（模型长度 + 数据补丁长度），
+  并明确说**没有绝对标准的颗粒度，它由你的主观需求决定**（行 183）。
+  **本页此前记的是「该不该有模型、有多少」，该页补的是「同一个模型该画到多细」。**
+- **与好调节器定理：为什么必须有模型。** 该页行 65 引用 Conant & Ashby 1970：
+  **「系统的每一个好调节器，都必须是该系统的一个模型。」** —— 这是本页「为什么要心智模型」的**数学表述**。
 
 ## 待办 / 开放问题
 

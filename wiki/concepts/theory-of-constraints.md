@@ -2,7 +2,7 @@
 title: 约束理论（Theory of Constraints）：产出由最窄处决定，别在别处瞎忙
 type: concept
 slug: theory-of-constraints
-tags: [管理, 系统, 约束理论, 瓶颈, 高德拉特, 吞吐量, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 约束理论, 吞吐量, 瓶颈, 管理, 系统, 高德拉特]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-state-leverage-notes]

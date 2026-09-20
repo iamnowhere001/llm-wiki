@@ -2,7 +2,7 @@
 title: RAG 与 LLM Wiki 的对比
 type: analysis
 slug: rag-vs-wiki
-tags: [对比, RAG, 架构]
+tags: [RAG, 对比, 架构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

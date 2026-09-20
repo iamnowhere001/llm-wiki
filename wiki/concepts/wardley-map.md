@@ -2,7 +2,7 @@
 title: 沃德利地图
 type: concept
 slug: wardley-map
-tags: [沃德利地图, Wardley, 演进, 商品化, 战略, 价值链]
+tags: [战略, 沃德利地图, Wardley, 价值链, 商品化, 演进]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-wardley-map]

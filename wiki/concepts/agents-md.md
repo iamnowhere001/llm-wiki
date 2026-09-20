@@ -2,7 +2,7 @@
 title: AGENTS.md（跨工具的智能体约定文件）
 type: concept
 slug: agents-md
-tags: [约定, 工具, 规范, 模式]
+tags: [工具, 模式, 约定, 规范]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum, 2026-09-19-openai-harness-engineering-codex]

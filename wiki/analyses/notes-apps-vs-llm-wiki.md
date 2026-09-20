@@ -2,7 +2,7 @@
 title: 笔记软件 vs LLM Wiki：为什么不换，而是补一层
 type: analysis
 slug: notes-apps-vs-llm-wiki
-tags: [对比, 选型, 工具, 知识管理]
+tags: [知识管理, 工具, 对比, 选型]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-frand-hixon-pkm, 2026-09-18-writing-is-thinking]

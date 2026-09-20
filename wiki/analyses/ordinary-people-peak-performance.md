@@ -2,7 +2,7 @@
 title: 普通人如何掌握巅峰表现：本库目前能给出什么
 type: analysis
 slug: ordinary-people-peak-performance
-tags: [巅峰表现, 心流, 动机, 查询归档, 低置信度]
+tags: [巅峰表现, 动机, 心流]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-19-art-of-impossible-book-en]

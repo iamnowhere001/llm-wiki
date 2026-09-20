@@ -2,7 +2,7 @@
 title: NotebookLM（作为 RAG 范式的代表）
 type: entity
 slug: notebooklm
-tags: [工具, RAG, 反例]
+tags: [工具, RAG]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

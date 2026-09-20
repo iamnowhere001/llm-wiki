@@ -2,7 +2,7 @@
 title: 巅峰表现与心流
 type: project
 slug: peak-performance
-tags: [巅峰表现, 心流, 动机, 学习, 研究]
+tags: [学习, 巅峰表现, 动机, 心流]
 created: 2026-09-18
 updated: 2026-09-19
 goal: 把巅峰表现的机制（动机 / 学习力 / 创造力 / 心流）与适用边界研究到能写出一篇对外文章的深度

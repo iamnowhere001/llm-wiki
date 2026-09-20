@@ -2,7 +2,7 @@
 title: 普通原因与特殊原因（Common Cause vs Special Cause）：什么时候该动手，什么时候不该
 type: concept
 slug: common-cause-vs-special-cause
-tags: [统计, 质量管理, 戴明, 变异, 定力, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 统计, 定力, 戴明, 变异, 质量管理]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-regression-to-the-mean-notes]

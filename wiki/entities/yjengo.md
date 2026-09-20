@@ -2,7 +2,7 @@
 title: YJango（学习类内容创作者）
 type: entity
 slug: yjengo
-tags: [人物, 创作者, 情绪, 一手]
+tags: [人物, 情绪, 创作者]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-yjengo-escape-inner-friction]

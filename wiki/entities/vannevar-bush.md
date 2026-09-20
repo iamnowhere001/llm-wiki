@@ -2,7 +2,7 @@
 title: Vannevar Bush 与 Memex
 type: entity
 slug: vannevar-bush
-tags: [人物, 历史, 知识管理]
+tags: [人物, 知识管理, 历史]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-karpathy-llm-wiki]

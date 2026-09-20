@@ -2,7 +2,7 @@
 title: 生产性阻力：AI 应该挑战你，而不是服从你
 type: concept
 slug: productive-resistance
-tags: [AI时代, 学习方法, 设计原则, 实践]
+tags: [AI时代, 学习方法, 实践, 设计原则]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-modern-thinking-tools-prospectus]

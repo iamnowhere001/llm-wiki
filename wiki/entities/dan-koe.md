@@ -2,7 +2,7 @@
 title: Dan Koe
 type: entity
 slug: dan-koe
-tags: [人物, 创作, 知识管理]
+tags: [人物, 知识管理, 创作]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-dankoe-remember-what-you-read]

@@ -2,7 +2,7 @@
 title: 叙事经济学：像病毒一样传播的故事是经济变量
 type: concept
 slug: narrative-economics
-tags: [经济学, 叙事, 传播, 已核实]
+tags: [叙事, 经济学, 传播]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle]

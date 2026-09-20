@@ -2,7 +2,7 @@
 title: 机会窗口
 type: concept
 slug: window-of-opportunity
-tags: [机会窗口, 主导设计, 主导类别, 万维钢, 择时, 产业演进]
+tags: [万维钢, 机会窗口, 主导类别, 主导设计, 产业演进, 择时]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-opportunity-window]

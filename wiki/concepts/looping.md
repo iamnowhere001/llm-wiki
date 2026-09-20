@@ -2,7 +2,7 @@
 title: 循环式教学：老师跟着学生升年级
 type: concept
 slug: looping
-tags: [教育, 制度, 师生关系, 机会体系]
+tags: [教育, 制度, 机会体系, 师生关系]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

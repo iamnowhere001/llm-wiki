@@ -2,7 +2,7 @@
 title: Harness Engineering
 type: project
 slug: harness
-tags: [AI工程, Agent, harness, 研究]
+tags: [Agent, harness, AI工程]
 created: 2026-09-19
 updated: 2026-09-19
 goal: 把 Harness Engineering 编译进本库 —— 讲清它的演化历程、定义边界、业界实践，以及个人如何深度理解它、如何高效实践，达到「个人读者读完能自己搭出一套最小 harness」的深度

@@ -2,7 +2,7 @@
 title: 提取练习与生成效应：输出才是学习
 type: concept
 slug: retrieval-practice
-tags: [学习, 记忆, 方法, 机制]
+tags: [学习, 机制, 方法, 记忆]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques]

@@ -2,7 +2,7 @@
 title: 宽恕：作为自我疗愈机制，而非道德姿态
 type: concept
 slug: forgiveness
-tags: [情绪, 方法, 机制]
+tags: [情绪, 机制, 方法]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

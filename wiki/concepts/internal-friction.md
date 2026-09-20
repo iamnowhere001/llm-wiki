@@ -2,7 +2,7 @@
 title: 内耗：三种定义与一个学术近邻
 type: concept
 slug: internal-friction
-tags: [情绪, 内耗, 反刍, 机制]
+tags: [情绪, 机制, 反刍, 内耗]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-yjengo-escape-inner-friction, 2026-09-18-cognitive-decoupling]

@@ -2,7 +2,7 @@
 title: Communicating with Slip Boxes（Luhmann 1981，Kuehn 英译）
 type: source
 slug: 2026-09-19-luhmann-communicating-with-slip-boxes
-tags: [知识管理, 卡片盒, 一手文献, 系统论, 历史]
+tags: [知识管理, 历史, 系统论, 卡片盒]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-luhmann-communicating-with-slip-boxes]

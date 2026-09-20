@@ -2,7 +2,7 @@
 title: 具身认知（Embodied Cognition）
 type: concept
 slug: embodied-cognition
-tags: [认知科学, 身体, 情绪, 具身认知]
+tags: [情绪, 认知科学, 具身认知, 身体]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

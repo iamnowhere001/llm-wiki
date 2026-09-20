@@ -2,7 +2,7 @@
 title: 三层架构：raw / wiki / schema
 type: concept
 slug: three-layer-architecture
-tags: [架构, 模式]
+tags: [模式, 架构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

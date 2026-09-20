@@ -2,7 +2,7 @@
 title: 情绪是耦合：对「做情绪的主人」的拆解
 type: concept
 slug: emotion-as-coupling
-tags: [情绪, 关系, 哲学, 机制]
+tags: [情绪, 机制, 哲学, 关系]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

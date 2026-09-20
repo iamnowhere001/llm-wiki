@@ -2,7 +2,7 @@
 title: "叙事自我（飞书 wiki 文档：含万维钢原文与约 93% AI 加工）"
 type: source
 slug: 2026-09-18-narrative-self
-tags: [叙事, 叙事自我, 元叙事, 反脆弱, 混层, AI生成, 来源等级冒认, 引注核查, 素材]
+tags: [叙事, 反脆弱, 元叙事, 叙事自我]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-self]

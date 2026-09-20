@@ -2,7 +2,7 @@
 title: 弗兰克·奈特（Frank Knight）
 type: entity
 slug: frank-knight
-tags: [人物, 经济学家, 不确定性, 奈特不确定性, 利润]
+tags: [人物, 不确定性, 经济学家, 奈特不确定性, 利润]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-trustworthiness]

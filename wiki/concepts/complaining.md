@@ -2,7 +2,7 @@
 title: 抱怨：一种自我妨碍机制
 type: concept
 slug: complaining
-tags: [情绪, 行为, 机制, 方法]
+tags: [情绪, 机制, 方法, 行为]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

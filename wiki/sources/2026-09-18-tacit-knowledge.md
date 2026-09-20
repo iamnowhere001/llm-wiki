@@ -2,7 +2,7 @@
 title: "默会知识：（但愿）AI 永远都不可能替代的技能（《现代思维工具》学习与教育 第 6 讲）"
 type: source
 slug: 2026-09-18-tacit-knowledge
-tags: [知识, 哲学, AI, 具身认知, 万维钢, 素材]
+tags: [万维钢, 哲学, AI, 具身认知, 知识]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-tacit-knowledge]

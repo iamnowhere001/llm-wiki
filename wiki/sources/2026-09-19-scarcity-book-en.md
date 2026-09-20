@@ -2,7 +2,7 @@
 title: Scarcity（英文原书）—— 一手校准报告
 type: source
 slug: 2026-09-19-scarcity-book-en
-tags: [一手校准, 稀缺, 认知带宽, 行为经济学, 引注核查, 万维钢, 得到课程, 现代思维工具]
+tags: [现代思维工具, 万维钢, 得到课程, 稀缺, 行为经济学, 认知带宽]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-scarcity-book-en]
@@ -230,6 +230,17 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 3. **中文译本未入库** —— 讲稿的转述与中译本之间的关系未核。
 4. **`focus dividend` 在库内没有任何承接页** —— 本页是本库第一次记录这个概念（D1）。
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+**与 [[2026-09-19-scarcity-singularity]] 的「同名异义」辨析（必读；来源：116 讲回填清单第 1 条，2026-09-20 执行）**
+
+- **本页记的是** Mullainathan & Shafir 2013 的 **scarcity（稀缺 = 认知带宽被占用）** —— 心理学机制。
+- **[[2026-09-19-scarcity-singularity]] 讲的是** Hirsch 1976 的 **positional scarcity（位置性稀缺）** —— 经济学概念，
+  价值取决于**相对排序**而非绝对数量（见 [[positional-goods]]）。
+- **处置：两页不可互引、不可互证。** 它们只在中文译名上撞车（都叫「稀缺」），机制、来源、量纲全不同。
+  **这是本库第一次出现「同一个词、两个义项、各有一页」** —— 不登记这一条，后来的读者会把它们合并。
 ## 来源
 
 - `raw/2026-09-19-scarcity-book-en.md`（8,589 行；正文自第 78 行起）

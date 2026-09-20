@@ -2,7 +2,7 @@
 title: "可取（以及不可取）的困难：把身心调到最适合学习的状态（《现代思维工具》学习与教育 第 7 讲）"
 type: source
 slug: 2026-09-18-desirable-difficulty
-tags: [学习, 记忆, 睡眠, 具身认知, 万维钢, 素材]
+tags: [万维钢, 学习, 记忆, 具身认知, 睡眠]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-desirable-difficulty]

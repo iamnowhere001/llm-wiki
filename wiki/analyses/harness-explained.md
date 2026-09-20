@@ -2,7 +2,7 @@
 title: Harness Engineering 详解 —— 演化、定义、业界实践与个人实践
 type: analysis
 slug: harness-explained
-tags: [AI工程, Agent, harness, 综述]
+tags: [Agent, harness, 综述, AI工程]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-hashimoto-my-ai-adoption-journey, 2026-09-19-openai-harness-engineering-codex, 2026-09-19-trivedy-anatomy-of-agent-harness, 2026-09-19-bockeler-harness-engineering-coding-agent-users]

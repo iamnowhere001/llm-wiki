@@ -2,7 +2,7 @@
 title: 《不可能的技艺》读书笔记（含《盗火》与心流综述）
 type: source
 slug: 2026-09-18-art-of-impossible-notes
-tags: [巅峰表现, 心流, 动机, 学习, 混层, AI生成, 伪引注, 素材]
+tags: [学习, 巅峰表现, 动机, 心流]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-art-of-impossible-notes]

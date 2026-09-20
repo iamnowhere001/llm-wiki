@@ -2,7 +2,7 @@
 title: "ICAP 框架：最高效的学习方法（《现代思维工具》学习与教育 第 2 讲）"
 type: source
 slug: 2026-09-18-icap-framework
-tags: [学习, 教育, ICAP, 万维钢, AI扩展, 混层, 素材]
+tags: [万维钢, 学习, 教育, ICAP, AI扩展]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-icap-framework]

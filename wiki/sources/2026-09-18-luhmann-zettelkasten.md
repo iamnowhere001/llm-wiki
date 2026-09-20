@@ -2,7 +2,7 @@
 title: Niklas Luhmann 的 Zettelkasten（二手整理）— Ernest Chiang
 type: source
 slug: 2026-09-18-luhmann-zettelkasten
-tags: [知识管理, 卡片盒, 历史]
+tags: [知识管理, 历史, 卡片盒]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-luhmann-zettelkasten]

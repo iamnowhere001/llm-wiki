@@ -2,7 +2,7 @@
 title: Niklas Luhmann 与卡片盒
 type: entity
 slug: niklas-luhmann
-tags: [人物, 卡片盒, 历史]
+tags: [人物, 历史, 卡片盒]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-luhmann-zettelkasten, 2026-09-19-luhmann-communicating-with-slip-boxes]

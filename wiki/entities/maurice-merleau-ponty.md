@@ -2,7 +2,7 @@
 title: 梅洛-庞蒂与身体哲学
 type: entity
 slug: maurice-merleau-ponty
-tags: [人物, 现象学, 身体, 哲学]
+tags: [人物, 哲学, 身体, 现象学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

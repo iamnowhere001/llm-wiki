@@ -2,7 +2,7 @@
 title: "《超高效》读书笔记（含得到课程讲稿）— Mithu Storoni"
 type: source
 slug: 2026-09-18-hyperefficient-notes
-tags: [巅峰表现, 心流, 注意力, 脑科学, 混层, 弱引注, 素材]
+tags: [巅峰表现, 心流, 注意力, 脑科学]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-hyperefficient-notes]

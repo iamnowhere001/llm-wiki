@@ -2,7 +2,7 @@
 title: 素材池偏差：AI 来源的素材会耗尽知识库的问题供给
 type: analysis
 slug: source-pool-bias
-tags: [证据质量, 方法论, 元分析, AI生成]
+tags: [元分析, 方法论]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes, 2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-writing-is-thinking]

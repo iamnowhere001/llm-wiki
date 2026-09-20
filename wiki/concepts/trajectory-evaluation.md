@@ -2,7 +2,7 @@
 title: 轨迹评估：看走了多远，而不是站得多高
 type: concept
 slug: trajectory-evaluation
-tags: [评估, 招聘, 选拔, 公平, 机会体系]
+tags: [公平, 机会体系, 招聘, 评估, 选拔]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-hidden-potential-notes]

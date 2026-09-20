@@ -2,7 +2,7 @@
 title: 大卫·珀金斯（David N. Perkins）
 type: entity
 slug: david-perkins
-tags: [人物, 研究者, 迁移, 教育]
+tags: [人物, 教育, 研究者, 迁移]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-transfer-bridging]

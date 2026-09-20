@@ -2,7 +2,7 @@
 title: 玛丽·安斯沃斯（Mary Ainsworth）
 type: entity
 slug: mary-ainsworth
-tags: [人物, 心理学家, 依恋理论, 发展心理学]
+tags: [人物, 依恋理论, 发展心理学, 心理学家]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-sense-of-security-notes]

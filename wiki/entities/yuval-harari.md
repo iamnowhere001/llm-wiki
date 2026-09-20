@@ -2,7 +2,7 @@
 title: 尤瓦尔·赫拉利（Yuval Noah Harari）
 type: entity
 slug: yuval-harari
-tags: [人物, 历史学, 虚构叙事, 文明, 单来源转述]
+tags: [人物, 历史学, 文明, 虚构叙事]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]

@@ -2,7 +2,7 @@
 title: 沟通伙伴：把笔记系统当作对话者
 type: concept
 slug: communication-partner
-tags: [知识管理, 卡片盒, 系统论]
+tags: [知识管理, 系统论, 卡片盒]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-luhmann-zettelkasten]

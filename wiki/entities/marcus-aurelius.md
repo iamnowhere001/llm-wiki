@@ -2,7 +2,7 @@
 title: 马可·奥勒留与斯多葛的判断论
 type: entity
 slug: marcus-aurelius
-tags: [人物, 斯多葛, 哲学, 历史]
+tags: [人物, 历史, 哲学, 斯多葛]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes]

@@ -2,7 +2,7 @@
 title: 基思·斯坦诺维奇：认知解耦的提出者
 type: entity
 slug: keith-stanovich
-tags: [人物, 认知科学, 理性, 元认知]
+tags: [人物, 认知科学, 元认知, 理性]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling]

@@ -2,7 +2,7 @@
 title: 自主支持（Autonomy-Supportive Parenting）
 type: concept
 slug: autonomy-support
-tags: [养育, 动机, 自主, 自我决定理论, 教育]
+tags: [动机, 教育, 自我决定理论, 养育, 自主]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-autonomy-support]

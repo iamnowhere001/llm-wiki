@@ -2,7 +2,7 @@
 title: Naval Ravikant（纳瓦尔·拉维坎特）
 type: entity
 slug: naval-ravikant
-tags: [人物, 投资人, 硅谷, 杠杆, permissionless-leverage]
+tags: [人物, permissionless-leverage, 投资人, 杠杆, 硅谷]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-business-leverage]

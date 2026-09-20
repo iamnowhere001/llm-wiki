@@ -2,7 +2,7 @@
 title: 思考与感觉：索维尔的核心分野
 type: concept
 slug: thinking-vs-feeling
-tags: [认知, 批判性思维, 情绪, 方法]
+tags: [情绪, 认知, 方法, 批判性思维]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]

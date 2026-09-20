@@ -2,7 +2,7 @@
 title: 斯蒂芬·柯维：那句话的真正传播者
 type: entity
 slug: stephen-covey
-tags: [人物, 管理学, 引文归属, 待核验]
+tags: [人物, 管理学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hard-constraints-notes]
@@ -100,6 +100,15 @@ status: active
 - [[viktor-frankl]]、[[stimulus-response-gap]] —— 引文归属链的另一端
 - [[stoic-control-dichotomy]] —— 掌控圈/关注圈所对应的古典原则
 - [[cognitive-reappraisal]] —— 本文把「掌控圈」称为「一种注意力的重评」
+
+## 2026-09-19 回填（第 6 批清单）
+
+> 来源：[[2026-09-19-feedback-loop-essay]] 的「回填清单」建议。
+
+- **「爱是动词」的第二处落点（该档案行 97–101）。** 本页此前已记第 4 讲 p.90 的英文原句；
+  本份给出**另一处中文转述**，与前者**互相印证**。
+- ⚠️ **不上调 `confidence`** —— 两处落点都属**同一来源族**（同一位讲者的转述），
+  **不是两个独立来源**。按本库判据：**同源不算交叉验证**（见 [[schema]] 的 `evidence_tier` 说明）。
 
 ## 来源
 

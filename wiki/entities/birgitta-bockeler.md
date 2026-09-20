@@ -2,7 +2,7 @@
 title: Birgitta Böckeler
 type: entity
 slug: birgitta-bockeler
-tags: [人物, AI, 工程, Thoughtworks]
+tags: [人物, AI, Thoughtworks, 工程]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-bockeler-harness-engineering-coding-agent-users]

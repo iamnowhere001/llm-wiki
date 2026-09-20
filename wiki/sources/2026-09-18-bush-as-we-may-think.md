@@ -2,7 +2,7 @@
 title: As We May Think — Vannevar Bush
 type: source
 slug: 2026-09-18-bush-as-we-may-think
-tags: [历史, 知识管理, 信息检索]
+tags: [知识管理, 历史, 信息检索]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-bush-as-we-may-think]

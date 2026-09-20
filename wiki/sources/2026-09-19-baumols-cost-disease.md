@@ -2,7 +2,7 @@
 title: 鲍莫尔成本病：物便宜则人贵（万维钢《现代思维工具》「模块四 赚钱逻辑」讲次表编号（推定）064）
 type: source
 slug: 2026-09-19-baumols-cost-disease
-tags: [万维钢, 得到课程, 赚钱逻辑, 现代思维工具, 鲍莫尔成本病, 服务业, 混层, AI生成, 引注核查, 素材]
+tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 鲍莫尔成本病, 服务业]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-baumols-cost-disease]

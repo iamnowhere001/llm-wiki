@@ -2,7 +2,7 @@
 title: Tim Berners-Lee 与万维网的单向链接妥协
 type: entity
 slug: tim-berners-lee
-tags: [人物, 万维网, 历史]
+tags: [人物, 历史, 万维网]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-berners-lee-link-topology, 2026-09-18-appleton-bidirectional-links]

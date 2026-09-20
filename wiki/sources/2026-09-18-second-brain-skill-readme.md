@@ -2,7 +2,7 @@
 title: Second Brain Skill — 把 LLM Wiki 封装成 Claude Code Skill
 type: source
 slug: 2026-09-18-second-brain-skill-readme
-tags: [实现, Skill, 工具]
+tags: [工具, Skill, 实现]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-second-brain-skill-readme]

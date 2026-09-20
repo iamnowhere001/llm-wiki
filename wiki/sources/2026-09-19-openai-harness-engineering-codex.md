@@ -2,7 +2,7 @@
 title: Harness engineering: leveraging Codex in an agent-first world（Ryan Lopopolo / OpenAI，2026-02-11）
 type: source
 slug: 2026-09-19-openai-harness-engineering-codex
-tags: [AI, Agent, harness, OpenAI, Codex, 利益披露]
+tags: [AI, Agent, harness, Codex, OpenAI]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-openai-harness-engineering-codex]

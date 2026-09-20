@@ -2,7 +2,7 @@
 title: LLM Wiki 模式
 type: concept
 slug: llm-wiki-pattern
-tags: [知识管理, LLM, 模式]
+tags: [知识管理, 模式, LLM]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]

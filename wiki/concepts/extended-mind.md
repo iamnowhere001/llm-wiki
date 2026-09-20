@@ -2,7 +2,7 @@
 title: 扩展心智（Extended Mind）
 type: concept
 slug: extended-mind
-tags: [认知科学, 具身认知, 知识管理, 模式]
+tags: [知识管理, 认知科学, 具身认知, 模式]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes]

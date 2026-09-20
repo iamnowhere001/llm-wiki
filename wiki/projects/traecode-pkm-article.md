@@ -2,7 +2,7 @@
 title: 用 TraeCode 构建 PKMS 的文章
 type: project
 slug: traecode-pkm-article
-tags: [写作, 产出, TraeCode, 知识管理]
+tags: [知识管理, 写作, TraeCode, 产出]
 created: 2026-09-18
 updated: 2026-09-19
 goal: 在微信公众号发表一篇面向知识工作者的文章，讲清如何用 TraeCode 从零搭起一套个人知识管理系统 —— 读者不依赖示例仓库、只看文章就能照做

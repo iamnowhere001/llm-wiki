@@ -2,7 +2,7 @@
 title: 阿尔伯特·埃利斯：ABC 模型
 type: entity
 slug: albert-ellis
-tags: [人物, 心理学, CBT, 情绪]
+tags: [人物, 情绪, 心理学, CBT]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-emotion-awareness-notes]

@@ -2,7 +2,7 @@
 title: 安德鲁·萨克斯（Andrew M. Saxe）与 IB 理论的争议
 type: entity
 slug: andrew-saxe
-tags: [深度学习, 信息论, 反方, 可重复性, 争议]
+tags: [信息论, 深度学习, 反方, 可重复性]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

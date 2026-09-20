@@ -2,7 +2,7 @@
 title: 信息瓶颈（Information Bottleneck）
 type: concept
 slug: information-bottleneck
-tags: [信息论, 压缩, 表征, 大模型, 学习]
+tags: [学习, 压缩, 信息论, 大模型, 表征]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-capability-seeking-theorem-notes]
@@ -119,6 +119,15 @@ Klyubin, Polani & Nehaniv (2005) 的 empowerment ＝ **actions → future observ
   按本页的框架可以理解为「强制表征对输出保持高预测性」—— 但这只是本库的推断，素材与一手文献均未这么说。
 - **与「赋能」的关系（2026-09-18 新增）**：见上「赋能＝信道容量的行动版」一节 ——
   **同一族语言的两个方向**（本页讲压、赋能讲增），由 [[2026-09-18-capability-seeking-theorem-notes]] 的讲稿行 126 接上。
+
+## 2026-09-19 回填（第 3 批清单）
+
+> 来源：[[2026-09-19-granularity-causal-mediation-notes]] 的「回填清单」建议。
+
+- **与 [[granularity-causal-mediation]]：一组可对照的编码观。** 该页的 **MDL 两项之和**
+  （模型长度 + 数据补丁长度，行 81–87）是典型的 **two-part code**（两段式编码）；
+  本页的信息瓶颈是**另一种压缩观**（在保留预测力的前提下尽量压缩中间表示）。
+  **两者都把「理解」当成压缩，但保留什么、丢弃什么的判据不同 —— 登记辨析，不做等同。**
 
 ## 开放问题
 

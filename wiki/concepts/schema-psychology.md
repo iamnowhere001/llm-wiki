@@ -2,7 +2,7 @@
 title: 图式（Schema）
 type: concept
 slug: schema-psychology
-tags: [学习, 认知, 图式, 压缩, 模式识别]
+tags: [学习, 认知, 压缩, 图式, 模式识别]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-cognitive-load-theory, 2026-09-18-transfer-bridging, 2026-09-18-tacit-knowledge]

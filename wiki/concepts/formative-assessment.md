@@ -2,7 +2,7 @@
 title: 形成性评价（Formative Assessment）
 type: concept
 slug: formative-assessment
-tags: [学习, 评价, 反馈, 教育, 形成性评价, 终结性评价, 万维钢, 得到课程]
+tags: [万维钢, 得到课程, 学习, 教育, 反馈, 形成性评价, 终结性评价, 评价]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-qa-teenager-talk]

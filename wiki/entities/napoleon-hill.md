@@ -2,7 +2,7 @@
 title: 拿破仑·希尔（Napoleon Hill）
 type: entity
 slug: napoleon-hill
-tags: [人物, 作家, 成功学, 漂流, 催眠节律]
+tags: [人物, 成功学, 作家, 催眠节律, 漂流]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]

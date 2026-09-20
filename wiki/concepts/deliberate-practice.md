@@ -2,7 +2,7 @@
 title: 刻意练习（Deliberate Practice）
 type: concept
 slug: deliberate-practice
-tags: [学习, 专长, 天赋, 训练, 反馈]
+tags: [学习, 反馈, 专长, 天赋, 训练]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-deliberate-practice-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-19-optionality-notes]
@@ -174,6 +174,28 @@ status: active
   **「系统的生成机制有没有真的改变？」** 变了才动手，没变就不动。
   **同一处张力在 [[cybernetic-learning]] 上同型，本批一并回填。**
 
+## 2026-09-19 回填（第 4、5 批清单）
+
+> 来源：[[2026-09-18-game-selection-notes]] 的「回填清单」建议。
+> ⚠️ 清单原文只写「见『与既有页面的关系』」、未给具体内容 —— 本库据此补写，标 `low`。
+
+- **与 [[compensatory-control]]、[[steady-state-survival-logic]]：模块一把它与二者并列。**
+  见 [[steady-state-survival-logic]] 同批回填（三者的共同点是**都主张「稳住」而非「猛冲」**）。
+- **⚠️ 与本页已有的一处张力呼应**：本页「精确校准、反复改」主张**强干预**；
+  而 [[regression-to-the-mean]] 警告「**过度纠偏放大波动**」、[[steady-state-survival-logic]] 主张「先活下来」——
+  **同一库内对「该不该猛冲」给出相反建议。** 消解判据见 [[regression-to-the-mean]] 的定力四问第四问
+  （**系统的生成机制有没有真的改变**）。
+
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-pretraining-posttraining]]（117 讲）**：补**ML 版的落点** ——
+  「**在真实的情境中演练 / 一定要有反馈 / 要足够熟，熟到不占脑子**」（行 176–182），
+  并给出一句判据：「**要把一个动作练到 pass@1 ≈ 1**」。
+  **与本页的关系**：本页的「针对明确目标 + 即时反馈 + 走出舒适区」在 117 讲里被换成
+  「语料 / 反馈 / 演练 / 奖励机制设计」四变量，且补上本页未强调的一层 ——
+  **反馈缺失时，「刻苦」只是在给错误追加权重**（行 180）。
 ## 待办 / 开放问题
 
 - [ ] **艾利克森 1993 原始文献、2014 大规模研究、2016 荟萃分析、2025 RCT 与综述，均未收录**。

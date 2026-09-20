@@ -2,7 +2,7 @@
 title: 我们如何学习，以及如何提高学习效果
 type: analysis
 slug: how-we-learn-and-how-to-improve
-tags: [学习, 记忆, 神经科学, 机制, 方法, 查询归档]
+tags: [学习, 机制, 方法, 记忆, 神经科学]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-extended-mind-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
@@ -227,6 +227,16 @@ status: active
 
 ---
 
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-pretraining-posttraining]]（117 讲）**：**本分析页缺的一条 ML 化补充视角** ——
+  117 讲给出「**预训练（看输入：读什么 / 见什么人 / 做什么事 → 脑中有没有路）**
+  与**后训练（看反馈与演练 → 能不能稳定走上那条路）**」这对划分（行 212），
+  并把「思维工具」定性为**后训练项目**而非新知识（行 156–162）。
+  **与本页的关系**：本页整理的是学习科学的经验结论，117 讲给的是**把那些结论装进一个工程框架**的尝试；
+  ⚠️ **117 讲自陈这是类比**（行 50「这只是类比，人脑和 AI 的技术细节并不相同」），**引用时须标层**。
 ## 遗留问题 / 缺口
 
 - [x] ~~**是否把 Dunlosky 2013 收进 `raw/`？**~~ —— **2026-09-18 北洛裁定收录，已完成**（`raw/2026-09-18-dunlosky-learning-techniques.md`，5,910 行 + PDF 原件 55 页）。

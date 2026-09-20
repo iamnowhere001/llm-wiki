@@ -2,7 +2,7 @@
 title: Narrative Means to Therapeutic Ends（英文原书）—— 一手校准报告
 type: source
 slug: 2026-09-19-white-epston-narrative-means-therapeutic-ends-en
-tags: [一手校准, 叙事疗法, 叙事重构, White, Epston, 外部化, 引注核查, 情绪觉知, 现代思维工具, 素材]
+tags: [现代思维工具, Epston, White, 叙事疗法, 叙事重构, 外部化, 情绪觉知]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-white-epston-narrative-means-therapeutic-ends-en]

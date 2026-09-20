@@ -2,7 +2,7 @@
 title: ICAP 框架（Interactive–Constructive–Active–Passive）
 type: concept
 slug: icap-framework
-tags: [学习, 教育, 分类框架, 认知参与, AI时代, 实操]
+tags: [学习, 教育, AI时代, 分类框架, 实操, 认知参与]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-icap-framework]

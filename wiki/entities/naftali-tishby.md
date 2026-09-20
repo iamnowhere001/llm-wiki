@@ -2,7 +2,7 @@
 title: 纳夫塔利·蒂什比（Naftali Tishby）
 type: entity
 slug: naftali-tishby
-tags: [信息论, 机器学习, 深度学习, 以色列, 一手研究者]
+tags: [信息论, 机器学习, 一手研究者, 深度学习, 以色列]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-learning-is-forgetting]

@@ -2,7 +2,7 @@
 title: 纳西姆·塔勒布（Nassim Nicholas Taleb）
 type: entity
 slug: nassim-taleb
-tags: [人物, 风险, 不确定性, 反脆弱, 黑天鹅]
+tags: [人物, 不确定性, 反脆弱, 风险, 黑天鹅]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-narrative-first-principle, 2026-09-19-non-ergodicity-notes]
@@ -105,6 +105,26 @@ status: active
 - **与 [[probability-distribution]]：库内又一次出现，且这次给了确切出处。** 该页行 135 的「**四英尺深的河**」
   是本页最常被引用的一句，**该讲给出了确切的出处书（*Skin in the Game*）** —— 见该 sources 页核查表第 5 条。
 
+## 2026-09-19 回填（第 4、5 批清单）
+
+> 来源：[[2026-09-19-antifragility-notes]]、[[2026-09-19-trustworthiness]] 的「回填清单」建议。
+
+- **与 [[antifragility]]：本页的「完整出场」。** 该讲是本页**第一次以整讲主体身份出现** ——
+  四个状态（脆弱 / 鲁棒 / 韧性 / 反脆弱）、收益函数的**凹 / 凸**、**否定法**、**毁灭隔离**、
+  **毒物兴奋效应**、**杠铃策略**、**Skin in the Game** ——
+  **此前本库对本页的引用都是零散借用，本讲是系统展开。**
+- **⚠️ 与 [[2026-09-19-trustworthiness]]：又一次借用未点名（该页行 107）。** 该讲用了
+  「**skin in the game**」这个本页的招牌概念，**但没有点名** —— 沿用本库既有处置：
+  **概念属本页、素材未点名，故记「借用未点名」，不把该讲算作本页的新证据。**
+
+## 2026-09-20 回填（模块八清单）
+
+> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
+
+- **[[2026-09-19-moral-scalability]]（113 讲）**：补「**Skin in the Game 的又一次借用**」——
+  行 200 引塔勒布 2018《非对称风险》的「**伦理不可扩展**」（Ethics don't scale）与
+  「**无尺度的政治普遍主义**」（scale-free political universalism），并含格雷厄姆兄弟那句「联邦 / 州 / 地方 / 家人」。
+  ⚠️ **英文原词未逐字核到**（主张与年份已核）；**同来源族，只增厚。**
 ## 开放问题
 
 - [ ] **收录一手材料** —— 库内四条引用**全是转述书名**，没有一条具体引文。这与 [[charlie-munger]] 的处境相同

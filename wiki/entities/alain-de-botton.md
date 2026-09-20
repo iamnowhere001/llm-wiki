@@ -2,7 +2,7 @@
 title: 阿兰·德波顿（Alain de Botton）：写作的动机与诚实
 type: entity
 slug: alain-de-botton
-tags: [人物, 写作者, 写作]
+tags: [人物, 写作, 写作者]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-writing-is-thinking]

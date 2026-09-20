@@ -2,7 +2,7 @@
 title: "Rethinking Rumination（Nolen-Hoeksema, Wisco & Lyubomirsky，2008）"
 type: source
 slug: 2026-09-18-nolen-hoeksema-rethinking-rumination
-tags: [情绪, 反刍, 反思, 一手文献, 综述, 素材]
+tags: [情绪, 反刍, 综述, 反思]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-nolen-hoeksema-rethinking-rumination]
