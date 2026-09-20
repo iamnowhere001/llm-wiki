@@ -21,6 +21,11 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-self-determination-theory-notes.md`，`wc -l` = **349 行**）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/GpWcw72S3ilvWjkYwSrco8jxn3S
+- **发表**：2026-03-30 07:43
+- **素材路径**：`raw/2026-09-18-self-determination-theory-notes.md`（349 行）
+
 ## 关键要点
 
 1. **本讲是全库唯一一讲「SDT 专讲」，也是 [[autonomy-support]] 那条线一直在等的正源。**

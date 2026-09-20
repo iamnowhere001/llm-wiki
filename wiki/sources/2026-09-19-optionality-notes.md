@@ -26,6 +26,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-optionality-notes.md`，共 **294** 行）。
 > frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/UspxwHtR5iC4Uhk7BBucH5vjnxg
+- **素材路径**：`raw/2026-09-19-optionality-notes.md`（294 行）
+
 ## TL;DR
 
 **讲稿给的工具叫「期权（Option）」**：把金融概念搬到个人决策上 ——

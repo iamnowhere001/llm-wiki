@@ -22,6 +22,10 @@ status: active
 > **本页坐标系**：所有行号为**文件绝对行号**（`raw/2026-09-19-business-leverage.md`，`wc -l` = **190 行**）。
 > frontmatter 占 **1–27** 行，**正文自第 29 行起**。写本页前已逐段回文件核对（`sed -n` / `grep -n`）。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/F15swSnXUinyurkgV87coxMEnne
+- **素材路径**：`raw/2026-09-19-business-leverage.md`（191 行）
+
 ## TL;DR
 
 **本讲给出的工具叫「商业杠杆」**（本库已有独立概念页 [[business-leverage]]，本讲是它的第一份素材来源）：把财富来源从「剥削」换成「规模化」——「财富是规模化、是把好东西放大的结果」（行 47）。

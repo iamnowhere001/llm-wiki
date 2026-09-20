@@ -27,6 +27,10 @@ status: active
 > 该讲**不构成本库 [[agent-vs-tool]] 的新证据** —— 本页如实记录这个「无」，不按不存在的内容建链。
 > （对照：该讲 wiki 节点下还有一个**孙节点**《笛卡尔方法论》，本批按范围约定未收录。）
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/BBClwNjwiiOachkZbjTcQVzFnUc
+- **素材路径**：`raw/2026-09-19-ooda-loop-notes.md`（330 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「OODA 环（OODA Loop）」**：观察—定向—决策—行动（Observe–Orient–Decide–Act）四步循环。

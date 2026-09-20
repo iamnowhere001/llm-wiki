@@ -25,6 +25,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-probability-distribution-notes.md`，
 > 共 **422** 行）。frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/GQfSwMWpAi7PbFkT322chUXun0g
+- **素材路径**：`raw/2026-09-19-probability-distribution-notes.md`（422 行）
+
 ## TL;DR
 
 **讲稿从「赤马红羊劫」的证伪实验讲起，落到一个工具：把决策从「选结果」改写成「选概率分布」。**

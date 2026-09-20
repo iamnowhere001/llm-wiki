@@ -21,6 +21,10 @@ status: active
 >
 > **本份是「跨板块问答」**：5 节覆盖 5 讲，其中 **3 讲属模块六 领导者**（本库未收）、**2 讲属本模块**（[[2026-09-19-generativity]] 097、[[2026-09-19-symmetry-breaking]] 098）。
 
+- **作者**：万维钢（问答回答）
+- **链接**：https://my.feishu.cn/wiki/OsXEwjFT7iEowykdZBIcmUHInEh
+- **素材路径**：`raw/2026-09-19-qa-claiming-hard-problems.md`（156 行）
+
 ## 素材基本信息
 
 | 项 | 值 |

@@ -22,6 +22,11 @@ status: active
 > frontmatter 占 1–24 行；**正文自第 25 行起**，正文合计 25–1331 = **1307 行**。
 > （`capture_method` 记「正文 1,304 行」，与本库实测量的 1307 差 3 —— 与同批的 supply-side 文件偏差一致，属同一基准差。）
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/QEPrwjycvi9LZzk8RJBcyGQBntg
+- **发表**：2026-03-25 07:13
+- **素材路径**：`raw/2026-09-18-capability-seeking-theorem-notes.md`（1331 行）
+
 ## 要点
 
 1. **本份是本库见到的「AI 加工占比最高」的一份素材：讲稿只占正文的约 10%。**

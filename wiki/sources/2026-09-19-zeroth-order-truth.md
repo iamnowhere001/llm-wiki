@@ -26,6 +26,10 @@ status: active
 > 末行无换行、实为 **275** 个物理行）。frontmatter 占 **1–28** 行，**正文自第 30 行起（30–274 = 245 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n` / `awk`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/JJkxwnpYwiQrcDkTVmCcItdEnIe
+- **素材路径**：`raw/2026-09-19-zeroth-order-truth.md`（275 行）
+
 ## TL;DR
 
 **本讲是「模块八 高观点」的开篇，也是全课的收束板块的第一讲。** 它把物理学的**微扰理论（perturbation theory）**

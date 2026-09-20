@@ -24,6 +24,10 @@ status: active
 > 该文件 `wc -l` = **207 行**（末行无换行，Read 计得 **208 行**）；frontmatter 占 **1–28 行**，**正文自第 30 行起**（正文 179 行）。
 > 写本页前已用 `grep -n` 与全文通读**逐条回文件核对**行号。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/TcLiwEJGkihrMgktr4Scxdovn9c
+- **素材路径**：`raw/2026-09-19-marginal-analysis.md`（208 行）
+
 ## TL;DR
 
 **本讲的工具叫「边际分析（marginal analysis）」**：它是一个**反馈式决策法**（行 44）——「根据输出的变化决定你下一轮的输入」，

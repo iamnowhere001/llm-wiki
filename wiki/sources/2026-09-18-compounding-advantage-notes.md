@@ -21,6 +21,11 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-compounding-advantage-notes.md`，`wc -l` = **491 行**）。
 > frontmatter 占 1–24 行，**正文自第 26 行起**。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/Q5ebwi98Ai2dutkcon3ciOXAnzd
+- **发表**：2026-03-27 08:32
+- **素材路径**：`raw/2026-09-18-compounding-advantage-notes.md`（491 行）
+
 ## 关键要点
 
 1. **本讲的对偶结构是「讲稿 + 一大段 AI 加工」。** 讲稿只占 **31.8%**（148 行），

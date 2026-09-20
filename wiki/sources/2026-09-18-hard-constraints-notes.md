@@ -20,6 +20,11 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-hard-constraints-notes.md`，共 564 行）。
 > frontmatter 占 1–38 行，**正文自第 40 行起**（正文行号 = 文件行号 − 39）。
 
+- **作者**：万维钢
+- **链接**：https://my.feishu.cn/wiki/VD7ZwAOERimqGukHefUcsVWHn8o
+- **发表**：2026-03-19 22:46
+- **素材路径**：`raw/2026-09-18-hard-constraints-notes.md`（565 行）
+
 ## 关键要点
 
 1. **本讲是「叙事」那条线的对偶项。** 第 1 讲说「宇宙的第一性原理是叙事」（行 62 回指），

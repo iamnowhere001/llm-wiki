@@ -22,6 +22,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-18-game-selection-notes.md`，共 **187** 行）。
 > frontmatter 占 1–23 行，**正文自第 24 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/QODowcTyUiIHpjkpiB0cBIw0nte
+- **素材路径**：`raw/2026-09-18-game-selection-notes.md`（187 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「赛道选择（Game Selection）」**：不是选专业、选行业，而是**选你打算入哪个局** ——

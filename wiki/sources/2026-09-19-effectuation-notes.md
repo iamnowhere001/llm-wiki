@@ -24,6 +24,10 @@ status: active
 > `wc -l` = **687**（末行缺结尾换行，故最后一行内容落在第 **688** 行）；frontmatter 占 1–25 行，正文自第 27 行起。
 > 写本页前已逐段回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/GKRBwC5fUiuzywkdKrRcQQkbnRg
+- **素材路径**：`raw/2026-09-19-effectuation-notes.md`（688 行）
+
 ## TL;DR
 
 **讲稿给出的工具叫「效果推理（Effectuation）」**：弗吉尼亚大学达顿商学院的 **Saras D. Sarasvathy** 于 **2001 年**提出的创业决策理论

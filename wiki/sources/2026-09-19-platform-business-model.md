@@ -26,6 +26,10 @@ status: active
 > 文件实际 **252 行**，**`wc -l` 报 251**（末行「——橘子同学」无换行符）；frontmatter 占 **1–25 行**，正文自 **第 27 行**起。
 > **正文 = 27–252 = 226 行**（与 `capture_method` 记的「正文 226 行」一致）。写本页前已逐段回文件 `grep -n` 核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/KIuAwBpCIiqm2lk2UHncRQONnQg
+- **素材路径**：`raw/2026-09-19-platform-business-model.md`（252 行）
+
 ## TL;DR
 
 **讲稿给的工具是「平台（platform）」本身**（本库已有独立概念页 [[platform-business-model]]，本讲是它最早的一份素材来源）：它把「市场」变成自己的商品（行 47），

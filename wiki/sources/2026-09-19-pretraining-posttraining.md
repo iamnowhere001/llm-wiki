@@ -27,6 +27,10 @@ status: active
 > frontmatter 占 **1–28** 行，**正文自第 30 行起（30–231 = 202 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/OPOGw6gQ7i7iqtkZlOwcarEGnif
+- **素材路径**：`raw/2026-09-19-pretraining-posttraining.md`（231 行）
+
 ## TL;DR
 
 **本讲把 AI 训练的整套既有术语（预训练/后训练/SFT/RLHF/RLVR/pass@k/pass@1/涌现/grokking/表面对齐假说/对齐税/scaling law）

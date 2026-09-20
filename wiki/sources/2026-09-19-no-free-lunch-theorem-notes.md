@@ -27,6 +27,10 @@ status: active
 > **本页坐标系**：下文所有行号均为**文件绝对行号**（`raw/2026-09-19-no-free-lunch-theorem-notes.md`，
 > 共 **350** 行）。frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条回文件核对。
 
+- **作者**：万维钢（讲稿）
+- **链接**：https://my.feishu.cn/wiki/JDHtw4RuziTDGQkFOdPc5yH1nrd
+- **素材路径**：`raw/2026-09-19-no-free-lunch-theorem-notes.md`（350 行）
+
 ## TL;DR
 
 **讲稿的工具叫「无免费午餐定理（No Free Lunch Theorem, NFL）」**：沃尔珀特与麦克雷迪 1997 年证明，

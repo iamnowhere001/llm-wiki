@@ -24,6 +24,10 @@ status: active
 > 末行无换行、实为 **205** 个物理行）。frontmatter 占 **1–28** 行，**正文自第 30 行起（30–205 = 176 行）**。
 > 写本页前已逐段回文件核对（`sed -n` / `grep -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/CGwrw0GKOipTIWko2qFcjjVPnMd
+- **素材路径**：`raw/2026-09-19-adaptive-cycle.md`（205 行）
+
 ## TL;DR
 
 **本讲把霍林（C. S. Holling）的「适应性循环」引入本库** —— 它是**既有生态学框架**（1986），素材**已正确署名**（见「术语归属专段」），

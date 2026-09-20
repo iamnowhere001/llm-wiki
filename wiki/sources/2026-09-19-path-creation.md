@@ -24,6 +24,10 @@ status: active
 > 末行无换行、实为 **211** 个物理行）。frontmatter 占 **1–28** 行，**正文自第 30 行起（30–211 = 182 行）**。
 > 写本页前已逐段回文件核对（`sed -n` / `grep -n`）。
 
+- **作者**：万维钢（得到课程讲稿）
+- **链接**：https://my.feishu.cn/wiki/LCTKwAH5WikOVLksD3PcUwDonkx
+- **素材路径**：`raw/2026-09-19-path-creation.md`（211 行）
+
 ## TL;DR
 
 **本讲给出的工具叫「路径创造」** —— 它是一个**既有学术术语**（Garud & Karnøe 2001，素材已署名，见「术语归属专段」），
