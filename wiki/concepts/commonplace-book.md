@@ -16,7 +16,7 @@ status: active
 
 > 一个比「第二大脑」古老得多的实践：把读到的、想到的摘录与想法集中记录，供日后取用。[[dan-koe]] 的判断是 —— 历史上有共同笔记簿的人与今天「第二大脑爱好者」的**唯一关键差别**，是前者把笔记当作**创作的燃料**，而不是收藏品。
 
-## 要点
+## 关键要点
 
 - 共同笔记簿（commonplace book）是私人摘录本传统，而非现代的效率工具。
 - 代表实践者：Marcus Aurelius、Leonardo da Vinci、Montaigne、Thomas Jefferson、Mark Twain、H.P. Lovecraft、Rick Rubin 等。

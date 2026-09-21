@@ -16,11 +16,7 @@ status: active
 
 > 整个 wiki 就是「一个装 Markdown 文件的 git 仓库」。这不是实现细节，而是 [[llm-wiki-pattern]] 能成立的前提 —— 没有版本历史，「人类与 LLM 共同演进 schema」就是不可审计的。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 - 作者的原话：*The wiki is just a git repo of markdown files. You get version history, branching, and collaboration for free.*
 - **纯文本**带来的是可移植性与可 diff 性：任何编辑器能开、`grep` 能搜、LLM 天然能读写。

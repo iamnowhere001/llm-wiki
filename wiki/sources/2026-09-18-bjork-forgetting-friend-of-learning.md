@@ -25,7 +25,7 @@ status: active
 
 ## 关键要点
 
-1. **核心命题（原文，行 91–97）**：
+1. **核心命题（原文）**：
    > It is natural to think that learning is a matter of building up skills or knowledge in one's memory
    > and that forgetting is a matter of losing some of what was built up. From that perspective,
    > learning is a good thing and forgetting is a bad thing. The relationship between learning and
@@ -37,7 +37,7 @@ status: active
    **这一段可以直接回答本库此前的问题。** [[learning-as-forgetting]] 曾记：「本命题在人类侧的证据强度，
    比它在 AI 侧弱一个量级」—— 因为它的唯一出处（那句怀特海格言）归属存疑。**现在它有了一手文献。**
 
-2. **机制一：storage strength 与 retrieval strength 的非对称（行 210，行 248）**
+2. **机制一：storage strength 与 retrieval strength 的非对称 **
    - **retrieval strength** = 当前可提取的难易程度（how primed or activated）；
    - **storage strength** = 与记忆中其他内容的联结 / 固化程度（how interassociated or "entrenched"）；
    - **核心公式**：「**gains in retrieval strength are an increasing function of current storage strength,
@@ -45,12 +45,12 @@ status: active
    - **含义**：**当前提取强度越低（遗忘得越多），一次学习带来的存储强度增益越大。**
      这就是「遗忘促成学习」在 Bjork 框架里的**量化表述**，也是间隔效应的机制解释。
 
-3. **机制二：Encoding Variability（编码变异性，行 263）** —— 情境线索随时间变化，
+3. **机制二：Encoding Variability（编码变异性）** —— 情境线索随时间变化
    既造成遗忘（线索不匹配），也让信息关联到**更广的线索范围**，从而在延迟后仍可提取。
    源头是 McGeoch (1932) 与 Estes (1955) 的 stimulus-fluctuation 模型 ——
    **这也解释了 Bjork & Bjork (1992) 那个奇怪标题的后半句「an old theory of stimulus fluctuation」。**
 
-4. **机制三（对本项目最关键）：Encoding the Gist, Rather than the Details（行 415–437）**
+4. **机制三（对本项目最关键）：Encoding the Gist, Rather than the Details **
    Vlach et al. (2008) 提出：**「spacing between successive exemplars of a given category induces
    forgetting, and that forgetting promotes abstraction」**（间隔诱发遗忘，而遗忘促进抽象）。
    机制原文：集中呈现（massing）会让学习者编码**同类连续样例共享的细节**，
@@ -58,7 +58,7 @@ status: active
    **该类别的中心特征或要旨（gist）**，而更抽象的编码更持久、更能支持对新样例的分类。
    **这就是「遗忘细节、留下可迁移结构」的实验依据。**
 
-5. **反直觉的那部分本身也是实验结果（行 430–437）**：学习者**主观相信**集中（blocking）更好，
+5. **反直觉的那部分本身也是实验结果 **：学习者**主观相信**集中（blocking）更好
    **即使最终测试表现已经证明相反**。作者把它接到 [[desirable-difficulty]] 与流畅性错觉上。
 
 ## 关于 `confidence: high`
@@ -93,7 +93,7 @@ status: active
 | **References** | 562–583 | p.18 |
 | 图注 / 附录 | 584–730 | p.19–p.23 |
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 ### 校准 [[learning-as-forgetting]]：从「归属存疑」到「有一手支撑」——但**机制不同，不能混同**
 
@@ -129,7 +129,9 @@ status: active
 
 - [[schema-psychology]]（图式）与本文的 **gist** 是同一件事的两种说法 —— **本文给了它实验依据。**
 - [[transfer-of-learning]] 的验收判据（能否解决新问题）与本文「对新样例分类」是同一个判据的不同表述。
-
+- [[learning-as-forgetting]]（本素材最直接支撑的页）、[[robert-bjork]]、[[desirable-difficulty]]
+- [[retrieval-practice]]、[[spaced-repetition]]、[[schema-psychology]]、[[transfer-of-learning]]
+- 一手文献先例：[[2026-09-18-dunlosky-learning-techniques]]
 ## 新出现的实体 / 概念
 
 - 本素材**没有引入新的独立页面** —— 它引入的机制全部落在既有页面上
@@ -143,8 +145,8 @@ status: active
   它们是本文「遗忘促进抽象」论断的实验来源，目前**只是转引**。
 - [ ] **Bjork & Bjork (1992) 原文取不回文本** —— 需 OCR 或另寻有文本的版本。
   **本库第一条因技术形态（而非内容）被卡的文献。**
-  缓解：本文已正面复述了其核心公式（行 210、248），**可暂用，但引用须标（转引）**。
-- [ ] 本文后半部分（p.15–p.17，行 470–561）尚未逐段阅读 —— 本页目前只消化了 p.1–p.14
+  缓解：本文已正面复述了其核心公式，**可暂用，但引用须标（转引）**。
+- [ ] 本文后半部分（p.15–p.17）尚未逐段阅读 —— 本页目前只消化了 p.1–p.14
 - [ ] 本文提到的 McGeoch (1932)、Estes (1955)、Bower (1972) 均未取回
 
 ## 归属判断
@@ -157,8 +159,3 @@ status: active
 
 - [[2026-09-18-bjork-forgetting-friend-of-learning]]（`raw/2026-09-18-bjork-forgetting-friend-of-learning.md`）
 
-## 相关页面
-
-- [[learning-as-forgetting]]（本素材最直接支撑的页）、[[robert-bjork]]、[[desirable-difficulty]]
-- [[retrieval-practice]]、[[spaced-repetition]]、[[schema-psychology]]、[[transfer-of-learning]]
-- 一手文献先例：[[2026-09-18-dunlosky-learning-techniques]]

@@ -602,22 +602,84 @@ def cmd_lint(root):
                                     % (p.relpath, t))
         section("标签属于移除集", bad_tags)
 
-    # ---- 行号坐标系声明（2026-09-20 取消，见 schema §3.3）----
-    # 全库默认「文件绝对行号」，sources 页再声明一遍是冗余 —— 但它此前是硬要求，
+    # ---- 行号坐标系声明（2026-09-20 取消 sources 页，2026-09-21 取消 concepts 页，见 schema §3.3）----
+    # 全库默认「文件绝对行号」，页内再声明一遍是冗余 —— 但它此前是硬要求，
     # 所以「取消」必须可核：谁重新引入，lint 立刻报（判据同「判据若核不出来就等于不存在」）。
-    # 只拦**声明式**写法；讲历史（「raw 曾按内容相对行号」）与讲另一种坐标系（PDF 页码）不拦 ——
-    # 那两处是史实与边界，不是冗余声明。
+    # 只拦**声明式**写法；讲历史（「raw 曾按内容相对行号」）与讲另一种坐标系（PDF 页码、
+    # 「行号凡标『原书』者……」这类**两份素材的区分**）不拦 —— 那几处是史实与边界，不是冗余声明。
     COORD_DECL = ("**本页坐标系**", "**坐标系：文件绝对行号**",
                   "行区间为**文件绝对行号**", "行区间 = **文件绝对行号**",
                   "[!note] 行号坐标系", "[!note] 行区间坐标系", "（文件绝对行号）")
+    # concepts 页的写法与 sources 页不同（它们不在提要里写，而是在「来源」节末尾记账），
+    # 故另配一组。**只拦声明**，不拦「不同素材的行号不可混用」这类实质边界。
+    COORD_DECL_K = ("**行号坐标系**", "行号坐标系为", "行号坐标系：", "行号坐标系均为",
+                    "> 行号为", "行号为该素材文件", "行号为各素材文件", "行号为该文件绝对行号",
+                    "行号为本库对", "行号均为本库对")
     coord_decl = []
     for p in pages:
-        if p.type != "source":
+        keys = None
+        if p.type == "source":
+            keys = COORD_DECL
+        elif p.type == "concept":
+            keys = COORD_DECL + COORD_DECL_K
+        if not keys:
             continue
         for i, l in enumerate(p.body.split("\n"), 1):
-            if any(k in l for k in COORD_DECL):
+            if any(k in l for k in keys):
                 coord_decl.append("%s  第 %d 行：%s" % (p.relpath, i, l.strip()[:70]))
-    section("sources 页残留行号坐标系声明", coord_decl)
+    section("行号坐标系残留声明（sources / concepts）", coord_decl)
+
+    # ---- 防臃肿（2026-09-21 引入，规则见 wiki/schema.md §6.1）----
+    # 判据：页面里只能有知识，不能有「我怎么得到这个知识的」。
+    # 只核可计算的部分 —— 样板警示块、章节名里的日期批次、篇幅、审核腔。
+    # 样板块是**问题**（它就是冗余本身）；篇幅与审核腔是**提示**（存量要慢慢还，新页不得再犯）。
+    TIER_CALLOUT = ("> [!warning] 孤证", "> [!warning] 名义交叉，实质同源")
+    LEN_CAP = {"concept": 200, "entity": 200, "source": 260, "analysis": 300}
+    AUDIT_TONE = ("本库判断", "本库提示", "按本库", "已登记", "不降级",
+                  "不计入 AI 占比", "按本库既有约定", "本库做法")
+
+    over_long = []
+    dated_sec = []
+    tone_hits = []
+    boiler_callout = []
+    for p in pages:
+        if p.type == "meta":
+            continue
+        body = p.body
+        n = len(body.split("\n"))
+        cap = LEN_CAP.get(p.type)
+        if cap and n > cap:
+            over_long.append("%s  %d 行（%s 上限 %d）" % (p.relpath, n, p.type, cap))
+        hit_tone = []
+        for line in body.split("\n"):
+            if line.startswith("## ") and re.search(r"\d{4}-\d{2}-\d{2}", line):
+                dated_sec.append("%s  「%s」" % (p.relpath, line.strip()[:60]))
+            if any(line.startswith(m) for m in TIER_CALLOUT):
+                boiler_callout.append(p.relpath)
+        for w in AUDIT_TONE:
+            k = body.count(w)
+            if k:
+                hit_tone.append("%s×%d" % (w, k))
+        if hit_tone:
+            tone_hits.append("%s  %s" % (p.relpath, " ".join(hit_tone)))
+    section("残留样板警示块（evidence_tier 已在 frontmatter 表达）", boiler_callout)
+
+    # 以下三项是提示，不计入问题数 —— 存量需要逐步还，但新写的页面不得再命中。
+    def hint(title, items, cap_show=12):
+        if not items:
+            return
+        print("\n%s  (%d)  —— 提示，不计入问题数" % (title, len(items)))
+        for it in items[:cap_show]:
+            print("  - " + it)
+        if len(items) > cap_show:
+            print("  …… 另有 %d 项；完整清单见 `lint` 输出或逐页处理" % (len(items) - cap_show))
+
+    print("\n" + "-" * 62)
+    print("防臃肿提示（schema §6.1）")
+    hint("页面超过长度上限 —— 该拆页", over_long)
+    hint("章节名含日期 / 批次 —— 过程流水不入页", dated_sec)
+    hint("残留审核腔自指语 —— 要表达判断就直接写，不要写「本库判断：X」", tone_hits)
+    print("-" * 62)
 
     # ---- 项目层检查 ----
     projects = [p for p in pages if p.type == "project"]

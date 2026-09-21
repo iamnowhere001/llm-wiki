@@ -19,10 +19,6 @@ status: active
 - **类型**：工具
 - **外部链接**：https://github.com/tobi/qmd ｜ 仓库 `tobi/qmd`
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 是什么
 
 当 wiki 增长到 [[index-and-log]] 中描述的失效点之后，单靠 `index.md` 定位页面会消耗过多上下文。qmd 是作者推荐的替代方案：全在本地运行（on-device），不需要把知识库发到云端。
@@ -44,7 +40,7 @@ status: active
 
 这意味着本库存在一条明确的**升级路径**：页面数增长 → `index.md` 开始吃力 → 切换到 `wiki.py search` → 仍不够 → 引入 qmd。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[index-and-log]] —— qmd 解决的是它的失效问题
 - [[obsidian]] —— 同为本地优先的工具选择

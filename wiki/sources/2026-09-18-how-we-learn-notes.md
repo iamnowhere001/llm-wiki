@@ -59,7 +59,7 @@ status: active
 前四份混层素材都能**从文本形态上分段** —— 有标题、有引号、有「万老师说」这类说话人标记，
 所以「哪段是书、哪段是 AI」可以靠结构特征推断，再用原书反向核实。
 
-**这一份不行。** A–D 段（行 48–552）整体读起来是**同一种文体**，
+**这一份不行。** A–D 段 整体读起来是**同一种文体**
 既没有分段标记，也没有署名，**无法判断它是「人读完后写的整理」还是「AI 生成的整理」**。
 E 段自陈在加工「**你的稿件**」（行 558），那么 A–D 段就是那份「原稿」——
 **但原稿本身是否由 AI 生成，本文档内没有任何证据可以判定。**
@@ -189,7 +189,7 @@ E 段自陈在加工「**你的稿件**」（行 558），那么 A–D 段就是
 - [[2026-09-18-how-we-learn-notes]]（`raw/2026-09-18-how-we-learn-notes.md`）
 - 外部核实：Karpicke, J. D., & Blunt, J. R. (2011). *Retrieval Practice Produces More Learning than Elaborative Studying with Concept Mapping.* Science, 331(6018), 772–775. DOI 10.1126/science.1199327
 
-## 相关页面
+## 与其他页面的关系
 
 - [[stanislas-dehaene]]
 - [[four-pillars-of-learning]]

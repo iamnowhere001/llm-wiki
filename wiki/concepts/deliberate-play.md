@@ -17,11 +17,7 @@ status: active
 > **刻意游戏 = 刻意练习 ∩ 自由玩耍。** 像自由玩耍一样**好玩**，但像刻意练习一样**为掌握而结构化**。
 > 它的作用不是让练习变轻松，而是**让高强度练习能持续下去** —— 因为「练得动」比「练得苦」更决定最终结果。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-hidden-potential-notes]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 1. **定义（原书 p98–99）**：*"Deliberate play is a structured activity that's designed to make skill development enjoyable. It blends elements of deliberate practice and free play."* —— 刻意练习提供结构，自由玩耍提供乐趣；刻意游戏**两者都要**。
 2. **机制是「拆分 + 变化」**：把复杂任务拆成简单部分，以便单独打磨某一项技能；同时**用变化对抗倦怠** —— 换乐器、换工具、换方法、换挑战形式。

@@ -4,9 +4,9 @@ type: entity
 slug: wanweigang
 tags: [人物, 思维工具, 作者, 得到, 科普]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, 2026-09-18-narrative-first-principle, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self]
-related: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, hard-constraints, wishful-thinking-layers, types-of-uncertainty, uncertainty-as-fuel, luck-over-talent, compensatory-control, three-selves, daniel-dennett, nassim-taleb, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, cognitive-load-theory, icap-framework, deliberate-practice, mental-models, explanatory-framework, synthesis-research, tacit-knowledge, desirable-difficulty, autonomy-support, transfer-of-learning, peak-performance, modern-thinking-tools, heavy-tailed-distribution, multiplicative-world, steady-state-survival-logic, agent-vs-tool, ai-convergence, intelligent-life-system, three-solutions, lesser-and-greater-vehicle, llm-wiki-research]
+updated: 2026-09-21
+sources: [2026-09-21-modern-thinking-tools-preface-dedao, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, 2026-09-18-narrative-first-principle, 2026-09-18-heavy-tail-notes, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self]
+related: [2026-09-21-modern-thinking-tools-preface-dedao, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes, hard-constraints, wishful-thinking-layers, types-of-uncertainty, uncertainty-as-fuel, luck-over-talent, compensatory-control, three-selves, daniel-dennett, nassim-taleb, 2026-09-18-cognitive-load-theory, 2026-09-18-icap-framework, 2026-09-18-deliberate-practice-talent, 2026-09-18-mental-representations, 2026-09-18-synthesis-research, 2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty, 2026-09-18-autonomy-support, 2026-09-18-transfer-bridging, cognitive-load-theory, icap-framework, deliberate-practice, mental-models, explanatory-framework, synthesis-research, tacit-knowledge, desirable-difficulty, autonomy-support, transfer-of-learning, peak-performance, modern-thinking-tools, heavy-tailed-distribution, multiplicative-world, steady-state-survival-logic, agent-vs-tool, ai-convergence, intelligent-life-system, three-solutions, lesser-and-greater-vehicle, llm-wiki-research]
 evidence_tier: crossed
 confidence: medium
 status: active
@@ -33,10 +33,9 @@ status: active
   - **发刊词《现代精英的思维武器库》**（2026-03-18 00:25，早于第 1 讲 16 分钟）——
     见 [[2026-09-18-modern-thinking-tools-prospectus]]。**它是课程级的总纲，不属于「基本世界观」板块**，
     归属待裁定（该份 sources 页列了三条可选路径）
-
-> [!warning] 名义交叉，实质同源
-> 本页有 17 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
-> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
+  - **【2026-09-21】发刊词的第二个来源**（得到官网导出版，含完整课程目录与 3 条注释）——
+    见 [[2026-09-21-modern-thinking-tools-preface-dedao]]。**同一篇讲稿，不是新的一讲**；
+    它补上了飞书版缺的目录与注释（本页「写作特征」第 7 条即出自它的注释 [3]）
 
 ## 身份是如何确认的
 
@@ -87,6 +86,15 @@ status: active
    第 3、4、5、6 讲的 AI 加工段**都**把内容改写成「普通中年人怎么办」的生存手册
    （判别词见 [[2026-09-18-three-selves-notes]] 的观察表）。
    **这不是作者的写作特征，是文档的拼接特征** —— 已作为待裁定项提交（是否写进 [[schema]] §3.5 作分层辅助信号）。
+7. **【2026-09-21 新增】作者给出了关于「AI 参与到什么程度」的一句最清楚的边界声明。**
+   得到版发刊词的注释 [3]（[[2026-09-21-modern-thinking-tools-preface-dedao]]）原话：
+   「我看 GPT 智力过剩，常让它兴之所至就生成一首小诗。我看到好的就会不定期地放在课程里跟你分享，
+   也许做一点字词上的修改。**这个课程所有正文文字都是我写的，但小诗的确是GPT写的**。」
+   → 这一句同时钉死两件事：**正文（不含小诗）全部由人写；小诗全部由 GPT 写**。
+   它与上面第 4 条（事后标注）、第 5 条（事前界定）构成同一件事的三层证据，
+   而这一句**边界最清楚** —— 它把「小诗」明确划出了「正文」。
+   **本库据此关闭了一条挂了三天的待办**：发刊词的收束小诗此前标为「存疑、不假定原创」，
+   现确认为 GPT 生成（见 [[2026-09-18-modern-thinking-tools-prospectus]] 的待办节）。
 5. **2026-09-18 新增：作者本人给出了 AI 参与的分工说明。**
    发刊词行 148（**讲稿正文**）原话：
    「我做了大量\*人的\*工作，课程的选题、讲法、主观发挥和具体语句都是我的，
@@ -149,31 +157,6 @@ status: active
   [[2026-09-18-qa-deepen-or-move-notes]]）覆盖连续 15 讲（004–018），每份 5 讲，
   是**得到课程的原生体裁**（读者提问原文 + 作者回答）。**AI 段 0%、四种缺陷型全不命中** ——
   「提问原文」是体裁组成，**不构成**「逐字保留对话轮次」。
-
-## 2026-09-18 新增：本讲是该课程唯一一份「模块级汇总 / 直播形态」样本
-
-[[2026-09-18-five-thinking-tools-livestream]]（`kind: livestream-transcript`）是本库收到的
-**唯一一份直播逐字稿**，也是**唯一一份站在模块级俯瞰「模块一讲了什么」**的素材 ——
-它是 4 小时 6 分的收官直播，挑 **5 个工具**串讲
-（自由能原理 → WOOP → 认知解耦 → 能耐寻求定理 → 探索与利用），
-把「模块一」收成**两条线索（主动 + 工程化）**。
-
-**对本页（作者页）的意义有两条，均需与既有条目并读：**
-
-- **形态是新的**：此前收录的是「课程文章 / 问答 / 关联档案」三类，
-  本份新增**直播逐字稿**一类 —— 特征是无 `dedao.cn` 链接、**47 处时间戳**、
-  非空内容行仅约 25%（其中约 12 行是串场与课程促销）。见该页 §证据性质。
-- **说话人不是一个**：本份有**两个说话人** —— **主讲（万维钢）+ 主持（小影，万维钢主编）**。
-  主持人在行 120 贡献了一条实质内容（把「拆小惊讶」外推为组织工作方法）。
-  **引用本份时须区分是谁说的，不能一律当作者主张** —— 这是本页此前所有素材都没有的情况。
-
-> [!note] 与本页「写作特征」第 5 条的关系
-> 本份**未发现 AI 加工段**（判据见该页）。因此不适用本页记的
-> 「讲稿段的 AI 参与是署名的、AI 段的参与是不署名的」这一反差 ——
-> **它全程只有一个说话群，没有「AI 段」这个层。**
-
-## 2026-09-19 回填（第 1、2 批清单）
-
 > 来源：[[2026-09-19-kelly-criterion-notes]]、[[2026-09-19-no-free-lunch-theorem-notes]]、
 > [[2026-09-19-probability-distribution-notes]] 的「回填清单」建议。
 
@@ -182,10 +165,8 @@ status: active
 - **样本：无免费午餐定理一讲**（[[2026-09-19-no-free-lunch-theorem-notes]]）—— **模块二首讲**，
   **三条具名引注全核**，且 **AI 段未引入新引注**（与模块一「AI 段常加码引注」形成对照）。
 - **样本：概率分布一讲**（[[2026-09-19-probability-distribution-notes]]）—— 讲稿**主动交代 GPT 参与**
-  （行 39「我直接让 GPT 列举了……」）—— 与 [[2026-09-18-game-selection-notes]] 行 99 **同型**，
+  （「我直接让 GPT 列举了……」）—— 与 [[2026-09-18-game-selection-notes]] 行 99 **同型**
   **是本库已记的「归属透明」正面样本类型的又一例**。
-
-## 2026-09-19 回填（第 3 批清单）
 
 > 来源：[[2026-09-19-alpha-strategy]]、[[2026-09-19-business-leverage]]、[[2026-09-19-jevons-paradox]]、
 > [[2026-09-19-platform-business-model]]、[[2026-09-19-opportunity-window]]、[[2026-09-19-wardley-map]]、
@@ -209,16 +190,12 @@ status: active
 > **本批七份里六份符合，一份（沃德利地图）是明确的反例**（点名准确但 AI 段最大规模离题）。
 > **n 仍小，只登记，不升级为结论。**
 
-## 2026-09-19 回填（第 4、5 批清单）
-
 > 来源：[[2026-09-19-bayesian-prior-notes]] 的「回填清单」建议。
 
 - **样本：贝叶斯先验一讲**（[[2026-09-19-bayesian-prior-notes]]）——
   **注释段完整导出**（本批唯一一份），但含 **1 处归属不可追溯** + **1 处年代与通说不符**。
   **这条对「抓取质量」那条线很重要**：它说明**注释段导出 ≠ 引注可靠** ——
   **导出只是让追查成为可能，不代表追查结果成立**。
-
-## 2026-09-19 回填（第 6 批清单）
 
 > 来源：[[2026-09-19-feedback-loop-essay]] 的「回填清单」建议。
 
@@ -227,10 +204,6 @@ status: active
   **这给「素材来源层」增加了一类**：此前本库区分的是「讲稿段 / AI 加工段 / 读者问答」，
   现在多出「**无署名专栏摘引**」—— **它比 AI 段更难判定归属**（没有作者署名、也没有加工痕迹），
   引用时应单独标注其来源层。
-
-## 2026-09-20 回填（模块八清单）
-
-> 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号为各素材文件的绝对行号。
 
 **模块八（《09_高观点》12 篇）是作者页的第六批素材**，且这一批把作者的角色又扩了一块：
 
@@ -247,6 +220,36 @@ status: active
   且**至少一处删掉了讲稿的限定句**（114 讲「可没证明立题就能成为宗师」，见 [[problem-setting]]）。
   **引用本模块内容时，先看 sources 页的「AI 加工段判定」节。**
 - ⚠️ **同来源族，只增厚、不上调本页 `confidence`。**
+
+## 本讲是该课程唯一一份「模块级汇总 / 直播形态」样本
+
+[[2026-09-18-five-thinking-tools-livestream]]（`kind: livestream-transcript`）是本库收到的
+**唯一一份直播逐字稿**，也是**唯一一份站在模块级俯瞰「模块一讲了什么」**的素材 ——
+它是 4 小时 6 分的收官直播，挑 **5 个工具**串讲
+（自由能原理 → WOOP → 认知解耦 → 能耐寻求定理 → 探索与利用），
+把「模块一」收成**两条线索（主动 + 工程化）**。
+
+**对本页（作者页）的意义有两条，均需与既有条目并读：**
+
+- **形态是新的**：此前收录的是「课程文章 / 问答 / 关联档案」三类，
+  本份新增**直播逐字稿**一类 —— 特征是无 `dedao.cn` 链接、**47 处时间戳**、
+  非空内容行仅约 25%（其中约 12 行是串场与课程促销）。见该页 §证据性质。
+- **说话人不是一个**：本份有**两个说话人** —— **主讲（万维钢）+ 主持（小影，万维钢主编）**。
+  主持人在行 120 贡献了一条实质内容（把「拆小惊讶」外推为组织工作方法）。
+  **引用本份时须区分是谁说的，不能一律当作者主张** —— 这是本页此前所有素材都没有的情况。
+
+> [!note] 与本页「写作特征」第 5 条的关系
+> 本份**未发现 AI 加工段**（判据见该页）。因此不适用本页记的
+> 「讲稿段的 AI 参与是署名的、AI 段的参与是不署名的」这一反差 ——
+> **它全程只有一个说话群，没有「AI 段」这个层。**
+
+> 来源：[[2026-09-19-baumols-cost-disease]] 的「回填清单」建议（2026-09-21 执行）。
+
+- **一处「同一份素材内部两段反差」的样本 —— 它把「引注质量」从整份的属性降成了段的属性。**
+  该讲**讲稿段引注质量偏高**（讲稿占 40%，是本课该线较高的一档），**延续本页记的
+  「讲稿占比高 ⇒ 引注质量好」这一观察**；但**同一份的 E 段又是「无署名 + 零引注 + 时评」的标准形态**。
+  **两段并存在一份素材里，说明质量差异的成因在「谁在写」而不在「作者水平」。**
+
 ## 待办 / 开放问题
 
 - [ ] **身份仍属推定**，无正式署名页。若有课程介绍页可得，应补。
@@ -276,10 +279,13 @@ status: active
       **三条都是作者自述，不是本库推测。** 这意味着本批素材的「AI 生成段」里，
       **有一部分是被作者邀请的** —— 判定分层时不能一概视为文档整理者的产物，
       但也不能因此把 AI 段当讲稿主张。**第 3 讲的处置见 [[2026-09-18-steady-state-trap-notes]] 的分层表。**
-- [ ] **【2026-09-18 新增】** 外部核查已取回**课程官方大纲**（得到公开课程页）——
-      确认「基本世界观」是 **7 讲**（本库缺 1 份《问答：叙事和讲故事、造梦的区别是什么？》），
-      发刊词 2 讲、另设八大模块。**这份大纲本身是否值得收录进 `raw/`**，待北洛定。
-      详见 [[2026-09-18-modern-thinking-tools-prospectus]] 的关系一节第 5 条。
+- [x] ~~**【2026-09-18 新增】课程官方大纲是否值得收录进 `raw/`**~~ —— **已解决（2026-09-21）**：
+  官方课程目录已随得到版发刊词入库（[[2026-09-21-modern-thinking-tools-preface-dedao]] 的 C 段，
+  119 条逐条带标题）。
+  **顺带更正一处**：此前记的「发刊词 **2 讲**」不成立 —— 官方目录显示发刊词是 **1 篇**，
+  正文编号从 001 起算（见该页「编号对照」）。另：「基本世界观 = 7 讲」这一条**成立**。
+  本库缺的那份《问答：叙事和讲故事、造梦的区别是什么？》**仍在缺**，
+  已列入 [[modern-thinking-tools-collection]] 缺口表第 1 行。
 
 ## 来源
 

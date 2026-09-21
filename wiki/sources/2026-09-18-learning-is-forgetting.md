@@ -98,7 +98,7 @@ status: active
    素材说「小模型没有容量，所以压缩不了」。**前者是观察，后者是机制断言。**
    这与 [[2026-09-18-writing-is-thinking]] 暴露的「数字张冠李戴」是同一族问题的不同形态。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 - **印证（且给本库自己的模式提供了一条外部理论）**：[[llm-wiki-pattern]] —— 素材主张
   「AI 是最强的知识压缩机，人类的角色是设定目标函数、做提问者与裁判员」（行 445–456）。
@@ -118,7 +118,9 @@ status: active
 - **与本库自身的对照（方法论说明）**：本素材讲的是「压缩即智能」，而本库的 `lint` 报的「孤岛页」
   与「缺口表未清空」，本质上是**压缩失败的两种形态** —— 前者是压缩了但没连上，后者是没收敛。
   **这是本库自己想到的，不是素材说的**，`confidence: low`，写入此处仅作记录，**不据此修改任何流程**。
-
+- [[information-bottleneck]]、[[compression-as-intelligence]]、[[learning-as-forgetting]]
+- [[llm-wiki-pattern]]、[[rag-vs-wiki]]、[[cognitive-outsourcing]]、[[schema-psychology]]、[[mental-models]]
+- 混层素材先例：[[2026-09-18-art-of-impossible-notes]]、[[2026-09-18-writing-is-thinking]]、[[2026-09-18-extended-mind-notes]]
 ## 新出现的实体 / 概念
 
 - 概念：[[information-bottleneck]]、[[compression-as-intelligence]]、[[learning-as-forgetting]]
@@ -138,8 +140,3 @@ status: active
 
 - [[2026-09-18-learning-is-forgetting]]（`raw/2026-09-18-learning-is-forgetting.md`）
 
-## 相关页面
-
-- [[information-bottleneck]]、[[compression-as-intelligence]]、[[learning-as-forgetting]]
-- [[llm-wiki-pattern]]、[[rag-vs-wiki]]、[[cognitive-outsourcing]]、[[schema-psychology]]、[[mental-models]]
-- 混层素材先例：[[2026-09-18-art-of-impossible-notes]]、[[2026-09-18-writing-is-thinking]]、[[2026-09-18-extended-mind-notes]]

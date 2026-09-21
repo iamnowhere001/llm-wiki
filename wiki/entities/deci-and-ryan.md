@@ -24,7 +24,7 @@ status: active
 
 - **Edward Deci（爱德华·德西）**：SDT 的创始人之一，做了该理论最经典的实验（拼图实验）。
 - **Richard Ryan（理查德·瑞安）**：SDT 的共同提出者。
-- 讲稿对二人的全部介绍只有一句：「心理学家爱德华·德西（Edward Deci）和理查德·瑞安（Richard Ryan）最早在 1980 年代提出的框架」（010 讲 raw 行 53）。
+- 讲稿对二人的全部介绍只有一句：「心理学家爱德华·德西（Edward Deci）和理查德·瑞安（Richard Ryan）最早在 1980 年代提出的框架」（010 讲 raw）。
 - **本库没有任何一手材料**（无访谈、无论文原文、无传记）—— 两人的形象完全来自课程转述。
 
 ## 关键事实
@@ -46,9 +46,9 @@ status: active
 
 - **是 [[autonomy-support]] 那条线一直在等的「正源」。** [[autonomy-support]] 与 [[2026-09-18-autonomy-support]] 的待办都挂着「Deci & Ryan 原始文献未收录」；010 讲把「点名」推进为「给出 1985 / 2000 两条文献线索」，**但 `raw/` 里仍无原文，缺口只缩小、未关闭**。
 - **本页存放「人是谁、文献是哪篇」，框架与判据放在 [[self-determination-theory]]。**
-- **库内三处出现**：010 讲（正源）→ [[2026-09-18-autonomy-support]]（教育场景的应用，该页行 106 仍记该缺口）→ [[2026-09-18-growth-strategy-engineering-manual]]（把三需求当作一条工程协议，且在该手册行 449–453 **把六层压成 4 个选项**）。
+- **库内三处出现**：010 讲（正源）→ [[2026-09-18-autonomy-support]]（教育场景的应用，该页 仍记该缺口）→ [[2026-09-18-growth-strategy-engineering-manual]]（把三需求当作一条工程协议，且在该手册 **把六层压成 4 个选项**）。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[self-determination-theory]] —— 他们的框架
 - [[autonomy-support]] —— 三需求之一在教育场景的应用（**自主感由他人支持**）
@@ -58,8 +58,8 @@ status: active
 
 ## 来源
 
-- [[2026-09-18-self-determination-theory-notes]]（讲稿段行 53、59、123、125）
-- [[2026-09-18-autonomy-support]]（行 106 的待办）
-- [[2026-09-18-growth-strategy-engineering-manual]]（行 449–453、1,402）
+- [[2026-09-18-self-determination-theory-notes]]（讲稿段）
+- [[2026-09-18-autonomy-support]]（的待办）
+- [[2026-09-18-growth-strategy-engineering-manual]]
   **本页行号已回 raw 核对（文件绝对行号）。**
 - 外部文献（**未收录进 `raw/`**）：Deci (1971) *JPSP* 18(1)；Lepper, Greene & Nisbett (1973) *JPSP* 28(1)；Deci & Ryan (1985)；Ryan & Deci (2000) *American Psychologist* 55(1)；Rotter (1966) *Psychological Monographs* 80(1)。

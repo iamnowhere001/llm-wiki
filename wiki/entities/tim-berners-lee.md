@@ -65,7 +65,7 @@ status: active
 - [ ] 笔记中提到若干关联设计（Building Back-links、Private overlaid web、Generic Links）未收录
 - [ ] 万维网从 1989 年提案到单向链接定案之间的决策过程，本库只有 Appleton 的概述
 
-## 相关概念
+## 与其他页面的关系
 
 - [[bidirectional-links]]
 - [[pkm-history]]

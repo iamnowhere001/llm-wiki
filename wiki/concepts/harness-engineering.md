@@ -25,7 +25,7 @@ status: active
 > （见 [[llm-wiki-research]] 开放问题里的「待北洛裁定」）。**本页是这条判据缺陷的第 5–8 个实例。**
 > 按 [[schema]] §1.2 的要求，此处**用文字显式声明**：**本页有一手文本支撑。**
 
-## 要点
+## 关键要点
 
 - **命名者自认不确定**：Mitchell Hashimoto 2026-02-05 首次使用该词，**原文自陈不知道业界有没有公认术语**。
 - **定义来自一次「补定义」**：`Agent = Model + Harness` 出自 LangChain（2026-03-10），
@@ -41,7 +41,7 @@ status: active
 
 ### 来历：一次自认不确定的命名
 
-[[2026-09-19-hashimoto-my-ai-adoption-journey]] 的第 5 步是命名现场。原文（行 214–215）：
+[[2026-09-19-hashimoto-my-ai-adoption-journey]] 的第 5 步是命名现场。原文：
 
 > "I don't know if there is a broad industry-accepted term for this yet, but I've grown to calling this
 > 'harness engineering.' It is the idea that anytime you find an agent makes a mistake, you take the time
@@ -52,16 +52,16 @@ status: active
 
 ### 定义：一次「补定义」，以及它立刻被收窄
 
-[[2026-09-19-trivedy-anatomy-of-agent-harness]] 给出了最常被引用的切法（行 39–41）：
+[[2026-09-19-trivedy-anatomy-of-agent-harness]] 给出了最常被引用的切法：
 
 > "**If you're not the model, you're the harness.**"
 > "A harness is every piece of code, configuration, and execution logic that isn't the model itself."
 
-**关键在于它出现的位置**：那一节的标题是「Can Someone Please Define a "Harness"?」（行 35）。
+**关键在于它出现的位置**：那一节的标题是「Can Someone Please Define a "Harness"?」。
 **这说明当时这个词在被广泛使用却没有定义** —— 该文是去补这个洞的。
 
 一个月后，[[2026-09-19-bockeler-harness-engineering-coding-agent-users]] 引用这个定义，
-随即指出它**太宽**（"a very wide definition"，行 54），并收窄到她讨论的对象：
+随即指出它**太宽**（"a very wide definition"），并收窄到她讨论的对象：
 **外部 harness** —— coding agent 的**用户**能自己建的那一层。
 
 **本库要显式记录这条链**：提出 → 立即收窄。
@@ -94,7 +94,7 @@ engineering 这两个新兴概念合到一起）—— 这**支持「两者是�
 ### 高可见度采用者的实际情况
 
 [[2026-09-19-openai-harness-engineering-codex]] 的标题用了 "Harness engineering"，
-但**正文里 harness 几乎不再出现** —— 除标题外仅 1 处技术性用法（「Evaluation harnesses」，行 153），
+但**正文里 harness 几乎不再出现** —— 除标题外仅 1 处技术性用法（「Evaluation harnesses」）
 **且全文从未定义它**。
 
 **本库的判法**：把 OpenAI 记作「**高可见度的采用者与示范者**」，而不是「提出者」。

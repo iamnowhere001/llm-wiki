@@ -17,10 +17,6 @@ status: active
 > 英籍瑞士作家，著有多种面向大众的哲学与生活写作。在本库中出现，是因为素材转述了他
 > **「五大写作秘密」** —— 一位职业写作者对「为什么写不出来」的回答。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 一句话定位
 
 在本库的角色是**给「写作即思考」补上动机侧的人**：
@@ -51,7 +47,7 @@ status: active
 - **补充 [[writing-as-thinking]] 的动机侧**（见该页「德波顿的五条」一节）。
 - **与 [[cognitive-outsourcing]] 无直接冲突但方向不同**：德波顿关心的是**写作者的内在状态**，
   认知外包关心的是**能力是否流失**。**一个向内，一个向外。**
-
+- [[writing-as-thinking]]、[[cognitive-outsourcing]]
 ## 待办 / 开放问题
 
 - [ ] 核实 YouTube 粉丝数与演讲原始出处（素材未标来源，形态像是对某期视频的二次转述）
@@ -65,6 +61,3 @@ status: active
 
 - [[2026-09-18-writing-is-thinking]]（H 段）
 
-## 相关页面
-
-- [[writing-as-thinking]]、[[cognitive-outsourcing]]

@@ -4,7 +4,7 @@ author: 万维钢（问答回答）；引用块内为读者提问；覆盖 5 讲
 url: https://my.feishu.cn/wiki/OsXEwjFT7iEowykdZBIcmUHInEh
 source_url: https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMb9Xw6bEOLl5GPx
 kind: course-article
-series: 得到《现代思维工具课》「模块七 演化者」问答｜讲次表编号（推定）100
+series: 得到《现代思维工具课》「模块七 演化者」问答｜无发刊词编号（发刊词目录问答不占号）｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块七 演化者」问答｜讲次表编号（推定）100」
 published: 未标注 —— 正文中的时间戳为 2026-07-19 17:27，与 `node_create_time` 逐字相同（见 `capture_note`）
 clipped: 2026-09-19
 capture_quality: high

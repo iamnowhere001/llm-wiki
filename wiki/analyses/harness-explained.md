@@ -36,7 +36,7 @@ status: active
 > **这不代表本页是二手综述。** 按 [[schema]] §1.2 的要求用文字显式声明：**本页有一手文本支撑。**
 > （判据缺陷本身见 [[harness-engineering]] 的 `> [!note]` 块。）
 
-## 要点
+## 关键要点
 
 1. **它的历史顺序与中文圈的普遍说法相反。** 中文圈说「OpenAI 提出了 Harness Engineering」；
    原文显示的顺序是：**命名（2/5）→ 高可见度采用但从不定义（2/11）→ 补定义（3/10）→ 定义被收窄（4/2）**。
@@ -85,12 +85,12 @@ status: active
 
 ### 定义（【一手】）
 
-[[2026-09-19-trivedy-anatomy-of-agent-harness]] 给出的是最常被引用的切法（行 39–41）：
+[[2026-09-19-trivedy-anatomy-of-agent-harness]] 给出的是最常被引用的切法：
 
 > "**If you're not the model, you're the harness.**"
 > "A harness is every piece of code, configuration, and execution logic that isn't the model itself."
 
-同文 TLDR（行 33）补了一句它要干什么：
+同文 TLDR 补了一句它要干什么：
 "Harness engineering is how we build systems around models to turn them into work engines.
 The model contains the intelligence and the harness makes that intelligence useful."
 
@@ -116,7 +116,7 @@ The model contains the intelligence and the harness makes that intelligence usef
 
 ### 这个隐喻撑不住 —— 而且作者自己承认（【一手】）
 
-Böckeler 记录了有人向她提出的反驳（行 56 附近）：**往 harness 外面再套 harness 说不通 ——
+Böckeler 记录了有人向她提出的反驳（附近）：**往 harness 外面再套 harness 说不通 ——
 「你试过往狗的身体内侧套挽具吗？」** 她接受这个拉伸，理由是「如果它有助于厘清这个词的用法」。
 她的原话是 "Metaphors only go so far"。
 
@@ -138,13 +138,13 @@ Böckeler 记录了有人向她提出的反驳（行 56 附近）：**往 harnes
 
 ### 团队样本的成本结构（【一手】+【本库推断】）
 
-OpenAI 那篇记的数字（行 43、183、185）：5 个月、约 100 万行、约 1500 个 PR、
-团队 3 人起后增至 7 人、平均 3.5 PR/人/天；**瓶颈从写代码转移到 human QA capacity**（行 61）；
+OpenAI 那篇记的数字：5 个月、约 100 万行、约 1500 个 PR
+团队 3 人起后增至 7 人、平均 3.5 PR/人/天；**瓶颈从写代码转移到 human QA capacity**；
 此前**每周五花 20% 时间**清理 "AI slop"。
 
-**他们的失败记录**（行 80 附近）：试过「一个大 `AGENTS.md`」，四条失败方式 ——
+**他们的失败记录**（附近）：试过「一个大 `AGENTS.md`」，四条失败方式 ——
 挤占上下文 / **太多指导等于没有指导** / **瞬间腐坏（"It rots instantly"）** / 难以验证。
-解法是把它**当目录用**（"give Codex a map, not a 1,000-page instruction manual"，行 71）。
+解法是把它**当目录用**（"give Codex a map, not a 1,000-page instruction manual"）。
 
 > [!note] 【本库推断】团队做法里真正可迁移的，不是做法，是「把做法机械化」那一步
 > OpenAI 的清单里有两类东西，混在一起看会误判：
@@ -155,14 +155,14 @@ OpenAI 那篇记的数字（行 43、183、185）：5 个月、约 100 万行、
 > | **一次性机械化** | 自定义 linter 强制架构约束；CI 校验知识库新鲜度 | **能** —— 一次性投入，之后自动跑 |
 >
 > 而且**原文自己给出了这个转化的证据**：那 20% 的每周清理**后来被自动化了**
-> —— 把 "golden principles" 编码进仓库，由后台任务定期扫描、开重构 PR（行 183、185）。
+> —— 把 "golden principles" 编码进仓库，由后台任务定期扫描、开重构 PR。
 > **也就是说：团队也是先付出持续人力，再把它变成一次性投入的。**
 > **对个人而言，可迁移的正是后半段，而且可以跳过前半段直接做后半段。**
 
 ### 一条来自团队样本的负面证据（【一手】）
 
-Böckeler 把 harness 分成三类 regulation category：**maintainability**（行 135–139，她称最容易做的一类）、
-**architecture fitness**（行 147）、**behaviour**（行 156–167，她称「房间里的大象」）。
+Böckeler 把 harness 分成三类 regulation category：**maintainability**（她称最容易做的一类）
+**architecture fitness**、**behaviour**（她称「房间里的大象」）。
 **她明确说 behaviour harness 远未成熟**：
 "we still have a lot to do to figure out good harnesses for functional behaviour
 that increase our confidence enough to reduce supervision and manual testing."
@@ -225,7 +225,7 @@ and should not be assumed to generalize without similar investment—at least, n
 ### 最小 harness 清单（【本库推断】，不是素材主张）
 
 > **这一节全部是本库的立论。** 四篇素材里**没有任何一份给出个人版清单**。
-> Trivedy 给了通用 agent 的组件清单（行 41 之后），Böckeler 给了分类框架 ——
+> Trivedy 给了通用 agent 的组件清单（之后），Böckeler 给了分类框架 ——
 > 下面这张表是**把两者按个人尺度重新裁剪**的结果，**裁剪动作是本库做的**。
 
 | # | 构件 | 为什么必需 | 个人尺度的具体形态 |

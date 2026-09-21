@@ -18,7 +18,7 @@ status: active
 > 追溯到顶都是她的 1991 年论文。她是 [[2026-09-18-nolen-hoeksema-rethinking-rumination]] 的第一作者，
 > 该文是她对自己理论近二十年证据的**复核**，含对原始预测的明确修正。
 
-## 要点
+## 关键要点
 
 - **反应风格理论（1991）**：抑郁的反刍倾向是一种**类特质**的应对风格 —— 个体在负性情绪中是否反复、被动地关注症状及其原因与后果。原始论文收于 *Journal of Abnormal Psychology*, 100(4), 569–582。
 - **RRS 量表（1991，与 Morrow）**：Ruminative Response Scale，行为测量工具，本库反刍讨论的操作化基础。

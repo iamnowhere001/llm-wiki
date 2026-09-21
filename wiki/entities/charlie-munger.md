@@ -28,7 +28,7 @@ status: active
 在本库的语境里，他的角色不是「投资大师」，而是**一个反复被用来给「多模型 / 多视角」背书的名字** ——
 [[2026-09-18-mental-representations]] 那份素材里给了一个很具体的描述：
 「查理·芒格（Charlie Munger）更是直接搞了个心智模型大合集，涉及数学、物理学、生物学、心理学、
-微观经济学等多个领域，**总共八九十个心智模型**」（`raw/2026-09-18-mental-representations.md` 行 136）。
+微观经济学等多个领域，**总共八九十个心智模型**」（`raw/2026-09-18-mental-representations.md`）。
 
 > **生卒与职务属常识级事实，本库未单独核查。** 本页只对**引语**逐条标注核查状态。
 
@@ -77,21 +77,18 @@ status: active
    五个素材里，四处是**转引或提及**，只有一处（联邦快递）能核到书与章节，
    **而那一处还出在 AI 生成段里。**
 
-## 相关概念
+## 与其他页面的关系
 
 - [[mental-models]] —— 他的核心主张「多元思维模型（latticework of mental models）」的落点
 - [[three-solutions]] —— 本份的两处引用都发生在这个框架的周边（激励对齐 / 元模型）
 - [[victim-mentality]] —— 他那条未核的引语是这页的关键上游
 - [[intelligent-life-system]] —— 联邦快递案例在库内的实际用法是「妥协 = 激励对齐」的一个例证
-
-## 2026-09-19 回填（第 2 批清单）
-
 > 来源：[[2026-09-19-probability-distribution-notes]] 的「回填清单」建议。
 
 - **与 [[probability-distribution]]：库内又一次出现。** 该页行 133「**我会死在哪里，我就永远不去那里**」
   是本页最常被引用的方法论句 —— 该讲把它用在「**下限优先**」的论证链里
-  （行 133–137 的四句引文：孙子 → 芒格 → 塔勒布 → 索罗斯）。
-  ⚠️ **该页 AI 段（行 358）重复了一次** —— 引用时须分清**讲稿段与 AI 段**。
+  （的四句引文：孙子 → 芒格 → 塔勒布 → 索罗斯）。
+  ⚠️ **该页 AI 段 重复了一次** —— 引用时须分清**讲稿段与 AI 段**。
 - **与 [[kelly-criterion]]：接点（该页 AI 段）。** 该页 AI 段行 253「不比别人高明就别玩」与本页的
   「**能力圈**」同型 —— ⚠️ **但那是 AI 段的话，不是讲稿的主张**，引用时须分清层。
 
@@ -106,10 +103,10 @@ status: active
 
 ## 来源
 
-- [[2026-09-18-modern-thinking-tools-prospectus]]（行 987、行 1626）
-- [[2026-09-18-emotion-awareness-notes]]（行 33 / 行 986）
-- [[2026-09-18-mental-representations]]（行 136）
-- [[2026-09-18-clear-thinking-notes]]（行 76、行 193、行 633、行 1074）
+- [[2026-09-18-modern-thinking-tools-prospectus]]
+- [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-18-mental-representations]]
+- [[2026-09-18-clear-thinking-notes]]
 - [[2026-09-18-hard-constraints-notes]] 行 481（第 5 条那一处提及）——
   **2026-09-18 该素材已 ingest，本行由纯路径引用改为 wikilink，并已列入本页 `sources`。**
   **该提及的上下文值得记一句**：它出在第 4 讲的 **AI 加工段**（`### 认知突围`），

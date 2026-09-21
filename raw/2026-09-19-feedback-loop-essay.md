@@ -3,7 +3,7 @@ title: "反馈回路"
 author: 未署名 —— 文档含性质不同的两段材料：前半为万维钢既有专栏文本的摘引（弘一法师 / 复利 / 柯维 / 稻盛和夫等，逐条无署名标注），后半「系统架构师宣言」为 AI 加工段；分层见 sources 页
 url: https://my.feishu.cn/wiki/N8UAwq7fJiOdM0kkm3RcZ4JQnFg
 kind: mixed-notes
-series: 本文件是《反馈回路：怎样操控复杂系统》（「模块七 演化者」讲次表编号（推定）101）的**飞书 wiki 子节点**（parent_node_token = U32VwGgunibTBTk3qQmcNbrznoc）；**不是课程讲次，无讲次编号**
+series: 本文件是《反馈回路：怎样操控复杂系统》（「模块七 演化者」发刊词编号 085）的**飞书 wiki 子节点**（parent_node_token = U32VwGgunibTBTk3qQmcNbrznoc）；**不是课程讲次，无讲次编号**｜【2026-09-21 裁定】原值：「本文件是《反馈回路：怎样操控复杂系统》（「模块七 演化者」讲次表编号（推定）101）的**飞书 wiki 子节点**（parent_node_token = U32VwGgunibTBTk3qQmcNbrznoc）；**不是课程讲次，无讲次编号**」
 published: 未标注 —— 文档内无任何日期。飞书 wiki node 元数据：创建 2025-04-18 20:13:12，最后编辑 2026-08-17 15:17:19
 clipped: 2026-09-19
 capture_quality: high

@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「世界的共鸣」以下各段为 AI 加工�
 url: https://my.feishu.cn/wiki/EUxewTXyMi11Gtkdq8Zcgefansh
 source_url: https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3mobqK5YmP6DOjxAL
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 14 讲（官方编号 021），也是本模块正文最后一讲
+series: 得到《现代思维工具课》「模块一 成长战略」第 14 讲｜发刊词编号 021｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 14 讲（官方编号 021），也是本模块正文最后一讲」
 published: 未标注
 clipped: 2026-09-18
 capture_quality: high

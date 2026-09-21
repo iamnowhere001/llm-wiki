@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第七讲**。
 > **本批九讲里对本库既有页面校准作用最大的一讲** —— 它补上了本库一处明确的归属缺失。
 
-- **作者**：万维钢（**行 136 自陈「我们《精英日课》专栏已经讲过太多跟睡眠有关的研究了」**）
+- **作者**：万维钢（** 自陈「我们《精英日课》专栏已经讲过太多跟睡眠有关的研究了」**）
 - **链接**：https://my.feishu.cn/wiki/Id2ywhOz1i0y0xkkdsJcF7K2nie ｜ https://www.dedao.cn/course/article?id=AgOBQ46R1rnXRQomwPJdLzGqEZ3aY7
 - **发表**：2026-05-14 23:01
 - **素材路径**：`raw/2026-09-18-desirable-difficulty.md`（436 行，frontmatter 1–36）
@@ -81,7 +81,7 @@ status: active
 > 「必要难度（desirable difficulty）」 —— **术语正确，但归属缺失** ——
 > 该术语出自 Robert Bjork（1994），素材未点名。
 
-本讲**点名了比约克夫妇、UCLA 与 1990 年代**（行 92、96），**这处归属缺失就此补上**。
+本讲**点名了比约克夫妇、UCLA 与 1990 年代**，**这处归属缺失就此补上**。
 
 **并列一条反向证据**：[[2026-09-18-dunlosky-learning-techniques]]
 （本库唯一的一手学术文献）**全文零命中「desirable difficulty」** ——
@@ -120,7 +120,7 @@ CLT 说「减少外在负荷」，本讲说「**内在负荷不但不能减，�
 
 - [[2026-09-18-desirable-difficulty]]（`raw/2026-09-18-desirable-difficulty.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[desirable-difficulty]]
 - [[robert-bjork]]

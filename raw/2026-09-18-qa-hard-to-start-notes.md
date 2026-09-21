@@ -4,7 +4,7 @@ author: 得到《现代思维工具课》问答 —— 提问为读者，回答�
 url: https://my.feishu.cn/wiki/QmPPwUSI6i6MZbk9uzMcLUPhnOd
 source_url: https://www.dedao.cn/course/article?id=BM30m4na5NkyKQQwQYKjvDg7Eowd2G
 kind: course-article
-series: 得到《现代思维工具课》「模块一 成长战略」问答之一
+series: 得到《现代思维工具课》「模块一 成长战略」问答｜无发刊词编号（发刊词目录问答不占号）｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」问答之一」
 published: 未标注
 clipped: 2026-09-18
 capture_quality: high

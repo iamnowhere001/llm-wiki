@@ -25,11 +25,7 @@ status: active
 > **这是错的。** 作者是 Böckeler 本人。正确说法：**Fowler 站点上、由 Böckeler 署名的文章**。
 > 本库已把这条记入该 sources 页，并要求**系统排查同类错误**。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 - **身份**：Thoughtworks 的 Distinguished Engineer，AI-assisted delivery 方向；
   自述有 20 多年开发者 / 架构师 / 技术负责人经验（据其文章页的作者简介）。
@@ -60,7 +56,7 @@ status: active
 - [ ] 她提到的 "harness templates" 未收录
 - [ ] 排查本库是否还有其他「martinfowler.com → 误记为 Fowler」的错误
 
-## 相关页面
+## 与其他页面的关系
 
 - [[harness-engineering]]
 - [[guides-and-sensors]]

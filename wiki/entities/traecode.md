@@ -80,7 +80,7 @@ status: active
 - [ ] 子目录 `AGENTS.md` 是否也受「3 层」限制？
 - [ ] 本库的 `AGENTS.md` 直接放进 TraeCode 打开，实际表现如何？（需要实测）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[agents-md]]
 - [[2026-09-18-trae-rules-docs]]

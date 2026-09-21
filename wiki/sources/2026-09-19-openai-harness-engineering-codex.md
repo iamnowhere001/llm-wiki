@@ -38,17 +38,17 @@ status: active
    「Evaluation harnesses」（行 153，列在「Agents produce」清单里）。
    **正文从未给出 harness 的显式定义**（没有 "By harness we mean…" 或 "A harness is…" 这类句子）。
    **这与中文圈「OpenAI 提出了 Harness Engineering」的普遍说法有实质差距：文章命名了它，但没有定义它。**
-2. **规模数字**（行 43）：5 个月、约 100 万行、约 1500 PR、3 名工程师起（后增至 7）、
+2. **规模数字**：5 个月、约 100 万行、约 1500 PR、3 名工程师起（后增至 7）
    平均 3.5 PR/工程师/天，且**吞吐量随团队扩大而上升**。开发时间约为手写的 1/10。
-3. **瓶颈转移**（行 61）："our bottleneck became human QA capacity."
-4. **`AGENTS.md` 当目录用**（行 71、80）："give Codex a map, not a 1,000-page instruction manual"。
+3. **瓶颈转移**："our bottleneck became human QA capacity."
+4. **`AGENTS.md` 当目录用**："give Codex a map, not a 1,000-page instruction manual"。
    他们试过「一个大 `AGENTS.md`」，**失败方式有四条**（行 80 附近）：
    挤占上下文 / 太多指导等于没有指导 / **瞬间腐坏（"It rots instantly"）** / 难以验证。
 5. **可验证性是机制化的**：专用 linter 与 CI 任务校验知识库的新鲜度与交叉链接；
    有一个**定期扫描过时文档并自动开修复 PR 的 doc-gardening agent**。
 6. **架构约束机械化**：每个业务域分层，依赖方向严格校验（Types → Config → Repo → Service → Runtime → UI），
    由**自定义 linter** 强制；**且 linter 的错误信息里直接注入修复指令**。
-7. **垃圾回收**（行 183、185）：此前每周五花 **20% 时间**清理 "AI slop"；后改为把 "golden principles" 编码进仓库，
+7. **垃圾回收**：此前每周五花 **20% 时间**清理 "AI slop"；后改为把 "golden principles" 编码进仓库
    由后台 Codex 任务定期扫描偏差、更新质量评分、开定向重构 PR，「多数可在 1 分钟内审完并自动合并」。
 8. **卡住时的姿势**（行 55 附近）：几乎从不「try harder」，而是问
    「**缺了什么能力，怎么让它对 agent 既可见又可强制**」。
@@ -69,7 +69,7 @@ status: active
 文章也记录了失败：**「一个大 `AGENTS.md`」这条路走不通**，原因是上下文稀缺、指导过载、瞬间腐坏、难以验证。
 他们的解法是把它当目录而不是百科全书。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 - **本项目的第四份一手素材**，也是「业界实践」维度的**最大样本**（也是唯一的团队尺度样本）。
 - **校准了一条中文圈广泛流传的说法**：普遍表述是「OpenAI 提出了 Harness Engineering」。
@@ -87,6 +87,12 @@ status: active
   本库 `AGENTS.md` 已压到约 150 行、也在做同样的事 —— **方向一致**。
   但本文同时说「too much guidance becomes non-guidance」，而本库的 [[schema]] 有 561 行。
   **本库的结构与本文建议不冲突（细则在按需读的文件里），但这个对照值得显式写下来。**
+- [[harness]]
+- [[harness-engineering]]
+- [[agents-md]]
+- [[2026-09-19-hashimoto-my-ai-adoption-journey]]
+- [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]
+- [[2026-09-19-trivedy-anatomy-of-agent-harness]]
 
 ## 新出现的实体 / 概念
 
@@ -105,15 +111,6 @@ status: active
 - [ ] **补一次真正的一手核对**：换一条路径拿原始 HTML（或找可访问的官方镜像），把本页的 `capture_quality` 从 medium 升到 high
 - [ ] 回填 [[agents-md]]：补上「规则腐坏」与「指导过载」两个本库未评估的失败模式
 - [ ] 核对文中「Ralph Wiggum Loop」的所指
-
-## 相关页面
-
-- [[harness]]
-- [[harness-engineering]]
-- [[agents-md]]
-- [[2026-09-19-hashimoto-my-ai-adoption-journey]]
-- [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]
-- [[2026-09-19-trivedy-anatomy-of-agent-harness]]
 
 ## 归属判断
 

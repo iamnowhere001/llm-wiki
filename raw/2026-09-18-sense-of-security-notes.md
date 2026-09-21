@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「核心洞见」以下各段为 AI 加工，�
 url: https://my.feishu.cn/wiki/EXo3w07uNiYgHFkE3accgYQDnSb
 source_url: https://www.dedao.cn/course/article?id=xzYo2GPNq4W8VEb2WzJejyRBZbnw0d&fullScreen=true
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 10 讲（官方编号 017）
+series: 得到《现代思维工具课》「模块一 成长战略」第 10 讲｜发刊词编号 017｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 10 讲（官方编号 017）」
 published: 未标注
 clipped: 2026-09-18
 capture_quality: high

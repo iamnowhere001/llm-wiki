@@ -4,7 +4,7 @@ author: 万维钢（得到课程讲稿）；收尾「又曰」的代笔者未披
 url: https://my.feishu.cn/wiki/DeQuwpu4riJuUVkaXPUcLVC7nng
 source_url: https://www.dedao.cn/course/article?id=A5eO3NDrGk8KP0ompLK2oxp9MRBzQP
 kind: course-article
-series: 得到《现代思维工具课》「模块七 演化者」正文｜讲次表编号（推定）099
+series: 得到《现代思维工具课》「模块七 演化者」正文｜发刊词编号 084｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块七 演化者」正文｜讲次表编号（推定）099」
 published: 未标注 —— 正文中的时间戳为 2026-07-16 23:20，与 `node_create_time` 逐字相同（见 `capture_note`）
 clipped: 2026-09-19
 capture_quality: high

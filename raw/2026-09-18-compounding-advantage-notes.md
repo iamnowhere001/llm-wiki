@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「事实核查」以下各段为 AI 加工，�
 url: https://my.feishu.cn/wiki/Q5ebwi98Ai2dutkcon3ciOXAnzd
 source_url: https://www.dedao.cn/course/article?id=R2Mo65zY4QZ3VnmADEKqEdNAa98jGB
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 3 讲（官方编号 009）
+series: 得到《现代思维工具课》「模块一 成长战略」第 3 讲｜发刊词编号 009｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 3 讲（官方编号 009）」
 published: 2026-03-27 08:32
 clipped: 2026-09-18
 capture_quality: high

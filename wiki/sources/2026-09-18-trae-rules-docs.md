@@ -57,7 +57,7 @@ status: active
 
 「示例」一节按场景给出五组规则样例：基础交互（中文回答、关键逻辑加中文注释、超过 20 行考虑抽象）、通用编码、重构（小步重构 + 测试保障 + 代码审查）、代码可读性、性能优化。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 - **它把 [[three-layer-architecture]] 的第三层具体化了。** 本库把 schema 层放在 `AGENTS.md`，而这份文档说明了 `AGENTS.md` 在 IDE 侧是如何被加载和与 `.trae/rules/` 分工的 —— 也就是「schema 层」在真实工具里的落地形态。新建的 [[agents-md]] 页专门讨论这一点。
 - **它是 [[llm-wiki-pattern]] 里「工具链尽量薄」取向的一个外部对照。** 本库选择零依赖 CLI，而 TraeCode 选择在 IDE 内做一套四档生效方式的规则系统 —— 两者解决的是同一个问题（让 AI 稳定遵守约定），路径不同。
@@ -67,6 +67,9 @@ status: active
 > 1. **AGENTS.md 的加载时机** —— 文档只写了「如何开启」，没写「何时读进上下文」「改了要不要重开会话」。这个问题只能靠社区实测（见 [[2026-09-18-trae-agents-md-vs-rules-forum]]）。
 > 2. **AGENTS.md 与 `.trae/rules/` 冲突时谁优先** —— 文档没有给出优先级规则，只说 `#Rule` 引用方式优先级最高。
 > 3. **`AGENTS.md` 是否受 3 层嵌套限制** —— 文档只在 `.trae/rules/` 的语境下提 3 层上限，子目录 `AGENTS.md` 的识别深度未说明。
+- [[traecode]]
+- [[agents-md]]
+- [[2026-09-18-trae-agents-md-vs-rules-forum]]
 
 ## 新出现的实体 / 概念
 
@@ -78,12 +81,6 @@ status: active
 - [ ] 实测「设置 > 规则 > 导入设置」开启后，AGENTS.md 是否真的进入上下文
 - [ ] 验证 `.trae/rules/` 与 `AGENTS.md` 冲突时的实际优先级
 - [ ] 确认「智能生效」在实际对话中的判定准确率（文档只说由 AI 判断相关性）
-
-## 相关页面
-
-- [[traecode]]
-- [[agents-md]]
-- [[2026-09-18-trae-agents-md-vs-rules-forum]]
 
 ## 定级理由
 

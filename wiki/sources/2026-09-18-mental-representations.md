@@ -93,7 +93,7 @@ status: active
 
 - [[2026-09-18-mental-representations]]（`raw/2026-09-18-mental-representations.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[mental-models]]
 - [[schema-psychology]]

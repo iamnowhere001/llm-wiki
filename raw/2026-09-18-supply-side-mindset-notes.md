@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「★练习」以下各段为 AI 加工，无�
 url: https://my.feishu.cn/wiki/ZrfpwpaX3isrhSkJL4rcnYCUnig
 source_url: https://www.dedao.cn/course/article?id=yNwelz6kDn0aKeR6e3V7qLAO3Bb51j
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 2 讲（官方编号 008）
+series: 得到《现代思维工具课》「模块一 成长战略」第 2 讲｜发刊词编号 008｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 2 讲（官方编号 008）」
 published: 2026-03-25 22:47
 clipped: 2026-09-18
 capture_quality: high

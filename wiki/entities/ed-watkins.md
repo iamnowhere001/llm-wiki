@@ -19,9 +19,9 @@ status: active
 > 抽象、评价、去语境的加工（问「为什么」）有害，具体、体验、有语境的加工（问「怎么发生的」）不然。
 > 这也是 [[rumination-vs-reflection]] 三条判据里**证据最强**那条的来源。
 
-## 要点
+## 关键要点
 
-- **加工模式理论（2008）**：该理论被 [[nolen-hoeksema]] 在同年综述中**直接吸收进反刍的定义** —— 「an abstract, evaluative self-reflection, particularly one focused on negative content」（见 [[2026-09-18-nolen-hoeksema-rethinking-rumination]] 行 1519–1521）。这意味着**她认可这是对反刍机制的准确描述**，而非一家之言。
+- **加工模式理论（2008）**：该理论被 [[nolen-hoeksema]] 在同年综述中**直接吸收进反刍的定义** —— 「an abstract, evaluative self-reflection, particularly one focused on negative content」（见 [[2026-09-18-nolen-hoeksema-rethinking-rumination]]）。这意味着**她认可这是对反刍机制的准确描述**，而非一家之言。
 - **反刍聚焦认知行为疗法（RFCBT）**：他据此开发的干预，与标准 CBT 的区别在于 —— **标准 CBT 修改想法的内容，RFCBT 直接修改思维的过程**。
 - **具体化训练（concreteness training）**：把「为什么是我」换成「怎么发生的」的训练，可作独立干预使用。
 - **他的诱导实验**：让抑郁患者分别进入「分析焦点」（思考感受的原因、意义、后果）与「体验焦点」（「think about the concrete experience of x」）——后者虽未提升情绪，却减少了过度概括化自传体记忆、全局负性自我判断，并改善社会问题解决。

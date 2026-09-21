@@ -115,7 +115,7 @@ status: active
 
 - [[2026-09-18-autonomy-support]]（`raw/2026-09-18-autonomy-support.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[autonomy-support]]
 - [[scaffolding]]

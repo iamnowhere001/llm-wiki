@@ -4,7 +4,7 @@ author: 得到《现代思维工具课》问答 —— 提问为读者，回答�
 url: https://my.feishu.cn/wiki/O0miwUmSziw3G5k5boCcA28Qnfb
 source_url: https://www.dedao.cn/course/article?id=mPqglk6GzZwKr5yB8YXMLBEO3ba2AR
 kind: course-article
-series: 得到《现代思维工具课》讲次表编号 047（**属模块三 学习教育**；按主题挂在「模块二 决策判断」节点下）｜【2026-09-19 更正】原值：「得到《现代思维工具课》「模块二 决策判断」问答（无官方编号）」
+series: 得到《现代思维工具课》「模块三 学习教育」问答｜无发刊词编号（发刊词目录问答不占号）｜【2026-09-21 裁定】原值：「得到《现代思维工具课》讲次表编号 047（**属模块三 学习教育**；按主题挂在「模块二 决策判断」节点下）｜【2026-09-19 更正】原值：「得到《现代思维工具课》「模块二 决策判断」问答（无官方编号）」」
 published: 未标注
 clipped: 2026-09-19
 capture_quality: high

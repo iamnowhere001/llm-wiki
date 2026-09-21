@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「1. 身份的本质」以下各段为 AI 加�
 url: https://my.feishu.cn/wiki/HWc9w2bUKicWSNk5Q6UcCFtVn9d
 source_url: https://www.dedao.cn/course/article?id=92GB1my8okM5VMnwEyJWgNnEe4Z73r
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 9 讲（官方编号 016）
+series: 得到《现代思维工具课》「模块一 成长战略」第 9 讲｜发刊词编号 016｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 9 讲（官方编号 016）」
 published: 未标注
 clipped: 2026-09-18
 capture_quality: high

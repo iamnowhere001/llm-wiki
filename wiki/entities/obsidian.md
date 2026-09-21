@@ -20,10 +20,6 @@ status: active
 - **别名**：—
 - **外部链接**：https://obsidian.md/
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-karpathy-llm-wiki]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 是什么
 
 一个直接打开本地 Markdown 目录的编辑器。它的价值不在于编辑，而在于**把一堆 Markdown 文件呈现成一张知识网络**：双链跳转、反向链接面板、图谱视图。
@@ -48,7 +44,7 @@ status: active
 
 除了 Obsidian，本仓库还提供了一个零依赖的浏览站点（`python3 tools/wiki.py build`），不需要安装任何软件即可查看图谱与全文检索。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[index-and-log]]
 - [[wiki-lint]]

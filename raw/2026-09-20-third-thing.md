@@ -4,7 +4,7 @@ author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对�
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMg0J7DOop10vZwL
 kind: course-article
-series: 得到《现代思维工具课》「模块五 参与者」正文｜讲次表编号（推定）084
+series: 得到《现代思维工具课》「模块五 参与者」正文｜发刊词编号 071｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块五 参与者」正文｜讲次表编号（推定）084」
 published: 未标注
 clipped: 2026-09-20
 capture_quality: high

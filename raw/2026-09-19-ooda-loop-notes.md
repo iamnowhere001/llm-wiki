@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界�
 url: https://my.feishu.cn/wiki/BBClwNjwiiOachkZbjTcQVzFnUc
 source_url: https://www.dedao.cn/course/article?id=zYo2GPNq4W8VEbwm6mJejyRBZbnw0d
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块二 决策判断」讲次表编号 044（模块内第 19 项，正文）｜【2026-09-19 更正】原值：「得到《现代思维工具课》「模块二 决策判断」第 16 讲（官方编号 037）」
+series: 得到《现代思维工具课》「模块二 决策判断」第 16 讲｜发刊词编号 037｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块二 决策判断」讲次表编号 044（模块内第 19 项，正文）｜【2026-09-19 更正】原值：「得到《现代思维工具课》「模块二 决策判断」第 16 讲（官方编号 037）」」
 published: 未标注
 clipped: 2026-09-19
 capture_quality: high

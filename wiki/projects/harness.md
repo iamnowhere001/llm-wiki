@@ -179,7 +179,7 @@ status: active
 - [ ] harness 与「**规则腐坏**」的关系 —— **2026-09-19 已有材料**（OpenAI 的 "It rots instantly" 与 doc-gardening agent）。**本库自身是这个问题的一个活样本**：`AGENTS.md` / [[schema]] / [[decisions]] 里有大量**特定时点的规则**，而**没有任何机制会告诉维护者哪一条已经过时**。**这可能是一个「本库自己就能贡献一手材料」的缺口** —— 不需要外部文献
 - [ ] 需要配图或流程图吗？如果要，用什么生成？
 
-## 相关页面
+## 与其他页面的关系
 
 - [[llm-wiki-research]]
 - [[traecode-pkm-article]]

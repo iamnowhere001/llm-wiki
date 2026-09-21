@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第三讲**。
 > **本批九讲里唯一在正文里直接贴出 Claude 对话链接的一份。**
 
-- **作者**：万维钢（行 56 自陈「我们**《精英日课》专栏**多次聊过刻意练习」）
+- **作者**：万维钢（自陈「我们**《精英日课》专栏**多次聊过刻意练习」）
 - **链接**：https://my.feishu.cn/wiki/PIBAwqoc1i8HpbkQeFJcX8cLnOg ｜ https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYdjxVlY4jRMdvmbE
 - **发表**：2026-05-10 23:24
 - **素材路径**：`raw/2026-09-18-deliberate-practice-talent.md`（651 行，frontmatter 1–36）
@@ -93,7 +93,7 @@ status: active
 
 - [[2026-09-18-deliberate-practice-talent]]（`raw/2026-09-18-deliberate-practice-talent.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[deliberate-practice]]
 - [[anders-ericsson]]

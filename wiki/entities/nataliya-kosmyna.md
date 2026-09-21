@@ -17,10 +17,6 @@ status: active
 > MIT 媒体实验室的研究科学家。**「认知债务」（cognitive debt）这个说法的提出者。**
 > 她做的是本库目前最想要、却最拿不到的那类研究：**直接测 AI 使用对大脑的影响。**
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 一句话定位
 
 在本库的角色是**「认知外包」这一侧唯一给出神经层面证据的人** ——
@@ -57,12 +53,12 @@ status: active
 **这条判据一旦有了一手依据，就直接回答了 [[llm-wiki-research]] 缺口表里那个本库自己提出的问题**
 （见 [[cognitive-outsourcing]] 的「与本库的关系」）。
 
-## 与本库的关系
+## 与其他页面的关系
 
 - 属于 [[llm-wiki-research]] 的反方证据链 —— **但仅作为「待核线索」，不进入论证。**
 - 与 [[wang-shuaiguo]] 的研究**同向、不同层**：她是神经层，王帅国是行为层。
   两条合起来才构成「顺序决定效果」的完整证据 —— **而两条本库都只有二手转述。**
-
+- [[cognitive-debt]]、[[cognitive-outsourcing]]、[[wang-shuaiguo]]
 ## 待办 / 开放问题
 
 - [ ] **找到并收录那篇论文** —— 本页全部内容的一手源头
@@ -77,6 +73,3 @@ status: active
 
 - [[2026-09-18-writing-is-thinking]]（J 段）
 
-## 相关页面
-
-- [[cognitive-debt]]、[[cognitive-outsourcing]]、[[wang-shuaiguo]]

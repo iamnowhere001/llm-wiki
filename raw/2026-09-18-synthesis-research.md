@@ -3,7 +3,7 @@ title: "综合调研：在没有教科书的地方挖掘真知"
 author: 未署名 —— 飞书 wiki 文档未标注整理者；正文为得到（dedao.cn）课程文章，教育与学习板块
 url: https://my.feishu.cn/wiki/R5Zowh0RhiOVqMkr5eNcoy90npc
 kind: course-article
-series: 得到「教育与学习」板块九讲（2026-05；本库本次一次性收录全部 9 讲，互为同系列）
+series: 得到《现代思维工具课》「模块三 学习教育」正文｜发刊词编号 042｜【2026-09-21 裁定】原值：「得到「教育与学习」板块九讲（2026-05；本库本次一次性收录全部 9 讲，互为同系列）」
 published: 2026-05-12
 clipped: 2026-09-18
 capture_quality: medium

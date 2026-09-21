@@ -21,10 +21,6 @@ status: active
 - **外部链接**：https://en.wikipedia.org/wiki/Ted_Nelson
 - **相关项目**：Project Xanadu
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-appleton-bidirectional-links]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 是什么
 
 [[2026-09-18-appleton-bidirectional-links]] 对他的描述是：「一个不太像电影导演和社会学家的人，误入一系列计算机讲座，开始想象图形界面如何重塑我们书写与连接想法的方式。」他**直接受 [[vannevar-bush]] 的《As We May Think》启发**，并把这个想法推进为具体的系统设计。
@@ -63,7 +59,7 @@ Appleton 给了一个重要的判断框架：**Xanadu 应当被理解为一种 p
 - [ ] transclusion / transcopyright 值得各自独立成页，但需要专门素材
 - [ ] *Computer Lib / Dream Machines* 的内容未收录
 
-## 相关概念
+## 与其他页面的关系
 
 - [[bidirectional-links]]
 - [[pkm-history]]

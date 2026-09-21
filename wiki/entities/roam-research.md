@@ -49,7 +49,7 @@ status: active
 - [ ] 「块引用」与 [[ted-nelson]] 的 transclusion 的关系未展开
 - [ ] Roam 后来的用户流失与 Obsidian / Logseq 的接替，需要专门素材
 
-## 相关概念
+## 与其他页面的关系
 
 - [[bidirectional-links]]
 - [[obsidian]]

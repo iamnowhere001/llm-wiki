@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第九讲，也是最后一讲**。
 > **本批九讲里对本库缺口命中率最高的一份** —— 它直接填上 [[peak-performance]] 的头号空白。
 
-- **作者**：万维钢（行 167 提到「罗振宇老师在《文明之旅》节目里」，行 46 自陈「咱们这个板块的最后一讲」）
+- **作者**：万维钢（提到「罗振宇老师在《文明之旅》节目里」， 自陈「咱们这个板块的最后一讲」）
 - **链接**：https://my.feishu.cn/wiki/VwBOwaYwaiG9mMkhbrRch93TnOh ｜ https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMMwXw6bEOLl5GPx
 - **发表**：2026-05-20 05:56
 - **素材路径**：`raw/2026-09-18-transfer-bridging.md`（471 行，frontmatter 1–36）
@@ -109,7 +109,7 @@ status: active
 
 - [[2026-09-18-transfer-bridging]]（`raw/2026-09-18-transfer-bridging.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[transfer-of-learning]]
 - [[david-perkins]]
