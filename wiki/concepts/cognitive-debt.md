@@ -19,11 +19,7 @@ status: active
 >
 > 提出者：[[nataliya-kosmyna]]（MIT 媒体实验室）。**本库无一手材料，整页 `confidence: low`。**
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 1. **它不是「学得慢」，是「学得假」。** 债务的形式是**能力的真实流失**，
    而当事人往往**感觉不到** —— 这是它比「没学会」更麻烦的地方。
@@ -102,7 +98,8 @@ MIT 实验的设定：54 名大学生，戴脑电图，写 20 分钟 SAT 风格�
 - **区别于 [[deliberate-practice]]**：刻意练习讲**怎么练更有效**（正向方法）；
   本页讲**不练会怎样**（负向后果）。**但两者的推论一致：都要求人亲自出力。**
 - **需要与 [[wang-shuaiguo]] 的「虚假的掌握感」对照阅读** —— 两条独立研究同向，是本主题最强的证据形态。
-
+- [[cognitive-outsourcing]]、[[nataliya-kosmyna]]、[[wang-shuaiguo]]
+- [[retrieval-practice]]、[[prediction-error]]、[[desirable-difficulty]]
 ## 待办 / 开放问题
 
 - [ ] **收录 Kosmyna 的论文** —— 本页全部数字的源头，目前**一个都没核**
@@ -115,7 +112,3 @@ MIT 实验的设定：54 名大学生，戴脑电图，写 20 分钟 SAT 风格�
 - [[2026-09-18-writing-is-thinking]]（**唯一来源**，J 段为主，K、M 段补充）
 - 该素材转述的原始研究：Kosmyna 等（MIT）2025 年 6 月论文 —— **未收录**
 
-## 相关页面
-
-- [[cognitive-outsourcing]]、[[nataliya-kosmyna]]、[[wang-shuaiguo]]
-- [[retrieval-practice]]、[[prediction-error]]、[[desirable-difficulty]]

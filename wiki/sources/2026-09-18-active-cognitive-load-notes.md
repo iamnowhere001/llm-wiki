@@ -134,7 +134,7 @@ status: active
 > 注意区分：**「原文没有这句话」（#11）与「查不到出处」（#15）是两种不同的缺陷**，不要合并。
 > 另：**#4 与 #5 是「书里有但无引注 / 有引注但用错」**，与「书里根本没有」不是一回事。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 ### 2026-09-20 裁定：不是矛盾，是「主动性」与「工程化」两个维度
 
@@ -194,22 +194,11 @@ status: active
 - 库内**第一次**出现「注意力 Pro 模式 = 主动把简单任务变难」这个提法，与「不等待世界给你难题，而是把世界本身变成一道难题」这条操作化。
 - 库内**第一次**出现「高认知负荷是快乐源泉」的因果链（走神 → 不快乐，而非反向）。
 - 讲稿点名但**库内无实体页**：Cal Newport、Matthew Killingsworth、Daniel Gilbert；AI 段点名但库内无实体页：Marcus Raichle、Steven Kotler、Wolfram Schultz、Simone Weil、William James。
-
-## 回填清单（**已于 2026-09-19 部分执行**）
-
-- `wiki/concepts/cognitive-load-theory.md` —— 加一条「符号对撞」记录：本讲把 CLT 的**负债量**立成了**目标状态**。本批素材里对该页最硬的一次冲击。
-  > **2026-09-20 注**：该项**已于本日执行**，但内容随裁定改变 —— 不再记「符号对撞」，
-  > 改记「**两个维度、互为条件**」（主动性 vs 工程化）。见 [[cognitive-load-theory]] 的 2026-09-20 回填节与 [[decisions]]。
-- `wiki/sources/2026-09-18-cognitive-load-theory.md`（学习与教育第 1 讲）—— 补一句「同一术语在成长战略第 6 讲被反向使用」。
-- `wiki/concepts/desirable-difficulty.md` —— 补交叉引用（同向、目标不同：记忆 vs 注意力 / 情绪）。
-- `wiki/concepts/flow-terminology.md` —— 记录本讲是第五份触及心流的素材 + 又一套四周期 + 500% / 400%。
-- `wiki/concepts/rumination.md` —— 补「低认知负荷 → DMN → 反刍」这个入口侧解释。
-- `wiki/concepts/prediction-error.md` —— 补 AI 段 Schultz RPE 与「预测失败焦虑区」语境。
-- `wiki/concepts/cognitive-outsourcing.md` 或 `cognitive-debt.md` —— 收录行 774 / 778 这条 AI 段自陈证据（须标注生成性质）。
-- `wiki/projects/modern-thinking-tools.md` —— 缺口表 / 知识一节回链（由主控处理）。
-- **候选、本库暂不建**：`wiki/analyses/` 一页比较「CLT 的负债 vs 目标状态」；`wiki/entities/` 补 Cal Newport / Killingsworth 等。
-
-## 待办 / 开放问题
+- [[cognitive-load-theory]]（**2026-09-20 前记作「矛盾主体」，现改记「同题的另一维度」** —— 见「2026-09-20 裁定」节）
+- [[desirable-difficulty]]、[[flow-terminology]]、[[deliberate-practice]]
+- [[rumination]]、[[prediction-error]]、[[cognitive-outsourcing]]、[[cognitive-debt]]
+- [[2026-09-18-cognitive-load-theory]]、[[2026-09-18-desirable-difficulty]]
+- [[john-sweller]]、[[wanweigang]]、[[modern-thinking-tools]]## 待办 / 开放问题
 
 - [x] **CLT 张力已裁定（2026-09-20）** —— 北洛裁定：**不是矛盾，是两个维度**（主动性 vs 工程化，互为条件）。
       原问题「要不要把『主动高认知负荷』写成 CLT 的对手命题」**随之关闭** —— 它不再是命题。见「2026-09-20 裁定」节。
@@ -225,7 +214,17 @@ status: active
 - [ ] 图片 `img-01`（8.8 MB，AI 生成漫画）**未做 OCR / 内容比对**。
 - [ ] raw frontmatter 引用的讲次依据页 **`2026-09-18-growth-strategy-module-notes` 在库内不存在** —— 讲次编号（012）的依据悬空，需补建该页或改指。
 - [ ] 讲稿段「研究者分析……很可能跟现代世界让人越来越难以集中注意力有关」（行 155）把 FT 的多个竞争假设简化为单一归因 —— 待复核原始报道。
-
+- `wiki/concepts/cognitive-load-theory.md` —— 加一条「符号对撞」记录：本讲把 CLT 的**负债量**立成了**目标状态**。本批素材里对该页最硬的一次冲击。
+  > **2026-09-20 注**：该项**已于本日执行**，但内容随裁定改变 —— 不再记「符号对撞」，
+  > 改记「**两个维度、互为条件**」（主动性 vs 工程化）。见 [[cognitive-load-theory]] 的 2026-09-20 回填节与 [[decisions]]。
+- `wiki/sources/2026-09-18-cognitive-load-theory.md`（学习与教育第 1 讲）—— 补一句「同一术语在成长战略第 6 讲被反向使用」。
+- `wiki/concepts/desirable-difficulty.md` —— 补交叉引用（同向、目标不同：记忆 vs 注意力 / 情绪）。
+- `wiki/concepts/flow-terminology.md` —— 记录本讲是第五份触及心流的素材 + 又一套四周期 + 500% / 400%。
+- `wiki/concepts/rumination.md` —— 补「低认知负荷 → DMN → 反刍」这个入口侧解释。
+- `wiki/concepts/prediction-error.md` —— 补 AI 段 Schultz RPE 与「预测失败焦虑区」语境。
+- `wiki/concepts/cognitive-outsourcing.md` 或 `cognitive-debt.md` —— 收录行 774 / 778 这条 AI 段自陈证据（须标注生成性质）。
+- `wiki/projects/modern-thinking-tools.md` —— 缺口表 / 知识一节回链（由主控处理）。
+- **候选、本库暂不建**：`wiki/analyses/` 一页比较「CLT 的负债 vs 目标状态」；`wiki/entities/` 补 Cal Newport / Killingsworth 等。
 ## 定级理由
 
 - **证据层级**：**混层素材**。讲稿段是得到付费课程的二手科普（具名引注 4 条，全部可核，含 1 处使用失真）；
@@ -241,12 +240,5 @@ status: active
 |---|---|---|---|
 | 1 | `JUlHbX18IowwsYxhQUecSFRKngd` | `assets/2026-09-18-active-cognitive-load-notes-img-01.png` | 8,801,143 |
 
-（正文行 119 的图片链接已就地改写为本地相对路径；图片内容为 AI 生成漫画，说明文字由抓取工具生成。）
+（正文 的图片链接已就地改写为本地相对路径；图片内容为 AI 生成漫画，说明文字由抓取工具生成。）
 
-## 相关页面
-
-- [[cognitive-load-theory]]（**2026-09-20 前记作「矛盾主体」，现改记「同题的另一维度」** —— 见「2026-09-20 裁定」节）
-- [[desirable-difficulty]]、[[flow-terminology]]、[[deliberate-practice]]
-- [[rumination]]、[[prediction-error]]、[[cognitive-outsourcing]]、[[cognitive-debt]]
-- [[2026-09-18-cognitive-load-theory]]、[[2026-09-18-desirable-difficulty]]
-- [[john-sweller]]、[[wanweigang]]、[[modern-thinking-tools]]

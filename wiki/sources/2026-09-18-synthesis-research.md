@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第五讲**。
 > **本批九讲里与本库自身主题最贴近的一讲** —— 它描述的动作，`llm-wiki` 正在做。
 
-- **作者**：万维钢（**行 102 图片水印「调研助手 By Weigang Wan」** —— 本批九讲里唯一的拉丁转写署名）
+- **作者**：万维钢（** 图片水印「调研助手 By Weigang Wan」** —— 本批九讲里唯一的拉丁转写署名）
 - **链接**：https://my.feishu.cn/wiki/R5Zowh0RhiOVqMkr5eNcoy90npc ｜ https://www.dedao.cn/course/article?id=9GEyP73eprvKBPY9eQJcX8cLnOg
 - **发表**：2026-05-12 23:16
 - **素材路径**：`raw/2026-09-18-synthesis-research.md`（463 行，frontmatter 1–36）
@@ -45,7 +45,7 @@ status: active
 
 ### 本讲最重要的两段（本库视角）
 
-**一、作者自述的中级调研方法（行 126）**
+**一、作者自述的中级调研方法 **
 
 > 「从 2021 年开始，我花了一年多的时间，从头到尾精读了总共 **66 本**关于中国经济的新书……
 > 我把每一本书都写了详尽的读书笔记。我建了 **9 个超大文档**，每个文档里有若干个议题。
@@ -109,7 +109,7 @@ status: active
 
 - [[2026-09-18-synthesis-research]]（`raw/2026-09-18-synthesis-research.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[synthesis-research]]
 - [[wanweigang]]

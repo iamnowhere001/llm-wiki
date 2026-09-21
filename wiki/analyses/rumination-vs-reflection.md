@@ -76,7 +76,7 @@ status: active
 | **无意识层动机** | 回避核心负性情绪与痛苦意象 | **回避厌恶情境与「采取行动的责任」** |
 
 - 原文措辞是「**更**」（More）而非绝对 —— 行 770–773：「although rumination *can* involve concerns about possible threats in the future, it **predominantly** involves going over past events」。
-- **反刍的独特主题是「丧失」**（行 776–778）：「through fate, one's own failure, or the failure of others to live up to expectations」。
+- **反刍的独特主题是「丧失」**：「through fate, one's own failure, or the failure of others to live up to expectations」。
 
 ### 第二组：反刍 vs 反思（三条）
 
@@ -86,11 +86,11 @@ status: active
 | **立场** | 沉浸 · 第一人称 | 距离 · 第三人称 / 时间抽离 | Kross 等 |
 | **终止性** | 持续沉浸在落差中 | **导向问题解决，或放弃不可达目标** | 自我调节理论（行 1635–1664） |
 
-**「终止性」是本轮新增的一条，也是最有操作性的一条。** 原文（行 1660–1664）：
+**「终止性」是本轮新增的一条，也是最有操作性的一条。** 原文：
 
 > 「rumination can be adaptive when it **leads to problem solving or the abandonment of unattainable goals**, but it is maladaptive when the individual **only perseverates on discrepancies**.」
 
-它还解释了 brooding 定义里的「被动」是什么意思（行 1578–1580）—— 焦点在抽象的「why me?」与「克服问题的障碍」上，而不是在解决方案上。
+它还解释了 brooding 定义里的「被动」是什么意思 —— 焦点在抽象的「why me?」与「克服问题的障碍」上，而不是在解决方案上。
 
 ## 三、三条常被使用但站不住的判据
 
@@ -120,7 +120,7 @@ Kross 等 (2012) 对重度抑郁患者的实验：让被试分析负性生活事
 ```
 
 > [!warning] 这张 2×2 仍是本库的推断
-> 文献给的是**两条独立的轴**，**没有一篇把它们正交化**。且一手素材（行 1811–1814）的措辞更谨慎：
+> 文献给的是**两条独立的轴**，**没有一篇把它们正交化**。且一手素材 的措辞更谨慎：
 > 「the maladaptive component of rumination **may be** its abstract analytical aspects」—— 用的是 may be。
 > 「具体 + 沉浸」一格两套理论**未交叉验证**，故标灰。
 
@@ -136,7 +136,7 @@ Kross 等 (2012) 对重度抑郁患者的实验：让被试分析负性生活事
 | **与自杀意念的关联** | Miranda & Nolen-Hoeksema (2007) 社区样本：基线反思显著预测一年后是否出现自杀想法 |
 | **反思可能激活反刍** | Bernstein 等 (2019)：长时间或高强度使用反思可能激活 brooding 样过程 |
 
-**最有实证力的一条（行 918–933）**：反刍者**自称在解决问题**，但实际更不愿承诺执行自己生成的方案、更容易从现实问题中脱离 —— **且这些在统计控制抑郁情绪后仍成立**。
+**最有实证力的一条 **：反刍者**自称在解决问题**，但实际更不愿承诺执行自己生成的方案、更容易从现实问题中脱离 —— **且这些在统计控制抑郁情绪后仍成立**。
 
 **结论**：「我在反思」不构成安全声明。判据不是自称的性质，而是**它的后果** —— 是否重复、是否长期、**是否产生动作**。
 
@@ -161,7 +161,7 @@ Kross 等 (2012) 对重度抑郁患者的实验：让被试分析负性生活事
 
 **与 [[cognitive-reappraisal]] 的区别必须说清，而且现在更尖锐了：**
 认知重评改**想法的内容**（威胁→挑战）；具体化改**思维的过程**（为什么→怎么）。
-一手素材更进一步（行 1918–1936）—— 它转述 Barber & DeRubeis (1989) 与 Teasdale 等 (1995) 主张：
+一手素材更进一步 —— 它转述 Barber & DeRubeis (1989) 与 Teasdale 等 (1995) 主张：
 **认知疗法「不是通过改变认知内容」起效，而是教人与认知保持距离。**
 **这与库内 [[cognitive-reappraisal]] 「事实不变、意义重写」的定位形成直接张力。** 见该页新增的开放问题。
 
@@ -194,11 +194,11 @@ Kross 等 (2012) 对重度抑郁患者的实验：让被试分析负性生活事
 - [ ] **补录 Watkins (2008) 加工模式综述原文** —— 本页三条判据里证据最强的一条，目前只有转引
 - [ ] **「具体 + 沉浸」那一格** —— 两套理论未交叉验证
 - [ ] **Moser 等 (2017) 能否外推到急性期？** 本库推断，需直接检验
-- [ ] **RFCBT 与认知重评的对照研究** —— 改过程 vs 改内容（本素材行 1918–1936 使这个张力更尖锐）
+- [ ] **RFCBT 与认知重评的对照研究** —— 改过程 vs 改内容（本素材 使这个张力更尖锐）
 - [ ] **Marroquín / Miranda / Bernstein 三条反例未经原文核对** —— 按新立的补救规则，它们目前只能算「据检索印象（未核实）」
 - [ ] **`sources` 留空页面的正文语气**是否要写进 `AGENTS.md`？本页修正史提出的补救规则目前只写在本页
 
-## 相关页面
+## 与其他页面的关系
 
 - [[rumination]] —— 本页直接回答的缺口；其定义已被本页回滚为正确版本
 - [[nolen-hoeksema]]、[[ed-watkins]] —— 本页两条判据线的源头人物

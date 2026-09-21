@@ -14,16 +14,12 @@ status: active
 
 # Simon Wardley（西蒙·沃德利）
 
-> **英国人，前 Fotango CEO，约 2005 年发明「沃德利地图（Wardley Mapping）」（[[2026-09-19-wardley-map]] 行 51）。**
-> 他是**本库第一个「框架作者被讲稿点名、且可外部核实」的实体**（行 51 点名；sources 页核查表 #1 已核）。
+> **英国人，前 Fotango CEO，约 2005 年发明「沃德利地图（Wardley Mapping）」（[[2026-09-19-wardley-map]]）。**
+> 他是**本库第一个「框架作者被讲稿点名、且可外部核实」的实体**（点名；sources 页核查表 #1 已核）。
 
 - **类型**：人物（战略家 / 企业高管）
 - **别名**：中文素材作「西蒙·沃德利」
 - **外部链接**：`wardleymaps.com`（其官方站点）
-
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-19-wardley-map]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
 
 ## 是什么
 
@@ -47,7 +43,7 @@ status: active
 - 提出 [[wardley-map]] —— 本库对其理论的落点页。
 - 出现在 [[modern-thinking-tools]]「模块四 赚钱逻辑」（讲次表编号（推定）063）。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[wardley-map]] —— 他的核心创造
 - [[modern-thinking-tools]] —— 本库引用他的语境
@@ -58,5 +54,5 @@ status: active
 
 ## 来源
 
-- [[2026-09-19-wardley-map]]（讲稿 C 段行 51–75；外部核查 #1、#4、#6）
+- [[2026-09-19-wardley-map]]（讲稿 C 段；外部核查 #1、#4、#6）
 - 外部核查来源：Simon Wardley 本人 blog / 播客 / `wardleymaps.com` FAQ。**均未收录进 `raw/`**

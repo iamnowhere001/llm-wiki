@@ -59,7 +59,7 @@ status: active
 
 **他也与 [[thomas-sowell]] 构成一处呼应**：两人都主张「感觉不能直接生成结论」，但埃利斯走的是临床路径（改变非理性信念），索维尔走的是公共话语批判路径。见 [[thinking-vs-feeling]]。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[cognitive-reappraisal]] —— 直接作用于 ABC 模型中的 B 环节
 - [[emotion-regulation-toolkit]] —— 素材一中的 ABCDE 模型属于这一族技术

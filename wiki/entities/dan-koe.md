@@ -22,10 +22,6 @@ status: active
 - **商业关联**：[[eden]]（eden.so）的运营者
 - **外部链接**：https://x.com/thedankoe
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-dankoe-remember-what-you-read]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 是什么
 
 以长篇 newsletter / X 长文为主要形式的创作者，主题集中在个人成长、心智模型、一人商业与创作方法。在本知识库中，他的价值不在于身份，而在于**他提供了一条与 [[andrej-karpathy]] 完全独立的路径**，却抵达了几乎相同的知识库架构 —— 见 [[commonplace-book-vs-llm-wiki]]。
@@ -53,7 +49,7 @@ status: active
 - 对「工具崇拜」持批判态度，同时自己又在卖工具 —— 阅读其内容时需注意这一张力。
 - 长文含大量自我推广，[[2026-09-18-dankoe-remember-what-you-read]] 已做利益披露标注。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[commonplace-book]]
 - [[cybernetic-learning]]

@@ -4,7 +4,7 @@ author: 万维钢（得到课程讲稿）；收尾「有偈赞曰」的代笔者
 url: https://my.feishu.cn/wiki/HdDjwhxv3i3vXwk0xBHcxI1qnQh
 source_url: https://www.dedao.cn/course/article?id=EGBgdkRbn1mKgdWBQgVY890D3rvPOA
 kind: course-article
-series: 得到《现代思维工具课》「模块七 演化者」正文｜讲次表编号（推定）098
+series: 得到《现代思维工具课》「模块七 演化者」正文｜发刊词编号 083｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块七 演化者」正文｜讲次表编号（推定）098」
 published: 未标注 —— 正文中的时间戳为 2026-07-16 23:23，与 `node_create_time` 逐字相同（见 `capture_note`）
 clipped: 2026-09-19
 capture_quality: high

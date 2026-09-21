@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；「这本书到底讲了什么？」以下各段
 url: https://my.feishu.cn/wiki/Xac3wQLAOivOWYkvp9Uc09X7nLf
 source_url: https://www.dedao.cn/course/article?id=7EGBgdkRbn1mKgd6d5VY890D3rvPOA
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 7 讲（官方编号 013）
+series: 得到《现代思维工具课》「模块一 成长战略」第 7 讲｜发刊词编号 013｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 7 讲（官方编号 013）」
 published: 2026-04-02 07:20
 clipped: 2026-09-18
 capture_quality: high

@@ -45,7 +45,7 @@ status: active
 
 因此他给出三步法，其中 Step 1 的关键是「让想法不会消失在虚空里」—— 因为创作依赖你**重新浮现**它们的能力。他给出两条路：Claude Code + Obsidian（自建），或 MyMind / Eden（托管，自动打标签、分类、嵌入）。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 **这是本知识库目前最重要的一个交叉点。** 它同时提供了三样东西：
 
@@ -59,6 +59,10 @@ status: active
 
 > [!warning] 利益披露
 > 本文**含大量自我推广**。作者是 Eden（eden.so）的运营者，文中多次推广该产品并附 UTM 链接。关于 Eden / MyMind 的能力描述均属**厂商自述**，本知识库未做独立验证。引用这些内容时已标注来源性质。
+- [[commonplace-book-vs-llm-wiki]]
+- [[cybernetic-learning]]
+- [[commonplace-book]]
+- [[2026-09-18-karpathy-llm-wiki]]
 
 ## 新出现的实体 / 概念
 
@@ -73,13 +77,6 @@ status: active
 - [ ] 正文经 AI 抓取工具提取，存在转写偏差风险，需与原文比对核校
 - [ ] Naval 与 Devon Eriksen 的两段引文未找到原始出处，属于**二次转引**
 - [ ] MyMind 与 Eden 的能力描述需独立验证，不能采信厂商自述
-
-## 相关页面
-
-- [[commonplace-book-vs-llm-wiki]]
-- [[cybernetic-learning]]
-- [[commonplace-book]]
-- [[2026-09-18-karpathy-llm-wiki]]
 
 ## 归属判断
 

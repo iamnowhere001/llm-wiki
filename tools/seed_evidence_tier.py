@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""给全部知识页写入 evidence_tier，并给「孤证 / 名义交叉」两类页面插入可见警示。
+"""给全部知识页写入 evidence_tier 字段（2026-09-19）。幂等：可反复运行。
 
-一次性脚本（2026-09-19）。幂等：已写入的页面会跳过，可反复运行。
+2026-09-21：不再往正文插「孤证 / 名义交叉」样板警示块。
+判据：那两句话是 `evidence_tier: single` 的逐字复述 —— 全库 235 页各抄一遍同一段，
+读者每打开一页都要先读一遍「本页只有一份来源」。信息没有丢：字段仍在 frontmatter，
+`lint` 会校验它与素材是否一致，站点在页头渲染徽标（见 wiki/schema.md §1.2）。
+`strip_callouts` 保留 —— 它负责撤除存量，也负责将来有人重新引入时清掉。
 
 用法：
     python3 tools/seed_evidence_tier.py          # 只打印会做什么（dry run）
@@ -77,11 +81,11 @@ def strip_callouts(text):
 
 
 def build_callout(tier, n, fams, srcs):
-    if tier == "single":
-        links = "、".join("[[%s]]" % s for s in srcs)
-        return TIER_NOTE["single"] % (n, links)
-    if tier == "crossed" and len(fams) == 1:
-        return TIER_NOTE["samefam"] % (n,)
+    """2026-09-21 起恒定返回 None —— 正文不再插样板块（见模块 docstring）。
+
+    保留函数签名是因为调用方与「撤除」路径都依赖它：返回 None 即「本页不需要警示块」，
+    `need_body` 因此只在**存量块还在**时才为真，于是重跑本脚本＝清掉存量。
+    """
     return None
 
 

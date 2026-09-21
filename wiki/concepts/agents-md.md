@@ -16,7 +16,7 @@ status: active
 
 > 放在项目根目录、用 Markdown 写的一份**给 AI 智能体的行为约定**。它的关键性质不是「能被 AI 读到」，而是**换一个 IDE 还能用** —— 这让它成为一个接口，而不是某家的配置格式。
 
-## 要点
+## 关键要点
 
 - 位置固定：项目根目录，纯 Markdown，随代码一起进 git。
 - 作用域：项目级 —— 只在该项目中生效。
@@ -122,7 +122,7 @@ AI 编程工具普遍需要一个「告诉 AI 这个项目的规矩」的地方�
 - 是 [[llm-wiki-pattern]] 中「schema 层由人类与 LLM 共同演进」的载体。
 - 是 [[harness-engineering]] 中「第一种形式」的最常见载体，也是 [[harness]] 项目的枢纽页。
   即**把 agent 犯过的错固化成一条常驻规则** —— 这条用法在 [[2026-09-19-hashimoto-my-ai-adoption-journey]] 里有明确实例（Ghostty 的 `AGENTS.md`）。
-  **2026-09-19 该对应关系已获一手核实**：素材已落盘，Hashimoto 原文（行 223–224）称 Ghostty 的 `AGENTS.md`
+  **2026-09-19 该对应关系已获一手核实**：素材已落盘，Hashimoto 原文 称 Ghostty 的 `AGENTS.md`
   **每一行都基于一次 agent 的坏行为**，且「almost completely resolved them all」。
   **本条此前写的「一手素材未落盘，只建立链接不立断言」已过期，现更正。**
   **展开见 [[harness-explained]] 的「最小 harness 清单」** —— 那张表把本页定位为构件 1（薄的常驻规则文件），

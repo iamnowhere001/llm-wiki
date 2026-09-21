@@ -62,7 +62,7 @@ status: active
 
 幻灯片后半部分转向教育语境：知识管理在大学环境中的「适配」问题、隐性与显性知识的区分（引 Nonaka & Takeuchi）、以及「整合的责任被留给了学习者」这一诊断。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 **这份素材补上了本库历史上最大的一块空白。** 在收录之前，本库的历史纵深只有 1945（[[vannevar-bush]]）和当下（[[llm-wiki-pattern]]），中间 70 年没有锚点。Frand & Hixon 给出了**「PKM」这个名字本身的出处**，并且它出现的时间点（1998）恰好在万维网普及（1993 起）之后 —— 即「信息过载从专业问题变成个人问题」的那个转折点。
 
@@ -71,6 +71,10 @@ status: active
 **与 [[use-cases]] 的关系**：本文的「Who」一节 —— 从 MBA 学生 → 企业管理者 → 任何领域的任何人 —— 是一条清晰的受众扩散轨迹，可以补进那张场景表。它也印证了 [[use-cases]] 的判断：PKM 只在**知识随时间累积**的领域划算。
 
 **与 [[llm-wiki-pattern]] 的关系**：本文提出的「一个 schema 覆盖全部载体」在 1998 年是愿望；本库的 [[three-layer-architecture]] 与统一的 frontmatter 规范可以视为这个愿望的一次具体实现。差别在于：Frand & Hixon 时代的 schema 必须由人手工维持，而 LLM 可以承担维持工作。
+- [[pkm-history]]
+- [[llm-wiki-pattern]]
+- [[use-cases]]
+- [[vannevar-bush]]
 
 ## 待办 / 开放问题
 
@@ -78,13 +82,6 @@ status: active
 - [ ] 「PKM 术语由本文首发」这一判断基于检索，未穷尽 1998 年之前的文献
 - [ ] PDF 提取后版面关系丢失（标题/要点/引文分栏被打散），个别句子顺序需对照原 PDF 核验
 - [ ] 文件名保留了检索阶段误记的 `1999-` 前缀（附件名不可改，见 [[plain-text-and-git]] 的不可变约定）
-
-## 相关页面
-
-- [[pkm-history]]
-- [[llm-wiki-pattern]]
-- [[use-cases]]
-- [[vannevar-bush]]
 
 ## 已知缺失
 

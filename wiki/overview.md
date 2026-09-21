@@ -92,7 +92,7 @@ status: active
 |---|---|---|
 | 二 · 个人情绪觉知 | [[emotion-awareness]] | 情绪的认知机制 + 病理与对策，**证据状态逐页标注** |
 | 三 · 巅峰表现与心流 | [[peak-performance]] | 机制是真的，还是自助书工业的包装 |
-| 四 · 现代思维工具 | [[modern-thinking-tools]]（**课程级项目**） | 按**整门课**收，证据质量落差最大的一条 |
+| 四 · 现代思维工具 | [[modern-thinking-tools]]（**课程级项目**，**2026-09-21 完结**） | 全课 119 讲已收 103，**证据质量落差最大的一条**。`goal` 本体见 [[modern-thinking-tools-review]]（逐讲证据性质地图）；未收 17 讲由 [[modern-thinking-tools-collection]] 承接 |
 | 五 · Harness Engineering | [[harness]]（**2026-09-19 新增**） | **agent 怎么不犯错** —— 与主线一相邻（共用 [[agents-md]] 这个枢纽），但问题不同：那边问「知识怎么编译」，这边问「agent 怎么可靠」 |
 
 ### 一条贯穿的主线

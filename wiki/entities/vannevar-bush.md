@@ -58,7 +58,7 @@ Memex 是 Bush 在 1945 年《As We May Think》中描述的一种假想设备�
 
 **完整的历史位置见 [[pkm-history]]。** 简言之：Bush 定义了问题（连接如何建立、谁来维护），此后八十年是不断尝试回答它的过程。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[pkm-history]]
 - [[bidirectional-links]]

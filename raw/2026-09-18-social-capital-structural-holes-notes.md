@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；结尾「位置也是一种资本」以下为 AI
 url: https://my.feishu.cn/wiki/IXarwfcruihufBkgGngcbpkKnVg
 source_url: https://www.dedao.cn/course/article?id=R2Mo65zY4QZ3VnmLmpKqEdNAa98jGB
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 8 讲（官方编号 014）
+series: 得到《现代思维工具课》「模块一 成长战略」第 8 讲｜发刊词编号 014｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 8 讲（官方编号 014）」
 published: 2026-04-02 23:07
 clipped: 2026-09-18
 capture_quality: high

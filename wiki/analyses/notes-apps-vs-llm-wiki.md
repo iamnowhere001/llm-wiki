@@ -183,7 +183,7 @@ Flomo、飞书、网页剪藏、微信收藏 —— 捕捉端随便用，因为�
 
 > [!note] 检索记录（按 `wiki/schema.md` §4.1，说「库里没有」必须写明检索范围）
 > 2026-09-19 在 `wiki/` 目录下逐行扫描以下词：`flomo` / `Notion` / `飞书` / `Obsidian` / `笔记软件` / `托管` / `维护模式` / `协作` / `编辑器` / `本地优先` / `数据库` / `块级` / `大纲` / `速记` / `碎片` / `收件箱` / `捕捉` / `云端` / `同步` / `权限` / `分享`（共 21 词）。
-> 结果：**`flomo` 在 `wiki/` 下 0 命中**（仅在 3 份 `raw/` 素材中被顺带提及：[[2026-09-18-tacit-knowledge]] 行 491、[[2026-09-18-transfer-bridging]] 行 463、`raw/2026-09-19-probability-distribution-notes.md` 行 299）；
+> 结果：**`flomo` 在 `wiki/` 下 0 命中**（仅在 3 份 `raw/` 素材中被顺带提及：[[2026-09-18-tacit-knowledge]] 、[[2026-09-18-transfer-bridging]] 、`raw/2026-09-19-probability-distribution-notes.md`）；
 > **`Notion` 在 `wiki/` 下仅 2 命中**，且都不是评估（本页所在缺口表那一行 + Dan Koe 的转述）。
 > **结论：库里没有对 Flomo 与 Notion 的实质评估。** 本页涉及它们的内容均为层次判断（本库推断），不是素材结论。
 

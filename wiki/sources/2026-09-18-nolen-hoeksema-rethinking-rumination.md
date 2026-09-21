@@ -18,7 +18,7 @@ status: active
 > 反刍与反思的边界 —— 并且**推翻了本库在同一天、用同一批二手印象做出的一个断言**。见下方核查表。
 
 - **作者**：Susan Nolen-Hoeksema、Blair E. Wisco（Yale University）、Sonja Lyubomirsky（University of California, Riverside）
-- **素材路径**：`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`（**2,837 行**；frontmatter 行 1–48，正文自 [p.1] 起） ｜ `raw/assets/2026-09-18-nolen-hoeksema-rethinking-rumination.pdf`（25 页 / 269,833 字节）
+- **素材路径**：`raw/2026-09-18-nolen-hoeksema-rethinking-rumination.md`（**2,837 行**；frontmatter ，正文自 [p.1] 起） ｜ `raw/assets/2026-09-18-nolen-hoeksema-rethinking-rumination.pdf`（25 页 / 269,833 字节）
 
 > [!warning] 行号核对
 > 本页行号对应的文件总长 2,837 行（`wc -l`）。
@@ -28,10 +28,10 @@ status: active
 ## 关键要点
 
 1. **反刍的权威定义（行 1519–1521）**：「the type of self-reflection we define as rumination — **an abstract, evaluative self-reflection, particularly one focused on negative content**」。注意该句**引用的正是 Watkins (2008)** —— 说明加工模式理论被理论提出者本人吸收进了自己的定义。
-2. **反刍与担忧的区分（行 872–884，TABLE 1）**：四条特征 —— 时间取向、焦点内容、**意识层动机**、**无意识层动机**。见下「TABLE 1」一节。**这是本库此前完全缺失的对照表。**
+2. **反刍与担忧的区分（TABLE 1）**：四条特征 —— 时间取向、焦点内容、**意识层动机**、**无意识层动机**。见下「TABLE 1」一节。**这是本库此前完全缺失的对照表。**
 3. **反刍的独特主题是「丧失」（行 776–778）**：「We suggest that the distinct theme of rumination is **loss**, whether through fate, one's own failure, or the failure of others to live up to expectations.」
 4. **反刍的非意识动机是回避「行动责任」（行 883–884）**：与担忧的「回避核心负性情绪」不同。作者用一整节（行 827–846）论证反刍**为退缩与不活动提供证据基础**。
-5. **反刍者自称在解决问题，实际不解决（行 918–933）**：反刍导致人更多地看到方案的执行障碍、更不愿承诺执行自己生成的方案、更容易从现实问题中脱离 —— **且这些在控制了抑郁情绪后仍成立**。
+5. **反刍者自称在解决问题，实际不解决 **：反刍导致人更多地看到方案的执行障碍、更不愿承诺执行自己生成的方案、更容易从现实问题中脱离 —— **且这些在控制了抑郁情绪后仍成立**。
 6. **本理论被作者自己修正（行 1980–1984）**：反刍确实预测抑郁的**发作**，但「自报反刍**不能可靠预测**重性抑郁发作的**持续时间**」——原始预测未获支持。分心同理：实验操作有效，自报测量无效。
 7. **反刍的适应不良成分是「抽象分析」而非「自我反思」本身（行 1811–1814）**：原文为「the maladaptive component of rumination may be its abstract analytical aspects, whereas a more experiential form of self-reflection is not maladaptive」。
 
@@ -50,7 +50,7 @@ status: active
 > [!note] 它与 Dunlosky 那份的差别：不是「校准器」，是「答案本身」
 > Dunlosky 的价值在于给库内已有主张一个外部准绳。
 > 本份不同 —— 它**就是**那个缺口的答案：本库昨天还不知道反刍与反思怎么分，
-> 而这份文献有一整节（行 1505–1821）专门处理这个问题，且 TABLE 1 给出了对照表。
+> 而这份文献有一整节 专门处理这个问题，且 TABLE 1 给出了对照表。
 > **这是本库第一次由一份素材直接关闭一条【阻塞】缺口。**
 
 ## TABLE 1 —— Distinguishing Features of Worry and Rumination（行 872–884）
@@ -67,7 +67,7 @@ status: active
 
 **第 4 行是本库最该记住的一行** —— 它是「把反刍当回避来治」这个判断的一手依据，也是 [[internal-friction]] 与 [[complaining]] 那两条「用心理活动替代有效行动」在临床文献中的对应物。
 
-## 核查表：用这份文献校准库内已有主张（2026-09-18）
+## 核查表：用这份文献校准库内已有主张
 
 > 核查对象是 [[rumination-vs-reflection]] 的**第一版**（同日早些时候完成，依据为四篇未收录文献的检索印象）。
 > 本表是「先写结论、后拿到一手来源」的完整对账。
@@ -111,7 +111,7 @@ status: active
 - **文本层有字距伪影** —— 大写字母后偶发多余空格（`W ood` / `V olume` / `T .B.`）。**引用原文措辞前须回 PDF 核对。**
 - 全部为英文原文；本页中文表述为本库翻译。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 - **直接关闭 [[emotion-awareness]] 缺口表那条「补录反刍 / 反思文献素材」**
 - **校准并部分推翻 [[rumination-vs-reflection]]** —— 见核查表，该页已据本素材重写

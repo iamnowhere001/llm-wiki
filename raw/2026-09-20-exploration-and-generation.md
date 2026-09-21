@@ -4,7 +4,7 @@ author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对�
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=gpMLla6Py4qK25YOw8XYmvNzjd2Zx1
 kind: course-article
-series: 得到《现代思维工具课》「尾声」正文｜**讲次表未覆盖（wwg000–wwg109 共 110 条中无本份）**
+series: 得到《现代思维工具课》「尾声」正文｜发刊词编号 100｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「尾声」正文｜**讲次表未覆盖（wwg000–wwg109 共 110 条中无本份）**」
 published: 未标注（内证：注释 [3] 引 Wolfram 2026 年 2 月文章 → 推定不早于 2026-02）
 clipped: 2026-09-20
 capture_quality: high

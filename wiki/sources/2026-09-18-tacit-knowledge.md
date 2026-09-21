@@ -113,7 +113,7 @@ status: active
 
 - [[2026-09-18-tacit-knowledge]]（`raw/2026-09-18-tacit-knowledge.md`）
 
-## 相关页面
+## 与其他页面的关系
 
 - [[tacit-knowledge]]
 - [[michael-polanyi]]

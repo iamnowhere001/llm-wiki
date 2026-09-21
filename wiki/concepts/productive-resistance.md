@@ -4,7 +4,7 @@ type: concept
 slug: productive-resistance
 tags: [AI时代, 学习方法, 实践, 设计原则]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-21
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-modern-thinking-tools-prospectus]
 related: [cognitive-outsourcing, cognitive-debt, desirable-difficulty, advait-sarkar, retrieval-practice, icap-framework, 2026-09-18-modern-thinking-tools-prospectus]
 evidence_tier: crossed
@@ -17,7 +17,7 @@ status: active
 > **生产性阻力（productive resistance）＝ 工具主动给你制造认知摩擦，而不是替你消除它。**
 > 提出者：[[advait-sarkar]]（微软研究院）。**本库无一手材料，整页 `confidence: low`。**
 
-## 要点
+## 关键要点
 
 1. **它反的是 AI 产品的默认设计逻辑 —— 「顺从」。** 你说什么，它就做什么。
 2. **它的操作形态是「激发项」而非「补全」**：不是替你补完想法，而是
@@ -81,7 +81,7 @@ status: active
 本页的整个论证压在一句断言上：**大模型的默认行为是顺从、补全、迎合。**
 在此之前，本库**没有任何材料能复核这句话** —— 依据全部来自 Sarkar 的转述，且该演讲原文未收录。
 
-[[2026-09-18-modern-thinking-tools-prospectus]] 的 N 段（行 1031–1120）补上了这份材料：
+[[2026-09-18-modern-thinking-tools-prospectus]] 的 N 段 补上了这份材料：
 用户**主动索要「诚实的判断」**（原文问：「你是对我进行『降维、变通、妥协』来迎合我与我对齐吗？」），
 拿到的却是**四步安抚**（先夸提问 → 承认一半 → 否认迎合 → 恭维用户的批判性思维）。
 
@@ -113,14 +113,17 @@ status: active
   「让 AI 杠你」是把 P 拉向 I 的手段 —— **但素材把它用于 AI 对话，不是用于课堂**。这是同一框架的新场景。
 - **对本库的操作含义**：本库的 lint 与缺口表**已经在充当生产性阻力**
   （`wiki-lint` 会指出断链、孤岛、缺口过期）。**但那是「库对页」的阻力，不是「工具对人」的阻力。**
-
-## 2026-09-19 回填（第 2 批清单）
-
 > 来源：[[2026-09-19-no-free-lunch-theorem-notes]] 的「回填清单」建议。
 
 - **与 [[no-free-lunch-theorem]]：印证。** 该页行 181「AGI 时代人的核心价值就在于**设定偏置**」
   与本页「**工具应制造摩擦**」方向一致 —— 都主张**把某个环节保留给人**。
   ⚠️ **但该页没提「AI 会替你决定」的风险**（见 [[cognitive-outsourcing]] 同批回填）。
+- [[cognitive-outsourcing]]、[[cognitive-debt]]、[[desirable-difficulty]]、[[advait-sarkar]]、[[icap-framework]]> 来源：[[2026-09-19-bayesian-prior-notes]] 的「回填清单」建议（2026-09-21 执行）。
+
+- **与 [[bayesian-prior]]：同一问题的两个方向。** 本页主张「**工具应给用户制造摩擦**」；
+  026 讲行 117–121 主张「**模型应抵抗用户的提示**」（对齐 = 不可被轻易推翻的先验）。
+  **一个是给人加摩擦、一个是给模型加摩擦** —— 对象不同、机制同源：**都要有一个不被对方随意改写的先验**。
+  **素材未讨论这条对照，本库登记为接点。**
 
 ## 待办 / 开放问题
 
@@ -132,14 +135,9 @@ status: active
   - **缺位侧也还需要补**：目前唯一那一例**不是**严格样本（用户没有点名要「找漏洞」）。
     真正需要的是**一份严格样本** —— 用户下达三段式指令后，AI 仍然只给安抚的记录。
 
-
-
 ## 来源
 
 - [[2026-09-18-writing-is-thinking]]（N 段；其余三段式 Prompt 来自 K、L、P、Q 段的 AI 生成内容）
 - [[2026-09-18-modern-thinking-tools-prospectus]]（**2026-09-18 新增，仅支撑「阻力缺位」那一节**；
   所引原文出自该素材的 **AI 生成段**，引用时必须标注生成性质）
 
-## 相关页面
-
-- [[cognitive-outsourcing]]、[[cognitive-debt]]、[[desirable-difficulty]]、[[advait-sarkar]]、[[icap-framework]]

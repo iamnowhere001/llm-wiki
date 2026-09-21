@@ -39,7 +39,7 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 
 文档体系包含三份：`docs/user-guide.md`（使用手册，含 Obsidian 集成与 OpenClaw 接入）、`skills/wiki/IDEA.md`（设计理念）、`skills/wiki/README.md`（技术文档）。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 - **印证**了 [[three-layer-architecture]] 与 [[ingest-query-lint]] —— 目录结构与工作流几乎逐项对应。
 - **补充**了原构想中没有的 `conventions.md` 落点机制：README 明确列出「回答要标注来源 → 记录偏好到 conventions.md」。
@@ -49,6 +49,9 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 > [!warning] 两处待核
 > 1. **License 不一致**：README 结尾写 MIT，但 GitHub API 的 `license` 字段为空（仓库根目录未见 LICENSE 文件）。
 > 2. **描述与 README 不一致**：仓库 description 写「接入 Claude/ChatGPT」，README 标题写「接入 Claude Code」，正文只提 Claude Code。ChatGPT 是否真的支持未说明。
+- [[second-brain-skill]]
+- [[llm-wiki-pattern]]
+- [[2026-09-18-karpathy-llm-wiki]]
 
 ## 新出现的实体 / 概念
 
@@ -60,12 +63,6 @@ README 的论证结构是：先给出「解释器 vs 编译器」的对比，再
 - [ ] 核实 LICENSE 文件是否真的缺失
 - [ ] 查看 `skills/wiki/README.md` 与 `IDEA.md`，确认页面规范是否与本仓库的 `AGENTS.md` 有差异
 - [ ] 确认 OpenClaw 是什么（Web 端运行环境？）
-
-## 相关页面
-
-- [[second-brain-skill]]
-- [[llm-wiki-pattern]]
-- [[2026-09-18-karpathy-llm-wiki]]
 
 ## 来源
 

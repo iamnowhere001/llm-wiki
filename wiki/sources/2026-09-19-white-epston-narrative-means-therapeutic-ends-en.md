@@ -20,7 +20,7 @@ status: active
 > **结果四类共 14 条：推翻 2 / 补齐 5 / 证实 3 / 新增 4。**
 
 - **作者**：Michael White（Dulwich Centre, Adelaide）& David Epston（The Family Therapy Centre, Auckland）
-- **链接**：https://josefaruiztagle.cl/wp-content/uploads/2020/09/Michael-White-David-Epston-Narrative-Means-to-Therapeutic-Ends-W.-W.-Norton-Company-1990-1.pdf
+- **链接**：https://josefaruiztagle.cl/wp-content/uploads/2020/09/Michael-White-David-Epston-Narrative-Means-to-Therapeutic-Ends-W.-W.-Norton-Company-1990-1.pdf（原文链接已移除）
 - **发表**：W. W. Norton & Company，First Edition 1990（ISBN 0-393-70098-4）；版权页记 Copyright © 1990 by Dulwich Centre
 - **素材路径**：`raw/2026-09-19-white-epston-narrative-means-therapeutic-ends-en.md`（9,417 行 / 449,254 字符（含 `[p.N]`、不含换行）/ 264 页） ｜ `raw/assets/1990-white-epston-narrative-means-therapeutic-ends.pdf`（19,958,311 字节，SHA-1 `86222304…`，**未改动**）
 
@@ -105,7 +105,7 @@ status: active
 [[narrative-reframing]] 待办第 3 条问：「五步法有没有人类设计的同类原型？**需要一份可对照的方案**」。
 **答案是有的，且带真实引注。**
 
-原书 **SELF STORIES** 节（行 6688–6707，Epston 执笔）：
+原书 **SELF STORIES** 节（Epston 执笔）：
 
 > 「I (D. E.) often invite people to **record their own stories**… The narrative structure of these
 > recordings is conventionally that of a **"success" story** rather than the **"sad tale"** format
@@ -147,12 +147,12 @@ status: active
 五步法第 3 步「**寻找例外**」≈ unique outcomes（原书 69 次；节标题行 2584）。
 
 **但操作形态不同**：White 的 unique outcomes 是**在「问题对人的影响」逐项铺开之后**才去找的
-（行 2605–2614 用 Sneaky Poo 案例说明：先确立「问题造成了什么效果」，再找「哪一次它没造成这个效果」）。
+（用 Sneaky Poo 案例说明：先确立「问题造成了什么效果」，再找「哪一次它没造成这个效果」）。
 五步法把「寻找例外」放在第 3 步，**前面没有这一步铺开** —— 所以它找的「例外」缺少可对照的基线。
 
 #### B3. 「责任」的正面处理 —— 本库的「阿Q之辨」没有这一层
 
-原书 **RESPONSIBILITY** 节（行 2969–2987）：
+原书 **RESPONSIBILITY** 节：
 
 > 「these practices **do not separate persons from responsibility** for the extent to which they
 > participate in the survival of the problem. In fact, as these practices help persons become aware
@@ -198,7 +198,7 @@ status: active
 | 行 3061–3095 | **THE PANOPTICON**：Bentham 的建筑形式，forge「docile bodies」，一种「very economic form of power」；行 3091 起讲 **The Gaze** |
 
 **五步法完全个人化** —— 没有社会、文化、权力维度。
-原书的命题是：**问题是被文化实践建构的**（行 1126–1137 用「北美原住民的两个故事」说明同一事实在不同主导意识形态下的不同叙事）。
+原书的命题是：**问题是被文化实践建构的**（用「北美原住民的两个故事」说明同一事实在不同主导意识形态下的不同叙事）。
 **这不是「多了一个背景」，而是原书认为问题的一半来源。**
 
 ### C. 证实（3 条）—— 本库的判定经得起一手核对
@@ -237,7 +237,7 @@ status: active
 
 #### D2. 本书 2/3 篇幅是「书面文件」—— 库内完全不知道这一半
 
-**第 3 章（A Storied Therapy，行 3510–7790）** 是**书信**的十类实例集：
+**第 3 章（A Storied Therapy）** 是**书信**的十类实例集：
 
 | 小节 | 行号 | | 小节 | 行号 |
 |---|---|---|---|---|
@@ -247,7 +247,7 @@ status: active
 | Counter-Referral Letters | 4126 | | **Self Stories** | 6687 |
 | Letters of Reference | 4189 | | | |
 
-**第 4 章（Counter Documents，行 7799–8560）**：Certificates（7799）/ Declarations（7813）/
+**第 4 章（Counter Documents）**：Certificates（7799）/ Declarations（7813）/
 Self-certification（8400）/ Conclusion（8556）。
 
 **Epston 的做法（Foreword 行 xiii 转述）**：「He has disciplined himself to **write a letter to the
@@ -409,7 +409,7 @@ family life**」（White, 1988）对应。
 - `raw/2026-09-19-white-epston-narrative-means-therapeutic-ends-en.md`（9,417 行；正文自第 59 行起）
 - 抓取事实与已知缺失见该文件 `capture_method` / `capture_note`（**本页不重复抓取事实**）
 - 校准对象（库内关于叙事疗法的全部断言）：
-  [[narrative-reframing]]（全文，尤其行 29–34 / 76–77 / 124–127 与「待办 / 开放问题」）、
+  [[narrative-reframing]]（全文，尤其 与「待办 / 开放问题」）
   [[2026-09-18-narrative-self]] 行 404–647（I 段五步法）、
   [[2026-09-18-narrative-first-principle]] 行 374–615（E 段 12 练习）与行 198–203、
   [[narrative-identity]] 的开放问题

@@ -53,7 +53,7 @@ Bush 承认人类无法在速度与灵活性上比拟「心智沿着联想路径
 
 > Wholly new forms of encyclopedias will appear, ready-made with a mesh of associative trails running through them, ready to be dropped into the memex and there amplified.
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 **这是本库历史纵深的起点，也是此前最大的一处证据缺口。** 在本次收录之前，[[vannevar-bush]] 页关于 Memex 的描述**只有 [[andrej-karpathy]] 的二手转述**，因此被标注 `confidence: medium` 并挂了「待核验」警告。原文到位后该警告可以撤销。
 
@@ -62,19 +62,16 @@ Bush 承认人类无法在速度与灵活性上比拟「心智沿着联想路径
 **与 [[bidirectional-links]] 的关系**：Bush 描述的是**对称**的连接 —— 两个条目被「永久连接」，任一方都能抵达另一方。这是双向链接最早的思想源头，比 [[ted-nelson]] 的 hypertext 早 20 年。
 
 **一个尚未被解决的问题**：Bush 没有回答**谁来做维护**。他设想的路径由用户手工拉出，且「路径不会消退」是假设而非结论 —— 现实中链接会腐烂、页面会被移动。这一点直到 LLM 能持续维护知识库时才有人接手（见 [[pkm-history]] 的「缺失的一环」一节）。
+- [[vannevar-bush]]
+- [[pkm-history]]
+- [[bidirectional-links]]
+- [[commonplace-book]]
 
 ## 待办 / 开放问题
 
 - [ ] 原文的 6 张插图（memex 桌面示意图等）未下载，仅存文本
 - [ ] 关于「Bush 是互联网奠基推动者之一」的说法来自 [[2026-09-18-appleton-bidirectional-links]]，属转引，未在本素材中直接出现
 - [ ] 1994 年电子版制作者 Denys Duchier 的校订说明保留了，但未核对其与 1945 年印刷版的差异
-
-## 相关页面
-
-- [[vannevar-bush]]
-- [[pkm-history]]
-- [[bidirectional-links]]
-- [[commonplace-book]]
 
 ## 归属判断
 

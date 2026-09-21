@@ -121,7 +121,7 @@ status: active
 
 > **你只是在「通关」**：把你身边的老板、配偶、孩子、父母都当做游戏里的 NPC。他们的愤怒、抱怨、固执，都是他们的底层代码设定的。不要动气入戏，要像个冷静的玩家一样，寻找通关的密码。
 
-## 与本库既有页面的关系
+## 与其他页面的关系
 
 ### 它是素材一的一级来源补充层
 
@@ -169,6 +169,10 @@ status: active
 ### 新增一条与既有主线的连接
 
 本文的「聚焦可控圈」与斯多葛的 [[stoic-control-dichotomy]] 是**同一个原则的现代商业版**：柯维的 Circle of Influence / Circle of Concern 直接对应「能控制的 / 不能控制的」。这是一个跨素材的独立印证 —— 相隔两千年的两个传统给出同一条操作原则。
+- [[emotion-awareness]]（本项目入口）
+- [[cognitive-decoupling]]、[[cognitive-reappraisal]]、[[rumination]]
+- [[viktor-frankl]]、[[stimulus-response-gap]]
+- [[2026-09-18-emotion-awareness-notes]]
 
 ## 新出现的实体 / 概念
 
@@ -183,13 +187,6 @@ status: active
 - [ ] **确认作者署名** —— 文中只说「我们精英日课专栏」，未直接署名
 - [ ] 核对「8 分钟的愤怒发作就能削弱血管扩张功能」的原始研究
 - [ ] 核对「成长型思维」的提出者（文中未点名，通行为 Carol Dweck）
-
-## 相关页面
-
-- [[emotion-awareness]]（本项目入口）
-- [[cognitive-decoupling]]、[[cognitive-reappraisal]]、[[rumination]]
-- [[viktor-frankl]]、[[stimulus-response-gap]]
-- [[2026-09-18-emotion-awareness-notes]]
 
 ## 定级理由
 

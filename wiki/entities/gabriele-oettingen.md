@@ -19,17 +19,13 @@ status: active
 
 - **类型**：人物（研究者）
 - **机构**：纽约大学（NYU）心理学教授（[[2026-09-18-woop-notes]] 核查表 #6，**已核**）
-- **外部链接**：https://woopmylife.org/ —— 其课题组的公开站点，也是 013 讲**唯一的对外链接**（素材注释 `[4]`，raw 行 207）
-
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-woop-notes]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
+- **外部链接**：https://woopmylife.org/ —— 其课题组的公开站点，也是 013 讲**唯一的对外链接**（素材注释 `[4]`，raw）
 
 ## 是什么
 
-心理学家。提出**心理比对**，并把它与执行意图打包成 [[woop]] 四步流程推广（raw 行 83）。她的书 *Rethinking Positive Thinking: Inside the New Science of Motivation*（2014, Penguin Random House）是这一方法的通俗化来源。
+心理学家。提出**心理比对**，并把它与执行意图打包成 [[woop]] 四步流程推广（raw）。她的书 *Rethinking Positive Thinking: Inside the New Science of Motivation*（2014, Penguin Random House）是这一方法的通俗化来源。
 
-她的方法论位置很干净：**反「正能量心理学」**。幻想不是动力来源，反而**降低能量与血压**；必须在幻想之后立刻面对障碍（raw 行 103、105）。
+她的方法论位置很干净：**反「正能量心理学」**。幻想不是动力来源，反而**降低能量与血压**；必须在幻想之后立刻面对障碍（raw）。
 
 ## 关键事实
 
@@ -48,16 +44,16 @@ status: active
 - **与 [[peter-gollwitzer]] 是夫妻** —— 013 讲 raw 行 113 明写「厄廷根的**丈夫**、著名心理学家彼得·戈尔维策」。多家来源一致，但**属二手印证**。
 - **与 [[wishful-thinking-layers]] 有一处待核的同名关系**：013 素材把该页记的「幻想实现理论」称作心理比对的来源 —— **是同一理论的两个名字，还是两个理论？本库未裁定。**
 
-## 相关概念
+## 与其他页面的关系
 
 - [[woop]] —— 她推广的四步流程
 - [[implementation-intentions]] —— 她丈夫提出的第二件武器（WOOP 的 P 步）
 - [[peter-gollwitzer]] —— 配偶与合作者
-- [[self-determination-theory]] —— ⚠️ 013 素材的 AI 段把 WOOP 接到 SDT 三需求上（该素材行 819），**不是她的主张**
+- [[self-determination-theory]] —— ⚠️ 013 素材的 AI 段把 WOOP 接到 SDT 三需求上（该素材），**不是她的主张**
 
 ## 来源
 
-- [[2026-09-18-woop-notes]]（讲稿段行 83、103、111、129–145；注释 `[4]` 行 207。raw `2026-09-18-woop-notes.md`）
+- [[2026-09-18-woop-notes]]（讲稿段；注释 `[4]` 。raw `2026-09-18-woop-notes.md`）
   **本页行号已回 raw 核对（文件绝对行号）。**
 - 外部文献（**未收录进 `raw/`**）：Kappes & Oettingen (2011)；Duckworth et al. (2013)；Sheeran et al. (2013)；Monin et al. (2021)；*Rethinking Positive Thinking* (2014)。
 

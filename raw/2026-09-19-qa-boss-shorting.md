@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与�
 url: https://my.feishu.cn/wiki/HsiBwXK5HinloikCDIacZv9Enpd
 source_url: https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYdM2VlY4jRMdvmbE
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块五 参与者」问答（官方编号 071）—— 本节点在飞书 wiki 中挂于《05_赚钱逻辑》之下，编号落在模块五区间（069–085）
+series: 得到《现代思维工具课》「模块五 参与者」问答｜无发刊词编号（发刊词目录问答不占号）｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块五 参与者」问答（官方编号 071）—— 本节点在飞书 wiki 中挂于《05_赚钱逻辑》之下，编号落在模块五区间（069–085）」
 published: 未标注
 clipped: 2026-09-19
 capture_quality: high

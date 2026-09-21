@@ -20,11 +20,7 @@ status: active
 > 全部信息来自他本人的博客 [[2026-09-19-hashimoto-my-ai-adoption-journey]]（`kind: essay`）。
 > **这是一手文本，不是转述** —— 本库 `evidence_tier` 只认 `paper`，故记 `single`。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-19-hashimoto-my-ai-adoption-journey]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 - **身份**：HashiCorp 联合创始人；Vagrant、Terraform、Ghostty 的作者。
 - **与本库的关系**：2026-02-05 在博客《My AI Adoption Journey》第 5 步中**首次使用「harness engineering」**。
@@ -44,23 +40,20 @@ status: active
 | 5 | **Engineer the Harness** | **命名现场** —— 犯错就工程化，永不再犯 |
 | 6 | Always Have an Agent Running | 目标而非现状；他自述做到 10–20%，且**不打算跑多个** |
 
-## 与本库的关系
+## 与其他页面的关系
 
 - **[[harness-engineering]] 的命名者**，[[harness]] 项目的起点人物。
 - **他的 `AGENTS.md` 用法与 [[agents-md]] 构成一处张力**：他把 `AGENTS.md` 当**错误清单**用
   （每加一行消灭一类错误），而本库更关心它的**常驻成本**（每加一行永久多付一次）。
   两种说法都成立，结论可能冲突。见 [[agents-md]]。
-
-## 待办 / 开放问题
-
-- [ ] 抓取他给 Ghostty 写的 `AGENTS.md` —— 「第一种形式」唯一的实物证据
-
-## 相关页面
-
 - [[harness-engineering]]
 - [[harness]]
 - [[agents-md]]
 - [[2026-09-19-hashimoto-my-ai-adoption-journey]]
+
+## 待办 / 开放问题
+
+- [ ] 抓取他给 Ghostty 写的 `AGENTS.md` —— 「第一种形式」唯一的实物证据
 
 ## 来源
 

@@ -18,10 +18,6 @@ status: active
 > 与「AI 应是思维工具而非助手」这一主张的提出者。**
 > 依据是一场 TED 演讲 —— **本库未收录，全部内容为二手转述。**
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-18-writing-is-thinking]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
 ## 一句话定位
 
 在本库的角色是**给「认知外包」提供命名与设计原则的人**。
@@ -59,7 +55,7 @@ status: active
   「保留材料接触」留在 [[cognitive-outsourcing]]，
   「提供生产性阻力」独立成页 [[productive-resistance]] —— 理由是**只有它无法靠自我要求实现**。
 - 他与 [[nataliya-kosmyna]] 的关系：**他给框架，她给证据**（而两者的依据在本库都只有二手转述）。
-
+- [[cognitive-outsourcing]]、[[productive-resistance]]、[[cognitive-debt]]
 ## 待办 / 开放问题
 
 - [ ] 收录该 TED 演讲，或他在微软研究院的相关论文
@@ -74,6 +70,3 @@ status: active
 
 - [[2026-09-18-writing-is-thinking]]（N 段）
 
-## 相关页面
-
-- [[cognitive-outsourcing]]、[[productive-resistance]]、[[cognitive-debt]]

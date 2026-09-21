@@ -4,7 +4,7 @@ author: 万维钢（讲稿）
 url: https://my.feishu.cn/wiki/QODowcTyUiIHpjkpiB0cBIw0nte
 source_url: https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3moq6K5YmP6DOjxAL
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块一 成长战略」第 11 讲（官方编号 018）
+series: 得到《现代思维工具课》「模块一 成长战略」第 11 讲｜发刊词编号 018｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块一 成长战略」第 11 讲（官方编号 018）」
 published: 未标注
 clipped: 2026-09-18
 capture_quality: high

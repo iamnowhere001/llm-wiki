@@ -21,13 +21,9 @@ status: active
 - **别名**：Raj Chetty
 - **外部链接**：—
 
-> [!warning] 名义交叉，实质同源
-> 本页有 2 份支撑素材，但**全部来自同一来源族** —— 相当于同一处转述被拆成几份，
-> 不构成独立交叉验证。引用时不能把它们算作多个佐证。
-
 ## 是什么
 
-「特别擅长从超大规模的数据中挖掘社会的规律」（`raw/2026-09-18-social-capital-structural-holes-notes.md` 行 36）。
+「特别擅长从超大规模的数据中挖掘社会的规律」（`raw/2026-09-18-social-capital-structural-holes-notes.md`）。
 014 讲用他的两组研究支撑「位置论」，是本讲**证据最硬**的部分。
 
 ## 关键事实
@@ -48,7 +44,7 @@ status: active
 - **注意归属**：014 讲引用的 2025 年英国研究（**Harris**, Iyer, Rutter, Johnston et al.,
   *Social Capital in the United Kingdom*, 2000 万英国居民）**不是切蒂的论文**，不要误挂。
 
-## 相关概念
+## 与其他页面的关系
 
 - [[social-capital]] —— 本页是他的 2022 年研究在库内的落点
 - [[structural-holes]] —— 014 讲横向连接的概念来自伯特，**不是切蒂**
@@ -59,14 +55,14 @@ status: active
 > [!note] 单来源声明 + 一处未核数字
 > 本页的依据只有一份素材（014 讲）加一次直播回指，且**全部原始论文未收录进 `raw/`**。
 > 其中 **「2018 年的 4%」系数未取到原文**，标「（未验证）」；
-> 讲稿「他目前还没有得到诺贝尔经济学奖，但是呼声很高，将来肯定能得」（行 36）是**讲稿评价，未验证**。
+> 讲稿「他目前还没有得到诺贝尔经济学奖，但是呼声很高，将来肯定能得」 是**讲稿评价，未验证**。
 
 - [ ] 取回 Chetty et al. 2018 *QJE* 133(3) 正文，确认 4% 的口径（收入百分位 vs 综合指数）
 - [ ] 确认 2014 与 2022 两篇的识别策略（相关 vs 准因果）
 
 ## 来源
 
-- [[2026-09-18-social-capital-structural-holes-notes]]（讲稿段行 35–147）
-- [[2026-09-18-five-thinking-tools-livestream]]（行 100 的回指）
+- [[2026-09-18-social-capital-structural-holes-notes]]（讲稿段）
+- [[2026-09-18-five-thinking-tools-livestream]]（的回指）
 - 外部核查所用来源：Chetty et al. 2014 *QJE* 129(4)；Chetty & Hendren 2018 *QJE* 133(3)；
   Chetty, Jackson, Kuchler, Stroebel et al. 2022 *Nature* 608:108-121。**均未收录进 `raw/`**

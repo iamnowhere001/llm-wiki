@@ -20,11 +20,7 @@ status: active
 > 全部内容来自 [[2026-09-19-bockeler-harness-engineering-coding-agent-users]] 一份素材。
 > 该素材是**作者一手文本**（`kind: essay`，非转述），但本库 `evidence_tier` 只认 `paper`，故记 `single`。
 
-> [!warning] 孤证 —— 本页仅 1 份素材支撑
-> 支撑本页的只有 [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]，尚未获得第二份独立来源的交叉验证。
-> **引用本页结论时应带着这个前提**，或先补一份独立来源把它升到 `crossed`。
-
-## 要点
+## 关键要点
 
 - **guides = 前馈**：在 agent 行动**之前**塑造它的行为（规则文件、示例、约束）。
 - **sensors = 反馈**：在 agent 行动**之后**检测结果（linter、测试、可观测性）。
@@ -36,7 +32,7 @@ status: active
 
 ### 二分本身
 
-Böckeler 把 harness 的控制手段分成两类（原文行 67–93）：
+Böckeler 把 harness 的控制手段分成两类（原文）：
 
 | | Guides | Sensors |
 |---|---|---|
@@ -50,7 +46,7 @@ Böckeler 把 harness 的控制手段分成两类（原文行 67–93）：
 
 ### 正交维度：computational vs inferential
 
-Böckeler 另给一组切法（原文行 67–85）：**computational** 是机械可判定的
+Böckeler 另给一组切法（原文）：**computational** 是机械可判定的
 （linter、结构测试、类型检查），**inferential** 是需要判断的（代码审查、设计评审）。
 
 **这条维度的实际价值**：它解释了为什么 harness 无法完全自动化 ——

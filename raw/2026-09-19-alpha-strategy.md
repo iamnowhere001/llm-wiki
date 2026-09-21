@@ -4,7 +4,7 @@ author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与�
 url: https://my.feishu.cn/wiki/UMW1wlqOriikB9kbprxcmuBLn6N
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMmbJ7DOop10vZwL
 kind: mixed-notes
-series: 得到《现代思维工具课》「模块四 赚钱逻辑」正文（官方编号 058）
+series: 得到《现代思维工具课》「模块四 赚钱逻辑」正文｜发刊词编号 049｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块四 赚钱逻辑」正文（官方编号 058）」
 published: 未标注
 clipped: 2026-09-19
 capture_quality: high

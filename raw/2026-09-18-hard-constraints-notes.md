@@ -4,7 +4,7 @@ author: 万维钢（本库既有同系列素材已认定，见 series 字段；�
 url: https://my.feishu.cn/wiki/VD7ZwAOERimqGukHefUcsVWHn8o
 source_url: https://www.dedao.cn/course/article?id=2m845Ln7q69yKOOg6wKrkebvGDYjgl
 kind: mixed-notes
-series: 得到《现代思维工具课》「基本世界观」板块（课程归属沿用本库已收录的同板块第一讲 [[2026-09-18-narrative-first-principle]] 的认定）；按发布时间排在该讲之后，推定为本板块第 4 讲 —— 文档未标讲次，此处只记推定
+series: 得到《现代思维工具课》「基本世界观」第 4 讲｜发刊词编号 004｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「基本世界观」板块（课程归属沿用本库已收录的同板块第一讲 [[2026-09-18-narrative-first-principle]] 的认定）；按发布时间排在该讲之后，推定为本板块第 4 讲 —— 文档未标讲次，此处只记推定」
 published: 2026-03-19 22:46
 clipped: 2026-09-18
 capture_quality: medium

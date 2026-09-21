@@ -174,7 +174,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 ## 四、检索陷阱 —— 用这份素材前必须知道
 
 1. **`sugarcane` 检索 0 命中 —— 原书用 `sugar cane`（两个词）。**
-   本轮实测：搜 `sugarcane` 得 **0**；搜 `sugar` 才命中（行 553、1762–1795 等）。
+   本轮实测：搜 `sugarcane` 得 **0**；搜 `sugar` 才命中（等）。
    **分词形式差异导致静默 0 命中** —— 与「grep 静默漏匹配」同型，但成因是词形不是工具。
 2. **`13-point` 检索 0 命中 —— 原书用英文数词 `thirteen to fourteen`，不用阿拉伯数字。**
    这是「数字凭记忆沿用」之外的另一类陷阱：**数字的书写形式不同**。
@@ -219,7 +219,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 ## 六、仍然缺的
 
 1. **原书引用的那些一手研究本身仍未入库** —— 特别是 Mani et al.（2013 *Science*）
-   与 Shah, Mullainathan & Shafir（2012 *Science* 338:682–85，「Angry Blueberries」实验，Notes 行 7082–7143）。
+   与 Shah, Mullainathan & Shafir（2012 *Science* 338:682–85，「Angry Blueberries」实验，Notes）。
    **本页核对的是「原书怎么说」，不是「研究本身对不对」。**
 2. **原书的方法学批评尚未检索** —— 《稀缺》自 2013 年出版后，其核心实验（尤其商场研究）有后续的复现与质疑。
    按 [[schema]] §3.6.1「过期引注」的判据，这是一条**已知的未做事项**。
@@ -227,7 +227,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 3. **中文译本未入库** —— 讲稿的转述与中译本之间的关系未核。
 4. **`focus dividend` 在库内没有任何承接页** —— 本页是本库第一次记录这个概念（D1）。
 
-## 2026-09-20 回填（模块八清单）
+## 与其他页面的关系
 
 > 来源：万维钢《现代思维工具课》「模块八 高观点」（[[modern-thinking-tools]] 区块七）。行号指向各素材文件。
 
@@ -238,6 +238,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
   价值取决于**相对排序**而非绝对数量（见 [[positional-goods]]）。
 - **处置：两页不可互引、不可互证。** 它们只在中文译名上撞车（都叫「稀缺」），机制、来源、量纲全不同。
   **这是本库第一次出现「同一个词、两个义项、各有一页」** —— 不登记这一条，后来的读者会把它们合并。
+
 ## 来源
 
 - `raw/2026-09-19-scarcity-book-en.md`（8,589 行；正文自第 78 行起）

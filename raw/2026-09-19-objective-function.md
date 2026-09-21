@@ -4,7 +4,7 @@ author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段�
 url: https://my.feishu.cn/wiki/Oz0uwqEzxim3sLkRiMBc3gIlnjc
 source_url: https://www.dedao.cn/course/article?id=Age3MrB5aPdV5nYPnkJwD2ky4jvENQ
 kind: course-article
-series: 得到《现代思维工具课》「模块八 高观点」｜讲次表编号（推定）108
+series: 得到《现代思维工具课》「模块八 高观点」正文｜发刊词编号 091｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「模块八 高观点」｜讲次表编号（推定）108」
 published: 未标注 —— 正文中的时间戳为 2026-07-27 22:45，与 `node_create_time` 逐字相同（见 `capture_note`）
 clipped: 2026-09-19
 capture_quality: high

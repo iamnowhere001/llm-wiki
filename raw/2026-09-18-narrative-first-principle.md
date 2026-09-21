@@ -3,7 +3,7 @@ title: "叙事：这个宇宙的第一性原理"
 author: 未署名 —— 飞书 wiki 文档未标注整理者；主文为万维钢《现代思维工具课》「基本世界观」板块第一讲，其后附三名读者留言与三份未署名的 AI 生成块（分层见 sources 页）
 url: https://my.feishu.cn/wiki/O6UPwafnNiqlqakqyKYcJGKHnOf
 kind: mixed-notes
-series: 得到《现代思维工具课》「基本世界观」板块；本库已于 2026-09-18 收录同课程「教育与学习」板块九讲（cognitive-load-theory 等 9 份）
+series: 得到《现代思维工具课》「基本世界观」正文｜发刊词编号 001｜【2026-09-21 裁定】原值：「得到《现代思维工具课》「基本世界观」板块；本库已于 2026-09-18 收录同课程「教育与学习」板块九讲（cognitive-load-theory 等 9 份）」
 published: 2026-03-18 00:41（正文首行自带日期）
 clipped: 2026-09-18
 capture_quality: medium

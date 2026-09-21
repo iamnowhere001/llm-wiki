@@ -3,7 +3,7 @@ title: "自主支持：「献祭式养育」终结者"
 author: 未署名 —— 飞书 wiki 文档未标注整理者；正文为得到（dedao.cn）课程文章，教育与学习板块
 url: https://my.feishu.cn/wiki/JEfowPTAgiSBLzk4mcYc4W9Tn3f
 kind: course-article
-series: 得到「教育与学习」板块九讲（2026-05；本库本次一次性收录全部 9 讲，互为同系列）
+series: 得到《现代思维工具课》「模块三 学习教育」正文｜发刊词编号 046｜【2026-09-21 裁定】原值：「得到「教育与学习」板块九讲（2026-05；本库本次一次性收录全部 9 讲，互为同系列）」
 published: 2026-05-18
 clipped: 2026-09-18
 capture_quality: medium
