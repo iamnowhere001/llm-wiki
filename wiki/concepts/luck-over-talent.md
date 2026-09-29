@@ -38,7 +38,7 @@ status: active
 - **它对本库的定位是「张力的第三方」**：它同时对着 [[deliberate-practice]]（努力可改变能力）
   与 [[character-skills]]（品格是可习得的技能）。
 
-## 正文
+## 机制 / 原理
 
 ### 论证链（行 97–121）
 

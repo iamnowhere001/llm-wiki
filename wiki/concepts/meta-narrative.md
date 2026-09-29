@@ -4,9 +4,9 @@ type: concept
 slug: meta-narrative
 tags: [决策, 叙事, 机制, 目标, 元叙事]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-29
 sources: [2026-09-18-narrative-self]
-related: [narrative-as-objective-function, narrative-as-first-principle, narrative-identity, cybernetic-learning, narrative-power, narrative-industrialization, emotion-awareness, multiplicative-world, 2026-09-18-narrative-self, 2026-09-18-narrative-first-principle, modern-thinking-tools, intelligent-life-system, internal-friction]
+related: [narrative-as-objective-function, narrative-as-first-principle, narrative-identity, cybernetic-learning, narrative-power, narrative-industrialization, emotion-awareness, multiplicative-world, 2026-09-18-narrative-self, 2026-09-18-narrative-first-principle, modern-thinking-tools, intelligent-life-system, internal-friction, wilderness-model]
 evidence_tier: single
 confidence: low
 status: active
@@ -97,6 +97,10 @@ status: active
 - **[[2026-09-19-second-order-desire]]（109 讲）**：同上一条 —— 行 187 的「跳出叙事」是本页「元叙事」的**讲稿版表述**，
   且给出了它的**功能理由**：不跳出来就没有自由。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）给的是本页的「集体版」，不直接支撑本页。**
+  本页讲**一个人**的元叙事；该份素材讲的是**一个民族**的元叙事如何被仪式反复激活 ——
+  逾越节的「**我们**曾经是奴隶」主动取消时间距离，判据句是「它并不只是保存过去，
+  而是在不断**重新塑造过去的意义**」（行 305）。**对象不同（个人 / 集体），故不进 `sources`。**
 ## 待办 / 开放问题
 
 - [ ] **「元叙事」这个词的出处是什么？** 素材未标注。它在学术上通常指利奥塔（Lyotard）的 *grand récit*，
@@ -105,6 +109,8 @@ status: active
 - [ ] 四因里有没有任何一条**有一手支撑**？本轮未找到
 - [ ] 「元叙事」与「世界观」的边界是什么？素材用「世界观与时间观」作为中间变量，但**没有定义这两者**
 - [ ] 若有第二次出现（不同来源），本页可考虑上调 —— **按本库惯例，单来源的实体性概念不上调**
+- [ ] **「元叙事」要不要分个人 / 集体两页？** —— 2026-09-29 新增。[[2026-09-29-exodus-and-wilderness]]
+      给的是**集体形态**（民族文化记忆，靠仪式反复激活），本页是**个人形态**（默认逻辑）。两者的机制可能不同。
 
 ## 来源
 

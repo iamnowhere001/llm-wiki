@@ -3,7 +3,7 @@
 > 由 `python3 tools/wiki.py index` 生成。**薄索引在 `wiki/index.md`**，
 > 这里是完整清单（含一行摘要与标签）。按需读 —— 不必每次加载。
 
-## 素材摘要 (152)
+## 素材摘要 (153)
 
 - [[2026-09-18-active-cognitive-load-notes|主动高认知负荷：注意力的 Pro 模式（《现代思维工具》模块一 成长战略 第 6 讲）]] — 万维钢《现代思维工具》「模块一 成长战略」第 6 讲（官方编号 012，讲次为推定）。 **讲稿只有 131 行（占正文 15.7%），AI 加工段 682 行（82.0%）。*…  `万维钢` `心流` `注意力` `认知负荷`
 - [[2026-09-18-appleton-bidirectional-links|A Short History of Bi-Directional Links — Maggie Appleton]] — 一篇梳理「双向链接为什么没有成为万维网的基础」的权威通俗文献。核心结论：**双向链接在技术上一直可行，被放弃的原因是治理 —— 如果任何人都能让链接出现在你的页面上，垃圾与恶意引…  `历史` `万维网` `双向链接`
@@ -155,5 +155,6 @@
 - [[2026-09-27-mcraven-make-your-bed-speech|Make Your Bed（得克萨斯大学奥斯汀分校 2014 年毕业演讲）]] — 麦克雷文 2014 年的毕业演讲，后来扩写成同名畅销书。十条法则从「早上整理床铺」排到「绝不摇铃」， 全部收在同一个句式的后半句 ——「If you want to change…  `韧性` `领导力` `希望` `军事训练` `麦克雷文`
 - [[2026-09-28-choice-overload-meta-analysis|Choice Overload: A Conceptual Review and Meta-Analysis（Chernev, Böckenholt & Goodman, 2015）]] — 本库第一份直接处理「选择过载」的一手学术文献。它把「选项越多越糟」这个流行命题 **拆成四个可测量的调节变量**（选择集复杂度 / 决策任务难度 / 偏好不确定性 / 决策目标）…  `决策` `选择过载` `消费者行为`
 - [[2026-09-28-weighted-choice-neuroscience|《权衡一念：关于选择和改变的脑神经科学》（万维钢「每天听本书」解读）]] — 万维钢在得到「每天听本书」里解读 Emily Falk 的 *What We Value*（中译《权衡一念》）。 全篇给一套**行为机制**：大脑不做「多系统竞争」，所有维度都用…  `万维钢` `决策` `行为改变` `神经科学`
+- [[2026-09-29-exodus-and-wilderness|《出埃及记》与旷野转型框架]] — 一份 4531 行的**未署名 AI 多轮对话产物 + 一篇 AI 整理的总结文章**。前半（行 31–623）是 《出埃及记》的「神话—历史—文化记忆—现代演绎」史论，后半（行…  `出埃及记` `文化记忆` `转型` `韧性` `反馈`
 - [[2026-09-29-quality-filtering-pretraining|Removing Noise, not Finding Gold: Quality Filtering for Large-Scale Pretraining（Nait Saada et al., ICML 2026）]] — **本库第一份直接处理「训练语料质量」的一手文献。** 它把「语料越优质、训练效果越好」这条 被普遍默认的线性假设**打开了一个缺口**：用质量分类器从海量网页数据里筛出的子集，…  `AI` `预训练` `数据质量`
 - [[2026-09-29-synthetic-data-pretraining|Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls（Kang et al., EMNLP 2025）]] — **本库第一份直接处理「合成语料」的一手文献**，也是本库规模最大的一次受控实验样本 （>1000 个模型变体 / >10 万 GPU 小时）。 它对本库那条流行论断给出的是一份…  `AI` `预训练` `合成数据`

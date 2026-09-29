@@ -5,9 +5,9 @@ type: concept
 slug: focus-vs-stubborn
 tags: [万维钢, 战略, 专注, 前置信号, 取舍, 固执]
 created: 2026-09-19
-updated: 2026-09-27
-sources: [2026-09-19-qa-focus-vs-stubborn, 2026-09-27-mcraven-make-your-bed-speech]
-related: [effectuation, game-selection, explore-exploit-tradeoff, imperfectionism, hard-constraints, 2026-09-19-qa-focus-vs-stubborn, modern-thinking-tools, mcraven-ten-lessons-vs-library, 2026-09-27-mcraven-make-your-bed-speech]
+updated: 2026-09-29
+sources: [2026-09-19-qa-focus-vs-stubborn, 2026-09-27-mcraven-make-your-bed-speech, 2026-09-29-exodus-and-wilderness]
+related: [effectuation, game-selection, explore-exploit-tradeoff, imperfectionism, hard-constraints, 2026-09-19-qa-focus-vs-stubborn, modern-thinking-tools, mcraven-ten-lessons-vs-library, 2026-09-27-mcraven-make-your-bed-speech, wilderness-model]
 evidence_tier: crossed-independent
 confidence: low
 status: active
@@ -37,7 +37,7 @@ status: active
   用来**防止被沉没成本困住**。
 - **固执的定义**：**「任何坏信号都不能证明你错，只能证明世界错。」**
 
-## 正文
+## 机制 / 原理
 
 ### 为什么「坚持 vs 固执」不是抽象矛盾，而是可检验的分叉
 
@@ -110,6 +110,10 @@ status: active
   本身当作美德，全篇无前置信号、无撞墙指标。**它与本页的适用域不同**（一侧是自选的战略，一侧是被给定的任务），
   倾向判为「切分框架不同」而非真矛盾 —— **待裁定**。见 [[mcraven-ten-lessons-vs-library]]。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）给「沉没成本」补了一个具体形态：身份。**
+  本页讲「撞墙指标用来防止被沉没成本困住」；该份素材讲的是**中年转型最大的陷阱 —— 沉没成本变成身份**
+  （行 2235），并给出解法：「成熟的转型不是抹去过去十几年，而是把旧身份拆成可迁移能力」（行 4400）。
+  **它的「逃离 vs 转化」二分（行 4408–4474）与本页三条判据同向但更粗** —— 只给方向，不给前置信号。
 ## 待办 / 开放问题
 
 - [ ] **「X 因素」是本模块外的旧讲概念** —— 本库尚未收录，是否值得回溯收录？
@@ -122,3 +126,6 @@ status: active
   **无 AI 加工段**；讲稿段依据为 `raw/2026-09-19-alpha-strategy.md` 讲稿行 27–165）
 - 外部核查来源（**均未收录进 `raw/`**）：无 —— 本页判据为作者自造，**无外部来源**
 - [[2026-09-27-mcraven-make-your-bed-speech]]（**2026-09-27 新增**）—— 麦克雷文 2014 年毕业演讲，行 146–150（第 10 条「绝不摇铃」，无退出条件）。**它是本页判据的反例域，不是支撑** —— 已写入「边界与反例」与 [[mcraven-ten-lessons-vs-library]]
+
+- [[2026-09-29-exodus-and-wilderness]]（**2026-09-29 新增**）—— 只支撑「沉没成本变成身份」这一条。
+  `confidence: low`，零署名、零引注的 AI 对话产物。

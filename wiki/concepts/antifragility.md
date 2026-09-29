@@ -5,10 +5,10 @@ type: concept
 slug: antifragility
 tags: [万维钢, 决策, 反脆弱, 风险, 杠铃策略, 非对称风险, 塔勒布]
 created: 2026-09-19
-updated: 2026-09-19
-sources: [2026-09-19-antifragility-notes]
-related: [non-ergodicity, nassim-taleb, multiplicative-world, heavy-tailed-distribution, kelly-criterion, hard-constraints, compounding-knowledge, structural-holes, modern-thinking-tools]
-evidence_tier: single
+updated: 2026-09-29
+sources: [2026-09-19-antifragility-notes, 2026-09-29-exodus-and-wilderness]
+related: [non-ergodicity, nassim-taleb, multiplicative-world, heavy-tailed-distribution, kelly-criterion, hard-constraints, compounding-knowledge, structural-holes, modern-thinking-tools, wilderness-model]
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---
@@ -122,6 +122,11 @@ status: active
   111 讲主张「主动给自己更多约束」，与本页「主动注入不确定性」**可能分属两层**
   （在约束内注入波动 vs 承认约束不可改）。**素材从未区分，本库登记不裁决。**
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）给「韧性」这一格补了可操作定义。**
+  本页把韧性列为四元之一，但只给了「变形后能恢复」一句；该份素材的定义是
+  「**面对失去旧秩序之后的不确定性，仍然能够持续行动，并逐渐建立新的秩序**」（行 1535–1577），
+  并附一条否证：「奴隶可能最能吃苦，但奴隶并没有因此获得自由」（行 1517）。
+  **它与本页的反脆弱不同层** —— 本页问「能不能从波动中获益」，该份问「失去旧秩序之后能不能重建」。
 ## 待办 / 开放问题
 
 - [ ] **「异源文本」要不要在 [[schema]] §3.6 里单列一类？** 本份有两段无署名他人文本，
@@ -140,3 +145,6 @@ status: active
 - 外部核查来源（**均未收录进 `raw/`**，故只在此记录、不写入 `sources` 字段）：
   Taleb, *Antifragile* / *Skin in the Game*；Jensen 不等式；Calabrese 2003（毒物兴奋效应）；
   Minsky 的「稳定孕育不稳定」；Netflix Chaos Monkey（2011 AWS 宕机）。
+
+- [[2026-09-29-exodus-and-wilderness]]（**2026-09-29 新增**）—— 只支撑「韧性」那一格的新增定义。
+  `confidence: low`，零署名、零引注的 AI 对话产物。

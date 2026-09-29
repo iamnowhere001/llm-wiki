@@ -4,9 +4,9 @@ type: concept
 slug: narrative-reframing
 tags: [情绪, 叙事, 方法, 认知重评, 自欺]
 created: 2026-09-18
-updated: 2026-09-20
+updated: 2026-09-29
 sources: [2026-09-18-narrative-self]
-related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en, 2026-09-20-third-thing, problem-externalization]
+related: [cognitive-reappraisal, narrative-identity, narrative-self-vs-bodily-self, meta-narrative, narrative-power, internal-friction, rumination, stimulus-response-gap, cognitive-decoupling, emotion-awareness, 2026-09-18-narrative-self, thinking-vs-feeling, yjengo, chaos-system-of-life, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en, 2026-09-20-third-thing, problem-externalization, wilderness-model]
 evidence_tier: single
 confidence: low
 status: active
@@ -226,6 +226,12 @@ rather than the **"sad tale"** format」，并引 Goffman (1961, p.139) 原文�
 - **是否把本页的 `sources` / `evidence_tier` 因 084 而变？—— 不变。** 084 **不包含**本页的五步法，
   按 `AGENTS.md` §3 第 9 条「`sources` 必须指向真正包含该内容的素材」，**只做正文互链。**
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）与本页方向相反 —— 这是第二份「反面」材料。**
+  该份素材明写：「《出埃及记》的现代意义，**不在于为每一次人生变化提供浪漫化的英雄叙事**」（行 4542），
+  并给出一个比本页更硬的判据：「『创业者』『数字游民』『独立开发者』都只是称呼；
+  **只有在头衔、城市和平台被拿走之后仍保有的能力，才是真正的新自我**」（行 4466）。
+  **本页第 4 步（重写英雄剧本）正是它反对的那种操作。**
+  按 084 讲的先例（素材不含本页内容 → 只做正文互链），本页 `sources` 不变。
 ## 待办 / 开放问题
 
 - [x] ~~**取回叙事疗法（narrative therapy）的一手文献** —— White & Epston《Narrative Means to Therapeutic Ends》(1990)。

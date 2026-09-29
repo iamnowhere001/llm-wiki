@@ -4,10 +4,10 @@ type: concept
 slug: chaos-system-of-life
 tags: [决策, 情绪, 哲学, 内耗]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-yjengo-escape-inner-friction]
-related: [yjengo, internal-friction, stimulus-response-gap, emotion-awareness, peak-performance, 2026-09-18-art-of-impossible-notes]
-evidence_tier: single
+updated: 2026-09-29
+sources: [2026-09-18-yjengo-escape-inner-friction, 2026-09-29-exodus-and-wilderness]
+related: [yjengo, internal-friction, stimulus-response-gap, emotion-awareness, peak-performance, 2026-09-18-art-of-impossible-notes, wilderness-model]
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---
@@ -76,6 +76,11 @@ status: active
 - **与 [[emotion-as-coupling]] 相邻**：都主张情绪/意义不产生于孤立个体内部。
 - **是 [[emotion-awareness]] 项目里唯一的「哲学层」页面**，其余页面多在方法层。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）印证本页，是本页第一个同向的第二来源。**
+  本页说「执迷『正确的人生』是妄念」；该份素材的旷野第二阶段要求「**允许自己暂时没有答案**」（行 2747），
+  并把「用思考替代行动」列为该阶段的典型误区。**它给的是操作形态（四阶段 + 检查表），不是新论证。**
+  ⚠️ 该份是零署名、零引注的 AI 对话产物 —— 见 [[wilderness-model]] 的出处声明。
+  **本页的 `evidence_tier` 会因它从 `single` 变成 `crossed`，但两份素材同属飞书渠道，不构成独立佐证。**
 ## 待办 / 开放问题
 
 - [ ] **《蝴蝶效应》的公映版结局描述是否准确？** 作者转述，未核对原片（该片有多个结局版本）
@@ -87,3 +92,6 @@ status: active
 ## 来源
 
 - [[2026-09-18-yjengo-escape-inner-friction]]
+
+- [[2026-09-29-exodus-and-wilderness]]（**2026-09-29 新增**）—— 支撑「允许暂时没有答案」这一条。
+  `confidence: low`，零署名、零引注的 AI 对话产物；**与上一条同属飞书渠道，不算独立佐证**。

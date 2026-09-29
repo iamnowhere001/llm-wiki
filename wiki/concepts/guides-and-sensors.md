@@ -28,7 +28,7 @@ status: active
 - 另有一个正交维度：**computational vs inferential**（机械可判定 vs 需要判断）。
 - **回路的关键**：sensor 发现的问题，应当被**固化回 guide** —— 这正是 harness engineering 的核心动作。
 
-## 正文
+## 定义与背景
 
 ### 二分本身
 
@@ -43,6 +43,8 @@ Böckeler 把 harness 的控制手段分成两类（原文）：
 
 **两者服务于同一目标的两个半边** —— 这也是 Böckeler 对「外部 harness」的定义：
 「提高 agent 一次做对的概率」+「提供反馈回路让问题自我修正」。
+
+## 机制 / 原理
 
 ### 正交维度：computational vs inferential
 

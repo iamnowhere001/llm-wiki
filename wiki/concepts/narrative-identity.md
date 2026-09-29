@@ -4,9 +4,9 @@ type: concept
 slug: narrative-identity
 tags: [叙事, 心理学, 自我, 身份]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-29
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
-related: [narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, three-selves, daniel-dennett, cognitive-reappraisal, internal-friction, emotion-awareness, 2026-09-18-narrative-first-principle, 2026-09-18-three-selves-notes, modern-thinking-tools, narrative-reframing, meta-narrative, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
+related: [narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, three-selves, daniel-dennett, cognitive-reappraisal, internal-friction, emotion-awareness, 2026-09-18-narrative-first-principle, 2026-09-18-three-selves-notes, modern-thinking-tools, narrative-reframing, meta-narrative, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en, wilderness-model]
 evidence_tier: crossed-same-family
 confidence: low
 status: active
@@ -162,6 +162,12 @@ E 段自称「**科学性：基于心理学理论和实证研究**」—— 但*
   行 165「讲对了是宪法，讲僵了就是牢房，其实它随时可以拿出来重写」。
   **对本页的意义**：本页此前讲身份叙事的构成与作用，109 讲补的是它的**可修订性**（它是客体，不是主体）。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）与本页是张力，不是支撑 —— 故不进 `sources`。**
+  该份素材的「新自我」判据是「把原来的环境全部拿走，我还剩下什么」（行 2435–2481），
+  答案被列成**能力 / 判断 / 作品 / 关系 / 身体 / 信用 / 行动习惯 / 价值观** ——
+  **它把身份落在「内化的能力」上，而不是「讲述出来的故事」上**，并明确把「新标签」列为误区（行 4466）。
+  **方向与本页的构成论不同。** 按 [[narrative-reframing]] 对 084 讲的处理先例（素材不含本页内容 → 只做正文互链），
+  本页 `sources` 与 `evidence_tier` 均不变。
 ## 第 016 讲把身份当「可穿脱的衣服」，与本页的「叙事自我」待裁决
 
 [[2026-09-18-identity-metacognition-notes]]（模块一第 016 讲）把身份当作**可穿脱的客体**：

@@ -26,7 +26,7 @@ status: active
 - **任务 vs 岗位**：岗位 = 一组任务的组合；劳动经济学的**任务模型（task-based model）**给出**替代效应（displacement effect）**与**复职效应（reinstatement effect）**。
 - **结论**：面对「AI 一到五年消灭一半初级白领岗位」的预言，反末日论立场是「**AI 不但不会减少，而且会大大增加人的就业岗位**」。
 
-## 正文
+## 定义与背景
 
 **命名与归属。** 该效应以 **William Stanley Jevons（1835–1882）**命名，见 [[william-stanley-jevons]]。
 出处是 1865 年的 *The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of Our Coal-Mines*，
@@ -38,9 +38,13 @@ status: active
 本页补上归属：该框架出自 **Acemoglu & Restrepo (2019)**, *Automation and New Tasks: How Technology Displaces and Reinstates Labor*, *JEP* 33(2):3–30
 （三词齐全：displacement / reinstatement / productivity effect）。**这是本页对素材缺失归属的补全，不是素材的主张。**
 
+## 机制 / 原理
+
 **「自动化干掉任务而非岗位」。** 岗位是一组任务的组合。技术自动化掉其中若干**任务**，
 同时通过**复职效应**（创造需要人来承担的新任务）和**生产力效应**（成本下降、需求扩大）补回甚至净增岗位。
 这解释了 ATM（自动化了取现任务，但柜员转向销售与咨询，数量反增）与放射科（自动化了读片任务，但影像量暴增、医生短缺）两个反例。
+
+## 边界与反例
 
 **边界与保留。** ①「总量增加，不代表你个人不会被替代」（sources 页引 AI 段，但此判断方向与讲稿一致）；
 ②讲稿的**三类新岗位是畅想**（明写「咱们不妨大胆畅想一下」），非事实主张，引用须标明；
