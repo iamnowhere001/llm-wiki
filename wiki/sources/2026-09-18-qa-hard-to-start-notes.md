@@ -1,8 +1,9 @@
 ---
+
 title: "问答：为什么喜欢的事却难以启动？（万维钢《现代思维工具》「模块一 成长战略」问答之二，覆盖 5 讲）"
 type: source
 slug: 2026-09-18-qa-hard-to-start-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 复利, 零内省]
+tags: [现代思维工具, 成长战略, 万维钢, 复利, 零内省]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-qa-hard-to-start-notes]

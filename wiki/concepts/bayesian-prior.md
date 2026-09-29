@@ -1,8 +1,9 @@
 ---
+
 title: 贝叶斯先验：判断是主观的，但可以更科学一点
 type: concept
 slug: bayesian-prior
-tags: [万维钢, 得到课程, 决策, 概率, 贝叶斯, 自由能原理, 先验, 克伦威尔法则]
+tags: [万维钢, 决策, 概率, 贝叶斯, 自由能原理, 先验, 克伦威尔法则]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-bayesian-prior-notes]

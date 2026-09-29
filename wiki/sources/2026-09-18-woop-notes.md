@@ -1,8 +1,9 @@
 ---
+
 title: "WOOP：从生活的默认设置中觉醒（万维钢《现代思维工具》「模块一 成长战略」第 7 讲 + 一场 AI 对话）"
 type: source
 slug: 2026-09-18-woop-notes
-tags: [成长战略, 万维钢, 得到课程, 执行意图, WOOP, 心理比对]
+tags: [成长战略, 万维钢, 执行意图, WOOP, 心理比对]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-woop-notes]

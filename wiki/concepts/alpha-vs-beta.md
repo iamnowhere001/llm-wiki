@@ -1,8 +1,9 @@
 ---
+
 title: Alpha 与 Beta（阿尔法与贝塔）
 type: concept
 slug: alpha-vs-beta
-tags: [万维钢, 得到课程, 竞争优势, 战略定位, 护城河, Alpha, Beta, 波特, 核心刚性]
+tags: [万维钢, 竞争优势, 战略定位, 护城河, Alpha, Beta, 波特, 核心刚性]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-alpha-strategy]

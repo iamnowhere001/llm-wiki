@@ -1,8 +1,9 @@
 ---
+
 title: 赛道选择（体制内 vs 体制外）
 type: concept
 slug: game-selection
-tags: [万维钢, 得到课程, 赛道选择, 体制内, 体制外, 叙事权]
+tags: [万维钢, 赛道选择, 体制内, 体制外, 叙事权]
 created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-game-selection-notes, 2026-09-18-qa-deepen-or-move-notes, 2026-09-19-value-of-information-notes, 2026-09-19-non-ergodicity-notes]

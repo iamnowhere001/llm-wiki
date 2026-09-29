@@ -1,8 +1,9 @@
 ---
+
 title: 《现代思维工具》补收（模块六 领导者 等未收 17 讲）
 type: project
 slug: modern-thinking-tools-collection
-tags: [现代思维工具, 万维钢, 得到课程, 补收]
+tags: [现代思维工具, 万维钢, 补收]
 created: 2026-09-21
 updated: 2026-09-21
 goal: 把《现代思维工具》尚未收录的 17 讲补齐（模块六 领导者 11 讲 + 基本世界观 005 + 参与者 077 / 085 + 学习教育 3 讲），每讲产出 1 份 raw + 1 份 sources 页并逐条标注证据性质

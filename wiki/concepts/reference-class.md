@@ -1,8 +1,9 @@
 ---
+
 title: 参考类预测（Reference Class Forecasting）：把自己只当个样本
 type: concept
 slug: reference-class
-tags: [万维钢, 得到课程, 决策, 预测, 外部视角, 规划谬误, 傅以斌]
+tags: [万维钢, 决策, 预测, 外部视角, 规划谬误, 傅以斌]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-reference-class-notes]

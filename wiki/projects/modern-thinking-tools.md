@@ -1,8 +1,9 @@
 ---
+
 title: 现代思维工具（万维钢 · 得到课程）
 type: project
 slug: modern-thinking-tools
-tags: [万维钢, 得到课程]
+tags: [万维钢]
 created: 2026-09-18
 updated: 2026-09-21
 goal: 把《现代思维工具》已收板块的素材编译成逐条标注证据性质的综述，并维护一张覆盖全课的「板块 × 证据质量」地图

@@ -1,8 +1,9 @@
 ---
+
 title: 杰文斯悖论：AI 会增加人的工作岗位（万维钢《现代思维工具》「模块四 赚钱逻辑」第 066 讲）
 type: source
 slug: 2026-09-19-jevons-paradox
-tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 杰文斯悖论, AI与就业, 任务模型]
+tags: [现代思维工具, 赚钱逻辑, 万维钢, 杰文斯悖论, AI与就业, 任务模型]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-jevons-paradox]

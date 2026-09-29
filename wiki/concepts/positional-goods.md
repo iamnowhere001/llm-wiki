@@ -1,8 +1,9 @@
 ---
+
 title: 位置性商品：价值不来自它是什么，而来自它排第几
 type: concept
 slug: positional-goods
-tags: [万维钢, 得到课程, 鲍莫尔成本病, 稀缺, 经济学, 位置性商品, 奇点]
+tags: [万维钢, 鲍莫尔成本病, 稀缺, 经济学, 位置性商品, 奇点]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-scarcity-singularity]

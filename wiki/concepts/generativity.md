@@ -1,8 +1,9 @@
 ---
+
 title: 生成（Generativity）：让一个东西因你而生，却不靠你而活，不照你而变
 type: concept
 slug: generativity
-tags: [演化者, 万维钢, 得到课程, 可演化性, 生成, 组织闭合]
+tags: [演化者, 万维钢, 可演化性, 生成, 组织闭合]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-generativity, 2026-09-19-qa-claiming-hard-problems]

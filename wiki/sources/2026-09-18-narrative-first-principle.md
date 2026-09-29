@@ -1,8 +1,9 @@
 ---
+
 title: "叙事：这个宇宙的第一性原理（万维钢课程讲 + 三份 AI 生成块）"
 type: source
 slug: 2026-09-18-narrative-first-principle
-tags: [世界观, 得到课程, 叙事, 叙事自我]
+tags: [世界观, 叙事, 叙事自我]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-narrative-first-principle]

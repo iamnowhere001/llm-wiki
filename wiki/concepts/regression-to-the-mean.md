@@ -1,8 +1,9 @@
 ---
+
 title: 回归均值（Regression to the Mean）：不要大惊小怪，要有点定力
 type: concept
 slug: regression-to-the-mean
-tags: [万维钢, 得到课程, 决策, 统计, 回归谬误, 定力, 戴明]
+tags: [万维钢, 决策, 统计, 回归谬误, 定力, 戴明]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-regression-to-the-mean-notes]

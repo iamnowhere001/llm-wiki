@@ -1,8 +1,9 @@
 ---
+
 title: 效应化（Effectuation）
 type: concept
 slug: effectuation
-tags: [万维钢, 得到课程, 效应化, 创业, 因果式, 萨拉斯瓦蒂]
+tags: [万维钢, 效应化, 创业, 因果式, 萨拉斯瓦蒂]
 created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-game-selection-notes, 2026-09-19-value-of-information-notes, 2026-09-19-effectuation-notes]

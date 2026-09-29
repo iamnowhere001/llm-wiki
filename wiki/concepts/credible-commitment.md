@@ -1,8 +1,9 @@
 ---
+
 title: 可信承诺：空口无凭，必须做出无法撤销的动作
 type: concept
 slug: credible-commitment
-tags: [万维钢, 得到课程, 制度, 博弈论, 人质, 承诺]
+tags: [万维钢, 制度, 博弈论, 人质, 承诺]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-self-constraint]

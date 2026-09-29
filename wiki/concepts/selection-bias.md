@@ -1,8 +1,9 @@
 ---
+
 title: 选择偏差：就算无人说谎，你看到的也不是真实世界
 type: concept
 slug: selection-bias
-tags: [万维钢, 得到课程, 决策, 统计, 伯克森悖论, 幸存者偏差, 门槛偏差]
+tags: [万维钢, 决策, 统计, 伯克森悖论, 幸存者偏差, 门槛偏差]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-selection-bias-notes]

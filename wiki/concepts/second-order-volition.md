@@ -1,8 +1,9 @@
 ---
+
 title: 二阶意愿：不是评价欲望，是任命哪个欲望执政
 type: concept
 slug: second-order-volition
-tags: [万维钢, 得到课程, 二阶意愿]
+tags: [万维钢, 二阶意愿]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-second-order-desire]

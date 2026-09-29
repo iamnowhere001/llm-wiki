@@ -1,8 +1,9 @@
 ---
+
 title: 硬约束：无法绕开的限制条件
 type: concept
 slug: hard-constraints
-tags: [世界观, 万维钢, 得到课程, 决策, 算账, 约束]
+tags: [世界观, 万维钢, 决策, 算账, 约束]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-hard-constraints-notes, 2026-09-20-exploration-and-generation]

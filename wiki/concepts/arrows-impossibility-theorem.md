@@ -1,8 +1,9 @@
 ---
+
 title: 阿罗不可能定理：三个选项、两个人，就不存在完美的聚合方法
 type: concept
 slug: arrows-impossibility-theorem
-tags: [万维钢, 得到课程, 政治]
+tags: [万维钢, 政治]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-scarcity-singularity]

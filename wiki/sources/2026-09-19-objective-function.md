@@ -1,8 +1,9 @@
 ---
+
 title: 目标函数：这个宇宙奖励什么？（万维钢《现代思维工具课》「模块八 高观点」第 108 讲）
 type: source
 slug: 2026-09-19-objective-function
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 目标函数]
+tags: [现代思维工具, 高观点, 万维钢, 目标函数]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-objective-function]

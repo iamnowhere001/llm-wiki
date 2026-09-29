@@ -1,8 +1,9 @@
 ---
+
 title: 稀缺：奇点前后的变与不变（万维钢《现代思维工具课》「模块八 高观点」推定次序 116）
 type: source
 slug: 2026-09-19-scarcity-singularity
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 鲍莫尔成本病, 稀缺, 不可通约, 位置性商品, 奇点]
+tags: [现代思维工具, 高观点, 万维钢, 鲍莫尔成本病, 稀缺, 不可通约, 位置性商品, 奇点]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-scarcity-singularity]

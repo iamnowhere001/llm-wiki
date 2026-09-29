@@ -1,8 +1,9 @@
 ---
+
 title: 立题：这个世界系统制造答题人，却从不教你怎么出题
 type: concept
 slug: problem-setting
-tags: [万维钢, 得到课程, 权力, 议程设定, 预设投射]
+tags: [万维钢, 权力, 议程设定, 预设投射]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-problem-setting]

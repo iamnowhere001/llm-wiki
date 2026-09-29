@@ -1,8 +1,9 @@
 ---
+
 title: 反脆弱（Antifragility）：脆弱是凹的，反脆弱是凸的
 type: concept
 slug: antifragility
-tags: [万维钢, 得到课程, 决策, 反脆弱, 风险, 杠铃策略, 非对称风险, 塔勒布]
+tags: [万维钢, 决策, 反脆弱, 风险, 杠铃策略, 非对称风险, 塔勒布]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-antifragility-notes]

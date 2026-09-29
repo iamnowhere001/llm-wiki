@@ -1,8 +1,9 @@
 ---
+
 title: 问答：「普通人」的「稳妥」，是不是一种理性的自我保护？（万维钢《现代思维工具》「模块七 演化者」第 106 讲）
 type: source
 slug: 2026-09-19-qa-ordinary-people-safety
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, 临近可能]
+tags: [现代思维工具, 演化者, 万维钢, 临近可能]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-qa-ordinary-people-safety]

@@ -1,8 +1,9 @@
 ---
+
 title: 路径创造（Path Creation）：不动存量，只把增量导进新路
 type: concept
 slug: path-creation
-tags: [万维钢, 得到课程, 制度, 路径依赖, 路径创造]
+tags: [万维钢, 制度, 路径依赖, 路径创造]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-path-creation]

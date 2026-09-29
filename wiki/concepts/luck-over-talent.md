@@ -1,8 +1,9 @@
 ---
+
 title: 运气大于能力（能力本身也是运气）
 type: concept
 slug: luck-over-talent
-tags: [万维钢, 得到课程, 重尾, 公平, 运气, 能力, 证据]
+tags: [万维钢, 重尾, 公平, 运气, 能力, 证据]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes, 2026-09-19-optionality-notes]

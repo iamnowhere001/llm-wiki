@@ -1,8 +1,9 @@
 ---
+
 title: 三个自我：进程 / 界面 / 内核
 type: concept
 slug: three-selves
-tags: [万维钢, 得到课程, 认知, 元认知, 自我, 预测加工, 自由能]
+tags: [万维钢, 认知, 元认知, 自我, 预测加工, 自由能]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-three-selves-notes]

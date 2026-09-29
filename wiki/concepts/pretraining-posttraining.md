@@ -1,8 +1,9 @@
 ---
+
 title: 预训练与后训练：预训练决定能力上限，后训练决定下限
 type: concept
 slug: pretraining-posttraining
-tags: [万维钢, 得到课程, 学习, 机器学习, 后训练, 预训练]
+tags: [万维钢, 学习, 机器学习, 后训练, 预训练]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-pretraining-posttraining]

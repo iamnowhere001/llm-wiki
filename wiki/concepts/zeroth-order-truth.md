@@ -1,8 +1,9 @@
 ---
+
 title: 零阶道理：决定方向与量级的那一条，其余都是修正项
 type: concept
 slug: zeroth-order-truth
-tags: [万维钢, 得到课程, 决策, 大局观, 权重思维]
+tags: [万维钢, 决策, 大局观, 权重思维]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-zeroth-order-truth]

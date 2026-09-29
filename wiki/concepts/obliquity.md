@@ -1,8 +1,9 @@
 ---
+
 title: 迂回：目标最好间接达成，中国话叫「曲则全」
 type: concept
 slug: obliquity
-tags: [万维钢, 得到课程, 战略, 目标, 迂回]
+tags: [万维钢, 战略, 目标, 迂回]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-by-products]

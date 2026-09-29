@@ -1,8 +1,9 @@
 ---
+
 title: 分叉测试：内部目标不能靠表态判断，只能放到外部环境里测
 type: concept
 slug: forking-test
-tags: [万维钢, 得到课程, AI对齐, 考核]
+tags: [万维钢, AI对齐, 考核]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-inner-optimizer]

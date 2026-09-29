@@ -1,8 +1,9 @@
 ---
+
 title: 父母监控（Parental Monitoring）
 type: concept
 slug: parental-monitoring
-tags: [万维钢, 得到课程, 养育, 自主支持, 依恋, 监控, 自我袒露, 青春期]
+tags: [万维钢, 养育, 自主支持, 依恋, 监控, 自我袒露, 青春期]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-qa-teenager-talk]

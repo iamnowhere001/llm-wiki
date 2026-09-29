@@ -1,8 +1,9 @@
 ---
+
 title: "大推平（Great Leveling）：起跑线平了，跑道却只剩一条"
 type: concept
 slug: great-leveling
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 沙伊德尔, 不平等, 东亚, 科举]
+tags: [现代思维工具, 参与者, 万维钢, 沙伊德尔, 不平等, 东亚, 科举]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-moloch]

@@ -1,8 +1,9 @@
 ---
+
 title: "共同知识：让众人服从的神器（万维钢《现代思维工具》「模块五 参与者」第 079 讲）"
 type: source
 slug: 2026-09-20-common-knowledge
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 共同知识, 仪式, 协调]
+tags: [现代思维工具, 参与者, 万维钢, 共同知识, 仪式, 协调]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-common-knowledge]

@@ -1,8 +1,9 @@
 ---
+
 title: 平台：现代世界最厉害的商业模式（万维钢《现代思维工具》「模块四 赚钱逻辑」讲次表编号（推定）067）
 type: source
 slug: 2026-09-19-platform-business-model
-tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 平台, enshittification, 互操作性, 技术封建主义, 双边市场, 网络效应, 平台衰败]
+tags: [现代思维工具, 赚钱逻辑, 万维钢, 平台, enshittification, 互操作性, 技术封建主义, 双边市场, 网络效应, 平台衰败]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-platform-business-model]

@@ -1,8 +1,9 @@
 ---
+
 title: 社交资本、结构洞和搬家（万维钢《现代思维工具》「模块一 成长战略」第 8 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-social-capital-structural-holes-notes
-tags: [成长战略, 万维钢, 得到课程, 重尾, 结构洞, 社交资本]
+tags: [成长战略, 万维钢, 重尾, 结构洞, 社交资本]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-social-capital-structural-holes-notes]

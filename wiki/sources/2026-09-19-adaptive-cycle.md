@@ -1,8 +1,9 @@
 ---
+
 title: 适应性循环：稳定蕴藏着不稳定，败坏蕴藏着生机（万维钢《现代思维工具课》「模块七 演化者」第 105 讲）
 type: source
 slug: 2026-09-19-adaptive-cycle
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, 适应性循环]
+tags: [现代思维工具, 演化者, 万维钢, 适应性循环]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-adaptive-cycle]

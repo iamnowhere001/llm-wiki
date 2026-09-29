@@ -1,8 +1,9 @@
 ---
+
 title: "自由能原理：活着就是对齐（万维钢课程讲稿 + 人设化改写 AI 段）"
 type: source
 slug: 2026-09-18-free-energy-alignment-notes
-tags: [成长战略, 得到课程, 自由能原理, 预测加工]
+tags: [成长战略, 自由能原理, 预测加工]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-free-energy-alignment-notes]

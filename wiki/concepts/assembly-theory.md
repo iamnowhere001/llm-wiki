@@ -1,8 +1,9 @@
 ---
+
 title: "组装理论（Assembly Theory）：用「最少需要几步」给存在称重量"
 type: concept
 slug: assembly-theory
-tags: [现代思维工具, 尾声, 万维钢, 得到课程, 组装理论, 组装指数, 克罗宁, 沃克, 复杂性, 生命起源]
+tags: [现代思维工具, 尾声, 万维钢, 组装理论, 组装指数, 克罗宁, 沃克, 复杂性, 生命起源]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-exploration-and-generation]

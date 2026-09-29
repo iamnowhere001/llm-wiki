@@ -1,8 +1,9 @@
 ---
+
 title: "证书通胀（Credential Inflation）：谁都不敢停止印的那张票"
 type: concept
 slug: credential-inflation
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 兰德尔·柯林斯, 教育, 学历通胀, 社会学]
+tags: [现代思维工具, 参与者, 万维钢, 兰德尔·柯林斯, 教育, 学历通胀, 社会学]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-moloch]

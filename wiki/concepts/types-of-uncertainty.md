@@ -1,8 +1,9 @@
 ---
+
 title: 五种不确定性：混沌 / 计算不可约性 / 量子随机 / 奈特 / 反身性
 type: concept
 slug: types-of-uncertainty
-tags: [世界观, 万维钢, 得到课程, 不确定性, 博弈, 混沌, 量子]
+tags: [世界观, 万维钢, 不确定性, 博弈, 混沌, 量子]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: "反馈回路（飞书 wiki 子文档：万维钢专栏文本摘引 + 约 48% AI 加工）"
 type: source
 slug: 2026-09-19-feedback-loop-essay
-tags: [万维钢, 得到课程, 反馈回路, 正反馈, 负反馈]
+tags: [万维钢, 反馈回路, 正反馈, 负反馈]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-feedback-loop-essay]

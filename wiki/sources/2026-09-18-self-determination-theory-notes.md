@@ -1,8 +1,9 @@
 ---
+
 title: 自我决定理论：一流人物不可能是痛苦的卷王（万维钢《现代思维工具》「成长战略」第 4 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-self-determination-theory-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 动机, 自我决定理论]
+tags: [现代思维工具, 成长战略, 万维钢, 动机, 自我决定理论]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-self-determination-theory-notes]

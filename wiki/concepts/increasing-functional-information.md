@@ -1,8 +1,9 @@
 ---
+
 title: "功能信息递增定律：有功能的信息会越积越多"
 type: concept
 slug: increasing-functional-information
-tags: [现代思维工具, 尾声, 万维钢, 得到课程, 功能信息, 黑曾, 黄, 演化, 热力学]
+tags: [现代思维工具, 尾声, 万维钢, 功能信息, 黑曾, 黄, 演化, 热力学]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-exploration-and-generation]

@@ -1,8 +1,9 @@
 ---
+
 title: 心理账户（Mental Accounting）：把不同的钱放进不同的账
 type: concept
 slug: mental-accounting
-tags: [万维钢, 得到课程, 决策, 行为经济学, 参照点, 塞勒, 心理账户]
+tags: [万维钢, 决策, 行为经济学, 参照点, 塞勒, 心理账户]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-prospect-theory-notes]

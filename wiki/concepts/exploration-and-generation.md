@@ -1,8 +1,9 @@
 ---
+
 title: "探索和生发：把人生的意义设为「创造新的可能性」"
 type: concept
 slug: exploration-and-generation
-tags: [现代思维工具, 尾声, 万维钢, 得到课程, 人生意义, 探索和生发, 可能性]
+tags: [现代思维工具, 尾声, 万维钢, 人生意义, 探索和生发, 可能性]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-exploration-and-generation]

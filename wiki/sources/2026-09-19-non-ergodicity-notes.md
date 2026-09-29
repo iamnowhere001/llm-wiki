@@ -1,8 +1,9 @@
 ---
+
 title: 非遍历性：玩家怕方差，庄家爱方差（万维钢《现代思维工具》「模块二 决策判断」第 7 讲）
 type: source
 slug: 2026-09-19-non-ergodicity-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 非遍历性, 吸收壁, 时间平均, 集合平均]
+tags: [现代思维工具, 决策判断, 万维钢, 非遍历性, 吸收壁, 时间平均, 集合平均]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-non-ergodicity-notes]

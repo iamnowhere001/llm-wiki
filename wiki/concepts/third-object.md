@@ -1,8 +1,9 @@
 ---
+
 title: 第三物：合作不必先有共识（并载「边界物」）
 type: concept
 slug: third-object
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 第三物, 边界物, 共同注意, 超级目标]
+tags: [现代思维工具, 参与者, 万维钢, 第三物, 边界物, 共同注意, 超级目标]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-third-thing]

@@ -1,8 +1,9 @@
 ---
+
 title: WOOP（心理比对 + 执行意图）
 type: concept
 slug: woop
-tags: [成长战略, 得到课程, 动机, 执行意图, WOOP, 心理比对, AI收敛概念]
+tags: [成长战略, 动机, 执行意图, WOOP, 心理比对, AI收敛概念]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 三种解法（传统观念 / 市侩哲学 / 精英解法）
 type: concept
 slug: three-solutions
-tags: [世界观, 万维钢, 得到课程, 心智模型, 低信任, 分析框架, 犬儒]
+tags: [世界观, 万维钢, 心智模型, 低信任, 分析框架, 犬儒]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-modern-thinking-tools-prospectus]

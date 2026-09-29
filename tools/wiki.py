@@ -1036,14 +1036,15 @@ def cmd_lint(root):
     section("evidence_tier 与支撑素材不符", tier_mismatch)
 
     # 标签准入 —— 规则见 wiki/schema.md §1.7，移除集见 tools/tags_vocab.py。
-    # 这条只拦一件事：**「这页自己是什么」不该做标签**（素材形态 / 核查状态 / 生成方式 / 抓取元数据）。
+    # 这条只拦一件事：**「这页自己是什么 / 从哪来」不该做标签**
+    # （平台与载体 / 素材形态 / 核查状态 / 生成方式 / 抓取元数据）。
     # 它**不**拦「主题词多而杂」—— 那是导航的自然结果，不是错误；也不再校验频次门槛。
     if REMOVE:
         bad_tags = []
         for p in pages:
             for t in p.tags:
                 if t in REMOVE:
-                    bad_tags.append("%s  标签「%s」属于移除集（素材形态 / 核查状态 / 生成方式 / 抓取元数据）"
+                    bad_tags.append("%s  标签「%s」属于移除集（平台与载体 / 素材形态 / 核查状态 / 生成方式 / 抓取元数据）"
                                     % (p.relpath, t))
         section("标签属于移除集", bad_tags)
 
@@ -3698,9 +3699,14 @@ function go(slug){
   /* 证据层级的完整说明放页脚：S3（「这个说法有多少证据撑着」）需要一个确定落点，
      而 top chip 为了清爽只放「非默认态」的三种。素材页 / 项目页 / 系统页没有这一字段，不显示。 */
   var evFoot = "";
-  if (EV_FOOT[p.evidence_tier]){
-    evFoot = '<div class="pagefoot"><span class="evtag">'+esc(EV_NAME[p.evidence_tier])+'</span>'+
-             esc(EV_FOOT[p.evidence_tier])+'</div>';
+  if (p.evidence_tier){
+    evFoot = '<div class="pagefoot"><span class="evtag">'+
+             esc(EV_NAME[p.evidence_tier] || p.evidence_tier)+'</span>'+
+             /* 取值不在已知集合里时**必须露出来**，不能静默不显示 ——
+                否则旧值（如拆分前的 crossed）迁移遗漏会变成一个看不见的洞。 */
+             esc(EV_FOOT[p.evidence_tier] ||
+                 '本页的 evidence_tier 不在已知取值内 —— 多半是旧值未迁移，请跑 lint 核对。')+
+             '</div>';
   }
   pageEl.className = "ptype-" + p.type;
   pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + renderPage(p) + evFoot;

@@ -1,8 +1,9 @@
 ---
+
 title: 边际分析（Marginal Analysis）：不看全貌，只看下一轮的输入该变多少
 type: concept
 slug: marginal-analysis
-tags: [万维钢, 得到课程, 决策, 反馈, 经济学, 第二曲线, 边际分析]
+tags: [万维钢, 决策, 反馈, 经济学, 第二曲线, 边际分析]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-marginal-analysis]

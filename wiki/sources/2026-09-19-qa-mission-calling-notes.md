@@ -1,8 +1,9 @@
 ---
+
 title: "问答：没有机缘得到使命召唤怎么办？（万维钢《现代思维工具》「模块二 决策判断」问答，覆盖 4 讲）"
 type: source
 slug: 2026-09-19-qa-mission-calling-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 场域, 共鸣, 无免费午餐定理]
+tags: [现代思维工具, 决策判断, 万维钢, 场域, 共鸣, 无免费午餐定理]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-qa-mission-calling-notes]

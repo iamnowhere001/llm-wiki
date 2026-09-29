@@ -1,8 +1,9 @@
 ---
+
 title: 补偿性控制：对确定感的渴求如何让渡权力
 type: concept
 slug: compensatory-control
-tags: [万维钢, 得到课程, 心理学, 不确定性, 权力, 政治]
+tags: [万维钢, 心理学, 不确定性, 权力, 政治]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-optionality-notes]

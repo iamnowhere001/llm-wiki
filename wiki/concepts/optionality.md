@@ -1,8 +1,9 @@
 ---
+
 title: 期权（Optionality）：权利而非义务，且它的价值在稀缺的专有进入权
 type: concept
 slug: optionality
-tags: [万维钢, 得到课程, 决策, 期权, BATNA, 单向门, 实物期权, 对赌]
+tags: [万维钢, 决策, 期权, BATNA, 单向门, 实物期权, 对赌]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-optionality-notes]

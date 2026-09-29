@@ -1,8 +1,9 @@
 ---
+
 title: 供给侧心态：怎样在正和的世界合作（以及竞争）（万维钢《现代思维工具》「模块一 成长战略」第 2 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-supply-side-mindset-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 供给侧心态, 正和博弈]
+tags: [现代思维工具, 成长战略, 万维钢, 供给侧心态, 正和博弈]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-supply-side-mindset-notes]

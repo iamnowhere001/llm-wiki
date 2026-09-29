@@ -1,8 +1,9 @@
 ---
+
 title: 社会资本（三种资本与交友偏差）
 type: concept
 slug: social-capital
-tags: [万维钢, 得到课程, 社会资本, 网络, 切蒂, 阶层流动]
+tags: [万维钢, 社会资本, 网络, 切蒂, 阶层流动]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-social-capital-structural-holes-notes]

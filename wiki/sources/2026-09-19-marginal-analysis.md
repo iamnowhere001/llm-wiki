@@ -1,8 +1,9 @@
 ---
+
 title: 边际分析：怎样判断值不值得继续投入？（万维钢《现代思维工具》「模块七 演化者」讲次表编号（推定）103）
 type: source
 slug: 2026-09-19-marginal-analysis
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, S曲线, 第二曲线, 边际分析]
+tags: [现代思维工具, 演化者, 万维钢, S曲线, 第二曲线, 边际分析]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-marginal-analysis]

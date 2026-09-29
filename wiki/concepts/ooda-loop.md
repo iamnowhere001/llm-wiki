@@ -1,8 +1,9 @@
 ---
+
 title: OODA 环：不是反应快，而是换脑快
 type: concept
 slug: ooda-loop
-tags: [万维钢, 得到课程, 决策, 叙事, 博伊德, 定向, 行动, 军事]
+tags: [万维钢, 决策, 叙事, 博伊德, 定向, 行动, 军事]
 created: 2026-09-19
 updated: 2026-09-21
 sources: [2026-09-19-ooda-loop-notes]

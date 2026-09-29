@@ -1,8 +1,9 @@
 ---
+
 title: "问答：「应无所住」了，还有「目标函数」吗？（万维钢《现代思维工具课》「模块八 高观点」推定次序 112·问答）"
 type: source
 slug: 2026-09-19-qa-no-dwelling-and-objective
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 目标函数, 二阶意愿, 副产品]
+tags: [现代思维工具, 高观点, 万维钢, 目标函数, 二阶意愿, 副产品]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-qa-no-dwelling-and-objective]

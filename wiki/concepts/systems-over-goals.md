@@ -1,8 +1,9 @@
 ---
+
 title: 系统优于目标（Systems over Goals）：善战者无赫赫之功
 type: concept
 slug: systems-over-goals
-tags: [万维钢, 得到课程, 决策, 概率分布, 斯科特·亚当斯, 系统思维]
+tags: [万维钢, 决策, 概率分布, 斯科特·亚当斯, 系统思维]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-probability-distribution-notes]

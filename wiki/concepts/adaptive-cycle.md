@@ -1,8 +1,9 @@
 ---
+
 title: 适应性循环（Adaptive Cycle）：稳定是一种幻觉，它只是一个阶段
 type: concept
 slug: adaptive-cycle
-tags: [万维钢, 得到课程, 适应性循环]
+tags: [万维钢, 适应性循环]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-adaptive-cycle]

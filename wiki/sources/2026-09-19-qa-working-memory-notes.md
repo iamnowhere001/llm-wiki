@@ -1,8 +1,9 @@
 ---
+
 title: "问答：我们能不能加大自己的「内存」？（万维钢《现代思维工具》「模块二 决策判断」问答，覆盖 4 讲）"
 type: source
 slug: 2026-09-19-qa-working-memory-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 认知负荷, OODA, 工作记忆, 人机协作, 流体智力]
+tags: [现代思维工具, 决策判断, 万维钢, 认知负荷, OODA, 工作记忆, 人机协作, 流体智力]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-qa-working-memory-notes]

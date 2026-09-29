@@ -1,8 +1,9 @@
 ---
+
 title: "人生成长战略工具工程化设计手册 v1.0（AI 生成）：把「模块一 成长战略」15 讲工程化的一份关联档案"
 type: source
 slug: 2026-09-18-growth-strategy-engineering-manual
-tags: [成长战略, 万维钢, 得到课程, 工程化手册]
+tags: [成长战略, 万维钢, 工程化手册]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-growth-strategy-engineering-manual]

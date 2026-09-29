@@ -1,8 +1,9 @@
 ---
+
 title: 内核：你的三个「自我」（万维钢《现代思维工具》「基本世界观」第 6 讲 + 读者留言 + AI 加工段 + 三套异源框架 + 曾国藩材料）
 type: source
 slug: 2026-09-18-three-selves-notes
-tags: [世界观, 万维钢, 得到课程, 自我, 预测加工, 基本世界观, 自由能]
+tags: [世界观, 万维钢, 自我, 预测加工, 基本世界观, 自由能]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-three-selves-notes]

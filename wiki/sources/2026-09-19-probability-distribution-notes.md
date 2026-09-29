@@ -1,8 +1,9 @@
 ---
+
 title: 概率分布：到底什么是决策？（万维钢《现代思维工具》「模块二 决策判断」第 2 讲）
 type: source
 slug: 2026-09-19-probability-distribution-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 结果偏误, 概率分布, 系统与目标]
+tags: [现代思维工具, 决策判断, 万维钢, 结果偏误, 概率分布, 系统与目标]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-probability-distribution-notes]

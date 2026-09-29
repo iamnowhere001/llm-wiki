@@ -1,8 +1,9 @@
 ---
+
 title: 本质副产品：不是很难直接得到，是逻辑上不可能直接得到
 type: concept
 slug: essential-by-products
-tags: [万维钢, 得到课程, 哲学, 目标函数, 副产品]
+tags: [万维钢, 哲学, 目标函数, 副产品]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-by-products]

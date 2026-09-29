@@ -1,8 +1,9 @@
 ---
+
 title: 可被伤害性：责任链的终点必须是能被伤害的一方
 type: concept
 slug: skin-in-the-game
-tags: [万维钢, 得到课程, 风险]
+tags: [万维钢, 风险]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-self-constraint]

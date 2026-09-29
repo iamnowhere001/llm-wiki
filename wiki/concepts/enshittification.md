@@ -1,8 +1,9 @@
 ---
+
 title: 衰败化（Enshittification）
 type: concept
 slug: enshittification
-tags: [万维钢, 得到课程, 平台, 商业模式, 多克托罗, 约束失效, 衰败化]
+tags: [万维钢, 平台, 商业模式, 多克托罗, 约束失效, 衰败化]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-platform-business-model]

@@ -1,8 +1,9 @@
 ---
+
 title: "价值多元（Value Pluralism）：内卷的反义词"
 type: concept
 slug: value-pluralism
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 价值多元, 内卷, 教育, 社会]
+tags: [现代思维工具, 参与者, 万维钢, 价值多元, 内卷, 教育, 社会]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-moloch]

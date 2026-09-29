@@ -1,8 +1,9 @@
 ---
+
 title: 颗粒度与因果中介：你能理解到什么程度，才能控制到什么程度
 type: concept
 slug: granularity-causal-mediation
-tags: [万维钢, 得到课程, 决策, 最小描述长度, 因果中介, 好调节器定理, 颗粒度, do-operator]
+tags: [万维钢, 决策, 最小描述长度, 因果中介, 好调节器定理, 颗粒度, do-operator]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-granularity-causal-mediation-notes]

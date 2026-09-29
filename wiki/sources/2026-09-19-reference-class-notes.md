@@ -1,8 +1,9 @@
 ---
+
 title: 参考类：当局者迷，旁观者清，你不特殊（万维钢《现代思维工具》「模块二 决策判断」第 14 讲）
 type: source
 slug: 2026-09-19-reference-class-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 外部视角, 规划谬误, 内部视角, 参考类预测]
+tags: [现代思维工具, 决策判断, 万维钢, 外部视角, 规划谬误, 内部视角, 参考类预测]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-reference-class-notes]

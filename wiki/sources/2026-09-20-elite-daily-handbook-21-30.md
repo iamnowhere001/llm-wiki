@@ -1,8 +1,9 @@
 ---
+
 title: "《高手修炼手册》第三册：高手是怎么解决问题的（21–30）—— 万维钢《精英日课》摘编"
 type: source
 slug: 2026-09-20-elite-daily-handbook-21-30
-tags: [万维钢, 得到课程, 成长战略, 决策, 运气]
+tags: [万维钢, 成长战略, 决策, 运气]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-elite-daily-handbook]

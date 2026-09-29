@@ -1,8 +1,9 @@
 ---
+
 title: 想要 ≠ 喜欢：电刺激让大鼠吃掉四倍食物，表情却更厌恶
 type: concept
 slug: wanting-vs-liking
-tags: [万维钢, 得到课程, 神经科学]
+tags: [万维钢, 神经科学]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-inner-optimizer]

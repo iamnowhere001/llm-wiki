@@ -1,8 +1,9 @@
 ---
+
 title: "安全感：人需要有所依靠（万维钢《现代思维工具》「模块一 成长战略」第 10 讲 + AI 加工段）"
 type: source
 slug: 2026-09-18-sense-of-security-notes
-tags: [成长战略, 万维钢, 得到课程, 依恋理论, 安全感, 心理安全, 鲍尔比]
+tags: [成长战略, 万维钢, 依恋理论, 安全感, 心理安全, 鲍尔比]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-sense-of-security-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 结构洞与经纪人地位
 type: concept
 slug: structural-holes
-tags: [万维钢, 得到课程, 结构洞, 网络, 伯特, 经纪人]
+tags: [万维钢, 结构洞, 网络, 伯特, 经纪人]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-19-value-of-information-notes]

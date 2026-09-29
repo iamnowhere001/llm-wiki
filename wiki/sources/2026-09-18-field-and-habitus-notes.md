@@ -1,8 +1,9 @@
 ---
+
 title: 场域：识时务者为俊杰（万维钢《现代思维工具》「模块一 成长战略」第 12 讲）
 type: source
 slug: 2026-09-18-field-and-habitus-notes
-tags: [成长战略, 万维钢, 得到课程, 场域, 布迪厄, 惯习, 象征资本]
+tags: [成长战略, 万维钢, 场域, 布迪厄, 惯习, 象征资本]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-field-and-habitus-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: "02_成长战略：模块目录与 15 讲编号总表（AI 生成）"
 type: source
 slug: 2026-09-18-growth-strategy-module-notes
-tags: [成长战略, 万维钢, 得到课程]
+tags: [成长战略, 万维钢]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-growth-strategy-module-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 自我决定理论（SDT）
 type: concept
 slug: self-determination-theory
-tags: [成长战略, 万维钢, 得到课程, 动机, 心理学, 自我决定理论]
+tags: [成长战略, 万维钢, 动机, 心理学, 自我决定理论]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-self-determination-theory-notes]

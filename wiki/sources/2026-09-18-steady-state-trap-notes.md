@@ -1,8 +1,9 @@
 ---
+
 title: "能动：稳态生存的观念陷阱（万维钢《现代思维工具》「基本世界观」第 3 讲 + 4 份 AI 生成的《人生说明书》+ 1 份合并版 + 1 份核心洞见）"
 type: source
 slug: 2026-09-18-steady-state-trap-notes
-tags: [世界观, 万维钢, 得到课程, 能动, 文化滞后, 稳态]
+tags: [世界观, 万维钢, 能动, 文化滞后, 稳态]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-steady-state-trap-notes]

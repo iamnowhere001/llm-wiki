@@ -1,8 +1,9 @@
 ---
+
 title: 道德的可扩展性：适用于小共同体的美德，放在大系统里可能是腐败
 type: concept
 slug: moral-scalability
-tags: [万维钢, 得到课程, 同人卦]
+tags: [万维钢, 同人卦]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-moral-scalability]

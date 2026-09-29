@@ -1,8 +1,9 @@
 ---
+
 title: 价值不可通约：它们之间可以取舍，但没有汇率
 type: concept
 slug: value-incommensurability
-tags: [万维钢, 得到课程, 决策, 哲学, 不可通约]
+tags: [万维钢, 决策, 哲学, 不可通约]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-scarcity-singularity]

@@ -1,8 +1,9 @@
 ---
+
 title: 自我相关与社会相关：两个超级变量，与修剪它们的三招
 type: concept
 slug: self-and-social-relevance
-tags: [万维钢, 得到课程, 决策, 神经科学, 自我]
+tags: [万维钢, 决策, 神经科学, 自我]
 created: 2026-09-28
 updated: 2026-09-28
 sources: [2026-09-28-weighted-choice-neuroscience]

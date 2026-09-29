@@ -1,8 +1,9 @@
 ---
+
 title: 显眼 ≠ 重要：越容易评价的因素，越容易被当成重要的
 type: concept
 slug: salience-vs-importance
-tags: [万维钢, 得到课程, 决策, 可评估性假说, 聚焦错觉]
+tags: [万维钢, 决策, 可评估性假说, 聚焦错觉]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-zeroth-order-truth]

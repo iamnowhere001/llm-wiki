@@ -1,8 +1,9 @@
 ---
+
 title: 非遍历性（Non-Ergodicity）：玩家怕方差，庄家爱方差
 type: concept
 slug: non-ergodicity
-tags: [万维钢, 得到课程, 决策, 概率, 乘法世界, 吸收壁, 方差, 遍历性]
+tags: [万维钢, 决策, 概率, 乘法世界, 吸收壁, 方差, 遍历性]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-non-ergodicity-notes]

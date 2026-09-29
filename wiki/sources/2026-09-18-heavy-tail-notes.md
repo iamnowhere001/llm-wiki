@@ -1,8 +1,9 @@
 ---
+
 title: "重尾：世界服从极端值（万维钢《现代思维工具》「基本世界观」第 2 讲 + 读者留言 + 13 份 AI 生成块 + 推广草稿）"
 type: source
 slug: 2026-09-18-heavy-tail-notes
-tags: [世界观, 万维钢, 得到课程, 重尾]
+tags: [世界观, 万维钢, 重尾]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-heavy-tail-notes]

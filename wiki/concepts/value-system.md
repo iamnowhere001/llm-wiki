@@ -1,8 +1,9 @@
 ---
+
 title: 价值系统（Value System）：选择是加权求和，不是理性裁决
 type: concept
 slug: value-system
-tags: [万维钢, 得到课程, 决策, 神经科学, 行为改变]
+tags: [万维钢, 决策, 神经科学, 行为改变]
 created: 2026-09-28
 updated: 2026-09-28
 sources: [2026-09-28-weighted-choice-neuroscience]

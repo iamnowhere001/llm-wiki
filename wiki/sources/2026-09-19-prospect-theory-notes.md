@@ -1,8 +1,9 @@
 ---
+
 title: 前景理论：让人铤而走险的不是贪婪，而是不甘（万维钢《现代思维工具》「模块二 决策判断」第 13 讲）
 type: source
 slug: 2026-09-19-prospect-theory-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 参照点, 前景理论, 损失厌恶]
+tags: [现代思维工具, 决策判断, 万维钢, 参照点, 前景理论, 损失厌恶]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-prospect-theory-notes]
