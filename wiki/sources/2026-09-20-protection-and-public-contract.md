@@ -1,8 +1,9 @@
 ---
+
 title: "保护费和公共契约：政府的演化（万维钢《现代思维工具》「模块五 参与者」第 075 讲）"
 type: source
 slug: 2026-09-20-protection-and-public-contract
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 政府, 国家理论, 家产制]
+tags: [现代思维工具, 参与者, 万维钢, 政府, 国家理论, 家产制]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-protection-and-public-contract]

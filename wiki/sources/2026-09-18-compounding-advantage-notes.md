@@ -1,8 +1,9 @@
 ---
+
 title: 复利：可积累的优势（万维钢《现代思维工具》「成长战略」第 3 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-compounding-advantage-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 复利, 资本]
+tags: [现代思维工具, 成长战略, 万维钢, 复利, 资本]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-compounding-advantage-notes]

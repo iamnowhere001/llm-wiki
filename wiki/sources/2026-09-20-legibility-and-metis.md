@@ -1,8 +1,9 @@
 ---
+
 title: "可读性：编户齐民中的米提斯（万维钢《现代思维工具》「模块五 参与者」第 078 讲）"
 type: source
 slug: 2026-09-20-legibility-and-metis
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 可读性, 米提斯, 默会知识]
+tags: [现代思维工具, 参与者, 万维钢, 可读性, 米提斯, 默会知识]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-legibility-and-metis]

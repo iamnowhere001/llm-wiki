@@ -1,8 +1,9 @@
 ---
+
 title: 状态杠杆（State Leverage）：前置 / 顺序 / 约束三种杠杆
 type: concept
 slug: state-leverage
-tags: [万维钢, 得到课程, 决策, 约束理论, 前置杠杆, 动态规划, 状态杠杆, 顺序杠杆]
+tags: [万维钢, 决策, 约束理论, 前置杠杆, 动态规划, 状态杠杆, 顺序杠杆]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-state-leverage-notes]

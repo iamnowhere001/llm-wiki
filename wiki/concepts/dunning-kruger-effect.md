@@ -1,8 +1,9 @@
 ---
+
 title: 邓宁-克鲁格效应（Dunning-Kruger Effect）：它有多少是统计幻觉
 type: concept
 slug: dunning-kruger-effect
-tags: [万维钢, 得到课程, 心理学, 元认知, 统计, 回归均值]
+tags: [万维钢, 心理学, 元认知, 统计, 回归均值]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-regression-to-the-mean-notes]

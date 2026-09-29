@@ -1,8 +1,9 @@
 ---
+
 title: OODA 环：不是反应快，而是换脑快（万维钢《现代思维工具》「模块二 决策判断」第 16 讲）
 type: source
 slug: 2026-09-19-ooda-loop-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, OODA, 博伊德, 定向]
+tags: [现代思维工具, 决策判断, 万维钢, OODA, 博伊德, 定向]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-ooda-loop-notes]

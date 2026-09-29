@@ -1,8 +1,9 @@
 ---
+
 title: 可托付性（Entrustability）
 type: concept
 slug: entrustability
-tags: [万维钢, 得到课程, 不确定性, 可托付性, 托付, 高薪]
+tags: [万维钢, 不确定性, 可托付性, 托付, 高薪]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-trustworthiness]

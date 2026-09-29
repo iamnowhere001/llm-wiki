@@ -1,8 +1,9 @@
 ---
+
 title: 临近可能（The Adjacent Possible）：先实现一种可能，才能打开新的可能
 type: concept
 slug: adjacent-possible
-tags: [演化者, 万维钢, 得到课程, 临近可能, 不可预先陈述性, 产品空间, 组合进化]
+tags: [演化者, 万维钢, 临近可能, 不可预先陈述性, 产品空间, 组合进化]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-adjacent-possible, 2026-09-19-qa-ordinary-people-safety, 2026-09-20-exploration-and-generation]

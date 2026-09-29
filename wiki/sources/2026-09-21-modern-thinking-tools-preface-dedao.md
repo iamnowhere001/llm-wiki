@@ -1,8 +1,9 @@
 ---
+
 title: 发刊词：现代精英的思维武器库（得到官网导出版 · 附《现代思维工具100讲》完整课程目录）
 type: source
 slug: 2026-09-21-modern-thinking-tools-preface-dedao
-tags: [万维钢, 得到课程, 现代思维工具, 智能生活系统]
+tags: [万维钢, 现代思维工具, 智能生活系统]
 created: 2026-09-21
 updated: 2026-09-21
 sources: [2026-09-21-modern-thinking-tools-preface-dedao]

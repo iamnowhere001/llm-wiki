@@ -1,8 +1,9 @@
 ---
+
 title: 效果推理：不知道该干什么的时候该干什么（万维钢《现代思维工具》「模块四 赚钱逻辑」讲次表编号（推定）062）
 type: source
 slug: 2026-09-19-effectuation-notes
-tags: [现代思维工具, 赚钱逻辑, 万维钢, 得到课程, 效应化, 效果推理, Sarasvathy]
+tags: [现代思维工具, 赚钱逻辑, 万维钢, 效应化, 效果推理, Sarasvathy]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-effectuation-notes]

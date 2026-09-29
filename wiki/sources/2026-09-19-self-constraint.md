@@ -1,8 +1,9 @@
 ---
+
 title: 自我约束：有限制才有力量（万维钢《现代思维工具课》「模块八 高观点」推定次序 111）
 type: source
 slug: 2026-09-19-self-constraint
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 博弈论, 人质]
+tags: [现代思维工具, 高观点, 万维钢, 博弈论, 人质]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-self-constraint]

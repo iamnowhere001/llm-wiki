@@ -1,8 +1,9 @@
 ---
+
 title: 能耐寻求定理：君子不器（万维钢《现代思维工具》「模块一 成长战略」第 1 讲 + AI 加工段）
 type: source
 slug: 2026-09-18-capability-seeking-theorem-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 能耐寻求定理]
+tags: [现代思维工具, 成长战略, 万维钢, 能耐寻求定理]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-capability-seeking-theorem-notes]

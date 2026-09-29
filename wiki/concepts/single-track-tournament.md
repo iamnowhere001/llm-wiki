@@ -1,8 +1,9 @@
 ---
+
 title: "单一赛道锦标赛：一条跑道、一个指标，全员参赛"
 type: concept
 slug: single-track-tournament
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 锦标赛理论, 科举, 教育竞争, 东亚]
+tags: [现代思维工具, 参与者, 万维钢, 锦标赛理论, 科举, 教育竞争, 东亚]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-moloch]

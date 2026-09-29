@@ -1,8 +1,9 @@
 ---
+
 title: 问答：怎样在没有正式授权的时候主动认领难题？（万维钢《现代思维工具》「模块七 演化者」第 100 讲）
 type: source
 slug: 2026-09-19-qa-claiming-hard-problems
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, 能动]
+tags: [现代思维工具, 演化者, 万维钢, 能动]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-qa-claiming-hard-problems]

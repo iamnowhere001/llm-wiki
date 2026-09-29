@@ -1,8 +1,9 @@
 ---
+
 title: 对称性破缺（Symmetry Breaking）：命运不过是冷却了的偶然
 type: concept
 slug: symmetry-breaking
-tags: [演化者, 万维钢, 得到课程, 路径依赖, 可塑性, 对称性破缺, 序参量]
+tags: [演化者, 万维钢, 路径依赖, 可塑性, 对称性破缺, 序参量]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-symmetry-breaking, 2026-09-19-qa-claiming-hard-problems]

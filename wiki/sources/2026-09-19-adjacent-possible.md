@@ -1,8 +1,9 @@
 ---
+
 title: 邻近可能：如何实现无法事先想象的事情？
 type: source
 slug: 2026-09-19-adjacent-possible
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, 邻近可能, 不可预先陈述性, 产品空间, 组合进化]
+tags: [现代思维工具, 演化者, 万维钢, 邻近可能, 不可预先陈述性, 产品空间, 组合进化]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-adjacent-possible]

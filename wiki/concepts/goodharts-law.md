@@ -1,8 +1,9 @@
 ---
+
 title: 古德哈特定律
 type: concept
 slug: goodharts-law
-tags: [万维钢, 得到课程, 古德哈特定律, 体制, 考核, 指标]
+tags: [万维钢, 古德哈特定律, 体制, 考核, 指标]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-game-selection-notes]

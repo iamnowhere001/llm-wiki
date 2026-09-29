@@ -1,8 +1,9 @@
 ---
+
 title: 信息价值（Value of Information）：信息不由真假定价，由它能否改变你的行动定价
 type: concept
 slug: value-of-information
-tags: [万维钢, 得到课程, 决策, 信息价值, VOI, 决策边界, EVPI, EVSI]
+tags: [万维钢, 决策, 信息价值, VOI, 决策边界, EVPI, EVSI]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-value-of-information-notes]

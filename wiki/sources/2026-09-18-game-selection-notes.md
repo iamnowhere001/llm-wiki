@@ -1,8 +1,9 @@
 ---
+
 title: 赛道选择：做天兵天将，还是做孙悟空（万维钢《现代思维工具》「模块一 成长战略」第 11 讲）
 type: source
 slug: 2026-09-18-game-selection-notes
-tags: [成长战略, 万维钢, 得到课程, 效应化, 古德哈特定律, 赛道选择, 利基构建]
+tags: [成长战略, 万维钢, 效应化, 古德哈特定律, 赛道选择, 利基构建]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-game-selection-notes]

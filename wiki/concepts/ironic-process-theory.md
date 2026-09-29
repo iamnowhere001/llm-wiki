@@ -1,8 +1,9 @@
 ---
+
 title: 讽刺进程理论：越想压住的念头，越被监控进程反复调出来
 type: concept
 slug: ironic-process-theory
-tags: [万维钢, 得到课程, 心理学]
+tags: [万维钢, 心理学]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-by-products]

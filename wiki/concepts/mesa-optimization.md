@@ -1,8 +1,9 @@
 ---
+
 title: 内部优化器：被当成工具训练久了，内部会长出自己的目的
 type: concept
 slug: mesa-optimization
-tags: [万维钢, 得到课程, AI对齐]
+tags: [万维钢, AI对齐]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-inner-optimizer]

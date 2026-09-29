@@ -1,8 +1,9 @@
 ---
+
 title: "软预算约束：有人兜底，责任就会变形（万维钢《现代思维工具》「模块五 参与者」第 076 讲）"
 type: source
 slug: 2026-09-20-soft-budget-constraint
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 软预算约束, 道德风险, 可信承诺]
+tags: [现代思维工具, 参与者, 万维钢, 软预算约束, 道德风险, 可信承诺]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-soft-budget-constraint]

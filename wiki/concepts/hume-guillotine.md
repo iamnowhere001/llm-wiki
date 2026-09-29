@@ -1,8 +1,9 @@
 ---
+
 title: 休谟断头台：从「世界是什么」推不出「你该做什么」
 type: concept
 slug: hume-guillotine
-tags: [万维钢, 得到课程, 哲学, 目标函数]
+tags: [万维钢, 哲学, 目标函数]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-objective-function]

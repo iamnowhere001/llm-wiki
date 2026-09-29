@@ -1,8 +1,9 @@
 ---
+
 title: 平台商业模式
 type: concept
 slug: platform-business-model
-tags: [万维钢, 得到课程, 平台, enshittification, 互操作性, 技术封建主义, 双边市场, 商业模式, 网络效应]
+tags: [万维钢, 平台, enshittification, 互操作性, 技术封建主义, 双边市场, 商业模式, 网络效应]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-platform-business-model]

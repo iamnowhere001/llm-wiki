@@ -1,8 +1,9 @@
 ---
+
 title: 凯利公式（Kelly Criterion）：乘法世界里的认知变现
 type: concept
 slug: kelly-criterion
-tags: [万维钢, 得到课程, 决策, 概率, 乘法世界, 仓位管理, 凯利]
+tags: [万维钢, 决策, 概率, 乘法世界, 仓位管理, 凯利]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-kelly-criterion-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 无免费午餐定理：诸行无常，有偏置才有决策（万维钢《现代思维工具》「模块二 决策判断」第 1 讲）
 type: source
 slug: 2026-09-19-no-free-lunch-theorem-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 归纳偏置, 无免费午餐定理]
+tags: [现代思维工具, 决策判断, 万维钢, 归纳偏置, 无免费午餐定理]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-no-free-lunch-theorem-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 智能生活系统（目标函数 / 世界模型 / 反馈回路 / 预算带宽）
 type: concept
 slug: intelligent-life-system
-tags: [世界观, 万维钢, 得到课程, 系统论, 目标函数, 控制论, 注意力, 反馈回路, 世界模型]
+tags: [世界观, 万维钢, 系统论, 目标函数, 控制论, 注意力, 反馈回路, 世界模型]
 created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-21-modern-thinking-tools-preface-dedao]

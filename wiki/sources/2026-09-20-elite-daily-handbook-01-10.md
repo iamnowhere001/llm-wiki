@@ -1,8 +1,9 @@
 ---
+
 title: "《高手修炼手册》第一册：高手是怎么练成的（01–10，缺 06）—— 万维钢《精英日课》摘编"
 type: source
 slug: 2026-09-20-elite-daily-handbook-01-10
-tags: [万维钢, 得到课程, 成长战略, 教育, 决策]
+tags: [万维钢, 成长战略, 教育, 决策]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-elite-daily-handbook]

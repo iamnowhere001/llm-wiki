@@ -1,8 +1,9 @@
 ---
+
 title: "礼：社会互动协议（万维钢《现代思维工具》「模块五 参与者」第 070 讲）"
 type: source
 slug: 2026-09-20-ritual-as-protocol
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 礼, 社会互动, 聚焦点]
+tags: [现代思维工具, 参与者, 万维钢, 礼, 社会互动, 聚焦点]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-ritual-as-protocol]

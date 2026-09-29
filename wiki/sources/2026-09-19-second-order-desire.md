@@ -1,8 +1,9 @@
 ---
+
 title: 二阶意愿和元表征：应无所住，而生其心（万维钢《现代思维工具课》「模块八 高观点」第 109 讲）
 type: source
 slug: 2026-09-19-second-order-desire
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 二阶意愿, 元表征]
+tags: [现代思维工具, 高观点, 万维钢, 二阶意愿, 元表征]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-second-order-desire]

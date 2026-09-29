@@ -1,8 +1,9 @@
 ---
+
 title: 预训练和后训练：你能力的上限和下限（万维钢《现代思维工具课》「模块八 高观点」推定次序 117）
 type: source
 slug: 2026-09-19-pretraining-posttraining
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 后训练, 强化学习, 预训练]
+tags: [现代思维工具, 高观点, 万维钢, 后训练, 强化学习, 预训练]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-pretraining-posttraining]

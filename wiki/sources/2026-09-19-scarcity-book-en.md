@@ -1,8 +1,9 @@
 ---
+
 title: Scarcity（英文原书）—— 一手校准报告
 type: source
 slug: 2026-09-19-scarcity-book-en
-tags: [现代思维工具, 万维钢, 得到课程, 稀缺, 行为经济学, 认知带宽]
+tags: [现代思维工具, 万维钢, 稀缺, 行为经济学, 认知带宽]
 created: 2026-09-19
 updated: 2026-09-28
 sources: [2026-09-19-scarcity-book-en]

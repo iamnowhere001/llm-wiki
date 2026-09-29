@@ -1,8 +1,9 @@
 ---
+
 title: 超级预测：给不确定性命名，给自己打分（万维钢《现代思维工具》「模块二 决策判断」第 15 讲）
 type: source
 slug: 2026-09-19-superforecasting-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 贝叶斯, 泰特洛克, 布里尔分数, 超级预测]
+tags: [现代思维工具, 决策判断, 万维钢, 贝叶斯, 泰特洛克, 布里尔分数, 超级预测]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-superforecasting-notes]

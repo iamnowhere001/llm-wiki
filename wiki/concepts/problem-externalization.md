@@ -1,8 +1,9 @@
 ---
+
 title: 问题外化：把「人」和「问题」分开，问题才成为可以一起对付的对象
 type: concept
 slug: problem-externalization
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 问题外化, 叙事疗法, 谈判, 第三物]
+tags: [现代思维工具, 参与者, 万维钢, 问题外化, 叙事疗法, 谈判, 第三物]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-third-thing, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]

@@ -1,8 +1,9 @@
 ---
+
 title: "万维钢：5 个思维工具，加速自我成长（《现代思维工具课》「模块一 成长战略」收官直播逐字稿）"
 type: source
 slug: 2026-09-18-five-thinking-tools-livestream
-tags: [成长战略, 万维钢, 得到课程]
+tags: [成长战略, 万维钢]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-five-thinking-tools-livestream]

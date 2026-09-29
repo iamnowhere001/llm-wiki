@@ -1,8 +1,9 @@
 ---
+
 title: 自组织临界：恰到好处的活泼（万维钢《现代思维工具》「模块七 演化者」讲次表编号（推定）102）
 type: source
 slug: 2026-09-19-self-organized-criticality
-tags: [现代思维工具, 演化者, 万维钢, 得到课程, 幂律, 临界]
+tags: [现代思维工具, 演化者, 万维钢, 幂律, 临界]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-self-organized-criticality]

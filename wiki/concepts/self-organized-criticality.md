@@ -1,8 +1,9 @@
 ---
+
 title: 自组织临界（Self-Organized Criticality）：恰到好处的活泼
 type: concept
 slug: self-organized-criticality
-tags: [演化者, 万维钢, 得到课程, 系统论, 幂律, 临界]
+tags: [演化者, 万维钢, 系统论, 幂律, 临界]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-self-organized-criticality, 2026-09-19-qa-ordinary-people-safety]

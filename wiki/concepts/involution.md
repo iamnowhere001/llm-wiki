@@ -1,8 +1,9 @@
 ---
+
 title: "内卷（Involution）：没有发展的增长"
 type: concept
 slug: involution
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 内卷, 黄宗智, 内卷化, 过密化, 东亚]
+tags: [现代思维工具, 参与者, 万维钢, 内卷, 黄宗智, 内卷化, 过密化, 东亚]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-moloch]

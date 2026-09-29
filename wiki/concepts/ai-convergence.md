@@ -1,8 +1,9 @@
 ---
+
 title: AI 的收敛性（最强 AI 作为「智力蒸馏器」）
 type: concept
 slug: ai-convergence
-tags: [万维钢, 得到课程, AI, 思维工具, 认识论, 知识压缩]
+tags: [万维钢, AI, 思维工具, 认识论, 知识压缩]
 created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-21-modern-thinking-tools-preface-dedao]

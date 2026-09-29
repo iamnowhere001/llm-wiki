@@ -1,8 +1,9 @@
 ---
+
 title: "激励相容：好的制度不应该指望人「畏威怀德」（万维钢《现代思维工具》「模块五 参与者」第 072 讲）"
 type: source
 slug: 2026-09-20-incentive-compatibility
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 激励相容, 机制设计, 制度]
+tags: [现代思维工具, 参与者, 万维钢, 激励相容, 机制设计, 制度]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-incentive-compatibility]

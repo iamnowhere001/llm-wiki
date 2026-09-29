@@ -1,8 +1,9 @@
 ---
+
 title: 工具性收敛：最终目标千奇百怪，中间手段却会收敛到同一批
 type: concept
 slug: instrumental-convergence
-tags: [万维钢, 得到课程, 目标函数, AI对齐, 约束]
+tags: [万维钢, 目标函数, AI对齐, 约束]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-objective-function]

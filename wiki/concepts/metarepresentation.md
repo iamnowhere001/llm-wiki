@@ -1,8 +1,9 @@
 ---
+
 title: 元表征：给思想加上引号，然后一层层往上爬
 type: concept
 slug: metarepresentation
-tags: [万维钢, 得到课程, 认知科学, 元认知, 元表征]
+tags: [万维钢, 认知科学, 元认知, 元表征]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-second-order-desire]

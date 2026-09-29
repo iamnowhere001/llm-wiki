@@ -1,8 +1,9 @@
 ---
+
 title: 期权：保留可选项的特权（万维钢《现代思维工具》「模块二 决策判断」第 9 讲 + AI 加工段）
 type: source
 slug: 2026-09-19-optionality-notes
-tags: [现代思维工具, 决策判断, 万维钢, 得到课程, 期权, BATNA, 单向门, 实物期权]
+tags: [现代思维工具, 决策判断, 万维钢, 期权, BATNA, 单向门, 实物期权]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-optionality-notes]

@@ -1,8 +1,9 @@
 ---
+
 title: 前景理论（Prospect Theory）：参照点、非对称 S 曲线、损失厌恶
 type: concept
 slug: prospect-theory
-tags: [万维钢, 得到课程, 决策, 行为经济学, 参照点, 前景理论, 损失厌恶]
+tags: [万维钢, 决策, 行为经济学, 参照点, 前景理论, 损失厌恶]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-prospect-theory-notes]

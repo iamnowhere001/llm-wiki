@@ -1,8 +1,9 @@
 ---
+
 title: "《权衡一念：关于选择和改变的脑神经科学》（万维钢「每天听本书」解读）"
 type: source
 slug: 2026-09-28-weighted-choice-neuroscience
-tags: [万维钢, 得到课程, 决策, 行为改变, 神经科学]
+tags: [万维钢, 决策, 行为改变, 神经科学]
 created: 2026-09-28
 updated: 2026-09-28
 sources: [2026-09-28-weighted-choice-neuroscience]

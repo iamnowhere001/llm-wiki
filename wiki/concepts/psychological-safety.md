@@ -1,8 +1,9 @@
 ---
+
 title: 心理安全
 type: concept
 slug: psychological-safety
-tags: [万维钢, 得到课程, 安全感, 心理安全, 团队, 组织行为学]
+tags: [万维钢, 安全感, 心理安全, 团队, 组织行为学]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-sense-of-security-notes]

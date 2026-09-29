@@ -1,8 +1,9 @@
 ---
+
 title: 主体—客体转化
 type: concept
 slug: subject-object-shift
-tags: [万维钢, 得到课程, 心理学, 元认知, 身份认同, 凯根, 心智发展]
+tags: [万维钢, 心理学, 元认知, 身份认同, 凯根, 心智发展]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-identity-metacognition-notes, 2026-09-19-second-order-desire]

@@ -1,8 +1,9 @@
 ---
+
 title: 幸存者偏差（Survivorship Bias）：成功学最大的骗局
 type: concept
 slug: survivorship-bias
-tags: [万维钢, 得到课程, 决策, 统计, 幸存者偏差, 选择偏差, 成功学]
+tags: [万维钢, 决策, 统计, 幸存者偏差, 选择偏差, 成功学]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-selection-bias-notes]

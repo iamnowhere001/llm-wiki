@@ -1,8 +1,9 @@
 ---
+
 title: "问答：为什么承认「原来我是错的」那么难？（万维钢《现代思维工具》「模块一 成长战略」问答之一，覆盖 5 讲）"
 type: source
 slug: 2026-09-18-qa-admitting-mistakes-notes
-tags: [现代思维工具, 成长战略, 万维钢, 得到课程, 内核自我, 逆火效应]
+tags: [现代思维工具, 成长战略, 万维钢, 内核自我, 逆火效应]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-qa-admitting-mistakes-notes]

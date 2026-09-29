@@ -1,8 +1,9 @@
 ---
+
 title: "《高手修炼手册》第二册：高手是怎么思考的（11–20）—— 万维钢《精英日课》摘编"
 type: source
 slug: 2026-09-20-elite-daily-handbook-11-20
-tags: [万维钢, 得到课程, 心智模型, 元认知, 认知]
+tags: [万维钢, 心智模型, 元认知, 认知]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-elite-daily-handbook]

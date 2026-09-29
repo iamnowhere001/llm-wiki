@@ -1,8 +1,9 @@
 ---
+
 title: 不确定性是意义的燃料
 type: concept
 slug: uncertainty-as-fuel
-tags: [世界观, 万维钢, 得到课程, 叙事, 不确定性, 意义]
+tags: [世界观, 万维钢, 叙事, 不确定性, 意义]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]

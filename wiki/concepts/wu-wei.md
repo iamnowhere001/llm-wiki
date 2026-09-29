@@ -1,8 +1,9 @@
 ---
+
 title: 无为：四家对同一个悖论的四轮解答（练 / 减 / 养 / 忘）
 type: concept
 slug: wu-wei
-tags: [万维钢, 得到课程, 无为]
+tags: [万维钢, 无为]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-by-products]

@@ -1,8 +1,9 @@
 ---
+
 title: "身份认同：元认知黑魔法（万维钢《现代思维工具》「模块一 成长战略」第 9 讲 + AI 加工段）"
 type: source
 slug: 2026-09-18-identity-metacognition-notes
-tags: [成长战略, 万维钢, 得到课程, 元认知, 身份认同, 凯根, 丹尼特]
+tags: [成长战略, 万维钢, 元认知, 身份认同, 凯根, 丹尼特]
 created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-identity-metacognition-notes]

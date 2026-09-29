@@ -1,8 +1,9 @@
 ---
+
 title: 自我约束：不是自律，是主动放弃某些自由以换取授权
 type: concept
 slug: self-constraint
-tags: [万维钢, 得到课程, 博弈论, 承诺]
+tags: [万维钢, 博弈论, 承诺]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-self-constraint]

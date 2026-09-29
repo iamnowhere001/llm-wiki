@@ -1,8 +1,9 @@
 ---
+
 title: "非预期后果：好意图怎么会带来坏结果？（万维钢《现代思维工具》「模块五 参与者」第 081 讲）"
 type: source
 slug: 2026-09-20-unintended-consequences
-tags: [现代思维工具, 参与者, 万维钢, 得到课程, 非预期后果, 卢卡斯批判, 街头官僚, 激励机制]
+tags: [现代思维工具, 参与者, 万维钢, 非预期后果, 卢卡斯批判, 街头官僚, 激励机制]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-unintended-consequences]

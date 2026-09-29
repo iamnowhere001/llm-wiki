@@ -1,8 +1,9 @@
 ---
+
 title: 反馈回路（Feedback Loop）：强化回路与平衡回路
 type: concept
 slug: feedback-loop
-tags: [演化者, 万维钢, 得到课程, 系统论, 控制论, 反馈回路, 正反馈, 负反馈, 冷启动, 闭环控制]
+tags: [演化者, 万维钢, 系统论, 控制论, 反馈回路, 正反馈, 负反馈, 冷启动, 闭环控制]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-feedback-loops, 2026-09-19-feedback-loop-essay, 2026-09-19-qa-ordinary-people-safety]

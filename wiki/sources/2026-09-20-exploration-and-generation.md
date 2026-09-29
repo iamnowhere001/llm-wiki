@@ -1,8 +1,9 @@
 ---
+
 title: "探索和生发：一种人生意义（万维钢《现代思维工具》「尾声」讲 —— 讲次表未编号）"
 type: source
 slug: 2026-09-20-exploration-and-generation
-tags: [现代思维工具, 尾声, 万维钢, 得到课程, 人生意义, 探索和生发, 计算不可约性, 组装理论, 可能性]
+tags: [现代思维工具, 尾声, 万维钢, 人生意义, 探索和生发, 计算不可约性, 组装理论, 可能性]
 created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-exploration-and-generation]

@@ -1,8 +1,9 @@
 ---
+
 title: 执行意图（If-Then）
 type: concept
 slug: implementation-intentions
-tags: [成长战略, 得到课程, 动机, 执行意图, 自我调节, If-Then]
+tags: [成长战略, 动机, 执行意图, 自我调节, If-Then]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-woop-notes]

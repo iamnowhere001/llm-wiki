@@ -1,8 +1,9 @@
 ---
+
 title: 立题：怎样给事情做主（万维钢《现代思维工具课》「模块八 高观点」推定次序 114）
 type: source
 slug: 2026-09-19-problem-setting
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, 重尾, 议程设定, 预设投射]
+tags: [现代思维工具, 高观点, 万维钢, 重尾, 议程设定, 预设投射]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-problem-setting]
