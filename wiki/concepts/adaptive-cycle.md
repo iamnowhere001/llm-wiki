@@ -5,9 +5,9 @@ type: concept
 slug: adaptive-cycle
 tags: [万维钢, 适应性循环]
 created: 2026-09-19
-updated: 2026-09-20
+updated: 2026-09-29
 sources: [2026-09-19-adaptive-cycle]
-related: [explore-exploit-tradeoff, antifragility, marginal-analysis, modern-thinking-tools, 2026-09-20-slow-variables, 2026-09-19-adaptive-cycle]
+related: [explore-exploit-tradeoff, antifragility, marginal-analysis, modern-thinking-tools, 2026-09-20-slow-variables, 2026-09-19-adaptive-cycle, wilderness-model]
 evidence_tier: single
 confidence: medium
 status: active
@@ -112,6 +112,10 @@ status: active
   「**你可以立即向快变量要成绩……但是如果慢变量没搞好，这个湖迟早又会变成浑水湖**」。
   **本页讲循环，082 讲循环里哪一部分决定系统能不能吸收扰动。** 两者同源（均出霍林），**互补**。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）是「四阶段」的另一个对象，不是本页的支撑。**
+  该份素材给的是**个人**转型的四阶段（解放 → 失序 → 重建 → 内化，行 2345–2429）；
+  本页是**系统**的四阶段（r → K → Ω → α，Holling 1986）。**阶段数相同是巧合，动力学无关。**
+  唯一可对照的一点：两者都把「失序」当作必经阶段（本页的 Ω 释放 vs 该份的失序）。**故不进 `sources`。**
 ## 待办 / 开放问题
 
 - [ ] **「窑洞对」的引文与日期能否取回来源？** 目前标（未验证）。

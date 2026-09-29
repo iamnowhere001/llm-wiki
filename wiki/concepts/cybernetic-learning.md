@@ -4,9 +4,9 @@ type: concept
 slug: cybernetic-learning
 tags: [机制, 控制论, 学习方法]
 created: 2026-09-18
-updated: 2026-09-19
-sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self, 2026-09-19-value-of-information-notes]
-related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, intelligent-life-system, hard-constraints, three-selves, free-energy-principle, narrative-as-objective-function, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, meta-narrative, why-pkm-in-ai-era]
+updated: 2026-09-29
+sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self, 2026-09-19-value-of-information-notes, 2026-09-29-exodus-and-wilderness]
+related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, intelligent-life-system, hard-constraints, three-selves, free-energy-principle, narrative-as-objective-function, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, meta-narrative, why-pkm-in-ai-era, wilderness-model]
 evidence_tier: crossed-independent
 confidence: medium
 status: active
@@ -306,6 +306,12 @@ status: active
   （**语料质量 / 反馈来源 / 演练强度 / 奖励机制设计**），正对应本页链条；
   且「**今天的后训练就是明天的预训练**」 给闭环补上「**反馈回路持续抛出新语料**」这一步。
 
+- **[[2026-09-29-exodus-and-wilderness]]（2026-09-29 新增）补的是本页链条的「负向判据」。**
+  本页链条是「目标 → 误差信号 → 过滤器 → 修正」；该份素材给的是**什么样的活动没有误差信号** ——
+  四类伪反馈：学习成瘾 / 规划成瘾 / 工具建设 / 忙碌（行 3487–3715），判据句是「这个工具有没有
+  减少一个真实任务的时间，或者增加一个真实任务的产出」（行 3609）。它同时把误差信号重述为
+  「**行动 + 外部不可控反应 = 真实反馈**」（行 4502），四特征是**具体 / 外部 / 不可控 / 可迭代**（行 3775–3799）。
+  ⚠️ 该份素材是**零署名、零引注的 AI 对话产物**，只提供形态、不提供证据 —— 见 [[wilderness-model]] 的出处声明。
 ## 待办 / 开放问题
 
 - [ ] 控制论式学习的学理表述是否准确？需要一份一手文献核对（Wiener 1948）
@@ -337,3 +343,6 @@ status: active
 - [[2026-09-18-modern-thinking-tools-prospectus]]（第五例，**仅支撑 2026-09-18 新增的那一节**；
   `confidence: medium`，含 84% AI 生成段 —— 引用其 AI 段内容时必须标注生成性质）
 - [[2026-09-18-narrative-self]]（**2026-09-18 新增**）—— **第六例，但这一例补的是链条的上游**：本页讲「有了目标之后发生什么」，该档讲「**目标从哪来**」（元叙事四因）。**该档是 AI 生成、零引注，本页不因此上调。** 见 [[meta-narrative]]
+
+- [[2026-09-29-exodus-and-wilderness]]（**2026-09-29 新增**）—— 只支撑本页新增的那一条（伪反馈 / 真实反馈）。
+  `confidence: low`，**零署名、零引注的 AI 对话产物**；引用其内容时**不得记作「某人说」**。

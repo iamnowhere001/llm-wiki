@@ -22,7 +22,7 @@ status: active
 > ② `python3 tools/wiki.py search "<关键词>" --top 30` —— 中文检索。宽主题务必调大
 >    `--top`（默认 10 只覆盖窄查询；实测「情绪」的召回 13% → top30 70% → top60 97%）。
 
-页面总数 **467**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **150** 份 / 摘要页 **152** 份 ｜ 最后更新 2026-09-29
+页面总数 **469**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **151** 份 / 摘要页 **153** 份 ｜ 最后更新 2026-09-29
 
 ## 项目 (8)
 
@@ -113,7 +113,7 @@ status: active
 - [[yjengo|YJango（学习类内容创作者）]]
 - [[yuval-harari|尤瓦尔·赫拉利（Yuval Noah Harari）]]
 
-## 概念 (213)
+## 概念 (214)
 
 - [[adaptive-cycle|适应性循环（Adaptive Cycle）：稳定是一种幻觉，它只是一个阶段]]
 - [[adjacent-possible|临近可能（The Adjacent Possible）：先实现一种可能，才能打开新的可能]]
@@ -321,6 +321,7 @@ status: active
 - [[wanting-vs-liking|想要 ≠ 喜欢：电刺激让大鼠吃掉四倍食物，表情却更厌恶]]
 - [[wardley-map|沃德利地图]]
 - [[wiki-lint|Wiki 体检（Lint）]]
+- [[wilderness-model|旷野模型：离开旧世界 → 进入旷野 → 重建秩序 → 形成新自我]]
 - [[window-of-opportunity|机会窗口]]
 - [[wishful-thinking-layers|一厢情愿的六层：小说里的许愿阶梯]]
 - [[woop|WOOP（心理比对 + 执行意图）]]
@@ -353,7 +354,7 @@ status: active
 - [[why-pkm-in-ai-era|为什么在 AI 时代仍然需要个人知识管理系统]]
 - [[why-writing-fails|写不出来的四种病因：一个分类尝试]]
 
-## 素材摘要 (152)
+## 素材摘要 (153)
 
 > 只列 slug —— 摘要与标签见 `wiki/.index/source.md`；按主题找素材用 `wiki.py search`。
 
@@ -507,6 +508,7 @@ status: active
 - [[2026-09-27-mcraven-make-your-bed-speech]]
 - [[2026-09-28-choice-overload-meta-analysis]]
 - [[2026-09-28-weighted-choice-neuroscience]]
+- [[2026-09-29-exodus-and-wilderness]]
 - [[2026-09-29-quality-filtering-pretraining]]
 - [[2026-09-29-synthetic-data-pretraining]]
 

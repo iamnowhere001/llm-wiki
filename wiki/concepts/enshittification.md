@@ -34,7 +34,7 @@ status: active
 - **处方是互操作性**：Doctorow 专门写了 *The Internet Con: How to Seize the Means of Computation*
   （Verso, 2023-09-05）讲这个过程并给出互操作性处方（sources 页 #3 / #12）。
 
-## 正文
+## 机制 / 原理
 
 ### 三段论（讲稿行 85–113）
 
@@ -61,6 +61,8 @@ status: active
 > [!note] 证据性质提醒
 > 「约束失效」这段是**署名读者留言（UGC）**，**一手但主观**，**不是讲稿主张**（sources 页分层表 G 段）。
 > 它比讲稿更清楚地解释了机制，**引用时须标注其来源性质**，不能当万维钢的话引用。
+
+## 定义与背景
 
 ### 归属与出处
 
