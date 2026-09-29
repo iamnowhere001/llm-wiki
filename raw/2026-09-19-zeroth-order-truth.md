@@ -1,6 +1,6 @@
 ---
 title: "零阶道理：大局观就是给真理分配表决权"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/JJkxwnpYwiQrcDkTVmCcItdEnIe
 source_url: https://www.dedao.cn/course/article?id=258WANERjwQJDzonzpKbOMG1rZqkPl
 kind: course-article

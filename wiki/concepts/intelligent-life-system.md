@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-21-modern-thinking-tools-preface-dedao]
 related: [2026-09-21-modern-thinking-tools-preface-dedao, cybernetic-learning, three-solutions, ai-convergence, narrative-as-objective-function, prediction-error, free-energy-principle, multiplicative-world, cognitive-load-theory, hard-constraints, three-selves, types-of-uncertainty, uncertainty-as-fuel, modern-thinking-tools, wanweigang, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-three-selves-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

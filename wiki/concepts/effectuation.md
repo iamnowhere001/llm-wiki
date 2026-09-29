@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-game-selection-notes, 2026-09-19-value-of-information-notes, 2026-09-19-effectuation-notes]
 related: [game-selection, multiplicative-world, agent-vs-tool, cybernetic-learning, saras-sarasvathy, modern-thinking-tools, field-theory]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: high
 status: active
 ---

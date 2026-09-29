@@ -1,6 +1,6 @@
 ---
 title: "预训练和后训练：你能力的上限和下限"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/OPOGw6gQ7i7iqtkZlOwcarEGnif
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWmyNJ7DOop10vZwL
 kind: course-article

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [narrative-as-first-principle, narrative-power, narrative-identity, narrative-industrialization, meta-narrative, llm-wiki-research, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: stale
 ---

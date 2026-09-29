@@ -6,7 +6,7 @@ tags: [RAG, 对比, 架构]
 created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
-related: [llm-wiki-pattern, compounding-knowledge, wiki-lint]
+related: [llm-wiki-pattern, compounding-knowledge, wiki-lint, knowledge-is-the-bottleneck]
 evidence_tier: single
 confidence: high
 status: active
@@ -55,6 +55,14 @@ status: active
 - 规模极大，且不需要综合（纯查找）
 
 **可以共存**：wiki 负责综合与长期结构，RAG 负责在 `raw/` 里做精确原文检索。本仓库的 `tools/wiki.py search` 目前只覆盖 wiki 层。
+
+## 与其他页面的关系
+
+- **[[knowledge-is-the-bottleneck]]：本页的框架需要一层前置。** 本页把问题框在「选 RAG 还是选 LLM Wiki」。
+  那一页主张：**这个框本身有问题 —— 两个选项都在检索层**，而知识库真正的瓶颈在知识层
+  （它的「四条落差的层级」一节）。**两页不冲突**：本页回答「用哪个方案」，
+  那一页回答「为什么这不该是第一个问题」。本页「选 LLM Wiki」条件里的
+  「你希望知识随时间变得更结构化」，正是那一页说的知识层工作。
 
 ## 待办 / 开放问题
 

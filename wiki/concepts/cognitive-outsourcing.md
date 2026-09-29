@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-writing-is-thinking, 2026-09-18-modern-thinking-tools-prospectus]
 related: [cognitive-debt, productive-resistance, advait-sarkar, nataliya-kosmyna, why-pkm-in-ai-era, llm-wiki-pattern, tacit-knowledge, ai-convergence, 2026-09-18-modern-thinking-tools-prospectus]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---

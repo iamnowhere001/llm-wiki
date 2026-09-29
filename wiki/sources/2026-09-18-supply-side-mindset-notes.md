@@ -21,7 +21,7 @@ status: active
 > frontmatter 占 1–24 行；**正文自第 25 行起**，正文合计 25–877 = **853 行**。
 > （`capture_method` 记「正文 850 行」，与本库实测量的 853 差 3 —— 与同批的 capability 文件偏差一致，属同一基准差。）
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/ZrfpwpaX3isrhSkJL4rcnYCUnig（原文链接已移除）
 - **发表**：2026-03-25 22:47
 - **素材路径**：`raw/2026-09-18-supply-side-mindset-notes.md`（877 行）

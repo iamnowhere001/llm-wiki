@@ -1,6 +1,6 @@
 ---
 title: "共鸣：高级生活的秘密（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「世界的共鸣」以下各段为 AI 加工，无署名
+author: 万维钢；「世界的共鸣」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/EUxewTXyMi11Gtkdq8Zcgefansh
 source_url: https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3mobqK5YmP6DOjxAL
 kind: mixed-notes

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hard-constraints-notes]
 related: [viktor-frankl, stimulus-response-gap, stoic-control-dichotomy, cognitive-reappraisal, hard-constraints, 2026-09-18-hard-constraints-notes, modern-thinking-tools, 2026-09-20-unintended-consequences]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

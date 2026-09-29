@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]
 related: [types-of-uncertainty, narrative-as-first-principle, prediction-error, four-pillars-of-learning, free-energy-principle, 2026-09-18-uncertainty-fuel-notes, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

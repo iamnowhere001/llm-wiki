@@ -1,6 +1,6 @@
 ---
 title: "问答：处于被领导做空地位的状态怎么办？"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/HsiBwXK5HinloikCDIacZv9Enpd
 source_url: https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYdM2VlY4jRMdvmbE
 kind: mixed-notes

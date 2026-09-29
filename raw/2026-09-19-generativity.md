@@ -1,6 +1,6 @@
 ---
 title: "生成：最高级的创造"
-author: 万维钢（得到课程讲稿）；收尾「有偈为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「有偈为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/V109wd6kBi7gxxkZ9krcL4zTnYc
 source_url: https://www.dedao.cn/course/article?id=ykaNlMY5gn3Jq1WBwPJ7EAROW0DLje
 kind: course-article

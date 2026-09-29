@@ -1,6 +1,6 @@
 ---
-title: "场域：识时务者为俊杰（得到课程讲稿）"
-author: 万维钢（讲稿）
+title: "场域：识时务者为俊杰"
+author: 万维钢
 url: https://my.feishu.cn/wiki/G0SRwpMUOikeRikj6GbcqxUanYf
 source_url: https://www.dedao.cn/course/article?id=W32axR8enbzBJ9p2rjVkDEgM6ApPl9
 kind: mixed-notes
@@ -23,7 +23,7 @@ capture_note: >
   **版权性质：** 讲稿正文为得到付费课程的搬运；本文件以个人研究用途存档于本地 `raw/`，不对外发布。
 ---
 
-# 场域：识时务者为俊杰（得到课程讲稿）
+# 场域：识时务者为俊杰
 
 # 场域：识时务者为俊杰
 

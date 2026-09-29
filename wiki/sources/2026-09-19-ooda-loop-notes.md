@@ -27,7 +27,7 @@ status: active
 > 该讲**不构成本库 [[agent-vs-tool]] 的新证据** —— 本页如实记录这个「无」，不按不存在的内容建链。
 > （对照：该讲 wiki 节点下还有一个**孙节点**《笛卡尔方法论》，本批按范围约定未收录。）
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/BBClwNjwiiOachkZbjTcQVzFnUc（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-ooda-loop-notes.md`（330 行）
 

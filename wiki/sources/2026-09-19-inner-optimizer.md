@@ -1,8 +1,8 @@
 ---
-title: 内部优化器：养器成妖（万维钢《现代思维工具课》「模块八 高观点」推定次序 115）
+title: 内部优化器：养器成妖
 type: source
 slug: 2026-09-19-inner-optimizer
-tags: [现代思维工具, 高观点, 万维钢, 得到课程, AI对齐, 古德哈特定律, 内部优化器]
+tags: [现代思维工具, 高观点, 万维钢, AI对齐, 古德哈特定律, 内部优化器]
 created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-inner-optimizer]
@@ -28,7 +28,7 @@ status: active
 > frontmatter 占 **1–28** 行，**正文自第 30 行起（30–304 = 275 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
-- **作者**：万维钢（得到课程讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/EwQmwdDh0iO4sCkae3ecYMWMnjd（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-inner-optimizer.md`（305 行）
 

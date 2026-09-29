@@ -1,6 +1,6 @@
 ---
-title: "赛道选择：做天兵天将，还是做孙悟空？（得到课程讲稿）"
-author: 万维钢（讲稿）
+title: "赛道选择：做天兵天将，还是做孙悟空？"
+author: 万维钢
 url: https://my.feishu.cn/wiki/QODowcTyUiIHpjkpiB0cBIw0nte
 source_url: https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3moq6K5YmP6DOjxAL
 kind: mixed-notes
@@ -22,7 +22,7 @@ capture_note: >
   **版权性质：** 讲稿正文为得到付费课程的搬运；本文件以个人研究用途存档于本地 `raw/`，不对外发布。
 ---
 
-# 赛道选择：做天兵天将，还是做孙悟空？（得到课程讲稿）
+# 赛道选择：做天兵天将，还是做孙悟空？
 
 # 赛道选择：做天兵天将，还是做孙悟空？
 

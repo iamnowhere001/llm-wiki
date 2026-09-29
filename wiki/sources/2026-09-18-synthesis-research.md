@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第五讲**。
 > **本批九讲里与本库自身主题最贴近的一讲** —— 它描述的动作，`llm-wiki` 正在做。
 
-- **作者**：万维钢（** 图片水印「调研助手 By Weigang Wan」** —— 本批九讲里唯一的拉丁转写署名）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/R5Zowh0RhiOVqMkr5eNcoy90npc ｜ https://www.dedao.cn/course/article?id=9GEyP73eprvKBPY9eQJcX8cLnOg
 - **发表**：2026-05-12 23:16
 - **素材路径**：`raw/2026-09-18-synthesis-research.md`（463 行，frontmatter 1–36）

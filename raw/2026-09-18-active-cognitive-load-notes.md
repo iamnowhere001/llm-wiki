@@ -1,6 +1,6 @@
 ---
 title: "主动高认知负荷：注意力的 Pro 模式（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「核心洞见」以下各段为 AI 加工，无署名
+author: 万维钢；「核心洞见」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/WqrIwz2BdiWoWVkpCPFcVtMDngh
 source_url: https://www.dedao.cn/course/article?id=ov5WgnrDGd8bKNdwZ7JMNRm1wO264y
 kind: mixed-notes

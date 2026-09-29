@@ -1,6 +1,6 @@
 ---
 title: "问答：战略取舍中，怎么区分专注和固执？"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/MskCw4RkMiN6mlkmfnDcoPtlnsc
 source_url: https://www.dedao.cn/course/article?id=zYo2GPNq4W8VEbwmzlJejyRBZbnw0d
 kind: mixed-notes

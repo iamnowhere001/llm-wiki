@@ -1,6 +1,6 @@
 ---
 title: "平台：现代世界最厉害的商业模式"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/KIuAwBpCIiqm2lk2UHncRQONnQg
 source_url: https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMa1Xw6bEOLl5GPx
 kind: mixed-notes

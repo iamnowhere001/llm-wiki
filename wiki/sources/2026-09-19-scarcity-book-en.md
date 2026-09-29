@@ -4,9 +4,9 @@ type: source
 slug: 2026-09-19-scarcity-book-en
 tags: [现代思维工具, 万维钢, 得到课程, 稀缺, 行为经济学, 认知带宽]
 created: 2026-09-19
-updated: 2026-09-20
+updated: 2026-09-28
 sources: [2026-09-19-scarcity-book-en]
-related: [2026-09-18-capability-seeking-theorem-notes, opportunity-systems, intelligent-life-system, cybernetic-learning, modern-thinking-tools, 2026-09-19-art-of-impossible-book-en, source-pool-bias]
+related: [2026-09-18-capability-seeking-theorem-notes, opportunity-systems, intelligent-life-system, cybernetic-learning, modern-thinking-tools, 2026-09-19-art-of-impossible-book-en, source-pool-bias, scarcity-theory-evidence-status]
 confidence: high
 status: active
 ---
@@ -59,7 +59,7 @@ status: active
 
 **成因值得记下来**：本库核查时对的是「**这个数字有没有出处**」（论文摘要确有 13-point），
 **没有对「这个数字对应哪个实验」**。前者是本库一直以来的核查动作，后者才是讲稿出错的地方。
-**这是本库第一次抓到「核查范围小于断言范围」这一形态** —— 此前六类证据问题全部是**素材的问题**，
+**这是本库第一次抓到「核查范围小于断言范围」这一形态** —— 此前七类证据问题全部是**素材的问题**，
 这一条是**本库自己的核查不够**。见 §三。
 
 #### A2. AI 段「打破隧道效应的唯一方法」—— 原书说的是「其一」
@@ -149,7 +149,7 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 1. **四类齐全，共 15 条**（推翻 2 / 补齐 4 / 证实 4 / 新增 5）。**证实占 4/15（27%）** ——
    与上一份（3/8 = 38%）同量级，**再次印证「一手校准不是挑错流程」**。
 2. **本库第一次抓到「核查不完整」这一形态**（A1）。
-   此前 [[schema]] §3.6 的六类证据问题**全部是素材的问题**；
+   此前 [[schema]] §3.6 的七类证据问题**全部是素材的问题**；
    A1 是**本库自己的核查范围小于断言范围** —— 核了「数字有没有出处」，没核「数字对应哪个实验」。
    → **可推广的核查动作：核数字时必须同时核「数字的适用范围」。**
    **本轮只记账，未写进 [[schema]]** —— 一条实例不足以立规则，待北洛裁定。
@@ -221,9 +221,15 @@ a nonprofit that designs behavioral economics solutions to social problems.」
 1. **原书引用的那些一手研究本身仍未入库** —— 特别是 Mani et al.（2013 *Science*）
    与 Shah, Mullainathan & Shafir（2012 *Science* 338:682–85，「Angry Blueberries」实验，Notes）。
    **本页核对的是「原书怎么说」，不是「研究本身对不对」。**
-2. **原书的方法学批评尚未检索** —— 《稀缺》自 2013 年出版后，其核心实验（尤其商场研究）有后续的复现与质疑。
+   **（2026-09-28 补：这两篇的「后续状态」已核 —— 复现、技术评论、元分析，见 [[scarcity-theory-evidence-status]]；
+   但论文原文仍未入库，本页的「未入库」陈述继续成立。）**
+2. ~~**原书的方法学批评尚未检索** —— 《稀缺》自 2013 年出版后，其核心实验（尤其商场研究）有后续的复现与质疑。
    按 [[schema]] §3.6.1「过期引注」的判据，这是一条**已知的未做事项**。
-   **本库在此如实登记「未做」，不写成「没有争议」。**
+   **本库在此如实登记「未做」，不写成「没有争议」。**~~
+   **→ 2026-09-28 已执行，结果另立 [[scarcity-theory-evidence-status]]。**（划去保留，见该页）
+   一句话结果：**「隧道效应 / 专注红利」有支持；「带宽税」是全书最弱的一环（争议未决 + 直接反证 + 预注册 RCT 效应量只有 1/3–1/4 + 两篇元分析方向不一）；
+   而「认知疲劳」—— 作者本人的高功效预注册复现明确报告未复现。**
+   **本页的结论（「对原书的转述准确」）不受影响** —— 两页问的是不同问题（§六 开头即已声明）。
 3. **中文译本未入库** —— 讲稿的转述与中译本之间的关系未核。
 4. **`focus dividend` 在库内没有任何承接页** —— 本页是本库第一次记录这个概念（D1）。
 

@@ -23,7 +23,7 @@ status: active
 > **未能核到** —— 判为**不可追溯（判断）**；② raw 自陈 AI 加工段起于「世界的共鸣」（行 211），
 > 但**行 176–205 亦为未署名 AI 加工** —— 本页因此把 AI 段划为 **176–307**。
 
-- **作者**：行 34–168 万维钢（得到课程讲稿）；行 176 起**无署名，判为 AI 加工**
+- **作者**：行 34–168 万维钢；行 176 起**无署名，判为 AI 加工**
 - **链接**：https://my.feishu.cn/wiki/EUxewTXyMi11Gtkdq8Zcgefansh ｜ https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3mobqK5YmP6DOjxAL
 - **素材路径**：`raw/2026-09-18-resonance-notes.md`（**307 行**；frontmatter 1–24，正文自 26 行起）
 

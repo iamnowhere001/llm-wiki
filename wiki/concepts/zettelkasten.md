@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-luhmann-zettelkasten, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [niklas-luhmann, pkm-history, commonplace-book, bidirectional-links, communication-partner]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

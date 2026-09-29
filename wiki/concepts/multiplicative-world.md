@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-heavy-tail-notes, 2026-09-19-non-ergodicity-notes, 2026-09-19-optionality-notes]
 related: [heavy-tailed-distribution, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, cybernetic-learning, deliberate-practice, steady-state-survival-logic, agent-vs-tool, 2026-09-18-steady-state-trap-notes, explore-exploit-tradeoff]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

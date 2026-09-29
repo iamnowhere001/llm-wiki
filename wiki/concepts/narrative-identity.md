@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [narrative-self-vs-bodily-self, narrative-as-first-principle, narrative-power, three-selves, daniel-dennett, cognitive-reappraisal, internal-friction, emotion-awareness, 2026-09-18-narrative-first-principle, 2026-09-18-three-selves-notes, modern-thinking-tools, narrative-reframing, meta-narrative, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: active
 ---

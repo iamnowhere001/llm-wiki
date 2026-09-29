@@ -1,6 +1,6 @@
 ---
 title: "副产品：最珍贵的东西大多不能被直接追求"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/H7XLwyoXvibh9WkuCzAcChl0nwe
 source_url: https://www.dedao.cn/course/article?id=QLYWyjMZoa0J1vY0BdXp4wvzDbO26B
 kind: course-article

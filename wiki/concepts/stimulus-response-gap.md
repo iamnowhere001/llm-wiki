@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling, 2026-09-18-clear-thinking-notes]
 related: [viktor-frankl, stephen-covey, cognitive-decoupling, emotional-granularity, stoic-control-dichotomy, emotion-regulation-toolkit, shane-parrish]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

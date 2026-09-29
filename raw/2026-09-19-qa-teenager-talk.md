@@ -1,6 +1,6 @@
 ---
 title: "问答：怎样跟青春期的孩子沟通？"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/BXTqwrm98ioaOokgjwncYZp9nAe
 source_url: https://www.dedao.cn/course/article?id=ezW9aA7r8pGX8BYd3oVlY4jRMdvmbE
 kind: mixed-notes

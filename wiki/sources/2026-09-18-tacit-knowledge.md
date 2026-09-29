@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第六讲**。
 > **本批九讲里对本库自身最有"冒犯性"的一讲** —— 它论证了本库这套做法覆盖不到的那一层。
 
-- **作者**：万维钢（推定）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/CC6VwMl0YiRgKakjXXHcOx1Snyh ｜ https://www.dedao.cn/course/article?id=l9WNdP1QvaeKYdoWqxXAzx82Dyog0B
 - **发表**：2026-05-13 23:11
 - **素材路径**：`raw/2026-09-18-tacit-knowledge.md`（584 行，frontmatter 1–36）

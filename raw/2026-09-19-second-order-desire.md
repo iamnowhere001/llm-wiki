@@ -1,6 +1,6 @@
 ---
 title: "二阶意愿和元表征：应无所住，而生其心"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/QRz1w6DI0ia0G9kAPXlcWFS9nZ9
 source_url: https://www.dedao.cn/course/article?id=AgOBQ46R1rnXRQoRQaJdLzGqEZ3aY7
 kind: course-article

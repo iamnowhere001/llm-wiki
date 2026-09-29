@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-transfer-bridging, 2026-09-18-mental-representations]
 related: [mental-models, schema-psychology, tacit-knowledge, deliberate-practice, desirable-difficulty, cognitive-load-theory, 2026-09-18-transfer-bridging, 2026-09-18-mental-representations, david-perkins, wanweigang, peak-performance, how-we-learn-and-how-to-improve, notebooklm]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [narrative-as-first-principle, narrative-industrialization, narrative-power, narrative-economics, narrative-identity, meta-narrative, critique-target-distortion, modern-thinking-tools, 2026-09-18-narrative-self, 2026-09-18-narrative-first-principle]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

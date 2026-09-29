@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes, 2026-09-19-optionality-notes]
 related: [heavy-tailed-distribution, multiplicative-world, types-of-uncertainty, deliberate-practice, character-skills, thomas-sowell, modern-thinking-tools, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-heavy-tail-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

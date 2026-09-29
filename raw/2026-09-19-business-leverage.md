@@ -1,6 +1,6 @@
 ---
 title: "商业杠杆：把一个创造卖一百万次"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/F15swSnXUinyurkgV87coxMEnne
 source_url: https://www.dedao.cn/course/article?id=2Mo65zY4QZ3VnmWBwEKqEdNAa98jGB
 kind: mixed-notes

@@ -1,6 +1,6 @@
 ---
 title: "反馈回路：怎样操控复杂系统"
-author: 万维钢（得到课程讲稿）；本节点另有同名子文档（关联档案《反馈回路》，已单独落档），判定见对应 sources 页
+author: 万维钢；本节点另有同名子文档（关联档案《反馈回路》，已单独落档），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/U32VwGgunibTBTk3qQmcNbrznoc
 source_url: https://www.dedao.cn/course/article?id=l12vGeNAM0YVpPWBZeVdmxjOQBP5oL
 kind: course-article

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-identity-metacognition-notes, 2026-09-19-second-order-desire]
 related: [subject-object-shift, three-selves, narrative-identity, john-bowlby]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

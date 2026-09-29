@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-game-selection-notes, 2026-09-19-effectuation-notes]
 related: [effectuation, game-selection, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: high
 status: active
 ---

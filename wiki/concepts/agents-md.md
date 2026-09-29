@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum, 2026-09-19-openai-harness-engineering-codex]
 related: [three-layer-architecture, llm-wiki-pattern, traecode, plain-text-and-git, conventions]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

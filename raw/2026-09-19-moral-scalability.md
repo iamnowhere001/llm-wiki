@@ -1,6 +1,6 @@
 ---
 title: "道德的可扩展性：修身齐家为什么不等于治国平天下？"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/E20GwXtGriBAA5kvP2HcMKhenhh
 source_url: https://www.dedao.cn/course/article?id=06eGYrQb1gzVxoLvPbKPl73kZRqOaB
 kind: course-article

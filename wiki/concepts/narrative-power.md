@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, 2026-09-19-optionality-notes]
 related: [narrative-as-first-principle, narrative-as-objective-function, cybernetic-learning, narrative-identity, critique-target-distortion, wanweigang, 2026-09-18-narrative-first-principle, modern-thinking-tools, narrative-industrialization]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

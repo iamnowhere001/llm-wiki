@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-hashimoto-my-ai-adoption-journey, 2026-09-19-openai-harness-engineering-codex, 2026-09-19-bockeler-harness-engineering-coding-agent-users, 2026-09-19-trivedy-anatomy-of-agent-harness]
 related: [harness, agents-md, guides-and-sensors, cybernetic-learning, wiki-lint]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

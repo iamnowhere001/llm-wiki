@@ -156,16 +156,18 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [other-slug]
-evidence_tier: single    # single | crossed | primary —— 由支撑素材推导
+evidence_tier: single    # single | crossed-independent | crossed-same-family | primary
 confidence: high         # high | medium | low
 status: active           # active | draft | stale | deprecated
 ---
 ```
 
 `evidence_tier` 回答「这页的结论站得多稳」：`single` = 仅 1 份素材支撑（孤证），
-`crossed` = ≥2 份，`primary` = 有一手论文。它由素材推导，`lint` 会校验。
-注意多份素材不等于多个独立佐证 —— 同一套课程的讲稿被拆成 5 份，仍只是 `crossed`，
-`lint` 会额外标出这类「名义交叉，实质同源」的页面。详见 `wiki/schema.md` §1.2。
+`crossed-independent` = ≥2 份**且跨来源族**（真交叉），`crossed-same-family` = ≥2 份**但同属一个来源族**
+（名义交叉、实质同源），`primary` = 有一手论文。它由素材推导，`lint` 会校验。
+多份素材不等于多个独立佐证 —— 同一套课程的讲稿被拆成 5 份，只是 `crossed-same-family`。
+**同源与独立是两个不同的值，不是同一个值的两种说法** —— 这样读者不必「记得去别处查」。
+详见 `wiki/schema.md` §1.2。
 
 项目页额外有两个字段：
 

@@ -15,7 +15,7 @@ status: active
 <!-- 建页提示（填完请删掉本块）
   tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」（素材 / AI生成 / 待裁定）—— schema §1.7
   sources   支撑本页的 raw 素材 slug。挂了几份就按几份改 evidence_tier —— schema §1.2
-  evidence  single = 恰好 1 份 / crossed = ≥2 份 / primary = ≥1 份 paper
+  evidence  single = 1 份 / crossed-independent = ≥2 份且跨来源族 / crossed-same-family = ≥2 份但同族 / primary = ≥1 份 paper
   related   只写已存在的页 slug；正文里也要真的引用它，别只挂在字段里 —— schema §1.5
 -->
 

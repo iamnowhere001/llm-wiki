@@ -1,6 +1,6 @@
 ---
 title: "地位：社会参与的第一性原理"
-author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对应 sources 页
+author: 万维钢；有无 AI 加工段与边界见对应 sources 页
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=A5eO3NDrGk8KP0omejK2oxp9MRBzQP
 kind: course-article

@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-generativity, 2026-09-19-qa-claiming-hard-problems]
 related: [symmetry-breaking, adjacent-possible, systems-over-goals, cybernetic-learning, free-energy-principle, modern-thinking-tools, wanweigang, 2026-09-19-generativity, 2026-09-19-qa-claiming-hard-problems]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

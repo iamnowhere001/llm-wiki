@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-hard-constraints-notes, 2026-09-20-exploration-and-generation]
 related: [wishful-thinking-layers, intelligent-life-system, agent-vs-tool, steady-state-survival-logic, narrative-as-first-principle, multiplicative-world, 2026-09-18-hard-constraints-notes, modern-thinking-tools, charlie-munger, exploration-and-generation, 2026-09-20-exploration-and-generation]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

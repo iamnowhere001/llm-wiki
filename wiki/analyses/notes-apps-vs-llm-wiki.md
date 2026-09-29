@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-frand-hixon-pkm, 2026-09-18-writing-is-thinking]
 related: [llm-wiki-pattern, three-layer-architecture, rag-vs-wiki, plain-text-and-git, obsidian, commonplace-book, why-pkm-in-ai-era, cognitive-outsourcing, use-cases, traecode-pkm-article]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

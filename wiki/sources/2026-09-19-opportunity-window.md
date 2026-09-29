@@ -22,7 +22,7 @@ status: active
 > 文件共 **210 行**（`wc -l` 报 209，因**末行无结尾换行**）；frontmatter 占 **1–25 行**，正文自 **26 行**起。
 > **正文内没有一条 `---` 分隔线**（`grep -n '^---$'` 只命中 1 与 25，均属 frontmatter）。写本页前已逐段回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/EoWrwRzu7iDMrrkQ31icaziUnEe（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-opportunity-window.md`（210 行）
 

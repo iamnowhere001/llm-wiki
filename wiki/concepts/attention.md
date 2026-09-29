@@ -7,7 +7,7 @@ created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-19-scarcity-book-en, 2026-09-18-hyperefficient-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-18-cognitive-load-theory, 2026-09-18-how-we-learn-notes, 2026-09-18-writing-is-thinking]
 related: [cognitive-load-theory, flow-terminology, focus-vs-stubborn, brain-rot, four-pillars-of-learning, intelligent-life-system, salience-vs-importance, cognitive-debt, cognitive-outsourcing, attention-what-it-is-and-how-to-improve, peak-performance]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---
@@ -225,7 +225,7 @@ Storoni 侧把「专注」从有 / 无改成**可调的档**（见 [[2026-09-18-
       它同时更换材料类型（缓解 [[peak-performance]] 的【阻塞】），并可能回答 2.3 那条未做的进路对照。
       候选方向：注意力的认知心理学综述、或「注意力残留」的原始文献（Leroy 2009，本库只在核查表里点名过）。
 - [ ] **进路③④ 的对照未做** —— Storoni 的横向分档 vs 迪昂的纵向定位（见 2.3 的 note）。
-- [ ] **「专注」三义要不要单列边界页？** 类比 [[flow-terminology]] 与 [[mental-strength-terminology]] 的先例。**待北洛定。**
+- [ ] **「专注」三义要不要单列边界页？** 类比 [[flow-terminology]] 与 [[mental-strength]] 的先例。**待北洛定。**
 - [ ] **本页所有行号均为转引**，未回 `raw/` 独立复核；若要对外使用，需逐条重核。
 
 ## 来源

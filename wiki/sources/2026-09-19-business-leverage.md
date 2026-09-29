@@ -22,7 +22,7 @@ status: active
 > 素材文件（`raw/2026-09-19-business-leverage.md`，`wc -l` = **190 行**）。
 > frontmatter 占 **1–27** 行，**正文自第 29 行起**。写本页前已逐段回文件核对（`sed -n` / `grep -n`）。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/F15swSnXUinyurkgV87coxMEnne（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-business-leverage.md`（191 行）
 

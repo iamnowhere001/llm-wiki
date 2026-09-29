@@ -21,7 +21,7 @@ status: active
 > **讲稿段是本批里引注密度较高、可核率较高的一份**（Texas / Clear / Fukuyama / Kegan / Dennett 逐条核到原文或高可信来源）；
 > 真正的风险不在证据层，在**价值方向**：**AI 段与讲稿在同一页里反向对撞，且未做任何标注。**
 
-- **作者**：行 39–197 万维钢（得到课程讲稿）；行 203 起**无署名，判为 AI 加工**
+- **作者**：行 39–197 万维钢；行 203 起**无署名，判为 AI 加工**
 - **链接**：https://my.feishu.cn/wiki/HWc9w2bUKicWSNk5Q6UcCFtVn9d ｜ https://www.dedao.cn/course/article?id=92GB1my8okM5VMnwEyJWgNnEe4Z73r
 - **素材路径**：`raw/2026-09-18-identity-metacognition-notes.md`（**400 行**；frontmatter 1–25，正文自 26 行起）
 

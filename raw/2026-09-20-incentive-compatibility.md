@@ -1,6 +1,6 @@
 ---
 title: "激励相容：好的制度不应该指望人“畏威怀德”"
-author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对应 sources 页
+author: 万维钢；有无 AI 加工段与边界见对应 sources 页
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=A5eO3NDrGk8KP0omnMK2oxp9MRBzQP
 kind: course-article

@@ -1,6 +1,6 @@
 ---
 title: "信息价值：怎样区分沙子和金子"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/V8k4wY4GGilwIbkhoIrczREQnIh
 source_url: https://www.dedao.cn/course/article?id=e1k8gp2WGMzqJ3QDn3K5YmP6DOjxAL
 kind: mixed-notes

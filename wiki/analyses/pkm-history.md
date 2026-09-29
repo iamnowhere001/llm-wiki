@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-bush-as-we-may-think, 2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-frand-hixon-pkm, 2026-09-18-luhmann-zettelkasten, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [llm-wiki-pattern, bidirectional-links, zettelkasten, commonplace-book, vannevar-bush, three-layer-architecture, why-pkm-in-ai-era, communication-partner]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

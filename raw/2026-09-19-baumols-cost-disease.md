@@ -1,6 +1,6 @@
 ---
 title: "鲍莫尔成本病：物便宜则人贵"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/CHLfwgTEBirLtIk6xUHcBaWjnUe
 source_url: https://www.dedao.cn/course/article?id=9GEyP73eprvKBPY9NkJq2Mb0kRD64d
 kind: mixed-notes

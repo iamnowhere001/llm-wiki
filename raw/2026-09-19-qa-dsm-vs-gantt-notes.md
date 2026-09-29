@@ -1,6 +1,6 @@
 ---
 title: "问答：设计结构矩阵和甘特图的区别是什么？"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/GaZWwb2OsiqRCck4kVXct1Dinuc
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMjGJ7DOop10vZwL
 kind: mixed-notes

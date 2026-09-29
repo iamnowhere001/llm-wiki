@@ -7,7 +7,7 @@ created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-20-third-thing, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
 related: [third-object, narrative-reframing, cognitive-reappraisal, 2026-09-20-social-status, 2026-09-20-scapegoat, modern-thinking-tools, wanweigang]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: high
 status: active
 ---

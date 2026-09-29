@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-cognitive-decoupling]
 related: [cognitive-reappraisal, james-gross, emotional-granularity, stimulus-response-gap, emotion-as-coupling, emotion-awareness, flow-terminology]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---
@@ -132,7 +132,7 @@ status: active
 
 ## 四、长期建设
 
-- **自我关怀三步**：鼓励自己 → 接受自己 → 面对错误。核心操作是**从一个友善的外人的角度看自己** ——「自我关怀能给你自信的所有好处，但是又不会有过度自信的任何坏处」。
+- **自我关怀三步**：鼓励自己 → 接受自己 → 面对错误。核心操作是**从一个友善的外人的角度看自己**。**2026-09-27：本行已展开为独立页 [[self-compassion]]** —— 定义、三步、与「无条件自我接纳 / 认知解耦 / 宽恕」的边界都在那里，本页不再重复。
 - **感恩日记**：每天睡前写 3 件值得感恩的小事。
 - **微行动**：两分钟原则；把目标从「我要成功」改为「我先专注 15 分钟」。
 - **意志力的三段排序**：素材主张**「第一是规划，第二是决策，第三才是控制」** —— 「首先选好最优路线，然后跑起来，关键时候点一下刹车」。配套判断：「只有在你完全留意不到自律的时候，自律才是自律；而你越关注自律，越骂自己为什么不能自律的时候，自律就越是内耗。」

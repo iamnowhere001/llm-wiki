@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-tacit-knowledge, 2026-09-18-desirable-difficulty]
 related: [embodied-cognition, transfer-of-learning, schema-psychology, michael-polanyi, wanweigang, 2026-09-18-tacit-knowledge, llm-wiki-pattern, agents-md, second-brain-skill, why-pkm-in-ai-era, cognitive-outsourcing, writing-as-thinking, 2026-09-20-legibility-and-metis, legibility]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---
@@ -123,9 +123,13 @@ status: active
   **说得出、但不在现场学不会**（怎么跟本地部门打交道，是米提斯而非默会）；
   **两者交集**（老中医的脉诊手感）；**两者都不是**（教科书公式）。
 - **⚠️ 这是一条「未裁定的术语边界」，不是简单补充。** 本库此前在 `flow-terminology` /
-  `mental-strength-terminology` 两页做过同类的**术语层切分**，本次是**首次在「默会知识」这个词上做**。
+  `mental-strength` 两页做过同类的**术语层切分**，本次是**首次在「默会知识」这个词上做**。
   **是否据行 136 把两者正式分列、以及是否另建独立的「米提斯」页，待北洛裁定** ——
   本轮的处理是**并入 [[legibility]] 并在本页登记边界**，不擅自分列。
+
+- **与 [[taste-terminology]]：一处需要留意的出处。** 本页把「品味」列为默会知识的例子，
+  但该例（`raw/2026-09-18-tacit-knowledge.md` 行 456）落在**该素材的 AI 生成段（B 段 194–584）**，
+  **不是讲稿主张** —— 引用时须知。
 
 ## 待办 / 开放问题
 

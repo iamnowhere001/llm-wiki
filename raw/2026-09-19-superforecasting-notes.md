@@ -1,6 +1,6 @@
 ---
 title: "超级预测：给不确定性命名，给自己打分"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/B8zkwlaXSiOUWBkIcJNc0kOnnjg
 source_url: https://www.dedao.cn/course/article?id=QLYWyjMZoa0J1vYAZrXp4wvzDbO26B
 kind: mixed-notes

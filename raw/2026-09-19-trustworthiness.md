@@ -1,6 +1,6 @@
 ---
 title: "托付：世界奖励把不确定性变成确定性的人"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/Mx9nwWRh8itDOAkCRddcCrkvnid
 source_url: https://www.dedao.cn/course/article?id=06eGYrQb1gzVxoLE3vKPl73kZRqOaB
 kind: mixed-notes

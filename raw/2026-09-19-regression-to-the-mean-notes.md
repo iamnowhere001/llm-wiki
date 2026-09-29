@@ -1,6 +1,6 @@
 ---
 title: "回归均值：不要大惊小怪，要有点定力"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/BgWwwxTtaiDX2LkwKZTcqxdEnSb
 source_url: https://www.dedao.cn/course/article?id=32axR8enbzBJ9pYxaQVkDEgM6ApPl9
 kind: mixed-notes

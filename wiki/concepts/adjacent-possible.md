@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-20
 sources: [2026-09-19-adjacent-possible, 2026-09-19-qa-ordinary-people-safety, 2026-09-20-exploration-and-generation]
 related: [symmetry-breaking, generativity, optionality, explore-exploit-tradeoff, effectuation, state-leverage, types-of-uncertainty, field-theory, window-of-opportunity, modern-thinking-tools, wanweigang, 2026-09-19-adjacent-possible, 2026-09-19-qa-ordinary-people-safety]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

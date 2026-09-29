@@ -23,7 +23,7 @@ status: active
 > 文件共 **169 个物理行**，`wc -l` 报 **168**（末 是内嵌图片，无结尾换行符，`wc -l` 不计数）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**（第 26 行是空行）。写本页前已逐条回文件核对（`grep -n` / `sed -n`）。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/UMW1wlqOriikB9kbprxcmuBLn6N（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-alpha-strategy.md`（169 行）
 

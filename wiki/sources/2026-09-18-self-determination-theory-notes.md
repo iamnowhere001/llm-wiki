@@ -21,7 +21,7 @@ status: active
 > 素材文件（`raw/2026-09-18-self-determination-theory-notes.md`，`wc -l` = **349 行**）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/GpWcw72S3ilvWjkYwSrco8jxn3S（原文链接已移除）
 - **发表**：2026-03-30 07:43
 - **素材路径**：`raw/2026-09-18-self-determination-theory-notes.md`（349 行）

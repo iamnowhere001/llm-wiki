@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-narrative-self, 2026-09-19-value-of-information-notes]
 related: [commonplace-book, use-cases, llm-wiki-pattern, peak-performance, prediction-error, intelligent-life-system, hard-constraints, three-selves, free-energy-principle, narrative-as-objective-function, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-modern-thinking-tools-prospectus, meta-narrative, why-pkm-in-ai-era]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-feedback-loops, 2026-09-19-feedback-loop-essay, 2026-09-19-qa-ordinary-people-safety]
 related: [intelligent-life-system, cybernetic-learning, compounding-knowledge, multiplicative-world, heavy-tailed-distribution, ooda-loop, theory-of-constraints, window-of-opportunity, antifragility, steady-state-survival-logic, marginal-analysis, modern-thinking-tools, wanweigang]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

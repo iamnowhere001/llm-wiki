@@ -1,6 +1,6 @@
 ---
 title: "前景理论：让人铤而走险的不是贪婪，而是不甘"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/NGvWwGG1VihA2bkKPpPczw9ynef
 source_url: https://www.dedao.cn/course/article?id=M30m4na5NkyKQQomeGKjvDg7Eowd2G
 kind: mixed-notes

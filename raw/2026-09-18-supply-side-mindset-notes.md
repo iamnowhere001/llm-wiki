@@ -1,6 +1,6 @@
 ---
 title: "供给侧心态：怎样在正和的世界合作（以及竞争）（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「★练习」以下各段为 AI 加工，无署名
+author: 万维钢；「★练习」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/ZrfpwpaX3isrhSkJL4rcnYCUnig
 source_url: https://www.dedao.cn/course/article?id=yNwelz6kDn0aKeR6e3V7qLAO3Bb51j
 kind: mixed-notes

@@ -22,7 +22,7 @@ status: active
 > 讲稿段的具名引注可核率较高（Ainsworth / Bowlby / 马斯洛 / Edmondson / Project Aristotle 逐条核到），
 > 但**有一处过期共识**（安全型依恋比例）与**一处拼写错误**（Bowlby 被写成 Bowlly）。
 
-- **作者**：行 37–175 万维钢（得到课程讲稿）；行 179 起**无署名，判为 AI 加工**
+- **作者**：行 37–175 万维钢；行 179 起**无署名，判为 AI 加工**
 - **链接**：https://my.feishu.cn/wiki/EXo3w07uNiYgHFkE3accgYQDnSb ｜ https://www.dedao.cn/course/article?id=xzYo2GPNq4W8VEb2WzJejyRBZbnw0d&fullScreen=true
 - **素材路径**：`raw/2026-09-18-sense-of-security-notes.md`（**543 行**；frontmatter 1–25，正文自 26 行起）
 

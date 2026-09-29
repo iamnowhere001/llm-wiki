@@ -1,6 +1,6 @@
 ---
 title: "自我约束：有限制才有力量"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/MkW4wmDsmi5gKKkr8QOceqxxnlc
 source_url: https://www.dedao.cn/course/article?id=v5WgnrDGd8bKNdo607JMNRm1wO264y
 kind: course-article

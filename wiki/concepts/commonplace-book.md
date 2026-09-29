@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-dankoe-remember-what-you-read, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [cybernetic-learning, commonplace-book-vs-llm-wiki, compounding-knowledge, pkm-history, zettelkasten]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

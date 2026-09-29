@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-heavy-tail-notes, 2026-09-19-non-ergodicity-notes]
 related: [multiplicative-world, luck-over-talent, types-of-uncertainty, modern-thinking-tools, wanweigang, 2026-09-18-heavy-tail-notes, 2026-09-18-uncertainty-fuel-notes, cybernetic-learning, steady-state-survival-logic, agent-vs-tool, 2026-09-18-steady-state-trap-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

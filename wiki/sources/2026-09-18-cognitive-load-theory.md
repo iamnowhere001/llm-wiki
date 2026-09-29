@@ -1,5 +1,5 @@
 ---
-title: "认知负荷理论：因为文具多，所以是差生（《现代思维工具》学习与教育 第 1 讲）"
+title: "认知负荷理论：因为文具多，所以是差生"
 type: source
 slug: 2026-09-18-cognitive-load-theory
 tags: [万维钢, 学习, 教育, 认知负荷]
@@ -13,10 +13,9 @@ status: active
 
 # 认知负荷理论：因为文具多，所以是差生
 
-> 万维钢《现代思维工具》「学习与教育」板块**第一讲**。本批九讲里**唯一没有日期标注**的一讲，
-> 也是唯一**已有对应图片素材**的一讲（[[2026-09-18-cognitive-load-diagrams]]）。
+> 万维钢《现代思维工具》「学习与教育」板块**第一讲**。
 
-- **作者**：万维钢（推定，见 [[wanweigang]] 的身份推定表）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/GElVw9bNuirYpxkUlrEcJ6FKnZg ｜ https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWQLXzD9BkoajY4x
 - **素材路径**：`raw/2026-09-18-cognitive-load-theory.md`（258 行，frontmatter 1–36）
 

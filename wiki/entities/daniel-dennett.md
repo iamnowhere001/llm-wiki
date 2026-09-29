@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-three-selves-notes, 2026-09-18-narrative-first-principle]
 related: [three-selves, narrative-identity, narrative-self-vs-bodily-self, narrative-as-first-principle, free-energy-principle, modern-thinking-tools, 2026-09-18-three-selves-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

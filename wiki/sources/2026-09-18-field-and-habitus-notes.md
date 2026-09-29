@@ -23,7 +23,7 @@ status: active
 > 素材文件（`raw/2026-09-18-field-and-habitus-notes.md`，共 **183** 行）。
 > frontmatter 占 1–24 行，**正文自第 25 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/G0SRwpMUOikeRikj6GbcqxUanYf（原文链接已移除）
 - **素材路径**：`raw/2026-09-18-field-and-habitus-notes.md`（183 行）
 
@@ -103,7 +103,7 @@ status: active
 
 > [!note] 与第 4 讲、第 8 讲对照
 > 三份的 frontmatter 同为 `kind: mixed-notes`，但**只有第 4、第 8 讲有 AI 加工段**。
-> 本份 `author` 只写「万维钢（讲稿）」，无任何 AI 署名说明。
+> 本份 `author` 只写「万维钢」，无任何 AI 署名说明。
 > **「本文件无 AI 加工段」是逐条比对后的判定，不是省略。**
 > **另需注意**：行 124 的图片 alt 是**一整段机器生成的说明文字**（复述讲稿内容）。
 > 它不是讲稿主张，也**没有引入讲稿之外的数字** —— 与 [[opportunity-systems]] 那个「图注里冒出两个原书没有的数字」的情形**不同**，

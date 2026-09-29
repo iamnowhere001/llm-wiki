@@ -17,7 +17,7 @@ status: active
 > **本批九讲里数字密度最高、且唯一以「养育」为主题的一讲** ——
 > 它与库内既有四个项目的关系**均未定**，需北洛裁定。
 
-- **作者**：万维钢（推定）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/JEfowPTAgiSBLzk4mcYc4W9Tn3f ｜ https://www.dedao.cn/course/article?id=py0edZAG5mnK0wYWWvXzD9BkoajY4x
 - **发表**：2026-05-18 23:08
 - **素材路径**：`raw/2026-09-18-autonomy-support.md`（680 行，frontmatter 1–36）

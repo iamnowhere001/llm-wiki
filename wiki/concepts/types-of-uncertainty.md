@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]
 related: [uncertainty-as-fuel, luck-over-talent, ruliad, prediction-error, heavy-tailed-distribution, narrative-economics, 2026-09-18-uncertainty-fuel-notes, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

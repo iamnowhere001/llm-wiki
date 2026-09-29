@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第四讲**。
 > **本批九讲里唯一包含「作者自陈自造概念」的一讲**，也是唯一带 `<cite>` 引用北洛其他 wiki 文档的一讲。
 
-- **作者**：万维钢（推定）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/VmQywAcG9iCTplkgrhHcyg6fnZd ｜ https://www.dedao.cn/course/article?id=qavDm012GolV7OYAjxVxPjEy8zdk73
 - **发表**：2026-05-11 23:26
 - **素材路径**：`raw/2026-09-18-mental-representations.md`（1,450 行，frontmatter 1–36）

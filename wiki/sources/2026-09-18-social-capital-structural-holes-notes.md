@@ -23,7 +23,7 @@ status: active
 > 素材文件（`raw/2026-09-18-social-capital-structural-holes-notes.md`，共 **646** 行）。
 > frontmatter 占 1–23 行，**正文自第 24 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/IXarwfcruihufBkgGngcbpkKnVg（原文链接已移除）
 - **发表**：2026-04-02 23:07
 - **素材路径**：`raw/2026-09-18-social-capital-structural-holes-notes.md`（646 行）

@@ -1,6 +1,6 @@
 ---
 title: "复利：可积累的优势（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「事实核查」以下各段为 AI 加工，无署名
+author: 万维钢；「事实核查」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/Q5ebwi98Ai2dutkcon3ciOXAnzd
 source_url: https://www.dedao.cn/course/article?id=R2Mo65zY4QZ3VnmADEKqEdNAa98jGB
 kind: mixed-notes
