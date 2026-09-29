@@ -1,6 +1,6 @@
 ---
 title: "身份认同：元认知黑魔法（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「1. 身份的本质」以下各段为 AI 加工，无署名
+author: 万维钢；「1. 身份的本质」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/HWc9w2bUKicWSNk5Q6UcCFtVn9d
 source_url: https://www.dedao.cn/course/article?id=92GB1my8okM5VMnwEyJWgNnEe4Z73r
 kind: mixed-notes

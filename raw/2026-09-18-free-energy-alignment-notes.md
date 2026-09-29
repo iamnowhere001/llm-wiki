@@ -1,6 +1,6 @@
 ---
 title: "自由能原理：活着就是对齐（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「核心洞见」以下各段为 AI 加工，无署名
+author: 万维钢；「核心洞见」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/EhX1wIsDfi4QwVkLisUcaPWkntg
 source_url: https://www.dedao.cn/course/article?id=Pvz6E94NYDg2JjQmxjVL3rAkWQjnwp
 kind: mixed-notes

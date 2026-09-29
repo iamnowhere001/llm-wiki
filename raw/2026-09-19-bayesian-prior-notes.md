@@ -1,6 +1,6 @@
 ---
 title: "贝叶斯先验：判断是主观的，但可以更科学一点"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/MP4Bw5VX8iAKOvk30uTc9SrBnAq
 source_url: https://www.dedao.cn/course/article?id=wgpMLla6Py4qK2DOLzJYmvNzjd2Zx1
 kind: mixed-notes

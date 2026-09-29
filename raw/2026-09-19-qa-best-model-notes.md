@@ -1,6 +1,6 @@
 ---
 title: "问答：怎样培养自己找到最佳模型的能力？"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/KK9uw2Em5iLfySkz4dwca2oXn3d
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWM7MJ7DOop10vZwL
 kind: mixed-notes

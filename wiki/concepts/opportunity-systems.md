@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-hidden-potential-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-19-scarcity-book-en]
 related: [scaffolding, character-skills, looping, brainwriting, trajectory-evaluation, peak-performance, adam-grant, 2026-09-18-hidden-potential-notes, 2026-09-18-social-capital-structural-holes-notes, 2026-09-18-field-and-habitus-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-19-scarcity-book-en, cybernetic-learning, luck-over-talent]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

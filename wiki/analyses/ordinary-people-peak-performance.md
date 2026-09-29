@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-19-art-of-impossible-book-en]
 related: [peak-performance, cybernetic-learning, chaos-system-of-life, emotion-regulation-toolkit, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-19-art-of-impossible-book-en, cognitive-reappraisal, flow-terminology]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---

@@ -23,7 +23,7 @@ status: active
 > `wc -l` = **218 行**，但**末行（的海报图）无行尾换行符**，故**实际内容末行为 219**。
 > frontmatter 占 **1–28** 行，**正文自第 30 行（H1）起，讲稿自第 38 行起**。写本页前已逐段 `sed -n` 回文件核对。
 
-- **作者**：万维钢（得到课程讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/HdDjwhxv3i3vXwk0xBHcxI1qnQh（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-symmetry-breaking.md`（219 行）
 

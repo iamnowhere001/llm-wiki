@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-modern-thinking-tools-prospectus, 2026-09-21-modern-thinking-tools-preface-dedao]
 related: [2026-09-21-modern-thinking-tools-preface-dedao, compression-as-intelligence, information-bottleneck, wanweigang, intelligent-life-system, three-solutions, cognitive-outsourcing, mental-models, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-learning-is-forgetting]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

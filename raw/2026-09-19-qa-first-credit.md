@@ -1,6 +1,6 @@
 ---
 title: "问答：年轻人怎样积累「第一笔信任」？"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/V80qw6a0rik3NaktOmocXrsGn2c
 source_url: https://www.dedao.cn/course/article?id=EGBgdkRbn1mKgdWmGEVY890D3rvPOA
 kind: course-article

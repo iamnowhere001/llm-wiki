@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-19-value-of-information-notes]
 related: [social-capital, raj-chetty, narrative-power, opportunity-systems, compensatory-control, modern-thinking-tools, explore-exploit-tradeoff]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -1,6 +1,6 @@
 ---
 title: "临近可能：如何实现无法事先想象的事情？"
-author: 万维钢（得到课程讲稿）；收尾「又曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「又曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/DeQuwpu4riJuUVkaXPUcLVC7nng
 source_url: https://www.dedao.cn/course/article?id=A5eO3NDrGk8KP0ompLK2oxp9MRBzQP
 kind: course-article

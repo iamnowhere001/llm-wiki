@@ -1,6 +1,6 @@
 ---
 title: "凯利公式：乘法世界里的认知变现"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/Qwpjw94NsiTHvTkzLZic4eR9nPd
 source_url: https://www.dedao.cn/course/article?id=yNwelz6kDn0aKeAmbLK7qLAO3Bb51j
 kind: mixed-notes

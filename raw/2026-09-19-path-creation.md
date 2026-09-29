@@ -1,6 +1,6 @@
 ---
 title: "路径创造：破解路径依赖的唯一可行方法"
-author: 万维钢（得到课程讲稿）；收尾「有偈赞曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「有偈赞曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/LCTKwAH5WikOVLksD3PcUwDonkx
 source_url: https://www.dedao.cn/course/article?id=gpMLla6Py4qK25YAvzXYmvNzjd2Zx1
 kind: course-article

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-learning-is-forgetting, 2026-09-18-modern-thinking-tools-prospectus]
 related: [information-bottleneck, learning-as-forgetting, marcus-hutter, llm-wiki-pattern, schema-psychology, mental-models, rag-vs-wiki, ai-convergence, 2026-09-18-modern-thinking-tools-prospectus]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

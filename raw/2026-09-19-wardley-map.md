@@ -1,6 +1,6 @@
 ---
 title: "沃德利地图：独一无二的自己做，能外包的尽量外包"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/F7cowuWNRiefQykRf29cztG4nte
 source_url: https://www.dedao.cn/course/article?id=2Mo65zY4QZ3VnmWBapKqEdNAa98jGB
 kind: mixed-notes

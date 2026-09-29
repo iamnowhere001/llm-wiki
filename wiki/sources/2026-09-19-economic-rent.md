@@ -21,7 +21,7 @@ status: active
 > 素材文件（`raw/2026-09-19-economic-rent.md`，`wc -l` = **321 行**）。
 > frontmatter 占 1–25 行，**正文自第 27 行起**。写本页前已逐段回文件核对（`sed -n` / `grep -n`）。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/Fig8w64NOi9itZkgdUPcnjyyn9e（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-economic-rent.md`（322 行）
 

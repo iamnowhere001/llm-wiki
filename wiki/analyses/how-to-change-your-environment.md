@@ -7,7 +7,7 @@ created: 2026-09-20
 updated: 2026-09-20
 sources: [2026-09-18-extended-mind-notes, 2026-09-18-cognitive-load-theory, 2026-09-19-scarcity-book-en, 2026-09-18-hyperefficient-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-19-state-leverage-notes, 2026-09-20-slow-variables, 2026-09-18-hidden-potential-notes, 2026-09-18-social-capital-structural-holes-notes]
 related: [extended-mind, attention-what-it-is-and-how-to-improve, state-leverage, opportunity-systems, slow-variables, cognitive-load-theory, attention, situated-cognition, cybernetic-learning, rumination, implementation-intentions, mental-accounting]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---

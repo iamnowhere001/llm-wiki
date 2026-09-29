@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-writing-is-thinking, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [cognitive-load-theory, cognitive-outsourcing, zettelkasten, commonplace-book, synthesis-research, tacit-knowledge, alain-de-botton, cognitive-debt, communication-partner]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

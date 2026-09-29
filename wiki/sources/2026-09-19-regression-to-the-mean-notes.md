@@ -28,7 +28,7 @@ status: active
 > 素材文件（`raw/2026-09-19-regression-to-the-mean-notes.md`，共 **379** 行）。
 > frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/BgWwwxTtaiDX2LkwKZTcqxdEnSb（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-regression-to-the-mean-notes.md`（379 行）
 

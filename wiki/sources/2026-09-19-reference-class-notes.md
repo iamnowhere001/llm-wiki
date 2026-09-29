@@ -22,7 +22,7 @@ status: active
 > 素材文件（`raw/2026-09-19-reference-class-notes.md`，共 **672** 行）。
 > frontmatter 占 1–25 行，正文自第 27 行起。写本页前已逐段回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/DHyiw3qkBieNX6kVwNBcZvQWnVh（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-reference-class-notes.md`（672 行）
 

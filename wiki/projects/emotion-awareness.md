@@ -81,7 +81,7 @@ status: active
 - **本库立论层**：[[cognitive-vs-somatic-paths]]（**本项目的第一个 `analyses/` 页**，也是那条【阻塞】的假设解 —— `confidence: low`，待验证。**验证工作已随缺口一并移交 [[peak-performance]]**）
 - **病理与对策**：[[internal-friction]]、[[rumination]]、[[victim-mentality]]、[[complaining]]、[[forgiveness]]
 - **判据层**：[[rumination-vs-reflection]]（**2026-09-18 新增**，本项目的第二条 `analyses/` 页 —— 它回答了一个项目自己此前无从回答的问题：反刍与反思的边界。**依据已补录**，见上方「素材层（一手）」；该页的 `sources` 已于同日由空补上）
-- **方法层**：[[emotion-regulation-toolkit]]、[[stoic-control-dichotomy]]、[[mental-strength]]（低置信度）、[[mental-strength-terminology]]（**2026-09-19 新增** —— 本项目多处用到「心力」一词，先划清它的三种用法与引用边界）
+- **方法层**：[[emotion-regulation-toolkit]]、[[stoic-control-dichotomy]]、[[self-compassion]]、[[mental-strength]]（低置信度；**2026-09-19** 划清「心力」的三种用法与引用边界，**2026-09-21** 原术语边界页已并入本页）
 - **哲学层**：[[chaos-system-of-life]]（来自 [[yjengo]]，本项目唯一的「拆信念」型页面）
 - **人物层**：[[wang-lu]]、[[marcus-aurelius]]、[[viktor-frankl]]、[[thomas-sowell]]、[[maurice-merleau-ponty]]、[[yjengo]]、[[keith-stanovich]]、[[lisa-feldman-barrett]]、[[james-gross]]、[[albert-ellis]]、[[stephen-covey]]、[[nolen-hoeksema]]、[[ed-watkins]]（**后两位 2026-09-18 新增**，随一手素材收录而建页）
 - **姊妹项目**：[[peak-performance]]（2026-09-18 立项，接管了本页移交的两条缺口。**两者在正念、具身认知、心流的神经化学上有实质重叠，而通用边界规则尚未定** —— 见 [[peak-performance]] 的「待办 / 开放问题」）
@@ -148,6 +148,7 @@ status: active
 | 2026-09-18 | **该素材推翻了本库同日早些时候的结论** | 详见 [[rumination-vs-reflection]] 的「修正史」。**教训已立为补救规则写进该页**：`sources` 留空只解决「引用可追溯性」，没有解决「断言强度」—— 一个无来源的页面仍可以用一手文献的语气说话，而这次它就是这样推翻了两次库内既有的正确内容。**本库首次出现「收进来的素材反过来修正了当天的工作，且修正方向是『我们错了』」** |
 | 2026-09-18 | **「反刍 / 反思边界」缺口关闭，归档为 [[rumination-vs-reflection]]** | 分界线是**三条判据**（触发源 / 加工模式 / 立场），**不是一条线**；同时**否掉了库内「回放性」这条定义特征**（见 [[rumination]] 的修正块）。**结论已落在分析页，本页不再重复** |
 | 2026-09-18 | **「情绪觉知 / 情绪调节」术语边界关闭** | 素材四引入 [[james-gross]] 的情绪调节过程模型，把命名 / 重评 / 抑制放进**同一个时间轴** —— 边界不是两个词的区别，是**同一过程的不同阶段** |
+| 2026-09-27 | **新建 [[self-compassion]]** —— 「自我关怀」在库内出现 19 次、散在 6 个页面，却一直没有专页 | 北洛提出这个概念后，库内检索发现两处表述（[[2026-09-18-emotion-awareness-notes]] 行 820–832 / [[2026-09-18-sense-of-security-notes]] 行 123）**从未被并置辨析**。**这是本项目第一次由「一个概念高频出现但无家」而非「一份素材」触发建页** —— 误差信号来自概念在库内的分布，不来自某份新素材。连带：[[emotion-regulation-toolkit]] 那一行改为指向本页 |
 
 ## 不做什么（反范围）
 

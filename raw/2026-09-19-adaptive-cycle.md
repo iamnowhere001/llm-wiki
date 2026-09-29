@@ -1,6 +1,6 @@
 ---
 title: "适应性循环：稳定蕴藏着不稳定，败坏蕴藏着生机"
-author: 万维钢（得到课程讲稿）；收尾「有偈为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「有偈为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/CGwrw0GKOipTIWko2qFcjjVPnMd
 source_url: https://www.dedao.cn/course/article?id=Mr9mzb36pP4JL5o3Z5XkWqB2EYNegL
 kind: course-article

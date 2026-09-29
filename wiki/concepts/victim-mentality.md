@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-steady-state-trap-notes]
 related: [complaining, stoic-control-dichotomy, internal-friction, forgiveness, steady-state-survival-logic, agent-vs-tool, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---

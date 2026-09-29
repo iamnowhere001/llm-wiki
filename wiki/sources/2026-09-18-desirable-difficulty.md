@@ -1,5 +1,5 @@
 ---
-title: "可取（以及不可取）的困难：把身心调到最适合学习的状态（《现代思维工具》学习与教育 第 7 讲）"
+title: "可取（以及不可取）的困难：把身心调到最适合学习的状态"
 type: source
 slug: 2026-09-18-desirable-difficulty
 tags: [万维钢, 学习, 记忆, 具身认知, 睡眠]
@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第七讲**。
 > **本批九讲里对本库既有页面校准作用最大的一讲** —— 它补上了本库一处明确的归属缺失。
 
-- **作者**：万维钢（** 自陈「我们《精英日课》专栏已经讲过太多跟睡眠有关的研究了」**）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/Id2ywhOz1i0y0xkkdsJcF7K2nie ｜ https://www.dedao.cn/course/article?id=AgOBQ46R1rnXRQomwPJdLzGqEZ3aY7
 - **发表**：2026-05-14 23:01
 - **素材路径**：`raw/2026-09-18-desirable-difficulty.md`（436 行，frontmatter 1–36）

@@ -1,6 +1,6 @@
 ---
 title: "探索和生发：一种人生意义"
-author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对应 sources 页
+author: 万维钢；有无 AI 加工段与边界见对应 sources 页
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=gpMLla6Py4qK25YOw8XYmvNzjd2Zx1
 kind: course-article

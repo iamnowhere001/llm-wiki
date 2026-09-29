@@ -1,6 +1,6 @@
 ---
 title: "参考类：当局者迷，旁观者清，你不特殊"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/DHyiw3qkBieNX6kVwNBcZvQWnVh
 source_url: https://www.dedao.cn/course/article?id=zYo2GPNq4W8VEbwmLaJejyRBZbnw0d
 kind: mixed-notes

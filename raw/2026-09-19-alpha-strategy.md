@@ -1,6 +1,6 @@
 ---
 title: "阿尔法：优势战略意识"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/UMW1wlqOriikB9kbprxcmuBLn6N
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMmbJ7DOop10vZwL
 kind: mixed-notes

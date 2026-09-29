@@ -1,6 +1,6 @@
 ---
 title: "稀缺：奇点前后的变与不变"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/Mf6vwI853ius8CkrlD6c4bqAnN6
 source_url: https://www.dedao.cn/course/article?id=m845Ln7q69yKOOoGdlKrkebvGDYjgl
 kind: course-article

@@ -1,6 +1,6 @@
 ---
 title: "柠檬市场：不要直接扬善惩恶，要让好坏可验证"
-author: 万维钢（得到课程讲稿）；有无 AI 加工段与边界见对应 sources 页
+author: 万维钢；有无 AI 加工段与边界见对应 sources 页
 url: 无 —— 本份为本地文件，非在线抓取
 source_url: https://www.dedao.cn/course/article?id=Age3MrB5aPdV5nYEYrJwD2ky4jvENQ
 kind: course-article

@@ -1,6 +1,6 @@
 ---
 title: "经济租：赚钱的秘密"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/Fig8w64NOi9itZkgdUPcnjyyn9e
 source_url: https://www.dedao.cn/course/article?id=QLYWyjMZoa0J1vYA0dXp4wvzDbO26B
 kind: mixed-notes

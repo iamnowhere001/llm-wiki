@@ -1,6 +1,6 @@
 ---
 title: "非遍历性：玩家怕方差，庄家爱方差"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/X8CFwBP4yifYaQkK2vicAmaxnid
 source_url: https://www.dedao.cn/course/article?id=y7GQpR6ndOgX6kYA2jK8eBvPzMN4lw
 kind: mixed-notes

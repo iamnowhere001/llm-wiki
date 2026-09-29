@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-luhmann-zettelkasten]
 related: [zettelkasten, niklas-luhmann, llm-wiki-pattern, compounding-knowledge, bidirectional-links]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

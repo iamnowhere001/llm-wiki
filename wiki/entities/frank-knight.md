@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-trustworthiness]
 related: [types-of-uncertainty, entrustability, uncertainty-as-fuel, nassim-taleb, 2026-09-19-trustworthiness, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -23,7 +23,7 @@ status: active
 > 该文件 `wc -l` = **216 行**（末行无换行，Read 计得 **217 行**）；frontmatter 占 **1–28 行**，**正文自第 30 行起**（正文 188 行）。
 > 写本页前已用 `grep -n` 与全文通读**逐条回文件核对**行号。
 
-- **作者**：万维钢（得到课程讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/ZDqXw3A5rik672kYSgRcjX9qnfh（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-self-organized-criticality.md`（217 行）
 

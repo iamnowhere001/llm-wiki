@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, 2026-09-20-exploration-and-generation]
 related: [ruliad, narrative-power, narrative-identity, narrative-self-vs-bodily-self, critique-target-distortion, uncertainty-as-fuel, wishful-thinking-layers, types-of-uncertainty, wanweigang, 2026-09-18-narrative-first-principle, 2026-09-18-uncertainty-fuel-notes, 2026-09-18-hard-constraints-notes, modern-thinking-tools, narrative-industrialization, meta-narrative, exploration-and-generation, 2026-09-20-exploration-and-generation]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: active
 ---

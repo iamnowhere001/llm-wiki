@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [pkm-history, ted-nelson, tim-berners-lee, vannevar-bush, roam-research, zettelkasten]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: high
 status: active
 ---

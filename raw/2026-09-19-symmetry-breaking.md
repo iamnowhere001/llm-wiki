@@ -1,6 +1,6 @@
 ---
 title: "对称性破缺：命运不过是冷却了的偶然"
-author: 万维钢（得到课程讲稿）；收尾「有偈赞曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「有偈赞曰」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/HdDjwhxv3i3vXwk0xBHcxI1qnQh
 source_url: https://www.dedao.cn/course/article?id=EGBgdkRbn1mKgdWBQgVY890D3rvPOA
 kind: course-article

@@ -30,7 +30,7 @@ status: active
 > 素材文件（`raw/2026-09-19-selection-bias-notes.md`，共 **527** 行）。
 > frontmatter 占 1–25 行，**正文自第 26 行起**。写本页前已逐条 `sed -n` 回文件核对。
 
-- **作者**：万维钢（讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/XmOBwMizji2BagkxQB5c6Alqnyh（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-selection-bias-notes.md`（527 行）
 

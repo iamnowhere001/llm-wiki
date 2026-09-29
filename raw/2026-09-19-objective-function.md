@@ -1,6 +1,6 @@
 ---
 title: "目标函数：这个宇宙奖励什么？"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/Oz0uwqEzxim3sLkRiMBc3gIlnjc
 source_url: https://www.dedao.cn/course/article?id=Age3MrB5aPdV5nYPnkJwD2ky4jvENQ
 kind: course-article

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-how-we-learn-notes, 2026-09-18-three-selves-notes]
 related: [cybernetic-learning, four-pillars-of-learning, retrieval-practice, consolidation-and-sleep, stanislas-dehaene, peak-performance, three-selves, free-energy-principle, hard-constraints, 2026-09-18-hyperefficient-notes, 2026-09-18-how-we-learn-notes, 2026-09-18-three-selves-notes, cognitive-debt, 2026-09-18-writing-is-thinking]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---

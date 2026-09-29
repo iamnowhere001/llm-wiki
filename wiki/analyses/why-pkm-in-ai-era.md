@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-frand-hixon-pkm, 2026-09-18-bush-as-we-may-think, 2026-09-18-writing-is-thinking, 2026-09-19-value-of-information-notes]
 related: [llm-wiki-pattern, cybernetic-learning, rag-vs-wiki, pkm-history, commonplace-book, use-cases, cognitive-outsourcing, cognitive-debt, productive-resistance]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

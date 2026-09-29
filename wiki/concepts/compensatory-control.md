@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-19-optionality-notes]
 related: [types-of-uncertainty, uncertainty-as-fuel, victim-mentality, steady-state-survival-logic, narrative-power, emotion-awareness, 2026-09-18-uncertainty-fuel-notes, modern-thinking-tools, explore-exploit-tradeoff]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-self-determination-theory-notes]
 related: [steady-state-survival-logic, cognitive-outsourcing, modern-thinking-tools, wanweigang, hard-constraints, three-selves, wishful-thinking-layers, 2026-09-18-steady-state-trap-notes, 2026-09-18-hard-constraints-notes, 2026-09-18-three-selves-notes, mental-models, autonomy-support, llm-wiki-pattern, cybernetic-learning, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-supply-side-mindset-notes, 2026-09-18-self-determination-theory-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

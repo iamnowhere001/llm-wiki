@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-transfer-bridging]
 related: [schema-psychology, transfer-of-learning, explanatory-framework, cognitive-load-theory, 2026-09-18-mental-representations, 2026-09-18-transfer-bridging, tacit-knowledge, deliberate-practice, wanweigang]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

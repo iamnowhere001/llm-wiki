@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-social-capital-structural-holes-notes, 2026-09-18-five-thinking-tools-livestream]
 related: [social-capital, structural-holes, opportunity-systems, multiplicative-world, luck-over-talent, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

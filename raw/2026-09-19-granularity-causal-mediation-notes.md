@@ -1,6 +1,6 @@
 ---
 title: "颗粒度和因果中介：用模型思考"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/PqC1wLxH1iwD9BkUoZacHzKQnoe
 source_url: https://www.dedao.cn/course/article?id=D4vE8rn63yN5JA52NOJOpoPzG0MdqB
 kind: mixed-notes

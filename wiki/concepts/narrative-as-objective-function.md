@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-narrative-self, 2026-09-18-capability-seeking-theorem-notes]
 related: [cybernetic-learning, narrative-power, narrative-as-first-principle, emotion-awareness, prediction-error, 2026-09-18-narrative-first-principle, modern-thinking-tools, meta-narrative, 2026-09-18-capability-seeking-theorem-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: active
 ---

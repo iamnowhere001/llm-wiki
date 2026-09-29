@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-narrative-first-principle, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-three-selves-notes]
 related: [prediction-error, cybernetic-learning, three-selves, narrative-as-first-principle, four-pillars-of-learning, ai-convergence, intelligent-life-system, 2026-09-18-narrative-first-principle, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-three-selves-notes, modern-thinking-tools]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: active
 ---

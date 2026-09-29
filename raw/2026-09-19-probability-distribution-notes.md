@@ -1,6 +1,6 @@
 ---
 title: "概率分布：到底什么是决策？"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/GQfSwMWpAi7PbFkT322chUXun0g
 source_url: https://www.dedao.cn/course/article?id=Lpy0edZAG5mnK0w2d1XzD9BkoajY4x
 kind: mixed-notes

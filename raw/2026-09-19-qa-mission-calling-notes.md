@@ -1,6 +1,6 @@
 ---
 title: "问答：没有机缘得到使命召唤怎么办？"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/XgDbwmMrhieyGwksNbTcwBM6ngh
 source_url: https://www.dedao.cn/course/article?id=zl12vGeNAM0YVpMQaeJdmxjOQBP5oL
 kind: mixed-notes

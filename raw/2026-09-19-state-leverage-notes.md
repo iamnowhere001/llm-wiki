@@ -1,6 +1,6 @@
 ---
 title: "状态杠杆：你不是不努力，你是没做在点子上"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/O22HwAk6qikjGMkQSgKcjJjante
 source_url: https://www.dedao.cn/course/article?id=Mr9mzb36pP4JL5o2jAXkWqB2EYNegL
 kind: mixed-notes

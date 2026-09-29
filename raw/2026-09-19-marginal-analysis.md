@@ -1,6 +1,6 @@
 ---
 title: "边际分析：怎样判断值不值得继续投入？"
-author: 万维钢（得到课程讲稿）；收尾「有诗为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
+author: 万维钢；收尾「有诗为证」的代笔者未披露（得到课程惯例），判定见对应 sources 页
 url: https://my.feishu.cn/wiki/TcLiwEJGkihrMgktr4Scxdovn9c
 source_url: https://www.dedao.cn/course/article?id=Nwelz6kDn0aKeRWMoLV7qLAO3Bb51j
 kind: course-article

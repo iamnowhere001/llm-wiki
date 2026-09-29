@@ -21,7 +21,7 @@ status: active
 > 2026-09-20 北洛裁定：不矛盾 —— 两者是两个维度**（本讲说的是**主动性**，CLT 说的是**工程化**），
 > 且**互为条件**。见下「2026-09-20 裁定」一节与 [[decisions]]。**本页此前的矛盾判定已作废。**
 
-- **作者**：万维钢（讲稿段）；「### 核心洞见」以下全部为 AI 加工，无署名（行 774 AI 自陈「像我这样的大语言模型（AI）」）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/WqrIwz2BdiWoWVkpCPFcVtMDngh ｜ https://www.dedao.cn/course/article?id=ov5WgnrDGd8bKNdwZ7JMNRm1wO264y
 - **发表**：2026-04-01 00:08
 - **素材路径**：`raw/2026-09-18-active-cognitive-load-notes.md`（858 行，frontmatter 1–25）

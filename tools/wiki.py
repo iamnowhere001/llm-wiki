@@ -14,6 +14,12 @@ wiki.py -- LLM Wiki 零依赖工具链
                                            （同时写 site/.build-manifest.json 作为构建基准）
   python3 tools/wiki.py buildcheck         对比构建基准，报「新建 / 更新」页数
                                            （供 schema §2.1 判据 3 判断要不要构建）
+  python3 tools/wiki.py rawcheck [--write [--force]]
+                                           对比 raw/ 内容指纹基准（--write 建立 / 更新基准；
+                                           --force 跳过 git 状态前置检查）
+                                           核「raw/ 不可变」这条铁律；lint 已接入同一份逻辑
+  python3 tools/wiki.py claim <scope>      取写锁（并发会话保护，见 AGENTS.md §3）
+  python3 tools/wiki.py release [--force]  释放写锁
   python3 tools/wiki.py chapter-audit [-v] source 页的「正文 / 账目」分布审计（只读）
   python3 tools/wiki.py log <type> "msg"   追加一条日志
   python3 tools/wiki.py new <type> <slug>  按模板新建页面
@@ -27,10 +33,12 @@ import json
 import math
 import os
 import re
+import socket
+import subprocess
 import sys
 import hashlib
 from collections import Counter, defaultdict
-from datetime import date
+from datetime import date, datetime
 
 # 标签准入规则（见 wiki/schema.md §1.7）。缺失时降级为「不检查标签」，不让工具链挂掉。
 try:
@@ -39,6 +47,10 @@ except ImportError:  # pragma: no cover
     REMOVE = frozenset()
 
 # ---------------------------------------------------------------- 常量
+
+# 索引分片的目录。放**点目录**是故意的 —— load_pages 已经跳过以 `.` 开头的目录，
+# 所以分片不会被当页面加载、不进站点、不被 lint 校验。这不是为它加的特例。
+INDEX_SHARD_DIR = os.path.join("wiki", ".index")
 
 PAGE_DIRS = {
     "source": "sources",
@@ -147,11 +159,21 @@ REQUIRED_FM = ["title", "type", "slug"]
 # 证据层级（2026-09-19 引入）—— 回答「这页的结论站得多稳」，与 confidence 是两个维度：
 #   confidence  是 LLM 的**主观**判断（high / medium / low），会随阅读而变，无法机器校验
 #   evidence_tier 是**可计算**的事实：由支撑素材的数量与类型推导，lint 能校验它与事实是否一致
-# 三档取值：
-#   single   恰好 1 份素材支撑 —— 孤证。可读，但引用时必须带着「只有一份来源」这个前提
-#   crossed  ≥2 份素材支撑，且不含一手文献 —— 交叉了，但可能只是同源转述（见同源提示）
-#   primary  至少 1 份 kind=paper 的素材支撑 —— 有可独立核验的一手文献
-EVIDENCE_TIERS = ("single", "crossed", "primary")
+# 四档取值（2026-09-21 由三档拆成四档，裁定见 wiki/decisions.md）：
+#   single                恰好 1 份素材支撑 —— 孤证。引用时必须带着「只有一份来源」这个前提
+#   crossed-independent   ≥2 份素材、且分属**不同**来源族 —— 真交叉，是独立佐证
+#   crossed-same-family   ≥2 份素材、但**全部来自同一来源族** —— 名义交叉，实质同源
+#   primary               至少 1 份 kind=paper 的素材支撑 —— 有可独立核验的一手文献
+#
+# 为什么拆：「≥2 份支撑」这件事有两种完全不同的含义，而旧的单值 `crossed` 表达不了
+# （2026-09-21 实测：96 个 crossed 页里 43 个的全部支撑素材来自同一来源族，占 45%）。
+# 拆之前，读者必须**记得去别处查**那 43 页是不是同源 —— 而「记得去查」正是
+# evidence_tier 当初取代 confidence 要解决的问题（主观判断机器校验不了）。
+# 所以语义必须落在取值里，不能落在提示里。
+EVIDENCE_TIERS = ("single", "crossed-independent", "crossed-same-family", "primary")
+
+# 旧的单值 `crossed` 已废除。留着这个名字是为了让「取值不对」的报错能指向正确的替代品。
+LEGACY_EVIDENCE_TIERS = {"crossed": "crossed-independent 或 crossed-same-family"}
 
 # 被视为「可独立核验的一手文献」的素材 kind
 PRIMARY_KINDS = ("paper",)
@@ -162,13 +184,63 @@ EVIDENCE_TYPES = ("concept", "entity", "analysis")
 
 LINK_RE = re.compile(r"\[\[([^\[\]|]+)(?:\|([^\[\]]+))?\]\]")
 
-# 正文链接密度（2026-09-19 引入）—— 回答「这页是在论述，还是在罗列」。
-# `related` 字段是结构化挂靠，正文内链才是论述过程中真正发生的引用。一页很长却几乎
-# 不在正文里引用别的页，通常是「清单式挂靠」：页面被挂进了知识网，但没有参与论证。
-# 阈值 1.5 不是理论值，是实测出来的：素材页密度中位数从 09-18 批次的 1.68 掉到
-# 09-19 批次的 1.08（低于 1.5 的占比 40% → 83%），1.5 正好落在两个批次之间。
-BODY_LINK_DENSITY_MIN = 1.5     # 条 / 千字正文
-BODY_LINK_MIN_CHARS = 1000      # 短页密度波动大，不参与该项检查
+# 正文链接密度（2026-09-19 引入，2026-09-21 拆成两套）—— 回答「这页是在论述，还是在罗列」。
+# `related` 字段是结构化挂靠，正文内链才是论述过程中真正发生的引用。
+#
+# 为什么拆：2026-09-21 实测（147 份素材页 / 293 个知识页），同一个阈值 1.5 在两类页上
+# **一对一错** ——
+#   素材摘要页：中位 **1.29**（P25 1.01 / P75 1.85），61% 命中 —— 阈值落在分布**内部**，
+#              等于把「常态」报成「问题」，且永不收敛
+#   知识页：    中位 2.86（concept）/ 3.03（entity）/ 2.33（analysis），只有 2% 命中 ——
+#              阈值落在 P25 之下，报出的确实是异常值
+# 根因是**素材摘要页的正文是转述、不是论证**：它引用别的页天然就少。用一把尺量两种东西，
+# 必然一边太松一边太紧。所以按类型取阈值。
+BODY_LINK_DENSITY_MIN = 1.5           # 知识页（concept / entity / analysis / project）：条 / 千字正文
+BODY_LINK_DENSITY_MIN_SOURCE = 0.8    # 素材摘要页 —— 落在素材页 P25（1.01）之下，报出的是真低尾
+BODY_LINK_MIN_CHARS = 1000            # 短页密度波动大，不参与该项检查
+
+
+def density_min(ptype):
+    """按页面类型取密度阈值。"""
+    return BODY_LINK_DENSITY_MIN_SOURCE if ptype == "source" else BODY_LINK_DENSITY_MIN
+
+
+# 「防臃肿」判据（wiki/schema.md §6.1）的**生效日**。此日之前创建的页面存量豁免，
+# 此日及之后创建的页面受约束。
+#
+# 为什么按日期豁免、而不是按「已知问题清单」豁免：清单要落一个文件，而这个仓库的
+# `.workbuddy-ai/` 是 gitignore 的 —— 换台机器就没有基准了。日期写在代码里，
+# 随版本走，且它表达的正是判据本身的含义：「从这一天起不许再这么写」。
+# 与 buildcheck / rawcheck 的基准不同，那两处的判据是「与上一次构建/落档时相比有没有变」，
+# 必须比内容指纹；这里判的是「新建的页面合不合规」，日期就够。
+#
+# 已知边界（写清楚，别让下一个人以为它管得更多）：
+# - **老页面被大幅扩写不会被报**（created 没变）。可接受的漏报 —— 扩写会改 updated，
+#   人工体检看 updated。
+# - 它只管长度与自指语两项；样板块、章节名日期、断链不受此豁免（那些是问题，不是提示）。
+LINT_SINCE = "2026-09-21"
+
+
+def is_grandfathered(page):
+    """页面是否早于防臃肿判据生效日（= 存量豁免）。缺 created 时**不豁免**。"""
+    return str(page.fm.get("created", ""))[:10] < LINT_SINCE
+
+
+def count_tone(body, words):
+    """统计自指语出现次数，**按最长匹配优先**，避免子串重复计数。
+
+    词表里有子串关系（「按本库」⊂「按本库既有约定」/「本库做法」），直接逐词
+    `body.count()` 会把一处「按本库既有约定」同时算成两个词的命中，总数虚高。
+    做法：先把命中的长词换成等长占位符，再数短词。
+    """
+    text = body
+    counts = {}
+    for w in sorted(words, key=len, reverse=True):
+        k = text.count(w)
+        if k:
+            counts[w] = k
+            text = text.replace(w, "\x00" * len(w))
+    return counts
 
 # ---------------------------------------------------------------- 基础工具
 
@@ -390,7 +462,7 @@ def load_raw_meta(root):
 
 # 来源族归并规则：(关键词元组, 族名)。命中任一关键词即归入该族。
 # 本库 2026-09-19 的现实：约 60/97 份素材来自同一套得到课程，但它们的 author 字段
-# 写法五花八门（「万维钢（讲稿）…」「未署名 —— 飞书 wiki…正文为得到课程文章」
+# 写法五花八门（「万维钢…」「未署名 —— 飞书 wiki…正文为得到课程文章」
 # 「得到《现代思维工具课》问答…」）。若只按 author 字符串比较，会把同源拆成三族，
 # 于是「交叉验证」会被严重高估。这条规则表的存在就是为了不让这件事发生。
 FAMILY_RULES = (
@@ -450,7 +522,12 @@ def compute_evidence_tier(page, raw_meta):
         families.add(source_family(rec.get("author", ""), rec.get("kind", ""), s))
     if has_primary:
         return ("primary", len(srcs), families)
-    return (("single" if len(srcs) == 1 else "crossed"), len(srcs), families)
+    if len(srcs) == 1:
+        return ("single", len(srcs), families)
+    # ≥2 份素材：同源还是独立，由来源族个数决定 —— 这是拆值后新分出来的那一刀
+    if len(families) == 1:
+        return ("crossed-same-family", len(srcs), families)
+    return ("crossed-independent", len(srcs), families)
 
 
 # ---------------------------------------------------------------- lint
@@ -477,6 +554,367 @@ def gap_table_rows(body):
             continue
         rows += 1
     return rows
+
+
+# ---------------------------------------------------------------- raw 完整性
+#
+# 「raw/ 不可变」是本库**第一条硬约束**（AGENTS.md §3.1），§3.2 给了 8 条准入条件的例外。
+# 但在 2026-09-21 之前，**没有任何机制会发现 raw/ 被改动** —— lint 只扫 wiki/。
+# 当天提交 39695c2（「移除全部图片资源并同步清理引用与行号声明」）改了多份 raw 文件的
+# frontmatter 并删除 311 个图片，是人事后翻 git log 发现的，不是机制拦下的。
+# **规则写了、核不出来，就等于不存在。**
+#
+# 所以补上核法：把 raw/ 全部文件的内容指纹写成一份基准，照 buildcheck 的做法 ——
+# **基准由产物自己写下来，不指望 git**。git 能告诉你 raw 变了，但告诉不了你
+# 「这次改动是否经过裁定」（自动 commit 之后，改动与裁定一起进了历史）。
+# 基准放 .workbuddy-ai/（工具状态目录，已 gitignore），不进 raw/ 也不进 wiki/。
+#
+# **没有基准时返回「无法判断」并计为问题**，不是「不命中」—— 同 buildcheck：
+# 测不了 ≠ 没问题。两者在结果上一样，在过程上完全不同。
+
+RAW_MANIFEST_REL = os.path.join(".workbuddy-ai", "raw-manifest.json")
+
+
+def raw_manifest_path(root):
+    return os.path.join(root, RAW_MANIFEST_REL)
+
+
+def scan_raw(root):
+    """扫 raw/ 下全部文件（不只 .md），返回 {相对路径: sha1}。
+
+    图片与 PDF 也计入 —— 2026-09-21 那次改动删的正是 311 个图片，
+    只扫 .md 会漏掉这个形态。
+    """
+    raw_dir = os.path.join(root, "raw")
+    out = {}
+    if not os.path.isdir(raw_dir):
+        return out
+    for dirpath, dirnames, filenames in os.walk(raw_dir):
+        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+        for fn in sorted(filenames):
+            if fn == ".DS_Store":
+                continue
+            full = os.path.join(dirpath, fn)
+            rel = os.path.relpath(full, root).replace(os.sep, "/")
+            h = hashlib.sha1()
+            try:
+                with open(full, "rb") as fh:
+                    for chunk in iter(lambda: fh.read(65536), b""):
+                        h.update(chunk)
+            except OSError:
+                continue
+            out[rel] = h.hexdigest()
+    return out
+
+
+def raw_diff(root):
+    """对比 raw 基准。返回 (status, added, changed, removed)。
+
+    status: "ok"（无差异）/ "drift"（有差异）/ "nobase"（无基准，**无法判断**）
+    """
+    cur = scan_raw(root)
+    path = raw_manifest_path(root)
+    if not os.path.isfile(path):
+        return "nobase", [], [], []
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            base = (json.load(fh) or {}).get("files") or {}
+    except (ValueError, OSError):
+        return "nobase", [], [], []
+    if not isinstance(base, dict):
+        return "nobase", [], [], []
+    added = sorted(k for k in cur if k not in base)
+    removed = sorted(k for k in base if k not in cur)
+    changed = sorted(k for k in cur if k in base and cur[k] != base[k])
+    if added or removed or changed:
+        return "drift", added, changed, removed
+    return "ok", [], [], []
+
+
+def raw_git_dirty(root):
+    """raw/ 下未提交改动的条数；**无法判断时返回 None**（无 git / 不在仓库 / git 报错）。
+
+    为什么建基准前要核这个：基准是**把此刻的现状写成「正确」**。
+    若建基准时 raw/ 已有未提交改动，那些改动就被静默固化成基准的一部分，
+    从此 rawcheck 对它们永久失明 —— 2026-09-21 实测踩到过：46 处 author 字段改动
+    （11:15）早于基准（12:03），rawcheck 报「与基准一致」。
+    这不是「基准不可靠」，是**建基准这个动作需要一个准入检查**。
+    """
+    try:
+        out = subprocess.run(
+            ["git", "status", "--porcelain", "--", "raw"],
+            cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            timeout=20,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    return len([l for l in out.stdout.decode("utf-8", "replace").split("\n") if l.strip()])
+
+
+def cmd_rawcheck(root, write=False, force=False):
+    cur = scan_raw(root)
+    path = raw_manifest_path(root)
+    if write:
+        dirty = raw_git_dirty(root)
+        if dirty is None:
+            print("⚠️  无法核 git 状态（没装 git / 不在仓库内）—— 无法确认 raw/ 当前是否含未提交改动。")
+            print("    建基准会把此刻的现状固化成「正确」，而这一步核不出来。")
+            if not force:
+                print("    确认无误后加 --force 建基准。")
+                return 1
+        elif dirty:
+            print("⚠️  raw/ 下有 %d 处未提交改动 —— 建基准会把它们固化成「正确」。" % dirty)
+            print("    若这批改动**已经过人类裁定**，先 commit 再建基准（这样 git 历史与基准一致）。")
+            if not force:
+                print("    若确实要按现状建基准，加 --force。")
+                return 1
+            print("    --force：仍按现状建基准。")
+        payload = {
+            "generated": date.today().isoformat(),
+            "note": "raw/ 内容指纹基准。改动 raw/ 后必须重写本基准，"
+                    "且改动须经人类裁定（AGENTS.md §3.2）。",
+            "files": cur,
+        }
+        write_text(path, json.dumps(payload, ensure_ascii=False,
+                                    indent=1, sort_keys=True) + "\n")
+        print("已写入 raw 基准：%s（%d 个文件）"
+              % (os.path.relpath(path, root), len(cur)))
+        return 0
+
+    status, added, changed, removed = raw_diff(root)
+    if status == "nobase":
+        print("raw/ 完整性：**无基准，无法判断**（%s 不存在）"
+              % os.path.relpath(path, root))
+        print("  确认 raw/ 当前状态无误后，跑 `python3 tools/wiki.py rawcheck --write` 建立基准。")
+        print("  「无法判断」不等于「没有改动」—— 测不了按非零处理。")
+        return 1
+    if status == "ok":
+        print("raw/ 完整性：无改动（%d 个文件，与基准一致）" % len(cur))
+        return 0
+    print("raw/ 已被改动  ——  铁律：raw/ 不可变（AGENTS.md §3.1）")
+    for k in changed:
+        print("  ~ %s  内容已改动" % k)
+    for k in added:
+        print("  + %s  新增" % k)
+    for k in removed:
+        print("  - %s  已删除" % k)
+    print("")
+    print("  改动须经人类裁定（§3.2 的 8 条准入条件，作用域是 frontmatter 元数据，"
+          "不含删除素材文件）；")
+    print("  裁定通过后跑 `python3 tools/wiki.py rawcheck --write` 更新基准。")
+    return 1
+
+
+# ---------------------------------------------------------------- 并发写锁
+#
+# 本库允许（事实上经常）多个会话同时写 wiki/，此前没有任何锁、没有 session 标识、
+# 没有分支约定。log 里留下过 5 处并发痕迹，其中一处是明写的
+# `> [!warning] 本轮发现仓库存在并发写入`（log 行 294）。
+# 已造成的三类损失**全是静默的**：
+#   ① 审计线索断裂 —— 站点基准被另一个会话改写，「上次构建时间」失去可比性（行 298 / 637 / 1290）；
+#   ② 工作交接失败 —— 模块八 12 份素材的 sources 页由一个会话建好、回填由另一个会话接手，
+#      于是回填静默挂账（行 635）；
+#   ③ 基准文件被覆盖。
+# 跨项目记忆里也有同型实测：**同一条消息里对同一文件发多个编辑，会静默丢失且工具仍返回成功**。
+#
+# 这把锁是**建议性的**（advisory）—— 工具不会阻止别的进程写文件。
+# 它做的事只有一件：把「现在有别的会话在写」从**无从得知**变成**问得出来**。
+# 判据与 buildcheck 同源：**没有锁不等于没人写，等于无法判断** ——
+# 所以 ingest / 批量改写这类动作应当**先 claim 再动手**，claim 失败即中止。
+
+LOCK_REL = os.path.join(".workbuddy-ai", "wiki.lock.json")
+LOCK_TTL_MIN = 45          # 超过这个时长未释放，视为上一个会话已死
+
+
+def lock_path(root):
+    return os.path.join(root, LOCK_REL)
+
+
+def _ppid_of(pid):
+    """某进程的父进程 pid；取不到返回 None。"""
+    try:
+        out = subprocess.run(["ps", "-o", "ppid=", "-p", str(pid)],
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    try:
+        return int(out.stdout.decode("utf-8", "replace").strip())
+    except ValueError:
+        return None
+
+
+def _session_root_pid():
+    """找出**在一次会话内稳定**的那个祖先进程 pid；取不到返回 None。
+
+    命令行工具每次调用都是新进程 —— 用 `os.getpid()` 当会话标识，claim 与 release
+    永远对不上。2026-09-21 实测踩到：claim 写入 pid30642，release 从 pid30650 发出，
+    被自己的规则拒掉，于是**锁只能靠 --force 清**，等于没有 release。
+
+    稳定的是「调起 shell 的那个常驻进程」（终端 / 编辑器 / agent 主进程）：
+      - 经 shell 调用：python → shell（每次新进程）→ 常驻父进程 ← 取这个
+      - 直接调用：    python → 常驻父进程（其父是 launchd，pid 1）← 退回取它
+
+    ⚠️ 需要 `ps`。**实测本机沙箱里 `ps` 被拒（operation not permitted）**，
+    所以这条路径在沙箱内恒为 None —— 真正生效的是 session_id() 里的环境变量那几档。
+    """
+    gp = _ppid_of(os.getppid())
+    if gp and gp > 1:
+        return gp
+    return os.getppid() or None
+
+
+# 宿主注入的会话 id 环境变量（按优先级）。这些值**每次调用都一样**，
+# 所以能当会话标识用；实测本机 WorkBuddy 注入 CODEBUDDY_SESSION_ID 与 CLAUDE_SESSION_ID。
+SESSION_ENV = (
+    ("CODEBUDDY_SESSION_ID", "cb"),
+    ("CLAUDE_SESSION_ID", "claude"),
+    ("TERM_SESSION_ID", "term"),
+)
+
+
+def session_id():
+    """当前会话标识。取值顺序：
+
+      1. `WIKI_SESSION` —— 人类显式指定，优先级最高（也可用来给会话起可读名字）
+      2. `CODEBUDDY_SESSION_ID` / `CLAUDE_SESSION_ID` / `TERM_SESSION_ID` —— 宿主注入，跨调用稳定
+      3. 祖先进程 pid（需 `ps`）
+      4. 自身 pid —— **跨调用不稳定**，claim 与 release 会对不上，只能靠 --force 清
+
+    3 与 4 是兜底：1、2 取不到时才走，且走 4 时 release 会提示原因。
+    """
+    s = (os.environ.get("WIKI_SESSION") or "").strip()
+    if s:
+        return s
+    for key, tag in SESSION_ENV:
+        v = (os.environ.get(key) or "").strip()
+        if v:
+            return "%s-%s" % (tag, v.split("-")[0][:8])
+    try:
+        host = socket.gethostname().split(".")[0]
+    except Exception:
+        host = "unknown"
+    root_pid = _session_root_pid()
+    if root_pid:
+        return "sess%d@%s" % (root_pid, host)
+    return "pid%d@%s" % (os.getpid(), host)
+
+
+def _holder_pid(lock):
+    """从会话标识里解出 (pid, host)；解不出返回 (None, None)。
+
+    只对 `sess<pid>@<host>` / `pid<pid>@<host>` 两种形态有效 ——
+    环境变量形态（`cb-51947158`）没有 pid，也就无法判活，按「活着」处理（保守）。
+    """
+    m = re.match(r"^(?:pid|sess)(\d+)@(.+)$", (lock or {}).get("session") or "")
+    if not m:
+        return None, None
+    return int(m.group(1)), m.group(2)
+
+
+def holder_pid_alive(lock):
+    """持有者进程是否还在。**判不了就返回 True（保守）** —— 宁可要求 --force，不要误清。"""
+    pid, host = _holder_pid(lock)
+    if pid is None:
+        return True
+    try:
+        if host != socket.gethostname().split(".")[0]:
+            return True
+    except Exception:
+        return True
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False            # 进程确实不存在
+    except PermissionError:
+        return True             # 存在，只是不归我们发信号
+    except OSError:
+        return True
+    return True
+
+
+def read_lock(root):
+    path = lock_path(root)
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            d = json.load(fh)
+    except (ValueError, OSError):
+        return None
+    return d if isinstance(d, dict) else None
+
+
+def lock_age_min(lock):
+    """锁已持有的分钟数；时间戳缺失或坏掉时返回 None。"""
+    ts = (lock or {}).get("started")
+    if not ts:
+        return None
+    try:
+        t0 = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S")
+    except ValueError:
+        return None
+    return (datetime.now() - t0).total_seconds() / 60.0
+
+
+def cmd_claim(root, scope, force=False):
+    cur = read_lock(root)
+    if cur and not force:
+        holder = cur.get("session") or "?"
+        age = lock_age_min(cur)
+        if age is not None and age < LOCK_TTL_MIN:
+            print("取锁失败 —— 已有会话在写 wiki/。")
+            print("  持有者: %s" % holder)
+            print("  范围  : %s" % (cur.get("scope") or "?"))
+            print("  开始  : %s（%.0f 分钟前）" % (cur.get("started"), age))
+            print("")
+            print("  按 AGENTS.md §3，同一时刻只允许一个会话写 wiki/；并发会话只允许读。")
+            print("  等它结束，或确认它已死掉后用 `wiki.py claim <scope> --force` 夺取。")
+            return 1
+        if age is not None:
+            print("注意：锁已过期（持有者 %s，开始于 %s，%.0f 分钟前）—— 视为上一个会话已死，本次夺取。"
+                  % (holder, cur.get("started"), age))
+
+    payload = {
+        "session": session_id(),
+        "scope": scope,
+        "started": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        "ttl_minutes": LOCK_TTL_MIN,
+    }
+    write_text(lock_path(root), json.dumps(payload, ensure_ascii=False, indent=1) + "\n")
+    print("已取锁。")
+    print("  会话: %s" % payload["session"])
+    print("  范围: %s" % scope)
+    print("  开始: %s" % payload["started"])
+    print("  完成或中止后跑 `python3 tools/wiki.py release` 释放；"
+          "%d 分钟未释放视为失效。" % LOCK_TTL_MIN)
+    return 0
+
+
+def cmd_release(root, force=False):
+    cur = read_lock(root)
+    if not cur:
+        print("没有锁（无需释放）。")
+        return 0
+    holder = cur.get("session") or "?"
+    me = session_id()
+    if holder != me and not force:
+        # 会话标识在「每次调用都是新进程」的环境里仍可能对不上，所以再加一条判据：
+        # **持有者进程已经不存在** → 视为它已结束，允许清除。
+        # 这不是放宽 —— 真正的保护在 claim 那一侧（有未过期锁即拒绝）。
+        if holder_pid_alive(cur):
+            print("释放失败 —— 锁的持有者不是本会话，且它看起来还在运行。")
+            print("  持有者: %s" % holder)
+            print("  本会话: %s" % me)
+            print("  确认对方已结束后用 `wiki.py release --force`。")
+            return 1
+        print("锁的持有者 %s 的进程已不存在 —— 视为其已结束，清除该锁。" % holder)
+    os.remove(lock_path(root))
+    print("已释放锁（%s）。" % holder)
+    return 0
 
 
 def cmd_lint(root):
@@ -574,6 +1012,7 @@ def cmd_lint(root):
     raw_meta = load_raw_meta(root)
     tier_missing = []
     tier_mismatch = []
+    tier_legacy = []
     for p in pages:
         if p.type not in EVIDENCE_TYPES:
             continue
@@ -584,10 +1023,16 @@ def cmd_lint(root):
         if not declared:
             tier_missing.append("%s  缺 evidence_tier（按素材推算应为 %s，%d 份支撑）"
                                 % (p.relpath, t, n))
+        elif declared in LEGACY_EVIDENCE_TIERS:
+            # 旧值单列 —— 它和「填错」不是一类问题，处置也不同：批量重跑播种脚本即可。
+            tier_legacy.append("%s  仍是旧值 crossed，应为 %s"
+                               % (p.relpath, t))
         elif declared != t:
             tier_mismatch.append("%s  声明 %s，但按素材推算是 %s（%d 份支撑）"
                                  % (p.relpath, declared, t, n))
     section("知识页缺少 evidence_tier", tier_missing)
+    section("evidence_tier 仍是拆分前的旧值（跑 tools/seed_evidence_tier.py --write 回填）",
+            tier_legacy)
     section("evidence_tier 与支撑素材不符", tier_mismatch)
 
     # 标签准入 —— 规则见 wiki/schema.md §1.7，移除集见 tools/tags_vocab.py。
@@ -631,8 +1076,11 @@ def cmd_lint(root):
 
     # ---- 防臃肿（2026-09-21 引入，规则见 wiki/schema.md §6.1）----
     # 判据：页面里只能有知识，不能有「我怎么得到这个知识的」。
-    # 只核可计算的部分 —— 样板警示块、章节名里的日期批次、篇幅、审核腔。
-    # 样板块是**问题**（它就是冗余本身）；篇幅与审核腔是**提示**（存量要慢慢还，新页不得再犯）。
+    # 只核可计算的部分 —— 样板警示块、章节名里的日期批次、篇幅、自指语。
+    # 样板块是**问题**（它就是冗余本身）；篇幅、章节名日期、自指语是**提示**。
+    #
+    # 2026-09-21 裁定（见 wiki/decisions.md）：篇幅与自指语两项**存量豁免**，按
+    # LINT_SINCE 划界 —— 判据生效前建的页不报，生效后建的页报。理由见该常量的注释。
     TIER_CALLOUT = ("> [!warning] 孤证", "> [!warning] 名义交叉，实质同源")
     LEN_CAP = {"concept": 200, "entity": 200, "source": 260, "analysis": 300}
     AUDIT_TONE = ("本库判断", "本库提示", "按本库", "已登记", "不降级",
@@ -642,43 +1090,59 @@ def cmd_lint(root):
     dated_sec = []
     tone_hits = []
     boiler_callout = []
+    exempt_long = exempt_tone = 0     # 存量豁免计数，报在标题里，让「没报」不等于「没有」
     for p in pages:
         if p.type == "meta":
             continue
         body = p.body
         n = len(body.split("\n"))
         cap = LEN_CAP.get(p.type)
+        old = is_grandfathered(p)
         if cap and n > cap:
-            over_long.append("%s  %d 行（%s 上限 %d）" % (p.relpath, n, p.type, cap))
-        hit_tone = []
+            if old:
+                exempt_long += 1
+            else:
+                over_long.append("%s  %d 行（%s 上限 %d）" % (p.relpath, n, p.type, cap))
         for line in body.split("\n"):
             if line.startswith("## ") and re.search(r"\d{4}-\d{2}-\d{2}", line):
                 dated_sec.append("%s  「%s」" % (p.relpath, line.strip()[:60]))
             if any(line.startswith(m) for m in TIER_CALLOUT):
                 boiler_callout.append(p.relpath)
-        for w in AUDIT_TONE:
-            k = body.count(w)
-            if k:
-                hit_tone.append("%s×%d" % (w, k))
-        if hit_tone:
-            tone_hits.append("%s  %s" % (p.relpath, " ".join(hit_tone)))
+        # 自指语：按最长匹配优先计数，避免子串重复（见 count_tone 的注释）
+        hits = count_tone(body, AUDIT_TONE)
+        if hits:
+            if old:
+                exempt_tone += 1
+            else:
+                tone_hits.append("%s  %s"
+                                 % (p.relpath,
+                                    " ".join("%s×%d" % (w, k) for w, k in
+                                             sorted(hits.items(), key=lambda x: -x[1]))))
     section("残留样板警示块（evidence_tier 已在 frontmatter 表达）", boiler_callout)
 
     # 以下三项是提示，不计入问题数 —— 存量需要逐步还，但新写的页面不得再命中。
-    def hint(title, items, cap_show=12):
-        if not items:
+    def hint(title, items, cap_show=12, note=None):
+        if not items and not note:
             return
         print("\n%s  (%d)  —— 提示，不计入问题数" % (title, len(items)))
+        if note:
+            print("  %s" % note)
         for it in items[:cap_show]:
             print("  - " + it)
         if len(items) > cap_show:
             print("  …… 另有 %d 项；完整清单见 `lint` 输出或逐页处理" % (len(items) - cap_show))
 
     print("\n" + "-" * 62)
-    print("防臃肿提示（schema §6.1）")
-    hint("页面超过长度上限 —— 该拆页", over_long)
+    print("防臃肿提示（schema §6.1）  —— 只报 %s 及之后新建的页面；更早的存量豁免" % LINT_SINCE)
+    hint("页面超过长度上限 —— 该拆页", over_long,
+         note="存量豁免 %d 页（%s 之前创建）。豁免的意思是「不催你还」，不是「这样写没问题」。"
+              % (exempt_long, LINT_SINCE) if exempt_long else None)
     hint("章节名含日期 / 批次 —— 过程流水不入页", dated_sec)
-    hint("残留审核腔自指语 —— 要表达判断就直接写，不要写「本库判断：X」", tone_hits)
+    hint("自指语词频 —— **这不是判据**，只报「这些页出现了这些词，值得看一眼」", tone_hits,
+         note="它核不出「这句话是不是审核腔」—— 判不了，只能数词。词表里至少两种用法："
+              "真审核腔（「公示而不降级」）该删；证据性质标注（「（本库判断，非素材结论）」）"
+              "是 §11 要求的、**删了就错**。所以这条只做提示，新页的写作规则见 schema §6.1 第 4 条。"
+              + ("存量豁免 %d 页。" % exempt_tone if exempt_tone else ""))
     print("-" * 62)
 
     # ---- 项目层检查 ----
@@ -734,45 +1198,40 @@ def cmd_lint(root):
                 advisories.append("    %s" % s)
             if len(uncovered) > 12:
                 advisories.append("    …… 另有 %d 个" % (len(uncovered) - 12))
-        # 「名义交叉，实质同源」—— 有多份支撑素材，但全来自同一来源族。
-        # 这类页面最容易骗人：sources 字段看着有三四份，其实是一个人的转述被拆成了几份。
-        same_family = []
-        for p in pages:
-            if p.type not in EVIDENCE_TYPES:
-                continue
-            t, n, fams = compute_evidence_tier(p, raw_meta)
-            if t == "crossed" and len(fams) == 1:
-                same_family.append((p.slug, n, next(iter(fams))))
-        if same_family:
-            advisories.append(
-                "以下 %d 个页面有 ≥2 份支撑素材，但**全部来自同一来源族** —— 名义上交叉验证，"
-                "实质是同源转述的重复计数，引用时不能当作独立佐证：" % len(same_family))
-            for s, n, f in sorted(same_family)[:10]:
-                advisories.append("    %-36s %d 份，全部来自 %s" % (s, n, f))
-            if len(same_family) > 10:
-                advisories.append("    …… 另有 %d 个" % (len(same_family) - 10))
+        # 「名义交叉，实质同源」—— 2026-09-21 起**不再在这里报**。
+        # 理由：这件事现在由取值 `crossed-same-family` 直接表达，lint 再报一遍就是重复。
+        # 判据是「凡是 frontmatter 能表达的，不在 advisory 里再报一遍」——
+        # 同 schema §6.1 第 8 条（凡是脚本能算出来的，不在正文里再写一遍）。
+        # 页数与清单看 `python3 tools/wiki.py stats`。
+        #
         # 正文链接密度过低 —— 文章很长，却几乎不在正文里引用别的页。
-        # 典型成因是批量建页时的「清单式挂靠」：related 字段写满了，正文里一句没提。
-        # 这类页面进了知识网却没参与论证，链接总数上看不出来，只能按密度查。
+        # 阈值按类型取（2026-09-21 拆）：素材摘要页 0.8，知识页 1.5。理由见常量处注释。
         thin = []
         for p in pages:
             # meta 页是目录 / 规范 / 日志，它们的链接本就是罗列，不适用密度判据
             if p.type == "meta" or len(p.body) < BODY_LINK_MIN_CHARS:
                 continue
+            limit = density_min(p.type)
             n = len({t for t in p.body_links if t in by_slug and t != p.slug})
             d = n / (len(p.body) / 1000.0)
-            if d < BODY_LINK_DENSITY_MIN:
-                thin.append((d, p.slug, len(p.body), n))
+            if d < limit:
+                thin.append((d, p.slug, len(p.body), n, p.type, limit))
         if thin:
             thin.sort()
+            by_type_thin = Counter(t for _d, _s, _c, _n, t, _l in thin)
             advisories.append(
-                "以下 %d 个页面正文链接密度 < %s 条/千字 —— 文章很长却几乎不在正文里引用其他页，"
-                "通常是「清单式挂靠」（只写进 `related` 字段）而不是论述性引用，"
-                "页面进了知识网但没有参与论证："
-                % (len(thin), BODY_LINK_DENSITY_MIN))
-            for d, s, nc, n in thin[:12]:
-                advisories.append("    %-46s %.2f 条/千字（%s 字，%d 条）"
-                                  % (s, d, format(nc, ","), n))
+                "以下 %d 个页面正文链接密度低于本类型阈值（%s）—— 文章很长却很少在正文里引用"
+                "其他页。素材摘要页 %d 个（阈值 %s）/ 知识页 %d 个（阈值 %s）："
+                % (len(thin),
+                   "素材页 %s，知识页 %s" % (BODY_LINK_DENSITY_MIN_SOURCE, BODY_LINK_DENSITY_MIN),
+                   by_type_thin.get("source", 0), BODY_LINK_DENSITY_MIN_SOURCE,
+                   len(thin) - by_type_thin.get("source", 0), BODY_LINK_DENSITY_MIN))
+            advisories.append(
+                "    ⚠️ 怎么读：**素材摘要页的正文是转述、不是论证**，它引用别的页天然就少 ——"
+                " 低密度在这里多半正常，只有明显垫底的那几个才值得看。")
+            for d, s, nc, n, t, limit in thin[:12]:
+                advisories.append("    %-46s %.2f 条/千字（%s 字，%d 条，阈值 %s）"
+                                  % (s, d, format(nc, ","), n, limit))
             if len(thin) > 12:
                 advisories.append("    …… 另有 %d 个" % (len(thin) - 12))
         # 缺口表已清空但项目还开着 —— 按 wiki/schema.md §1.6，可以收尾了
@@ -815,6 +1274,20 @@ def cmd_lint(root):
             continue
         pending.append(r)
     section("raw/ 中尚未收录的素材", pending)
+
+    # ---- raw/ 完整性（2026-09-21 新增）----
+    # 见上方「raw 完整性」一节。这里是它的 lint 接入点：raw 被改动是**问题**，不是提示 ——
+    # 它违反的是本库第一条硬约束，而此前没有任何检查覆盖它。
+    r_status, r_added, r_changed, r_removed = raw_diff(root)
+    if r_status == "nobase":
+        section("raw/ 完整性无法判断（缺基准）",
+                ["%s 不存在 —— 跑 `wiki.py rawcheck --write` 建立基准后才有核法；"
+                 "「无法判断」不等于「没有改动」" % RAW_MANIFEST_REL])
+    elif r_status == "drift":
+        r_items = (["%s  内容已改动" % k for k in r_changed]
+                   + ["%s  新增" % k for k in r_added]
+                   + ["%s  已删除" % k for k in r_removed])
+        section("raw/ 已被改动（铁律：raw/ 不可变，见 AGENTS.md §3.1）", r_items)
 
     stale = [p.relpath for p in pages if p.status in ("stale", "deprecated")]
     if stale:
@@ -875,25 +1348,24 @@ def cmd_stats(root):
     # 证据层级分布 —— 这是「库有多完备」的机器口径，比页面总数有意义得多
     raw_meta = load_raw_meta(root)
     tiers = Counter()
-    fam_only = 0
     for p in pages:
         if p.type not in EVIDENCE_TYPES:
             continue
-        t, _n, fams = compute_evidence_tier(p, raw_meta)
+        t, _n, _fams = compute_evidence_tier(p, raw_meta)
         if t == "none":
             continue
         tiers[t] += 1
-        if t == "crossed" and len(fams) == 1:
-            fam_only += 1
     if tiers:
         total = sum(tiers.values())
         print("\n证据层级（知识页 %d 个）" % total)
-        for t in ("primary", "crossed", "single"):
+        for t in ("primary", "crossed-independent", "crossed-same-family", "single"):
             if tiers.get(t):
-                print("  %-10s %3d  (%.0f%%)" % (t, tiers[t], 100.0 * tiers[t] / total))
-        if fam_only:
-            print("  其中 %d 个 crossed 页的全部支撑素材来自同一来源族 —— 名义交叉，实质同源"
-                  % fam_only)
+                print("  %-20s %3d  (%.0f%%)" % (t, tiers[t], 100.0 * tiers[t] / total))
+        ind = tiers.get("crossed-independent", 0)
+        prim = tiers.get("primary", 0)
+        print("  → 真正经得起独立佐证的（crossed-independent + primary）: %d 个（%.0f%%）"
+              % (ind + prim, 100.0 * (ind + prim) / total))
+    return 0
 
     projects = [p for p in pages if p.type == "project"]
     if projects:
@@ -1009,6 +1481,16 @@ def cmd_index(root):
     out.append("> 本文件由 `python3 tools/wiki.py index` 从各页 frontmatter 自动生成。")
     out.append("> 每次 ingest 后重新生成。查询时先读本页定位候选页面，再深入阅读。")
     out.append("")
+    out.append("> [!note] 这是**薄索引** —— 完整清单（含一行摘要与标签）在 `wiki/.index/<类型>.md` 分片里")
+    out.append("> 2026-09-21 分层：本页只留 **slug + 标题**，摘要与标签移出（分层前约 4.4 万 token，")
+    out.append("> 而它是每次查询的第一站）。**素材页只列 slug** —— 它的 slug 自带日期与描述。")
+    out.append(">")
+    out.append("> **主题型问题不要只读本页**，两条通道更全：")
+    out.append("> ① 项目页（`wiki/projects/`）的「知识」一节 —— 策展过的完整清单。实测：宽主题")
+    out.append(">    「情绪」在项目页有 39 页，而按字符串匹配本页只有 7 页，且项目页更准；")
+    out.append("> ② `python3 tools/wiki.py search \"<关键词>\" --top 30` —— 中文检索。宽主题务必调大")
+    out.append(">    `--top`（默认 10 只覆盖窄查询；实测「情绪」的召回 13% → top30 70% → top60 97%）。")
+    out.append("")
     total = sum(len(v) for v in groups.values())
     n_proj = len(groups.get("project", []))
     n_active = len([p for p in groups.get("project", []) if p.stage in ("planning", "active")])
@@ -1042,18 +1524,28 @@ def cmd_index(root):
             out.append("- [[%s|%s]] `%s` — %s" % (p.slug, p.title, stage, goal))
         out.append("")
 
-    for t in ["source", "entity", "concept", "analysis"]:
+    # 知识页：**带标题** —— 中文查询靠标题定位（slug 是英文，中文词匹配不到）
+    for t in ["entity", "concept", "analysis"]:
         items = sorted(groups.get(t, []), key=lambda p: p.slug)
         if not items:
             continue
         out.append("## %s (%d)" % (TYPE_LABEL[t], len(items)))
         out.append("")
         for p in items:
-            tags = ("  `" + "` `".join(p.tags) + "`") if p.tags else ""
-            flag = ""
-            if p.status in ("stale", "deprecated"):
-                flag = " ⚠️" + p.status
-            out.append("- [[%s|%s]] — %s%s%s" % (p.slug, p.title, p.summary, tags, flag))
+            flag = ("  ⚠️" + p.status) if p.status in ("stale", "deprecated") else ""
+            out.append("- [[%s|%s]]%s" % (p.slug, p.title, flag))
+        out.append("")
+
+    # 素材页：**只列 slug**。147 个标题会让本页多约 4 千 token，
+    # 而素材页的定位需求（「有没有讲 X 的素材」）本就该走 search 而非翻索引。
+    srcs = sorted(groups.get("source", []), key=lambda p: p.slug)
+    if srcs:
+        out.append("## %s (%d)" % (TYPE_LABEL["source"], len(srcs)))
+        out.append("")
+        out.append("> 只列 slug —— 摘要与标签见 `wiki/.index/source.md`；按主题找素材用 `wiki.py search`。")
+        out.append("")
+        for p in srcs:
+            out.append("- [[%s]]" % p.slug)
         out.append("")
 
     # 系统页导航。**从 meta 页动态生成**，不再硬编码 —— 曾因硬编码而在新增
@@ -1078,8 +1570,41 @@ def cmd_index(root):
 
     path = os.path.join(root, "wiki", "index.md")
     write_text(path, "\n".join(out))
-    print("已重建 %s（%d 个页面）" % (os.path.relpath(path, root), total))
+
+    n_shard = write_index_shards(root, groups)
+    print("已重建 %s（%d 个页面，薄索引）" % (os.path.relpath(path, root), total))
+    print("已重建 %d 个索引分片：%s/" % (n_shard, INDEX_SHARD_DIR))
     return 0
+
+
+def write_index_shards(root, groups):
+    """写索引分片 —— 薄索引里被移出去的「一行摘要 + 标签」落在这里，按类型分文件。
+
+    分片不是页面：它们在 `wiki/.index/` 下，`load_pages` 跳过点目录，
+    因此不进站点、不被 lint 校验、不计入页面总数。
+    """
+    n = 0
+    for t in ["project", "source", "entity", "concept", "analysis"]:
+        items = sorted(groups.get(t, []), key=lambda p: p.slug)
+        if not items:
+            continue
+        s = ["# 索引分片 —— %s" % TYPE_LABEL[t], "",
+             "> 由 `python3 tools/wiki.py index` 生成。**薄索引在 `wiki/index.md`**，",
+             "> 这里是完整清单（含一行摘要与标签）。按需读 —— 不必每次加载。", "",
+             "## %s (%d)" % (TYPE_LABEL[t], len(items)), ""]
+        for p in items:
+            tags = ("  `" + "` `".join(p.tags) + "`") if p.tags else ""
+            flag = (" ⚠️" + p.status) if p.status in ("stale", "deprecated") else ""
+            if t == "project":
+                stage = STAGE_LABEL.get(p.stage, p.stage)
+                s.append("- [[%s|%s]] `%s` — %s%s"
+                         % (p.slug, p.title, stage, p.goal or "（未写目标）", tags))
+            else:
+                s.append("- [[%s|%s]] — %s%s%s" % (p.slug, p.title, p.summary, tags, flag))
+        s.append("")
+        write_text(os.path.join(root, INDEX_SHARD_DIR, "%s.md" % t), "\n".join(s))
+        n += 1
+    return n
 
 
 # ---------------------------------------------------------------- log
@@ -1361,15 +1886,17 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 sources: []              # 支撑本页的 raw 素材 slug
 related: []
-evidence_tier: single    # single | crossed | primary —— 由 sources 推导，lint 校验
+evidence_tier: single    # single | crossed-independent | crossed-same-family | primary
+                         # —— 由 sources 推导，lint 校验
 confidence: high         # high | medium | low —— 主观判断
 status: active           # active | draft | stale | deprecated
 ---
 ```
 
-**`evidence_tier` 与 `confidence` 是两个维度**：前者是「有几份来源」（可计算，`lint` 校验），
-后者是「我信多少」（主观）。一页可以有多份来源（`crossed`）但仍然 `confidence: low`（全是转述）。
-多份素材也不等于多个独立佐证 —— **同源转述的重复计数不算交叉验证**。
+**`evidence_tier` 与 `confidence` 是两个维度**：前者是「有几份来源、是否独立」（可计算，`lint` 校验），
+后者是「我信多少」（主观）。一页可以有多份来源（`crossed-same-family`）但仍然 `confidence: low`（全是转述）。
+多份素材也不等于多个独立佐证 —— **同源转述的重复计数不算交叉验证**，所以
+`crossed-independent` 与 `crossed-same-family` 是两个不同的值，不是同一个值的两种说法。
 
 项目页额外有 `goal`（**必须可验收** —— 看到它能回答「做完了没有」）与
 `stage`（`planning` / `active` / `paused` / `shipped` / `abandoned`）。
@@ -1507,6 +2034,10 @@ status: active
 
 ## 回填清单
 
+<!-- 只列不改：写「打算改哪些页 / 改什么 / 依据哪一条要点」，人类圈定范围后再执行回填。
+     这是审批，不是挂账 —— 清单的提出时间必须早于执行时间（wiki/schema.md §2 第 7.5 步）。
+     执行完把节标题改为「已于 YYYY-MM-DD 执行」，否则下一轮会误判为未执行。 -->
+
 ## 定级理由
 
 <!-- ================= 页脚 ================= -->
@@ -1533,7 +2064,7 @@ status: active
 <!-- 建页提示（填完请删掉本块）
   tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」—— schema §1.7
   sources   支撑本页的 raw 素材 slug。挂了几份就按几份改 evidence_tier —— schema §1.2
-  evidence  single = 恰好 1 份 / crossed = ≥2 份 / primary = ≥1 份 paper
+  evidence  single = 1 份 / crossed-independent = ≥2 份且跨来源族 / crossed-same-family = ≥2 份但同族 / primary = ≥1 份 paper
   related   只写已存在的页 slug；正文里也要真的引用它 —— schema §1.5
 -->
 
@@ -1593,7 +2124,7 @@ status: active
 <!-- 建页提示（填完请删掉本块）
   tags      主题 / 系列 / 署名 / 角色四类。不写「这页是什么」（素材 / AI生成 / 待裁定）—— schema §1.7
   sources   支撑本页的 raw 素材 slug。挂了几份就按几份改 evidence_tier —— schema §1.2
-  evidence  single = 恰好 1 份 / crossed = ≥2 份 / primary = ≥1 份 paper
+  evidence  single = 1 份 / crossed-independent = ≥2 份且跨来源族 / crossed-same-family = ≥2 份但同族 / primary = ≥1 份 paper
   related   只写已存在的页 slug；正文里也要真的引用它，别只挂在字段里 —— schema §1.5
 -->
 
@@ -2288,6 +2819,9 @@ article p{overflow-wrap:break-word}
 .chip.t{color:#fff;border-color:transparent}
 .chip.tag{background:#fff;color:var(--muted)}
 .chip.stale{background:#fdecec;color:#b91c1c;border-color:#f5c2c2}
+.chip.dirty{background:#fff5e6;color:#8a5a00;border-color:#f0d9a8}
+.nav-item .rd{margin-left:auto;flex:0 0 auto;font-size:10.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
 #backlinks{
   max-width:760px;margin:40px auto 0;padding:20px 40px 0;border-top:1px solid var(--line);
 }
@@ -2838,9 +3372,73 @@ function mkLink(p){
   return a;
 }
 
+/* ---------------- 新鲜度（git） ---------------- */
+/* 新鲜度分两组，因为 git 只能给出**已提交**的时间线：
+   「未提交改动」它没有日期可给，硬编一个就会重犯 updated 那种「看着精确、其实失真」的错。
+   2026-09-29 实测：213 个 wiki 页有未提交改动 —— 这组不是边缘情况，是当下库的主要状态。
+   「最近提交」按 commit_date 倒序，是唯一可信的时间序列。 */
+var RECENT_N = 12;
+
+function mkFreshGroup(key, label, items, markOf, collapsed, tip){
+  var g = document.createElement("div"); g.className = "grp"; g.dataset.key = key;
+  if (collapsed) g.classList.add("collapsed");
+  var h = document.createElement("h3");
+  h.innerHTML = '<span class="gl"><span class="caret">▾</span>' +
+                '<span class="gtxt">' + esc(label) + '</span></span>' +
+                '<span class="n">' + items.length + '</span>';
+  g.appendChild(h);
+  var body = document.createElement("div"); body.className = "grpbody";
+  if (tip){
+    var t = document.createElement("div"); t.className = "res-tip"; t.textContent = tip;
+    body.appendChild(t);
+  }
+  var list = document.createElement("div"); list.className = "grplist";
+  items.forEach(function(p){
+    var a = mkLink(p);
+    var d = document.createElement("span");
+    d.className = "rd"; d.textContent = markOf(p);
+    a.appendChild(d);
+    list.appendChild(a);
+  });
+  body.appendChild(list);
+  g.appendChild(body);
+  return g;
+}
+
+function buildFreshNav(st){
+  var dirty = PAGES.filter(function(p){ return p.dirty; });
+  var dated = PAGES.filter(function(p){ return !p.dirty && p.commit_date; });
+  dated.sort(function(a, b){ return a.commit_date < b.commit_date ? 1 : -1; });
+
+  if (dirty.length){
+    var dc = (st["dirty"] === undefined) ? true : !!st["dirty"];
+    nav.appendChild(mkFreshGroup("dirty", "未提交改动", dirty,
+                                 function(){ return "未提交"; }, dc,
+                                 "git 给不出未提交改动的时间 —— 这批才是当下真正在动的部分。"));
+  }
+  if (dated.length){
+    var rc = (st["recent"] === undefined) ? false : !!st["recent"];
+    /* 批量提交会把 commit_date 刷平：2026-09-29 实测 452 页的最后提交同为 09-21
+       （那是一次全库清理），此时「最近 12 条」是从 452 个同日页里任取的，没有新旧含义。
+       必须明说，而不是让读者以为这一列分得出先后。 */
+    var latest = dated[0].commit_date;
+    var nLatest = 0;
+    dated.forEach(function(p){ if (p.commit_date === latest) nLatest++; });
+    /* 措辞要准：nLatest 是「停在这个日期的页数」，不是「那次提交覆盖的页数」——
+       后者更大（被它刷过的页里有一部分后来又有未提交改动，已归入上面那组）。 */
+    var tip = (nLatest > RECENT_N)
+      ? "本库最新的提交日期是 " + latest + "，有 " + nLatest + " 页停在这个日期 —— " +
+        "批量提交会把日期刷平，这一列分不出先后。"
+      : "";
+    nav.appendChild(mkFreshGroup("recent", "最近提交", dated.slice(0, RECENT_N),
+                                 function(p){ return p.commit_date.slice(5); }, rc, tip));
+  }
+}
+
 function buildNav(){
   var st = loadState();
   nav.innerHTML = "";
+  buildFreshNav(st);
   ORDER.forEach(function(t){
     var items = PAGES.filter(function(p){ return p.type === t; });
     if (!items.length) return;
@@ -3041,7 +3639,20 @@ function go(slug){
   var chips = '<span class="chip t" style="background:'+(TYPECOLOR[p.type]||"#666")+'">'+
               (TYPELABEL[p.type]||p.type)+'</span>';
   if (p.status && p.status !== "active") chips += '<span class="chip stale">'+p.status+'</span>';
-  if (p.updated) chips += '<span class="chip">更新 '+p.updated+'</span>';
+  /* 新鲜度走 git 提交日期，不走 frontmatter 的 updated ——
+     后者记的是「最后一次批量操作」，不是「这一页最后一次被改」：2026-09-29 实测 473 页里
+     431 页的 updated 挤在三天内，而 git 显示真正当天改的只有 6 页。
+     未提交的改动 git 给不出时间 —— 只标「未提交改动」，不编一个日期出来。
+     updated 降级为 title 提示（hover 可见），不占视觉空间。 */
+  if (p.dirty){
+    chips += '<span class="chip dirty"' +
+             (p.commit_date ? ' title="上次提交 '+p.commit_date+'　frontmatter updated '+esc(p.updated||"—")+'"'
+                            : ' title="从未提交过　frontmatter updated '+esc(p.updated||"—")+'"') +
+             '>未提交改动</span>';
+  } else if (p.commit_date){
+    chips += '<span class="chip" title="frontmatter updated '+esc(p.updated||"—")+
+             '">提交 '+p.commit_date+'</span>';
+  }
   if (p.sources && p.sources.length) chips += '<span class="chip">来源 '+p.sources.length+'</span>';
   (p.tags||[]).forEach(function(t){ chips += '<span class="chip tag">#'+esc(t)+'</span>'; });
 
@@ -3607,6 +4218,55 @@ if (start) go(start);
 """
 
 
+# ------------------------------------------------------------ git 新鲜度
+
+def _git_unquote(p):
+    # `git status --porcelain` 对含非 ASCII / 空格的路径会加引号并转义
+    if p.startswith('"') and p.endswith('"'):
+        try:
+            return json.loads(p)
+        except Exception:
+            return p[1:-1]
+    return p
+
+
+def git_freshness(root):
+    """返回 (commit_dates, dirty) —— 页面新鲜度的真数据源，替代 frontmatter 的 `updated`。
+
+    为什么不用 `updated`：它记的是「最后一次批量操作」，不是「这一页最后一次被真正改」。
+    2026-09-29 实测：473 页里 431 页的 `updated` 挤在三天内，而 git 显示真正当天改的只有 6 页。
+
+    - `commit_dates`: 相对仓库根的路径 -> 最后提交日期（YYYY-MM-DD）。
+      `git log` 默认按时间倒序，某路径**第一次**出现的那次提交就是它的最后改动 —— 一次遍历足够。
+    - `dirty`: 工作区有未提交改动（含未跟踪）的路径集合。**git 给不出这批文件的改动时间** ——
+      只能报「有未提交改动」，不能编一个日期出来（2026-09-29 实测：213 个 wiki 页处于此状态）。
+    """
+    dates = {}
+    try:
+        out = subprocess.run(["git", "log", "--date=short", "--pretty=format:__C__%ad",
+                              "--name-only"],
+                             cwd=root, capture_output=True, text=True, check=True).stdout
+        cur = None
+        for line in out.splitlines():
+            if line.startswith("__C__"):
+                cur = line[5:].strip()
+            elif line.strip() and cur and line not in dates:
+                dates[line] = cur
+    except Exception:
+        pass
+
+    dirty = set()
+    try:
+        st = subprocess.run(["git", "status", "--porcelain"],
+                            cwd=root, capture_output=True, text=True, check=True).stdout
+        for line in st.splitlines():
+            if len(line) > 3:
+                dirty.add(_git_unquote(line[3:].strip()))
+    except Exception:
+        pass
+    return dates, dirty
+
+
 def cmd_build(root, out_path=None):
     pages = load_pages(root)
     by_slug = {p.slug: p for p in pages}
@@ -3615,6 +4275,13 @@ def cmd_build(root, out_path=None):
         for t in set(p.links):
             if t in by_slug and t != p.slug:
                 backlinks[t].append(p.slug)
+
+    # 新鲜度走 git，不走 frontmatter 的 updated（理由见 git_freshness 的注释）。
+    # git 不可用时 dates 为空 —— 那是「无法判断」，必须报出来，不能静默回退成 updated。
+    commit_dates, dirty = git_freshness(root)
+    if not commit_dates:
+        print("警告：git 不可用或本目录不是 git 仓库 —— commit_date 全为空，"
+              "站点新鲜度将退化为「未提交 / 未知」。", file=sys.stderr)
 
     data = {
         "title": os.path.basename(root.rstrip("/")),
@@ -3630,6 +4297,8 @@ def cmd_build(root, out_path=None):
                 "tags": p.tags,
                 "status": p.status,
                 "updated": str(p.fm.get("updated") or ""),
+                "commit_date": commit_dates.get(p.relpath, ""),
+                "dirty": p.relpath in dirty,
                 "sources": p.sources,
                 "links": sorted({t for t in p.links if t in by_slug and t != p.slug}),
                 "body": p.body,
@@ -3668,6 +4337,13 @@ def cmd_build(root, out_path=None):
     print("已生成浏览站点: %s（%d 个页面，%d 条链接）"
           % (os.path.relpath(out_path, root), len(pages),
              sum(len(v) for v in backlinks.values())))
+    n_commit = sum(1 for p in pages if p.relpath in commit_dates)
+    n_dirty = sum(1 for p in pages if p.relpath in dirty)
+    print("  新鲜度来源 git：有提交日期 %d 页 · 有未提交改动 %d 页"
+          % (n_commit, n_dirty))
+    if n_dirty:
+        print("  注意：未提交改动 git 给不出时间，只能标「未提交」—— "
+              "提交后重跑 build 才能拿到精确日期。")
     return 0
 
 
@@ -3853,20 +4529,40 @@ def main(argv):
         return cmd_build(root, argv[2] if len(argv) > 2 else None)
     if cmd == "buildcheck":
         return cmd_buildcheck(root)
+    if cmd == "rawcheck":
+        return cmd_rawcheck(root, write=("--write" in argv), force=("--force" in argv))
+    if cmd == "claim":
+        if len(argv) < 3:
+            print("用法: wiki.py claim <scope> [--force]")
+            print("  scope 例：ingest / batch-rewrite / build / lint")
+            return 1
+        return cmd_claim(root, argv[2], force=("--force" in argv))
+    if cmd == "release":
+        return cmd_release(root, force=("--force" in argv))
     if cmd == "chapter-audit":
         return cmd_chapter_audit(root, verbose=("-v" in argv or "--verbose" in argv))
     if cmd == "graph":
         return cmd_graph(root)
     if cmd == "search":
         if len(argv) < 3:
-            print("用法: wiki.py search \"<query>\" [--type concept]")
+            print("用法: wiki.py search \"<query>\" [--type concept] [--top 30]")
             return 1
         tf = None
         if "--type" in argv:
             i = argv.index("--type")
             if i + 1 < len(argv):
                 tf = argv[i + 1]
-        return cmd_search(root, argv[2], type_filter=tf)
+        # --top 于 2026-09-21 暴露：此前 CLI 不给这个参数，于是永远只出 10 条 ——
+        # 宽主题查询（「情绪」这类）因此无法靠检索补回索引分层丢掉的页面。
+        top = 10
+        if "--top" in argv:
+            i = argv.index("--top")
+            if i + 1 < len(argv):
+                try:
+                    top = max(1, int(argv[i + 1]))
+                except ValueError:
+                    pass
+        return cmd_search(root, argv[2], top=top, type_filter=tf)
     if cmd == "log":
         if len(argv) < 4:
             print("用法: wiki.py log <type> \"<message>\"")

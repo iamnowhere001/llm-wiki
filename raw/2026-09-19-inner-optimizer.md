@@ -1,6 +1,6 @@
 ---
 title: "内部优化器：养器成妖"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/EwQmwdDh0iO4sCkae3ecYMWMnjd
 source_url: https://www.dedao.cn/course/article?id=Qe6EGjvO7zRKZqoZrwXnDrkMLPgAp9
 kind: course-article

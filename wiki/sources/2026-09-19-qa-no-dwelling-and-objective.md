@@ -27,7 +27,7 @@ status: active
 > 素材文件（`raw/2026-09-19-qa-no-dwelling-and-objective.md`，`wc -l` = **169**）。
 > frontmatter 占 **1–28** 行，**正文自第 30 行起（30–170 = 141 行）**。写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
-- **作者**：万维钢（得到课程讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/UllqwprfjijzcYktE6acJMMSnHf（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-qa-no-dwelling-and-objective.md`（170 行）
 

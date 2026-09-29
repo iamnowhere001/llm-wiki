@@ -4,10 +4,10 @@ type: concept
 slug: focus-vs-stubborn
 tags: [万维钢, 得到课程, 战略, 专注, 前置信号, 取舍, 固执]
 created: 2026-09-19
-updated: 2026-09-19
-sources: [2026-09-19-qa-focus-vs-stubborn]
-related: [effectuation, game-selection, explore-exploit-tradeoff, imperfectionism, hard-constraints, 2026-09-19-qa-focus-vs-stubborn, modern-thinking-tools]
-evidence_tier: single
+updated: 2026-09-27
+sources: [2026-09-19-qa-focus-vs-stubborn, 2026-09-27-mcraven-make-your-bed-speech]
+related: [effectuation, game-selection, explore-exploit-tradeoff, imperfectionism, hard-constraints, 2026-09-19-qa-focus-vs-stubborn, modern-thinking-tools, mcraven-ten-lessons-vs-library, 2026-09-27-mcraven-make-your-bed-speech]
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---
@@ -85,6 +85,13 @@ status: active
   是**问答独有的操作化**。
 - **「韧性 vs 适应性」的 VC 要求无可核来源**（sources 页 #8 判「不可追溯」）——
   属讲者概括，不是引注。
+- **有一个反例域：把「不退出」本身当作美德。** 麦克雷文 2014 年的毕业演讲
+  （[[2026-09-27-mcraven-make-your-bed-speech]]）第 10 条是 `Never, ever, ring the bell.` ——
+  该段（行 146–150）**只有铃的描述与一句祈使，没有前置信号、没有撞墙指标**，
+  唯一涉及退出的地方把退出定义为失败。
+  **它与本页的适用域不同**（一侧是自选的战略，一侧是被给定的任务），
+  张力已登记、未裁决，见 [[mcraven-ten-lessons-vs-library]]。
+  **这份素材不构成本页判据的独立佐证** —— 它是限制，不是支撑。
 
 ## 与其他页面的关系
 
@@ -98,6 +105,9 @@ status: active
 - **与 [[imperfectionism]] 相邻但不同**：那一页讲「高标准不等于不上线」（金线与交付线），
   本页讲「坚持不等于不改变打法」—— **都是「执着 ≠ 僵化」的变体**。
 - **归属 [[modern-thinking-tools]]**：来自该课「模块四 赚钱逻辑」问答（推定 065，覆盖 5 讲）。
+- **与 [[2026-09-27-mcraven-make-your-bed-speech]] 是一处待裁定的张力**：那份素材的第 10 条把「不退出」
+  本身当作美德，全篇无前置信号、无撞墙指标。**它与本页的适用域不同**（一侧是自选的战略，一侧是被给定的任务），
+  倾向判为「切分框架不同」而非真矛盾 —— **待裁定**。见 [[mcraven-ten-lessons-vs-library]]。
 
 ## 待办 / 开放问题
 
@@ -110,3 +120,4 @@ status: active
 - [[2026-09-19-qa-focus-vs-stubborn]]（《阿尔法》节，提问行 37、回答行 41–65；
   **无 AI 加工段**；讲稿段依据为 `raw/2026-09-19-alpha-strategy.md` 讲稿行 27–165）
 - 外部核查来源（**均未收录进 `raw/`**）：无 —— 本页判据为作者自造，**无外部来源**
+- [[2026-09-27-mcraven-make-your-bed-speech]]（**2026-09-27 新增**）—— 麦克雷文 2014 年毕业演讲，行 146–150（第 10 条「绝不摇铃」，无退出条件）。**它是本页判据的反例域，不是支撑** —— 已写入「边界与反例」与 [[mcraven-ten-lessons-vs-library]]

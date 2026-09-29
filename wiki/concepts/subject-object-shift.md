@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-identity-metacognition-notes, 2026-09-19-second-order-desire]
 related: [three-selves, narrative-identity, meta-narrative, robert-kegan, daniel-dennett, attachment-theory]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

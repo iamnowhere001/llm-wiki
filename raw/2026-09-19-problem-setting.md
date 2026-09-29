@@ -1,6 +1,6 @@
 ---
 title: "立题：怎样给事情做主"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/LPoKwMwlKis0A3k3rotcSaWJn9g
 source_url: https://www.dedao.cn/course/article?id=2Mo65zY4QZ3VnmWOvpKqEdNAa98jGB
 kind: course-article

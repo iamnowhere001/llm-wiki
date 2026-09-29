@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-emotion-awareness-notes, 2026-09-18-hyperefficient-notes]
 related: [internal-friction, cognitive-decoupling, complaining, emotion-awareness, rumination-vs-reflection, 2026-09-18-hyperefficient-notes]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

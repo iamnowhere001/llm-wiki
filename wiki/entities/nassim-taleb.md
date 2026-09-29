@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-uncertainty-fuel-notes, 2026-09-18-heavy-tail-notes, 2026-09-18-modern-thinking-tools-prospectus, 2026-09-18-narrative-first-principle, 2026-09-19-non-ergodicity-notes]
 related: [types-of-uncertainty, uncertainty-as-fuel, heavy-tailed-distribution, multiplicative-world, intelligent-life-system, modern-thinking-tools, 2026-09-18-uncertainty-fuel-notes, 2026-09-19-non-ergodicity-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

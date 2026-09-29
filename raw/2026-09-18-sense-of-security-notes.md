@@ -1,6 +1,6 @@
 ---
 title: "安全感：人需要有所依靠（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「核心洞见」以下各段为 AI 加工，无署名
+author: 万维钢；「核心洞见」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/EXo3w07uNiYgHFkE3accgYQDnSb
 source_url: https://www.dedao.cn/course/article?id=xzYo2GPNq4W8VEb2WzJejyRBZbnw0d&fullScreen=true
 kind: mixed-notes

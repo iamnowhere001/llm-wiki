@@ -1,6 +1,6 @@
 ---
 title: "自我决定理论：一流人物不可能是痛苦的卷王（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「核心洞见」以下各段为 AI 加工，无署名
+author: 万维钢；「核心洞见」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/GpWcw72S3ilvWjkYwSrco8jxn3S
 source_url: https://www.dedao.cn/course/article?id=Q8dpgOa54NZMVzm8ZxKByzxkwYm2Rl
 kind: mixed-notes

@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-cognitive-decoupling, 2026-09-18-hyperefficient-notes, 2026-09-18-narrative-self]
 related: [james-gross, cognitive-decoupling, stoic-control-dichotomy, emotion-regulation-toolkit, 2026-09-18-hyperefficient-notes, peak-performance, flow-terminology, narrative-reframing, problem-externalization, 2026-09-20-third-thing]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: high
 status: active
 ---

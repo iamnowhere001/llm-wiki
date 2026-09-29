@@ -1,6 +1,6 @@
 ---
 title: "WOOP：从生活的默认设置中觉醒（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；「这本书到底讲了什么？」以下各段为 AI 加工，无署名
+author: 万维钢；「这本书到底讲了什么？」以下各段为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/Xac3wQLAOivOWYkvp9Uc09X7nLf
 source_url: https://www.dedao.cn/course/article?id=7EGBgdkRbn1mKgd6d5VY890D3rvPOA
 kind: mixed-notes

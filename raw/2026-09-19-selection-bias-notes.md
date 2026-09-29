@@ -1,6 +1,6 @@
 ---
 title: "选择偏差：就算无人说谎，你看到的也不是真实世界"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/XmOBwMizji2BagkxQB5c6Alqnyh
 source_url: https://www.dedao.cn/course/article?id=qzNakylrn9WVaZWMxGJ7DOop10vZwL
 kind: mixed-notes

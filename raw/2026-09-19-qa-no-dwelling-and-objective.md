@@ -1,6 +1,6 @@
 ---
 title: "问答：「应无所住」了，还有「目标函数」吗？"
-author: 万维钢（得到课程讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/UllqwprfjijzcYktE6acJMMSnHf
 source_url: https://www.dedao.cn/course/article?id=9GEyP73eprvKBPYqlkJq2Mb0kRD64d
 kind: course-article

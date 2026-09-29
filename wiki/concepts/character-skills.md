@@ -4,10 +4,10 @@ type: concept
 slug: character-skills
 tags: [学习, 巅峰表现, 品格, 可塑性]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-hidden-potential-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
-related: [adam-grant, peak-performance, luck-over-talent, hard-constraints, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination, modern-thinking-tools, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes]
-evidence_tier: crossed
+updated: 2026-09-27
+sources: [2026-09-18-hidden-potential-notes, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes, 2026-09-27-mcraven-make-your-bed-speech]
+related: [adam-grant, peak-performance, luck-over-talent, hard-constraints, 2026-09-18-hidden-potential-notes, imperfectionism, human-sponge, deliberate-play, scaffolding, opportunity-systems, cybernetic-learning, cognitive-reappraisal, rumination, modern-thinking-tools, 2026-09-18-compounding-advantage-notes, 2026-09-18-self-determination-theory-notes, mcraven-ten-lessons-vs-library, 2026-09-27-mcraven-make-your-bed-speech]
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---
@@ -113,6 +113,7 @@ status: active
 - 是 [[peak-performance]] 目前**唯一的「制度层」概念入口**：品格技能是个体层，往上接 [[scaffolding]]（他人搭建的临时支持），再往上接 [[opportunity-systems]]（学校、招聘、团队结构）
 - 本素材拆出的三个子概念：[[imperfectionism]]（第 3 章）、[[human-sponge]]（第 2 章）、[[deliberate-play]]（第 4 章，属鹰架）
 - 与 [[mental-strength]]（心力）构成对照：后者是本库第一份 AI 生成内容，结构工整而零证据；前者**有可观察的行为指标** —— 这个差别正是「可证伪性」的差别
+- 与 [[2026-09-27-mcraven-make-your-bed-speech]] 是**语汇印证**：第 8 条「you must be your very best in the darkest moment」与本页判据句几乎是同一命题的两个语汇版本。**它把本页的「艰难岁月」从个人成长语境扩到了有组织的高压环境**（压力由组织主动施加）—— 但**不构成证据升级**，本页 `low` 的理由不受影响。见 [[mcraven-ten-lessons-vs-library]]
 
 ## 待办 / 开放问题
 
@@ -125,3 +126,4 @@ status: active
 - [[2026-09-18-hidden-potential-notes]]
 - [[2026-09-18-compounding-advantage-notes]]（**2026-09-18 新增**）—— 成长战略第 3 讲，讲稿行 123（尽责性＝复利系统的操作系统）
 - [[2026-09-18-self-determination-theory-notes]]（**2026-09-18 新增**）—— 成长战略第 4 讲，讲稿行 63 / 105（六层内化连续体，与「品格可训练」结构对应）
+- [[2026-09-27-mcraven-make-your-bed-speech]]（**2026-09-27 新增**）—— 麦克雷文 2014 年毕业演讲，行 130（第 8 条「至暗时刻做最好的自己」）。**语汇印证 + 适用域扩展，不覆盖本页任何具体断言**，故 `confidence` 仍为 `low`

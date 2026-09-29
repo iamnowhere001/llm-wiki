@@ -1,6 +1,6 @@
 ---
 title: "社交资本、结构洞和搬家：容易向上流动的位置（得到课程讲稿 + AI 加工段）"
-author: 万维钢（讲稿）；结尾「位置也是一种资本」以下为 AI 加工，无署名
+author: 万维钢；结尾「位置也是一种资本」以下为 AI 加工，无署名
 url: https://my.feishu.cn/wiki/IXarwfcruihufBkgGngcbpkKnVg
 source_url: https://www.dedao.cn/course/article?id=R2Mo65zY4QZ3VnmLmpKqEdNAa98jGB
 kind: mixed-notes

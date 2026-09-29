@@ -26,7 +26,7 @@ status: active
 > 末行无换行、实为 **249** 个物理行）。frontmatter 占 **1–28** 行，**正文自第 30 行起（30–249 = 220 行）**。
 > 写本页前已逐段回文件核对（`grep -n` / `sed -n`）。
 
-- **作者**：万维钢（得到课程讲稿）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/E20GwXtGriBAA5kvP2HcMKhenhh（原文链接已移除）
 - **素材路径**：`raw/2026-09-19-moral-scalability.md`（249 行）
 

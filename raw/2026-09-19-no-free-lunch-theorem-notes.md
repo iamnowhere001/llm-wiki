@@ -1,6 +1,6 @@
 ---
 title: "无免费午餐定理：诸行无常，有偏置才有决策"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/JDHtw4RuziTDGQkFOdPc5yH1nrd
 source_url: https://www.dedao.cn/course/article?id=0mPqglk6GzZwKr5DdkXMLBEO3ba2AR
 kind: mixed-notes

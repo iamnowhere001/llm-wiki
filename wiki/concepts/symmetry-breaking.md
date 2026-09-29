@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-symmetry-breaking, 2026-09-19-qa-claiming-hard-problems]
 related: [generativity, adjacent-possible, path-creation, window-of-opportunity, ai-convergence, wanweigang, modern-thinking-tools, 2026-09-19-symmetry-breaking, 2026-09-19-qa-claiming-hard-problems]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

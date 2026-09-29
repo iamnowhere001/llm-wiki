@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-emotion-awareness-notes, 2026-09-18-narrative-first-principle, 2026-09-18-narrative-self]
 related: [maurice-merleau-ponty, wang-lu, internal-friction, thinking-vs-feeling, narrative-identity, narrative-as-first-principle, narrative-reframing, cognitive-reappraisal, 2026-09-18-narrative-self, 2026-09-19-white-epston-narrative-means-therapeutic-ends-en]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---

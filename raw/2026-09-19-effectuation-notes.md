@@ -1,6 +1,6 @@
 ---
 title: "效果推理：不知道该干什么的时候该干什么"
-author: 万维钢（讲稿）；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
+author: 万维钢；正文另含无署名 AI 加工段，有无与边界见对应 sources 页
 url: https://my.feishu.cn/wiki/GKRBwC5fUiuzywkdKrRcQQkbnRg
 source_url: https://www.dedao.cn/course/article?id=Yejy8dqoQD9JoQWBwdKR1r0xpgmWk3
 kind: mixed-notes

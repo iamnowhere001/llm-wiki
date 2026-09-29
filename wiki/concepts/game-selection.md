@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-21
 sources: [2026-09-18-game-selection-notes, 2026-09-18-qa-deepen-or-move-notes, 2026-09-19-value-of-information-notes, 2026-09-19-non-ergodicity-notes]
 related: [multiplicative-world, luck-over-talent, deliberate-practice, narrative-power, compensatory-control, steady-state-survival-logic, goodharts-law, effectuation, explore-exploit-tradeoff, modern-thinking-tools, field-theory]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

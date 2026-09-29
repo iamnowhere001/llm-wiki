@@ -1,5 +1,5 @@
 ---
-title: "拥抱和桥接：知识迁移，学以致用（《现代思维工具》学习与教育 第 9 讲）"
+title: "拥抱和桥接：知识迁移，学以致用"
 type: source
 slug: 2026-09-18-transfer-bridging
 tags: [万维钢, 学习, 心智模型, 迁移, 情境]
@@ -16,7 +16,7 @@ status: active
 > 万维钢《现代思维工具》「学习与教育」板块**第九讲，也是最后一讲**。
 > **本批九讲里对本库缺口命中率最高的一份** —— 它直接填上 [[peak-performance]] 的头号空白。
 
-- **作者**：万维钢（提到「罗振宇老师在《文明之旅》节目里」， 自陈「咱们这个板块的最后一讲」）
+- **作者**：万维钢
 - **链接**：https://my.feishu.cn/wiki/VwBOwaYwaiG9mMkhbrRch93TnOh ｜ https://www.dedao.cn/course/article?id=zk8vQM4oYjrXm1WMMwXw6bEOLl5GPx
 - **发表**：2026-05-20 05:56
 - **素材路径**：`raw/2026-09-18-transfer-bridging.md`（471 行，frontmatter 1–36）

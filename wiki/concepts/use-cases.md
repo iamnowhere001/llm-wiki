@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read]
 related: [llm-wiki-pattern, rag-vs-wiki, compounding-knowledge, commonplace-book-vs-llm-wiki, why-pkm-in-ai-era]
-evidence_tier: crossed
+evidence_tier: crossed-independent
 confidence: high
 status: active
 ---

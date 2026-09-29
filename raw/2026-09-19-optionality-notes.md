@@ -1,6 +1,6 @@
 ---
 title: "期权：保留可选项的特权"
-author: 万维钢（讲稿）；正文含 AI 加工段（无署名），边界见对应 sources 页
+author: 万维钢；正文含 AI 加工段（无署名），边界见对应 sources 页
 url: https://my.feishu.cn/wiki/UspxwHtR5iC4Uhk7BBucH5vjnxg
 source_url: https://www.dedao.cn/course/article?id=YB83z6N9dqxVyPnBzdK7ZMvy0GQDO5
 kind: mixed-notes

@@ -6,8 +6,8 @@ tags: [元分析, 方法论]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes, 2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-writing-is-thinking]
-related: [notes-apps-vs-llm-wiki, compounding-knowledge, cybernetic-learning, why-pkm-in-ai-era, cognitive-outsourcing, llm-wiki-research, traecode-pkm-article, use-cases, wiki-lint]
-evidence_tier: crossed
+related: [notes-apps-vs-llm-wiki, compounding-knowledge, cybernetic-learning, why-pkm-in-ai-era, cognitive-outsourcing, llm-wiki-research, traecode-pkm-article, use-cases, wiki-lint, knowledge-is-the-bottleneck]
+evidence_tier: crossed-independent
 confidence: medium
 status: active
 ---
@@ -24,7 +24,7 @@ status: active
 
 ## 一、先说清楚：这不是「素材质量」问题
 
-本库对证据问题的处置已经相当细：六类证据问题（[[schema]] §3.6）、混层素材逐行比对数字（§3.7）、`confidence` 与 `evidence_tier` 双维度、`lint` 报「名义交叉实质同源」。
+本库对证据问题的处置已经相当细：七类证据问题（[[schema]] §3.6）、混层素材逐行比对数字（§3.7）、`confidence` 与 `evidence_tier` 双维度、`lint` 报「名义交叉实质同源」。
 
 **但这些机制有一个共同形状：它们都是「对素材」的评估。**
 
@@ -32,7 +32,7 @@ status: active
 |---|---|---|
 | 分层表 | 这份素材的哪一段是 AI 生成的 | 单份 |
 | `confidence` | 这一页的结论站得多稳 | 单页 |
-| 六类证据问题 | 这份素材的引注出了什么毛病 | 单份 |
+| 七类证据问题 | 这份素材的引注出了什么毛病 | 单份 |
 | `evidence_tier` | 这一页有几份支撑素材 | 单页 |
 | `lint` 同源提示 | 这几份支撑是不是同一个来源族 | 跨页，但仍以「页」为单位 |
 
@@ -110,7 +110,7 @@ AI 生成的内容倾向于**把话说圆**。具体表现为四种偏好：
 
 - 分层表（标出哪段是 AI）—— 79 份素材都做了
 - `confidence` 降级 + `evidence_tier`
-- 六类证据问题（推广 / 纯 AI / 伪引注 / 弱引注 / 使用失真 / 过期引注）
+- 七类证据问题（推广 / 纯 AI / 伪引注 / 弱引注 / 使用失真 / 过期引注 / 复述流行共识）
 - 「AI 生成内容**可被引用，但引用时必须标注生成性质**」（[[schema]] §3.5）
 - `lint` 报「有 ≥2 份支撑但全部同源」
 
@@ -204,6 +204,14 @@ AI 生成的内容倾向于**把话说圆**。具体表现为四种偏好：
 - [ ] **本库自己的「问题供给」在下降吗？** 可以量化：统计每份素材平均产生的开放问题数。如果新素材产生的开放问题越来越少，第 ③ 条就被实证了。
 - [ ] 第 ③ 条（AI 偏好给共识、回避争议）是**本页的推断，无外部素材支撑**。需要找一份研究 AI 生成内容的系统性偏差的文献。
 - [ ] 79 份含 AI 段的素材里，**有多少份的「非 AI 段」本身也是二手转述**？这个数字决定了问题有多深。
+- [ ] **【2026-09-29 新增】本页第二节的实测数据是 2026-09-19 的，池级偏差已在收窄**
+  （150 份素材 / 同族 66% / 含 AI 加工段 58% / `paper|book` 8 份）——
+  数字与后续分析见 [[knowledge-is-the-bottleneck]]。**本页旧值保留不改**（它是裁定史的一部分），
+  但引用本页数字时须知它已过期。
+- [ ] **【2026-09-29 新增】「不可发现」在库整体层与检索层还成立吗？** 本页论证的是**素材池**层的不可发现。
+  [[knowledge-is-the-bottleneck]] 把它扩到库整体（305 个知识页里 22% 有独立佐证、99 个 `crossed` 里 43 个同源）
+  与检索层（默认 `top10` 只给 5 条），并主张**后者可测可修、前者不可**。
+  **两页证据不在同一层，不互证** —— 那一页是另一条独立入口，不是本页的延伸。
 
 ## 来源
 

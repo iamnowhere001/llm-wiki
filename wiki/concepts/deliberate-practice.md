@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-deliberate-practice-talent, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-19-optionality-notes]
 related: [desirable-difficulty, cognitive-load-theory, mental-models, transfer-of-learning, deliberate-play, luck-over-talent, hard-constraints, anders-ericsson, wanweigang, 2026-09-18-deliberate-practice-talent, peak-performance, trajectory-evaluation, modern-thinking-tools, 2026-09-18-capability-seeking-theorem-notes, 2026-09-18-self-determination-theory-notes, 2026-09-18-game-selection-notes, 2026-09-18-active-cognitive-load-notes]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -7,7 +7,7 @@ created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-19-self-organized-criticality, 2026-09-19-qa-ordinary-people-safety]
 related: [heavy-tailed-distribution, antifragility, cybernetic-learning, flow-terminology, marginal-analysis, adaptive-cycle, theory-of-constraints, modern-thinking-tools, wanweigang]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---

@@ -4,10 +4,10 @@ type: concept
 slug: complaining
 tags: [情绪, 机制, 方法, 行为]
 created: 2026-09-18
-updated: 2026-09-18
-sources: [2026-09-18-emotion-awareness-notes]
-related: [marcus-aurelius, victim-mentality, stoic-control-dichotomy, internal-friction]
-evidence_tier: single
+updated: 2026-09-27
+sources: [2026-09-18-emotion-awareness-notes, 2026-09-27-mcraven-make-your-bed-speech]
+related: [marcus-aurelius, victim-mentality, stoic-control-dichotomy, internal-friction, mcraven-ten-lessons-vs-library, 2026-09-27-mcraven-make-your-bed-speech]
+evidence_tier: crossed-independent
 confidence: low
 status: active
 ---
@@ -65,6 +65,11 @@ status: active
 - **可能滑向情绪压抑。** 素材在别处明确警告「未被表达的情绪会以更丑恶的方式爆发」，并把「警惕宣泄迷思」和「不抱怨」并列。**两者之间的界线在哪里，素材没有给出操作标准。** 这是本页最大的缺口。
 - **「戒掉抱怨」的道德化风险。** 「二三十岁时，抱怨是活力的象征；四十岁之后，抱怨是衰老的征兆」这类表述把抱怨与人格评价绑定。对于一个真的处在结构性不公中的人，「别抱怨，去行动」可能是一种**归因错置**。素材在「受害者心态」一节引用的芒格原话（「这始终是你自己的问题」）也有同样的问题。见 [[victim-mentality]]。
 - **手环法的可行性未验证。** 它是一个流行建议（源自 Will Bowen 的 *A Complaint Free World*），素材未说明其效果证据。
+- **有一处机制层可以补：随机的不公。** 本页的五条机制都在讲「抱怨如何反过来伤你」，
+  **没有单独处理「惩罚与表现无关」这个场景**。麦克雷文演讲第 4 条
+  （[[2026-09-27-mcraven-make-your-bed-speech]] 行 84–92）给的正是一个纯随机的惩罚（「糖霜饼干」），
+  它的落点是**士气层**：**在不公面前，抱怨连伤害都算不上 —— 它什么都没改变。**
+  本页目前没有这一层（五条机制都是「抱怨让你更糟」，这一条是「抱怨的收益是零」）。
 
 ## 与其他页面的关系
 
@@ -72,6 +77,9 @@ status: active
 - **与 [[victim-mentality]] 互为因果**：抱怨强化受害者身份，受害者身份又生产更多抱怨。
 - **与 [[internal-friction]] 相邻但不同**：内耗是向内的（自我对话），抱怨是向外的（对环境的控诉）。素材把两者都归入「放弃挣扎」这一族。
 - **与 [[forgiveness]] 同属「减法」类方法**：两者都是通过减少某种心理活动（抱怨 / 怨恨）来释放资源。
+- **与 [[2026-09-27-mcraven-make-your-bed-speech]] 落在不同的点上**：那份素材的第 4 条讲的不是「抱怨」，
+  而是**随机的不公** —— 惩罚与表现无关。**它给本页补的正是「不公」这个场景**，
+  而本页的五条机制全部在讲「抱怨如何反过来伤你」。见 [[mcraven-ten-lessons-vs-library]]。
 
 ## 待办 / 开放问题
 
@@ -84,3 +92,4 @@ status: active
 ## 来源
 
 - [[2026-09-18-emotion-awareness-notes]]
+- [[2026-09-27-mcraven-make-your-bed-speech]]（**2026-09-27 新增**）—— 麦克雷文 2014 年毕业演讲，行 84–92（第 4 条：与表现无关的惩罚）。**它补的是「不公」场景，不覆盖本页任何一条机制**

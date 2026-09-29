@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-20
 sources: [2026-09-18-narrative-first-principle, 2026-09-20-exploration-and-generation]
 related: [narrative-as-first-principle, information-bottleneck, compression-as-intelligence, 2026-09-18-narrative-first-principle, modern-thinking-tools, 2026-09-20-exploration-and-generation, exploration-and-generation]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: low
 status: active
 ---

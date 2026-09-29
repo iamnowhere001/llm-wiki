@@ -7,7 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-mental-representations, 2026-09-18-cognitive-load-theory, 2026-09-18-transfer-bridging, 2026-09-18-tacit-knowledge]
 related: [cognitive-load-theory, mental-models, transfer-of-learning, tacit-knowledge, explanatory-framework, 2026-09-18-mental-representations, 2026-09-18-cognitive-load-theory, zettelkasten, llm-wiki-pattern]
-evidence_tier: crossed
+evidence_tier: crossed-same-family
 confidence: medium
 status: active
 ---
