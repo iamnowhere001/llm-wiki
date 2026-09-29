@@ -2820,6 +2820,20 @@ article p{overflow-wrap:break-word}
 .chip.tag{background:#fff;color:var(--muted)}
 .chip.stale{background:#fdecec;color:#b91c1c;border-color:#f5c2c2}
 .chip.dirty{background:#fff5e6;color:#8a5a00;border-color:#f0d9a8}
+/* 证据层级：绿 = 真交叉；琥珀 = 名义交叉实质同源（本库最大的陷阱，要最显眼）；蓝 = 一手 */
+.chip.ev-ok{background:#eaf6ec;color:#1a6b34;border-color:#bfe0c8}
+.chip.ev-warn{background:#fdefd0;color:#7a4a00;border-color:#e8c98a}
+.chip.ev-pri{background:#e8f0fb;color:#1c4f8a;border-color:#c3d7f0}
+.evdot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;
+  vertical-align:1px}
+.evdot.ev-ok{background:#1d9e75}
+.evdot.ev-warn{background:#ef9f27}
+.evdot.ev-pri{background:#378add}
+.evdot.ev-single{background:#c9c5bb}
+.pagefoot{margin:34px 0 0;padding:11px 14px;border-radius:8px;background:var(--panel);
+  border:1px solid var(--line);font-size:12.2px;line-height:1.65;color:var(--muted)}
+.pagefoot .evtag{display:inline-block;margin-right:8px;padding:1.5px 8px;border-radius:20px;
+  font-size:11px;background:var(--line-soft);color:var(--ink)}
 .nav-item .rd{margin-left:auto;flex:0 0 auto;font-size:10.5px;color:var(--muted);
   font-variant-numeric:tabular-nums}
 #backlinks{
@@ -2934,6 +2948,25 @@ article p{overflow-wrap:break-word}
 var DATA = __WIKI_DATA__;
 var TYPECOLOR = {project:"#7c3aed",source:"#0f766e",entity:"#b45309",concept:"#4338ca",analysis:"#be123c",meta:"#6b7280"};
 var TYPELABEL = {project:"项目",source:"素材摘要",entity:"实体",concept:"概念",analysis:"分析",meta:"系统"};
+
+/* 证据层级 —— 本库最独特的信号，此前只存在于 frontmatter 与 CLI，界面上一个都没有
+   （2026-09-29 实测：307/307 知识页都有，站点注入的字段里 0 个含它）。
+   呈现按「清爽优先」取克制方案：single 是本库默认态（64%），给它挂一个 chip 等于 196 页
+   各多一个无信息量的标记；只在**有额外信息量**时才占 top chip，完整的判断说明放页脚一行。 */
+var EV_NAME = {single:"孤证", "crossed-independent":"交叉验证",
+               "crossed-same-family":"交叉（同源）", primary:"一手材料"};
+var EV_CHIP = {
+  "crossed-independent": "ev-ok",
+  "crossed-same-family": "ev-warn",   /* 最需要警示的一类：名义交叉、实质同源 */
+  "primary":             "ev-pri"
+  /* single 不在 top chip —— 它是默认态（64%），页脚说明即可 */
+};
+var EV_FOOT = {
+  "single": "本页只有一份支撑素材 —— 引用时须带着「孤证」这个前提。",
+  "crossed-independent": "本页有 ≥2 份支撑素材，且来自不同来源族。",
+  "crossed-same-family": "本页虽有 ≥2 份支撑素材，但全部来自同一来源族 —— 不构成独立佐证，当作孤证更准确。",
+  "primary": "本页有期刊论文级的一手材料支撑。"
+};
 var PAGES = DATA.pages, BYSLUG = {};
 PAGES.forEach(function(p){ BYSLUG[p.slug] = p; });
 
@@ -3639,6 +3672,12 @@ function go(slug){
   var chips = '<span class="chip t" style="background:'+(TYPECOLOR[p.type]||"#666")+'">'+
               (TYPELABEL[p.type]||p.type)+'</span>';
   if (p.status && p.status !== "active") chips += '<span class="chip stale">'+p.status+'</span>';
+  /* 证据层级：只在「不是默认态」时占 top chip（single 占 64%，给它挂标等于给 196 页
+     各加一个无信息量的装饰）。完整的判断说明见页脚一行。 */
+  if (EV_CHIP[p.evidence_tier]){
+    chips += '<span class="chip '+EV_CHIP[p.evidence_tier]+
+             '" title="evidence_tier: '+esc(p.evidence_tier)+'">'+esc(EV_NAME[p.evidence_tier])+'</span>';
+  }
   /* 新鲜度走 git 提交日期，不走 frontmatter 的 updated ——
      后者记的是「最后一次批量操作」，不是「这一页最后一次被改」：2026-09-29 实测 473 页里
      431 页的 updated 挤在三天内，而 git 显示真正当天改的只有 6 页。
@@ -3656,8 +3695,15 @@ function go(slug){
   if (p.sources && p.sources.length) chips += '<span class="chip">来源 '+p.sources.length+'</span>';
   (p.tags||[]).forEach(function(t){ chips += '<span class="chip tag">#'+esc(t)+'</span>'; });
 
+  /* 证据层级的完整说明放页脚：S3（「这个说法有多少证据撑着」）需要一个确定落点，
+     而 top chip 为了清爽只放「非默认态」的三种。素材页 / 项目页 / 系统页没有这一字段，不显示。 */
+  var evFoot = "";
+  if (EV_FOOT[p.evidence_tier]){
+    evFoot = '<div class="pagefoot"><span class="evtag">'+esc(EV_NAME[p.evidence_tier])+'</span>'+
+             esc(EV_FOOT[p.evidence_tier])+'</div>';
+  }
   pageEl.className = "ptype-" + p.type;
-  pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + renderPage(p);
+  pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + renderPage(p) + evFoot;
 
   /* 记下账目章节的原始位置，供「回到原位」使用 */
   [].forEach.call(pageEl.querySelectorAll("section.ledger"), function(s, i){
@@ -3833,7 +3879,13 @@ function renderHits(cap){
     a.innerHTML = '<i class="dot" style="background:' + (TYPECOLOR[p.type]||"#666") + '"></i>' +
       '<span class="r-title">' + hl(p.title, lastNeedles) + '</span>' +
       (sn ? '<span class="r-snip">' + sn + '</span>' : '') +
-      '<span class="r-meta">' + (TYPELABEL[p.type]||p.type) + ' · 相关度 ' + x.s.toFixed(1) + '</span>';
+      /* 证据层级进搜索结果：让人在**选哪一条**的时候就看得到它站得多稳，
+         而不是点进去才发现是孤证。single 是本库默认态，不占标记。 */
+      '<span class="r-meta">' +
+        (EV_CHIP[p.evidence_tier]
+          ? '<i class="evdot '+EV_CHIP[p.evidence_tier]+'"></i>'+esc(EV_NAME[p.evidence_tier])+' · '
+          : (p.evidence_tier === "single" ? '<i class="evdot ev-single"></i>孤证 · ' : '')) +
+        (TYPELABEL[p.type]||p.type) + ' · 相关度 ' + x.s.toFixed(1) + '</span>';
     g.appendChild(a);
   });
   if (shown.length > cap){
@@ -4299,6 +4351,9 @@ def cmd_build(root, out_path=None):
                 "updated": str(p.fm.get("updated") or ""),
                 "commit_date": commit_dates.get(p.relpath, ""),
                 "dirty": p.relpath in dirty,
+                # 本库最独特的信号。值由 seed_evidence_tier.py 算好并被 lint 校验，
+                # 这里只读不重算。素材页 / 项目页 / 系统页没有这个字段（它们不是「结论」），留空。
+                "evidence_tier": str(p.fm.get("evidence_tier") or ""),
                 "sources": p.sources,
                 "links": sorted({t for t in p.links if t in by_slug and t != p.slug}),
                 "body": p.body,
