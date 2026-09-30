@@ -5,8 +5,40 @@ slug: attention-what-it-is-and-how-to-improve
 tags: [注意力, 心流, 认知负荷, 巅峰表现, 术语边界]
 created: 2026-09-20
 updated: 2026-09-29
-sources: [2026-09-29-attention-taxonomy-chun2011, 2026-09-29-brain-training-owen2010, 2026-09-19-scarcity-book-en, 2026-09-18-hyperefficient-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-18-cognitive-load-theory, 2026-09-18-writing-is-thinking, 2026-09-18-how-we-learn-notes, 2026-09-18-woop-notes, 2026-09-19-zeroth-order-truth, 2026-09-19-value-of-information-notes, 2026-09-18-nolen-hoeksema-rethinking-rumination, 2026-09-19-qa-focus-vs-stubborn]
-related: [peak-performance, attention, external-internal-attention, flow-terminology, cognitive-load-theory, brain-rot, cognitive-debt, cognitive-outsourcing, focus-vs-stubborn, salience-vs-importance, four-pillars-of-learning, intelligent-life-system, rumination, mental-accounting, implementation-intentions, transfer-of-learning, how-to-change-your-environment, 2026-09-29-attention-taxonomy-chun2011, 2026-09-29-brain-training-owen2010]
+sources:
+  - 2026-09-29-attention-taxonomy-chun2011
+  - 2026-09-29-brain-training-owen2010
+  - 2026-09-19-scarcity-book-en
+  - 2026-09-18-hyperefficient-notes
+  - 2026-09-18-active-cognitive-load-notes
+  - 2026-09-18-cognitive-load-theory
+  - 2026-09-18-writing-is-thinking
+  - 2026-09-18-how-we-learn-notes
+  - 2026-09-18-woop-notes
+  - 2026-09-19-zeroth-order-truth
+  - 2026-09-19-value-of-information-notes
+  - 2026-09-18-nolen-hoeksema-rethinking-rumination
+  - 2026-09-19-qa-focus-vs-stubborn
+related:
+  - peak-performance
+  - attention
+  - external-internal-attention
+  - flow-terminology
+  - cognitive-load-theory
+  - brain-rot
+  - cognitive-debt
+  - cognitive-outsourcing
+  - focus-vs-stubborn
+  - salience-vs-importance
+  - four-pillars-of-learning
+  - intelligent-life-system
+  - rumination
+  - mental-accounting
+  - implementation-intentions
+  - transfer-of-learning
+  - how-to-change-your-environment
+  - 2026-09-29-attention-taxonomy-chun2011
+  - 2026-09-29-brain-training-owen2010
 evidence_tier: primary
 confidence: low
 status: active
@@ -36,6 +68,15 @@ status: active
 > **2026-09-29 收录的两份一手素材是例外**：本页直接读过它们的 `raw/`，故对这两份**直接引用文件绝对行号**，
 > 并在每处注明出自哪一份。
 > 逐节点标注证据性质是硬约束（`AGENTS.md` §3 第 11 条），本页以表格「证据性质」列承担这件事。
+
+## 关键要点
+
+- **「注意力是什么」这一半，2026-09-29 起有了库内第一份一手依据** —— 一手文献的强结论是「**注意力不是单一机制**」；它给的不是「哪条进路对」的裁决，而是一个**按「注意力的对象」划分的上位坐标系**。
+- **这句话改变了本页的问题**：本库此前写「没有材料可以裁决哪一条更根本」—— 一手文献的回答是**这个问题本身问错了**；该问的是「你现在说的是哪一种注意力」。
+- **「如何改善」这一半，正方清单与反方证据直接对撞在同一处**：正方是六条有引注的路径，反方是 11,430 人的实验（训练过的任务大幅进步，**但收益不迁移**）。**两者不是矛盾，但只引任何一侧都会把结论说得比证据强。**
+- **库内五条进路不是同一件事的五个侧面，而是五个不同的坐标系** —— 混着用会出现「同一句话在两页里相反」的错觉。
+- **「专注」在库内有三个义项**，引用时不可混用；「注意力」与「专注」的边界页**仍未建**。
+- **「如何改善」一侧仍无「意志力」路径** —— 这条观察在一手文献里也成立（六条路径没有一条是「加意志」）。
 
 ## 一、检索范围（先说清查了什么）
 

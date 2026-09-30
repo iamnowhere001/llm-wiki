@@ -6,8 +6,129 @@ slug: modern-thinking-tools-review
 tags: [现代思维工具, 万维钢, 证据性质, 综述]
 created: 2026-09-21
 updated: 2026-09-21
-sources: [2026-09-18-active-cognitive-load-notes,2026-09-18-autonomy-support,2026-09-18-capability-seeking-theorem-notes,2026-09-18-cognitive-load-theory,2026-09-18-compounding-advantage-notes,2026-09-18-deliberate-practice-talent,2026-09-18-desirable-difficulty,2026-09-18-explore-exploit-notes,2026-09-18-field-and-habitus-notes,2026-09-18-five-thinking-tools-livestream,2026-09-18-free-energy-alignment-notes,2026-09-18-game-selection-notes,2026-09-18-hard-constraints-notes,2026-09-18-heavy-tail-notes,2026-09-18-icap-framework,2026-09-18-identity-metacognition-notes,2026-09-18-mental-representations,2026-09-18-modern-thinking-tools-prospectus,2026-09-18-narrative-first-principle,2026-09-18-qa-admitting-mistakes-notes,2026-09-18-qa-deepen-or-move-notes,2026-09-18-qa-hard-to-start-notes,2026-09-18-resonance-notes,2026-09-18-self-determination-theory-notes,2026-09-18-sense-of-security-notes,2026-09-18-social-capital-structural-holes-notes,2026-09-18-steady-state-trap-notes,2026-09-18-supply-side-mindset-notes,2026-09-18-synthesis-research,2026-09-18-tacit-knowledge,2026-09-18-three-selves-notes,2026-09-18-transfer-bridging,2026-09-18-uncertainty-fuel-notes,2026-09-18-woop-notes,2026-09-19-adaptive-cycle,2026-09-19-adjacent-possible,2026-09-19-alpha-strategy,2026-09-19-antifragility-notes,2026-09-19-baumols-cost-disease,2026-09-19-bayesian-prior-notes,2026-09-19-business-leverage,2026-09-19-by-products,2026-09-19-economic-rent,2026-09-19-effectuation-notes,2026-09-19-feedback-loops,2026-09-19-generativity,2026-09-19-granularity-causal-mediation-notes,2026-09-19-inner-optimizer,2026-09-19-jevons-paradox,2026-09-19-kelly-criterion-notes,2026-09-19-marginal-analysis,2026-09-19-moral-scalability,2026-09-19-no-free-lunch-theorem-notes,2026-09-19-non-ergodicity-notes,2026-09-19-objective-function,2026-09-19-ooda-loop-notes,2026-09-19-opportunity-window,2026-09-19-optionality-notes,2026-09-19-path-creation,2026-09-19-platform-business-model,2026-09-19-pretraining-posttraining,2026-09-19-probability-distribution-notes,2026-09-19-problem-setting,2026-09-19-prospect-theory-notes,2026-09-19-qa-best-model-notes,2026-09-19-qa-boss-shorting,2026-09-19-qa-claiming-hard-problems,2026-09-19-qa-dsm-vs-gantt-notes,2026-09-19-qa-first-credit,2026-09-19-qa-focus-vs-stubborn,2026-09-19-qa-mission-calling-notes,2026-09-19-qa-no-dwelling-and-objective,2026-09-19-qa-ordinary-people-safety,2026-09-19-qa-teenager-talk,2026-09-19-qa-working-memory-notes,2026-09-19-reference-class-notes,2026-09-19-regression-to-the-mean-notes,2026-09-19-scarcity-book-en,2026-09-19-scarcity-singularity,2026-09-19-second-order-desire,2026-09-19-selection-bias-notes,2026-09-19-self-constraint,2026-09-19-self-organized-criticality,2026-09-19-state-leverage-notes,2026-09-19-superforecasting-notes,2026-09-19-symmetry-breaking,2026-09-19-trustworthiness,2026-09-19-value-of-information-notes,2026-09-19-wardley-map,2026-09-19-white-epston-narrative-means-therapeutic-ends-en,2026-09-19-zeroth-order-truth,2026-09-20-common-knowledge,2026-09-20-exploration-and-generation,2026-09-20-externality,2026-09-20-incentive-compatibility,2026-09-20-legibility-and-metis,2026-09-20-market-for-lemons,2026-09-20-moloch,2026-09-20-protection-and-public-contract,2026-09-20-ritual-as-protocol,2026-09-20-scapegoat,2026-09-20-slow-variables,2026-09-20-social-status,2026-09-20-soft-budget-constraint,2026-09-20-third-thing,2026-09-20-unintended-consequences,2026-09-21-modern-thinking-tools-preface-dedao]
-related: [modern-thinking-tools, wanweigang, schema, source-pool-bias, cybernetic-learning, heavy-tailed-distribution, multiplicative-world, luck-over-talent, narrative-as-first-principle, effectuation, free-energy-principle, cognitive-load-theory, nassim-taleb, charlie-munger]
+sources:
+  - 2026-09-18-active-cognitive-load-notes
+  - 2026-09-18-autonomy-support
+  - 2026-09-18-capability-seeking-theorem-notes
+  - 2026-09-18-cognitive-load-theory
+  - 2026-09-18-compounding-advantage-notes
+  - 2026-09-18-deliberate-practice-talent
+  - 2026-09-18-desirable-difficulty
+  - 2026-09-18-explore-exploit-notes
+  - 2026-09-18-field-and-habitus-notes
+  - 2026-09-18-five-thinking-tools-livestream
+  - 2026-09-18-free-energy-alignment-notes
+  - 2026-09-18-game-selection-notes
+  - 2026-09-18-hard-constraints-notes
+  - 2026-09-18-heavy-tail-notes
+  - 2026-09-18-icap-framework
+  - 2026-09-18-identity-metacognition-notes
+  - 2026-09-18-mental-representations
+  - 2026-09-18-modern-thinking-tools-prospectus
+  - 2026-09-18-narrative-first-principle
+  - 2026-09-18-qa-admitting-mistakes-notes
+  - 2026-09-18-qa-deepen-or-move-notes
+  - 2026-09-18-qa-hard-to-start-notes
+  - 2026-09-18-resonance-notes
+  - 2026-09-18-self-determination-theory-notes
+  - 2026-09-18-sense-of-security-notes
+  - 2026-09-18-social-capital-structural-holes-notes
+  - 2026-09-18-steady-state-trap-notes
+  - 2026-09-18-supply-side-mindset-notes
+  - 2026-09-18-synthesis-research
+  - 2026-09-18-tacit-knowledge
+  - 2026-09-18-three-selves-notes
+  - 2026-09-18-transfer-bridging
+  - 2026-09-18-uncertainty-fuel-notes
+  - 2026-09-18-woop-notes
+  - 2026-09-19-adaptive-cycle
+  - 2026-09-19-adjacent-possible
+  - 2026-09-19-alpha-strategy
+  - 2026-09-19-antifragility-notes
+  - 2026-09-19-baumols-cost-disease
+  - 2026-09-19-bayesian-prior-notes
+  - 2026-09-19-business-leverage
+  - 2026-09-19-by-products
+  - 2026-09-19-economic-rent
+  - 2026-09-19-effectuation-notes
+  - 2026-09-19-feedback-loops
+  - 2026-09-19-generativity
+  - 2026-09-19-granularity-causal-mediation-notes
+  - 2026-09-19-inner-optimizer
+  - 2026-09-19-jevons-paradox
+  - 2026-09-19-kelly-criterion-notes
+  - 2026-09-19-marginal-analysis
+  - 2026-09-19-moral-scalability
+  - 2026-09-19-no-free-lunch-theorem-notes
+  - 2026-09-19-non-ergodicity-notes
+  - 2026-09-19-objective-function
+  - 2026-09-19-ooda-loop-notes
+  - 2026-09-19-opportunity-window
+  - 2026-09-19-optionality-notes
+  - 2026-09-19-path-creation
+  - 2026-09-19-platform-business-model
+  - 2026-09-19-pretraining-posttraining
+  - 2026-09-19-probability-distribution-notes
+  - 2026-09-19-problem-setting
+  - 2026-09-19-prospect-theory-notes
+  - 2026-09-19-qa-best-model-notes
+  - 2026-09-19-qa-boss-shorting
+  - 2026-09-19-qa-claiming-hard-problems
+  - 2026-09-19-qa-dsm-vs-gantt-notes
+  - 2026-09-19-qa-first-credit
+  - 2026-09-19-qa-focus-vs-stubborn
+  - 2026-09-19-qa-mission-calling-notes
+  - 2026-09-19-qa-no-dwelling-and-objective
+  - 2026-09-19-qa-ordinary-people-safety
+  - 2026-09-19-qa-teenager-talk
+  - 2026-09-19-qa-working-memory-notes
+  - 2026-09-19-reference-class-notes
+  - 2026-09-19-regression-to-the-mean-notes
+  - 2026-09-19-scarcity-book-en
+  - 2026-09-19-scarcity-singularity
+  - 2026-09-19-second-order-desire
+  - 2026-09-19-selection-bias-notes
+  - 2026-09-19-self-constraint
+  - 2026-09-19-self-organized-criticality
+  - 2026-09-19-state-leverage-notes
+  - 2026-09-19-superforecasting-notes
+  - 2026-09-19-symmetry-breaking
+  - 2026-09-19-trustworthiness
+  - 2026-09-19-value-of-information-notes
+  - 2026-09-19-wardley-map
+  - 2026-09-19-white-epston-narrative-means-therapeutic-ends-en
+  - 2026-09-19-zeroth-order-truth
+  - 2026-09-20-common-knowledge
+  - 2026-09-20-exploration-and-generation
+  - 2026-09-20-externality
+  - 2026-09-20-incentive-compatibility
+  - 2026-09-20-legibility-and-metis
+  - 2026-09-20-market-for-lemons
+  - 2026-09-20-moloch
+  - 2026-09-20-protection-and-public-contract
+  - 2026-09-20-ritual-as-protocol
+  - 2026-09-20-scapegoat
+  - 2026-09-20-slow-variables
+  - 2026-09-20-social-status
+  - 2026-09-20-soft-budget-constraint
+  - 2026-09-20-third-thing
+  - 2026-09-20-unintended-consequences
+  - 2026-09-21-modern-thinking-tools-preface-dedao
+related:
+  - modern-thinking-tools
+  - wanweigang
+  - schema
+  - source-pool-bias
+  - cybernetic-learning
+  - heavy-tailed-distribution
+  - multiplicative-world
+  - luck-over-talent
+  - narrative-as-first-principle
+  - effectuation
+  - free-energy-principle
+  - cognitive-load-theory
+  - nassim-taleb
+  - charlie-munger
 evidence_tier: crossed-independent
 confidence: medium
 status: active
@@ -28,6 +149,15 @@ status: active
   - **【AI 段】** —— 文档里无署名的加工块。**按 [[schema]] §3.5 定性，不按「AI 写的」这个身份降级**
   - **【本库推断】** —— 本库自己做的接缝与判断，**不是素材主张**；凡此类均已在下文标注
 - **一句话结论**：**这门课的讲稿段与 AI 加工段是两种质量分布完全不同的文本，混读会把后者当前者。**
+
+## 关键要点
+
+- **这份综述回答的不是「这门课讲了什么」，而是「它每一句话值多少」。** 同一门课里，既有「七条具名引注一条不假」的一讲，也有「整段 664 行离题、从头到尾没回到主题」的一讲。
+- **一句话结论：讲稿段与 AI 加工段是两种质量分布完全不同的文本，混读会把后者当前者。**
+- **「AI 占比高」不是降级理由** —— 降级的是**行为**（冒充事实、伪造来源、改写方向），不是「AI 写的」这个身份。010 / 021 是反证：AI 占比 44–45% 而四型全不命中。
+- 一条被反复观察到的规律：**「讲稿占比高 ⇒ 引注质量好」** —— 但它是相关性观察、不是因果结论（`low`），未排除「同一作者在不同板块写法不同」。
+- 跨讲矛盾**只登记、不裁决**；另有一节专记**本库自己犯过的错**（6 条，都留痕、不静默覆盖）。
+- 四条必须分开读的局限：**本库推断 ≠ 素材主张**；`confidence` 是**页级**判断不是主张级；AI 段占比是**行数**占比；`evidence_tier` 的分辨力在下降。
 
 ## 收齐程度（全课地图 · 终版）
 

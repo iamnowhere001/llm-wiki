@@ -6,7 +6,15 @@ tags: [稀缺, 行为经济学, 复现危机, 方法论]
 created: 2026-09-28
 updated: 2026-09-28
 sources: [2026-09-19-scarcity-book-en]
-related: [2026-09-19-scarcity-book-en, 2026-09-19-scarcity-singularity, source-pool-bias, attention, intelligent-life-system, opportunity-systems, 2026-09-18-capability-seeking-theorem-notes, modern-thinking-tools]
+related:
+  - 2026-09-19-scarcity-book-en
+  - 2026-09-19-scarcity-singularity
+  - source-pool-bias
+  - attention
+  - intelligent-life-system
+  - opportunity-systems
+  - 2026-09-18-capability-seeking-theorem-notes
+  - modern-thinking-tools
 evidence_tier: single
 confidence: medium
 status: active
@@ -23,6 +31,15 @@ status: active
 - **触发问题**（北洛，2026-09-28）：「《稀缺：我们是如何陷入贫穷与忙碌的》这本书的核心观点有科学依据吗？符合当前科学理解吗？」
 - **结论**：不能一句话答「有」或「没有」。**按主张分层，答案从「有支持」一路变到「作者自己没能复现」。**
 - **本页在执行一件库内已挂账的事** —— [[2026-09-19-scarcity-book-en]] §六 第 2 条写的是：「原书的方法学批评尚未检索……**本库在此如实登记「未做」，不写成「没有争议」**」。本页就是那次检索。
+
+## 关键要点
+
+- **不能一句话答「有」或「没有」。** 按主张分层，答案从「有支持」一路变到「作者自己没能复现」。
+- **「机制方向」有支持，「效应量级」被明显削薄** —— 而全书最有冲击力的那个数字（降 13 分）恰恰是**最弱的一环**。
+- 七条主张里：**第 1–3 条**（稀缺俘获心智 / 隧道效应 / 专注红利）是这本书真正的经验内核，站得住；第 4、5 条最有传播力也最弱；第 6、7 条是框架，**不该按「实验结论」引用**。
+- **两篇元分析一个说「有」、一个说「没有」，但它们不矛盾** —— 回答的是两个问题：「贫困者的认知测验得分更低」这个**相关性是稳的**，「财务稀缺的即时占用导致认知下降」这个**因果机制在实验中不稳**。
+- **本页最硬的一条证据来自作者本人**：不是外部批评者的攻击，是他们在**大样本预注册复现**里主动报告自己那篇论文的一个结论不成立（认知疲劳「No evidence…」）。
+- 书中**大量论证不是实验，是案例、访谈与理论综合** —— 那部分不受复现问题影响，但**也不构成「科学依据」**。
 
 ## 一、先说清这次核的是什么、没核什么
 

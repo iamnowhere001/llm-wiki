@@ -169,6 +169,12 @@ SECTION_FAMILIES = [
 
 META_FILES = {"index", "log", "overview", "conventions"}
 
+# analysis 页**唯一强制**的导航节名（同族）。2026-09-30 引入，见 templates/analysis.md。
+# 它管的是**名字**，不是形状 —— 与「不该强约束章节结构」的既有判断不冲突：
+# 模板体检方案（2026-09-29）§六第 1 条反对的是「把所有页套进同一套节名与顺序」，
+# 而这里要求的是「每页有一个结论入口」。正文用哪些节、什么顺序，仍由内容自取。
+KEY_SECTION_NAMES = ("关键要点", "要点")
+
 REQUIRED_FM = ["title", "type", "slug"]
 
 # 证据层级（2026-09-19 引入）—— 回答「这页的结论站得多稳」，与 confidence 是两个维度：
@@ -1169,6 +1175,7 @@ def cmd_lint(root):
     concl_sec = []
     tone_hits = []
     boiler_callout = []
+    missing_key = []
     exempt_long = exempt_tone = exempt_concl = 0   # 存量豁免计数，报在标题里，让「没报」不等于「没有」
     for p in pages:
         if p.type == "meta":
@@ -1187,6 +1194,13 @@ def cmd_lint(root):
                 dated_sec.append("%s  「%s」" % (p.relpath, line.strip()[:60]))
             if any(line.startswith(m) for m in TIER_CALLOUT):
                 boiler_callout.append(p.relpath)
+        # analysis 页缺「关键要点」导航节（2026-09-30 新增）。
+        # **不设 LINT_SINCE 豁免** —— 存量 22 页已于同日全部补齐，故这条对全库 analysis 页生效。
+        # 判据只看行首的 `## `，因此引用块里的 `> ## 关键要点`（模板说明）不会误命中。
+        if p.type == "analysis":
+            secs = [l.strip()[3:].strip() for l in body.split("\n") if l.startswith("## ")]
+            if not any(s in KEY_SECTION_NAMES for s in secs):
+                missing_key.append(p.relpath)
         # 章节名写成了句子 —— 把结论 / 说明塞进标题（与 §6.1 第 5 条「章节名含日期」同族）。
         # 判据只用「加粗」与「全角冒号」两个标记：2026-09-29 实测，全库这两类命中里
         # **没有一个是合法章节名**，全是「章节名：结论」形态（如「AI 加工段判定：**未发现…**」）。
@@ -1211,6 +1225,7 @@ def cmd_lint(root):
                                     " ".join("%s×%d" % (w, k) for w, k in
                                              sorted(hits.items(), key=lambda x: -x[1]))))
     section("残留样板警示块（evidence_tier 已在 frontmatter 表达）", boiler_callout)
+    section("analysis 页缺「关键要点」导航节（见 templates/analysis.md）", missing_key)
 
     # 以下三项是提示，不计入问题数 —— 存量需要逐步还，但新写的页面不得再命中。
     def hint(title, items, cap_show=12, note=None):
@@ -2579,14 +2594,19 @@ status: active
 <!-- 建页提示（填完请删掉本块）
 
   节分三级 —— 必需节缺了算结构不全；推荐节按本页内容取舍；按需节自己起名。
-    必需：关键要点 / 论证 / 与其他页面的关系 / 待办 / 开放问题 / 来源
-    推荐：证据 / 结论与适用条件
+    **唯一强制的导航节是 `## 关键要点`** —— 每页都要有，lint 会报缺（2026-09-30 起）。
+      它管的是**名字**，不是形状：正文用哪些节、什么顺序，按内容自取。
+    **其余推荐节的名字都可自取** —— 下表是常见形态，不是必须逐字照抄：
+      论证 / 展开 · 证据 · 结论与适用条件 · 与其他页面的关系 · 待办 / 开放问题 · 来源
     按需：本页确实需要的节。全库 21 页用过「本页的方法论说明」「置信度说明」
           「反方与失败条件」「待验证」—— 名字要具体
   analysis 有三种形态（schema §1.3），本模板只给骨架，形态自己选：
     对比类 —— 「论证 / 展开」节用两列表格，A / B 逐维度对
     综述类 —— 用编号分节（一、二、三……），每节一个论点
     回答归档 —— 触发问题 / 检索范围 / 库内有什么 / 库内没有什么
+  ⚠️ 全库实测（2026-09-29 模板体检）：本模板与页面的归一吻合度只有 4%，
+     因为上面这些节名**实际都不是强制的**。**别为了让模板「被遵守」而套节名** ——
+     该统一的是名字，不是形状。唯一例外就是 `## 关键要点`。
   tags / sources / evidence / related 的判据见 schema §1.7 / §1.2 / §1.5
   综合页必须逐节点标注证据性质：哪些是「事实」、哪些是「本库的推断」—— AGENTS.md §3 第 11 条
   结论若建立在推断上，confidence 降级，并在正文里写明降级理由
@@ -2604,7 +2624,9 @@ status: active
 
 ## 关键要点
 
-- 3–6 条，只给结论 —— 论证在下一节。
+- 3–6 条，**一行一条，只给结论** —— 论证在下一节，这里不重复。
+- 它是**导航**，不是摘要：读者扫完这一节就该知道本页答了什么、结论是什么。
+- 内容**从本页正文提取**，不引入正文没有的新主张。
 
 ## 论证 / 展开
 
@@ -2785,23 +2807,93 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#151715">
 <title>__SITE_TITLE__</title>
+<script>
+/* 主题必须在首帧前定下：手动选择优先，否则跟随系统。读不到 localStorage 时静默落浅色。 */
+(function(){
+  try{
+    var t = localStorage.getItem("llmwiki.theme");
+    if (t !== "light" && t !== "dark")
+      t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+    document.documentElement.dataset.theme = t;
+  }catch(e){ document.documentElement.dataset.theme = "light"; }
+})();
+</script>
 <style>
 :root{
-  --bg:#faf9f7; --panel:#ffffff; --ink:#1b1c1e; --muted:#75736d;
-  --line:#e8e6e1; --line-soft:#f1efeb; --accent:#0f766e; --accent-soft:#e6f2f0;
-  --code-bg:#f5f4f1;
+  color-scheme:light;
+  --bg:#faf9f7; --panel:#ffffff; --ink:#1b1c1e; --prose:#2b2c2f;
+  --muted:#75736d; --faint:#a8a5a0; --caret:#a5a29b;
+  --line:#e8e6e1; --line-soft:#f1efeb;
+  --accent:#0f766e; --accent-strong:#0b5f57; --accent-soft:#e6f2f0; --accent-line:#bcd9d4;
+  --code-bg:#f5f4f1; --control:#cbc7bf;
+  --link-line:#b9d8d3; --link-line-dim:#9cc7c1;
+  --mark-bg:#fde68a; --mark-ink:#1b1c1e;
+  --danger:#b91c1c; --danger-bg:#fdecec; --danger-bd:#f5c2c2; --danger-line:#e0a0a0;
+  --warn-ink:#a8781f; --warn-strong:#8a5a06; --warn-bg:#fdf6e6; --warn-bd:#f2e3bd;
+  --quote-ink:#204b46;
+  --lead-from:#e9f4f2; --lead-to:#e3efed; --lead-ink:#1e4a45; --lead-eb:#0b5f57;
+  --logm-bd:#e6e2da; --logm-bg:#fcfbf9; --logm-ink:#4a463f; --logm-caret:#a8a29a;
+  --logs-bd:#ece8e0; --logs-bg:#ffffff; --logs-ink:#5a554d; --logs-caret:#b8b2a9;
+  --th-bg:#f4f2ee; --th-ink:#4a4842; --tr-bg:#fcfbf9; --tnum:#57544e;
+  --lg-bd:#eae7e1; --lg-bg:#fbfaf8; --lg-from:#f7f6f3; --lg-to:#f2f0ec; --lg-ink:#6a6760; --lg-arrow:#a5a29b;
+  --scroll:#dcd9d3; --scroll-hi:#c6c2ba;
+  --float-bg:rgba(255,255,255,.92); --float-bg2:rgba(255,255,255,.90);
+  --mask:rgba(27,24,19,.30); --shadow:0 0 26px rgba(0,0,0,.14);
+  --fab-shadow:0 6px 22px rgba(28,30,26,.14);
+  --graph-edge:#e2dfd9; --graph-label:rgba(255,255,255,.82); --graph-ink:#4b4a46; --graph-ring:#ffffff;
+  --sel:rgba(15,118,110,.16);
+  --ev-ok-ink:#1a6b34; --ev-ok-bg:#eaf6ec; --ev-ok-bd:#bfe0c8;
+  --ev-warn-ink:#7a4a00; --ev-warn-bg:#fdefd0; --ev-warn-bd:#e8c98a;
+  --ev-pri-ink:#1c4f8a; --ev-pri-bg:#e8f0fb; --ev-pri-bd:#c3d7f0;
   --c-project:#7c3aed; --c-source:#0f766e; --c-entity:#b45309; --c-concept:#4338ca; --c-analysis:#be123c; --c-meta:#6b7280;
 }
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#151715; --panel:#1d201d; --ink:#e9e7df; --prose:#c7c9c1;
+  --muted:#94978c; --faint:#6c7067; --caret:#7d8078;
+  --line:#30342e; --line-soft:#262a25;
+  --accent:#3db9ac; --accent-strong:#7fd4c8; --accent-soft:rgba(61,185,172,.14); --accent-line:#2c6f68;
+  --code-bg:#222621; --control:#4a4e47;
+  --link-line:#3d7a72; --link-line-dim:#34605a;
+  --mark-bg:#e3b53a; --mark-ink:#1b1c1e;
+  --danger:#f08196; --danger-bg:#2f171d; --danger-bd:#642f39; --danger-line:#6b2d3a;
+  --warn-ink:#d9a94f; --warn-strong:#ddb461; --warn-bg:#28220f; --warn-bd:#5c4a1f;
+  --quote-ink:#b6d8d1;
+  --lead-from:#14302c; --lead-to:#102925; --lead-ink:#bdded7; --lead-eb:#6fc7bd;
+  --logm-bd:#31332c; --logm-bg:#1b1e1a; --logm-ink:#b4b0a4; --logm-caret:#85837a;
+  --logs-bd:#2b2e28; --logs-bg:#20241f; --logs-ink:#a6a298; --logs-caret:#77756d;
+  --th-bg:#242822; --th-ink:#c3c0b4; --tr-bg:#1a1d19; --tnum:#8f8c82;
+  --lg-bd:#31342d; --lg-bg:#1b1e1a; --lg-from:#232620; --lg-to:#1f221d; --lg-ink:#9c998e; --lg-arrow:#7f7d74;
+  --scroll:#3a3e38; --scroll-hi:#4d5149;
+  --float-bg:rgba(27,30,27,.93); --float-bg2:rgba(27,30,27,.90);
+  --mask:rgba(0,0,0,.52); --shadow:0 0 30px rgba(0,0,0,.55);
+  --fab-shadow:0 6px 22px rgba(0,0,0,.5);
+  --graph-edge:#34382f; --graph-label:rgba(18,20,17,.84); --graph-ink:#c6c3b8; --graph-ring:#151715;
+  --sel:rgba(61,185,172,.24);
+  --ev-ok-ink:#7ed39b; --ev-ok-bg:#102a1b; --ev-ok-bd:#2e5739;
+  --ev-warn-ink:#ddb461; --ev-warn-bg:#27210f; --ev-warn-bd:#5b4a21;
+  --ev-pri-ink:#8ab4ec; --ev-pri-bg:#10243f; --ev-pri-bd:#2f4a75;
+}
+[hidden]{display:none !important}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;height:100%}
 body{
   background:var(--bg); color:var(--ink);
   font:15px/1.72 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
   -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
+  transition:background .2s ease;
 }
-#app{display:flex;height:100vh;overflow:hidden}
+::selection{background:var(--sel)}
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;
+}
+#app{display:flex;height:100vh;height:100dvh;overflow:hidden}
 
 /* ---------- sidebar ---------- */
 /* 左侧栏的横向基准线：组头文字与条目文字都落在 36px 处。
@@ -2820,8 +2912,8 @@ body{
   background:var(--bg);font-size:13px;color:var(--ink);outline:none;font-family:inherit;
   transition:border-color .14s,box-shadow .14s,background .14s;
 }
-#search:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-soft)}
-#search::placeholder{color:#a8a5a0}
+#search:focus{border-color:var(--accent);background:var(--panel);box-shadow:0 0 0 3px var(--accent-soft)}
+#search::placeholder{color:var(--faint)}
 #searchclear{
   position:absolute;right:24px;top:calc(50% - 1px);transform:translateY(-50%);
   width:18px;height:18px;padding:0;border:0;border-radius:50%;
@@ -2831,7 +2923,7 @@ body{
 #searchclear.on{display:block}
 #searchclear:hover{background:var(--line);color:var(--ink)}
 .navtools{display:flex;align-items:center;gap:2px;padding:0 16px 8px}
-.navtools .lbl{font-size:10.5px;font-weight:650;letter-spacing:1.1px;color:#a8a5a0}
+.navtools .lbl{font-size:10.5px;font-weight:650;letter-spacing:1.1px;color:var(--faint)}
 .navtools .sp{flex:1}
 .navtools button{
   border:0;background:transparent;font:inherit;font-size:11.5px;color:var(--muted);
@@ -2864,7 +2956,7 @@ body{
   max-height:3em;overflow:hidden;
 }
 .nav-item.res .r-meta{grid-column:2;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
-.nav-item.res mark,.nav-item.res.active mark{background:#fde68a;color:inherit;border-radius:2px;padding:0 1px}
+.nav-item.res mark,.nav-item.res.active mark{background:var(--mark-bg);color:var(--mark-ink);border-radius:2px;padding:0 1px}
 /* 必须在 .nav-item.res 之后：隐藏规则与 display:flex/grid 同级，靠顺序决胜 */
 .nav-item[hidden]{display:none}
 .res-more{
@@ -2891,13 +2983,13 @@ body{
 .grp h3:hover{color:var(--ink);background:var(--line-soft)}
 .grp h3 .gl{display:flex;align-items:center;min-width:0}
 .grp h3 .caret{
-  flex:0 0 9px;width:9px;margin-right:7px;color:#a5a29b;
+  flex:0 0 9px;width:9px;margin-right:7px;color:var(--caret);
   transition:transform .16s ease;
 }
 .grp.collapsed h3 .caret{transform:rotate(-90deg)}
 .grp h3 .gtxt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .grp h3 .n{
-  flex:0 0 auto;font-size:10.5px;font-weight:500;letter-spacing:0;color:#a8a5a0;
+  flex:0 0 auto;font-size:10.5px;font-weight:500;letter-spacing:0;color:var(--faint);
   background:var(--line-soft);border-radius:20px;padding:1px 7px;font-variant-numeric:tabular-nums;
 }
 .grp.collapsed .grpbody{display:none}
@@ -2908,10 +3000,10 @@ body{
   background:var(--bg);font-family:inherit;font-size:12px;color:var(--ink);outline:none;
   transition:border-color .14s,background .14s;
 }
-.grpfind input:focus{border-color:var(--accent);background:#fff}
-.grpfind input::placeholder{color:#a8a5a0}
+.grpfind input:focus{border-color:var(--accent);background:var(--panel)}
+.grpfind input::placeholder{color:var(--faint)}
 /* 命中数放在输入框内侧右端：筛选时组头可能已经 sticky 出界，只有这里能告诉你收窄到几条 */
-.gfbox.on input{background:var(--accent-soft);border-color:#bcd9d4}
+.gfbox.on input{background:var(--accent-soft);border-color:var(--accent-line)}
 .fcount{
   position:absolute;right:9px;top:50%;transform:translateY(-50%);
   font-size:10.5px;color:var(--accent);font-variant-numeric:tabular-nums;pointer-events:none;
@@ -2919,7 +3011,7 @@ body{
 .fcount[hidden]{display:none}
 .grpempty{padding:6px 10px 12px;font-size:12px;color:var(--muted)}
 .grpempty[hidden]{display:none}
-.res-tip{font-size:11.5px;color:#a8781f;background:#fdf6e6;border:1px solid #f2e3bd;
+.res-tip{font-size:11.5px;color:var(--warn-ink);background:var(--warn-bg);border:1px solid var(--warn-bd);
   border-radius:6px;padding:6px 9px;margin:2px 10px 8px;line-height:1.5}
 /* ---------- TOC ---------- */
 #toc{
@@ -2960,7 +3052,7 @@ article ul,article ol{margin:11px 0;padding-left:24px}
 article li{margin:4px 0}
 article blockquote{
   margin:16px 0;padding:12px 16px;background:var(--accent-soft);
-  border-left:3px solid var(--accent);border-radius:0 7px 7px 0;color:#204b46;
+  border-left:3px solid var(--accent);border-radius:0 7px 7px 0;color:var(--quote-ink);
 }
 article blockquote p{margin:4px 0}
 article code{background:var(--code-bg);padding:1.5px 5px;border-radius:4px;
@@ -2972,13 +3064,16 @@ article table{border-collapse:collapse;width:100%;margin:16px 0;font-size:13.6px
 article th,article td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
 article th{background:var(--line-soft);font-weight:650}
 article hr{border:0;border-top:1px solid var(--line);margin:26px 0}
-article a{color:var(--accent);text-decoration:none;border-bottom:1px solid #b9d8d3}
+article a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--link-line)}
 article a:hover{border-bottom-color:var(--accent)}
-a.wl{border-bottom:1px dotted #9cc7c1;cursor:pointer}
-a.wl.broken{color:#b91c1c;border-bottom:1px dashed #e0a0a0}
-/* 引文块内文字本身是深青色，链接需要更强的区分度 */
-article blockquote a{color:#0b5f57;font-weight:600;border-bottom:1px solid #7fbcb4}
-article blockquote a:hover{border-bottom-color:#0b5f57}
+/* 站外链接给一枚极小的箭头：文本链接与 [[wiki 链接]] 由此可分 */
+article a[href^="http"]::after{content:"↗";font-size:.78em;margin-left:3px;color:var(--muted)}
+a.wl{border-bottom:1px dotted var(--link-line-dim);cursor:pointer}
+a.wl::after{content:none}
+a.wl.broken{color:var(--danger);border-bottom:1px dashed var(--danger-line)}
+/* 引文块内文字本身是青色，链接需要更强的区分度 */
+article blockquote a{color:var(--accent-strong);font-weight:600;border-bottom:1px solid var(--accent-line)}
+article blockquote a:hover{border-bottom-color:var(--accent-strong)}
 
 /* ==================================================================
    素材页（source）阅读层
@@ -3003,12 +3098,12 @@ article blockquote a:hover{border-bottom-color:#0b5f57}
 /* ---- 上款 ---- */
 article blockquote.lead{
   margin:20px 0 20px;padding:15px 20px 15px 22px;font-size:15.2px;line-height:1.78;
-  background:linear-gradient(180deg,#e9f4f2,#e3efed);border-left:3px solid var(--accent);
-  color:#1e4a45;border-radius:0 10px 10px 0;
+  background:linear-gradient(180deg,var(--lead-from),var(--lead-to));border-left:3px solid var(--accent);
+  color:var(--lead-ink);border-radius:0 10px 10px 0;
 }
 .lead-eb{
   display:flex;align-items:center;gap:8px;margin:0 0 9px;
-  font-size:10px;font-weight:700;letter-spacing:1.5px;color:#0b5f57;opacity:.72;
+  font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--lead-eb);opacity:.72;
 }
 .lead-eb::before{content:"";width:14px;height:1px;background:currentColor}
 .lead-eb::after{content:"";flex:1;height:1px;background:currentColor;opacity:.35}
@@ -3037,11 +3132,11 @@ article blockquote.lead p:last-of-type{margin-bottom:0}
 .prov .v > p:last-child{margin-bottom:0}
 .prov .v code{font-size:12.4px;background:var(--code-bg);padding:1.5px 5px;border-radius:4px;
   border:1px solid var(--line-soft)}
-.prov .v a{border-bottom:1px solid #b9d8d3}
+.prov .v a{border-bottom:1px solid var(--link-line)}
 .prov .v a:hover{border-bottom-color:var(--accent)}
-.prov .v blockquote{margin:9px 0 3px;font-size:13px;padding:9px 13px;background:#fdf6e6;
-  border-left:3px solid #d9a441;color:#6b4c14;border-radius:0 7px 7px 0}
-.prov .v blockquote a{color:#8a5a06;border-bottom-color:#dcbc86}
+.prov .v blockquote{margin:9px 0 3px;font-size:13px;padding:9px 13px;background:var(--warn-bg);
+  border-left:3px solid var(--warn-bd);color:var(--warn-strong);border-radius:0 7px 7px 0}
+.prov .v blockquote a{color:var(--warn-strong);border-bottom-color:var(--warn-bd)}
 
 /* ---- 关键要点：悬挂序号。序号退到正文左侧的空白里，正文左缘保持一条直线 ---- */
 ol.keypoints{list-style:none;counter-reset:kp;margin:14px 0 20px;padding:0 0 0 36px}
@@ -3068,7 +3163,7 @@ ul.checklist > li.task{display:flex;gap:10px;align-items:flex-start;margin:0;pad
 ul.checklist > li.task::marker{content:none}
 ul.checklist input[type=checkbox]{
   appearance:none;-webkit-appearance:none;flex:0 0 15px;width:15px;height:15px;
-  margin:5px 0 0;border:1.5px solid #cbc7bf;border-radius:4.5px;background:#fff;
+  margin:5px 0 0;border:1.5px solid var(--control);border-radius:4.5px;background:var(--panel);
   display:block;position:relative;cursor:default;
 }
 ul.checklist input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
@@ -3099,7 +3194,7 @@ details.callout > summary::before{
   font-size:11px;font-weight:700;color:#fff;line-height:1;
 }
 /* 分隔线挂 .co-bd 上而不是 summary 上：只有标题、没有正文的 callout 不该拖一条悬空的横线 */
-.co-bd{padding:11px 15px 13px 41px;font-size:14.2px;line-height:1.76;color:#2b2c2f;
+.co-bd{padding:11px 15px 13px 41px;font-size:14.2px;line-height:1.76;color:var(--prose);
   border-top:1px solid var(--co-line)}
 .co-bd > p:first-child{margin-top:0}
 .co-bd > p:last-child{margin-bottom:0}
@@ -3116,35 +3211,42 @@ details.co-ok{--co-ink:#12693a;--co-bg:#ecf6ee;--co-line:#c8e2ce}
 details.co-ok > summary::before{content:"✓"}
 details.co-bad{--co-ink:#9f1239;--co-bg:#fdedef;--co-line:#f1ccd4}
 details.co-bad > summary::before{content:"✕";font-size:9.5px}
-article blockquote a{color:#0b5f57}
+article blockquote a{color:var(--accent-strong)}
 details.callout a{color:var(--co-ink);border-bottom:1px solid currentColor;font-weight:600}
+
+/* 深色模式下的五种 callout 语气：底色转成低亮同色系，描边和文字提亮 */
+html[data-theme="dark"] details.co-tip{--co-ink:#78d0c2;--co-bg:#102c28;--co-line:#275850}
+html[data-theme="dark"] details.co-warn{--co-ink:#ddb461;--co-bg:#27210f;--co-line:#5b4a21}
+html[data-theme="dark"] details.co-key{--co-ink:#a7a4f2;--co-bg:#1d2046;--co-line:#3a3e75}
+html[data-theme="dark"] details.co-ok{--co-ink:#84d39d;--co-bg:#0f2a1a;--co-line:#2e5739}
+html[data-theme="dark"] details.co-bad{--co-ink:#f18aa0;--co-bg:#34131c;--co-line:#6b2f3d}
 
 /* log 页分段 —— 站点侧切分，`log.md` 与其中的行号引用都不动（裁定见 decisions E4）。
    21 万字符整页一次性渲染是单文件里最重的一步。两级折叠：月 → 日。
    只有「最新一月的第一天」立即渲染，其余日块首次展开时才渲染。 */
 details.logmonth{
-  margin:16px 0;border:1px solid #e6e2da;border-radius:10px;background:#fcfbf9;overflow:hidden;
+  margin:16px 0;border:1px solid var(--logm-bd);border-radius:10px;background:var(--logm-bg);overflow:hidden;
 }
 details.logmonth > summary{
   list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;
-  padding:10px 15px;font-size:13.6px;font-weight:700;color:#4a463f;
+  padding:10px 15px;font-size:13.6px;font-weight:700;color:var(--logm-ink);
 }
 details.logmonth > summary::-webkit-details-marker{display:none}
 details.logmonth > summary::before{
-  content:"▸";color:#a8a29a;font-size:11px;transition:transform .15s;
+  content:"▸";color:var(--logm-caret);font-size:11px;transition:transform .15s;
 }
 details.logmonth[open] > summary::before{transform:rotate(90deg)}
 .logmonth-bd{padding:2px 12px 10px}
 details.logseg{
-  margin:6px 0;border:1px solid #ece8e0;border-radius:8px;background:#fff;overflow:hidden;
+  margin:6px 0;border:1px solid var(--logs-bd);border-radius:8px;background:var(--logs-bg);overflow:hidden;
 }
 details.logseg > summary{
   list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;
-  padding:7px 12px;font-size:12.8px;font-weight:600;color:#5a554d;
+  padding:7px 12px;font-size:12.8px;font-weight:600;color:var(--logs-ink);
 }
 details.logseg > summary::-webkit-details-marker{display:none}
 details.logseg > summary::before{
-  content:"▸";color:#b8b2a9;font-size:10px;transition:transform .15s;
+  content:"▸";color:var(--logs-caret);font-size:10px;transition:transform .15s;
 }
 details.logseg[open] > summary::before{transform:rotate(90deg)}
 .logseg-bd{padding:0 13px 6px}
@@ -3164,37 +3266,39 @@ details.logseg[open] > summary::before{transform:rotate(90deg)}
 .tbl th:last-child,.tbl td:last-child{border-right:0}
 .tbl tbody tr:last-child td{border-bottom:0}
 .tbl thead th{
-  position:sticky;top:0;z-index:1;background:#f4f2ee;color:#4a4842;
+  position:sticky;top:0;z-index:1;background:var(--th-bg);color:var(--th-ink);
   font-weight:650;font-size:12.5px;letter-spacing:.2px;
 }
-.tbl tbody tr:nth-child(even){background:#fcfbf9}
+.tbl tbody tr{transition:background .12s}
+.tbl tbody tr:hover{background:var(--accent-soft)}
+.tbl tbody tr:nth-child(even){background:var(--tr-bg)}
 .tbl.tall{max-height:76vh}
 .tbl.tall thead th{box-shadow:0 1px 0 var(--line)}
 .tbl.num th:first-child,.tbl.num td:first-child{
-  white-space:nowrap;font-variant-numeric:tabular-nums;color:#57544e;
+  white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--tnum);
 }
 .tbl code{font-size:12.1px}
 
 /* ---- 账目章节：可折叠的「凭据附件」 ---- */
 section.sec{scroll-margin-top:16px}
 section.ledger{
-  border:1px solid #eae7e1;border-radius:11px;background:#fbfaf8;
+  border:1px solid var(--lg-bd);border-radius:11px;background:var(--lg-bg);
   margin:16px 0;padding:0 16px 6px;
 }
 section.ledger > h2{
   display:flex;align-items:center;gap:9px;
   margin:0 -16px;padding:11px 16px;
-  font-size:13.2px;font-weight:650;letter-spacing:.2px;color:#6a6760;
-  background:linear-gradient(180deg,#f7f6f3,#f2f0ec);
-  border-bottom:1px solid #eae7e1;border-radius:11px 11px 0 0;
-  cursor:pointer;user-select:none;transition:color .12s;
+  font-size:13.2px;font-weight:650;letter-spacing:.2px;color:var(--lg-ink);
+  background:linear-gradient(180deg,var(--lg-from),var(--lg-to));
+  border-bottom:1px solid var(--lg-bd);border-radius:11px 11px 0 0;
+  cursor:pointer;user-select:none;transition:color .12s,background .12s;
 }
-section.ledger > h2:hover{color:var(--ink)}
+section.ledger > h2:hover{color:var(--ink);background:var(--line-soft)}
 /* 箭头用 CSS 画，不写字符 —— 标题的 textContent 会被右侧目录读走，
    塞一个「▾」进去，目录里就会出现「▾引注核查表」。 */
 section.ledger > h2::before{
   content:"";flex:0 0 9px;width:7px;height:7px;margin-right:1px;
-  border-right:1.7px solid #a5a29b;border-bottom:1.7px solid #a5a29b;
+  border-right:1.7px solid var(--lg-arrow);border-bottom:1.7px solid var(--lg-arrow);
   transform:rotate(45deg) translate(-1px,-1px);transition:transform .16s ease;
 }
 section.ledger.collapsed > h2::before{transform:rotate(-45deg) translate(-1px,1px)}
@@ -3244,9 +3348,9 @@ section.prov-sec a:hover{border-color:var(--accent);color:var(--accent)}
 /* ---- TOC 双分组 ---- */
 #toc .tglbl{
   display:block;padding:9px 9px 3px;font-size:9.5px;font-weight:700;
-  letter-spacing:1.3px;color:#a8a5a0;
+  letter-spacing:1.3px;color:var(--faint);
 }
-#toc .tg-ledger .tglbl{color:#a8781f}
+#toc .tg-ledger .tglbl{color:var(--warn-ink)}
 #toc .tg-ledger a{opacity:.82}
 
 /* ---- 阅读度量 ---- */
@@ -3258,7 +3362,7 @@ article p{overflow-wrap:break-word}
   *{transition-duration:.01ms !important;animation-duration:.01ms !important}
 }
 @media print{
-  #sidebar,#tabs,#toc,.segctl,#prog{display:none !important}
+  #sidebar,#tabs,#toc,.segctl,#prog,#toTop,#tocbtn,#tocclose,#boot,#lightbox,.codecopy{display:none !important}
   #view-browse{overflow:visible;padding:0}
   section.ledger{border-color:#ddd;break-inside:avoid}
   section.ledger.collapsed > .lg-bd{display:block}  /* 打印时账目一律展开 */
@@ -3272,13 +3376,13 @@ article p{overflow-wrap:break-word}
 .chip{font-size:11px;padding:2.5px 9px;border-radius:20px;background:var(--line-soft);
   color:var(--muted);border:1px solid var(--line)}
 .chip.t{color:#fff;border-color:transparent}
-.chip.tag{background:#fff;color:var(--muted)}
-.chip.stale{background:#fdecec;color:#b91c1c;border-color:#f5c2c2}
-.chip.dirty{background:#fff5e6;color:#8a5a00;border-color:#f0d9a8}
+.chip.tag{background:var(--panel);color:var(--muted)}
+.chip.stale{background:var(--danger-bg);color:var(--danger);border-color:var(--danger-bd)}
+.chip.dirty{background:var(--warn-bg);color:var(--warn-strong);border-color:var(--warn-bd)}
 /* 证据层级：绿 = 真交叉；琥珀 = 名义交叉实质同源（本库最大的陷阱，要最显眼）；蓝 = 一手 */
-.chip.ev-ok{background:#eaf6ec;color:#1a6b34;border-color:#bfe0c8}
-.chip.ev-warn{background:#fdefd0;color:#7a4a00;border-color:#e8c98a}
-.chip.ev-pri{background:#e8f0fb;color:#1c4f8a;border-color:#c3d7f0}
+.chip.ev-ok{background:var(--ev-ok-bg);color:var(--ev-ok-ink);border-color:var(--ev-ok-bd)}
+.chip.ev-warn{background:var(--ev-warn-bg);color:var(--ev-warn-ink);border-color:var(--ev-warn-bd)}
+.chip.ev-pri{background:var(--ev-pri-bg);color:var(--ev-pri-ink);border-color:var(--ev-pri-bd)}
 .evdot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;
   vertical-align:1px}
 .evdot.ev-ok{background:#1d9e75}
@@ -3296,8 +3400,10 @@ article p{overflow-wrap:break-word}
 }
 #backlinks h4{margin:0 0 10px;font-size:12px;letter-spacing:.9px;color:var(--muted);text-transform:uppercase}
 #backlinks a{display:inline-block;margin:0 8px 8px 0;padding:5px 11px;border-radius:7px;
-  background:var(--panel);border:1px solid var(--line);font-size:12.6px;color:var(--ink);text-decoration:none}
-#backlinks a:hover{border-color:var(--accent);color:var(--accent)}
+  background:var(--panel);border:1px solid var(--line);font-size:12.6px;color:var(--ink);text-decoration:none;
+  transition:transform .12s ease,border-color .12s,color .12s,box-shadow .12s}
+#backlinks a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);
+  box-shadow:0 3px 10px rgba(0,0,0,.07)}
 
 /* ---- 宽屏适配：正文列宽 + 目录占位 ----
    旧版：目录是 position:fixed，不占布局宽度；正文在 #main 里居中，右缘算出
@@ -3317,20 +3423,21 @@ article p{overflow-wrap:break-word}
 
 /* ---------- graph ---------- */
 #view-graph{flex:1;position:relative;overflow:hidden;background:var(--panel)}
-#canvas{display:block;width:100%;height:100%;cursor:grab}
+#canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #canvas.drag{cursor:grabbing}
 #graph-hint{
   position:absolute;left:16px;bottom:14px;font-size:11.5px;color:var(--muted);
-  background:rgba(255,255,255,.9);padding:5px 10px;border-radius:7px;border:1px solid var(--line);
+  background:var(--float-bg2);padding:5px 10px;border-radius:7px;border:1px solid var(--line);
+  max-width:calc(100% - 32px);
 }
-#legend{position:absolute;right:16px;top:14px;background:rgba(255,255,255,.92);
+#legend{position:absolute;right:16px;top:14px;background:var(--float-bg);
   border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:11.5px;color:var(--muted)}
 #legend div{margin:2px 0}
 #legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px}
 .empty{color:var(--muted);text-align:center;padding:80px 20px;font-size:14px}
 ::-webkit-scrollbar{width:9px;height:9px}
-::-webkit-scrollbar-thumb{background:#dcd9d3;border-radius:5px}
-::-webkit-scrollbar-thumb:hover{background:#c6c2ba}
+::-webkit-scrollbar-thumb{background:var(--scroll);border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:var(--scroll-hi)}
 ::-webkit-scrollbar-track{background:transparent}
 
 /* ---------- 窄屏：侧栏改抽屉 ---------- */
@@ -3339,18 +3446,158 @@ article p{overflow-wrap:break-word}
   color:var(--muted);cursor:pointer;padding:6px 9px;border-radius:7px;margin-right:2px;
 }
 #burger:hover{background:var(--line-soft)}
-#mask{display:none;position:fixed;inset:0;background:rgba(0,0,0,.26);z-index:8}
+#mask{display:none;position:fixed;inset:0;background:var(--mask);z-index:8}
 #mask.on{display:block}
 @media (max-width:1000px){
   #sidebar{
-    position:fixed;z-index:9;left:0;top:0;height:100vh;
-    transform:translateX(-100%);transition:transform .18s ease;box-shadow:0 0 26px rgba(0,0,0,.14);
+    position:fixed;z-index:9;left:0;top:0;height:100vh;height:100dvh;
+    transform:translateX(-100%);transition:transform .18s ease;box-shadow:var(--shadow);
   }
   #sidebar.open{transform:translateX(0)}
   #burger{display:inline-block}
   #toc{display:none}
   #wrap{padding:0 20px}
   #backlinks{padding:20px 20px 0}
+}
+
+/* ---------- 视觉精修：标题 / 品牌 / 微交互 ---------- */
+/* 正文大标题用宋体系：知识库是「书房」不是「仪表盘」，一个衬线瞬间就把气质定住。
+   零网络成本 —— 全部走系统字（Songti SC / STSong / SimSun 的逐级回退）。 */
+article h1{
+  font-family:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC","Source Han Serif CN",SimSun,serif;
+  font-size:clamp(23px,3.2vw,27px);font-weight:700;letter-spacing:.1px;
+}
+.brand h1{display:flex;align-items:center}
+.brand h1::before{
+  content:"";flex:0 0 auto;width:9px;height:9px;border-radius:2.5px;margin-right:9px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-strong));
+}
+.prov{transition:border-color .15s ease,box-shadow .15s ease}
+.prov:hover{border-color:var(--accent-line);box-shadow:0 2px 14px rgba(0,0,0,.05)}
+#tabs button,.navtools button,.segctl button,#searchclear,.res-more{
+  transition:background .12s,color .12s,border-color .12s,transform .08s;
+}
+#tabs button:active,.navtools button:active,.segctl button:active,#searchclear:active{
+  transform:translateY(.5px);
+}
+article img{max-width:100%;border-radius:8px;margin:10px 0;cursor:zoom-in;
+  background:var(--code-bg)}
+@keyframes pagein{
+  from{opacity:0;transform:translateY(6px)}
+  to{opacity:1;transform:none}
+}
+#page.pagein{animation:pagein .22s cubic-bezier(.22,.61,.36,1) both}
+
+/* ---------- 启动骨架：7.4MB 数据到达前先有一个确定的首帧 ---------- */
+#boot{
+  position:fixed;inset:0;z-index:40;display:flex;flex-direction:column;gap:13px;
+  align-items:center;justify-content:center;text-align:center;padding:24px;
+  background:var(--bg);color:var(--muted);
+  opacity:1;transition:opacity .25s ease;
+}
+#boot.done{opacity:0;pointer-events:none}
+#boot .boot-ring{
+  width:30px;height:30px;border-radius:50%;
+  border:2.5px solid var(--line);border-top-color:var(--accent);
+  animation:bootspin .8s linear infinite;
+}
+#boot .boot-name{font-size:15px;font-weight:650;color:var(--ink);letter-spacing:.4px}
+#boot .boot-sub{font-size:12px;margin-top:-4px}
+@keyframes bootspin{to{transform:rotate(360deg)}}
+.nsmsg{
+  position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;
+  padding:30px;text-align:center;color:var(--muted);font-size:14px;background:var(--bg);
+}
+
+/* ---------- 顶栏图标按钮（主题 / 本页目录） ---------- */
+#themetoggle,#tocbtn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;padding:0;
+}
+#themetoggle svg,#tocbtn svg,#toTop svg{display:block;width:16px;height:16px}
+#themetoggle .ico-moon{display:none}
+html[data-theme="dark"] #themetoggle .ico-sun{display:none}
+html[data-theme="dark"] #themetoggle .ico-moon{display:block}
+#tocbtn{display:none}
+
+/* ---------- 回到顶部 ---------- */
+#toTop{
+  position:fixed;z-index:7;right:calc(18px + env(safe-area-inset-right));
+  bottom:calc(20px + env(safe-area-inset-bottom));
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:var(--float-bg);color:var(--muted);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--fab-shadow);
+  opacity:0;transform:translateY(8px);pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease,color .12s,border-color .12s;
+}
+#toTop.on{opacity:1;transform:none;pointer-events:auto}
+#toTop:hover{color:var(--accent);border-color:var(--accent-line)}
+@media (min-width:1001px){ #toTop{right:226px} }
+
+/* ---------- 代码块：复制按钮 ---------- */
+article pre{position:relative}
+.codecopy{
+  position:absolute;top:7px;right:7px;padding:4px 10px;border-radius:6px;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted);
+  font:600 11px/1.4 inherit;cursor:pointer;opacity:0;
+  transition:opacity .14s,color .12s,border-color .12s;
+}
+.codecopy:hover,.codecopy:focus-visible{color:var(--accent);border-color:var(--accent-line)}
+pre:hover .codecopy,.codecopy:focus-visible{opacity:1}
+.codecopy.ok{color:var(--accent-strong);border-color:var(--accent-line);opacity:1}
+@media (pointer:coarse){ .codecopy{opacity:.82} }
+
+/* ---------- 图片灯箱 ---------- */
+#lightbox{
+  position:fixed;inset:0;z-index:30;padding:28px;display:flex;
+  align-items:center;justify-content:center;cursor:zoom-out;
+  background:rgba(10,12,10,.82);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
+}
+#lightbox img{max-width:100%;max-height:100%;border-radius:10px;
+  box-shadow:0 18px 60px rgba(0,0,0,.55);cursor:zoom-out}
+
+/* ---------- 窄屏：tabs 防挤、触控热区、安全区、本页目录底部弹层 ---------- */
+@media (max-width:1000px){
+  .brand{padding-top:calc(17px + env(safe-area-inset-top))}
+  #tabs{
+    height:calc(46px + env(safe-area-inset-top));
+    padding-top:env(safe-area-inset-top);
+  }
+  .grp h3{height:40px}
+  .nav-item{padding-top:9px;padding-bottom:9px}
+  #tocbtn{display:inline-flex}
+  #tocbtn[hidden]{display:none}
+  /* 本页目录在手机上变成底部弹层：桌面端 fixed 右栏的那套全部重置 */
+  #toc{
+    display:block;position:fixed;z-index:10;left:0;right:0;bottom:0;top:auto;width:auto;
+    max-height:74vh;border:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;
+    background:var(--panel);box-shadow:var(--shadow);
+    padding:6px 18px calc(20px + env(safe-area-inset-bottom));
+    transform:translateY(108%);transition:transform .24s cubic-bezier(.22,.61,.36,1);
+    overflow-y:auto;overscroll-behavior:contain;
+  }
+  #toc.sheetopen{transform:none}
+  #toc::before{
+    content:"本页目录";display:block;position:sticky;top:0;z-index:1;
+    background:var(--panel);padding:10px 9px 8px;
+    font-size:10.5px;font-weight:700;letter-spacing:1.5px;color:var(--faint);
+  }
+  #tocclose{
+    display:block;position:absolute;top:8px;right:14px;z-index:2;
+    border:1px solid var(--line);background:var(--panel);color:var(--muted);
+    font:600 11.5px/1 inherit;padding:5px 12px;border-radius:20px;cursor:pointer;
+  }
+  #tocclose:hover{color:var(--accent);border-color:var(--accent-line)}
+  #graph-hint{font-size:10.8px}
+  #legend{font-size:10.8px;padding:7px 10px;max-width:52%}
+}
+@media (min-width:1001px){ #tocclose{display:none} }
+@media (max-width:620px){
+  #tabs{padding-left:10px;padding-right:10px;gap:4px}
+  #tabs button[data-view]{padding:6px 9px}
+  #tabmeta{display:none}
+  .segctl{margin-right:2px}
+  .segctl button{padding:4px 7px;font-size:11px}
 }
 </style>
 </head>
@@ -3362,19 +3609,20 @@ article p{overflow-wrap:break-word}
       <div class="sub">__SITE_SUB__</div>
     </div>
     <div class="searchwrap">
-      <input id="search" placeholder="搜索页面…（空格分词，按 / 聚焦）" autocomplete="off">
-      <button id="searchclear" type="button" title="清空搜索">✕</button>
+      <input id="search" placeholder="搜索页面…（空格分词，按 / 聚焦）" autocomplete="off"
+             aria-label="搜索页面" spellcheck="false">
+      <button id="searchclear" type="button" title="清空搜索" aria-label="清空搜索">✕</button>
     </div>
     <div class="navtools">
       <span class="lbl">目录</span><span class="sp"></span>
       <button id="expandall" type="button">展开全部</button>
       <button id="collapseall" type="button">折叠全部</button>
     </div>
-    <nav id="nav"></nav>
+    <nav id="nav" aria-label="页面目录"></nav>
   </aside>
   <main id="main">
     <div id="tabs">
-      <button id="burger" title="目录">☰</button>
+      <button id="burger" title="页面目录" aria-label="打开页面目录">☰</button>
       <button data-view="browse" class="active">浏览</button>
       <button data-view="graph">图谱</button>
       <span class="spacer"></span>
@@ -3384,6 +3632,26 @@ article p{overflow-wrap:break-word}
         <button data-lg="end">账目置底</button>
       </div>
       <span class="meta" id="tabmeta"></span>
+      <button id="tocbtn" class="icobtn" type="button" title="本页目录" aria-label="打开本页目录" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" aria-hidden="true">
+          <path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.2" cy="6" r="1.2" fill="currentColor" stroke="none"/>
+          <circle cx="4.2" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+          <circle cx="4.2" cy="18" r="1.2" fill="currentColor" stroke="none"/>
+        </svg>
+      </button>
+      <button id="themetoggle" class="icobtn" type="button" title="切换浅色 / 深色"
+              aria-label="切换浅色或深色主题">
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/>
+        </svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 14.5A8 8 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5z"/>
+        </svg>
+      </button>
       <div id="prog"></div>
     </div>
     <div id="view-browse">
@@ -3391,16 +3659,29 @@ article p{overflow-wrap:break-word}
       <div id="backlinks"></div>
     </div>
     <div id="view-graph" hidden>
-      <canvas id="canvas"></canvas>
-      <div id="graph-hint">拖拽节点 · 滚轮缩放 · 点击打开</div>
+      <canvas id="canvas" role="img" aria-label="页面关系图谱：拖动节点，滚轮或双指缩放，单击节点打开页面"></canvas>
+      <div id="graph-hint">拖动节点 · 滚轮 / 双指缩放 · 单击打开</div>
       <div id="legend"></div>
     </div>
   </main>
 </div>
 <div id="mask"></div>
-<nav id="toc"></nav>
+<nav id="toc" aria-label="本页目录"></nav>
+<button id="toTop" type="button" title="回到顶部" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14.5l6-6 6 6"/></svg>
+</button>
+<div id="lightbox" hidden><img alt=""></div>
+<noscript><div class="nsmsg">本知识库站点需要启用 JavaScript 才能浏览。</div></noscript>
+<div id="boot" aria-live="polite">
+  <div class="boot-ring" aria-hidden="true"></div>
+  <div class="boot-name">__SITE_TITLE__</div>
+  <div class="boot-sub">__SITE_SUB__</div>
+</div>
 <script>
+var __bootT0 = performance.now();
 var DATA = __WIKI_DATA__;
+var __dataMs = performance.now() - __bootT0;   /* 7.4MB 内嵌 JSON 的解析耗时，首屏后 console.debug 输出 */
 var TYPECOLOR = {project:"#7c3aed",source:"#0f766e",entity:"#b45309",concept:"#4338ca",analysis:"#be123c",meta:"#6b7280"};
 var TYPELABEL = {project:"项目",source:"素材摘要",entity:"实体",concept:"概念",analysis:"分析",meta:"系统"};
 
@@ -3431,7 +3712,9 @@ function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/
 function inline(s){
   var out = esc(s);
   out = out.replace(/`([^`]+)`/g, function(m,c){ return "<code>"+c+"</code>"; });
-  out = out.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(m,a,u){ return '<img alt="'+a+'" src="'+u+'" style="max-width:100%">'; });
+  out = out.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(m,a,u){
+    return '<img alt="'+a+'" src="'+u+'" loading="lazy" decoding="async">';
+  });
   out = out.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, function(m,slug,text){
     slug = slug.trim(); var label = (text||slug).trim();
     if (BYSLUG[slug]) return '<a class="wl" data-slug="'+slug+'">'+label+'</a>';
@@ -3908,8 +4191,18 @@ function groupOf(el){ return el.closest ? el.closest(".grp") : null; }
 function setAllGroups(collapsed){
   [].forEach.call(nav.querySelectorAll(".grp[data-key]"), function(g){
     g.classList.toggle("collapsed", collapsed);
+    grpAria(g);
   });
   saveState();
+}
+
+/* 组头是可折叠控件：键盘（Enter / Space）与读屏都要能用 —— 同步 role / tabindex / aria-expanded */
+function grpAria(box){
+  var h = box.querySelector("h3");
+  if (!h) return;
+  h.setAttribute("role", "button");
+  h.tabIndex = 0;
+  h.setAttribute("aria-expanded", String(!box.classList.contains("collapsed")));
 }
 
 function mkLink(p){
@@ -3937,6 +4230,7 @@ function mkFreshGroup(key, label, items, markOf, collapsed, tip){
   h.innerHTML = '<span class="gl"><span class="caret">▾</span>' +
                 '<span class="gtxt">' + esc(label) + '</span></span>' +
                 '<span class="n">' + items.length + '</span>';
+  grpAria(g);
   g.appendChild(h);
   var body = document.createElement("div"); body.className = "grpbody";
   if (tip){
@@ -4002,6 +4296,7 @@ function buildNav(){
     h.innerHTML = '<span class="gl"><span class="caret">▾</span>' +
                   '<span class="gtxt">' + esc(TYPELABEL[t] || t) + '</span></span>' +
                   '<span class="n">' + items.length + '</span>';
+    grpAria(g);
     g.appendChild(h);
 
     var body = document.createElement("div"); body.className = "grpbody";
@@ -4034,11 +4329,20 @@ nav.addEventListener("click", function(e){
   var h = e.target.closest ? e.target.closest("h3") : null;
   if (h){
     var box = h.parentNode;
-    if (box.dataset.key){ box.classList.toggle("collapsed"); saveState(); }
+    if (box.dataset.key){ box.classList.toggle("collapsed"); grpAria(box); saveState(); }
     return;
   }
   var a = e.target.closest ? e.target.closest(".nav-item") : null;
   if (a && a.dataset.slug){ e.preventDefault(); go(a.dataset.slug); closeDrawer(); }
+});
+nav.addEventListener("keydown", function(e){
+  if (e.key !== "Enter" && e.key !== " ") return;
+  var h = e.target.closest ? e.target.closest("h3") : null;
+  var box = h && h.parentNode;
+  if (box && box.dataset && box.dataset.key){
+    e.preventDefault();
+    box.classList.toggle("collapsed"); grpAria(box); saveState();
+  }
 });
 
 function markActive(slug){
@@ -4057,7 +4361,7 @@ function revealActive(slug){
     var fi = g.querySelector(".grpfind input");
     if (fi){ fi.value = ""; filterGroup(g, g.querySelector(".grpbody"), ""); }
   }
-  if (g.classList.contains("collapsed")){ g.classList.remove("collapsed"); saveState(); }
+  if (g.classList.contains("collapsed")){ g.classList.remove("collapsed"); grpAria(g); saveState(); }
   try { a.scrollIntoView({ block: "nearest" }); } catch(e){}
 }
 
@@ -4072,13 +4376,18 @@ var vb = document.getElementById("view-browse");
    素材页的目录**分两组**：正文目录 / 账目目录。一页 source 有 5-8 个账目章节，
    平铺会把正文目录冲没 —— 而正文才是来这页要读的东西。 */
 var tocEl = document.getElementById("toc");
+var tocBtn = document.getElementById("tocbtn");
 var tocHs = [], tocRaf = 0, tocLedgerFrom = -1;
 
 function tocScrollTo(h){
   /* 不用 offsetTop：章节被 <section> 包起来之后 offsetParent 变成了 body，
      offsetTop 不再等于「相对滚动容器的距离」。直接用矩形差，跟 DOM 结构解耦。 */
   var lg = h.closest ? h.closest("section.ledger") : null;
-  if (lg && lg.classList.contains("collapsed")) lg.classList.remove("collapsed");
+  if (lg && lg.classList.contains("collapsed")){
+    lg.classList.remove("collapsed");
+    var lh = lg.querySelector("h2");
+    if (lh) lh.setAttribute("aria-expanded", "true");
+  }
   var top = h.getBoundingClientRect().top - vb.getBoundingClientRect().top + vb.scrollTop;
   vb.scrollTo({ top: top - 18, behavior: "smooth" });
 }
@@ -4086,7 +4395,8 @@ function tocScrollTo(h){
 function buildToc(root){
   tocHs = [].slice.call(root.querySelectorAll("h2,h3"));
   tocEl.hidden = tocHs.length < 3;          /* 少于 3 个标题的页不值得挂目录 */
-  if (tocHs.length < 3){ tocEl.innerHTML = ""; return; }
+  tocBtn.hidden = tocHs.length < 3;         /* 移动端的「本页目录」入口同步显隐 */
+  if (tocHs.length < 3){ tocEl.innerHTML = ""; closeTocSheet(); return; }
   tocHs.forEach(function(h, i){ if (!h.id) h.id = "sec-" + i; });
 
   var read = [], ledger = [];
@@ -4098,7 +4408,7 @@ function buildToc(root){
     return '<a class="' + (r.h.tagName === "H3" ? "lv3" : "") + '" href="#" data-i="' + r.i + '">' +
            esc(r.h.textContent) + '</a>';
   };
-  var html = "";
+  var html = '<button id="tocclose" type="button">完成</button>';
   if (read.length) html += read.map(link).join("");
   if (ledger.length){
     html += '<div class="tg-ledger"><span class="tglbl">账目 ' + ledger.length + '</span>' +
@@ -4111,6 +4421,7 @@ function buildToc(root){
       e.preventDefault();
       var h = tocHs[+a.dataset.i];
       if (h) tocScrollTo(h);
+      closeTocSheet();                       /* 手机端点完目录即收起弹层 */
     });
   });
   updateToc();
@@ -4168,6 +4479,9 @@ function applyLedgerMode(){
         });
   }
   markLedgerButtons();
+  [].forEach.call(pageEl.querySelectorAll("section.ledger > h2"), function(h){
+    h.setAttribute("aria-expanded", String(!h.parentNode.classList.contains("collapsed")));
+  });
 }
 
 ledgctl.addEventListener("click", function(e){
@@ -4180,7 +4494,7 @@ ledgctl.addEventListener("click", function(e){
 
 vb.addEventListener("scroll", function(){
   if (tocRaf) return;
-  tocRaf = requestAnimationFrame(function(){ tocRaf = 0; updateToc(); });
+  tocRaf = requestAnimationFrame(function(){ tocRaf = 0; updateToc(); updateChrome(); });
 });
 
 function go(slug){
@@ -4227,6 +4541,7 @@ function go(slug){
   }
   pageEl.className = "ptype-" + p.type;
   pageEl.innerHTML = '<div class="pagemeta">'+chips+'</div>' + renderPage(p) + evFoot;
+  enhanceCode(pageEl);
 
   /* 记下账目章节的原始位置，供「回到原位」使用 */
   [].forEach.call(pageEl.querySelectorAll("section.ledger"), function(s, i){
@@ -4234,10 +4549,20 @@ function go(slug){
   });
   /* 点账目章节头 = 展开 / 收起**这一张**。
      刻意不改 lgMode：模式按钮描述的是「整页怎么排」，单卡点开是临时动作 ——
-     把它写回 localStorage 会让下一张页面莫名其妙地全部展开。 */
+     把它写回 localStorage 会让下一张页面莫名其妙地全部展开。
+     章节头同时是键盘控件（Enter / Space），并向读屏报告展开状态。 */
   [].forEach.call(pageEl.querySelectorAll("section.ledger > h2"), function(h){
+    h.setAttribute("role", "button");
+    h.tabIndex = 0;
+    h.setAttribute("aria-expanded", String(!h.parentNode.classList.contains("collapsed")));
     h.addEventListener("click", function(){
-      h.parentNode.classList.toggle("collapsed");
+      var s = h.parentNode;
+      s.classList.toggle("collapsed");
+      h.setAttribute("aria-expanded", String(!s.classList.contains("collapsed")));
+    });
+    h.addEventListener("keydown", function(e){
+      if (e.key !== "Enter" && e.key !== " ") return;
+      e.preventDefault(); h.click();
     });
   });
   applyLedgerMode();
@@ -4248,7 +4573,11 @@ function go(slug){
     d.addEventListener("toggle", function(){
       if (!d.open || d.dataset.done) return;
       var src = LOG_SEGS[+d.dataset.i];
-      if (src != null) d.querySelector(".logseg-bd").innerHTML = renderMd(src);
+      if (src != null){
+        var bd = d.querySelector(".logseg-bd");
+        bd.innerHTML = renderMd(src);
+        enhanceCode(bd);
+      }
       d.dataset.done = "1";
     });
   });
@@ -4272,11 +4601,19 @@ function go(slug){
     blEl.style.display = "none";
   }
 
-  tabmeta.textContent = p.relpath;
+  /* 顶栏元信息：阅读时长（中文按 450 字/分钟估）在前，文件路径退为 title 提示 */
+  var nChars = p.body.replace(/\s/g, "").length;
+  var mins = Math.max(1, Math.round(nChars / 450));
+  tabmeta.textContent = "约 " + mins + " 分钟 · " + p.relpath;
+  tabmeta.title = p.relpath;
   markActive(slug); revealActive(slug);
   vb.scrollTop = 0;
   buildToc(pageEl);
   document.title = p.title + " · " + DATA.title;
+  /* 换页入场：22ms 的轻抬升，只作用于文章容器；reduced-motion 下动画被全局媒体查询短路 */
+  pageEl.classList.remove("pagein");
+  void pageEl.offsetWidth;
+  pageEl.classList.add("pagein");
 }
 /* ---------------- search ---------------- */
 /* 打分与 `tools/wiki.py search` 同为 BM25。站点侧在此之上做了三处修正，都是 376 页规模逼出来的：
@@ -4288,15 +4625,21 @@ var CJK_TEST = /[\u4e00-\u9fff]/;
 var STOP_RATIO = 0.30;     /* 出现在超过 30% 页面里的词视为噪声词，不参与收敛候选 */
 var META_DEMOTE = 0.55;
 
-/* 一次性预处理：小写文本 + 文档长度 */
-var NDOC = PAGES.length, AVGDL = 0;
-PAGES.forEach(function(p){
-  p._h = (p.title + " " + (p.tags||[]).join(" ") + " " + p.slug).toLowerCase();
-  p._b = p.body.toLowerCase();
-  p._dl = p.body.length;
-  AVGDL += p._dl;
-});
-AVGDL = AVGDL / (NDOC || 1);
+/* 预处理（小写文本 + 文档长度）**懒构建**：478 页 body 全量 toLowerCase 是启动期
+   最重的纯 CPU 步骤之一，而首屏渲染 / 侧栏导航都不需要它 —— 首次搜索时才付，
+   并在搜索框获得焦点后用空闲时间预热，让第一次键入通常直接命中缓存。 */
+var NDOC = PAGES.length, AVGDL = 0, __idxReady = false;
+function ensureIndex(){
+  if (__idxReady) return;
+  PAGES.forEach(function(p){
+    p._h = (p.title + " " + (p.tags||[]).join(" ") + " " + p.slug).toLowerCase();
+    p._b = p.body.toLowerCase();
+    p._dl = p.body.length;
+    AVGDL += p._dl;
+  });
+  AVGDL = AVGDL / (NDOC || 1);
+  __idxReady = true;
+}
 
 var DFCACHE = {};
 function dfOf(t){
@@ -4436,6 +4779,7 @@ function renderHits(cap){
 function runSearch(){
   var raw = searchEl.value.trim().toLowerCase();
   if (!raw){ buildNav(); markActive((location.hash||"#").slice(1)); revealActive((location.hash||"#").slice(1)); return; }
+  ensureIndex();
   lastRaw = raw;
 
   var terms = termsOf(raw).map(function(t){ return { t: t, df: dfOf(t) }; })
@@ -4525,7 +4869,11 @@ document.addEventListener("keydown", function(e){
 var canvas = document.getElementById("canvas");
 var sidebar = document.getElementById("sidebar"), mask = document.getElementById("mask");
 function openDrawer(){ sidebar.classList.add("open"); mask.classList.add("on"); }
-function closeDrawer(){ sidebar.classList.remove("open"); mask.classList.remove("on"); }
+function closeDrawer(){
+  sidebar.classList.remove("open");
+  /* 目录弹层也用同一块遮罩：它还开着时不能把遮罩撤掉 */
+  if (!tocEl.classList.contains("sheetopen")) mask.classList.remove("on");
+}
 document.getElementById("burger").addEventListener("click", function(){
   sidebar.classList.contains("open") ? closeDrawer() : openDrawer();
 });
@@ -4540,6 +4888,7 @@ mask.addEventListener("click", closeDrawer);
     document.getElementById("view-browse").hidden = (v !== "browse");
     document.getElementById("view-graph").hidden = (v !== "graph");
     tocEl.hidden = (v !== "browse") || tocHs.length < 3;   /* 图谱页不该挂着正文目录 */
+    if (v !== "browse") closeTocSheet();
     if (v === "graph") startGraph();
     else closeDrawer();
   });
@@ -4554,6 +4903,14 @@ function startGraph(){
   /* buildGraph 内部以分帧方式算布局，此处不能再调 fitGraph/draw，否则会画到未收敛的坐标 */
   if (!G.built) buildGraph();
   else { fitGraph(); draw(); }
+}
+
+/* 图谱里点节点 = 打开该页，必须同时切回浏览视图 —— 只 go() 会让文章在画布背后渲染，
+   用户停在图谱页，且画布还会截糊后续所有点击（2026-09-30 实测）。鼠标 / 触摸共用。 */
+function openFromGraph(slug){
+  var bb = document.querySelector("#tabs button[data-view='browse']");
+  if (bb && !bb.classList.contains("active")) bb.click();
+  go(slug);
 }
 
 function radius(n){ return 4 + Math.min(9, n.deg * 1.5); }
@@ -4706,13 +5063,31 @@ function fitGraph(){
   G.oy = (H - bh*G.scale)/2 - minY*G.scale;
 }
 
+/* 图谱的中性色（边 / 标签底 / 文字）跟随主题令牌 —— 深色模式下不再是一片刺眼白底。
+   取值缓存：getComputedStyle 每帧都调不便宜；主题切换时显式失效。 */
+var GCOLORS = null;
+function gcolors(){
+  if (!GCOLORS){
+    var cs = getComputedStyle(document.documentElement);
+    GCOLORS = {
+      edge:  (cs.getPropertyValue("--graph-edge")  || "#e2dfd9").trim(),
+      ring:  (cs.getPropertyValue("--graph-ring")  || "#ffffff").trim(),
+      label: (cs.getPropertyValue("--graph-label") || "rgba(255,255,255,.82)").trim(),
+      ink:   (cs.getPropertyValue("--graph-ink")   || "#4b4a46").trim()
+    };
+  }
+  return GCOLORS;
+}
+function clampScale(v){ return Math.max(0.25, Math.min(6, v)); }
+
 function draw(){
   var W = canvas.clientWidth, H = canvas.clientHeight;
+  var gc = gcolors();
   ctx.clearRect(0,0,W,H);
   ctx.save();
   ctx.translate(G.ox, G.oy); ctx.scale(G.scale, G.scale);
   var nodes = G.nodes;
-  ctx.strokeStyle = "#e2dfd9"; ctx.lineWidth = 1;
+  ctx.strokeStyle = gc.edge; ctx.lineWidth = 1;
   G.edges.forEach(function(e){
     var a = nodes[e[0]], b = nodes[e[1]];
     ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
@@ -4721,7 +5096,6 @@ function draw(){
     var r = radius(n);
     ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2);
     ctx.fillStyle = TYPECOLOR[n.type] || "#888"; ctx.fill();
-    if (n.type === "meta"){ ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke(); }
   });
   ctx.font = "11.5px -apple-system,PingFang SC,sans-serif";
   ctx.textAlign = "center";
@@ -4729,25 +5103,26 @@ function draw(){
     if (n.deg < 1 && G.scale < 1.15) return;
     var label = n.title.length > 16 ? n.title.slice(0,15)+"…" : n.title;
     var w = ctx.measureText(label).width;
-    ctx.fillStyle = "rgba(255,255,255,.82)";
+    ctx.fillStyle = gc.label;
     ctx.fillRect(n.x - w/2 - 3, n.y + 9, w + 6, 14);
-    ctx.fillStyle = "#4b4a46";
+    ctx.fillStyle = gc.ink;
     ctx.fillText(label, n.x, n.y + 20);
   });
   ctx.restore();
 }
 
-function pick(ev){
+function pickAt(cx, cy){
   var rect = canvas.getBoundingClientRect();
-  var x = (ev.clientX - rect.left - G.ox) / G.scale;
-  var y = (ev.clientY - rect.top - G.oy) / G.scale;
+  var x = (cx - rect.left - G.ox) / G.scale;
+  var y = (cy - rect.top - G.oy) / G.scale;
   for (var i=G.nodes.length-1;i>=0;i--){
     var n = G.nodes[i];
-    var r = radius(n) + 4;
+    var r = radius(n) + 10;   /* 触摸热区比可见圆大一点，手指才点得中 */
     if ((n.x-x)*(n.x-x) + (n.y-y)*(n.y-y) < r*r) return n;
   }
   return null;
 }
+function pick(ev){ return pickAt(ev.clientX, ev.clientY); }
 
 var downPt = null;
 canvas.addEventListener("mousedown", function(ev){
@@ -4772,7 +5147,7 @@ window.addEventListener("mouseup", function(ev){
   if (G.drag){
     var n = G.drag; G.drag = null;
     var moved = Math.abs(ev.movementX) + Math.abs(ev.movementY);
-    if (moved < 3) go(n.slug);
+    if (moved < 3) openFromGraph(n.slug);
     else { relax(140); draw(); }
   }
   downPt = null; canvas.classList.remove("drag");
@@ -4784,11 +5159,195 @@ canvas.addEventListener("wheel", function(ev){
   var f = ev.deltaY < 0 ? 1.1 : 0.9;
   G.ox = mx - (mx - G.ox) * f;
   G.oy = my - (my - G.oy) * f;
-  G.scale *= f;
+  G.scale = clampScale(G.scale * f);
   draw();
 }, {passive:false});
 
+/* ---------------- 触屏：单指拖节点 / 平移，双指捏合缩放 ----------------
+   mouse 事件在移动端会被浏览器改写成合成事件，但没有滚轮等价物，也分不清
+   「点按」与「拖动」—— 必须单独处理。click 合成在 preventDefault 的 touch
+   序列里不会触发，所以「点节点打开」在 touchend 里自己判定。 */
+var touchState = null;
+function touchDist(ts){
+  var dx = ts[0].clientX - ts[1].clientX, dy = ts[0].clientY - ts[1].clientY;
+  return Math.sqrt(dx*dx + dy*dy) || 1;
+}
+function touchMid(ts){
+  return { x:(ts[0].clientX + ts[1].clientX)/2, y:(ts[0].clientY + ts[1].clientY)/2 };
+}
+canvas.addEventListener("touchstart", function(ev){
+  if (!G.nodes.length) return;
+  ev.preventDefault();
+  if (ev.touches.length === 1){
+    var t = ev.touches[0], n = pickAt(t.clientX, t.clientY);
+    touchState = n
+      ? { kind:"node", n:n, x0:t.clientX, y0:t.clientY, moved:false }
+      : { kind:"pan", x0:t.clientX, y0:t.clientY, ox:G.ox, oy:G.oy, moved:false };
+    canvas.classList.add("drag");
+  } else if (ev.touches.length === 2){
+    touchState = { kind:"pinch", d0:touchDist(ev.touches),
+                   s0:G.scale, ox:G.ox, oy:G.oy, moved:false };
+  }
+}, {passive:false});
+canvas.addEventListener("touchmove", function(ev){
+  if (!touchState) return;
+  ev.preventDefault();
+  var st = touchState, rect = canvas.getBoundingClientRect();
+  if (st.kind === "pinch" && ev.touches.length === 2){
+    var ns = clampScale(st.s0 * touchDist(ev.touches) / st.d0);
+    var m = touchMid(ev.touches), mx = m.x - rect.left, my = m.y - rect.top;
+    var f = ns / st.s0;
+    G.ox = mx - (mx - st.ox) * f;      /* 以手势中点为锚，捏到哪里缩到哪里 */
+    G.oy = my - (my - st.oy) * f;
+    G.scale = ns; st.moved = true; draw();
+  } else if (ev.touches.length === 1){
+    var t2 = ev.touches[0];
+    if (Math.abs(t2.clientX - st.x0) + Math.abs(t2.clientY - st.y0) > 8) st.moved = true;
+    if (st.kind === "node"){
+      st.n.x = (t2.clientX - rect.left - G.ox) / G.scale;
+      st.n.y = (t2.clientY - rect.top - G.oy) / G.scale;
+      draw();
+    } else if (st.kind === "pan"){
+      G.ox = st.ox + (t2.clientX - st.x0);
+      G.oy = st.oy + (t2.clientY - st.y0);
+      draw();
+    }
+  }
+}, {passive:false});
+canvas.addEventListener("touchend", function(ev){
+  if (!touchState) return;
+  ev.preventDefault();
+  var st = touchState;
+  if (ev.touches.length === 0){
+    if (st.kind === "node"){
+      if (!st.moved) openFromGraph(st.n.slug); /* 点按：打开页面（顺带切回浏览视图） */
+      else { relax(140); draw(); }             /* 拖动：松手后让网络重新松弛 */
+    }
+    touchState = null;
+    canvas.classList.remove("drag");
+  } else if (ev.touches.length === 1){
+    /* 双指抬起一指：剩余手指无缝转成平移，不跳位 */
+    var t = ev.touches[0];
+    touchState = { kind:"pan", x0:t.clientX, y0:t.clientY, ox:G.ox, oy:G.oy, moved:st.moved };
+  }
+}, {passive:false});
+canvas.addEventListener("touchcancel", function(){
+  touchState = null; canvas.classList.remove("drag");
+});
+
 window.addEventListener("resize", function(){ if (G.built) { resize(); fitGraph(); draw(); } });
+
+/* ---------------- 代码块：复制按钮 ---------------- */
+/* 只注入按钮，点击走 pageEl 上的一次性委托（go() 每次整树重建，逐块绑监听是浪费）。
+   懒渲染的 log 日块在展开注入后也被同一个委托覆盖。 */
+function enhanceCode(root){
+  [].forEach.call(root.querySelectorAll("pre"), function(pre){
+    if (pre.querySelector(".codecopy")) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "codecopy"; b.textContent = "复制";
+    pre.appendChild(b);
+  });
+}
+function copyTextFallback(text){
+  var ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  var ok = false;
+  try { ok = document.execCommand("copy"); } catch(e){}
+  document.body.removeChild(ta);
+  return ok;
+}
+pageEl.addEventListener("click", function(e){
+  var btn = e.target.closest ? e.target.closest(".codecopy") : null;
+  if (!btn || !pageEl.contains(btn)) return;
+  var code = btn.parentNode.querySelector("code");
+  var text = code ? code.innerText : "";
+  var markDone = function(){
+    btn.textContent = "已复制"; btn.classList.add("ok");
+    setTimeout(function(){ btn.textContent = "复制"; btn.classList.remove("ok"); }, 1500);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(markDone, function(){
+      if (copyTextFallback(text)) markDone();
+    });
+  } else if (copyTextFallback(text)) markDone();
+});
+
+/* ---------------- 图片灯箱 ---------------- */
+var lightbox = document.getElementById("lightbox");
+var lightboxImg = lightbox.querySelector("img");
+function openLightbox(src, alt){
+  lightboxImg.src = src; lightboxImg.alt = alt || "";
+  lightbox.hidden = false;
+}
+function closeLightbox(){
+  lightbox.hidden = true; lightboxImg.src = "";
+}
+pageEl.addEventListener("click", function(e){
+  var img = e.target.closest ? e.target.closest("img") : null;
+  if (img && pageEl.contains(img) && img.src) openLightbox(img.currentSrc || img.src, img.alt);
+});
+lightbox.addEventListener("click", closeLightbox);
+
+/* ---------------- 回顶按钮 ---------------- */
+var toTop = document.getElementById("toTop");
+function updateChrome(){
+  toTop.classList.toggle("on", vb.scrollTop > 480);
+}
+toTop.addEventListener("click", function(){
+  vb.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+/* ---------------- 主题：浅 / 深 ---------------- */
+/* 首帧主题已由 <head> 内联脚本在绘制前定好（无闪烁），这里只负责切换与跟随系统。
+   用户手动选择后写 localStorage，系统主题变化不再覆盖；清除选择才重新跟随。 */
+var THEME_KEY = "llmwiki.theme";
+var themeBtn = document.getElementById("themetoggle");
+function currentTheme(){ return document.documentElement.dataset.theme || "light"; }
+function syncThemeColor(){
+  var c = getComputedStyle(document.documentElement).getPropertyValue("--panel").trim();
+  if (!c) return;
+  [].forEach.call(document.querySelectorAll('meta[name="theme-color"]'), function(m){ m.content = c; });
+}
+function setTheme(t, persist){
+  document.documentElement.dataset.theme = t;
+  if (persist){ try { localStorage.setItem(THEME_KEY, t); } catch(e){} }
+  syncThemeColor();
+  GCOLORS = null;                          /* 图谱配色缓存失效 */
+  if (G.built) draw();
+}
+themeBtn.addEventListener("click", function(){
+  setTheme(currentTheme() === "dark" ? "light" : "dark", true);
+});
+try {
+  var darkMQ = window.matchMedia("(prefers-color-scheme: dark)");
+  var onSchemeChange = function(e){
+    var saved = null;
+    try { saved = localStorage.getItem(THEME_KEY); } catch(err){}
+    if (!saved) setTheme(e.matches ? "dark" : "light", false);
+  };
+  if (darkMQ.addEventListener) darkMQ.addEventListener("change", onSchemeChange);
+  else if (darkMQ.addListener) darkMQ.addListener(onSchemeChange);  /* 旧版 Safari */
+} catch(e){}
+
+/* ---------------- 移动端「本页目录」底部弹层 ---------------- */
+function openTocSheet(){
+  tocEl.classList.add("sheetopen");
+  mask.classList.add("on");
+}
+function closeTocSheet(){
+  tocEl.classList.remove("sheetopen");
+  if (!sidebar.classList.contains("open")) mask.classList.remove("on");
+}
+tocBtn.addEventListener("click", function(){
+  tocEl.classList.contains("sheetopen") ? closeTocSheet() : openTocSheet();
+});
+tocEl.addEventListener("click", function(e){
+  if (e.target.closest && e.target.closest("#tocclose")) closeTocSheet();
+});
 
 /* ---------------- boot ---------------- */
 buildNav();
@@ -4798,6 +5357,35 @@ window.addEventListener("hashchange", function(){ go((location.hash||"#").slice(
 var start = (location.hash||"#").slice(1);
 if (!BYSLUG[start]) start = DATA.startSlug;
 if (start) go(start);
+
+/* Esc：按浮层层级逐个关 —— 灯箱 → 目录弹层 → 侧栏抽屉 */
+document.addEventListener("keydown", function(e){
+  if (e.key !== "Escape") return;
+  if (!lightbox.hidden){ closeLightbox(); return; }
+  if (tocEl.classList.contains("sheetopen")){ closeTocSheet(); return; }
+});
+mask.addEventListener("click", closeTocSheet);
+
+syncThemeColor();
+updateChrome();
+
+/* 撤骨架屏：双 rAF + 60ms，确认首帧（导航 + 正文）已经绘制再淡出，避免白屏闪。 */
+(function hideBoot(){
+  var b = document.getElementById("boot");
+  var done = function(){
+    b.classList.add("done");
+    setTimeout(function(){ if (b.parentNode) b.parentNode.removeChild(b); }, 340);
+  };
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ setTimeout(done, 60); }); });
+})();
+
+/* 搜索索引空闲预热：不阻塞首屏；用户聚焦搜索框时再补一次（直接命中缓存）。 */
+(function warmIndex(){
+  var run = function(){ try { ensureIndex(); } catch(e){} };
+  if ("requestIdleCallback" in window) requestIdleCallback(run, { timeout: 2500 });
+  else setTimeout(run, 600);
+  searchEl.addEventListener("focus", ensureIndex);
+})();
 </script>
 </body>
 </html>

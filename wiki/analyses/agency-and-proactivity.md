@@ -5,8 +5,38 @@ slug: agency-and-proactivity
 tags: [能动性, 主动性, 动机, AI时代, 自我决定理论]
 created: 2026-09-30
 updated: 2026-09-30
-sources: [2026-09-18-steady-state-trap-notes, 2026-09-18-self-determination-theory-notes, 2026-09-19-problem-setting, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-29-exodus-and-wilderness, 2026-09-18-emotion-awareness-notes, 2026-09-19-effectuation-notes]
-related: [agent-vs-tool, steady-state-survival-logic, self-determination-theory, problem-setting, character-skills, cybernetic-learning, wilderness-model, victim-mentality, second-order-volition, effectuation, hard-constraints, cognitive-outsourcing, icap-framework, human-sponge, compensatory-control, stoic-control-dichotomy, internal-friction, self-constraint, taste-terminology, three-selves, peak-performance, emotion-awareness]
+sources:
+  - 2026-09-18-steady-state-trap-notes
+  - 2026-09-18-self-determination-theory-notes
+  - 2026-09-19-problem-setting
+  - 2026-09-18-hidden-potential-notes
+  - 2026-09-18-dankoe-remember-what-you-read
+  - 2026-09-29-exodus-and-wilderness
+  - 2026-09-18-emotion-awareness-notes
+  - 2026-09-19-effectuation-notes
+related:
+  - agent-vs-tool
+  - steady-state-survival-logic
+  - self-determination-theory
+  - problem-setting
+  - character-skills
+  - cybernetic-learning
+  - wilderness-model
+  - victim-mentality
+  - second-order-volition
+  - effectuation
+  - hard-constraints
+  - cognitive-outsourcing
+  - icap-framework
+  - human-sponge
+  - compensatory-control
+  - stoic-control-dichotomy
+  - internal-friction
+  - self-constraint
+  - taste-terminology
+  - three-selves
+  - peak-performance
+  - emotion-awareness
 evidence_tier: crossed-independent
 confidence: low
 status: active
@@ -27,6 +57,15 @@ status: active
 > 本页是**查询归档**（[[schema]] §4 第 4 条）。**所有断言转引自库内页面，未回 `raw/` 重核行号** —— 因此本页**不引入任何新的行号引用**，只引用页面。凡需要行号与原话的场合，请读被引的那一页。
 > 逐节点标注证据性质是硬约束（`AGENTS.md` §3 第 11 条），本页以每节末尾的「证据性质」承担这件事。
 > **`sources` 挂 8 份，`evidence_tier` 因此是 `crossed-independent` —— 但那是字面成立的**：本页多数断言是「这些页面这样写」这类**库内可核验事实**，不依赖这几份素材说了什么。机制同 [[mental-strength]] 页对自己 `evidence_tier` 的说明。
+
+## 关键要点
+
+- **库内的「能动性」不是一个概念，是四个** —— 身份判据 / 结构推论 / 行为维度 / 人的一次裁定。**它们各自能引用到哪一步完全不同，不能互相引用。**
+- **「这个时代更需要能动性」这句话，库内没有任何一份材料直接论证过** —— 库内有三处**间接**落点，把它们连成一条链是本库做的（标 `low`）。
+- **「低能动性如何破局」，库内给出的最锋利的东西不是方法，是三条警告** —— 而三条警告说的是同一件事：**把「你要主动」当处方，会伤到人**。
+- 结论：重要性一侧可给（但靠本库合成）；如何拥有一侧可给（库内有现成操作）；**破局一侧库内给的是警告多于路径**。
+- 证据层薄：全库关于这个主题**没有主题页、没有一手材料**，「低能动性」的机制解释只有一处，且出自通俗讲稿。
+- **「低能动性 ≠ 底层思维」** —— 这是作者明确反对的读法（素材的 AI 加工段把「策略问题，不是阶层问题」这条界整段抹掉了）。
 
 ## 一、检索范围
 

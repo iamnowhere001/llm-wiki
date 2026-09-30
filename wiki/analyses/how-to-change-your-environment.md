@@ -5,8 +5,29 @@ slug: how-to-change-your-environment
 tags: [注意力, 环境设计, 认知负荷, 巅峰表现, 学习方法]
 created: 2026-09-20
 updated: 2026-09-20
-sources: [2026-09-18-extended-mind-notes, 2026-09-18-cognitive-load-theory, 2026-09-19-scarcity-book-en, 2026-09-18-hyperefficient-notes, 2026-09-18-active-cognitive-load-notes, 2026-09-19-state-leverage-notes, 2026-09-20-slow-variables, 2026-09-18-hidden-potential-notes, 2026-09-18-social-capital-structural-holes-notes]
-related: [extended-mind, attention-what-it-is-and-how-to-improve, state-leverage, opportunity-systems, slow-variables, cognitive-load-theory, attention, situated-cognition, cybernetic-learning, rumination, implementation-intentions, mental-accounting]
+sources:
+  - 2026-09-18-extended-mind-notes
+  - 2026-09-18-cognitive-load-theory
+  - 2026-09-19-scarcity-book-en
+  - 2026-09-18-hyperefficient-notes
+  - 2026-09-18-active-cognitive-load-notes
+  - 2026-09-19-state-leverage-notes
+  - 2026-09-20-slow-variables
+  - 2026-09-18-hidden-potential-notes
+  - 2026-09-18-social-capital-structural-holes-notes
+related:
+  - extended-mind
+  - attention-what-it-is-and-how-to-improve
+  - state-leverage
+  - opportunity-systems
+  - slow-variables
+  - cognitive-load-theory
+  - attention
+  - situated-cognition
+  - cybernetic-learning
+  - rumination
+  - implementation-intentions
+  - mental-accounting
 evidence_tier: crossed-independent
 confidence: low
 status: active
@@ -26,6 +47,15 @@ status: active
 > [!note] 本页的引用纪律（自写）
 > 本页是**查询归档**（[[schema]] §4 第 4 条）。**所有断言转引自库内页面，未回 `raw/` 重核行号** —— 因此本页**不引入任何新的行号引用**，只引用页面。凡需要行号的场合，请读被引的那一页。
 > 逐节点标注证据性质是硬约束（`AGENTS.md` §3 第 11 条），本页以第三节表格的「证据性质」列 + 第四节末尾的「哪些属推断」承担这件事。
+
+## 关键要点
+
+- 最靠前的一条**不是技巧，是命题**：[[extended-mind]] 主张认知不发生在颅骨之内 —— 若成立，改环境就是**更换思考的器官**，不是调椅子的高度。
+- 操作层已有一张排好的表：**六层干预阶梯**（清场 / 调档 / 改任务 / 节奏 / 顺序 / 身体优先），**越靠前越不依赖意志力**。
+- **六层里没有任何一层是「靠意志力压制走神」** —— 推论：若一个方案里出现「下次忍住」，它不在本库可支持的范围内。
+- 判据层：不看这一步多辛苦，看它做完之后**世界会不会对下一步更友好** —— 降了生利息，升了交罚息。
+- **尺度上限**：本库能支持的「改环境」只在**微观尺度**（桌面、光、声、时序、顺序）；宏观那几层是制度归因，要动的是场域，不是桌子。
+- **证据层薄**：全库注意力一手研究**零收录**，且本页支撑素材绝大多数同属一个来源族；命题层的唯一支撑是通俗转述，其中两条关键引注已被学界推翻。
 
 ## 一、检索范围（先说清查了什么）
 
