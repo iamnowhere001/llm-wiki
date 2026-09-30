@@ -2,8 +2,8 @@
 title: 索引
 type: meta
 slug: index
-created: 2026-09-29
-updated: 2026-09-29
+created: 2026-09-30
+updated: 2026-09-30
 status: active
 ---
 
@@ -22,7 +22,7 @@ status: active
 > ② `python3 tools/wiki.py search "<关键词>" --top 30` —— 中文检索。宽主题务必调大
 >    `--top`（默认 10 只覆盖窄查询；实测「情绪」的召回 13% → top30 70% → top60 97%）。
 
-页面总数 **469**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **151** 份 / 摘要页 **153** 份 ｜ 最后更新 2026-09-29
+页面总数 **472**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **153** 份 / 摘要页 **155** 份 ｜ 最后更新 2026-09-30
 
 ## 项目 (8)
 
@@ -113,7 +113,7 @@ status: active
 - [[yjengo|YJango（学习类内容创作者）]]
 - [[yuval-harari|尤瓦尔·赫拉利（Yuval Noah Harari）]]
 
-## 概念 (214)
+## 概念 (215)
 
 - [[adaptive-cycle|适应性循环（Adaptive Cycle）：稳定是一种幻觉，它只是一个阶段]]
 - [[adjacent-possible|临近可能（The Adjacent Possible）：先实现一种可能，才能打开新的可能]]
@@ -126,7 +126,7 @@ status: active
 - [[arrows-impossibility-theorem|阿罗不可能定理：三个选项、两个人，就不存在完美的聚合方法]]
 - [[assembly-theory|组装理论（Assembly Theory）：用「最少需要几步」给存在称重量]]
 - [[attachment-theory|依恋理论]]
-- [[attention|注意力（Attention）：五条进路与一处已裁定的维度差]]
+- [[attention|注意力（Attention）：五条进路与一条一手坐标系]]
 - [[autonomy-support|自主支持（Autonomy-Supportive Parenting）]]
 - [[baumols-cost-disease|鲍莫尔成本病]]
 - [[bayesian-prior|贝叶斯先验：判断是主观的，但可以更科学一点]]
@@ -175,6 +175,7 @@ status: active
 - [[exploration-and-generation|探索和生发：把人生的意义设为「创造新的可能性」]]
 - [[explore-exploit-tradeoff|探索与利用的权衡（多臂老虎机 / 吉廷斯指数 / 最优停止）]]
 - [[extended-mind|扩展心智（Extended Mind）]]
+- [[external-internal-attention|外部注意与内部注意（External and Internal Attention）]]
 - [[externality|外部性（Externality）：账本错位与它的三条出路]]
 - [[feedback-loop|反馈回路（Feedback Loop）：强化回路与平衡回路]]
 - [[field-theory|场域理论（field / Doxa / habitus / capital）]]
@@ -354,7 +355,7 @@ status: active
 - [[why-pkm-in-ai-era|为什么在 AI 时代仍然需要个人知识管理系统]]
 - [[why-writing-fails|写不出来的四种病因：一个分类尝试]]
 
-## 素材摘要 (153)
+## 素材摘要 (155)
 
 > 只列 slug —— 摘要与标签见 `wiki/.index/source.md`；按主题找素材用 `wiki.py search`。
 
@@ -508,6 +509,8 @@ status: active
 - [[2026-09-27-mcraven-make-your-bed-speech]]
 - [[2026-09-28-choice-overload-meta-analysis]]
 - [[2026-09-28-weighted-choice-neuroscience]]
+- [[2026-09-29-attention-taxonomy-chun2011]]
+- [[2026-09-29-brain-training-owen2010]]
 - [[2026-09-29-exodus-and-wilderness]]
 - [[2026-09-29-quality-filtering-pretraining]]
 - [[2026-09-29-synthetic-data-pretraining]]

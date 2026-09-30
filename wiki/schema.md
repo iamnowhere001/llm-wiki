@@ -400,6 +400,8 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 10. **写日志**：`python3 tools/wiki.py log ingest "素材标题"`。
 11. **自查**：`python3 tools/wiki.py lint`，确保无 broken link。
 12. **（条件性）构建站点**：只在里程碑时 —— 判据见 §2.1。
+13. **（条件性）README 复核**：动了 `tools/wiki.py` 的子命令（新增 / 删除 / 改名）时跑
+    `python3 tools/wiki.py readme-check` —— 它是**唯一对外**的文档，而它此前长期落后（列 9 个、实际 15 个）。
 
 ### 2.1 构建时机 —— 只在里程碑时
 
@@ -466,6 +468,14 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 6. **改动必须同时做三件事**：`log.md` 记一条；对应 `sources/` 页写明「raw 元数据于 X 日更正，原值 Y，依据 Z」；**扫描并更正所有下游引用**。
 7. **一次只改一个字段**，改完立即 `lint`。
 8. **尽量用等行数替换。** 无法避免时必须重新测量全部区间并按第 6 条同步下游。
+
+> [!note] 核法于 2026-09-29 改过（裁定：**git 驱动 + 历史改动追认为合规**）。
+> 第一版核法用自建指纹基准，并把「新增」与「篡改」合并计数 —— 于是**正常收录**（每天往 `raw/` 加文件）
+> 也让 `lint` 常亮红灯：实测 51 项，其中 37 项是 2026-09-19/20 那批早已 commit 的改动。
+> 一道永远红的门禁在结果上等于没有门禁，在过程上更坏 —— 人会以为有检查。
+> 现在默认走 git：已跟踪被改 / 删 = 违规，未跟踪新增 = 正常收录（只提示）；
+> 指纹基准降级为 `rawcheck --strict` 的可选严格模式，它多出的能力是**发现已提交的篡改**。
+> **严格模式要定期 `--write` 刷新** —— 基准写入之后才新增并提交的文件不在基准里，此后改它只会被报成「新增」。
 
 ### 3.3 全库默认文件绝对行号，页内不再声明坐标系
 
@@ -669,7 +679,14 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 
 ## 5. 体检
 
-人类说「检查一下知识库」时执行。跑 `python3 tools/wiki.py lint` 拿机器可查的部分，再人工补下面这些语义问题：
+**两种触发**：① 人类说「检查一下知识库」时；② **每周一次的定时任务**（2026-09-30 起，落地 09-29 规范层方案 P1-2）。
+
+定时任务只跑机器可查的部分 —— `lint` / `buildcheck` / `proposals` / `overview-stats` / `template-check` /
+`readme-check` / `stats`，结果写成快照 `outputs/体检快照/YYYY-MM-DD.md`（**只记事实、不做裁定**，
+裁定仍在 [[decisions]] 未决事项总表）。它存在的理由与 §2.1「明确地不构建」同一条：
+**「明确地检查过」与「忘了检查」在结果上一样，在过程上不同** —— 快照是后者的唯一证据。
+
+跑 `python3 tools/wiki.py lint` 拿机器可查的部分，再人工补下面这些语义问题：
 
 - **矛盾**：两页对同一事实给出不同说法 → 用 `> [!warning] 矛盾` 块标出，并列双方证据。
 - **过期**：新素材已推翻旧结论 → 旧页标 `status: stale`，并链接到新页。
@@ -690,6 +707,17 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 | 缺口过期的项目（条目是否还成立、已解决的有没有划掉） | 人工 |
 | 没做优先级排序的项目（一条【阻塞】都没标） | 人工：逐条问「这一条真的不挡 `goal` 吗」 |
 
+**提案台账** —— 2026-09-29 新增（[[decisions]] 未决事项总表 **E 表**）。
+**体检必须扫 `outputs/`，不只扫 `wiki/`** —— 09-20 那次盘点只扫了 `wiki/`，
+而三轮优化方案的全部未决项都在 `outputs/` 里，于是台账停摆（见 [[decisions]] D3 的诊断）。
+
+| 检查项 | 谁查 |
+|---|---|
+| 每份 `outputs/*.md` 有 `status`，且在词表内（`提案` / `已裁定` / `已执行` / `已废弃`） | `python3 tools/wiki.py proposals` |
+| 提案状态表（`outputs/README.md`）与 E 表对得上 | 人工：比对 `proposals` 输出与 E 表 |
+| 新提案已登记进 E 表（**没进表的不算提出**） | 人工 |
+| 裁定 / 执行后 `status` 与两个计数已同步 | 人工 |
+
 **机器可查的语义提示** —— `lint` 会打印，但**不计入问题数**：
 
 | 提示 | 该怎么读 |
@@ -697,6 +725,7 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 | **正文链接密度 < 1.5 条/千字** | 长文却几乎不在正文里引用别的页 = **清单式挂靠**（只写进 `related` 字段） |
 | **名义交叉，实质同源** | `evidence_tier: crossed` 在这里不成立 |
 | **未被任何项目引用的知识页** | 要么挂进某个项目，要么考虑是否还值得维护 |
+| **`overview` 证据统计块与实测不一致** | 入口页的数字不该手写 —— 跑 `python3 tools/wiki.py overview-stats --write` 重写 |
 
 **密度阈值 1.5 是实测标定的**：素材页密度中位数曾从 1.68 掉到 1.08（低于 1.5 的占比 40% → 83%），1.5 落在两批之间 —— 它是「能区分已知退化批次」的经验值，**不要随手调**。
 
@@ -765,22 +794,34 @@ python3 tools/wiki.py <command>
   init [path]              在当前/指定目录初始化一个新的知识库
   lint                     健康检查：断链、孤岛、缺 frontmatter、重复 slug、项目层、证据层级、**防臃肿**
   stats                    统计：各类型页面数、链接数、孤立页、项目阶段分布、证据层级分布
+  overview-stats [--write] 重算 overview.md「证据层级现状」的自动块（默认只核是否过期并返回退出码）
   search "<query>" [--top N]  BM25 全文检索（支持中文二字组；默认 10 条，宽主题要调大）
   index                    重建 wiki/index.md（**薄索引**：slug + 标题）与 wiki/.index/ 分片
   build                    生成单文件浏览站点 site/index.html
                            （同时写 site/.build-manifest.json —— 判据 3 的基准）
   buildcheck               对比构建基准，报「新建 / 更新 / 已删除」页数并给判定
-  rawcheck [--write]       对比 raw/ 内容指纹基准（--write 建立 / 更新）—— 核「raw/ 不可变」这条铁律
+  rawcheck [--strict] [--write]  核「raw/ 不可变」这条铁律（AGENTS.md §3.1）
+                           默认**走 git**：已跟踪文件被改 / 删 = 违规；未跟踪新增 = 正常收录（只提示）
+                           --strict 额外对比内容指纹基准，能发现**已提交**的篡改
+                           --write 建立 / 更新严格模式基准
   claim <scope>            取写锁（并发会话保护；取不到即中止，见 AGENTS.md §3）
   release [--force]        释放写锁
   chapter-audit [-v]       source 页正文区 / 账目区对账
   template-check           模板体检：内联一致性 / 结构合规 / 两个规范名（收尾节、关系节）
+  readme-check             README 体检：README 提到的子命令必须真实存在，且 CLI 每个子命令都要写进 README
+  proposals                提案台账：汇总 outputs/*.md 的 frontmatter status（提案 / 已裁定 / 已执行 / 已废弃）
   log <type> "<message>"   追加一条日志
   new <type> <slug>        按模板新建页面（project / source / entity / concept / analysis）
   graph                    打印链接关系（便于发现枢纽页与孤岛）
 ```
 
 **零依赖**：只用 Python 标准库，不需要 pip install。
+
+**`tools/` 的分工**（2026-09-30 归档后）：在用的是 `wiki.py`（工具链本体）、`tags_vocab.py`（`lint` 的标签移除集）、
+`_sync_inline_templates.py`（模板 ↔ 内联同步）；`seed_evidence_tier.py` 是 `evidence_tier` 的**写入方式**（§1.2），
+`lint` 的补救提示也指向它，**保留原位**。**建库期的一次性脚本已移入 `tools/archive/`**
+（`_backfill_batch_{a,b,c}.py` / `_sync_related.py`，用 `git mv` 保留历史）——
+判据与 2026-09-29 删 `SERIES` / `sort_key()` 同一套：**全仓搜证无调用点**。
 
 > [!note] 「页面总数」有两个口径
 > `lint` / `build` **含** meta 页，`index` **不含**。判断 index 是否过期要**比 `wiki/` 文件数与 index 条目数**，不要比这两个数。

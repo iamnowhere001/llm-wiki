@@ -80,6 +80,7 @@ llm-wiki/
 │   ├── concepts/          #   概念页
 │   └── analyses/          #   分析页
 ├── tools/wiki.py          # 零依赖工具链
+├── tools/archive/         # 建库期的一次性脚本（保留可追溯）
 ├── templates/             # 页面模板
 └── site/index.html        # 生成的浏览站点
 ```
@@ -88,21 +89,31 @@ llm-wiki/
 
 ## 工具链
 
-只依赖 Python 标准库，**不需要 pip install**。
+只依赖 Python 标准库，**不需要 pip install**。跑 `python3 tools/wiki.py` 不带参数也会打印下面这份用法。
 
 ```bash
-python3 tools/wiki.py <command>
-
-  init [path]              初始化一个新的知识库
-  lint                     健康检查：断链、孤岛、缺 frontmatter、未收录素材、项目层、证据层级
-  stats                    统计：页面数、链接数、枢纽页、项目阶段分布、证据层级分布
-  search "<query>"         BM25 全文检索（中文按二字组切分）
-  index                    从各页 frontmatter 重建 wiki/index.md
-  build                    生成单文件浏览站点 site/index.html
-  log <type> "<message>"   追加一条日志
-  new <type> <slug>        按模板新建页面（project / source / entity / concept / analysis）
-  graph                    打印链接关系
+python3 tools/wiki.py init [path]          # 初始化一个新的知识库
+python3 tools/wiki.py lint                 # 健康检查：断链、孤岛、缺 frontmatter、未收录素材、项目层、证据层级
+python3 tools/wiki.py stats                # 统计：各类型页面数、链接数、孤立页、项目阶段、证据层级分布
+python3 tools/wiki.py overview-stats [--write]  # 重算 overview.md 的证据统计块（默认只核是否过期）
+python3 tools/wiki.py search "<query>"     # BM25 全文检索（中文按二字组切分）
+python3 tools/wiki.py index                # 重建 wiki/index.md（薄索引）与分片
+python3 tools/wiki.py build                # 生成单文件浏览站点 site/index.html
+python3 tools/wiki.py buildcheck           # 对比构建基准，判断要不要重建站点
+python3 tools/wiki.py rawcheck             # 核「raw/ 不可变」这条铁律（默认走 git；--strict 连已提交的篡改也核）
+python3 tools/wiki.py claim <scope>        # 取写锁（并发会话保护）
+python3 tools/wiki.py release              # 释放写锁
+python3 tools/wiki.py chapter-audit        # source 页「正文 / 账目」分布审计
+python3 tools/wiki.py template-check       # 模板体检：内联一致性 / 结构合规 / 两个规范名
+python3 tools/wiki.py readme-check         # README 体检：本文件提到的子命令必须真实存在
+python3 tools/wiki.py proposals            # 提案台账：汇总 outputs/*.md 的 status 与未执行 / 未裁定项数
+python3 tools/wiki.py log <type> "<msg>"   # 追加一条日志
+python3 tools/wiki.py new <type> <slug>    # 按模板新建页面（project / source / entity / concept / analysis）
+python3 tools/wiki.py graph                # 打印链接关系
 ```
+
+> 这份清单由 `readme-check` 双向看守：**提到的命令必须真实存在，CLI 的每个命令也必须写在这里** ——
+> 所以它不会再悄悄落后（2026-09-29 之前它列 9 个、实际 15 个，且没有任何检查覆盖文档）。
 
 ---
 
@@ -186,15 +197,18 @@ stage: active                            # planning | active | paused | shipped 
 
 ## 当前内容
 
-已收录 **11 份素材**，编译为 **46 个页面**（约 470 条交叉链接）：
+**这里不写数字。** 它随每次收录变化，写死必然过期 —— 本段曾长期写着「11 份素材 / 46 个页面」，
+而当时实际是 153 份 / 478 页，差约 10 倍，且没有任何检查会报出来。要看现状就跑：
 
-- **项目**：LLM Wiki 模式研究（研究模式本身，讲「为什么」）、用 TraeCode 构建 PKMS 的文章（面向知识工作者的公众号文章，讲「怎么做」）
-- **素材**：Karpathy 的 LLM Wiki Gist、second-brain-skill README、Dan Koe 的学习方法论长文、Vannevar Bush《As We May Think》(1945)、Appleton 的双向链接史、Berners-Lee 的链接拓扑设计笔记 (c.1999)、Frand & Hixon 的 PKM 首发文献 (1998)、卢曼卡片盒二手整理、TraeCode 官方规则文档、TRAE 社区关于 AGENTS.md 与 rules 的讨论帖
-- **概念**：LLM Wiki 模式、三层架构、三个操作、索引与日志、复利式知识积累、Wiki 体检、适用场景、纯文本与 Git、控制论式学习、共同笔记簿、双向链接、卡片盒、AGENTS.md
-- **实体**：Andrej Karpathy、Dan Koe、Vannevar Bush、Ted Nelson、Niklas Luhmann、Tim Berners-Lee、Obsidian、Roam Research、qmd、NotebookLM、Eden、TraeCode
-- **分析**：RAG vs Wiki、second-brain-skill 评估、共同笔记簿 vs LLM Wiki、PKM 的历史与演进 (1945–2026)、为什么在 AI 时代仍然需要 PKMS
+```bash
+python3 tools/wiki.py stats      # 页面数、链接数、各类型分布、证据层级分布
+```
 
-入口：`wiki/index.md`（或直接读 `wiki/projects/` 下项目页的缺口表）
+入口有三个：
+
+- **`wiki/index.md`** —— 薄索引（slug + 标题），按类型分区，定位候选页用这个
+- **`wiki/overview.md`** —— 总览：这个知识库在讲什么
+- **`wiki/projects/`** —— 项目页与缺口表；**收录素材前先读这里**（填不上任何缺口的素材，现在还不该收）
 
 ## 版本控制
 
