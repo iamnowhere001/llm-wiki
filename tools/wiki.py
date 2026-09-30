@@ -8,16 +8,23 @@ wiki.py -- LLM Wiki 零依赖工具链
   python3 tools/wiki.py init [path]        初始化一个新的知识库
   python3 tools/wiki.py lint               健康检查：断链、孤岛、缺 frontmatter
   python3 tools/wiki.py stats              统计页面数、链接数、枢纽页
+  python3 tools/wiki.py overview-stats [--write]
+                                           重算 overview.md「证据层级现状」的自动块
+                                           （默认只核是否过期并返回退出码；--write 重写）
+                                           lint 已接入同一份逻辑（过期时给提示）
   python3 tools/wiki.py search "<query>"   BM25 全文检索（支持中文二字组）
   python3 tools/wiki.py index              从 frontmatter 重建 wiki/index.md
   python3 tools/wiki.py build              生成单文件浏览站点 site/index.html
                                            （同时写 site/.build-manifest.json 作为构建基准）
   python3 tools/wiki.py buildcheck         对比构建基准，报「新建 / 更新」页数
                                            （供 schema §2.1 判据 3 判断要不要构建）
-  python3 tools/wiki.py rawcheck [--write [--force]]
-                                           对比 raw/ 内容指纹基准（--write 建立 / 更新基准；
-                                           --force 跳过 git 状态前置检查）
-                                           核「raw/ 不可变」这条铁律；lint 已接入同一份逻辑
+  python3 tools/wiki.py rawcheck [--strict] [--write [--force]]
+                                           核「raw/ 不可变」这条铁律（AGENTS.md §3.1）；
+                                           lint 已接入同一份逻辑
+                                           默认走 git：已跟踪文件被改 / 删 = 违规，
+                                           未跟踪新增 = 正常收录（只提示，不计问题）
+                                           --strict 额外对比内容指纹基准，可发现**已提交**的篡改
+                                           --write 建立 / 更新严格模式基准（--force 跳过 git 前置检查）
   python3 tools/wiki.py claim <scope>      取写锁（并发会话保护，见 AGENTS.md §3）
   python3 tools/wiki.py release [--force]  释放写锁
   python3 tools/wiki.py chapter-audit [-v] source 页的「正文 / 账目」分布审计（只读）
@@ -28,6 +35,12 @@ wiki.py -- LLM Wiki 零依赖工具链
                                            ② 5 个模板结构合规（字段 / 无未替换占位符）
                                            ③ 两个规范名被遵守（收尾节、关系节）
                                            （只读，有问题返回非零）
+  python3 tools/wiki.py readme-check       README 体检：README 提到的子命令必须真实存在，
+                                           且 CLI 的每个子命令都必须写进 README
+                                           （只读，有问题返回非零）
+  python3 tools/wiki.py proposals          提案台账：汇总 outputs/*.md 的 frontmatter status
+                                           （提案 / 已裁定 / 已执行 / 已废弃）与未执行 / 未裁定项数
+                                           （只读，有缺 status 或越出词表时返回非零）
   python3 tools/wiki.py graph              打印链接关系
 """
 
@@ -566,13 +579,26 @@ def gap_table_rows(body):
 # frontmatter 并删除 311 个图片，是人事后翻 git log 发现的，不是机制拦下的。
 # **规则写了、核不出来，就等于不存在。**
 #
-# 所以补上核法：把 raw/ 全部文件的内容指纹写成一份基准，照 buildcheck 的做法 ——
-# **基准由产物自己写下来，不指望 git**。git 能告诉你 raw 变了，但告诉不了你
-# 「这次改动是否经过裁定」（自动 commit 之后，改动与裁定一起进了历史）。
-# 基准放 .workbuddy-ai/（工具状态目录，已 gitignore），不进 raw/ 也不进 wiki/。
+# 2026-09-21 第一版核法用的是**自建内容指纹基准**（下面的 --write / --strict 仍保留它），
+# 理由是「git 告诉你 raw 变了，但告诉不了你这次改动是否经过裁定」。这个理由成立，
+# 但它有一个当时没料到的后果 —— **基准必然漂移**：
+#   ① 基准放 .workbuddy-ai/，而该目录已 gitignore → 不进版本控制、换机器不可复现；
+#   ② 更新基准被 §3.2 归为「须人类裁定」，而**收录本身每天都在往 raw/ 加文件**；
+#   ③ 于是基准必然落后，`lint` 必然常亮红灯。
+# 实测（2026-09-29）：lint 退出码 51，51 项**全部**是 raw 漂移 —— 37 项「内容已改动」
+# 是 2026-09-19/20 那批早已 commit 的历史改动，14 项「新增」是正常收录。
+# 本库为此发明了说法：「判据是『无新增』」（见 log）。**那等于把机器判据换成了人工记忆** ——
+# 一道永远红的门禁，和没有门禁在结果上一样，在过程上更坏：人会以为有检查。
 #
-# **没有基准时返回「无法判断」并计为问题**，不是「不命中」—— 同 buildcheck：
-# 测不了 ≠ 没问题。两者在结果上一样，在过程上完全不同。
+# 2026-09-29 改法（裁定：git 驱动 + 历史改动追认为合规）：
+#   **默认走 git** —— 「已跟踪文件被改 / 删」是违规，「未跟踪新增」是正常收录（只提示）。
+#   git 就是 raw/ 不可变的权威记录，不需要第二份基准去复述它，也就不会漂移。
+#   原来的指纹基准降级为**可选严格模式**（`--strict` + `--write`），
+#   它多出来的能力是「发现**已提交**的篡改」（git 工作区干净时也报）。
+#   **严格模式的已知盲区**：基准写入之后才新增并提交的文件不在基准里，
+#   此后改动它只会被报成「新增」而不是「违规」—— 所以严格模式要定期 `--write` 刷新。
+#
+# 判据同 buildcheck：**测不了 ≠ 没问题**。git 不可用时返回「无法判断」并计为问题。
 
 RAW_MANIFEST_REL = os.path.join(".workbuddy-ai", "raw-manifest.json")
 
@@ -633,80 +659,129 @@ def raw_diff(root):
     return "ok", [], [], []
 
 
-def raw_git_dirty(root):
-    """raw/ 下未提交改动的条数；**无法判断时返回 None**（无 git / 不在仓库 / git 报错）。
+def raw_git_state(root):
+    """git 视角下 raw/ 的状态。返回 (violations, additions)，无法判断时返回 None。
 
-    为什么建基准前要核这个：基准是**把此刻的现状写成「正确」**。
-    若建基准时 raw/ 已有未提交改动，那些改动就被静默固化成基准的一部分，
-    从此 rawcheck 对它们永久失明 —— 2026-09-21 实测踩到过：46 处 author 字段改动
-    （11:15）早于基准（12:03），rawcheck 报「与基准一致」。
-    这不是「基准不可靠」，是**建基准这个动作需要一个准入检查**。
+    violations —— 已跟踪文件被改 / 删 / 重命名 → **违反铁律**
+    additions  —— 未跟踪的新文件           → **正常收录**，只提示，不计问题
+
+    这条分界就是本次改法的全部要点：收录的定义动作是往 raw/ 加文件，
+    把新增也算成违规，等于让门禁在正常工作日永远亮红。
     """
     try:
         out = subprocess.run(
-            ["git", "status", "--porcelain", "--", "raw"],
-            cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            timeout=20,
+            ["git", "status", "--porcelain", "--untracked-files=all", "--", "raw"],
+            cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=20,
         )
     except (OSError, subprocess.SubprocessError):
         return None
     if out.returncode != 0:
         return None
-    return len([l for l in out.stdout.decode("utf-8", "replace").split("\n") if l.strip()])
+    violations, additions = [], []
+    for line in out.stdout.decode("utf-8", "replace").split("\n"):
+        if not line.strip():
+            continue
+        code, rel = line[:2], line[3:].strip().strip('"')
+        if code == "??":
+            additions.append(rel)
+        else:
+            violations.append("%s  (%s)" % (rel, code.strip()))
+    return violations, additions
 
 
-def cmd_rawcheck(root, write=False, force=False):
-    cur = scan_raw(root)
+def _dedupe(seq):
+    seen, out = set(), []
+    for s in seq:
+        if s not in seen:
+            seen.add(s)
+            out.append(s)
+    return out
+
+
+def cmd_rawcheck(root, write=False, force=False, strict=False):
     path = raw_manifest_path(root)
     if write:
-        dirty = raw_git_dirty(root)
-        if dirty is None:
+        # 写「严格模式基准」。默认核法走 git、不读它，只有 --strict 才读。
+        cur = scan_raw(root)
+        state = raw_git_state(root)
+        if state is None:
             print("⚠️  无法核 git 状态（没装 git / 不在仓库内）—— 无法确认 raw/ 当前是否含未提交改动。")
             print("    建基准会把此刻的现状固化成「正确」，而这一步核不出来。")
             if not force:
                 print("    确认无误后加 --force 建基准。")
                 return 1
-        elif dirty:
-            print("⚠️  raw/ 下有 %d 处未提交改动 —— 建基准会把它们固化成「正确」。" % dirty)
-            print("    若这批改动**已经过人类裁定**，先 commit 再建基准（这样 git 历史与基准一致）。")
-            if not force:
-                print("    若确实要按现状建基准，加 --force。")
-                return 1
-            print("    --force：仍按现状建基准。")
+        else:
+            g_viol, g_add = state
+            if g_viol:
+                print("⚠️  raw/ 下有 %d 处**已跟踪文件**的未提交改动 —— 建基准会把它们固化成「正确」。"
+                      % len(g_viol))
+                print("    若这批改动**已经过人类裁定**，先 commit 再建基准（这样 git 历史与基准一致）。")
+                if not force:
+                    print("    若确实要按现状建基准，加 --force。")
+                    return 1
+                print("    --force：仍按现状建基准。")
+            elif g_add:
+                print("  raw/ 下有 %d 个未跟踪新增文件，将一并写入基准 —— 这是正常收录，无风险。"
+                      % len(g_add))
         payload = {
             "generated": date.today().isoformat(),
-            "note": "raw/ 内容指纹基准。改动 raw/ 后必须重写本基准，"
-                    "且改动须经人类裁定（AGENTS.md §3.2）。",
+            "note": "raw/ 内容指纹基准，供 rawcheck --strict 使用"
+                    "（默认核法走 git，不读本文件）。刷新它的时机：裁定通过一批 raw 改动之后。",
             "files": cur,
         }
         write_text(path, json.dumps(payload, ensure_ascii=False,
                                     indent=1, sort_keys=True) + "\n")
-        print("已写入 raw 基准：%s（%d 个文件）"
+        print("已写入 raw 严格模式基准：%s（%d 个文件）"
               % (os.path.relpath(path, root), len(cur)))
+        print("  默认核法不读它；要启用严格模式跑 `wiki.py rawcheck --strict`。")
         return 0
 
-    status, added, changed, removed = raw_diff(root)
-    if status == "nobase":
-        print("raw/ 完整性：**无基准，无法判断**（%s 不存在）"
-              % os.path.relpath(path, root))
-        print("  确认 raw/ 当前状态无误后，跑 `python3 tools/wiki.py rawcheck --write` 建立基准。")
+    state = raw_git_state(root)
+    if state is None:
+        print("raw/ 完整性：**无法判断**（没装 git / 不在仓库内）")
+        print("  铁律「raw/ 不可变」的默认核法走 git，git 不可用就核不出来。")
         print("  「无法判断」不等于「没有改动」—— 测不了按非零处理。")
         return 1
-    if status == "ok":
-        print("raw/ 完整性：无改动（%d 个文件，与基准一致）" % len(cur))
+    g_violations, g_additions = state
+
+    m_violations, m_additions = [], []
+    if strict:
+        status, added, changed, removed = raw_diff(root)
+        if status == "nobase":
+            print("raw/ 完整性：**严格模式无基准，无法判断**（%s 不存在）"
+                  % os.path.relpath(path, root))
+            print("  先跑 `python3 tools/wiki.py rawcheck --write` 建立基准。")
+            print("  「无法判断」不等于「没有改动」—— 测不了按非零处理。")
+            return 1
+        if status == "drift":
+            m_violations = (["%s  内容已改动（基准）" % k for k in changed]
+                            + ["%s  已删除（基准）" % k for k in removed])
+            m_additions = ["%s  新增（基准）" % k for k in added]
+
+    violations = _dedupe(g_violations + m_violations)
+    additions = _dedupe(g_additions + m_additions)
+
+    if violations:
+        print("raw/ 已被改动  ——  铁律：raw/ 不可变（AGENTS.md §3.1）")
+        for k in violations:
+            print("  ! %s" % k)
+        print("")
+        print("  改动须经人类裁定（§3.2 的 8 条准入条件，作用域是 frontmatter 元数据，"
+              "不含删除素材文件）；")
+        print("  裁定通过后 commit；若开着严格模式，再跑 `rawcheck --write` 刷新基准。")
+        return 1
+
+    total = len(scan_raw(root))
+    if additions:
+        print("raw/ 完整性：无违规（%d 个文件，git 无已跟踪改动）" % total)
+        print("  另有 %d 个新增文件尚未提交 —— 这是**正常收录**，不是违规：" % len(additions))
+        for k in additions:
+            print("  + %s" % k)
+        print("  收录收尾时 commit 即可；要连**已提交**的篡改一起核，用 `rawcheck --strict`。")
         return 0
-    print("raw/ 已被改动  ——  铁律：raw/ 不可变（AGENTS.md §3.1）")
-    for k in changed:
-        print("  ~ %s  内容已改动" % k)
-    for k in added:
-        print("  + %s  新增" % k)
-    for k in removed:
-        print("  - %s  已删除" % k)
-    print("")
-    print("  改动须经人类裁定（§3.2 的 8 条准入条件，作用域是 frontmatter 元数据，"
-          "不含删除素材文件）；")
-    print("  裁定通过后跑 `python3 tools/wiki.py rawcheck --write` 更新基准。")
-    return 1
+
+    print("raw/ 完整性：无改动（git 工作区干净，%d 个文件）" % total)
+    return 0
 
 
 # ---------------------------------------------------------------- 并发写锁
@@ -1167,6 +1242,23 @@ def cmd_lint(root):
               + ("存量豁免 %d 页。" % exempt_tone if exempt_tone else ""))
     print("-" * 62)
 
+    # overview 证据统计块是否过期 —— 与 README 去硬编码同一条原则：入口页的数字不该手写。
+    # 这里只提示，不计入问题数（同 §6.1 的三项）。
+    ov_path = os.path.join(root, "wiki", "overview.md")
+    if os.path.isfile(ov_path):
+        with open(ov_path, "r", encoding="utf-8") as fh:
+            ov_text = fh.read()
+        span = _overview_span(ov_text)
+        if span is None:
+            ov_stale = True
+        else:
+            head_end, tail_start = span
+            ov_stale = ov_text[head_end:tail_start].strip("\n") != \
+                "\n".join(evidence_stats_lines(root))
+        if ov_stale:
+            print("\noverview 证据统计块与实测不一致  (1)  —— 提示，不计入问题数")
+            print("  - 入口页的数字不该手写；跑 `python3 tools/wiki.py overview-stats --write` 重写")
+
     # ---- 项目层检查 ----
     projects = [p for p in pages if p.type == "project"]
     knowledge = [p for p in pages
@@ -1297,19 +1389,26 @@ def cmd_lint(root):
         pending.append(r)
     section("raw/ 中尚未收录的素材", pending)
 
-    # ---- raw/ 完整性（2026-09-21 新增）----
-    # 见上方「raw 完整性」一节。这里是它的 lint 接入点：raw 被改动是**问题**，不是提示 ——
-    # 它违反的是本库第一条硬约束，而此前没有任何检查覆盖它。
-    r_status, r_added, r_changed, r_removed = raw_diff(root)
-    if r_status == "nobase":
-        section("raw/ 完整性无法判断（缺基准）",
-                ["%s 不存在 —— 跑 `wiki.py rawcheck --write` 建立基准后才有核法；"
-                 "「无法判断」不等于「没有改动」" % RAW_MANIFEST_REL])
-    elif r_status == "drift":
-        r_items = (["%s  内容已改动" % k for k in r_changed]
-                   + ["%s  新增" % k for k in r_added]
-                   + ["%s  已删除" % k for k in r_removed])
-        section("raw/ 已被改动（铁律：raw/ 不可变，见 AGENTS.md §3.1）", r_items)
+    # ---- raw/ 完整性（2026-09-21 新增；2026-09-29 改为 git 驱动）----
+    # 见上方「raw 完整性」一节。判据分两档，这是本次改法的要点：
+    #   违规 —— 已跟踪文件被改 / 删 → **计为问题**（违反第一条硬约束）
+    #   提示 —— 未跟踪新增文件     → **只打印，不计问题**（这是正常收录）
+    # 2026-09-21 到 09-29 之间，两档被合并计数，于是门禁在正常工作日永远亮红，
+    # 而「永远红」在结果上等于没有门禁（详见上方注释）。
+    r_state = raw_git_state(root)
+    if r_state is None:
+        section("raw/ 完整性无法判断（git 不可用）",
+                ["没装 git / 不在仓库内 —— 铁律「raw/ 不可变」的默认核法走 git；"
+                 "「无法判断」不等于「没有改动」"])
+    else:
+        r_viol, r_add = r_state
+        section("raw/ 已被改动（铁律：raw/ 不可变，见 AGENTS.md §3.1）",
+                ["%s  —— 已跟踪文件被改动 / 删除，须经人类裁定（§3.2）" % k
+                 for k in r_viol])
+        if r_add:
+            print("\nraw/ 新增待收录文件  (%d)  —— 正常收录，不是违规" % len(r_add))
+            for k in r_add:
+                print("  + " + k)
 
     stale = [p.relpath for p in pages if p.status in ("stale", "deprecated")]
     if stale:
@@ -1400,6 +1499,112 @@ def cmd_stats(root):
     print("\n枢纽页 Top 5:")
     for slug, n in inbound.most_common(5):
         print("  - %-34s %d" % (slug, n))
+    return 0
+
+
+# ---------------------------------------------------------------- overview 证据块
+
+# overview.md 的「证据层级现状」用一对标记圈出自动生成的部分。
+# 用 HTML 注释做标记：站点侧由浏览器自动隐藏，页面上不可见（模板里的建页提示同此）。
+STATS_BEGIN = "<!-- STATS:BEGIN"
+STATS_END = "<!-- STATS:END -->"
+
+
+def evidence_stats_lines(root):
+    """生成 overview「证据层级现状」的自动块。数字全部来自实测，无手写常量。"""
+    pages = load_pages(root)
+    raw_meta = load_raw_meta(root)
+    tiers = Counter()
+    for p in pages:
+        if p.type not in EVIDENCE_TYPES:
+            continue
+        t, _n, _fams = compute_evidence_tier(p, raw_meta)
+        if t == "none":
+            continue
+        tiers[t] += 1
+    total = sum(tiers.values())
+    if not total:
+        return ["（暂无知识页）"]
+    prim = tiers.get("primary", 0)
+    ci = tiers.get("crossed-independent", 0)
+    cs = tiers.get("crossed-same-family", 0)
+    single = tiers.get("single", 0)
+
+    def pct(n):
+        return 100.0 * n / total
+
+    fams = Counter()
+    for slug, rec in raw_meta.items():
+        fams[source_family(rec.get("author"), rec.get("kind"), slug)] += 1
+    n_raw = len(raw_meta)
+    top_n = fams.most_common(1)[0][1] if fams else 0
+
+    lines = [
+        "知识页（概念 / 实体 / 分析）共 **%d** 个，按 `evidence_tier`（定义见 [[schema]] §1.2）：" % total,
+        "",
+        "| 层级 | 数量 | 占比 | 意味着 |",
+        "|---|---|---|---|",
+        "| `primary` | %d | %.0f%% | 有可独立核验的一手论文 |" % (prim, pct(prim)),
+        "| `crossed-independent` | %d | %.0f%% | ≥2 份素材、**跨来源族**（真交叉） |" % (ci, pct(ci)),
+        "| `crossed-same-family` | %d | %.0f%% | ≥2 份素材、但**同属一个来源族**（名义交叉、实质同源） |" % (cs, pct(cs)),
+        "| `single` | %d | %.0f%% | **孤证**，只有一份来源 |" % (single, pct(single)),
+        "",
+    ]
+    if n_raw:
+        lines += [
+            "`raw/` 素材 **%d** 份，其中 **%d** 份归入同一个来源族（占比 **%.0f%%**）。"
+            % (n_raw, top_n, 100.0 * top_n / n_raw),
+            "",
+        ]
+    lines += [
+        "挤掉同源水分后的真实构成：",
+        "",
+        "- **孤证**：%d 页（%.0f%%）" % (single, pct(single)),
+        "- **名义交叉、实质同源**：%d 页（%.0f%%）" % (cs, pct(cs)),
+        "- **真交叉**：%d 页（%.0f%%）" % (ci, pct(ci)),
+        "- **有一手文献**：%d 页（%.0f%%）" % (prim, pct(prim)),
+        "",
+        "也就是说：**%.0f%% 的知识页要么只有一份来源，要么所谓的多份来源其实是同一处；"
+        "真正经得起独立佐证的只有 %.0f%%。**" % (pct(single + cs), pct(ci + prim)),
+    ]
+    return lines
+
+
+def _overview_span(text):
+    """返回 (标记首行末, 结束标记起) 的字符偏移；找不到返回 None。"""
+    i = text.find(STATS_BEGIN)
+    j = text.find(STATS_END)
+    if i < 0 or j < i:
+        return None
+    return text.index("\n", i) + 1, j
+
+
+def cmd_overview_stats(root, write=False):
+    path = os.path.join(root, "wiki", "overview.md")
+    if not os.path.isfile(path):
+        print("overview 统计块: wiki/overview.md 不存在。")
+        return 1
+    with open(path, "r", encoding="utf-8") as fh:
+        text = fh.read()
+    span = _overview_span(text)
+    if span is None:
+        print("overview 统计块: 未找到标记 %s … %s（overview.md 缺自动块）。" % (STATS_BEGIN, STATS_END))
+        return 1
+    head_end, tail_start = span
+    block = "\n".join(evidence_stats_lines(root))
+    new = text[:head_end] + block + "\n" + text[tail_start:]
+    if write:
+        if new == text:
+            print("overview 统计块: 已是最新，无需重写。")
+            return 0
+        write_text(path, new)
+        print("overview 统计块: 已重写 %s" % path)
+        return 0
+    if new != text:
+        print("overview 统计块: **已过期** —— 与实测不一致。"
+              "跑 `python3 tools/wiki.py overview-stats --write` 重写。")
+        return 1
+    print("overview 统计块: 与实测一致。")
     return 0
 
 
@@ -1816,6 +2021,124 @@ def cmd_template_check(root):
         return 1
 
     print("\n模板体检: 0 项问题。内联与文件一致，5 个模板结构合规。")
+    return 0
+
+
+# ---------------------------------------------------------------- README 体检
+#
+# README.md 是三层架构里**唯一给人看的入口**，也是最容易过期的一份文档 ——
+# 其余规范文档都是对内、按需读的，只有它是对外的第一印象。
+# 2026-09-29 实测：它写着「11 份素材 / 46 个页面」，实际是 153 份 / 478 页（差约 10 倍）；
+# 工具清单列了 9 个子命令，实际有 15 个。
+# 之所以能落后这么多，是因为**没有任何检查覆盖文档** —— 库动、文档不动，没人会知道。
+#
+# 两个方向都查，而**反向才是它长期落后的真正原因**：
+#   正向 —— README 提到的子命令必须真实存在（防写错、防删了还留着）
+#   反向 —— CLI 的每个子命令都必须在 README 出现（防新增子命令后忘记写进去）
+# 只查正向的话，「新增了 6 个子命令但 README 没写」依然报 0 项。
+
+def cli_commands():
+    """从模块用法说明（__doc__）里取子命令名。"""
+    cmds = []
+    for m in re.finditer(r"wiki\.py\s+([a-z][a-z-]*)", __doc__ or ""):
+        if m.group(1) not in cmds:
+            cmds.append(m.group(1))
+    return cmds
+
+
+def cmd_readme_check(root):
+    cli = cli_commands()
+    path = os.path.join(root, "README.md")
+    if not os.path.isfile(path):
+        print("README 体检: README.md 不存在 —— 三层架构的唯一对外入口缺失。")
+        return 1
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            text = fh.read()
+    except OSError as exc:
+        print("README 体检: 读不了 README.md（%s）" % exc)
+        return 1
+
+    mentioned = []
+    for m in re.finditer(r"wiki\.py\s+([a-z][a-z-]*)", text):
+        if m.group(1) not in mentioned:
+            mentioned.append(m.group(1))
+
+    problems = []
+    for c in mentioned:
+        if c not in cli:
+            problems.append("README 引用了不存在的子命令: %s" % c)
+    for c in cli:
+        if c not in mentioned:
+            problems.append("CLI 子命令未写进 README: %s" % c)
+
+    if problems:
+        print("README 体检  (%d 项问题)" % len(problems))
+        for p in problems:
+            print("  - " + p)
+        return 1
+    print("README 体检: 0 项问题。%d 个子命令双向对得上（%s）。"
+          % (len(cli), "、".join(cli)))
+    return 0
+
+
+# ---------------------------------------------------------------- proposals
+
+# 提案状态词表（见 wiki/decisions.md 未决事项总表 E 表、outputs/README.md）。
+# 「未执行 / 未裁定」的项数写在提案的 frontmatter，本命令只汇总，不推断 ——
+# 推断要从正文散文里读，那正是 2026-09-29 之前「机器读不出状态」的原因。
+PROPOSAL_STATUSES = ("提案", "已裁定", "已执行", "已废弃")
+
+
+def cmd_proposals(root):
+    outdir = os.path.join(root, "outputs")
+    if not os.path.isdir(outdir):
+        print("提案台账: outputs/ 不存在 —— 提案层缺失。")
+        return 1
+    names = sorted(n for n in os.listdir(outdir)
+                   if n.endswith(".md") and n != "README.md")
+    if not names:
+        print("提案台账: outputs/ 下没有提案（README.md 除外）。")
+        return 0
+
+    rows, problems = [], []
+    for name in names:
+        try:
+            with open(os.path.join(outdir, name), "r", encoding="utf-8") as fh:
+                fm, _ = parse_frontmatter(fh.read())
+        except OSError as exc:
+            problems.append("%s  读不了（%s）" % (name, exc))
+            continue
+        status = fm.get("status")
+        if not status:
+            problems.append("%s  缺 frontmatter status" % name)
+            status = "（无）"
+        elif status not in PROPOSAL_STATUSES:
+            problems.append("%s  status 不在词表内: %s（应为 %s）"
+                            % (name, status, " / ".join(PROPOSAL_STATUSES)))
+        rows.append((fm.get("created") or "", name, status,
+                     fm.get("open_executed"), fm.get("open_decided")))
+
+    print("提案台账  |  %s/outputs" % root)
+    print("-" * 62)
+    for created, name, status, ex, dec in sorted(rows, key=lambda r: (r[0], r[1])):
+        tail = ""
+        if ex is not None or dec is not None:
+            tail = "  （未执行 %s / 未裁定 %s）" % (ex if ex is not None else "?",
+                                                   dec if dec is not None else "?")
+        print("  [%s] %s%s" % (status, _clip(name, 44), tail))
+
+    tally = Counter(r[2] for r in rows)
+    print("-" * 62)
+    print("  共 %d 份：%s" % (len(rows),
+          "、".join("%s %d" % (s, tally[s]) for s in PROPOSAL_STATUSES if tally[s])))
+
+    if problems:
+        print("\n提案台账  (%d 项问题)" % len(problems))
+        for p in problems:
+            print("  - " + p)
+        return 1
+    print("\n提案台账: 0 项问题（每份提案的 status 都在词表内）。")
     return 0
 
 
@@ -2796,6 +3119,37 @@ details.co-bad > summary::before{content:"✕";font-size:9.5px}
 article blockquote a{color:#0b5f57}
 details.callout a{color:var(--co-ink);border-bottom:1px solid currentColor;font-weight:600}
 
+/* log 页分段 —— 站点侧切分，`log.md` 与其中的行号引用都不动（裁定见 decisions E4）。
+   21 万字符整页一次性渲染是单文件里最重的一步。两级折叠：月 → 日。
+   只有「最新一月的第一天」立即渲染，其余日块首次展开时才渲染。 */
+details.logmonth{
+  margin:16px 0;border:1px solid #e6e2da;border-radius:10px;background:#fcfbf9;overflow:hidden;
+}
+details.logmonth > summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;
+  padding:10px 15px;font-size:13.6px;font-weight:700;color:#4a463f;
+}
+details.logmonth > summary::-webkit-details-marker{display:none}
+details.logmonth > summary::before{
+  content:"▸";color:#a8a29a;font-size:11px;transition:transform .15s;
+}
+details.logmonth[open] > summary::before{transform:rotate(90deg)}
+.logmonth-bd{padding:2px 12px 10px}
+details.logseg{
+  margin:6px 0;border:1px solid #ece8e0;border-radius:8px;background:#fff;overflow:hidden;
+}
+details.logseg > summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;
+  padding:7px 12px;font-size:12.8px;font-weight:600;color:#5a554d;
+}
+details.logseg > summary::-webkit-details-marker{display:none}
+details.logseg > summary::before{
+  content:"▸";color:#b8b2a9;font-size:10px;transition:transform .15s;
+}
+details.logseg[open] > summary::before{transform:rotate(90deg)}
+.logseg-bd{padding:0 13px 6px}
+.logseg-bd > h2{font-size:14.4px;margin:14px 0 6px;line-height:1.5}
+
 /* ---- 表格：行号表是本库的主体证据，窄列里五列会挤成一片 ----
    .tbl 自成一个滚动区：一是横向能滚，二是表头能 sticky 住（40 行表不用再上下对表头）。 */
 .tbl{
@@ -3443,11 +3797,74 @@ function sourceLayout(html, p){
   return head + "\n" + out.join("\n");
 }
 
+/* 单段渲染：自带代码块池，供懒渲染（log 月份首次展开）单独调用。
+   整页渲染在 renderPage 里把池共享给所有子调用；这里则自成一份、当场还原。 */
+function renderMd(src){
+  var saved = _codePool;
+  _codePool = [];
+  var html = render(src);
+  html = html.replace(/\u0000B(\d+)\u0000/g, function(m, n){ return _codePool[+n]; });
+  _codePool = saved;
+  return html;
+}
+
+/* log 页分段（站点侧切分，见 CSS .logmonth / .logseg；裁定见 decisions E4）。
+   21 万字符整页一次性渲染是单文件里最重的一步。按 `## [YYYY-MM-DD]` 把正文切成
+   月 → 日两级：最新一月的第一天立即渲染，其余日块首次展开时才渲染。
+   **`log.md` 本身不动**，其中的行号引用也不动 —— 这是渲染层切分，不是文件切分。 */
+var LOG_SEGS = [];    /* 懒渲染用：每个待渲染日块的源文本，下标即 data-i */
+function splitLog(body){
+  var lines = body.split("\n"), re = /^## \[(\d{4})-(\d{2})-(\d{2})\]/;
+  var intro = [], months = [], mcur = null, dcur = null;
+  for (var i = 0; i < lines.length; i++){
+    var m = re.exec(lines[i]);
+    if (m){
+      var mkey = m[1] + " 年 " + m[2] + " 月";
+      var dkey = m[1] + "-" + m[2] + "-" + m[3];
+      if (!mcur || mcur.key !== mkey){ mcur = { key: mkey, days: [] }; months.push(mcur); dcur = null; }
+      if (!dcur || dcur.key !== dkey){ dcur = { key: dkey, src: [], n: 0 }; mcur.days.push(dcur); }
+      dcur.src.push(lines[i]); dcur.n++;
+    } else if (dcur){ dcur.src.push(lines[i]); }
+    else { intro.push(lines[i]); }
+  }
+  return { intro: intro.join("\n"), months: months };
+}
+
+function renderLog(p){
+  var split = splitLog(p.body);
+  var out = renderMd(split.intro);
+  var months = split.months.slice().reverse();   /* 最新在前 */
+  if (!months.length) return out;
+  LOG_SEGS = [];
+  months.forEach(function(mo, mi){
+    var inner = "";
+    var days = mo.days.slice().reverse();        /* 最新一天在前 */
+    days.forEach(function(day, di){
+      if (mi === 0 && di === 0){                 /* 只有它立即渲染 */
+        inner += '<details class="logseg" open><summary>' + esc(day.key) + ' · ' + day.n + ' 条</summary>' +
+                 '<div class="logseg-bd">' + renderMd(day.src.join("\n")) + '</div></details>';
+      } else {
+        LOG_SEGS.push(day.src.join("\n"));
+        inner += '<details class="logseg" data-i="' + (LOG_SEGS.length - 1) + '"><summary>' +
+                 esc(day.key) + ' · ' + day.n + ' 条</summary><div class="logseg-bd"></div></details>';
+      }
+    });
+    out += '<details class="logmonth"' + (mi === 0 ? " open" : "") + '><summary>' +
+           esc(mo.key) + ' · ' + mo.days.length + ' 天</summary>' +
+           '<div class="logmonth-bd">' + inner + '</div></details>';
+  });
+  return out;
+}
+
 /* 整页渲染：递归共享同一个代码块池，最后一次性还原 */
 function renderPage(p){
   _codePool = [];
-  var html = render(p.body);
-  if (p.type === "source") html = sourceLayout(html, p);
+  var html;
+  if (p.slug === "log"){ html = renderLog(p); }
+  else {
+    html = render(p.body);
+    if (p.type === "source") html = sourceLayout(html, p);
+  }
   return html.replace(/\u0000B(\d+)\u0000/g, function(m, n){ return _codePool[+n]; });
 }
 /* ---------------- nav ---------------- */
@@ -3824,6 +4241,17 @@ function go(slug){
     });
   });
   applyLedgerMode();
+
+  /* log 日块：懒渲染 —— 首次展开才把该日正文渲染进 DOM。
+     一次性把 21 万字符全渲染是初始化里最重的一步；不展开就不付这个成本。 */
+  [].forEach.call(pageEl.querySelectorAll("details.logseg[data-i]"), function(d){
+    d.addEventListener("toggle", function(){
+      if (!d.open || d.dataset.done) return;
+      var src = LOG_SEGS[+d.dataset.i];
+      if (src != null) d.querySelector(".logseg-bd").innerHTML = renderMd(src);
+      d.dataset.done = "1";
+    });
+  });
 
   [].forEach.call(pageEl.querySelectorAll("a.wl"), function(a){
     a.addEventListener("click", function(e){ e.preventDefault(); go(a.dataset.slug); });
@@ -4684,6 +5112,8 @@ def main(argv):
         return cmd_lint(root)
     if cmd == "stats":
         return cmd_stats(root)
+    if cmd == "overview-stats":
+        return cmd_overview_stats(root, write=("--write" in argv))
     if cmd == "index":
         return cmd_index(root)
     if cmd == "build":
@@ -4691,7 +5121,8 @@ def main(argv):
     if cmd == "buildcheck":
         return cmd_buildcheck(root)
     if cmd == "rawcheck":
-        return cmd_rawcheck(root, write=("--write" in argv), force=("--force" in argv))
+        return cmd_rawcheck(root, write=("--write" in argv), force=("--force" in argv),
+                            strict=("--strict" in argv))
     if cmd == "claim":
         if len(argv) < 3:
             print("用法: wiki.py claim <scope> [--force]")
@@ -4736,6 +5167,10 @@ def main(argv):
         return cmd_new(root, argv[2], argv[3], argv[4] if len(argv) > 4 else None)
     if cmd == "template-check":
         return cmd_template_check(root)
+    if cmd == "readme-check":
+        return cmd_readme_check(root)
+    if cmd == "proposals":
+        return cmd_proposals(root)
 
     print("未知命令: %s\n" % cmd)
     print(USAGE)
