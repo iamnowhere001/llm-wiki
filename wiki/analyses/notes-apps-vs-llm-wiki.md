@@ -5,7 +5,13 @@ slug: notes-apps-vs-llm-wiki
 tags: [知识管理, 工具, 对比, 选型]
 created: 2026-09-19
 updated: 2026-09-19
-sources: [2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-frand-hixon-pkm, 2026-09-18-writing-is-thinking]
+sources:
+  - 2026-09-18-karpathy-llm-wiki
+  - 2026-09-18-dankoe-remember-what-you-read
+  - 2026-09-18-bush-as-we-may-think
+  - 2026-09-19-luhmann-communicating-with-slip-boxes
+  - 2026-09-18-frand-hixon-pkm
+  - 2026-09-18-writing-is-thinking
 related: [llm-wiki-pattern, three-layer-architecture, rag-vs-wiki, plain-text-and-git, obsidian, commonplace-book, why-pkm-in-ai-era, cognitive-outsourcing, use-cases, traecode-pkm-article]
 evidence_tier: crossed-independent
 confidence: medium
@@ -22,6 +28,15 @@ status: active
 - **结论**：**不是替代关系。** 那四类工具的共同点是「手工维护」—— 它们给你更好的容器、更低的捕捉摩擦、更强的检索，但**没有一类替你更新交叉引用、保鲜摘要、记录矛盾**。LLM Wiki 唯一的主张就落在这一件事上。
 - **一条重要限定（2026-09-19 北洛提出后补）**：**「上游」不等于「中性的」**。飞书这条管道送来的是**已经被 AI 加工过的版本**（97 份素材中 79 份含 AI 生成段），这带来的是**样本层**的偏差，而本库的质检机制全是逐份的、看不见它。见 [[source-pool-bias]]。
 - **服务于项目**：本页是 [[traecode-pkm-article]] 缺口表「『为什么不直接用 Notion / Obsidian / Flomo』缺论证」的产出。
+
+## 关键要点
+
+- **这个问题的问法本身错了一个维度** —— 飞书 / Notion / Obsidian / Flomo 与 LLM Wiki 不在同一层：前三者解决「素材放哪、怎么找回来」，LLM Wiki 解决「**谁来做维护**」。
+- 所以正确的动作不是「换工具」，而是「**在已有的工具之上补一层**」。本库自己是活证据：82/98 份素材来自飞书，而飞书至今仍是上游，不是被替代者。
+- **唯一真正的冲突只有一个：维护由谁承担。** 其余全是层次差异。
+- 八条优势里**只有一条真正是新的**：维护者问题第一次有了非人答案 —— 八十年来所有人工 wiki 都死在「谁维护」上，LLM 是第一个例外。
+- 三条可推广的原则：**上游可以多，编译层必须唯一**；**飞书是素材源，不是知识库**；**手工维护的范围要收窄，而不是取消**。
+- 一条反直觉的自我修正：手工维护里**有一部分不是浪费，是认知训练** —— LLM Wiki 把「记账」和「判断」一起外包了，而这两件事在人工维护里是捆在一起的（本库推断，待验证）。
 
 ## 一、先把维度对齐
 

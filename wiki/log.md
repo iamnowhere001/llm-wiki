@@ -1860,3 +1860,31 @@ review 的「被推翻 / 修正的本库判定」里曾写「官方编号 007–
 
 ## [2026-09-30] edit | 查询归档：新建 analyses/agency-and-proactivity（「主动性与能动性：本库目前能给出什么」）。① **触发问题**（北洛）：「分析一下主动性/能动性在这个时代的重要性，以及如何拥有主动性，低能动性的人如何破局」。② **第 0 步检索范围**（按 schema §4.1，「库里没有 X」须有记录）：读 index 全量 472 页 slug；用 python 逐行扫描（非 grep）八个词 —— 能动性 52 次/19 页、主动性 69 次/20 页、习得性无助 16 次/8 页、自我效能 5 次/4 页、控制点 10 次/9 页、locus of control 7 次/4 页、自主感 28 次/14 页、主动参与 21 次/9 页；精读 22 页（agent-vs-tool / steady-state-survival-logic / self-determination-theory / character-skills / cybernetic-learning / victim-mentality / compensatory-control / stoic-control-dichotomy / cognitive-outsourcing / icap-framework / internal-friction / problem-setting / self-constraint / effectuation / productive-resistance / wilderness-model / second-order-volition / four-pillars-of-learning / peak-performance / ordinary-people-peak-performance / taste-terminology / decisions 2026-09-20 裁定节）。**未读 raw 原文，未回核行号**（转引，已在页内声明）。③ **两条已确认的「没有」**：库内无以「能动性/主动性/agency」为主题或 slug 的页面（本页是第一个）；「习得性无助」零独立页零一手文献（Seligman & Maier 1967 只在 SDT 页来源列表中，未收 raw）。④ **本页的核心贡献是把「能动性」拆成四种用法并给引用边界** —— 身份判据（agent-vs-tool）/ 结构推论（steady-state-survival-logic，库内对「低能动性」唯一的机制解释）/ 行为维度（character-skills 品格技能四维度之首，观察指标「主动发起的频率」）/ 一个维度（decisions 2026-09-20 北洛裁定：主动性 = 谁发起、把任务本身变成难题，与「工程化」互为条件）。**四者不能互相引用。** ⑤ **页内三节各标了证据性质**：第三节「这个时代为什么重要」是**本库合成的推理链**（答题廉价 → 立题稀缺 → 能动性价值上升；三步各自可引、整条链本库接），标 low；第四节的七条操作里最硬的是 effectuation（原论文已逐条核实，high）；第五节的四条警告指向同一件事 —— 把「你要主动」当处方会伤到人（受害者心态未区分「真实的受害」/ 控制二分法的过度内控误用 / 「去行动」变成新的自我要求 / 依附权威有生物性理由）。**confidence: low**，理由是被引页面本身多为 low。⑥ **回填 2 页加正文入链**（满足 AGENTS.md §3 第 8 条）：agent-vs-tool、steady-state-survival-logic，各说明「本页是四种用法中的第几种」。⑦ **挂项目**：peak-performance 的知识节与产出表各加一条（理由：该项目 goal 四项之一即「动机」，且与本项目既有的四个查询归档同形态）；emotion-awareness 侧未挂（该项目分界规则未定，不擅自跨项目归属，待裁定）。**⚠️ 一处刻意不动**：未擅自给 emotion-awareness 挂链，故 lint 的「未被项目引用」提示从 5 个**保持为 5 个**（choice-overload / mcraven-ten-lessons-vs-library / shane-parrish / synthetic-vs-native-training-data / wilderness-model）—— **P2-2「未归类页上升即裁定」（decisions E8）的样本数未被本轮扰动。** ⑧ overview-stats --write 已重写（页面数 472 → 473）。index 重建 473 页。⑨ **lint 机器可查问题 0 项**（与 2026-09-30 起的基线一致）；断链 0、孤岛 0。⑩ **构建判据逐条核**：判据 3a 新建 1（阈值 >3）不命中、3b 更新 4（阈值 >5）不命中；判据 1（新增主线）不命中 —— 本页是查询归档不是新主线；判据 2（新增/关闭项目）不命中；判据 4（大 ingest）不命中 —— **本页不引入任何新素材**；判据 5（人类要求）不命中。**→ 明确地不构建。** ⑪ **本轮未做（显式）**：未读 raw 原文；未核被引页面的行号；未收任何新素材；未为「能动性」建概念页（本库倾向先不建 —— 四种用法分属不同层，合成会把它们混在一起，待北洛裁定）；「自我效能 / 控制点」的区分裁定仍挂在 SDT 页；three-selves 那个「能动者 = 内核自我」的洞照录未解决。⑫ **本轮改动尚未提交**（无提交授权，走硬约束 14 留痕这条）：wiki/analyses/agency-and-proactivity.md（新）、wiki/concepts/agent-vs-tool.md、wiki/concepts/steady-state-survival-logic.md、wiki/projects/peak-performance.md、wiki/{index,overview,log}.md、wiki/.index/*（5 个分片）。
 
+## [2026-09-30] edit | analyses 22 页阅读体验优化：16 页补「关键要点」+ frontmatter 折行 18 处 + 新增 lint 核法与模板条款
+
+**起因**：北洛「对 analyses 页的 22 篇内容进行优化，改善阅读体验」。方向由北洛当场选定两档 —— ① 补导航 + 机械优化（不含开篇重写）；② 同步改源头（模板 + 核法）。**全程保持各页原有结构，不做形状统一** —— 依据是上一轮《模板体检与优化方案》§六第 1 条：「analysis 22 页各自结构不同是合理的，该统一的是名字，不是形状」。
+
+**第 0 步诊断（可量化）**：22 页里 **15 页无「关键要点」节**，开篇直入正文，第一屏（首个 `##` 之前）平均 586 字符、最长 1041；首节是过程性内容（检索范围 / 修正史 / 本页定位）的有 6 页以上；**18 处 frontmatter 单行 > 200 字符**（最长 3485 —— `modern-thinking-tools-review` 的 `sources`）。
+
+**已做**
+① **补「关键要点」16 页**（lint 报出的 16 页；另 6 页原有该节）。内容**全部从本页现有正文提取**，3–6 条、一行一条、只给结论，**不新增任何主张、不改动任何现有句子**。
+② **frontmatter 折行 18 处 / 13 页** —— 折成多行 `- ` 形式。**逐页用 `parse_frontmatter` 前后对比并 assert 相等**，解析结果不变（`seed_evidence_tier --write` 随后报「需要改动 0 页」二次印证）。
+③ **章节名去加粗 1 处** —— `how-we-learn-and-how-to-improve` 的「外部核查：…（**本库未收录**）」。
+
+**⚠️ 误报（本轮最重要的发现）**：原计划第 3 项「超长段落按句切分」，诊断显示 16 页有 > 500 字的段。**实测全部是误报**：逐个人工看过 8 个「真叙述长段」，**全部是列表** —— 编号列表（`explore-exploit-boundaries` 的 1–5 / 6–8 条）、项目符号（关系节）、待办 `- [ ]`、链接清单（`agency-and-proactivity` 的两处）。**判据的缺陷是没排除「列表项的续行」** —— 多行列表项的标记行占比低于 50%，被 50% 阈值误判成叙述段。**该项取消执行，未动任何段落结构。** 这正是本库已记的「定判据前先量误报面，且必须造『不该报』的反向样本」的又一次应验。
+
+**源头（按「规则写了、源头没改等于没写」）**
+① `templates/analysis.md`：把「关键要点」写成**唯一强制的导航节**，写明它**管名字不管形状**（其余节名与顺序仍由内容自取）；同步内联（`_sync_inline_templates.py --write`），`template-check` 0 项。
+② `tools/wiki.py` 新增 lint 检查「analysis 页缺『关键要点』导航节」（新增 `KEY_SECTION_NAMES` 常量；走 `section()` 计入问题数；**不设 LINT_SINCE 豁免** —— 存量 22 页同日全部补齐，故这条对全库 analysis 页生效）。**注入正反样本验证**：`_tmp-lint-probe-bad.md`（无该节）**被报**、`_tmp-lint-probe-good.md`（用同族名「要点」）**不被报**；两个探针已删。
+
+**未做 / 待裁定**
+① **章节名含全角冒号 35 处未改**（§6.1 第 5 条的存量，lint 存量豁免 110 页）。理由有三：改它会**牵连页内指名引用**（实测 `how-we-learn-and-how-to-improve` 的「外部核查」节有 3 处页内自指；log 另记过一次改名「顺带修复 41 处悬空引用」的先例）；冒号后的短语是**导航信息**，删掉会让 TOC 更差；上一轮方案 §六第 2 条已裁定「不要回填改名」。**建议单独立项，不夹在阅读体验优化里做。**
+② `modern-thinking-tools-review` 因新增关键要点 348 → **357 行**，仍在「页面超过长度上限」提示内（上限 300，**本已超**，存量豁免）。**拆页待裁定。**
+③ **22 页内两种列表形态并存**（16 页用 `- `，6 页用 `1.`）—— 全库亦然（`1.` 239 页 / `- ` 147 页），**非问题，未统一**。
+
+**构建**：`buildcheck` 判据 3b **命中**（更新 20 > 5；3a 新建 0 不命中）。另逐条核：判据 1（新增主线）不命中、判据 2（新增/关闭项目）不命中、判据 4（大 ingest）不命中 —— **本轮不收任何素材**、判据 5（人类要求）不命中。**→ 构建**。站点 **479 页 / 7811 条链接**（上次记录 478 页 / 7754 链接）。构建后已抽 `DATA.pages[]` 逐页验证改动页确实含「关键要点」。
+
+**收尾数字**：`lint` 机器可查问题 **0 项**（与 2026-09-30 起的基线一致，**本轮无新增**）；断链 0、孤岛 0；`index` 重建 473 页。
+
+**本轮改动尚未提交**（无提交授权，走 AGENTS.md §3 硬约束 14 的留痕这条）：`wiki/analyses/*.md`（20 个）、`templates/analysis.md`、`tools/wiki.py`、`site/index.html` 与 `site/.build-manifest.json`。
+

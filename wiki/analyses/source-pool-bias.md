@@ -6,7 +6,17 @@ tags: [元分析, 方法论]
 created: 2026-09-19
 updated: 2026-09-19
 sources: [2026-09-18-extended-mind-notes, 2026-09-18-karpathy-llm-wiki, 2026-09-18-dankoe-remember-what-you-read, 2026-09-19-luhmann-communicating-with-slip-boxes, 2026-09-18-writing-is-thinking]
-related: [notes-apps-vs-llm-wiki, compounding-knowledge, cybernetic-learning, why-pkm-in-ai-era, cognitive-outsourcing, llm-wiki-research, traecode-pkm-article, use-cases, wiki-lint, knowledge-is-the-bottleneck]
+related:
+  - notes-apps-vs-llm-wiki
+  - compounding-knowledge
+  - cybernetic-learning
+  - why-pkm-in-ai-era
+  - cognitive-outsourcing
+  - llm-wiki-research
+  - traecode-pkm-article
+  - use-cases
+  - wiki-lint
+  - knowledge-is-the-bottleneck
 evidence_tier: crossed-independent
 confidence: medium
 status: active
@@ -21,6 +31,15 @@ status: active
 - **触发问题**（北洛，2026-09-19）：飞书文档里的很多内容是通过 AI 获取的，是非一手材料，**导致 LLM Wiki 收录后会遗漏大量问题**。
 - **结论**：问题成立，且比「素材质量差」严重一档。质量差的素材你会警惕，**说圆了的素材你不会**。
 - **对上一页的修正**：[[notes-apps-vs-llm-wiki]] 说「飞书是管道」—— 这句对，但**不够**。管道不是中性的。
+
+## 关键要点
+
+- **本库的质检机制全是「逐份」的，而这个问题在「样本」层 —— 逐份质检看不见它。** 本库能回答「这份素材的 AI 段可不可信」，回答不了「这一池子素材缺了哪一类」。
+- 根因是**遗漏不留下痕迹**：读完一份 AI 生成的素材，你不知道它少了什么 —— 只有拿到原文才知道。72 份 `sources/` 页写了「已知缺失」，**没有一份记录「这份素材比原文少了什么」**。
+- AI 素材的遗漏是**结构性的**，三种机制的可发现性完全不同：减法式遗漏与趋同**可发现**；**问题供给枯竭不可发现** —— 这是本页提出的第三种。
+- **问题成立，且比「素材质量差」严重一档**：质量差的素材你会警惕，**说圆了的素材你不会**。
+- 后果机制：AI 素材消灭的正是**误差信号** —— 没有缺口，就没有「下一步该找什么」，知识库会**安静地**变成一座收藏馆。
+- 三条方案已被裁定采纳（缺口表新增「未知缺口」类 / 一手校准制度化 / 反方检索前置，阈值 60%）；**本页不推翻「AI 生成内容应收录」** —— 它改变的是**期望管理**。
 
 ## 一、先说清楚：这不是「素材质量」问题
 

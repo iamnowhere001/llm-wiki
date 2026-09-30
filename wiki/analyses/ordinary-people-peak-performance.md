@@ -6,7 +6,16 @@ tags: [巅峰表现, 动机, 心流]
 created: 2026-09-18
 updated: 2026-09-19
 sources: [2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-19-art-of-impossible-book-en]
-related: [peak-performance, cybernetic-learning, chaos-system-of-life, emotion-regulation-toolkit, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes, 2026-09-19-art-of-impossible-book-en, cognitive-reappraisal, flow-terminology]
+related:
+  - peak-performance
+  - cybernetic-learning
+  - chaos-system-of-life
+  - emotion-regulation-toolkit
+  - 2026-09-18-art-of-impossible-notes
+  - 2026-09-18-hyperefficient-notes
+  - 2026-09-19-art-of-impossible-book-en
+  - cognitive-reappraisal
+  - flow-terminology
 evidence_tier: crossed-independent
 confidence: low
 status: active
@@ -27,6 +36,15 @@ status: active
 > 详见 [[2026-09-19-art-of-impossible-book-en]] 第二节。
 >
 > **本页的价值不在答案，在于把「答不好」写成可复查的形态** —— 尤其第三节列出了几条**看起来最像方法、实际最不可用**的说法。
+
+## 关键要点
+
+- **本库现在答不好这个问题。** 能给的是一份**带证据标注的骨架**，不是一份说明书 —— 项目缺口表**五条【阻塞】全部未解**。
+- **本页的价值不在答案，在于把「答不好」写成可复查的形态** —— 尤其第三节列出了几条**看起来最像方法、实际最不可用**的说法。
+- 书的骨架是一条公式：**巅峰表现 = 动机 × 学习力 × 创造力 × 心流**；其中动机是**必须按顺序激活、不能跳级的序列**（好奇心 → 激情 → 使命感 → 自主性 → 掌控感）。
+- **书自己就给「普通人」加了限定**：「个性是无法复制的，能复制的是生物机制」—— 所以书能给的只是**机制**，不是**方法**。这条直接推翻了同一份素材 AI 段里的「90 天行动计划」。
+- 第三节是**本页最该看的部分**：4% 原则、500% / 400%、心流阻断剂 10 条、高能量姿势等，**不要照做、也不要引用**。
+- 一条已更正的自我纠错：4% 原则**不是 AI 补的**（原书有完整论述），**但它同样不是研究结论** —— Kotler 自陈它「more of a metaphor than an actual metric」。**结论方向不变，反而更硬。**
 
 ## 一、书给的骨架（可追溯部分）
 

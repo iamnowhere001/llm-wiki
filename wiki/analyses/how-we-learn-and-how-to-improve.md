@@ -5,8 +5,36 @@ slug: how-we-learn-and-how-to-improve
 tags: [学习, 机制, 方法, 记忆, 神经科学]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [2026-09-18-how-we-learn-notes, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-hidden-potential-notes, 2026-09-18-dankoe-remember-what-you-read, 2026-09-18-extended-mind-notes, 2026-09-18-art-of-impossible-notes, 2026-09-18-hyperefficient-notes]
-related: [four-pillars-of-learning, prediction-error, retrieval-practice, spaced-repetition, consolidation-and-sleep, innate-knowledge, cybernetic-learning, human-sponge, scaffolding, deliberate-play, enactment-effect, character-skills, stanislas-dehaene, john-dunlosky, peak-performance, llm-wiki-research, ordinary-people-peak-performance, 2026-09-18-dunlosky-learning-techniques, 2026-09-18-how-we-learn-notes, cognitive-debt, brain-rot]
+sources:
+  - 2026-09-18-how-we-learn-notes
+  - 2026-09-18-dunlosky-learning-techniques
+  - 2026-09-18-hidden-potential-notes
+  - 2026-09-18-dankoe-remember-what-you-read
+  - 2026-09-18-extended-mind-notes
+  - 2026-09-18-art-of-impossible-notes
+  - 2026-09-18-hyperefficient-notes
+related:
+  - four-pillars-of-learning
+  - prediction-error
+  - retrieval-practice
+  - spaced-repetition
+  - consolidation-and-sleep
+  - innate-knowledge
+  - cybernetic-learning
+  - human-sponge
+  - scaffolding
+  - deliberate-play
+  - enactment-effect
+  - character-skills
+  - stanislas-dehaene
+  - john-dunlosky
+  - peak-performance
+  - llm-wiki-research
+  - ordinary-people-peak-performance
+  - 2026-09-18-dunlosky-learning-techniques
+  - 2026-09-18-how-we-learn-notes
+  - cognitive-debt
+  - brain-rot
 evidence_tier: primary
 confidence: medium
 status: active
@@ -133,7 +161,7 @@ status: active
 
 ---
 
-## 外部核查：Dunlosky 等人的十种学习技术分级（**本库未收录**）
+## 外部核查：Dunlosky 等人的十种学习技术分级（本库未收录）
 
 > [!note] 收录状态（2026-09-18 更新）
 > 本页初稿完成时，这份文献**尚未收录** —— 本库因此第一次出现「答案的外部证据强于库内证据」，

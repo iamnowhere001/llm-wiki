@@ -5,7 +5,11 @@ slug: harness-explained
 tags: [Agent, harness, 综述, AI工程]
 created: 2026-09-19
 updated: 2026-09-19
-sources: [2026-09-19-hashimoto-my-ai-adoption-journey, 2026-09-19-openai-harness-engineering-codex, 2026-09-19-trivedy-anatomy-of-agent-harness, 2026-09-19-bockeler-harness-engineering-coding-agent-users]
+sources:
+  - 2026-09-19-hashimoto-my-ai-adoption-journey
+  - 2026-09-19-openai-harness-engineering-codex
+  - 2026-09-19-trivedy-anatomy-of-agent-harness
+  - 2026-09-19-bockeler-harness-engineering-coding-agent-users
 related: [harness, harness-engineering, guides-and-sensors, agents-md, wiki-lint, cybernetic-learning, source-pool-bias, llm-wiki-research]
 evidence_tier: crossed-independent
 confidence: medium
