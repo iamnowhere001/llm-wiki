@@ -22,7 +22,7 @@ status: active
 > ② `python3 tools/wiki.py search "<关键词>" --top 30` —— 中文检索。宽主题务必调大
 >    `--top`（默认 10 只覆盖窄查询；实测「情绪」的召回 13% → top30 70% → top60 97%）。
 
-页面总数 **472**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **153** 份 / 摘要页 **155** 份 ｜ 最后更新 2026-09-30
+页面总数 **473**（不含 6 个系统页；`lint` 报的数含它们） ｜ 项目 **8**（进行中 7） ｜ raw 素材 **153** 份 / 摘要页 **155** 份 ｜ 最后更新 2026-09-30
 
 ## 项目 (8)
 
@@ -331,8 +331,9 @@ status: active
 - [[zeroth-order-truth|零阶道理：决定方向与量级的那一条，其余都是修正项]]
 - [[zettelkasten|卡片盒（Zettelkasten）：连接优于分类]]
 
-## 分析 (21)
+## 分析 (22)
 
+- [[agency-and-proactivity|主动性与能动性：本库目前能给出什么]]
 - [[attention-what-it-is-and-how-to-improve|注意力是什么、如何改善：本库目前能给出什么]]
 - [[cognitive-vs-somatic-paths|认知路径与身体路径：一个串联假设]]
 - [[commonplace-book-vs-llm-wiki|共同笔记簿 vs LLM Wiki：两条独立路径走到同一个架构]]

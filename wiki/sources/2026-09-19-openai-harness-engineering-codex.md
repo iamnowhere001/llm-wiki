@@ -4,7 +4,7 @@ type: source
 slug: 2026-09-19-openai-harness-engineering-codex
 tags: [AI, Agent, harness, Codex, OpenAI]
 created: 2026-09-19
-updated: 2026-09-20
+updated: 2026-09-30
 sources: [2026-09-19-openai-harness-engineering-codex]
 related: [harness, harness-engineering, agents-md]
 confidence: medium
@@ -48,11 +48,15 @@ status: active
    有一个**定期扫描过时文档并自动开修复 PR 的 doc-gardening agent**。
 6. **架构约束机械化**：每个业务域分层，依赖方向严格校验（Types → Config → Repo → Service → Runtime → UI），
    由**自定义 linter** 强制；**且 linter 的错误信息里直接注入修复指令**。
-7. **垃圾回收**：此前每周五花 **20% 时间**清理 "AI slop"；后改为把 "golden principles" 编码进仓库
+7. **「架构与品味」并列成一节**：小节标题即 "Enforcing architecture and taste"（行 110）——
+   人的品味被写成**可静态检查的规则**：「a small set of "taste invariants"」（行 120）、
+   「Human taste is fed back into the system continuously… encoded directly into tooling」（行 128）、
+   「**Human taste is captured once, then enforced continuously on every line of code**」（行 187）。
+8. **垃圾回收**：此前每周五花 **20% 时间**清理 "AI slop"；后改为把 "golden principles" 编码进仓库
    由后台 Codex 任务定期扫描偏差、更新质量评分、开定向重构 PR，「多数可在 1 分钟内审完并自动合并」。
-8. **卡住时的姿势**（行 55 附近）：几乎从不「try harder」，而是问
+9. **卡住时的姿势**（行 55 附近）：几乎从不「try harder」，而是问
    「**缺了什么能力，怎么让它对 agent 既可见又可强制**」。
-9. **作者自己划的边界**（文末）：这套行为「depends heavily on the specific structure and tooling of this repository
+10. **作者自己划的边界**（文末）：这套行为「depends heavily on the specific structure and tooling of this repository
    and should not be assumed to generalize without similar investment—at least, not yet.」
 
 ## 摘要
@@ -80,6 +84,9 @@ status: active
   「大 `AGENTS.md`」的四种失败方式里，**"It rots instantly"（瞬间腐坏）** 与
   「too much guidance becomes *non-guidance*」这两条，**本库的 `AGENTS.md` 从未评估过**。
   本库此前的关切只有「常驻成本」这一个维度。**这条要回填进 [[agents-md]]。**
+- **与 [[taste-terminology]]：该页第四节「可编码的 taste」的唯一出处。** 本文把人的品味写成
+  可静态检查的规则（"taste invariants"，行 120），而库内 AI 加工段说品味是「唯一无法被 AI 替代的东西」。
+  **方向相反，但不在同一层**（判断的产物 vs 判断本身），故不判为矛盾 —— 判据见该页第四节。
 - **对本项目「个人如何高效实践」维度的关键反证**：这套做法的成本结构是**团队专属**的 ——
   7 名工程师、每周 20% 时间做清理（后来才自动化）、专职维护知识库的 CI 与 linter。
   **个人的瓶颈恰恰是没有那个人力**。这直接支撑 [[harness]] 缺口表第 2 条。
