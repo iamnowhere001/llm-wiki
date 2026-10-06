@@ -119,7 +119,6 @@ Klyubin, Polani & Nehaniv (2005) 的 empowerment ＝ **actions → future observ
   按本页的框架可以理解为「强制表征对输出保持高预测性」—— 但这只是本库的推断，素材与一手文献均未这么说。
 - **与「赋能」的关系（2026-09-18 新增）**：见上「赋能＝信道容量的行动版」一节 ——
   **同一族语言的两个方向**（本页讲压、赋能讲增），由 [[2026-09-18-capability-seeking-theorem-notes]] 的讲稿行 126 接上。
-> 来源：[[2026-09-19-granularity-causal-mediation-notes]] 的「回填清单」建议。
 
 - **与 [[granularity-causal-mediation]]：一组可对照的编码观。** 该页的 **MDL 两项之和**
   （模型长度 + 数据补丁长度）是典型的 **two-part code**（两段式编码）；

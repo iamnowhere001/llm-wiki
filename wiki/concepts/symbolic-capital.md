@@ -86,7 +86,6 @@ status: active
 - **与 [[compensatory-control]] 同型**：以「听不懂内部梗就会被排挤」的社会压力取代恐惧驱动，完成让渡。
 - **与 [[victim-mentality]] 的张力同 [[field-theory]]**：结构归因不自动等于免责。
 - **是 [[pierre-bourdieu]] 的六个核心概念之一**（symbolic capital / symbolic violence）。
-> 来源：[[2026-09-19-alpha-strategy]]、[[2026-09-19-economic-rent]] 的「回填清单」建议。
 
 - **与 [[economic-rent]]：本页的商业侧落点。** 该页行 121 把「**声望租**」定义为
   **「只有你能干 → 品牌溢价」** —— 这是本页（符号资本）在**经济租理论**里的名字：

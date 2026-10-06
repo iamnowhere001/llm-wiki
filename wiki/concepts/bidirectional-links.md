@@ -4,7 +4,7 @@ type: concept
 slug: bidirectional-links
 tags: [万维网, 超文本, 设计]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-10-06
 sources: [2026-09-18-appleton-bidirectional-links, 2026-09-18-berners-lee-link-topology, 2026-09-18-bush-as-we-may-think, 2026-09-19-luhmann-communicating-with-slip-boxes]
 related: [pkm-history, ted-nelson, tim-berners-lee, vannevar-bush, roam-research, zettelkasten]
 evidence_tier: crossed-independent
@@ -24,13 +24,30 @@ status: active
 - **万维网选择了单向**，[[tim-berners-lee]] 明确权衡过，理由是**恶意引用无法控制**、过滤审核权限的设计过于复杂。
 - **他的折中方案是「数据模型单向 + 自动生成反向链接」**，在 1999 年难以落地，在 LLM 时代变得可行。
 - **在单作者私有域内，双向链接绕开了治理问题**，这是数字花园运动与 [[roam-research]] 兴起的前提。
-- **纸面上早有先例**：[[niklas-luhmann]] 1981 年的卡片盒就要求记回链（引用 + 回引），并给出了**认识论理由**（没有特权节点，品质来自链接之网）。见下「与历史链条的关系」。
+- **纸面上早有先例**：[[niklas-luhmann]] 1981 年的卡片盒就要求记回链（引用 + 回引），并给出了**认识论理由**（没有特权节点，品质来自链接之网）。见「定义与背景」的谱系表。
 
 ## 定义与背景
 
 **单向链接**（万维网的做法）：一个页面指向另一个页面，**目标页对此一无所知**。[[2026-09-18-appleton-bidirectional-links]] 的描述很形象：「我们建立了所有这些单向路径，试图标示相关性与语境，结果另一端完全无视我们的努力。」
 
 **双向链接**：链接建立后，目标页能显示「指向本页的页面」。Appleton 的原话是 —— 双向链接**具有社会意识**（has social awareness），它知道其他指向它的页面或节点，并能让人们看见。
+
+双向链接的谱系（完整脉络见 [[pkm-history]]，本页只标出这条线索）：
+
+| 时间 | 节点 | 链接形态 |
+|---|---|---|
+| 1945 | [[vannevar-bush]] Memex | 对称、永久、可复制转交的「关联路径」 |
+| 1965 | [[ted-nelson]] hypertext / Xanadu | 双向 + 引用溯源 + transclusion |
+| **1981** | **[[niklas-luhmann]] 卡片盒（纸面）** | **引用 + 回引（Verweisungen und Rückverweisungen）** |
+| 1989–1999 | [[tim-berners-lee]] 万维网 | **单向**（治理妥协） |
+| 2017–2020 | [[roam-research]] / [[obsidian]] | 在私有域内恢复双向 |
+| 当下 | [[llm-wiki-pattern]] | 由 LLM 自动维护反向链接 |
+
+[[2026-09-19-luhmann-communicating-with-slip-boxes]]（Luhmann 1981 原文）把 1981 那一行坐实了：捕获连接时要求「**同时立刻在被链接到的那些卡片上记下回链**」（"by right away recording back links in the slips that are being linked to"），德文对应处用 **Verweisungen und Rückverweisungen**（引用与回引）。**卢曼的卡片盒因此是一个双向链接系统** —— 手工的、单作者的、纸面的，但机制上正是本页讨论的那件事。**私有域双向的实践因此至少早到 1981 年**，而不是始于 2017 年的 Roam；只是它没有工具化、没有传播开。
+
+**卢曼给出的理由是认识论的，不只是工程的。** 他说：正如认识论放弃了「存在**特权表象**」的观念，「我们也必须放弃『存在保证知识的特权位置或卡片』的观念。**每张笔记只是一个元素，它的品质只来自系统中链接与回链的网。**」未接入这张网的笔记「会在卡片盒里丢失，并被卡片盒遗忘」。这与「与其他页面的关系」里 [[compounding-knowledge]] 那条（**价值都来自关系而非节点本身**）**是同一条命题的两种论证**：库内此前只有工程与治理的论证，这里补上了认识论的一条。
+
+**关键观察**：Bush 1945 年设想的连接是**对称**的，而万维网把它改成了单向。**双向链接因此不是「新功能」，而是对原始构想的回归** —— 只是这个回归被推迟了七十年，并且只能在私有域内实现。
 
 ## 机制 / 原理
 
@@ -56,31 +73,6 @@ status: active
 > A compromise that links be one-way in the data model, but that a reverse link is created when any link is made, so long as this can be done without infringing protection.
 
 **为什么这个折中当时行不通。** 它需要一个能对全网的链接做「反向收集」的可信后台进程，或需要全网协作。在 1999 年这两者都不具备。而在**单个私有知识库**内，作用域缩小到一个所有者，治理问题消失 —— 这正是数字花园（单作者站点）与 [[roam-research]]、[[obsidian]] 能够自由使用双向链接的原因。
-
-## 与历史链条的关系
-
-完整脉络见 [[pkm-history]]。本页只标出双向链接这条线索：
-
-| 时间 | 节点 | 链接形态 |
-|---|---|---|
-| 1945 | [[vannevar-bush]] Memex | 对称、永久、可复制转交的「关联路径」 |
-| 1965 | [[ted-nelson]] hypertext / Xanadu | 双向 + 引用溯源 + transclusion |
-| **1981** | **[[niklas-luhmann]] 卡片盒（纸面）** | **引用 + 回引（Verweisungen und Rückverweisungen）—— 见下** |
-| 1989–1999 | [[tim-berners-lee]] 万维网 | **单向**（治理妥协） |
-| 2017–2020 | [[roam-research]] / [[obsidian]] | 在私有域内恢复双向 |
-| 当下 | [[llm-wiki-pattern]] | 由 LLM 自动维护反向链接 |
-
-> [!note] 2026-09-19 新增一行：1981 年的纸面双向
-> [[2026-09-19-luhmann-communicating-with-slip-boxes]]（Luhmann 1981 原文）明确要求：捕获连接时「**同时立刻在被链接到的那些卡片上记下回链**」
-> （"by right away recording back links in the slips that are being linked to"）；德文对应处用 **Verweisungen und Rückverweisungen**（引用与回引）。
-> **卢曼的卡片盒因此是一个双向链接系统** —— 手工的、单作者的、纸面的，但机制上正是本页讨论的那件事。
-> **这一行修正了本页原先的隐含判断**（双向在私有域的复兴始于 2017 年 Roam）：私有域双向的实践至少早到 1981 年，只是没有工具化、没有传播开。
-
-**卢曼给出的理由是认识论的，不只是工程的。** 他说：正如认识论放弃了「存在**特权表象**」的观念，「我们也必须放弃『存在保证知识的特权位置或卡片』的观念。**每张笔记只是一个元素，它的品质只来自系统中链接与回链的网。**」未接入这张网的笔记「会在卡片盒里丢失，并被卡片盒遗忘」。
-
-这与本页第 17 行的核心主张（关系价值不低于节点）**是同一条命题的两种论证**：本库此前只有工程与治理的论证，这里补上了认识论的一条。
-
-**关键观察**：Bush 1945 年设想的连接是**对称**的，而万维网把它改成了单向。**双向链接因此不是「新功能」，而是对原始构想的回归** —— 只是这个回归被推迟了七十年，并且只能在私有域内实现。
 
 ## 边界与反例
 
@@ -110,4 +102,4 @@ status: active
 - [[2026-09-18-appleton-bidirectional-links]]
 - [[2026-09-18-berners-lee-link-topology]]
 - [[2026-09-18-bush-as-we-may-think]]
-- [[2026-09-19-luhmann-communicating-with-slip-boxes]]（2026-09-19 新增）
+- [[2026-09-19-luhmann-communicating-with-slip-boxes]]
