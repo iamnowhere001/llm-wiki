@@ -4,7 +4,7 @@ type: concept
 slug: agents-md
 tags: [工具, 模式, 约定, 规范]
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-10-06
 sources: [2026-09-18-trae-rules-docs, 2026-09-18-trae-agents-md-vs-rules-forum, 2026-09-19-openai-harness-engineering-codex]
 related: [three-layer-architecture, llm-wiki-pattern, traecode, plain-text-and-git, conventions]
 evidence_tier: crossed-independent
@@ -64,15 +64,11 @@ AI 编程工具普遍需要一个「告诉 AI 这个项目的规矩」的地方�
 3. **知识库本体** —— 内容留在 wiki 页面里，`AGENTS.md` 只写「去哪里找」和「必须怎么做」。
 
 > [!note] 本库自身正踩在这条线上
-> 本仓库的 `AGENTS.md` 目前约 18 KB，是全库最长的单文件之一。如果「常驻」这一性质成立，
-> 那么它每次任务都在付出可观的开销 —— 而其中相当一部分（页面规范细则、工作流细节）
-> **只在特定动作时才需要**。这是一个真实的设计缺口，已记入 [[traecode-pkm-article]] 的缺口表。
-> 可能的解法：根 `AGENTS.md` 压到「一句话 + 铁律 + 指路」，把页面规范与工作流细则拆成
-> 按需读取的文件，由 `AGENTS.md` 指向它们。
->
-> **2026-09-19 已执行。** `AGENTS.md` 从 629 行压到约 150 行：规则移入 [[schema]]，
-> 人类裁定史与墓碑独立为 [[decisions]]，内联的素材案例数据回到对应 `sources/` 页。
-> **内容零删除，只是搬家** —— 完整做法与理由见 [[decisions]]。
+> 本仓库的 `AGENTS.md` 约 18 KB，是全库最长的单文件之一 —— 其中相当一部分（页面规范细则、工作流细节）
+> **只在特定动作时才需要**，而「常驻」意味着每次任务都在付费。这个设计缺口已记入 [[traecode-pkm-article]] 的缺口表。
+> 2026-09-19 已执行瘦身：根 `AGENTS.md` 压到「一句话 + 铁律 + 指路」，页面规范与工作流细则拆成按需读取的文件；
+> `AGENTS.md` 从 629 行压到约 150 行，规则移入 [[schema]]，人类裁定史与墓碑独立为 [[decisions]]，
+> 内联的素材案例数据回到对应 `sources/` 页。**内容零删除，只是搬家**，完整做法与理由见 [[decisions]]。
 
 ## 边界与反例
 
@@ -124,22 +120,20 @@ AI 编程工具普遍需要一个「告诉 AI 这个项目的规矩」的地方�
 - 与 [[plain-text-and-git]] 同源：约定也必须是纯文本、可 diff、可迁移。
 - 区别于 [[second-brain-skill]]：后者把维护手册封装成 Skill，**放进了工具**；`AGENTS.md` 把它**放进了仓库**。前者省事，后者可审计、可移植。这个对比值得展开。
 - 是 [[llm-wiki-pattern]] 中「schema 层由人类与 LLM 共同演进」的载体。
-- 是 [[harness-engineering]] 中「第一种形式」的最常见载体，也是 [[harness]] 项目的枢纽页。
-  即**把 agent 犯过的错固化成一条常驻规则** —— 这条用法在 [[2026-09-19-hashimoto-my-ai-adoption-journey]] 里有明确实例（Ghostty 的 `AGENTS.md`）。
-  **2026-09-19 该对应关系已获一手核实**：素材已落盘，Hashimoto 原文 称 Ghostty 的 `AGENTS.md`
-  **每一行都基于一次 agent 的坏行为**，且「almost completely resolved them all」。
-  **本条此前写的「一手素材未落盘，只建立链接不立断言」已过期，现更正。**
-  **展开见 [[harness-explained]] 的「最小 harness 清单」** —— 那张表把本页定位为构件 1（薄的常驻规则文件），
-  并指出它超过一定体量就会触发 **指导过载**（见下节）。
+- 是 [[harness-engineering]] 中「第一种形式」的最常见载体，也是 [[harness]] 项目的枢纽页：
+  即**把 agent 犯过的错固化成一条常驻规则**。[[2026-09-19-hashimoto-my-ai-adoption-journey]] 里有明确实例 ——
+  Hashimoto 原文称 Ghostty 的 `AGENTS.md` **每一行都基于一次 agent 的坏行为**，且「almost completely resolved them all」。
+  [[harness-explained]] 的「最小 harness 清单」把本页定位为构件 1（薄的常驻规则文件），
+  并指出它超过一定体量就会触发 **指导过载**（见上节）。
 
 ## 待办 / 开放问题
 
 - [ ] `AGENTS.md` 的加载时机与缓存行为需要一手验证（官方未说明）
 - [ ] 与 `.trae/rules/` 冲突时的优先级未知
 - [ ] 是否存在跨工具的事实标准组织在维护这个文件名？（未验证）
-- [x] **本库 `AGENTS.md` 的瘦身方案** —— 2026-09-19 执行（见下）
 
 ## 来源
 
 - [[2026-09-18-trae-rules-docs]]
 - [[2026-09-18-trae-agents-md-vs-rules-forum]]
+- [[2026-09-19-openai-harness-engineering-codex]]

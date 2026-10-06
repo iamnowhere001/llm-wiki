@@ -5,7 +5,7 @@ type: concept
 slug: business-leverage
 tags: [万维钢, 商业杠杆, 规模化, 边际成本, 非竞争性, 固定成本, 纳瓦尔, 罗默]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-06
 sources: [2026-09-19-business-leverage]
 related: [economic-rent, alpha-vs-beta, multiplicative-world, heavy-tailed-distribution, narrative-economics, effectuation, 2026-09-19-business-leverage]
 evidence_tier: single
@@ -16,7 +16,6 @@ status: active
 # 商业杠杆（Business Leverage）
 
 > **赚钱的方法不是剥削，而是杠杆** —— 把一个创造 / 组织 / 信任**卖出很多次**。
-> 底层原理是**信息模式的非竞争性**（罗默）：信息模式没有守恒定律，边际成本约等于零、边际收益远大于边际成本。
 > 金句：**「做一次收一次，那叫劳动。做一次收很多次，才叫杠杆。」**
 
 ## 关键要点
@@ -24,7 +23,7 @@ status: active
 - **换底**：剥削是零和的，「一个抢劫游戏可不能让你赚大钱」；**财富是规模化、是把好东西放大的结果**。
 - **机制**：**固定成本 vs 边际成本**——赚钱的关键是零售价远高于边际成本，越过盈亏点后利润随销量上涨。
 - **六种杠杆**：劳动力 / 机器 / 基础设施 / 知识产权 / 网络 / 债务。**这是讲稿自拟的扩展，不是 Naval 的框架、也不是学界分类**（见下专段）。
-- **底层原理（罗默）**：思想与配方是「**非竞争性（non-rivalrous）**」的，因此存在「**非竞争性投入（non-rival input）**」——边际成本约等于零。
+- **底层原理（罗默）**：思想与配方是「**非竞争性（non-rivalrous）**」的 —— 论证见「机制 / 原理」。
 - **不需要授权的杠杆（Naval 原词）**：劳动力需被领导同意、资本需银行同意，**代码和媒体不需要授权**。
 - **叙事二分**：**剥削叙事 vs 杠杆叙事** ——前者把思维停留在血汗工厂，后者才理解赚钱的逻辑。
 
@@ -85,10 +84,8 @@ status: active
 底层原理是 **2018 年诺贝尔经济学奖得主保罗·罗默**的「**内生增长理论**」：
 「思想」和「配方」是「**非竞争性（non-rivalrous）**」的——一个苹果我吃了你就不能吃，但一个公式、一段代码、一个商业模式不因我用了而妨碍你用。
 由此得到「**非竞争性投入（non-rival input）**」：**信息模式没有守恒定律，边际成本约等于零，边际收益远大于边际成本，财富才能无中生有地被生成**。
-
-> [!note] 术语归属
-> 「非竞争性」正是 Romer 1990（*JPE*「Endogenous Technological Change」）把技术定义为
-> 「a non-rival, partially excludable good」的本义；中文「非竞争性投入」对应 `nonrival inputs`，方向与归属均正确（sources 页核查表 #6 / #7）。
+术语归属：「非竞争性」正是 Romer 1990（*JPE*「Endogenous Technological Change」）把技术定义为
+「a non-rival, partially excludable good」的本义；中文「非竞争性投入」对应 `nonrival inputs`（sources 页核查表 #6 / #7）。
 
 ### 规模化与「卖什么都约等于卖软件」
 

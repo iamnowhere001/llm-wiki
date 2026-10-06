@@ -71,7 +71,6 @@ status: active
   两者的边界在哪里，本库尚未处理。
 - 与 [[deliberate-practice]]：刻意练习的第一条件是「导师帮你建立一套精准的**心理表征**」——
   Ericsson 用的是 mental representations，与本页的 mental model 同源但不等同，**本库未做区分裁定**。
-> 来源：[[2026-09-19-granularity-causal-mediation-notes]] 的「回填清单」建议。
 
 - **与 [[granularity-causal-mediation]]：心智模型的一个此前未记的维度 —— 颗粒度。**
   该页行 81–87 把颗粒度操作化为 **MDL 的两项之和**（模型长度 + 数据补丁长度），

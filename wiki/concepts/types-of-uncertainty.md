@@ -115,7 +115,6 @@ status: active
 **素材未辨析，只登记。** 见 [[uncertainty-as-fuel]] 的同一处缺口。
 
 > 来源：[[2026-09-19-no-free-lunch-theorem-notes]]、[[2026-09-19-ooda-loop-notes]]、
-> [[2026-09-19-probability-distribution-notes]] 的「回填清单」建议。
 
 - **与 [[no-free-lunch-theorem]]：接点（该页）。** 「未来不但有不确定性而且有**不可量化的不确定性**
   也就是连概率分布本身都具有不确定性」—— 与本页「五种不确定性」同向，
@@ -126,7 +125,6 @@ status: active
   （参数本身有多可信）接的正是本页的**混沌 / 不可约性**一类。
 
 > 来源：[[2026-09-19-antifragility-notes]]、[[2026-09-19-bayesian-prior-notes]]、
-> [[2026-09-19-superforecasting-notes]]、[[2026-09-19-trustworthiness]] 的「回填清单」建议。
 
 - **与 [[antifragility]]：操作规则与三讲分工。** 见 [[uncertainty-as-fuel]] 同批回填（同一条的另一个落点）。
 - **与 [[bayesian-prior]]：一个算例。** 该页的「**极低先验 + 强证据**」算例 ——
