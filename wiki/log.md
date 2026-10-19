@@ -3,7 +3,7 @@ title: 日志
 type: meta
 slug: log
 created: 2026-09-18
-updated: 2026-09-20
+updated: 2026-10-19
 status: active
 ---
 
@@ -1911,4 +1911,8 @@ review 的「被推翻 / 修正的本库判定」里曾写「官方编号 007–
 **构建**：按 [[schema]] §2.1 逐条核 —— 判据 1（新增主线）不命中、判据 2（新增/关闭项目）不命中、**判据 3b 命中（更新 74 页 > 5）**、判据 4（大 ingest）不命中（本轮不收素材）、判据 5 不命中 → **构建**。站点 479 页 / 7721 条链接（上次 479 页 / 7811 链接）。
 
 **本轮改动尚未提交**（无提交授权，走 AGENTS.md §3 硬约束 14 的留痕这条）：`wiki/concepts/` 下 74 个页面、`wiki/index.md`、`wiki/.index/`（5 个分片）、`site/index.html` 与 `site/.build-manifest.json`。
+
+## [2026-10-08] edit | 查询归档：新建 analyses/exodus-myth-history-reception（「《出埃及记》：神话、历史与文化记忆（兼及当代演绎）」）。① 触发问题（北洛）：「《出埃及记》的神话、事实及当代演绎」→ 我提议编译成一页 analyses，北洛答「需要」。② 第 0 步检索范围（按 schema §4.1，「库里没有 X」须有记录）：读 index 全量 474 页 slug + analyses/22 页 + concepts/215 页文件名全量，无同题页；用 python 逐行扫描（非 grep）二十五个主题词 —— 出埃及 25 次/4 页、埃及 29 次/4 页、文化记忆 12 次/4 页、mnemohistory 8 次/3 页、liminality 与阈限各 7 次、摩西 3 次/3 页；Exodus / 法老 / 旧约 均 0 命中；search 三词 --top 30；精读七页（2026-09-29-exodus-and-wilderness / wilderness-model / meta-narrative / narrative-reframing / chaos-system-of-life / mcraven-ten-lessons-vs-library / moloch）。③ 扫描结论：本主题在全库只有「一份素材 + 一页派生（wilderness-model）」，素材前半的史论此前零独立页 —— 本页是第一个。同形异义已核过并排除：「红海」在 game-selection / economic-rent 里是商业隐喻、「圣经」在 moloch 里是摩洛克的出处、「以色列」的另外 8 页指现代以色列国。④ 页内五节各标了证据性质（AGENTS.md §3 第 11 条）：神话部分 / 历史部分 / 文化记忆 / 当代演绎 / 四层答案 —— 逐节写明「哪些是素材的事实断言、哪些是素材的解读、哪些是本库补的外部知识」。**核心结论**：本库能给出的是「一份素材的读法」，不是关于《出埃及记》的知识。⑤ confidence: low（素材零署名零引注，本库未做 L1 校准）；sources 只挂一份（evidence_tier: single）—— 按本 skill 第四步陷阱一，术语 / 边界类主题不挂多份。⑥ 入链 3 页（AGENTS.md §3 第 8 条）：wilderness-model 的关系节加「同一份素材的两半」、meta-narrative 加「史论部分整理见本页」、narrative-reframing 的边界与反例④加同句。⑦ 挂项目：llm-wiki-research 的「元层」新增一条（理由：本页是「零署名素材的处置样本」，与 scarcity-theory-evidence-status / source-pool-bias 同族，都是「本库质检机制的一个案例」；已明写它不填本项目任何缺口）。**「未被项目引用的知识页」样本数保持 5 个未被本轮扰动**（新增 1 + 挂掉 1，净变化 0）—— 该数是 decisions E8 的待裁定输入。⑧ 一处自查修正：初稿在关系节写了「那页已登记这一条」，触发 lint 的「自指语词频」提示（conventions 点名的审核腔），改为「那页对此的判据是…」后该提示由 4 页回到 3 页。⑨ index 重建 474 页；seed_evidence_tier --write 报「需要改动 0 页」（相符）；overview-stats --write 已重写。⑩ **lint 机器可查问题 0 项**（与基线一致）；断链 0、孤岛 0。⑪ 构建判据逐条核：判据 3a 新建 1（阈值 >3）不命中、**3b 更新 5（阈值 >5）不命中 —— 卡在边界**（llm-wiki-research / meta-narrative / narrative-reframing / overview / wilderness-model）；判据 1（新增主线）不命中、判据 2（新增/关闭项目）不命中、判据 4（大 ingest）不命中 —— 本轮不收素材、判据 5（人类要求）不命中 —— 北洛要求的是建页不是重建站点。**→ 明确地不构建。** ⑫ 本轮未做（显式）：未读素材以外的任何文献；未取回素材点名的三个术语（文化记忆 / mnemohistory / liminality）的一手出处；未核梅尔涅普塔赫石碑的年代；未改 decisions E8 行（样本数未变，无需更新）。⑬ **本轮改动尚未提交**（无提交授权，走硬约束 14 留痕这条）：wiki/analyses/exodus-myth-history-reception.md（新）、wiki/concepts/{wilderness-model,meta-narrative,narrative-reframing}.md、wiki/projects/llm-wiki-research.md、wiki/{index,overview,log}.md、wiki/.index/*（5 个分片）。
+
+## [2026-10-19] edit | 修复 exodus 页 frontmatter（\\--- → ---）；新增 doctor 一致性检查、unit tests、check.sh、pre-commit 与 CI；同步 schema 的 evidence_tier 口径与工具清单；重新生成 index/overview 并构建站点
 

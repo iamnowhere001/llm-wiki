@@ -83,6 +83,14 @@ status: active
   > 而讲稿段五次用到「品味」**没有一次说它稀缺**；[[knowledge-is-the-bottleneck]] 给四条知识库落差分层，
   > 指出技术讨论默认聚焦的「换哪种检索」恰是回报最低的一条。
   > **这是本项目第三次发现「本库的质检机制有一个成体系的盲区」**（前两次是池级偏差、证据时效）。
+- **元层 · 零署名素材的处置样本（2026-10-08 新增）**：[[exodus-myth-history-reception]]
+  > **为什么这一页属于本项目**：它记录的是本库遇到一份**零署名、零引注的 AI 生成素材**时的完整处置 ——
+  > 如何定级（判为「有形态无出处」而非「冒充事实」）、如何把「看起来对但没有一处出处」的断言
+  > 编译成可复查的形态、如何把「素材的事实断言」与「素材的解读」分开。
+  > 与 [[scarcity-theory-evidence-status]]（证据时效盲区）、[[source-pool-bias]]（池级偏差）同族：
+  > **三者都是「本库的质检机制的一个案例」。**
+  > ⚠️ **它不填本项目任何缺口**（[[2026-09-29-exodus-and-wilderness]] 的「归属判断」已逐条核过八个项目）——
+  > 它是**样本**，不是**本项目消耗的知识**。
 - **参照实现层**：[[second-brain-skill]]、[[qmd]]、[[notebooklm]]、[[eden]]
 - **方法层（2026-09-18 新增）**：[[synthesis-research]]、[[mental-models]]、[[explanatory-framework]]、[[wanweigang]]、[[2026-09-18-synthesis-research]]、[[2026-09-18-mental-representations]]
   > **为什么这几页属于本项目**：[[2026-09-18-synthesis-research]] 描述的动作（立题 → 找材料 → 判断 → 写成报告）

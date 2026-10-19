@@ -3,7 +3,7 @@ title: 维护细则
 type: meta
 slug: schema
 created: 2026-09-19
-updated: 2026-09-21
+updated: 2026-10-19
 status: active
 ---
 
@@ -47,7 +47,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources: [2026-09-18-karpathy-llm-wiki]   # 支撑本页的 raw 素材 slug
 related: [rag-vs-wiki, ingest-query-lint] # 相关页面 slug
-evidence_tier: single    # single | crossed | primary —— 见 1.2
+evidence_tier: single    # single | crossed-same-family | crossed-independent | primary —— 见 1.2
 confidence: high         # high | medium | low —— 证据充分度（主观判断）
 status: active           # active | draft | stale | deprecated
 ---
@@ -66,20 +66,22 @@ status: active           # active | draft | stale | deprecated
 | 取值 | 判据 | 意味着 |
 |---|---|---|
 | `single` | 恰好 1 份支撑素材 | **孤证**。引用时必须带着「只有一份来源」这个前提 |
-| `crossed` | ≥2 份支撑素材，且不含一手文献 | 交叉了 —— 但**可能只是同源转述**（见下） |
+| `crossed-same-family` | ≥2 份支撑素材，但归入同一个来源族 | **名义交叉、实质同源** —— 不能当作独立佐证 |
+| `crossed-independent` | ≥2 份支撑素材，且跨至少两个来源族 | 真正跨来源的交叉 —— 仍要读正文看它们是否在说同一件事 |
 | `primary` | ≥1 份 `kind: paper` 的素材支撑 | 有可独立核验的一手文献 |
 
 > [!warning] 「名义交叉，实质同源」是本库最大的陷阱
-> 多份素材不等于多个独立佐证 —— 本库有 **70 份素材同属一个来源族**（同一套得到课程的讲稿、问答与整理笔记）。
-> `lint` 会报出「有 ≥2 份支撑但全部来自同一来源族」的页面 —— **那些页面不能当作已交叉验证**。
+> 多份素材不等于多个独立佐证 —— 2026-10-19 实测：153 份 raw 中 111 份（73%）同属 `wanweigang-dedao` 来源族（同一套得到课程的讲稿、问答与整理笔记）。
+> 这个数字会随素材变化，**以 `python3 tools/wiki.py stats` 与 `overview` 的自动统计块为准**，不要在本页写死。
+> `lint` 会把「有 ≥2 份支撑但全部来自同一来源族」判为 `crossed-same-family` —— **那些页面不能当作已交叉验证**。
 > **归并失败时默认「各自独立」，不并族** —— 把真交叉误判成同源，比漏报同源代价更大。
 
 **写入方式**：`tools/seed_evidence_tier.py`（幂等）。填错了 `lint` 会报。
 
 > [!note] `primary` 的三个边界（裁定理由见 [[decisions]]）
-> - **`primary` 不是「证据强度排名」，是「有没有期刊论文级一手材料」这一个事实。** 一手专著会停在 `crossed` —— 这不是低估，是字段管不了这件事。
+> - **`primary` 不是「证据强度排名」，是「有没有期刊论文级一手材料」这一个事实。** 一手专著通常停在 `crossed-*`（若只有这一本，则是 `single`）—— 这不是低估，是字段管不了这件事。
 > - **补救不在字段里，在正文里**：这类素材的 `sources/` 页与它支撑的知识页，**必须用文字显式写明「本页有一手专著 / 作者一手文本支撑」**。`lint` 与 `evidence_tier` 都不会替你说这句话。
-> - `primary` 页也未必比 `crossed` 页可信（论文本身可能质量差）。**两个维度始终独立。**
+> - `primary` 页也未必比 `crossed-*` 页可信（论文本身可能质量差）。**两个维度始终独立。**
 >
 > **`evidence_tier` 已由 frontmatter 表达，正文里不再插警示块。**
 
@@ -572,7 +574,7 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 3. 再问：**这句若错了，谁会被追责？** 无人可追 → 它是共识，不是发现。
 
 **连带影响 `evidence_tier`**：本类最大的危害是**冒充交叉验证**。
-多份素材的 AI 段各自复述同一句流行话，`sources` 数上去，`evidence_tier` 会判 `crossed` ——
+多份素材的 AI 段各自复述同一句流行话，`sources` 数上去，`evidence_tier` 会判成 `crossed-*`（常见是 `crossed-independent`）——
 但支撑它的不是独立来源，是**同一个「没有来源」**。
 **处置**：判为复述的断言，**不得计为一份独立佐证**；页内须显式写明「疑似复述流行共识，非独立来源」。
 （与 §1.2 的「名义交叉，实质同源」同型 —— 但那一类至少还有共同来源，本类**连来源都没有**。）
@@ -723,7 +725,7 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 | 提示 | 该怎么读 |
 |---|---|
 | **正文链接密度 < 1.5 条/千字** | 长文却几乎不在正文里引用别的页 = **清单式挂靠**（只写进 `related` 字段） |
-| **名义交叉，实质同源** | `evidence_tier: crossed` 在这里不成立 |
+| **名义交叉，实质同源** | `evidence_tier: crossed-same-family` —— 多份素材同属一个来源族，不构成独立佐证 |
 | **未被任何项目引用的知识页** | 要么挂进某个项目，要么考虑是否还值得维护 |
 | **`overview` 证据统计块与实测不一致** | 入口页的数字不该手写 —— 跑 `python3 tools/wiki.py overview-stats --write` 重写 |
 
@@ -731,7 +733,7 @@ python3 tools/wiki.py chapter-audit -v    # 逐页
 
 > [!warning] 链接总数查不出这种退化
 > `related` 字段与正文内链在 `lint` 口径里是**合并计数**的。一页哪怕正文里一句没提别的页，只要 `related` 写满，链接总数照样涨。
-> 所以「页面数 / 链接数」这对数字**只衡量库有多大，不衡量知识有多结实**。要看结实程度，盯 **`single` 页占比**与**同源 crossed 数**。
+> 所以「页面数 / 链接数」这对数字**只衡量库有多大，不衡量知识有多结实**。要看结实程度，盯 **`single` 页占比**与 **`crossed-same-family` 数**。
 
 每次 lint 完写一条日志：`python3 tools/wiki.py log lint "本轮发现 N 个问题"`。
 
@@ -810,12 +812,17 @@ python3 tools/wiki.py <command>
   template-check           模板体检：内联一致性 / 结构合规 / 两个规范名（收尾节、关系节）
   readme-check             README 体检：README 提到的子命令必须真实存在，且 CLI 每个子命令都要写进 README
   proposals                提案台账：汇总 outputs/*.md 的 frontmatter status（提案 / 已裁定 / 已执行 / 已废弃）
+  doctor                   跨文件一致性体检：frontmatter / 类型目录 / sources / index 计数 / overview 证据块
   log <type> "<message>"   追加一条日志
   new <type> <slug>        按模板新建页面（project / source / entity / concept / analysis）
   graph                    打印链接关系（便于发现枢纽页与孤岛）
 ```
 
 **零依赖**：只用 Python 标准库，不需要 pip install。
+
+**统一门禁**：提交前跑 `bash tools/check.sh`（本地 pre-commit 与 CI 共用）。它依次跑单元测试、
+`lint`、`doctor`、`rawcheck`、`overview-stats`、`template-check`、`readme-check`、`proposals`。
+`doctor` 是跨文件一致性检查 —— 它不管语义提示，只回答「同一件事的几套数字是否互相矛盾」。
 
 **`tools/` 的分工**（2026-09-30 归档后）：在用的是 `wiki.py`（工具链本体）、`tags_vocab.py`（`lint` 的标签移除集）、
 `_sync_inline_templates.py`（模板 ↔ 内联同步）；`seed_evidence_tier.py` 是 `evidence_tier` 的**写入方式**（§1.2），

@@ -4,7 +4,7 @@ type: meta
 slug: overview
 tags: []
 created: 2026-09-18
-updated: 2026-09-20
+updated: 2026-10-19
 sources: []
 related: [llm-wiki-pattern]
 confidence: high
@@ -482,20 +482,20 @@ status: active
 > 原因与 `README.md` 去硬编码是同一条：**入口页的数字会过期，而过期没人报错**。
 
 <!-- STATS:BEGIN （由 `python3 tools/wiki.py overview-stats --write` 生成；勿手改） -->
-知识页（概念 / 实体 / 分析）共 **310** 个，按 `evidence_tier`（定义见 [[schema]] §1.2）：
+知识页（概念 / 实体 / 分析）共 **311** 个，按 `evidence_tier`（定义见 [[schema]] §1.2）：
 
 | 层级 | 数量 | 占比 | 意味着 |
 |---|---|---|---|
 | `primary` | 14 | 5% | 有可独立核验的一手论文 |
 | `crossed-independent` | 57 | 18% | ≥2 份素材、**跨来源族**（真交叉） |
 | `crossed-same-family` | 44 | 14% | ≥2 份素材、但**同属一个来源族**（名义交叉、实质同源） |
-| `single` | 195 | 63% | **孤证**，只有一份来源 |
+| `single` | 196 | 63% | **孤证**，只有一份来源 |
 
 `raw/` 素材 **153** 份，其中 **111** 份归入同一个来源族（占比 **73%**）。
 
 挤掉同源水分后的真实构成：
 
-- **孤证**：195 页（63%）
+- **孤证**：196 页（63%）
 - **名义交叉、实质同源**：44 页（14%）
 - **真交叉**：57 页（18%）
 - **有一手文献**：14 页（5%）

@@ -41,6 +41,9 @@ wiki.py -- LLM Wiki 零依赖工具链
   python3 tools/wiki.py proposals          提案台账：汇总 outputs/*.md 的 frontmatter status
                                            （提案 / 已裁定 / 已执行 / 已废弃）与未执行 / 未裁定项数
                                            （只读，有缺 status 或越出词表时返回非零）
+  python3 tools/wiki.py doctor             跨文件一致性体检：frontmatter / 类型目录 / sources
+                                           指向 / index 计数 / overview 证据块
+                                           （只读，有不一致返回非零；CI 与 pre-commit 用）
   python3 tools/wiki.py graph              打印链接关系
 """
 
@@ -167,7 +170,7 @@ SECTION_FAMILIES = [
     ("核查表", ["引注核查表", "数字与引注核查表", "引注与内容核查", "回填清单"]),
 ]
 
-META_FILES = {"index", "log", "overview", "conventions"}
+META_FILES = {"index", "log", "overview", "conventions", "schema", "decisions"}
 
 # analysis 页**唯一强制**的导航节名（同族）。2026-09-30 引入，见 templates/analysis.md。
 # 它管的是**名字**，不是形状 —— 与「不该强约束章节结构」的既有判断不冲突：
@@ -176,6 +179,11 @@ META_FILES = {"index", "log", "overview", "conventions"}
 KEY_SECTION_NAMES = ("关键要点", "要点")
 
 REQUIRED_FM = ["title", "type", "slug"]
+
+# 页面类型与目录必须一致。2026-10-19 新增：此前 `Page.type` 缺字段时默认成
+# `concept`，一个 frontmatter 坏掉的 analysis 页会被静默算进概念页，导致
+# index / stats / overview 三套数字互相矛盾。类型缺失应报错，不应猜。
+TYPE_DIRS = PAGE_DIRS
 
 # 证据层级（2026-09-19 引入）—— 回答「这页的结论站得多稳」，与 confidence 是两个维度：
 #   confidence  是 LLM 的**主观**判断（high / medium / low），会随阅读而变，无法机器校验
@@ -299,6 +307,26 @@ def _scalar(s):
     return s
 
 
+def detect_frontmatter_error(text):
+    """返回 frontmatter 的结构性错误；没有错误返回空串。
+
+    这一段只判**分隔符**，不判字段是否齐全（后者由 REQUIRED_FM 管）。
+    2026-10-19 的教训：一份从聊天窗口复制回来的页面以 `\\---` 开头，
+    `parse_frontmatter` 静默返回 `{}`，`Page.type` 又默认成 `concept`，
+    于是一个 analysis 页被算成 concept，index / stats / overview 三套数字同时错。
+    """
+    first = text.split("\n", 1)[0].strip()
+    if first.startswith("\\---"):
+        return "frontmatter 起始分隔符被转义（\\---），应为 ---"
+    if first != "---":
+        return ""
+    lines = text.split("\n")
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            return ""
+    return "frontmatter 未闭合（缺少结束分隔符 ---）"
+
+
 def parse_frontmatter(text):
     """极简 YAML frontmatter 解析，返回 (dict, body)。"""
     if not text.startswith("---"):
@@ -335,18 +363,35 @@ def parse_frontmatter(text):
     return data, body
 
 
+def set_frontmatter_updated(text, today=None):
+    """只改 frontmatter 里的 updated 行；没有 frontmatter 时原样返回。"""
+    today = today or date.today().isoformat()
+    lines = text.split("\n")
+    if not lines or lines[0].strip() != "---":
+        return text
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            break
+        if lines[i].startswith("updated:"):
+            lines[i] = "updated: %s" % today
+            break
+    return "\n".join(lines)
+
+
 class Page(object):
     __slots__ = ("path", "relpath", "fm", "body", "slug", "title", "type",
-                 "links", "body_links")
+                 "links", "body_links", "fm_error")
 
-    def __init__(self, path, relpath, fm, body):
+    def __init__(self, path, relpath, fm, body, text=None):
         self.path = path
         self.relpath = relpath
         self.fm = fm
         self.body = body
         self.slug = fm.get("slug") or os.path.splitext(os.path.basename(path))[0]
         self.title = fm.get("title") or self.slug
-        self.type = fm.get("type") or ("meta" if self.slug in META_FILES else "concept")
+        # 缺 type 时不再猜 concept —— 猜错比报错更贵（见 TYPE_DIRS 注释）。
+        self.type = fm.get("type") or ("meta" if self.slug in META_FILES else "unknown")
+        self.fm_error = detect_frontmatter_error(text or "")
         # 提取链接前先剥掉代码块与行内代码 —— 文档里的示例（`[[x]]`）不是真链接
         scan = re.sub(r"```[\s\S]*?```", "", body)
         scan = re.sub(r"`[^`\n]*`", "", scan)
@@ -359,7 +404,7 @@ class Page(object):
         # 两者要分开记：related 是结构化挂靠，正文内链才是论述中真发生的引用，
         # 密度检查（BODY_LINK_DENSITY_MIN）只认后者。
         self.links = list(self.body_links)
-        for r in self.fm.get("related") or []:
+        for r in self.related:
             if isinstance(r, str) and r.strip():
                 self.links.append(r.strip())
 
@@ -367,6 +412,11 @@ class Page(object):
     def tags(self):
         t = self.fm.get("tags") or []
         return t if isinstance(t, list) else [t]
+
+    @property
+    def related(self):
+        r = self.fm.get("related") or []
+        return r if isinstance(r, list) else [r]
 
     @property
     def sources(self):
@@ -432,7 +482,7 @@ def load_pages(root):
             with open(full, "r", encoding="utf-8") as fh:
                 text = fh.read()
             fm, body = parse_frontmatter(text)
-            pages.append(Page(full, rel, fm, body))
+            pages.append(Page(full, rel, fm, body, text))
     pages.sort(key=lambda p: (p.type, p.slug))
     return pages
 
@@ -1049,16 +1099,34 @@ def cmd_lint(root):
     section("断链（指向不存在的页面）",
             ["%s  →  [[%s]]" % (src, tgt) for src, tgt in broken])
 
+    fm_bad = []
     no_fm = []
     slug_mismatch = []
+    type_dir = []
+    unknown_type = []
     for p in pages:
-        miss = [k for k in REQUIRED_FM if not p.fm.get(k)]
-        if miss:
-            no_fm.append("%s  缺少 %s" % (p.relpath, ", ".join(miss)))
+        if p.fm_error:
+            # 分隔符坏了就不必再逐字段报「缺 title/type/slug」—— 那是同一个根因。
+            fm_bad.append("%s  %s" % (p.relpath, p.fm_error))
+        else:
+            miss = [k for k in REQUIRED_FM if not p.fm.get(k)]
+            if miss:
+                no_fm.append("%s  缺少 %s" % (p.relpath, ", ".join(miss)))
         stem = os.path.splitext(os.path.basename(p.path))[0]
         if p.fm.get("slug") and p.fm["slug"] != stem:
             slug_mismatch.append("%s  slug=%s 与文件名不一致" % (p.relpath, p.fm["slug"]))
+        if p.type == "unknown" and not p.fm_error:
+            unknown_type.append("%s  缺少 type，无法归入任何页面类型" % p.relpath)
+        expected_dir = TYPE_DIRS.get(p.type)
+        if expected_dir:
+            actual_dir = os.path.basename(os.path.dirname(p.path))
+            if actual_dir != expected_dir:
+                type_dir.append("%s  type=%s 应在 %s/，实际在 %s/"
+                                % (p.relpath, p.type, expected_dir, actual_dir))
+    section("frontmatter 格式错误", fm_bad)
     section("frontmatter 缺字段", no_fm)
+    section("type 缺失或非法", unknown_type)
+    section("type 与目录不一致", type_dir)
     section("slug 与文件名不一致", slug_mismatch)
 
     # 孤岛：忽略 index.md 的入链（index 链接一切，否则永远没有孤岛）
@@ -1117,6 +1185,20 @@ def cmd_lint(root):
     section("evidence_tier 仍是拆分前的旧值（跑 tools/seed_evidence_tier.py --write 回填）",
             tier_legacy)
     section("evidence_tier 与支撑素材不符", tier_mismatch)
+
+    # sources / related 是 YAML 字段，不是 wikilink，断链检查覆盖不到。
+    # 2026-10-19 之前全靠人工核；现在至少把「指向不存在的目标」变成硬问题。
+    dangling_src = []
+    dangling_rel = []
+    for p in pages:
+        for s in p.sources:
+            if s not in by_slug and s not in raw_meta:
+                dangling_src.append("%s  sources: %s" % (p.relpath, s))
+        for r in p.related:
+            if isinstance(r, str) and r.strip() and r not in by_slug:
+                dangling_rel.append("%s  related: %s" % (p.relpath, r.strip()))
+    section("sources 指向不存在的页面 / 素材", dangling_src)
+    section("related 指向不存在的页面", dangling_rel)
 
     # 标签准入 —— 规则见 wiki/schema.md §1.7，移除集见 tools/tags_vocab.py。
     # 这条只拦一件事：**「这页自己是什么 / 从哪来」不该做标签**
@@ -1363,6 +1445,25 @@ def cmd_lint(root):
                                   % (s, d, format(nc, ","), n, limit))
             if len(thin) > 12:
                 advisories.append("    …… 另有 %d 个" % (len(thin) - 12))
+        # confidence 与 evidence_tier 是两个维度，但 high + 单源/同源是自相矛盾的高置信。
+        # 只做提示，不自动改值 —— 「单源为什么仍 high」有时有正文理由，机器判不了。
+        weak_high = []
+        for p in pages:
+            if p.type not in EVIDENCE_TYPES:
+                continue
+            if (p.fm.get("confidence") or "").strip() != "high":
+                continue
+            t, n, _fams = compute_evidence_tier(p, raw_meta)
+            if t in ("single", "crossed-same-family"):
+                weak_high.append((p.slug, t, n))
+        if weak_high:
+            advisories.append(
+                "以下 %d 个页面 `confidence: high`，但 `evidence_tier` 是单源或同源 —— "
+                "高置信与证据强度不一致，建议降级或在页内写明「为什么单源仍 high」：" % len(weak_high))
+            for slug, t, n in sorted(weak_high)[:12]:
+                advisories.append("    %-46s %s（%d 份支撑）" % (slug, t, n))
+            if len(weak_high) > 12:
+                advisories.append("    …… 另有 %d 个" % (len(weak_high) - 12))
         # 缺口表已清空但项目还开着 —— 按 wiki/schema.md §1.6，可以收尾了
         for p in sorted(projects, key=lambda x: x.slug):
             if p.stage in ("planning", "active") and gap_table_rows(p.body) == 0:
@@ -1501,7 +1602,6 @@ def cmd_stats(root):
         prim = tiers.get("primary", 0)
         print("  → 真正经得起独立佐证的（crossed-independent + primary）: %d 个（%.0f%%）"
               % (ind + prim, 100.0 * (ind + prim) / total))
-    return 0
 
     projects = [p for p in pages if p.type == "project"]
     if projects:
@@ -1612,6 +1712,7 @@ def cmd_overview_stats(root, write=False):
         if new == text:
             print("overview 统计块: 已是最新，无需重写。")
             return 0
+        new = set_frontmatter_updated(new)
         write_text(path, new)
         print("overview 统计块: 已重写 %s" % path)
         return 0
@@ -1708,12 +1809,18 @@ def cmd_index(root):
         groups[p.type].append(p)
 
     today = date.today().isoformat()
+    path = os.path.join(root, "wiki", "index.md")
+    created = today
+    if os.path.isfile(path):
+        with open(path, "r", encoding="utf-8") as fh:
+            old_fm, _ = parse_frontmatter(fh.read())
+        created = old_fm.get("created") or today
     out = []
     out.append("---")
     out.append("title: 索引")
     out.append("type: meta")
     out.append("slug: index")
-    out.append("created: %s" % today)
+    out.append("created: %s" % created)
     out.append("updated: %s" % today)
     out.append("status: active")
     out.append("---")
@@ -1788,6 +1895,17 @@ def cmd_index(root):
         out.append("")
         for p in srcs:
             out.append("- [[%s]]" % p.slug)
+        out.append("")
+
+    # 类型缺失的页面不能被静默吞掉：lint 会报错，但索引也要让它可见。
+    unknowns = sorted(groups.get("unknown", []), key=lambda p: p.slug)
+    if unknowns:
+        out.append("## 未分类 (%d)" % len(unknowns))
+        out.append("")
+        out.append("> ⚠️ 这些页面的 frontmatter 缺 `type` 或类型非法。先跑 `lint` 修好，再重新生成索引。")
+        out.append("")
+        for p in unknowns:
+            out.append("- [[%s|%s]]" % (p.slug, p.title))
         out.append("")
 
     # 系统页导航。**从 meta 页动态生成**，不再硬编码 —— 曾因硬编码而在新增
@@ -1871,8 +1989,14 @@ def cmd_log(root, kind, message):
         ) % (today, today)
         write_text(path, header + entry)
     else:
-        with open(path, "a", encoding="utf-8") as fh:
-            fh.write(entry)
+        with open(path, "r", encoding="utf-8") as fh:
+            text = fh.read()
+        # 只改 frontmatter 里的 updated，正文一个字不动（日志是 append-only）。
+        text = set_frontmatter_updated(text, today)
+        if not text.endswith("\n"):
+            text += "\n"
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write(text + entry)
     print("已记录: %s" % entry.strip())
     return 0
 
@@ -2154,6 +2278,118 @@ def cmd_proposals(root):
             print("  - " + p)
         return 1
     print("\n提案台账: 0 项问题（每份提案的 status 都在词表内）。")
+    return 0
+
+
+# ---------------------------------------------------------------- doctor
+
+
+def cmd_doctor(root):
+    """跨文件一致性体检：frontmatter / 类型目录 / sources 指向 / index / overview。
+
+    与 `lint` 的分工：lint 面向人，逐项列出语义提示；doctor 面向门禁，只回答
+    「同一件事的几套数字是否互相矛盾」。CI 与 pre-commit 跑 doctor，不跑 lint 的全部提示。
+    """
+    pages = load_pages(root)
+    by_slug = {p.slug: p for p in pages}
+    raw_meta = load_raw_meta(root)
+    problems = []
+
+    for p in pages:
+        if p.fm_error:
+            problems.append("%s  %s" % (p.relpath, p.fm_error))
+        if p.type == "unknown":
+            problems.append("%s  缺少 type，无法归入任何页面类型" % p.relpath)
+        expected_dir = TYPE_DIRS.get(p.type)
+        if expected_dir:
+            actual_dir = os.path.basename(os.path.dirname(p.path))
+            if actual_dir != expected_dir:
+                problems.append("%s  type=%s 应在 %s/，实际在 %s/"
+                                % (p.relpath, p.type, expected_dir, actual_dir))
+        for s in p.sources:
+            if s not in by_slug and s not in raw_meta:
+                problems.append("%s  sources: %s（页面与 raw 素材都不存在）" % (p.relpath, s))
+        for r in p.related:
+            if isinstance(r, str) and r.strip() and r.strip() not in by_slug:
+                problems.append("%s  related: %s（页面不存在）" % (p.relpath, r.strip()))
+
+    # index.md 的计数必须与 load_pages 实测一致。这里读的是生成后的文本，
+    # 故意不复用 cmd_index 的内部变量 —— 否则生成器写错时两边会一起错。
+    index_path = os.path.join(root, "wiki", "index.md")
+    if not os.path.isfile(index_path):
+        problems.append("wiki/index.md 不存在（跑 `wiki.py index`）")
+    else:
+        with open(index_path, "r", encoding="utf-8") as fh:
+            index_text = fh.read()
+        m = re.search(r"页面总数 \*\*(\d+)\*\*", index_text)
+        expected_total = len([p for p in pages if p.type != "meta"])
+        if not m:
+            problems.append("index.md 找不到「页面总数」")
+        elif int(m.group(1)) != expected_total:
+            problems.append("index.md 页面总数 %s ≠ 实测 %d（跑 `wiki.py index`）"
+                            % (m.group(1), expected_total))
+        for t, label in TYPE_LABEL.items():
+            if t == "meta":
+                continue
+            expected_n = len([p for p in pages if p.type == t])
+            m = re.search(r"^## %s \((\d+)\)" % re.escape(label), index_text, re.M)
+            if expected_n and not m:
+                problems.append("index.md 缺少「## %s (%d)」段（跑 `wiki.py index`）"
+                                % (label, expected_n))
+            elif m and int(m.group(1)) != expected_n:
+                problems.append("index.md %s %s ≠ 实测 %d（跑 `wiki.py index`）"
+                                % (label, m.group(1), expected_n))
+            elif not expected_n and m:
+                problems.append("index.md 仍有「## %s (%s)」段，但实测 0 页（跑 `wiki.py index`）"
+                                % (label, m.group(1)))
+        raw_dir = os.path.join(root, "raw")
+        expected_raw = len([f for f in os.listdir(raw_dir) if f.endswith(".md")]) \
+            if os.path.isdir(raw_dir) else 0
+        m = re.search(r"raw 素材 \*\*(\d+)\*\*", index_text)
+        if not m:
+            problems.append("index.md 找不到「raw 素材」计数")
+        elif int(m.group(1)) != expected_raw:
+            problems.append("index.md raw 素材 %s ≠ 实测 %d（跑 `wiki.py index`）"
+                            % (m.group(1), expected_raw))
+        m = re.search(r"摘要页 \*\*(\d+)\*\*", index_text)
+        expected_src = len([p for p in pages if p.type == "source"])
+        if not m:
+            problems.append("index.md 找不到「摘要页」计数")
+        elif int(m.group(1)) != expected_src:
+            problems.append("index.md 摘要页 %s ≠ 实测 %d（跑 `wiki.py index`）"
+                            % (m.group(1), expected_src))
+
+    # overview 的自动统计块必须与 evidence_stats_lines 实测一致。
+    overview_path = os.path.join(root, "wiki", "overview.md")
+    if not os.path.isfile(overview_path):
+        problems.append("wiki/overview.md 不存在")
+    else:
+        with open(overview_path, "r", encoding="utf-8") as fh:
+            overview_text = fh.read()
+        span = _overview_span(overview_text)
+        if span is None:
+            problems.append("overview.md 缺 STATS 自动块标记（%s … %s）"
+                            % (STATS_BEGIN, STATS_END))
+        else:
+            head_end, tail_start = span
+            actual = overview_text[head_end:tail_start].strip("\n")
+            expected = "\n".join(evidence_stats_lines(root))
+            if actual != expected:
+                problems.append("overview.md 证据统计块与实测不一致（跑 `wiki.py overview-stats --write`）")
+
+    print("doctor  |  %s" % root)
+    print("-" * 62)
+    print("  页面 %d（素材页 %d / 非素材知识页 %d / 系统页 %d）"
+          % (len(pages),
+             len([p for p in pages if p.type == "source"]),
+             len([p for p in pages if p.type not in ("meta", "source")]),
+             len([p for p in pages if p.type == "meta"])))
+    if problems:
+        print("\ndoctor: 发现 %d 项不一致：" % len(problems))
+        for p in problems:
+            print("  - " + p)
+        return 1
+    print("\ndoctor: 0 项不一致。")
     return 0
 
 
@@ -5759,6 +5995,8 @@ def main(argv):
         return cmd_readme_check(root)
     if cmd == "proposals":
         return cmd_proposals(root)
+    if cmd == "doctor":
+        return cmd_doctor(root)
 
     print("未知命令: %s\n" % cmd)
     print(USAGE)

@@ -107,6 +107,7 @@ python3 tools/wiki.py chapter-audit        # source 页「正文 / 账目」分�
 python3 tools/wiki.py template-check       # 模板体检：内联一致性 / 结构合规 / 两个规范名
 python3 tools/wiki.py readme-check         # README 体检：本文件提到的子命令必须真实存在
 python3 tools/wiki.py proposals            # 提案台账：汇总 outputs/*.md 的 status 与未执行 / 未裁定项数
+python3 tools/wiki.py doctor               # 跨文件一致性体检：frontmatter / 类型目录 / sources / index / overview
 python3 tools/wiki.py log <type> "<msg>"   # 追加一条日志
 python3 tools/wiki.py new <type> <slug>    # 按模板新建页面（project / source / entity / concept / analysis）
 python3 tools/wiki.py graph                # 打印链接关系
@@ -114,6 +115,19 @@ python3 tools/wiki.py graph                # 打印链接关系
 
 > 这份清单由 `readme-check` 双向看守：**提到的命令必须真实存在，CLI 的每个命令也必须写在这里** ——
 > 所以它不会再悄悄落后（2026-09-29 之前它列 9 个、实际 15 个，且没有任何检查覆盖文档）。
+
+提交前跑一次统一门禁（本地 pre-commit 与 CI 共用）：
+
+```bash
+bash tools/check.sh
+```
+
+它依次跑单元测试、`lint`、`doctor`、`rawcheck`、`overview-stats`、`template-check`、
+`readme-check`、`proposals`。安装 hook：
+
+```bash
+cp tools/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
 
 ---
 

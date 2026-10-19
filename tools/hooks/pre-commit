@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# 安装：cp tools/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+set -euo pipefail
+exec bash tools/check.sh
