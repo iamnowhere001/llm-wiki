@@ -805,7 +805,7 @@ python3 tools/wiki.py <command>
   rawcheck [--strict] [--write]  核「raw/ 不可变」这条铁律（AGENTS.md §3.1）
                            默认**走 git**：已跟踪文件被改 / 删 = 违规；未跟踪新增 = 正常收录（只提示）
                            --strict 额外对比内容指纹基准，能发现**已提交**的篡改
-                           --write 建立 / 更新严格模式基准
+                           --write 建立 / 更新严格模式基准（`tools/raw-manifest.json`，随仓库走）
   claim <scope>            取写锁（并发会话保护；取不到即中止，见 AGENTS.md §3）
   release [--force]        释放写锁
   chapter-audit [-v]       source 页正文区 / 账目区对账

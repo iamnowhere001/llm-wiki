@@ -639,6 +639,7 @@ def gap_table_rows(body):
 # 理由是「git 告诉你 raw 变了，但告诉不了你这次改动是否经过裁定」。这个理由成立，
 # 但它有一个当时没料到的后果 —— **基准必然漂移**：
 #   ① 基准放 .workbuddy-ai/，而该目录已 gitignore → 不进版本控制、换机器不可复现；
+#      （2026-10-19 已改：基准移到 `tools/raw-manifest.json`，随仓库走。下面的历史保留。）
 #   ② 更新基准被 §3.2 归为「须人类裁定」，而**收录本身每天都在往 raw/ 加文件**；
 #   ③ 于是基准必然落后，`lint` 必然常亮红灯。
 # 实测（2026-09-29）：lint 退出码 51，51 项**全部**是 raw 漂移 —— 37 项「内容已改动」
@@ -656,7 +657,7 @@ def gap_table_rows(body):
 #
 # 判据同 buildcheck：**测不了 ≠ 没问题**。git 不可用时返回「无法判断」并计为问题。
 
-RAW_MANIFEST_REL = os.path.join(".workbuddy-ai", "raw-manifest.json")
+RAW_MANIFEST_REL = os.path.join("tools", "raw-manifest.json")
 
 
 def raw_manifest_path(root):
