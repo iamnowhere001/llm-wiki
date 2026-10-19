@@ -4,11 +4,11 @@ type: concept
 slug: scapegoat-mechanism
 tags: [现代思维工具, 参与者, 万维钢, 替罪羊, 系统思维, 基本归因谬误, 安全工程, 公正文化]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-scapegoat]
 related: [modern-thinking-tools, common-cause-vs-special-cause, systems-over-goals, goodharts-law, skin-in-the-game, 2026-09-20-unintended-consequences, 2026-09-20-third-thing, 2026-09-20-legibility-and-metis, 2026-09-20-slow-variables, unintended-consequences]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

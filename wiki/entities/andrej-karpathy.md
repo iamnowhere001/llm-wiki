@@ -4,11 +4,11 @@ type: entity
 slug: andrej-karpathy
 tags: [人物, LLM]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, vannevar-bush]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -42,6 +42,9 @@ AI 领域研究者与工程实践者。在本知识库中，他的角色是**模
 
 - [[llm-wiki-pattern]]
 - [[compounding-knowledge]]
+
+> [!note] 单来源实体页
+> 本页只依赖 [[2026-09-18-karpathy-llm-wiki]] 一份素材；按 [[schema]] §6，`confidence` 记 `medium`。
 
 ## 来源
 

@@ -4,11 +4,11 @@ type: concept
 slug: legibility
 tags: [现代思维工具, 参与者, 万维钢, 可读性, 米提斯, 斯科特, 默会知识, 编户齐民]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-legibility-and-metis]
 related: [modern-thinking-tools, tacit-knowledge, michael-polanyi, situated-cognition, commonplace-book, zettelkasten, 2026-09-20-protection-and-public-contract, 2026-09-20-third-thing, 2026-09-20-unintended-consequences, 2026-09-20-slow-variables]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

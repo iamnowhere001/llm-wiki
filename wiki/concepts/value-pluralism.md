@@ -5,11 +5,11 @@ type: concept
 slug: value-pluralism
 tags: [现代思维工具, 参与者, 万维钢, 价值多元, 内卷, 教育, 社会]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-moloch]
 related: [2026-09-20-moloch, single-track-tournament, moloch, involution, value-incommensurability, credential-inflation, great-leveling, positional-goods]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

@@ -4,11 +4,11 @@ type: entity
 slug: mitchell-hashimoto
 tags: [人物, AI, 工程]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-hashimoto-my-ai-adoption-journey]
 related: [harness-engineering, harness, agents-md]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -19,6 +19,7 @@ status: active
 > [!note] 本页是孤证，但素材是**本人一手自述**
 > 全部信息来自他本人的博客 [[2026-09-19-hashimoto-my-ai-adoption-journey]]（`kind: essay`）。
 > **这是一手文本，不是转述** —— 本库 `evidence_tier` 只认 `paper`，故记 `single`。
+> 按 [[schema]] §6，单来源实体页的 `confidence` 记 `medium`；素材的一手性质不改变这一档。
 
 ## 关键要点
 

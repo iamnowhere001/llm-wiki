@@ -5,11 +5,11 @@ type: concept
 slug: economic-rent
 tags: [赚钱逻辑, 万维钢, 竞争优势, 经济租, 护城河, 寻租]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-economic-rent]
 related: [alpha-vs-beta, business-leverage, effectuation, multiplicative-world, game-selection, social-capital, structural-holes, symbolic-capital, opportunity-systems, 2026-09-19-economic-rent]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

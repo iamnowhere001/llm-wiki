@@ -4,11 +4,11 @@ type: concept
 slug: state-formation
 tags: [现代思维工具, 参与者, 万维钢, 国家理论, 家产制, 黄宗羲定律, 合法暴力垄断]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-protection-and-public-contract]
 related: [modern-thinking-tools, credible-commitment, economic-rent, 2026-09-20-externality, 2026-09-20-soft-budget-constraint, 2026-09-20-legibility-and-metis, 2026-09-20-slow-variables, hume-guillotine]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

@@ -4,11 +4,12 @@ type: concept
 slug: third-object
 tags: [现代思维工具, 参与者, 万维钢, 第三物, 边界物, 共同注意, 超级目标]
 created: 2026-09-20
-updated: 2026-10-06
+updated: 2026-10-19
 sources: [2026-09-20-third-thing]
 related: [modern-thinking-tools, wanweigang, problem-externalization, 2026-09-20-social-status, 2026-09-20-ritual-as-protocol, 2026-09-20-common-knowledge, 2026-09-20-scapegoat, 2026-09-20-market-for-lemons, 2026-09-20-externality, 2026-09-20-legibility-and-metis, goodharts-law]
 evidence_tier: single
 confidence: high
+confidence_note: "讲稿段 100%；7 条引注全部核对，卷期页码无错"
 status: active
 ---
 

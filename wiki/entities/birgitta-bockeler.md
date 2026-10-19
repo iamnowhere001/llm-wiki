@@ -4,11 +4,11 @@ type: entity
 slug: birgitta-bockeler
 tags: [人物, AI, Thoughtworks, 工程]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-bockeler-harness-engineering-coding-agent-users]
 related: [harness-engineering, guides-and-sensors, harness]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -19,6 +19,7 @@ status: active
 > [!note] 本页是孤证，但素材是**本人一手署名文章**
 > 全部信息来自她署名的 [[2026-09-19-bockeler-harness-engineering-coding-agent-users]]（`kind: essay`）。
 > **这是一手文本，不是转述** —— 本库 `evidence_tier` 只认 `paper`，故记 `single`。
+> 按 [[schema]] §6，单来源实体页的 `confidence` 记 `medium`；素材的一手性质不改变这一档。
 
 > [!note] 一处必须记住的署名事实
 > 她的文章**挂在 `martinfowler.com` 域名下**，因此被大量中文转述记作「Fowler 的文章」。

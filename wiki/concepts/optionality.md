@@ -4,11 +4,11 @@ type: concept
 slug: optionality
 tags: [万维钢, 决策, 期权, BATNA, 单向门, 实物期权, 对赌]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-optionality-notes]
 related: [explore-exploit-tradeoff, multiplicative-world, heavy-tailed-distribution, compensatory-control, narrative-power, deliberate-practice, luck-over-talent, prospect-theory, state-leverage, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

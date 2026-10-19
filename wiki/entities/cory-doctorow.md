@@ -4,11 +4,11 @@ type: entity
 slug: cory-doctorow
 tags: [人物, 平台, enshittification, 互操作性, 活动家, 科幻作家]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-platform-business-model]
 related: [enshittification, platform-business-model, 2026-09-19-platform-business-model, wanweigang, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -65,7 +65,7 @@ status: active
 
 > [!note] 单来源声明
 > 本页全部内容来自**一份素材**（[[2026-09-19-platform-business-model]]）。
-> 但其中的核心事实（人名、术语、ADS 年度词汇、成书年份）**均已外部核实**，故 `confidence: high`。
+> 其中的核心事实（人名、术语、ADS 年度词汇、成书年份）**均已外部核实**；但按 [[schema]] §6，单来源实体页的 `confidence` 记 `medium`。
 > 他的其它作品与生平**未收录、未展开**。
 
 ## 待办 / 开放问题

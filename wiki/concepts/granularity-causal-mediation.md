@@ -5,11 +5,11 @@ type: concept
 slug: granularity-causal-mediation
 tags: [万维钢, 决策, 最小描述长度, 因果中介, 好调节器定理, 颗粒度, do-operator]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-granularity-causal-mediation-notes]
 related: [mental-models, compression-as-intelligence, information-bottleneck, prediction-error, schema-psychology, explanatory-framework, cognitive-load-theory, tacit-knowledge, transfer-of-learning, game-selection, state-leverage, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

@@ -4,17 +4,21 @@ type: concept
 slug: plain-text-and-git
 tags: [约定, 基础设施, 版本控制]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, three-layer-architecture, index-and-log]
 evidence_tier: single
 confidence: high
+confidence_note: "单源但为一手原文：只描述 Karpathy Gist 提出的模式，不外推为独立验证"
 status: active
 ---
 
 # 纯文本与 Git：知识库的基础设施
 
 > 整个 wiki 就是「一个装 Markdown 文件的 git 仓库」。这不是实现细节，而是 [[llm-wiki-pattern]] 能成立的前提 —— 没有版本历史，「人类与 LLM 共同演进 schema」就是不可审计的。
+
+> [!note] 单源但为一手原文
+> 本页只描述 [[2026-09-18-karpathy-llm-wiki]] 提出的模式；`evidence_tier: single` 反映 raw 份数，不表示这些结论已被独立验证。
 
 ## 关键要点
 

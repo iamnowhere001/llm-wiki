@@ -601,6 +601,11 @@ def compute_evidence_tier(page, raw_meta):
     return ("crossed-independent", len(srcs), families)
 
 
+def has_confidence_note(page):
+    """页面是否已用 confidence_note 写明「单源/同源仍 high」的人工理由。"""
+    return bool((page.fm.get("confidence_note") or "").strip())
+
+
 # ---------------------------------------------------------------- lint
 
 
@@ -1453,6 +1458,9 @@ def cmd_lint(root):
             if p.type not in EVIDENCE_TYPES:
                 continue
             if (p.fm.get("confidence") or "").strip() != "high":
+                continue
+            # 已用 confidence_note 写明「单源/同源仍 high」的人工理由 —— 不再重复提示。
+            if has_confidence_note(p):
                 continue
             t, n, _fams = compute_evidence_tier(p, raw_meta)
             if t in ("single", "crossed-same-family"):
@@ -2507,6 +2515,7 @@ related: []
 evidence_tier: single    # single | crossed-independent | crossed-same-family | primary
                          # —— 由 sources 推导，lint 校验
 confidence: high         # high | medium | low —— 主观判断
+confidence_note: ...     # 可选：单源/同源仍 high 的理由；lint 见到后不再提示
 status: active           # active | draft | stale | deprecated
 ---
 ```
@@ -2515,6 +2524,10 @@ status: active           # active | draft | stale | deprecated
 后者是「我信多少」（主观）。一页可以有多份来源（`crossed-same-family`）但仍然 `confidence: low`（全是转述）。
 多份素材也不等于多个独立佐证 —— **同源转述的重复计数不算交叉验证**，所以
 `crossed-independent` 与 `crossed-same-family` 是两个不同的值，不是同一个值的两种说法。
+
+**`confidence_note`（可选）**：当 `confidence: high` 但 `evidence_tier` 是 `single` /
+`crossed-same-family` 时，用一句话写清「为什么单源仍 high」。`lint` 见到该字段就不再提示；
+它不改变 `evidence_tier`，也不是证据本身。
 
 项目页额外有 `goal`（**必须可验收** —— 看到它能回答「做完了没有」）与
 `stage`（`planning` / `active` / `paused` / `shipped` / `abandoned`）。

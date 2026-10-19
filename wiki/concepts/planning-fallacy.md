@@ -5,11 +5,11 @@ type: concept
 slug: planning-fallacy
 tags: [万维钢, 决策, 预测, 外部视角, 规划谬误, 傅以斌]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-reference-class-notes]
 related: [reference-class, superforecasting, luck-over-talent, bayesian-prior, regression-to-the-mean, heavy-tailed-distribution, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

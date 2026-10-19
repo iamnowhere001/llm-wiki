@@ -4,11 +4,12 @@ type: concept
 slug: baumols-cost-disease
 tags: [鲍莫尔成本病, 服务业, 停滞部门, 医疗教育, 生产率, 进步部门]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-baumols-cost-disease]
 related: [william-baumol, jevons-paradox, steady-state-survival-logic, platform-business-model, business-leverage]
 evidence_tier: single
 confidence: high
+confidence_note: "核心数字与 Baumol 年代线已外核；AI 加工段不采"
 status: active
 ---
 
@@ -19,6 +20,9 @@ status: active
 > 停滞部门工资被进步部门拉着走，相对成本注定上升。
 > **由 William Baumol 与 William Bowen 于 1965 年提出**（见 [[william-baumol]]），
 > 落点是一句反直觉的安慰：**这不是病，是富裕社会的宿命 —— 现代化没有消灭稀缺，只是把稀缺从物转移到了人。**
+
+> [!note] 单源，但核心数字已核
+> Baumol 的年代线与两组宏观数字已核对；AI 加工段不采。
 
 ## 关键要点
 

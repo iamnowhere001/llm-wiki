@@ -4,11 +4,11 @@ type: entity
 slug: lisa-feldman-barrett
 tags: [人物, 神经科学, 情绪建构]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-cognitive-decoupling]
 related: [cognitive-decoupling, emotional-granularity, emotion-as-coupling, emotion-awareness]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -39,7 +39,7 @@ status: active
 >
 > 需要注意的是：本库**尚未核对原书**，目前的依据是这篇课程文章的转引。
 > 但「有书名、有出版社、有英文原文」与素材一里那些「无署名、无来源的 AI 阐释」是两种完全不同等级的材料 ——
-> 前者可核，后者不可核。**本库据此把本页定为 `high`。**
+> 前者可核，后者不可核。**本库据此把本页定为 `medium`**：引注可核，但仍是单篇课程转引，原书未核。
 
 ## 在本知识库中的角色
 
@@ -57,6 +57,9 @@ status: active
 - [[emotional-granularity]] —— **很可能有直接关联，待补文献**
 - [[emotion-as-coupling]] —— 建构论与耦合论相邻：两者都反对「情绪是内部独立产生的状态」
 - [[emotion-awareness]] —— 本项目
+
+> [!note] 单来源实体页
+> 本页只依赖 [[2026-09-18-cognitive-decoupling]] 一份素材；按 [[schema]] §6，`confidence` 记 `medium`。
 
 ## 来源
 

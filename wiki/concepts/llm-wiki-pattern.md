@@ -4,17 +4,21 @@ type: concept
 slug: llm-wiki-pattern
 tags: [知识管理, 模式, LLM]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [three-layer-architecture, compounding-knowledge, rag-vs-wiki, why-pkm-in-ai-era]
 evidence_tier: single
 confidence: high
+confidence_note: "单源但为一手原文：只描述 Karpathy Gist 提出的模式，不外推为独立验证"
 status: active
 ---
 
 # LLM Wiki 模式
 
 > 让 LLM 增量构建并持续维护一份持久、互相链接的 Markdown 知识库，作为人与原始素材之间的中间层 —— 知识**编译一次，然后保鲜**，而不是每次查询重新推导。
+
+> [!note] 单源但为一手原文
+> 本页只描述 [[2026-09-18-karpathy-llm-wiki]] 提出的模式；`evidence_tier: single` 反映 raw 份数，不表示这些结论已被独立验证。
 
 ## 关键要点
 

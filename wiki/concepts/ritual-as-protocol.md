@@ -4,11 +4,11 @@ type: concept
 slug: ritual-as-protocol
 tags: [现代思维工具, 参与者, 万维钢, 礼, 社会互动, 聚焦点, 信任]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-ritual-as-protocol]
 related: [modern-thinking-tools, credible-commitment, social-capital, symbolic-capital, tacit-knowledge, 2026-09-19-trustworthiness, 2026-09-20-social-status, 2026-09-20-common-knowledge, 2026-09-20-third-thing, third-object]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

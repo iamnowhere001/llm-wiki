@@ -4,11 +4,11 @@ type: concept
 slug: slow-variables
 tags: [现代思维工具, 参与者, 万维钢, 慢变量, 稳定预期, 制度经济学, 韧性, 可信承诺]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-slow-variables]
 related: [modern-thinking-tools, credible-commitment, adaptive-cycle, platform-business-model, skin-in-the-game, wu-wei, 2026-09-20-soft-budget-constraint, 2026-09-20-unintended-consequences, 2026-09-20-protection-and-public-contract, 2026-09-20-legibility-and-metis]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

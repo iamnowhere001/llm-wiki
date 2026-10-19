@@ -5,11 +5,12 @@ type: concept
 slug: effectuation
 tags: [万维钢, 效应化, 创业, 因果式, 萨拉斯瓦蒂]
 created: 2026-09-18
-updated: 2026-10-06
+updated: 2026-10-19
 sources: [2026-09-18-game-selection-notes, 2026-09-19-value-of-information-notes, 2026-09-19-effectuation-notes]
 related: [game-selection, multiplicative-world, agent-vs-tool, cybernetic-learning, saras-sarasvathy, modern-thinking-tools, field-theory]
 evidence_tier: crossed-same-family
 confidence: high
+confidence_note: "Sarasvathy 2001 原文与 U-Haul 案例已核；同族讲次只作增厚"
 status: active
 ---
 
@@ -18,6 +19,9 @@ status: active
 > **因果式（causation）先有目标再找手段；效应化（effectuation）先看手头有什么资源，再把它们组合成一个可能的东西。**
 > 大厨比喻：因果式是**照着菜谱去买菜**，效应化是**打开冰箱看有什么菜就做什么饭**。
 > 由弗吉尼亚大学达顿商学院的 Saras D. Sarasvathy 于 **2001 年**提出。
+
+> [!note] 单源同族，但核心理论已核
+> Sarasvathy 2001 原文与 U-Haul 案例已逐项核对；三份讲次同属一个来源族，只作增厚。
 
 ## 关键要点
 

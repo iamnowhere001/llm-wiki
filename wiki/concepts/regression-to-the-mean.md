@@ -5,11 +5,12 @@ type: concept
 slug: regression-to-the-mean
 tags: [万维钢, 决策, 统计, 回归谬误, 定力, 戴明]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-regression-to-the-mean-notes]
 related: [luck-over-talent, selection-bias, bayesian-prior, cybernetic-learning, goodharts-law, deliberate-practice, prediction-error, heavy-tailed-distribution, modern-thinking-tools]
 evidence_tier: single
 confidence: high
+confidence_note: "核心引注逐项对上；AI 段四个自查点复核大体正确"
 status: active
 ---
 

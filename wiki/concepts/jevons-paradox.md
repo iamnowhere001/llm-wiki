@@ -4,11 +4,11 @@ type: concept
 slug: jevons-paradox
 tags: [杰文斯悖论, AI与就业, 任务模型, 反末日论, 效率, 资源消耗]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-jevons-paradox]
 related: [william-stanley-jevons, baumols-cost-disease, platform-business-model, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

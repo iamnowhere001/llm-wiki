@@ -4,11 +4,11 @@ type: entity
 slug: james-gross
 tags: [人物, 心理学, 情绪调节]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-cognitive-decoupling]
 related: [cognitive-reappraisal, emotion-regulation-toolkit, emotion-awareness]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -67,6 +67,9 @@ status: active
 - [[cognitive-reappraisal]] —— 他的核心贡献之一（本库中已独立成页，定为 `high`）
 - [[emotion-regulation-toolkit]] —— 那一页收集的技术，本页给出了它们的分类坐标
 - [[emotion-awareness]] —— 本项目的术语边界缺口由本页填上
+
+> [!note] 单来源实体页
+> 本页只依赖 [[2026-09-18-cognitive-decoupling]] 一份素材；按 [[schema]] §6，`confidence` 记 `medium`。
 
 ## 来源
 

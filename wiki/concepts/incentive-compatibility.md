@@ -4,11 +4,11 @@ type: concept
 slug: incentive-compatibility
 tags: [现代思维工具, 参与者, 万维钢, 激励相容, 机制设计, 制度设计]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-incentive-compatibility]
 related: [modern-thinking-tools, goodharts-law, self-determination-theory, credible-commitment, hume-guillotine, 2026-09-20-market-for-lemons, 2026-09-20-soft-budget-constraint, 2026-09-20-unintended-consequences, skin-in-the-game]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

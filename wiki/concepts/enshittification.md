@@ -5,11 +5,12 @@ type: concept
 slug: enshittification
 tags: [万维钢, 平台, 商业模式, 多克托罗, 约束失效, 衰败化]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-platform-business-model]
 related: [platform-business-model, cory-doctorow, yanis-varoufakis, 2026-09-19-platform-business-model, modern-thinking-tools]
 evidence_tier: single
 confidence: high
+confidence_note: "Doctorow 术语、年份、机构与成书均核；讲稿三段与原文四段的差异已登记"
 status: active
 ---
 
@@ -21,6 +22,9 @@ status: active
 > 2023 年被**美国方言学会（American Dialect Society）选为年度词汇**（sources 页已核）。
 >
 > **一句话机制**：**不是老板变坏了，是约束失效了** —— 当各方都跑不掉，收割就变成理性选择。
+
+> [!note] 单源，但术语事实已核
+> Doctorow 的造词、年份、机构与成书信息已外部核对；讲稿只译三段、原文四段的差异已登记。
 
 ## 关键要点
 

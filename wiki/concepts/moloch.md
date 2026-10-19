@@ -5,11 +5,11 @@ type: concept
 slug: moloch
 tags: [现代思维工具, 参与者, 万维钢, 摩洛克, 多极陷阱, 博弈论, 内卷]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-moloch]
 related: [2026-09-20-moloch, 2026-09-20-third-thing, single-track-tournament, involution, goodharts-law, positional-goods, third-object, scapegoat-mechanism, common-knowledge, exploration-and-generation]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

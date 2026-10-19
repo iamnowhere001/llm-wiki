@@ -4,11 +4,11 @@ type: concept
 slug: common-knowledge
 tags: [现代思维工具, 参与者, 万维钢, 共同知识, 仪式, 协调, 聚焦点]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-common-knowledge]
 related: [modern-thinking-tools, salience-vs-importance, narrative-power, 2026-09-20-social-status, 2026-09-20-ritual-as-protocol, 2026-09-20-third-thing, 2026-09-20-scapegoat, 2026-09-20-legibility-and-metis, third-object]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

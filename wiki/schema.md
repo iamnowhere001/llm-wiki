@@ -49,6 +49,7 @@ sources: [2026-09-18-karpathy-llm-wiki]   # 支撑本页的 raw 素材 slug
 related: [rag-vs-wiki, ingest-query-lint] # 相关页面 slug
 evidence_tier: single    # single | crossed-same-family | crossed-independent | primary —— 见 1.2
 confidence: high         # high | medium | low —— 证据充分度（主观判断）
+confidence_note: ...     # 可选：单源/同源仍 high 的理由；lint 见到后不再提示
 status: active           # active | draft | stale | deprecated
 ---
 ```
@@ -75,6 +76,8 @@ status: active           # active | draft | stale | deprecated
 > 这个数字会随素材变化，**以 `python3 tools/wiki.py stats` 与 `overview` 的自动统计块为准**，不要在本页写死。
 > `lint` 会把「有 ≥2 份支撑但全部来自同一来源族」判为 `crossed-same-family` —— **那些页面不能当作已交叉验证**。
 > **归并失败时默认「各自独立」，不并族** —— 把真交叉误判成同源，比漏报同源代价更大。
+
+**`confidence_note`（可选）**：当 `confidence: high` 但 `evidence_tier` 是 `single` / `crossed-same-family` 时，用一句话写清「为什么单源仍 high」。`lint` 见到该字段就不再提示；它**不改变** `evidence_tier`，也**不是证据本身** —— 只是把人工裁定理由从正文里挪到机器可读的位置。
 
 **写入方式**：`tools/seed_evidence_tier.py`（幂等）。填错了 `lint` 会报。
 

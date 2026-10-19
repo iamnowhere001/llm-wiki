@@ -5,11 +5,11 @@ type: concept
 slug: credential-inflation
 tags: [现代思维工具, 参与者, 万维钢, 兰德尔·柯林斯, 教育, 学历通胀, 社会学]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-moloch]
 related: [2026-09-20-moloch, single-track-tournament, moloch, positional-goods, symbolic-capital, great-leveling, value-pluralism]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

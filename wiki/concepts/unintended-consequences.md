@@ -4,11 +4,11 @@ type: concept
 slug: unintended-consequences
 tags: [现代思维工具, 参与者, 万维钢, 非预期后果, 卢卡斯批判, 街头官僚, 激励机制]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-unintended-consequences]
 related: [modern-thinking-tools, goodharts-law, self-determination-theory, stephen-covey, skin-in-the-game, hard-constraints, 2026-09-20-scapegoat, 2026-09-20-incentive-compatibility, 2026-09-20-market-for-lemons, 2026-09-20-legibility-and-metis, 2026-09-20-slow-variables, scapegoat-mechanism]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

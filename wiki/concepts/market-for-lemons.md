@@ -4,11 +4,11 @@ type: concept
 slug: market-for-lemons
 tags: [现代思维工具, 参与者, 万维钢, 柠檬市场, 信息不对称, 信号, 程序正义]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-market-for-lemons]
 related: [modern-thinking-tools, goodharts-law, selection-bias, survivorship-bias, 2026-09-20-incentive-compatibility, 2026-09-20-externality, 2026-09-20-unintended-consequences, 2026-09-20-legibility-and-metis]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

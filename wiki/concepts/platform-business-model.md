@@ -5,11 +5,11 @@ type: concept
 slug: platform-business-model
 tags: [万维钢, 平台, enshittification, 互操作性, 技术封建主义, 双边市场, 商业模式, 网络效应]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-platform-business-model]
 related: [enshittification, cory-doctorow, yanis-varoufakis, multiplicative-world, structural-holes, narrative-power, 2026-09-19-platform-business-model, 2026-09-19-economic-rent, modern-thinking-tools]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

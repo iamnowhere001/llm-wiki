@@ -4,17 +4,21 @@ type: concept
 slug: wiki-lint
 tags: [工作流, 维护, 质量]
 created: 2026-09-18
-updated: 2026-10-06
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [ingest-query-lint, compounding-knowledge, index-and-log]
 evidence_tier: single
 confidence: high
+confidence_note: "单源但为一手原文：只描述 Karpathy Gist 提出的模式，不外推为独立验证"
 status: active
 ---
 
 # Wiki 体检（Lint）
 
 > 定期让 LLM 检查知识库的健康状况。它既修问题，也**生产下一步的选题** —— 这是 [[llm-wiki-pattern]] 对抗熵增的机制。
+
+> [!note] 单源但为一手原文
+> 本页只描述 [[2026-09-18-karpathy-llm-wiki]] 提出的模式；`evidence_tier: single` 反映 raw 份数，不表示这些结论已被独立验证。
 
 ## 关键要点
 

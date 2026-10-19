@@ -84,6 +84,12 @@ class EvidenceTierTests(unittest.TestCase):
         tier, n, _ = wiki.compute_evidence_tier(self.page(["a"]), meta)
         self.assertEqual((tier, n), ("primary", 1))
 
+    def test_confidence_note_detected(self):
+        page = SimpleNamespace(fm={"confidence_note": "单源但为一手原文"})
+        self.assertTrue(wiki.has_confidence_note(page))
+        page = SimpleNamespace(fm={"confidence_note": "  "})
+        self.assertFalse(wiki.has_confidence_note(page))
+
 
 class GapTableTests(unittest.TestCase):
     def test_empty_gap_table(self):

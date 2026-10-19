@@ -4,11 +4,11 @@ type: entity
 slug: obsidian
 tags: [工具, 编辑器]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [index-and-log, llm-wiki-pattern, pkm-history, bidirectional-links, roam-research]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -67,6 +67,9 @@ Obsidian 是 [[pkm-history]] 上「双向链接在私有域内复兴」这一阶
 > [!note] 未验证的事实
 > 据检索结果，Obsidian 由 Erica Xu 与 Shida Li 创建，首个公开版本发布于 **2020-03-30**。
 > 这些信息**未收录素材**，因此标注为未验证。需收录官方文档或独立报道后方可提升置信度。
+
+> [!note] 单来源实体页
+> 本页只依赖 [[2026-09-18-karpathy-llm-wiki]] 一份素材；按 [[schema]] §6，`confidence` 记 `medium`。
 
 ## 来源
 

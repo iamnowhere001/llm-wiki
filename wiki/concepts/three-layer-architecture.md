@@ -4,17 +4,21 @@ type: concept
 slug: three-layer-architecture
 tags: [模式, 架构]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, ingest-query-lint, andrej-karpathy]
 evidence_tier: single
 confidence: high
+confidence_note: "单源但为一手原文：只描述 Karpathy Gist 提出的模式，不外推为独立验证"
 status: active
 ---
 
 # 三层架构：raw / wiki / schema
 
 > [[llm-wiki-pattern]] 的物理结构：不可变的原始素材、LLM 全权拥有的知识库、描述维护规则的规范文件。三层各有明确的写入权限归属。
+
+> [!note] 单源但为一手原文
+> 本页只描述 [[2026-09-18-karpathy-llm-wiki]] 提出的模式；`evidence_tier: single` 反映 raw 份数，不表示这些结论已被独立验证。
 
 ## 关键要点
 

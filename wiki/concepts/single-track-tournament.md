@@ -5,11 +5,11 @@ type: concept
 slug: single-track-tournament
 tags: [现代思维工具, 参与者, 万维钢, 锦标赛理论, 科举, 教育竞争, 东亚]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-moloch]
 related: [2026-09-20-moloch, moloch, great-leveling, credential-inflation, value-pluralism, positional-goods, symbolic-capital, goodharts-law, state-formation]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

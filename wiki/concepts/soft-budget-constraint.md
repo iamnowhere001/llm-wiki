@@ -4,11 +4,11 @@ type: concept
 slug: soft-budget-constraint
 tags: [现代思维工具, 参与者, 万维钢, 软预算约束, 道德风险, 动态不一致, 晋升锦标赛]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-soft-budget-constraint]
 related: [modern-thinking-tools, credible-commitment, skin-in-the-game, goodharts-law, 2026-09-20-protection-and-public-contract, 2026-09-20-incentive-compatibility, 2026-09-20-slow-variables, 2026-09-20-unintended-consequences]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

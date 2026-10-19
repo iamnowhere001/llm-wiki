@@ -5,11 +5,12 @@ type: concept
 slug: no-free-lunch-theorem
 tags: [万维钢, 决策, 先验, 归纳偏置, 元规则, 算法]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-no-free-lunch-theorem-notes]
 related: [hard-constraints, heavy-tailed-distribution, multiplicative-world, types-of-uncertainty, free-energy-principle, prediction-error, cognitive-outsourcing, productive-resistance, game-selection, modern-thinking-tools]
 evidence_tier: single
 confidence: high
+confidence_note: "3 条具名引注全部可核；AI 段未引入新具名引注或精确数字"
 status: active
 ---
 

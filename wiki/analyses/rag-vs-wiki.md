@@ -4,11 +4,11 @@ type: analysis
 slug: rag-vs-wiki
 tags: [RAG, 对比, 架构]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, compounding-knowledge, wiki-lint, knowledge-is-the-bottleneck]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

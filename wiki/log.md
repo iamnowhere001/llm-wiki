@@ -1916,3 +1916,5 @@ review 的「被推翻 / 修正的本库判定」里曾写「官方编号 007–
 
 ## [2026-10-19] edit | 修复 exodus 页 frontmatter（\\--- → ---）；新增 doctor 一致性检查、unit tests、check.sh、pre-commit 与 CI；同步 schema 的 evidence_tier 口径与工具清单；重新生成 index/overview 并构建站点
 
+## [2026-10-19] audit | 46 页高置信单源页逐页裁定：15 页保留 high（一手原文或承重引注逐条核过），31 页降 medium（实体页/已知证据缺口/仅文献存在未核内容）；新增 confidence_note 字段，lint 对已写明理由的页面不再提示。逐页表见 outputs/2026-10-19-confidence-audit.md
+

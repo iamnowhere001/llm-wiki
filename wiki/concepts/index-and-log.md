@@ -4,17 +4,21 @@ type: concept
 slug: index-and-log
 tags: [约定, 导航]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-19
 sources: [2026-09-18-karpathy-llm-wiki]
 related: [llm-wiki-pattern, ingest-query-lint, qmd]
 evidence_tier: single
 confidence: high
+confidence_note: "单源但为一手原文：只描述 Karpathy Gist 提出的模式，不外推为独立验证"
 status: active
 ---
 
 # 索引与日志：index.md 与 log.md
 
 > wiki 里两个承担导航职责的特殊文件：`index.md` 面向内容（有什么页），`log.md` 面向时间（发生过什么）。它们让 wiki 在增长后仍然可被 LLM 和人类快速定位。
+
+> [!note] 单源但为一手原文
+> 本页只描述 [[2026-09-18-karpathy-llm-wiki]] 提出的模式；`evidence_tier: single` 反映 raw 份数，不表示这些结论已被独立验证。
 
 ## 关键要点
 

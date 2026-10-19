@@ -4,11 +4,12 @@ type: concept
 slug: goodharts-law
 tags: [万维钢, 古德哈特定律, 体制, 考核, 指标]
 created: 2026-09-18
-updated: 2026-10-06
+updated: 2026-10-19
 sources: [2026-09-18-game-selection-notes]
 related: [game-selection, agent-vs-tool, narrative-as-objective-function, steady-state-survival-logic, modern-thinking-tools, 2026-09-20-market-for-lemons, 2026-09-20-unintended-consequences, 2026-09-20-soft-budget-constraint, third-object, 2026-09-20-incentive-compatibility, self-determination-theory, scapegoat-mechanism]
 evidence_tier: single
 confidence: high
+confidence_note: "Goodhart 1975 与 Strathern 普及版归属已核；讲稿为弱引注但内容一致"
 status: active
 ---
 
@@ -18,6 +19,9 @@ status: active
 > Charles Goodhart **1975 年**提出，原始表述「Any observed statistical regularity will tend to collapse
 > once pressure is placed upon it for control purposes」；通俗版由 Marilyn Strathern 普及。
 > 018 讲的用法：**体制内生存最大的伤害是把「指标（metrics）」当成「目的（purpose）」**。
+
+> [!note] 单源弱引注，但归属已核
+> 讲稿只给名字；Goodhart 1975 原文与 Strathern 普及版的归属已外部核对。
 
 ## 关键要点
 

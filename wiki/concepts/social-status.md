@@ -4,11 +4,12 @@ type: concept
 slug: social-status
 tags: [现代思维工具, 参与者, 万维钢, 地位, 支配, 声望, 社会评价]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-social-status]
 related: [modern-thinking-tools, positional-goods, field-theory, symbolic-capital, victim-mentality, 2026-09-19-qa-boss-shorting, 2026-09-20-ritual-as-protocol, 2026-09-20-common-knowledge, goodharts-law, 2026-09-20-third-thing, third-object, ritual-as-protocol, common-knowledge]
 evidence_tier: single
 confidence: high
+confidence_note: "13 条引注全部核对；承重证据三条线均核到具名文献"
 status: active
 ---
 

@@ -5,11 +5,12 @@ type: concept
 slug: kelly-criterion
 tags: [万维钢, 决策, 概率, 乘法世界, 仓位管理, 凯利]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-kelly-criterion-notes]
 related: [multiplicative-world, compounding-knowledge, explore-exploit-tradeoff, luck-over-talent, hard-constraints, game-selection, effectuation, charlie-munger, nassim-taleb, modern-thinking-tools]
 evidence_tier: single
 confidence: high
+confidence_note: "引注 14 条：12 已核、1 处理解简化、1 素材层缺口；无伪引注、无使用失真"
 status: active
 ---
 

@@ -4,11 +4,11 @@ type: entity
 slug: saras-sarasvathy
 tags: [人物, 效应化, 创业学者, 达顿商学院]
 created: 2026-09-18
-updated: 2026-09-21
+updated: 2026-10-19
 sources: [2026-09-18-game-selection-notes, 2026-09-19-effectuation-notes]
 related: [effectuation, game-selection, modern-thinking-tools]
 evidence_tier: crossed-same-family
-confidence: high
+confidence: medium
 status: active
 ---
 
@@ -64,6 +64,9 @@ status: active
   「憋大招创新 vs 华强北创新」的二分（行 51–77）都是**讲者本人**的类比，
   **不是 Sarasvathy 的框架**（她的对应物叫 effectual cycle）。
 - 译名：库内该理论有两种中文译名（018 讲「效应化」/ 062 讲「效果推理」），**本页与 [[effectuation]] 均不改名**。
+
+> [!note] 同族来源实体页
+> 本页依赖两份同族讲次素材；按 [[schema]] §6，单来源族的实体页 `confidence` 记 `medium`。
 
 ## 来源
 

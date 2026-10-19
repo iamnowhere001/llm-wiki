@@ -5,11 +5,11 @@ type: concept
 slug: alpha-vs-beta
 tags: [万维钢, 竞争优势, 战略定位, 护城河, Alpha, Beta, 波特, 核心刚性]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-19
 sources: [2026-09-19-alpha-strategy]
 related: [economic-rent, business-leverage, explore-exploit-tradeoff, game-selection, effectuation, multiplicative-world, heavy-tailed-distribution, steady-state-survival-logic, 2026-09-19-alpha-strategy]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 

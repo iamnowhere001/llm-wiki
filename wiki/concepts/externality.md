@@ -4,11 +4,11 @@ type: concept
 slug: externality
 tags: [现代思维工具, 参与者, 万维钢, 外部性, 公共品, 科斯定理, 奥斯特罗姆, 公地悲剧]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-19
 sources: [2026-09-20-externality]
 related: [modern-thinking-tools, credible-commitment, social-capital, 2026-09-20-market-for-lemons, 2026-09-20-protection-and-public-contract, 2026-09-20-legibility-and-metis, 2026-09-20-slow-variables, 2026-09-20-third-thing]
 evidence_tier: single
-confidence: high
+confidence: medium
 status: active
 ---
 
