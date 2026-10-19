@@ -1918,3 +1918,5 @@ review 的「被推翻 / 修正的本库判定」里曾写「官方编号 007–
 
 ## [2026-10-19] audit | 46 页高置信单源页逐页裁定：15 页保留 high（一手原文或承重引注逐条核过），31 页降 medium（实体页/已知证据缺口/仅文献存在未核内容）；新增 confidence_note 字段，lint 对已写明理由的页面不再提示。逐页表见 outputs/2026-10-19-confidence-audit.md
 
+## [2026-10-19] maintenance | git 历史瘦身：移除历史 PNG（273 个 blob / 约 550 MiB）、旧 JPG/JPEG（约 31 MiB）与 site/index.html 的 14 个旧版本（约 99 MiB）；.git 从 661 MiB 降到 76 MiB；当前工作树内容未变。重写前完整镜像备份：/private/var/folders/01/1qlxz5m15h95dvkypq9nslzc0000gn/T/opencode/llm-wiki-pre-slim-20261019-195124.git
+
